@@ -46,6 +46,9 @@
     enemyCatCountAll: document.getElementById('enemyCatCountAll'),
     enemyCatCountRegular: document.getElementById('enemyCatCountRegular'),
     enemyCatCountBoss: document.getElementById('enemyCatCountBoss'),
+    enemyCatCountElite: document.getElementById('enemyCatCountElite'),
+    enemyCatCountArena: document.getElementById('enemyCatCountArena'),
+    enemyCatCountSidequest: document.getElementById('enemyCatCountSidequest'),
     enemyCatCountRare: document.getElementById('enemyCatCountRare'),
     enemySortFilter: document.getElementById('enemySortFilter'),
     enemyResultsCount: document.getElementById('enemyResultsCount'),
@@ -110,7 +113,7 @@
   }
 
   function updateCategoryTabCounts() {
-    const counts = { Regular: 0, Boss: 0, Rare: 0 };
+    const counts = { Regular: 0, Boss: 0, Rare: 0, Elite: 0, Arena: 0, Sidequest: 0 };
     dataset.forEach(enemy => {
       const type = enemy.type || 'Regular';
       if (counts.hasOwnProperty(type)) counts[type]++;
@@ -118,6 +121,9 @@
     if (elements.enemyCatCountAll) elements.enemyCatCountAll.textContent = String(dataset.length);
     if (elements.enemyCatCountRegular) elements.enemyCatCountRegular.textContent = String(counts.Regular);
     if (elements.enemyCatCountBoss) elements.enemyCatCountBoss.textContent = String(counts.Boss);
+    if (elements.enemyCatCountElite) elements.enemyCatCountElite.textContent = String(counts.Elite);
+    if (elements.enemyCatCountArena) elements.enemyCatCountArena.textContent = String(counts.Arena);
+    if (elements.enemyCatCountSidequest) elements.enemyCatCountSidequest.textContent = String(counts.Sidequest);
     if (elements.enemyCatCountRare) elements.enemyCatCountRare.textContent = String(counts.Rare);
   }
 
@@ -168,7 +174,7 @@
         <div class="enemy-modal-grid">
           <div class="enemy-modal-field">
             <span class="field-label">Type:</span>
-            <span class="field-value">${cleanText(enemy.type || 'Regular')}</span>
+            <span class="enemy-type-badge" data-type="${cleanText(enemy.type || 'Regular')}">${cleanText(enemy.type || 'Regular')}</span>
           </div>
           <div class="enemy-modal-field">
             <span class="field-label">Level:</span>
@@ -310,7 +316,7 @@
           <td class="enemy-name-cell"><button class="enemy-name-btn" data-enemy-id="${enemy.id}">${cleanText(enemy.name)}</button></td>
           <td>${cleanText(enemy.area)}</td>
           <td>${cleanText(enemy.subArea)}</td>
-          <td><span class="enemy-type-badge">${cleanText(enemy.type || 'Regular')}</span></td>
+          <td><span class="enemy-type-badge" data-type="${cleanText(enemy.type || 'Regular')}">${cleanText(enemy.type || 'Regular')}</span></td>
           <td class="num font-num enemy-shield-val">${Number(enemy.shields) || 0}</td>
           <td class="enemy-weakness-cell">
             <div class="enemy-weakness-grid">${weaknessGrid}</div>

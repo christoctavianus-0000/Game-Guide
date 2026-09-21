@@ -69,14 +69,62 @@ def normalize_weaknesses(row):
     return weaknesses
 
 
-def infer_enemy_type(name: str) -> str:
-    text = name.lower()
-    if any(keyword in text for keyword in ["boss", "guardian", "dragon", "king", "queen", "general", "lord", "demon", "scholarking", "birdking", "lizardking", "ratking", "frogking", "yak", "beast king"]):
-        return "Boss"
-    if any(keyword in text for keyword in ["elite", "menacing", "greater", "ancient", "rare"]):
+_SIDEQUEST_AREAS = (
+    "an encounter with", "a long-lost love", "alpaca roundup",
+    "an assistant like no other", "an indestructible flame",
+    "great expectations", "heidne and the", "in search of what remains",
+    "one's true worth", "the big 'un", "the blade of the weak",
+    "the eight sacred treasures", "the missing brother",
+    "treasure event battle", "unnatural tremors",
+    "what remains of the black scarlet",
+)
+
+_BOSS_AREAS = (
+    "master of", "bestower of", "superboss",
+    "gate of finis", "finale", "kindlers", "unlocking the true",
+    "the heavens",
+)
+
+_BOSS_NAMES = (
+    "guardian", "dragon", "lord", "demon", "tyrant", "fiend",
+    "emperor", "empress", "scholarking", "birdking", "lizardking",
+    "ratking", "frogking", "yak", "archmage", "warmaster",
+    "runelord", "starseer",
+)
+
+
+def infer_enemy_type(name: str, area: str = "", sub_area: str = "") -> str:
+    nl = name.lower()
+    al = area.lower()
+    sl = sub_area.lower()
+
+    # 1. Rare — Cait & Octopuff variants (high EXP/JP, flee quickly)
+    if any(k in nl for k in ("cait", "octopuff")):
         return "Rare"
-    if any(keyword in text for keyword in ["guardian", "guardian mk", "dark guardian", "light guardian", "flame guardian"]):
+
+    # 2. Arena — Monster Arena encounters
+    if al == "arena" or "arena" in sl:
+        return "Arena"
+
+    # 3. Sidequest — Traveler quests & Treasure Event Battles
+    if any(al.startswith(p) for p in _SIDEQUEST_AREAS):
+        return "Sidequest"
+
+    # 4. Elite — Enhanced overworld spawns (Menacing, Mighty, Ancient, Greater, etc.)
+    if any(k in nl for k in ("menacing", "mighty", "ancient", "greater", "elite")):
         return "Elite"
+
+    # 5. Boss — Story chapters, named boss enemies
+    if any(k in al for k in _BOSS_AREAS):
+        return "Boss"
+    if any(k in nl for k in _BOSS_NAMES):
+        return "Boss"
+    if any(k in nl for k in ("king", "queen", "general", "boss")):
+        return "Boss"
+    if "fallen" in nl:
+        return "Boss"
+
+    # 6. Regular — standard overworld / dungeon field encounters
     return "Regular"
 
 
@@ -111,7 +159,7 @@ def parse_bestiary(ws):
                 "name": name,
                 "area": area,
                 "subArea": sub_area,
-                "type": infer_enemy_type(name),
+                "type": infer_enemy_type(name, area, sub_area),
                 "shields": to_int(row.get("Shields")),
                 "weaknesses": weaknesses,
                 "weakness": weaknesses[0] if weaknesses else "None",
@@ -125,6 +173,11 @@ def parse_bestiary(ws):
                 "crit": to_int(row.get("CRT")),
                 "accuracy": to_int(row.get("ACC")),
                 "evasion": to_int(row.get("EVA")),
+                "exp": to_int(row.get("EXP")),
+                "jp": to_int(row.get("JP")),
+                "steal": clean_text(row.get("Steal")),
+                "drop": clean_text(row.get("Drop")),
+                "immunities": clean_text(row.get("Status Immunities")),
                 "skills": skills,
             }
         )

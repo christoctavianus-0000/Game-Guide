@@ -998,6 +998,13 @@ body::before {
   text-transform: uppercase;
 }
 
+.enemy-type-badge[data-type="Regular"] { background: rgba(255, 255, 255, 0.06); }
+.enemy-type-badge[data-type="Boss"] { background: rgba(180, 40, 40, 0.25); color: #ff6b6b; }
+.enemy-type-badge[data-type="Elite"] { background: rgba(180, 120, 20, 0.25); color: #ffb347; }
+.enemy-type-badge[data-type="Arena"] { background: rgba(60, 120, 200, 0.25); color: #6bb5ff; }
+.enemy-type-badge[data-type="Sidequest"] { background: rgba(120, 80, 180, 0.25); color: #c09dff; }
+.enemy-type-badge[data-type="Rare"] { background: rgba(200, 170, 50, 0.25); color: #ffd866; }
+
 .enemy-weakness-grid {
   display: flex;
   align-items: center;

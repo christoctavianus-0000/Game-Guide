@@ -6,7 +6,6 @@ const enemyData = [
     "subArea": "Wishvale Trail",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -15,12 +14,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 1,
     "hp": 145,
     "patk": 104,
     "pdef": 24,
     "matk": 69,
     "mdef": 24,
+    "speed": 64,
+    "crit": 64,
+    "accuracy": 72,
+    "evasion": 64,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -34,10 +43,7 @@ const enemyData = [
         "name": "Body Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Horn, Rusty Coin, Shiny Coin",
-    "drop": "Antidote Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32334.0",
@@ -46,7 +52,6 @@ const enemyData = [
     "subArea": "Wishvale Trail",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -55,12 +60,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 1,
     "hp": 153,
     "patk": 104,
     "pdef": 24,
     "matk": 69,
     "mdef": 24,
+    "speed": 64,
+    "crit": 64,
+    "accuracy": 80,
+    "evasion": 64,
+    "exp": 3,
+    "jp": 1,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -74,10 +89,7 @@ const enemyData = [
         "name": "Constrict",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (L)",
-    "drop": "Hydra Scale, Kraken Ink",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32343.0",
@@ -86,7 +98,6 @@ const enemyData = [
     "subArea": "Wishvale Trail",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -95,12 +106,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 1,
     "hp": 142,
     "patk": 104,
     "pdef": 24,
     "matk": 69,
     "mdef": 24,
+    "speed": 64,
+    "crit": 64,
+    "accuracy": 72,
+    "evasion": 64,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -114,10 +135,7 @@ const enemyData = [
         "name": "Body Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Claw, Rusty Coin, Basilisk Eye",
-    "drop": "Gold",
-    "immunities": "Paralysis, Confusion"
+    ]
   },
   {
     "id": "32347.0",
@@ -126,7 +144,6 @@ const enemyData = [
     "subArea": "Cerulean Caverns",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -135,12 +152,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 2,
     "hp": 146,
     "patk": 114,
     "pdef": 18,
     "matk": 114,
     "mdef": 18,
+    "speed": 74,
+    "crit": 74,
+    "accuracy": 74,
+    "evasion": 66,
+    "exp": 3,
+    "jp": 1,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -154,10 +181,7 @@ const enemyData = [
         "name": "Inhibit Offense",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Tusk, Holy Water",
-    "drop": "Beast Fang, Olive of Life (M), Gold Dust",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "32393.0",
@@ -166,7 +190,6 @@ const enemyData = [
     "subArea": "Cerulean Caverns",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -175,12 +198,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 2,
     "hp": 142,
     "patk": 114,
     "pdef": 18,
     "matk": 76,
     "mdef": 18,
+    "speed": 74,
+    "crit": 66,
+    "accuracy": 83,
+    "evasion": 66,
+    "exp": 2,
+    "jp": 2,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -194,10 +227,7 @@ const enemyData = [
         "name": "Flap",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb, Hydra Scale",
-    "drop": "Olive of Life (M)",
-    "immunities": "Confusion, Poison"
+    ]
   },
   {
     "id": "32345.0",
@@ -206,7 +236,6 @@ const enemyData = [
     "subArea": "Cerulean Caverns",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -215,12 +244,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 2,
     "hp": 137,
     "patk": 114,
     "pdef": 18,
     "matk": 76,
     "mdef": 18,
+    "speed": 74,
+    "crit": 74,
+    "accuracy": 74,
+    "evasion": 66,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -234,10 +273,7 @@ const enemyData = [
         "name": "Howl",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (L), Beast Hide, Rare Beast Fang",
-    "drop": "Basilisk Eye, Shiny Coin, Rare Beast Fang",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98602.0",
@@ -246,7 +282,6 @@ const enemyData = [
     "subArea": "Wishvale",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -254,12 +289,22 @@ const enemyData = [
       "Staff",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 3,
     "hp": 500,
     "patk": 120,
     "pdef": 70,
     "matk": 119,
     "mdef": 70,
+    "speed": 72,
+    "crit": 56,
+    "accuracy": 99,
+    "evasion": 93,
+    "exp": 4,
+    "jp": 2,
+    "steal": "n/a",
+    "drop": "Healing Grape x1 (20%) Olive of Life x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -269,10 +314,7 @@ const enemyData = [
         "name": "Healing Grape",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam",
-    "drop": "Quality Beast Claw, Shiny Coin, Moonstone",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32353.0",
@@ -281,7 +323,6 @@ const enemyData = [
     "subArea": "Valore Trail",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -290,12 +331,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 187,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 19,
+    "speed": 70,
+    "crit": 78,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -309,10 +360,7 @@ const enemyData = [
         "name": "Wild Scratch",
         "type": "Phys"
       }
-    ],
-    "steal": "Nut",
-    "drop": "Quality Beast Horn",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "32355.0",
@@ -321,7 +369,6 @@ const enemyData = [
     "subArea": "Valore Trail",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -330,12 +377,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 205,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 19,
+    "speed": 61,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 78,
+    "exp": 3,
+    "jp": 1,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -349,10 +406,7 @@ const enemyData = [
         "name": "Curl Up",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb (L), Rare Beast Fang, Quality Beast Meat",
-    "drop": "Old Coin",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "32354.0",
@@ -361,7 +415,6 @@ const enemyData = [
     "subArea": "Valore Trail",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -370,12 +423,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 4,
     "hp": 194,
     "patk": 134,
     "pdef": 19,
     "matk": 134,
     "mdef": 19,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 3,
+    "jp": 2,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -389,10 +452,7 @@ const enemyData = [
         "name": "Eat Mushroom",
         "type": "Unknown"
       }
-    ],
-    "steal": "Copper Ore, Basilisk Eye, Rusty Coin",
-    "drop": "Sphinx Feather, Gold, Phoenix Feather",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32349.0",
@@ -401,7 +461,6 @@ const enemyData = [
     "subArea": "Valore Trail",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -410,12 +469,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 182,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 19,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 87,
+    "evasion": 78,
+    "exp": 2,
+    "jp": 2,
+    "steal": "Lumber",
+    "drop": "Lumber x1 (15%) Lumber x2 (10%) Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -429,10 +498,7 @@ const enemyData = [
         "name": "Dual Shot",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L)",
-    "drop": "Sphinx Feather, Beast Tusk",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "32383.0",
@@ -441,7 +507,6 @@ const enemyData = [
     "subArea": "Emberglow Wilds",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -449,12 +514,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 208,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 19,
+    "speed": 70,
+    "crit": 78,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 3,
+    "jp": 1,
+    "steal": "Stone",
+    "drop": "Stone x1 (15%) Stone x2 (10%) Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -468,10 +543,7 @@ const enemyData = [
         "name": "Double Stab",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive (L)",
-    "drop": "Holy Water, Olive of Life (M), Holy Water (M)",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "32382.0",
@@ -480,7 +552,6 @@ const enemyData = [
     "subArea": "Emberglow Wilds",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -489,12 +560,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 4,
     "hp": 200,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 19,
+    "speed": 78,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 3,
+    "jp": 2,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -508,10 +589,7 @@ const enemyData = [
         "name": "Updraft",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "Rare Beast Tusk",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32379.0",
@@ -520,7 +598,6 @@ const enemyData = [
     "subArea": "Emberglow Wilds",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -529,12 +606,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 182,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 19,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -548,10 +635,7 @@ const enemyData = [
         "name": "Sling Mud",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (L), SP-Restoring Nut (M)",
-    "drop": "Quality Beast Tusk",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "32380.0",
@@ -560,7 +644,6 @@ const enemyData = [
     "subArea": "Emberglow Wilds",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -569,12 +652,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 190,
     "patk": 134,
     "pdef": 19,
     "matk": 134,
     "mdef": 19,
+    "speed": 78,
+    "crit": 78,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 2,
+    "jp": 2,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -588,10 +681,7 @@ const enemyData = [
         "name": "Stormbound",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Claw, Blessed Olive (L), Healing Grape",
-    "drop": "Leaf",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32304.0",
@@ -600,7 +690,6 @@ const enemyData = [
     "subArea": "Theatropolis Plains",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -609,12 +698,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 4,
     "hp": 184,
     "patk": 134,
     "pdef": 19,
     "matk": 100,
     "mdef": 19,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -628,10 +727,7 @@ const enemyData = [
         "name": "Intimidate",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Horn",
-    "drop": "Rare Beast Hide, Leaf, Star Fragment",
-    "immunities": "Poison, Paralysis"
+    ]
   },
   {
     "id": "32306.0",
@@ -640,7 +736,6 @@ const enemyData = [
     "subArea": "Theatropolis Plains",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -649,12 +744,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 182,
     "patk": 134,
     "pdef": 19,
     "matk": 100,
     "mdef": 19,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -668,10 +773,7 @@ const enemyData = [
         "name": "Eat Mushroom",
         "type": "Unknown"
       }
-    ],
-    "steal": "Lightning Soulstone, Holy Water (M), Inspiring Plum Basket",
-    "drop": "Gold",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "32307.0",
@@ -680,7 +782,6 @@ const enemyData = [
     "subArea": "Theatropolis Plains",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -689,12 +790,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 199,
     "patk": 134,
     "pdef": 19,
     "matk": 100,
     "mdef": 19,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 3,
+    "jp": 2,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -708,10 +819,7 @@ const enemyData = [
         "name": "Photosynthesis",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life (M), Sunshard",
-    "drop": "EXP, Holy Water (L)",
-    "immunities": "Sleep, Paralysis"
+    ]
   },
   {
     "id": "32300.0",
@@ -720,7 +828,6 @@ const enemyData = [
     "subArea": "Theatropolis Plains",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -728,12 +835,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 4,
     "hp": 182,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 17,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Cloth",
+    "drop": "Cloth x1 (15%) Cloth x2 (10%) Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -747,10 +864,7 @@ const enemyData = [
         "name": "Double Stab",
         "type": "Phys"
       }
-    ],
-    "steal": "Gold Dust",
-    "drop": "HP-Restoring Herb, EXP",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32301.0",
@@ -759,7 +873,6 @@ const enemyData = [
     "subArea": "Theatropolis Plains",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -767,12 +880,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 4,
     "hp": 208,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 17,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 3,
+    "jp": 1,
+    "steal": "Cloth",
+    "drop": "Cloth x1 (15%) Cloth x2 (10%) Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -786,10 +909,7 @@ const enemyData = [
         "name": "Charge",
         "type": "Phys"
       }
-    ],
-    "steal": "Star Fragment, Manticore Stinger, Revitalizing Jam (L)",
-    "drop": "Inspiring Plum Basket",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "32302.0",
@@ -798,7 +918,6 @@ const enemyData = [
     "subArea": "Theatropolis Plains",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -807,12 +926,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 186,
     "patk": 134,
     "pdef": 19,
     "matk": 134,
     "mdef": 19,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 2,
+    "jp": 1,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -826,10 +955,7 @@ const enemyData = [
         "name": "Eat Mushroom",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shadow Soulstone",
-    "drop": "Grape, Beast Tusk",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32303.0",
@@ -838,7 +964,6 @@ const enemyData = [
     "subArea": "Theatropolis Plains",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -847,12 +972,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 198,
     "patk": 134,
     "pdef": 19,
     "matk": 89,
     "mdef": 19,
+    "speed": 70,
+    "crit": 70,
+    "accuracy": 78,
+    "evasion": 70,
+    "exp": 3,
+    "jp": 1,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -866,10 +1001,7 @@ const enemyData = [
         "name": "Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Meat",
-    "drop": "Minotaur Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32384.0",
@@ -878,7 +1010,6 @@ const enemyData = [
     "subArea": "Snowshard Grotto",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -886,12 +1017,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 5,
     "hp": 218,
     "patk": 144,
     "pdef": 19,
     "matk": 96,
     "mdef": 19,
+    "speed": 71,
+    "crit": 80,
+    "accuracy": 80,
+    "evasion": 71,
+    "exp": 4,
+    "jp": 2,
+    "steal": "Stone",
+    "drop": "Stone x1 (15%) Stone x2 (10%) Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -905,10 +1046,7 @@ const enemyData = [
         "name": "Wild Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Kraken Ink, Antidote Herb (L)",
-    "drop": "SP-Restoring Nut (L), Shiny Coin",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "32389.0",
@@ -917,19 +1055,28 @@ const enemyData = [
     "subArea": "Snowshard Grotto",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
       "Fire",
       "Dark"
     ],
+    "weakness": "Bow",
     "level": 5,
     "hp": 205,
     "patk": 144,
     "pdef": 19,
     "matk": 96,
     "mdef": 19,
+    "speed": 62,
+    "crit": 71,
+    "accuracy": 80,
+    "evasion": 71,
+    "exp": 3,
+    "jp": 2,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -943,10 +1090,7 @@ const enemyData = [
         "name": "Numbing Thorn Storm",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk",
-    "drop": "Phoenix Feather, Antidote Herb (L), Manticore Stinger",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32390.0",
@@ -955,7 +1099,6 @@ const enemyData = [
     "subArea": "Snowshard Grotto",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -964,12 +1107,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 5,
     "hp": 209,
     "patk": 144,
     "pdef": 19,
     "matk": 96,
     "mdef": 19,
+    "speed": 71,
+    "crit": 71,
+    "accuracy": 80,
+    "evasion": 71,
+    "exp": 4,
+    "jp": 2,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -983,10 +1136,7 @@ const enemyData = [
         "name": "These Nuts",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Light Soulstone",
-    "drop": "Revitalizing Jam (L), Herb, Rare Beast Hide",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "32388.0",
@@ -995,19 +1145,28 @@ const enemyData = [
     "subArea": "Snowshard Grotto",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Staff",
       "Tome",
       "Thunder"
     ],
+    "weakness": "Dagger",
     "level": 5,
     "hp": 198,
     "patk": 144,
     "pdef": 19,
     "matk": 144,
     "mdef": 19,
+    "speed": 80,
+    "crit": 71,
+    "accuracy": 80,
+    "evasion": 71,
+    "exp": 2,
+    "jp": 2,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1021,10 +1180,7 @@ const enemyData = [
         "name": "Double Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Shadow Soulstone, Healing Grape Bunch",
-    "drop": "Manticore Stinger, Healing Grape Bunch",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "32337.0",
@@ -1033,7 +1189,6 @@ const enemyData = [
     "subArea": "Serpent's Burrow",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
@@ -1041,12 +1196,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 6,
     "hp": 220,
     "patk": 103,
     "pdef": 17,
     "matk": 132,
     "mdef": 20,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 4,
+    "jp": 3,
+    "steal": "Wind Soulstone",
+    "drop": "Wind Soulstone x1 (4%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Gale Strike",
@@ -1060,10 +1225,7 @@ const enemyData = [
         "name": "Mighty Gale",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Horn",
-    "drop": "Beast Horn",
-    "immunities": "Petrification, Blind"
+    ]
   },
   {
     "id": "32336.0",
@@ -1072,7 +1234,6 @@ const enemyData = [
     "subArea": "Serpent's Burrow",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -1081,12 +1242,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 215,
     "patk": 132,
     "pdef": 17,
     "matk": 109,
     "mdef": 17,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 3,
+    "jp": 4,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1100,10 +1271,7 @@ const enemyData = [
         "name": "Venomous Fang",
         "type": "Phys"
       }
-    ],
-    "steal": "Fire Soulstone, Ancient Coin",
-    "drop": "Quality Beast Claw, Sphinx Feather, Rusty Coin",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98757.0",
@@ -1112,19 +1280,28 @@ const enemyData = [
     "subArea": "Serpent's Burrow",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 752,
     "patk": 177,
     "pdef": 20,
     "matk": 177,
     "mdef": 23,
+    "speed": 118,
+    "crit": 73,
+    "accuracy": 91,
+    "evasion": 91,
+    "exp": 6,
+    "jp": 2,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -1138,10 +1315,7 @@ const enemyData = [
         "name": "Mass Venomous Fang",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (M), Wind Soulstone, Rare Beast Hide",
-    "drop": "Beast Meat, SP-Restoring Nut",
-    "immunities": "Paralysis, Confusion"
+    ]
   },
   {
     "id": "32335.0",
@@ -1150,7 +1324,6 @@ const enemyData = [
     "subArea": "Serpent's Burrow",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -1159,12 +1332,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 239,
     "patk": 132,
     "pdef": 20,
     "matk": 103,
     "mdef": 20,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 5,
+    "jp": 4,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1178,10 +1361,7 @@ const enemyData = [
         "name": "Constrict",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Inspiring Plum Basket",
-    "drop": "Old Coin, Beast Horn, Minotaur Horn",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "32308.0",
@@ -1190,19 +1370,28 @@ const enemyData = [
     "subArea": "Serpent's Burrow",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
       "Staff",
       "Ice"
     ],
+    "weakness": "Axe",
     "level": 6,
     "hp": 252,
     "patk": 132,
     "pdef": 20,
     "matk": 103,
     "mdef": 17,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 5,
+    "jp": 3,
+    "steal": "Cloth",
+    "drop": "Cloth x1 (15%) Cloth x2 (10%) Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1216,10 +1405,7 @@ const enemyData = [
         "name": "Double Stab",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Horn",
-    "drop": "Dragon Scale, Rare Beast Hide, Moonstone",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "32357.0",
@@ -1228,7 +1414,6 @@ const enemyData = [
     "subArea": "Path to Herminia's Manse",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -1237,12 +1422,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 233,
     "patk": 132,
     "pdef": 23,
     "matk": 103,
     "mdef": 23,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 64,
+    "exp": 3,
+    "jp": 2,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1256,10 +1451,7 @@ const enemyData = [
         "name": "Curl Up",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Horn",
-    "drop": "Plum, Grape, Soulstone",
-    "immunities": "Sleep, Curse"
+    ]
   },
   {
     "id": "32323.0",
@@ -1268,7 +1460,6 @@ const enemyData = [
     "subArea": "Path to Herminia's Manse",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -1277,12 +1468,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 246,
     "patk": 132,
     "pdef": 20,
     "matk": 132,
     "mdef": 20,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 5,
+    "jp": 2,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1296,10 +1497,7 @@ const enemyData = [
         "name": "Augmented Magic",
         "type": "Unknown"
       }
-    ],
-    "steal": "Unicorn Horn, Quality Beast Horn",
-    "drop": "Shiny Coin, Grape",
-    "immunities": "Terror, Petrification"
+    ]
   },
   {
     "id": "32358.0",
@@ -1308,7 +1506,6 @@ const enemyData = [
     "subArea": "Path to Herminia's Manse",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -1317,12 +1514,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 6,
     "hp": 230,
     "patk": 132,
     "pdef": 20,
     "matk": 103,
     "mdef": 20,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 4,
+    "jp": 2,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1336,10 +1543,7 @@ const enemyData = [
         "name": "Double Whip",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), HP-Restoring Herb",
-    "drop": "JP, Quality Beast Tusk",
-    "immunities": "Blind, Poison"
+    ]
   },
   {
     "id": "32359.0",
@@ -1348,7 +1552,6 @@ const enemyData = [
     "subArea": "Path to Herminia's Manse",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -1357,12 +1560,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 245,
     "patk": 132,
     "pdef": 20,
     "matk": 132,
     "mdef": 20,
+    "speed": 82,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 5,
+    "jp": 2,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1376,10 +1589,7 @@ const enemyData = [
         "name": "Drink Blood",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide, Hydra Scale",
-    "drop": "Inspiring Plum Basket, Ancient Coin",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98743.0",
@@ -1388,19 +1598,28 @@ const enemyData = [
     "subArea": "Path to Herminia's Manse",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Fan",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 752,
     "patk": 177,
     "pdef": 20,
     "matk": 177,
     "mdef": 23,
+    "speed": 118,
+    "crit": 73,
+    "accuracy": 91,
+    "evasion": 91,
+    "exp": 6,
+    "jp": 2,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1414,10 +1633,7 @@ const enemyData = [
         "name": "Wild Ripper",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide",
-    "drop": "JP",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32391.0",
@@ -1426,7 +1642,6 @@ const enemyData = [
     "subArea": "Emberglow Laboratory: Entrance",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -1435,12 +1650,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 223,
     "patk": 132,
     "pdef": 20,
     "matk": 132,
     "mdef": 20,
+    "speed": 82,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 82,
+    "exp": 3,
+    "jp": 2,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1454,10 +1679,7 @@ const enemyData = [
         "name": "Ice Claw",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Tusk, Revitalizing Jam (L), Wind Soulstone",
-    "drop": "Grape, Rare Beast Fang, Leaf",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98765.0",
@@ -1466,19 +1688,28 @@ const enemyData = [
     "subArea": "Emberglow Laboratory: Entrance",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 752,
     "patk": 177,
     "pdef": 20,
     "matk": 177,
     "mdef": 23,
+    "speed": 118,
+    "crit": 73,
+    "accuracy": 91,
+    "evasion": 91,
+    "exp": 6,
+    "jp": 2,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Body Bash",
@@ -1492,10 +1723,7 @@ const enemyData = [
         "name": "Silencing Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (M), Beast Hide",
-    "drop": "Basilisk Eye",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "32321.0",
@@ -1504,7 +1732,6 @@ const enemyData = [
     "subArea": "Emberglow Laboratory: Entrance Emberglow Laboratory",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -1513,12 +1740,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 228,
     "patk": 103,
     "pdef": 17,
     "matk": 132,
     "mdef": 20,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 5,
+    "jp": 2,
+    "steal": "Shadow Soulstone",
+    "drop": "Shadow Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Shadowshot",
@@ -1532,10 +1769,7 @@ const enemyData = [
         "name": "Abyssal Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Meat, Beast Meat, Quality Beast Horn",
-    "drop": "Herb",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "32346.0",
@@ -1544,7 +1778,6 @@ const enemyData = [
     "subArea": "Emberglow Laboratory: Entrance Emberglow Laboratory",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
@@ -1552,12 +1785,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Bow",
     "level": 6,
     "hp": 239,
     "patk": 103,
     "pdef": 17,
     "matk": 132,
     "mdef": 20,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 5,
+    "jp": 1,
+    "steal": "Shadow Soulstone",
+    "drop": "Shadow Soulstone x1 (4%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Darkstrike",
@@ -1571,10 +1814,7 @@ const enemyData = [
         "name": "Abyssal Strike",
         "type": "Elem"
       }
-    ],
-    "steal": "Revitalizing Jam (M), Blessed Olive (L)",
-    "drop": "Minotaur Horn, Quality Beast Tusk, Olive of Life (M)",
-    "immunities": "Poison, Curse"
+    ]
   },
   {
     "id": "32392.0",
@@ -1583,7 +1823,6 @@ const enemyData = [
     "subArea": "Emberglow Laboratory",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -1592,12 +1831,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 6,
     "hp": 222,
     "patk": 132,
     "pdef": 17,
     "matk": 132,
     "mdef": 23,
+    "speed": 64,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 4,
+    "jp": 2,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1611,10 +1860,7 @@ const enemyData = [
         "name": "Bottled Flame",
         "type": "Elem"
       }
-    ],
-    "steal": "Shiny Coin",
-    "drop": "Griffin Claw, Sunshard, Quality Beast Fang",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98774.0",
@@ -1623,19 +1869,28 @@ const enemyData = [
     "subArea": "Emberglow Laboratory",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
       "Ice",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 6,
     "hp": 752,
     "patk": 177,
     "pdef": 20,
     "matk": 168,
     "mdef": 23,
+    "speed": 118,
+    "crit": 73,
+    "accuracy": 91,
+    "evasion": 91,
+    "exp": 6,
+    "jp": 2,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Light Slam",
@@ -1649,10 +1904,7 @@ const enemyData = [
         "name": "Wild Numbing Dust",
         "type": "Phys"
       }
-    ],
-    "steal": "Light Soulstone, Dragon Scale, Kraken Ink",
-    "drop": "Beast Meat, Herb",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "32311.0",
@@ -1661,7 +1913,6 @@ const enemyData = [
     "subArea": "Amphitheatre: Rehearsal Room Amphitheatre: Dressing Room",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -1670,12 +1921,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 6,
     "hp": 215,
     "patk": 132,
     "pdef": 17,
     "matk": 132,
     "mdef": 20,
+    "speed": 82,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 3,
+    "jp": 2,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1689,10 +1950,7 @@ const enemyData = [
         "name": "Moonlight Waltz",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Fang",
-    "drop": "Silver Nugget",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "32313.0",
@@ -1701,7 +1959,6 @@ const enemyData = [
     "subArea": "Amphitheatre: Rehearsal Room Amphitheatre: Dressing Room",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -1710,12 +1967,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 232,
     "patk": 132,
     "pdef": 17,
     "matk": 132,
     "mdef": 20,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 5,
+    "jp": 2,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1729,10 +1996,7 @@ const enemyData = [
         "name": "Bottled Flame",
         "type": "Elem"
       }
-    ],
-    "steal": "Rusty Coin, Revitalizing Jam (M), Minotaur Horn",
-    "drop": "Soulstone",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "32316.0",
@@ -1741,7 +2005,6 @@ const enemyData = [
     "subArea": "Amphitheatre: Rehearsal Room Amphitheatre: Dressing Room",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -1750,12 +2013,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 247,
     "patk": 103,
     "pdef": 17,
     "matk": 132,
     "mdef": 20,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 5,
+    "jp": 2,
+    "steal": "Fire Soulstone",
+    "drop": "Fire Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Fireshot",
@@ -1769,10 +2042,7 @@ const enemyData = [
         "name": "Wild Fireshot",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Meat, Holy Water (M), Ancient Coin",
-    "drop": "Revitalizing Jam, Sphinx Feather",
-    "immunities": "Sleep, Silence"
+    ]
   },
   {
     "id": "32312.0",
@@ -1781,7 +2051,6 @@ const enemyData = [
     "subArea": "Amphitheatre: Rehearsal Room Amphitheatre: Dressing Room",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -1790,12 +2059,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 6,
     "hp": 226,
     "patk": 132,
     "pdef": 20,
     "matk": 103,
     "mdef": 17,
+    "speed": 73,
+    "crit": 73,
+    "accuracy": 82,
+    "evasion": 73,
+    "exp": 4,
+    "jp": 2,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1809,10 +2088,7 @@ const enemyData = [
         "name": "Slice",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (M), Olive of Life",
-    "drop": "Kraken Ink",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98754.0",
@@ -1821,19 +2097,28 @@ const enemyData = [
     "subArea": "Amphitheatre: Dressing Room",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 752,
     "patk": 177,
     "pdef": 20,
     "matk": 177,
     "mdef": 23,
+    "speed": 118,
+    "crit": 73,
+    "accuracy": 91,
+    "evasion": 91,
+    "exp": 6,
+    "jp": 2,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1847,10 +2132,7 @@ const enemyData = [
         "name": "Cleave in Two",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut, Copper Ore",
-    "drop": "Hydra Scale, Silver Nugget, Rare Beast Tusk",
-    "immunities": "Silence, Terror"
+    ]
   },
   {
     "id": "32322.0",
@@ -1859,7 +2141,6 @@ const enemyData = [
     "subArea": "Snowbloom Ruins Subterranean Snow Ruins",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -1868,12 +2149,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 330,
     "patk": 129,
     "pdef": 19,
     "matk": 166,
     "mdef": 22,
+    "speed": 80,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 7,
+    "jp": 3,
+    "steal": "Shadow Soulstone",
+    "drop": "Shadow Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Shadowshot",
@@ -1887,10 +2178,7 @@ const enemyData = [
         "name": "Wild Shadowshot",
         "type": "Elem"
       }
-    ],
-    "steal": "Holy Water (L)",
-    "drop": "Copper Ore",
-    "immunities": "Confusion, Paralysis"
+    ]
   },
   {
     "id": "32329.0",
@@ -1899,7 +2187,6 @@ const enemyData = [
     "subArea": "Snowbloom Ruins Subterranean Snow Ruins",
     "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -1907,12 +2194,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 351,
     "patk": 166,
     "pdef": 22,
     "matk": 166,
     "mdef": 22,
+    "speed": 70,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 7,
+    "jp": 3,
+    "steal": "Shadow Soulstone",
+    "drop": "Shadow Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1926,10 +2223,7 @@ const enemyData = [
         "name": "Strong Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Ice Soulstone, Iron Ore, Griffin Claw",
-    "drop": "Star Fragment, Beast Meat, Antidote Herb (M)",
-    "immunities": "Petrification, Paralysis"
+    ]
   },
   {
     "id": "32395.0",
@@ -1938,7 +2232,6 @@ const enemyData = [
     "subArea": "Snowbloom Ruins Subterranean Snow Ruins",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -1947,12 +2240,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 307,
     "patk": 166,
     "pdef": 22,
     "matk": 137,
     "mdef": 22,
+    "speed": 89,
+    "crit": 89,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 4,
+    "jp": 3,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -1966,10 +2269,7 @@ const enemyData = [
         "name": "Double Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water (M), Dragon Scale",
-    "drop": "HP-Restoring Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32394.0",
@@ -1978,7 +2278,6 @@ const enemyData = [
     "subArea": "Snowbloom Ruins Subterranean Snow Ruins",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -1987,12 +2286,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 346,
     "patk": 166,
     "pdef": 22,
     "matk": 129,
     "mdef": 22,
+    "speed": 70,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 5,
+    "jp": 4,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2006,10 +2315,7 @@ const enemyData = [
         "name": "Double Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (L), Sunshard, Star Fragment",
-    "drop": "Quality Beast Claw, Holy Water (L), HP-Restoring Herb (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98767.0",
@@ -2018,19 +2324,28 @@ const enemyData = [
     "subArea": "Subterranean Snow Ruins",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Fire",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 10,
     "hp": 1075,
     "patk": 208,
     "pdef": 22,
     "matk": 200,
     "mdef": 22,
+    "speed": 129,
+    "crit": 80,
+    "accuracy": 99,
+    "evasion": 99,
+    "exp": 9,
+    "jp": 4,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Swallow Whole",
@@ -2044,10 +2359,7 @@ const enemyData = [
         "name": "Camouflage",
         "type": "Unknown"
       }
-    ],
-    "steal": "Star Fragment",
-    "drop": "Minotaur Horn, SP-Restoring Nut (M), Inspiring Plum Basket",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "32305.0",
@@ -2056,7 +2368,6 @@ const enemyData = [
     "subArea": "Knights Ardante Garrison",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -2065,12 +2376,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 10,
     "hp": 346,
     "patk": 166,
     "pdef": 22,
     "matk": 129,
     "mdef": 22,
+    "speed": 89,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 5,
+    "jp": 3,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2084,10 +2405,7 @@ const enemyData = [
         "name": "Intimidate",
         "type": "Unknown"
       }
-    ],
-    "steal": "Manticore Stinger, Kraken Ink",
-    "drop": "Revitalizing Jam (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32310.0",
@@ -2096,7 +2414,6 @@ const enemyData = [
     "subArea": "Knights Ardante Garrison",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -2105,12 +2422,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 307,
     "patk": 166,
     "pdef": 22,
     "matk": 129,
     "mdef": 22,
+    "speed": 80,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 4,
+    "jp": 3,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2124,10 +2451,7 @@ const enemyData = [
         "name": "Mandible Crush",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Tusk",
-    "drop": "Dragon Scale",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98756.0",
@@ -2136,19 +2460,28 @@ const enemyData = [
     "subArea": "Knights Ardante Garrison",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 1075,
     "patk": 208,
     "pdef": 22,
     "matk": 200,
     "mdef": 22,
+    "speed": 129,
+    "crit": 80,
+    "accuracy": 99,
+    "evasion": 99,
+    "exp": 9,
+    "jp": 4,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2162,10 +2495,7 @@ const enemyData = [
         "name": "Double Horn",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam, Antidote Herb",
-    "drop": "Manticore Stinger",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "32320.0",
@@ -2174,7 +2504,6 @@ const enemyData = [
     "subArea": "Knights Ardante Garrison",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -2183,12 +2512,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 342,
     "patk": 129,
     "pdef": 19,
     "matk": 166,
     "mdef": 22,
+    "speed": 80,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 7,
+    "jp": 3,
+    "steal": "Wind Soulstone",
+    "drop": "Wind Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Gale Shot",
@@ -2202,10 +2541,7 @@ const enemyData = [
         "name": "Wild Gale Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Minotaur Horn, Beast Fang",
-    "drop": "Antidote Herb (L), Revitalizing Jam",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "32327.0",
@@ -2214,7 +2550,6 @@ const enemyData = [
     "subArea": "Knights Ardante Garrison",
     "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -2222,12 +2557,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 336,
     "patk": 166,
     "pdef": 22,
     "matk": 166,
     "mdef": 22,
+    "speed": 70,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 7,
+    "jp": 3,
+    "steal": "Wind Soulstone",
+    "drop": "Wind Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2241,10 +2586,7 @@ const enemyData = [
         "name": "Strong Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Antidote Herb",
-    "drop": "Antidote Herb (L)",
-    "immunities": "Blind, Sleep"
+    ]
   },
   {
     "id": "32397.0",
@@ -2253,7 +2595,6 @@ const enemyData = [
     "subArea": "Emberglow Slopes",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -2262,12 +2603,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 311,
     "patk": 166,
     "pdef": 22,
     "matk": 166,
     "mdef": 22,
+    "speed": 80,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 5,
+    "jp": 3,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2281,10 +2632,7 @@ const enemyData = [
         "name": "Photosynthesis",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water (M), Ice Soulstone, Holy Water (L)",
-    "drop": "Quality Beast Claw, Chimera Fang, Sphinx Feather",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "32396.0",
@@ -2293,7 +2641,6 @@ const enemyData = [
     "subArea": "Emberglow Slopes",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
@@ -2301,12 +2648,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 10,
     "hp": 307,
     "patk": 129,
     "pdef": 22,
     "matk": 166,
     "mdef": 22,
+    "speed": 80,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 4,
+    "jp": 4,
+    "steal": "Ice Soulstone",
+    "drop": "Ice Soulstone x1 (4%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Gelid Strike",
@@ -2320,10 +2677,7 @@ const enemyData = [
         "name": "Congealing Strike",
         "type": "Elem"
       }
-    ],
-    "steal": "Sphinx Feather, Nut",
-    "drop": "Beast Tusk",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98768.0",
@@ -2332,7 +2686,6 @@ const enemyData = [
     "subArea": "Emberglow Slopes",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -2340,12 +2693,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 10,
     "hp": 1075,
     "patk": 208,
     "pdef": 22,
     "matk": 200,
     "mdef": 22,
+    "speed": 129,
+    "crit": 80,
+    "accuracy": 99,
+    "evasion": 99,
+    "exp": 9,
+    "jp": 4,
+    "steal": "Stone",
+    "drop": "Stone x1 (15%) Stone x2 (10%) Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Slumber Slash",
@@ -2359,10 +2722,7 @@ const enemyData = [
         "name": "Wild Cut",
         "type": "Phys"
       }
-    ],
-    "steal": "Kraken Ink",
-    "drop": "Quality Beast Claw, Blessed Olive (M)",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "32385.0",
@@ -2371,7 +2731,6 @@ const enemyData = [
     "subArea": "Emberglow Slopes",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -2379,12 +2738,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 10,
     "hp": 324,
     "patk": 166,
     "pdef": 22,
     "matk": 129,
     "mdef": 22,
+    "speed": 80,
+    "crit": 89,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 7,
+    "jp": 3,
+    "steal": "Stone",
+    "drop": "Stone x1 (15%) Stone x2 (10%) Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2398,10 +2767,7 @@ const enemyData = [
         "name": "Wild Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive (M), Wind Soulstone",
-    "drop": "Beast Hide, Silver Nugget, Inspiring Plum Basket",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "32398.0",
@@ -2410,7 +2776,6 @@ const enemyData = [
     "subArea": "Emberglow Slopes",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -2419,12 +2784,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 352,
     "patk": 166,
     "pdef": 22,
     "matk": 166,
     "mdef": 22,
+    "speed": 89,
+    "crit": 80,
+    "accuracy": 80,
+    "evasion": 89,
+    "exp": 7,
+    "jp": 3,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2438,10 +2813,7 @@ const enemyData = [
         "name": "Wild Ice Claw",
         "type": "Elem"
       }
-    ],
-    "steal": "Gold Dust, SP-Restoring Nut, Antidote Herb (L)",
-    "drop": "Unicorn Horn",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "32363.0",
@@ -2450,7 +2822,6 @@ const enemyData = [
     "subArea": "Auguste's Villa: Entrance Auguste's Villa",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -2459,12 +2830,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 318,
     "patk": 166,
     "pdef": 22,
     "matk": 129,
     "mdef": 19,
+    "speed": 80,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 5,
+    "jp": 4,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2478,10 +2859,7 @@ const enemyData = [
         "name": "Cleave in Two",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Meat, Blessed Olive (M), HP-Restoring Herb",
-    "drop": "Olive",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "32362.0",
@@ -2490,7 +2868,6 @@ const enemyData = [
     "subArea": "Auguste's Villa: Entrance Auguste's Villa",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -2499,12 +2876,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 307,
     "patk": 166,
     "pdef": 22,
     "matk": 129,
     "mdef": 22,
+    "speed": 89,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 4,
+    "jp": 4,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2518,10 +2905,7 @@ const enemyData = [
         "name": "Armor Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Claw",
-    "drop": "Rare Beast Tusk, Rare Beast Hide, Kraken Ink",
-    "immunities": "Instant Death, Confusion"
+    ]
   },
   {
     "id": "98745.0",
@@ -2530,7 +2914,6 @@ const enemyData = [
     "subArea": "Auguste's Villa: Entrance",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -2539,12 +2922,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 1075,
     "patk": 224,
     "pdef": 22,
     "matk": 200,
     "mdef": 22,
+    "speed": 129,
+    "crit": 80,
+    "accuracy": 99,
+    "evasion": 99,
+    "exp": 9,
+    "jp": 4,
+    "steal": "Thunder Soulstone",
+    "drop": "Thunder Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Lightning Shot",
@@ -2558,10 +2951,7 @@ const enemyData = [
         "name": "Wild Lightning Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Sphinx Feather, Rare Beast Fang, Healing Grape",
-    "drop": "SP-Restoring Nut, Leaf, Rare Beast Hide",
-    "immunities": "Instant Death, Petrification"
+    ]
   },
   {
     "id": "32319.0",
@@ -2570,7 +2960,6 @@ const enemyData = [
     "subArea": "Auguste's Villa: Entrance Auguste's Villa",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -2579,12 +2968,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 329,
     "patk": 129,
     "pdef": 19,
     "matk": 166,
     "mdef": 22,
+    "speed": 80,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 7,
+    "jp": 4,
+    "steal": "Thunder Soulstone",
+    "drop": "Thunder Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Lightning Shot",
@@ -2598,10 +2997,7 @@ const enemyData = [
         "name": "Wild Lightning Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Sunshard, Beast Hide, Quality Beast Claw",
-    "drop": "Rare Beast Horn, Leaf, SP-Restoring Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32328.0",
@@ -2610,7 +3006,6 @@ const enemyData = [
     "subArea": "Auguste's Villa: Entrance Auguste's Villa",
     "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -2618,12 +3013,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 343,
     "patk": 166,
     "pdef": 22,
     "matk": 166,
     "mdef": 22,
+    "speed": 70,
+    "crit": 80,
+    "accuracy": 89,
+    "evasion": 80,
+    "exp": 7,
+    "jp": 4,
+    "steal": "Thunder Soulstone",
+    "drop": "Thunder Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2637,10 +3042,7 @@ const enemyData = [
         "name": "Strong Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Meat",
-    "drop": "Copper Ore, Olive of Life (M)",
-    "immunities": "Confusion, Instant Death"
+    ]
   },
   {
     "id": "32360.0",
@@ -2649,7 +3051,6 @@ const enemyData = [
     "subArea": "Herminia's Manse Herminia's Manse: Cellars",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -2658,12 +3059,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 16,
     "hp": 473,
     "patk": 190,
     "pdef": 24,
     "matk": 169,
     "mdef": 21,
+    "speed": 90,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 11,
+    "jp": 6,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2677,10 +3088,7 @@ const enemyData = [
         "name": "Cleave in Two",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (L), Unicorn Horn, Wind Soulstone",
-    "drop": "Herb, Sunshard, Silver Nugget",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32361.0",
@@ -2689,7 +3097,6 @@ const enemyData = [
     "subArea": "Herminia's Manse Herminia's Manse: Cellars",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -2698,12 +3105,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 16,
     "hp": 492,
     "patk": 190,
     "pdef": 24,
     "matk": 169,
     "mdef": 21,
+    "speed": 90,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 13,
+    "jp": 6,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2717,10 +3134,7 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk, Gold Dust, SP-Restoring Nut",
-    "drop": "Minotaur Horn, Revitalizing Jam (M), Grape",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98744.0",
@@ -2729,7 +3143,6 @@ const enemyData = [
     "subArea": "Herminia's Manse Herminia's Manse: Cellars",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -2737,12 +3150,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 1600,
     "patk": 246,
     "pdef": 24,
     "matk": 263,
     "mdef": 24,
+    "speed": 145,
+    "crit": 90,
+    "accuracy": 112,
+    "evasion": 112,
+    "exp": 20,
+    "jp": 6,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -2756,10 +3179,7 @@ const enemyData = [
         "name": "Lower Defenses",
         "type": "Unknown"
       }
-    ],
-    "steal": "Old Coin, SP-Restoring Nut (L), Moonstone",
-    "drop": "Holy Water",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32326.0",
@@ -2768,7 +3188,6 @@ const enemyData = [
     "subArea": "Herminia's Manse Ceremonial Square Cathedral of Tytos",
     "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Tome",
@@ -2776,12 +3195,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 534,
     "patk": 190,
     "pdef": 24,
     "matk": 190,
     "mdef": 24,
+    "speed": 78,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 16,
+    "jp": 6,
+    "steal": "Ice Soulstone",
+    "drop": "Ice Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2795,10 +3224,7 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Claw, Antidote Herb",
-    "drop": "SP-Restoring Nut, Quality Beast Tusk, Leaf",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32325.0",
@@ -2807,7 +3233,6 @@ const enemyData = [
     "subArea": "Herminia's Manse Amphitheatre: Backstage Amphitheatre: Underground",
     "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -2815,12 +3240,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 518,
     "patk": 190,
     "pdef": 24,
     "matk": 190,
     "mdef": 24,
+    "speed": 78,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 15,
+    "jp": 5,
+    "steal": "Fire Soulstone",
+    "drop": "Fire Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2834,10 +3269,7 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Fire Soulstone, Rare Beast Tusk, Sphinx Feather",
-    "drop": "Kraken Ink",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "32331.0",
@@ -2846,7 +3278,6 @@ const enemyData = [
     "subArea": "Herminia's Manse: Cellars",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -2854,12 +3285,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 516,
     "patk": 190,
     "pdef": 24,
     "matk": 190,
     "mdef": 24,
+    "speed": 90,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 15,
+    "jp": 6,
+    "steal": "Fire Soulstone",
+    "drop": "Fire Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Ignition",
@@ -2873,10 +3314,7 @@ const enemyData = [
         "name": "Mass Ignition",
         "type": "Elem"
       }
-    ],
-    "steal": "Dragon Scale, Antidote Herb (L)",
-    "drop": "SP-Restoring Nut, Revitalizing Jam (M), Antidote Herb (M)",
-    "immunities": "Curse, Silence"
+    ]
   },
   {
     "id": "32332.0",
@@ -2885,7 +3323,6 @@ const enemyData = [
     "subArea": "Herminia's Manse: Cellars",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -2893,12 +3330,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 533,
     "patk": 190,
     "pdef": 24,
     "matk": 190,
     "mdef": 24,
+    "speed": 90,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 16,
+    "jp": 5,
+    "steal": "Ice Soulstone",
+    "drop": "Ice Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Ice Thaw",
@@ -2912,10 +3359,7 @@ const enemyData = [
         "name": "Mass Ice Thaw",
         "type": "Elem"
       }
-    ],
-    "steal": "Revitalizing Jam, Minotaur Horn",
-    "drop": "Blessed Olive (M)",
-    "immunities": "Terror, Confusion"
+    ]
   },
   {
     "id": "32317.0",
@@ -2924,7 +3368,6 @@ const enemyData = [
     "subArea": "Ceremonial Square Cathedral of Tytos",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -2933,12 +3376,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 16,
     "hp": 493,
     "patk": 169,
     "pdef": 21,
     "matk": 190,
     "mdef": 24,
+    "speed": 90,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 15,
+    "jp": 6,
+    "steal": "Ice Soulstone",
+    "drop": "Ice Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Freeze Shot",
@@ -2952,10 +3405,7 @@ const enemyData = [
         "name": "Wild Freeze Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Shadow Soulstone",
-    "drop": "Quality Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32400.0",
@@ -2964,7 +3414,6 @@ const enemyData = [
     "subArea": "Ceremonial Square Cathedral of Tytos",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -2973,12 +3422,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 16,
     "hp": 477,
     "patk": 190,
     "pdef": 21,
     "matk": 190,
     "mdef": 28,
+    "speed": 78,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 13,
+    "jp": 5,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -2992,10 +3451,7 @@ const enemyData = [
         "name": "Fire Soulstone",
         "type": "Elem"
       }
-    ],
-    "steal": "Fire Soulstone, Gold Dust, Nut",
-    "drop": "Rare Beast Meat",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "32399.0",
@@ -3004,7 +3460,6 @@ const enemyData = [
     "subArea": "Ceremonial Square Cathedral of Tytos",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -3013,12 +3468,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 16,
     "hp": 457,
     "patk": 190,
     "pdef": 21,
     "matk": 190,
     "mdef": 28,
+    "speed": 78,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 11,
+    "jp": 5,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3032,10 +3497,7 @@ const enemyData = [
         "name": "Restore Health",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Horn, Minotaur Horn",
-    "drop": "Sunshard, SP-Restoring Nut (L)",
-    "immunities": "Instant Death, Paralysis"
+    ]
   },
   {
     "id": "98775.0",
@@ -3044,7 +3506,6 @@ const enemyData = [
     "subArea": "Cathedral of Tytos",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -3053,12 +3514,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 1600,
     "patk": 246,
     "pdef": 24,
     "matk": 242,
     "mdef": 24,
+    "speed": 145,
+    "crit": 90,
+    "accuracy": 112,
+    "evasion": 112,
+    "exp": 20,
+    "jp": 6,
+    "steal": "Ice Soulstone",
+    "drop": "Ice Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Freeze Shot",
@@ -3072,10 +3543,7 @@ const enemyData = [
         "name": "Wild Freeze Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb (M), Rare Beast Claw, Griffin Claw",
-    "drop": "Holy Water, SP-Restoring Nut (L), Minotaur Horn",
-    "immunities": "Confusion, Instant Death"
+    ]
   },
   {
     "id": "32315.0",
@@ -3084,7 +3552,6 @@ const enemyData = [
     "subArea": "Amphitheatre: Backstage Amphitheatre: Underground",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -3093,12 +3560,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 467,
     "patk": 190,
     "pdef": 21,
     "matk": 190,
     "mdef": 24,
+    "speed": 90,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 13,
+    "jp": 5,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3112,10 +3589,7 @@ const enemyData = [
         "name": "Bottled Ice",
         "type": "Elem"
       }
-    ],
-    "steal": "Basilisk Eye, Rare Beast Tusk, Ice Soulstone",
-    "drop": "Olive of Life (M), Phoenix Feather",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "32314.0",
@@ -3124,7 +3598,6 @@ const enemyData = [
     "subArea": "Amphitheatre: Backstage Amphitheatre: Underground",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -3133,12 +3606,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 457,
     "patk": 190,
     "pdef": 21,
     "matk": 190,
     "mdef": 24,
+    "speed": 90,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 11,
+    "jp": 5,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3152,10 +3635,7 @@ const enemyData = [
         "name": "Bottled Lightning",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Hide",
-    "drop": "Inspiring Plum Basket, Copper Ore",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98755.0",
@@ -3164,19 +3644,28 @@ const enemyData = [
     "subArea": "Amphitheatre: Backstage Amphitheatre: Underground",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
       "Ice",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 16,
     "hp": 1600,
     "patk": 246,
     "pdef": 24,
     "matk": 242,
     "mdef": 24,
+    "speed": 123,
+    "crit": 90,
+    "accuracy": 112,
+    "evasion": 112,
+    "exp": 20,
+    "jp": 6,
+    "steal": "Fire Soulstone",
+    "drop": "Fire Soulstone x1 (4%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Fireshot",
@@ -3190,10 +3679,7 @@ const enemyData = [
         "name": "Wild Fireshot",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb",
-    "drop": "Cerberus Fang, Quality Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32330.0",
@@ -3202,7 +3688,6 @@ const enemyData = [
     "subArea": "Amphitheatre: Backstage Amphitheatre: Underground",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -3211,12 +3696,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 532,
     "patk": 190,
     "pdef": 24,
     "matk": 190,
     "mdef": 24,
+    "speed": 101,
+    "crit": 90,
+    "accuracy": 101,
+    "evasion": 90,
+    "exp": 16,
+    "jp": 5,
+    "steal": "Fire Soulstone",
+    "drop": "Fire Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3230,10 +3725,7 @@ const enemyData = [
         "name": "Flaming Impact",
         "type": "Elem"
       }
-    ],
-    "steal": "Beast Fang, Shiny Coin, Quality Beast Meat",
-    "drop": "Rare Beast Meat, HP-Restoring Herb",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98043.0",
@@ -3242,7 +3734,6 @@ const enemyData = [
     "subArea": "Rippletide Coast",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -3250,12 +3741,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 1186,
     "patk": 235,
     "pdef": 26,
     "matk": 235,
     "mdef": 26,
+    "speed": 132,
+    "crit": 96,
+    "accuracy": 108,
+    "evasion": 96,
+    "exp": 11,
+    "jp": 7,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3269,10 +3770,7 @@ const enemyData = [
         "name": "Multi-Shot",
         "type": "Phys"
       }
-    ],
-    "steal": "Minotaur Horn, Copper Ore, Silver Nugget",
-    "drop": "Unicorn Horn, Sunshard",
-    "immunities": "Instant Death, Silence"
+    ]
   },
   {
     "id": "98044.0",
@@ -3281,7 +3779,6 @@ const enemyData = [
     "subArea": "Rippletide Coast",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -3289,12 +3786,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 1229,
     "patk": 235,
     "pdef": 26,
     "matk": 235,
     "mdef": 26,
+    "speed": 132,
+    "crit": 96,
+    "accuracy": 108,
+    "evasion": 96,
+    "exp": 12,
+    "jp": 7,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3308,10 +3815,7 @@ const enemyData = [
         "name": "Electrocute",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Horn, Quality Beast Horn, Olive of Life",
-    "drop": "Sunshard, Blessed Olive (L), Antidote Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98045.0",
@@ -3320,19 +3824,28 @@ const enemyData = [
     "subArea": "Rippletide Coast",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Staff",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 20,
     "hp": 1279,
     "patk": 235,
     "pdef": 26,
     "matk": 235,
     "mdef": 26,
+    "speed": 120,
+    "crit": 96,
+    "accuracy": 108,
+    "evasion": 96,
+    "exp": 14,
+    "jp": 7,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3346,10 +3859,7 @@ const enemyData = [
         "name": "Poison Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Meteorite, Silver Nugget",
-    "drop": "Beast Meat, Olive, Cerberus Fang",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98046.0",
@@ -3358,7 +3868,6 @@ const enemyData = [
     "subArea": "Rippletide Coast",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -3366,12 +3875,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 1388,
     "patk": 235,
     "pdef": 30,
     "matk": 235,
     "mdef": 30,
+    "speed": 120,
+    "crit": 96,
+    "accuracy": 108,
+    "evasion": 96,
+    "exp": 15,
+    "jp": 7,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3385,10 +3904,7 @@ const enemyData = [
         "name": "Hide in Shell",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ice Soulstone, Herb",
-    "drop": "Holy Water (M), Herb, Cerberus Fang",
-    "immunities": "Confusion, Terror"
+    ]
   },
   {
     "id": "98047.0",
@@ -3397,7 +3913,6 @@ const enemyData = [
     "subArea": "Isle of Orsa Isle of Orsa: Depths",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -3405,12 +3920,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 21,
     "hp": 1240,
     "patk": 240,
     "pdef": 26,
     "matk": 240,
     "mdef": 26,
+    "speed": 135,
+    "crit": 98,
+    "accuracy": 110,
+    "evasion": 98,
+    "exp": 14,
+    "jp": 7,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3424,10 +3949,7 @@ const enemyData = [
         "name": "Physical Boost",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb, Basilisk Eye, Inspiring Plum Basket",
-    "drop": "Olive",
-    "immunities": "Petrification, Paralysis"
+    ]
   },
   {
     "id": "98048.0",
@@ -3436,7 +3958,6 @@ const enemyData = [
     "subArea": "Isle of Orsa Isle of Orsa: Depths",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -3444,12 +3965,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 21,
     "hp": 1254,
     "patk": 240,
     "pdef": 26,
     "matk": 240,
     "mdef": 26,
+    "speed": 135,
+    "crit": 98,
+    "accuracy": 110,
+    "evasion": 98,
+    "exp": 16,
+    "jp": 7,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3463,10 +3994,7 @@ const enemyData = [
         "name": "Barrage",
         "type": "Phys"
       }
-    ],
-    "steal": "Moonstone, Star Fragment, HP-Restoring Herb",
-    "drop": "Quality Beast Meat",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98052.0",
@@ -3475,7 +4003,6 @@ const enemyData = [
     "subArea": "Isle of Orsa Isle of Orsa: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -3483,12 +4010,22 @@ const enemyData = [
       "Fan",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 21,
     "hp": 1369,
     "patk": 240,
     "pdef": 26,
     "matk": 240,
     "mdef": 26,
+    "speed": 122,
+    "crit": 98,
+    "accuracy": 110,
+    "evasion": 98,
+    "exp": 20,
+    "jp": 7,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3502,10 +4039,7 @@ const enemyData = [
         "name": "Physical Boost",
         "type": "Unknown"
       }
-    ],
-    "steal": "Iron Ore, Quality Beast Claw, Chimera Fang",
-    "drop": "Beast Fang, Kraken Ink, Dragon Scale",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98051.0",
@@ -3514,19 +4048,28 @@ const enemyData = [
     "subArea": "Isle of Orsa Isle of Orsa: Depths",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Staff",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 21,
     "hp": 1327,
     "patk": 240,
     "pdef": 26,
     "matk": 240,
     "mdef": 26,
+    "speed": 122,
+    "crit": 98,
+    "accuracy": 110,
+    "evasion": 98,
+    "exp": 18,
+    "jp": 7,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3540,10 +4083,7 @@ const enemyData = [
         "name": "Poison Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (M)",
-    "drop": "Revitalizing Jam (M), Revitalizing Jam, Leaf",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98762.0",
@@ -3552,19 +4092,28 @@ const enemyData = [
     "subArea": "Isle of Orsa: Depths",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Staff",
       "Tome",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 21,
     "hp": 2170,
     "patk": 276,
     "pdef": 26,
     "matk": 268,
     "mdef": 26,
+    "speed": 159,
+    "crit": 110,
+    "accuracy": 122,
+    "evasion": 122,
+    "exp": 24,
+    "jp": 8,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3578,10 +4127,7 @@ const enemyData = [
         "name": "Thousand Scythes",
         "type": "Elem"
       }
-    ],
-    "steal": "Lightning Soulstone",
-    "drop": "Antidote Herb (L), Rare Beast Meat, HP-Restoring Herb (M)",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98333.0",
@@ -3590,19 +4136,28 @@ const enemyData = [
     "subArea": "Middlesea",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 25,
     "hp": 1454,
     "patk": 287,
     "pdef": 28,
     "matk": 287,
     "mdef": 28,
+    "speed": 131,
+    "crit": 118,
+    "accuracy": 105,
+    "evasion": 105,
+    "exp": 11,
+    "jp": 7,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3616,10 +4171,7 @@ const enemyData = [
         "name": "Needle Cannon",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Fang, Silver Nugget, Griffin Claw",
-    "drop": "Quality Beast Fang, Hydra Scale, SP-Restoring Nut",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98334.0",
@@ -3628,19 +4180,28 @@ const enemyData = [
     "subArea": "Middlesea",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Fire",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 25,
     "hp": 1477,
     "patk": 287,
     "pdef": 28,
     "matk": 287,
     "mdef": 28,
+    "speed": 131,
+    "crit": 118,
+    "accuracy": 118,
+    "evasion": 105,
+    "exp": 12,
+    "jp": 7,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3654,10 +4215,7 @@ const enemyData = [
         "name": "Tail Spin",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Hide, Healing Grape, Cerberus Fang",
-    "drop": "EXP",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98335.0",
@@ -3666,19 +4224,28 @@ const enemyData = [
     "subArea": "Middlesea",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 25,
     "hp": 1569,
     "patk": 287,
     "pdef": 28,
     "matk": 287,
     "mdef": 28,
+    "speed": 131,
+    "crit": 118,
+    "accuracy": 118,
+    "evasion": 105,
+    "exp": 14,
+    "jp": 7,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3692,10 +4259,7 @@ const enemyData = [
         "name": "Silencing Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water, Olive of Life (M)",
-    "drop": "Hydra Scale, Sphinx Feather",
-    "immunities": "Silence, Terror"
+    ]
   },
   {
     "id": "98336.0",
@@ -3704,19 +4268,28 @@ const enemyData = [
     "subArea": "Middlesea",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
       "Fire",
       "Wind"
     ],
+    "weakness": "Axe",
     "level": 25,
     "hp": 1660,
     "patk": 287,
     "pdef": 28,
     "matk": 287,
     "mdef": 28,
+    "speed": 131,
+    "crit": 118,
+    "accuracy": 118,
+    "evasion": 105,
+    "exp": 15,
+    "jp": 7,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3730,10 +4303,7 @@ const enemyData = [
         "name": "Poison Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Copper Ore, Beast Horn, Shiny Coin",
-    "drop": "Herb, Basilisk Eye",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32350.0",
@@ -3742,19 +4312,28 @@ const enemyData = [
     "subArea": "West Valore Trail",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Thunder",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 24,
     "hp": 1388,
     "patk": 282,
     "pdef": 28,
     "matk": 282,
     "mdef": 28,
+    "speed": 141,
+    "crit": 103,
+    "accuracy": 116,
+    "evasion": 116,
+    "exp": 13,
+    "jp": 8,
+    "steal": "Lumber",
+    "drop": "Lumber x1 (15%) Lumber x2 (10%) Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3768,10 +4347,7 @@ const enemyData = [
         "name": "Dual Shot",
         "type": "Phys"
       }
-    ],
-    "steal": "Cerberus Fang, SP-Restoring Nut (L), Manticore Stinger",
-    "drop": "Cerberus Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32338.0",
@@ -3780,19 +4356,28 @@ const enemyData = [
     "subArea": "West Valore Trail",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Staff",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 24,
     "hp": 1471,
     "patk": 282,
     "pdef": 28,
     "matk": 282,
     "mdef": 28,
+    "speed": 141,
+    "crit": 103,
+    "accuracy": 116,
+    "evasion": 103,
+    "exp": 17,
+    "jp": 8,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3806,10 +4391,7 @@ const enemyData = [
         "name": "Slumberwave",
         "type": "Phys"
       }
-    ],
-    "steal": "Phoenix Feather",
-    "drop": "Soulstone, Quality Beast Claw",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "32351.0",
@@ -3818,19 +4400,28 @@ const enemyData = [
     "subArea": "West Valore Trail",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Fan",
       "Fire"
     ],
+    "weakness": "Spear",
     "level": 24,
     "hp": 1412,
     "patk": 282,
     "pdef": 28,
     "matk": 282,
     "mdef": 28,
+    "speed": 141,
+    "crit": 103,
+    "accuracy": 116,
+    "evasion": 116,
+    "exp": 15,
+    "jp": 8,
+    "steal": "Lumber",
+    "drop": "Lumber x1 (15%) Lumber x2 (10%) Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3844,10 +4435,7 @@ const enemyData = [
         "name": "Super Shot",
         "type": "Phys"
       }
-    ],
-    "steal": "Old Coin, Quality Beast Tusk",
-    "drop": "EXP",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "32356.0",
@@ -3856,19 +4444,28 @@ const enemyData = [
     "subArea": "West Valore Trail",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Thunder",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 24,
     "hp": 1533,
     "patk": 282,
     "pdef": 24,
     "matk": 282,
     "mdef": 28,
+    "speed": 141,
+    "crit": 103,
+    "accuracy": 116,
+    "evasion": 103,
+    "exp": 19,
+    "jp": 8,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3882,10 +4479,7 @@ const enemyData = [
         "name": "Toxic Cloud",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water, Iron Ore, Quality Beast Tusk",
-    "drop": "Iron Ore, Olive, HP-Restoring Herb",
-    "immunities": "Curse, Silence"
+    ]
   },
   {
     "id": "98073.0",
@@ -3894,19 +4488,28 @@ const enemyData = [
     "subArea": "Cragspear Pass",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fan",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 24,
     "hp": 1456,
     "patk": 282,
     "pdef": 28,
     "matk": 282,
     "mdef": 28,
+    "speed": 141,
+    "crit": 103,
+    "accuracy": 116,
+    "evasion": 103,
+    "exp": 15,
+    "jp": 8,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3920,10 +4523,7 @@ const enemyData = [
         "name": "Photosynthesis",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life",
-    "drop": "HP-Restoring Herb (L), Rusty Coin, Griffin Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98072.0",
@@ -3932,19 +4532,28 @@ const enemyData = [
     "subArea": "Cragspear Pass",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 24,
     "hp": 1388,
     "patk": 282,
     "pdef": 28,
     "matk": 282,
     "mdef": 28,
+    "speed": 141,
+    "crit": 103,
+    "accuracy": 116,
+    "evasion": 103,
+    "exp": 13,
+    "jp": 8,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3958,10 +4567,7 @@ const enemyData = [
         "name": "Spin Attack",
         "type": "Phys"
       }
-    ],
-    "steal": "Silver Nugget, Revitalizing Jam (M), Sunshard",
-    "drop": "Rare Beast Meat, Healing Grape Bunch",
-    "immunities": "Stun, Petrification"
+    ]
   },
   {
     "id": "98075.0",
@@ -3970,7 +4576,6 @@ const enemyData = [
     "subArea": "Cragspear Pass",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Staff",
@@ -3978,12 +4583,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 24,
     "hp": 1535,
     "patk": 282,
     "pdef": 28,
     "matk": 282,
     "mdef": 28,
+    "speed": 141,
+    "crit": 103,
+    "accuracy": 116,
+    "evasion": 103,
+    "exp": 19,
+    "jp": 8,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -3997,10 +4612,7 @@ const enemyData = [
         "name": "Rushing Scratch",
         "type": "Phys"
       }
-    ],
-    "steal": "Griffin Claw, SP-Restoring Nut, Herb",
-    "drop": "Silver Nugget, Basilisk Eye",
-    "immunities": "Stun, Poison"
+    ]
   },
   {
     "id": "98074.0",
@@ -4009,7 +4621,6 @@ const enemyData = [
     "subArea": "Cragspear Pass",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -4017,12 +4628,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 24,
     "hp": 1481,
     "patk": 282,
     "pdef": 28,
     "matk": 282,
     "mdef": 28,
+    "speed": 141,
+    "crit": 103,
+    "accuracy": 116,
+    "evasion": 116,
+    "exp": 17,
+    "jp": 8,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4036,10 +4657,7 @@ const enemyData = [
         "name": "Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Star Fragment",
-    "drop": "Holy Water",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98076.0",
@@ -4048,19 +4666,28 @@ const enemyData = [
     "subArea": "Gray Grotto Gray Grotto: Depths",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 25,
     "hp": 1454,
     "patk": 287,
     "pdef": 28,
     "matk": 287,
     "mdef": 28,
+    "speed": 144,
+    "crit": 105,
+    "accuracy": 118,
+    "evasion": 105,
+    "exp": 14,
+    "jp": 8,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4074,10 +4701,7 @@ const enemyData = [
         "name": "Double Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (L), Rare Beast Tusk",
-    "drop": "Rare Beast Fang, Soulstone",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98078.0",
@@ -4086,19 +4710,28 @@ const enemyData = [
     "subArea": "Gray Grotto Gray Grotto: Depths",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fan",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 25,
     "hp": 1645,
     "patk": 287,
     "pdef": 33,
     "matk": 287,
     "mdef": 28,
+    "speed": 118,
+    "crit": 105,
+    "accuracy": 118,
+    "evasion": 105,
+    "exp": 18,
+    "jp": 8,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4112,10 +4745,7 @@ const enemyData = [
         "name": "Rock of the Heavens",
         "type": "Unknown"
       }
-    ],
-    "steal": "Copper Ore, Rare Beast Fang, HP-Restoring Herb (M)",
-    "drop": "Grape, Quality Beast Tusk",
-    "immunities": "Stun, Petrification"
+    ]
   },
   {
     "id": "98077.0",
@@ -4124,19 +4754,28 @@ const enemyData = [
     "subArea": "Gray Grotto Gray Grotto: Depths",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Fire",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 25,
     "hp": 1494,
     "patk": 287,
     "pdef": 28,
     "matk": 287,
     "mdef": 28,
+    "speed": 144,
+    "crit": 105,
+    "accuracy": 118,
+    "evasion": 105,
+    "exp": 16,
+    "jp": 8,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4150,10 +4789,7 @@ const enemyData = [
         "name": "Spin Attack",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Meat, Light Soulstone",
-    "drop": "SP-Restoring Nut, Olive of Life (M)",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98079.0",
@@ -4162,19 +4798,28 @@ const enemyData = [
     "subArea": "Gray Grotto",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 25,
     "hp": 1677,
     "patk": 287,
     "pdef": 33,
     "matk": 287,
     "mdef": 33,
+    "speed": 131,
+    "crit": 105,
+    "accuracy": 118,
+    "evasion": 105,
+    "exp": 20,
+    "jp": 8,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4188,10 +4833,7 @@ const enemyData = [
         "name": "Hide in Shell",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Claw, Inspiring Plum Basket",
-    "drop": "Dragon Scale, SP-Restoring Nut",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98735.0",
@@ -4200,19 +4842,28 @@ const enemyData = [
     "subArea": "Gray Grotto: Depths",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Staff",
       "Ice",
       "Thunder"
     ],
+    "weakness": "Bow",
     "level": 25,
     "hp": 2545,
     "patk": 322,
     "pdef": 28,
     "matk": 317,
     "mdef": 28,
+    "speed": 170,
+    "crit": 118,
+    "accuracy": 131,
+    "evasion": 131,
+    "exp": 32,
+    "jp": 9,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4226,10 +4877,7 @@ const enemyData = [
         "name": "Thousand Scythes",
         "type": "Elem"
       }
-    ],
-    "steal": "Kraken Ink, Nut",
-    "drop": "Quality Beast Horn, Soulstone",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98080.0",
@@ -4238,19 +4886,28 @@ const enemyData = [
     "subArea": "Gray Grotto: Depths",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 25,
     "hp": 1713,
     "patk": 287,
     "pdef": 33,
     "matk": 287,
     "mdef": 33,
+    "speed": 131,
+    "crit": 105,
+    "accuracy": 118,
+    "evasion": 105,
+    "exp": 26,
+    "jp": 8,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4264,10 +4921,7 @@ const enemyData = [
         "name": "Hide with Ally",
         "type": "Unknown"
       }
-    ],
-    "steal": "Meteorite",
-    "drop": "Blessed Olive (M), Rare Beast Horn, Manticore Stinger",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98084.0",
@@ -4276,19 +4930,28 @@ const enemyData = [
     "subArea": "Geist Canyon: South",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Staff",
       "Fire",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 26,
     "hp": 1733,
     "patk": 291,
     "pdef": 29,
     "matk": 291,
     "mdef": 29,
+    "speed": 133,
+    "crit": 106,
+    "accuracy": 120,
+    "evasion": 106,
+    "exp": 21,
+    "jp": 9,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4302,10 +4965,7 @@ const enemyData = [
         "name": "Light My Fire",
         "type": "Unknown"
       }
-    ],
-    "steal": "Moonstone, Antidote Herb, Sunshard",
-    "drop": "Blessed Olive (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98081.0",
@@ -4314,19 +4974,28 @@ const enemyData = [
     "subArea": "Geist Canyon: South Geist Canyon",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 26,
     "hp": 1522,
     "patk": 291,
     "pdef": 29,
     "matk": 291,
     "mdef": 29,
+    "speed": 146,
+    "crit": 106,
+    "accuracy": 120,
+    "evasion": 106,
+    "exp": 15,
+    "jp": 9,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4340,10 +5009,7 @@ const enemyData = [
         "name": "Rush Stab",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide, Beast Claw",
-    "drop": "Rare Beast Fang, Quality Beast Claw",
-    "immunities": "Sleep, Silence"
+    ]
   },
   {
     "id": "98083.0",
@@ -4352,19 +5018,28 @@ const enemyData = [
     "subArea": "Geist Canyon: South",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fan",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 26,
     "hp": 1710,
     "patk": 291,
     "pdef": 33,
     "matk": 291,
     "mdef": 33,
+    "speed": 133,
+    "crit": 106,
+    "accuracy": 120,
+    "evasion": 106,
+    "exp": 20,
+    "jp": 9,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4378,10 +5053,7 @@ const enemyData = [
         "name": "Whirling Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Meat, Healing Grape, Antidote Herb (L)",
-    "drop": "Gold",
-    "immunities": "Stun, Confusion"
+    ]
   },
   {
     "id": "98082.0",
@@ -4390,19 +5062,28 @@ const enemyData = [
     "subArea": "Geist Canyon: South Geist Canyon",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 26,
     "hp": 1542,
     "patk": 291,
     "pdef": 29,
     "matk": 291,
     "mdef": 29,
+    "speed": 146,
+    "crit": 106,
+    "accuracy": 120,
+    "evasion": 106,
+    "exp": 17,
+    "jp": 9,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4416,10 +5097,7 @@ const enemyData = [
         "name": "Updraft",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ice Soulstone, Rare Beast Tusk",
-    "drop": "Sphinx Feather, Ancient Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98736.0",
@@ -4428,19 +5106,28 @@ const enemyData = [
     "subArea": "Geist Canyon",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Fan",
       "Fire",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 26,
     "hp": 2751,
     "patk": 327,
     "pdef": 29,
     "matk": 327,
     "mdef": 29,
+    "speed": 159,
+    "crit": 120,
+    "accuracy": 133,
+    "evasion": 133,
+    "exp": 35,
+    "jp": 10,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4454,10 +5141,7 @@ const enemyData = [
         "name": "Photosynthesis",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water (M)",
-    "drop": "Antidote Herb (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98085.0",
@@ -4466,19 +5150,28 @@ const enemyData = [
     "subArea": "Geist Canyon",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 26,
     "hp": 1684,
     "patk": 291,
     "pdef": 33,
     "matk": 291,
     "mdef": 33,
+    "speed": 133,
+    "crit": 106,
+    "accuracy": 120,
+    "evasion": 106,
+    "exp": 25,
+    "jp": 9,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4492,10 +5185,7 @@ const enemyData = [
         "name": "Ingest Nutrients",
         "type": "Unknown"
       }
-    ],
-    "steal": "Dragon Scale, Beast Claw",
-    "drop": "Soulstone, Minotaur Horn, Antidote Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98086.0",
@@ -4504,19 +5194,28 @@ const enemyData = [
     "subArea": "Geist Canyon",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Fan",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 26,
     "hp": 1676,
     "patk": 291,
     "pdef": 29,
     "matk": 291,
     "mdef": 29,
+    "speed": 133,
+    "crit": 106,
+    "accuracy": 120,
+    "evasion": 106,
+    "exp": 28,
+    "jp": 9,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4530,10 +5229,7 @@ const enemyData = [
         "name": "Stun Press",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Fang",
-    "drop": "Holy Water (L), Griffin Claw",
-    "immunities": "Paralysis, Silence"
+    ]
   },
   {
     "id": "98159.0",
@@ -4542,19 +5238,28 @@ const enemyData = [
     "subArea": "Clearbrook Traverse",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 27,
     "hp": 1580,
     "patk": 308,
     "pdef": 29,
     "matk": 308,
     "mdef": 29,
+    "speed": 148,
+    "crit": 108,
+    "accuracy": 121,
+    "evasion": 108,
+    "exp": 16,
+    "jp": 9,
+    "steal": "Cloth",
+    "drop": "Cloth x1 (15%) Cloth x2 (10%) Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4568,10 +5273,7 @@ const enemyData = [
         "name": "Strong Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk, Old Coin, Antidote Herb (L)",
-    "drop": "Plum, EXP",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98161.0",
@@ -4580,19 +5282,28 @@ const enemyData = [
     "subArea": "Clearbrook Traverse",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Tome",
       "Ice",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 27,
     "hp": 1723,
     "patk": 308,
     "pdef": 29,
     "matk": 308,
     "mdef": 29,
+    "speed": 121,
+    "crit": 108,
+    "accuracy": 121,
+    "evasion": 108,
+    "exp": 21,
+    "jp": 9,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4606,10 +5317,7 @@ const enemyData = [
         "name": "Hydration",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Claw",
-    "drop": "Beast Fang, Antidote Herb",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98160.0",
@@ -4618,19 +5326,28 @@ const enemyData = [
     "subArea": "Clearbrook Traverse East Clearbrook Traverse",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 27,
     "hp": 1624,
     "patk": 308,
     "pdef": 29,
     "matk": 308,
     "mdef": 29,
+    "speed": 148,
+    "crit": 108,
+    "accuracy": 121,
+    "evasion": 108,
+    "exp": 18,
+    "jp": 9,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4644,10 +5361,7 @@ const enemyData = [
         "name": "Mandible Crush",
         "type": "Phys"
       }
-    ],
-    "steal": "Wind Soulstone",
-    "drop": "Holy Water (M), JP",
-    "immunities": "Terror, Paralysis"
+    ]
   },
   {
     "id": "98162.0",
@@ -4656,19 +5370,28 @@ const enemyData = [
     "subArea": "Clearbrook Traverse",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 27,
     "hp": 1806,
     "patk": 308,
     "pdef": 29,
     "matk": 308,
     "mdef": 29,
+    "speed": 148,
+    "crit": 108,
+    "accuracy": 121,
+    "evasion": 108,
+    "exp": 23,
+    "jp": 9,
+    "steal": "Herb of Fortification",
+    "drop": "Herb of Fortification x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4682,10 +5405,7 @@ const enemyData = [
         "name": "Enfeebling Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Silver Nugget",
-    "drop": "Rare Beast Hide, Quality Beast Fang",
-    "immunities": "Sleep, Stun"
+    ]
   },
   {
     "id": "98169.0",
@@ -4694,19 +5414,28 @@ const enemyData = [
     "subArea": "Path to Waterpool Caves",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 28,
     "hp": 1838,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 123,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 24,
+    "jp": 9,
+    "steal": "Herb of Fortification",
+    "drop": "Herb of Fortification x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4720,10 +5449,7 @@ const enemyData = [
         "name": "Deafening Buzz",
         "type": "Unknown"
       }
-    ],
-    "steal": "Dragon Scale",
-    "drop": "Iron Ore, Star Fragment",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98168.0",
@@ -4732,19 +5458,28 @@ const enemyData = [
     "subArea": "Path to Waterpool Caves",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Staff",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1761,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 123,
+    "exp": 22,
+    "jp": 9,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4758,10 +5493,7 @@ const enemyData = [
         "name": "Sharpening Claw",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rusty Coin, Inspiring Plum",
-    "drop": "Gold Dust",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98167.0",
@@ -4770,19 +5502,28 @@ const enemyData = [
     "subArea": "Path to Waterpool Caves",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Fire",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 28,
     "hp": 1655,
     "patk": 312,
     "pdef": 26,
     "matk": 312,
     "mdef": 26,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 20,
+    "jp": 9,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4796,10 +5537,7 @@ const enemyData = [
         "name": "Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Moonstone, Dragon Scale",
-    "drop": "Old Coin, Antidote Herb (L), Shiny Coin",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98166.0",
@@ -4808,19 +5546,28 @@ const enemyData = [
     "subArea": "Path to Waterpool Caves",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1652,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 18,
+    "jp": 9,
+    "steal": "Cloth",
+    "drop": "Cloth x1 (15%) Cloth x2 (10%) Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4834,10 +5581,7 @@ const enemyData = [
         "name": "Stab Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "Herb, Sphinx Feather, HP-Restoring Herb (L)",
-    "drop": "Phoenix Feather, Silver Nugget, Rare Beast Hide",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98170.0",
@@ -4846,19 +5590,28 @@ const enemyData = [
     "subArea": "Waterpool Caves",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1652,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 123,
+    "exp": 23,
+    "jp": 9,
+    "steal": "Bottle of Poison Dust",
+    "drop": "Bottle of Poison Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4872,10 +5625,7 @@ const enemyData = [
         "name": "Two-Tiered Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut",
-    "drop": "Quality Beast Horn, Gold",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98171.0",
@@ -4884,19 +5634,28 @@ const enemyData = [
     "subArea": "Waterpool Caves",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1728,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 123,
+    "exp": 25,
+    "jp": 9,
+    "steal": "Bottle of Blinding Dust",
+    "drop": "Bottle of Blinding Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4910,10 +5669,7 @@ const enemyData = [
         "name": "Armor Pierce",
         "type": "Unknown"
       }
-    ],
-    "steal": "Blessed Olive (L), Light Soulstone, Rare Beast Horn",
-    "drop": "Rare Beast Hide, Holy Water (M), Manticore Stinger",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98758.0",
@@ -4922,19 +5678,28 @@ const enemyData = [
     "subArea": "Waterpool Caves",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 2891,
     "patk": 350,
     "pdef": 30,
     "matk": 345,
     "mdef": 30,
+    "speed": 178,
+    "crit": 123,
+    "accuracy": 137,
+    "evasion": 137,
+    "exp": 39,
+    "jp": 10,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4948,10 +5713,7 @@ const enemyData = [
         "name": "Stab Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "Cerberus Fang, Quality Beast Hide",
-    "drop": "Holy Water, Gold Dust",
-    "immunities": "Paralysis, Stun"
+    ]
   },
   {
     "id": "98172.0",
@@ -4960,19 +5722,28 @@ const enemyData = [
     "subArea": "Waterpool Caves",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1781,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 123,
+    "exp": 29,
+    "jp": 9,
+    "steal": "Bottle of Sanguine Dust",
+    "drop": "Bottle of Sanguine Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -4986,10 +5757,7 @@ const enemyData = [
         "name": "Blade Breaker",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shadow Soulstone",
-    "drop": "Revitalizing Jam (M), Plum",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98173.0",
@@ -4998,19 +5766,28 @@ const enemyData = [
     "subArea": "Waterpool Caves",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1846,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 123,
+    "exp": 31,
+    "jp": 9,
+    "steal": "Bottle of Sleeping Dust",
+    "drop": "Bottle of Sleeping Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5024,10 +5801,7 @@ const enemyData = [
         "name": "Stab Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "Old Coin, SP-Restoring Nut (L), Sunshard",
-    "drop": "Ancient Coin, Chimera Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98164.0",
@@ -5036,19 +5810,28 @@ const enemyData = [
     "subArea": "East Clearbrook Traverse",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Tome",
     "weaknesses": [
       "Tome",
       "Fire",
       "Ice",
       "Light"
     ],
+    "weakness": "Tome",
     "level": 27,
     "hp": 1691,
     "patk": 308,
     "pdef": 29,
     "matk": 308,
     "mdef": 29,
+    "speed": 121,
+    "crit": 108,
+    "accuracy": 121,
+    "evasion": 108,
+    "exp": 21,
+    "jp": 9,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5062,10 +5845,7 @@ const enemyData = [
         "name": "Hydration",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Chimera Fang, Rusty Coin",
-    "drop": "Gold Dust",
-    "immunities": "Paralysis, Poison"
+    ]
   },
   {
     "id": "98163.0",
@@ -5074,19 +5854,28 @@ const enemyData = [
     "subArea": "East Clearbrook Traverse",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 27,
     "hp": 1580,
     "patk": 308,
     "pdef": 29,
     "matk": 308,
     "mdef": 29,
+    "speed": 135,
+    "crit": 108,
+    "accuracy": 121,
+    "evasion": 108,
+    "exp": 16,
+    "jp": 9,
+    "steal": "Cloth",
+    "drop": "Cloth x1 (15%) Cloth x2 (10%) Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5100,10 +5889,7 @@ const enemyData = [
         "name": "Strong Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Copper Ore, Blessed Olive (L)",
-    "drop": "Ancient Coin",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98165.0",
@@ -5112,19 +5898,28 @@ const enemyData = [
     "subArea": "East Clearbrook Traverse",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Tome",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 27,
     "hp": 1758,
     "patk": 308,
     "pdef": 29,
     "matk": 308,
     "mdef": 29,
+    "speed": 135,
+    "crit": 108,
+    "accuracy": 121,
+    "evasion": 121,
+    "exp": 23,
+    "jp": 9,
+    "steal": "Herb of Mending",
+    "drop": "Herb of Mending x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5138,10 +5933,7 @@ const enemyData = [
         "name": "Sharpening Claw",
         "type": "Unknown"
       }
-    ],
-    "steal": "Fire Soulstone",
-    "drop": "HP-Restoring Herb (M)",
-    "immunities": "Petrification, Sleep"
+    ]
   },
   {
     "id": "98099.0",
@@ -5150,19 +5942,28 @@ const enemyData = [
     "subArea": "Sunshade Sands",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 28,
     "hp": 1764,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 123,
+    "exp": 22,
+    "jp": 9,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5176,10 +5977,7 @@ const enemyData = [
         "name": "Poison Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Old Coin, Quality Beast Hide",
-    "drop": "Sunshard, Beast Tusk, JP",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98100.0",
@@ -5188,19 +5986,28 @@ const enemyData = [
     "subArea": "Sunshade Sands",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1887,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 24,
+    "jp": 9,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5214,10 +6021,7 @@ const enemyData = [
         "name": "Acid Spray",
         "type": "Phys"
       }
-    ],
-    "steal": "Meteorite, Star Fragment, Revitalizing Jam (L)",
-    "drop": "SP-Restoring Nut (M)",
-    "immunities": "Sleep, Silence"
+    ]
   },
   {
     "id": "98097.0",
@@ -5226,19 +6030,28 @@ const enemyData = [
     "subArea": "Sunshade Sands",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1652,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 123,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 18,
+    "jp": 9,
+    "steal": "Stone",
+    "drop": "Stone x1 (15%) Stone x2 (10%) Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5252,10 +6065,7 @@ const enemyData = [
         "name": "Double Blow",
         "type": "Phys"
       }
-    ],
-    "steal": "Healing Grape Bunch",
-    "drop": "Gold",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98098.0",
@@ -5264,19 +6074,28 @@ const enemyData = [
     "subArea": "Sunshade Sands",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1671,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 123,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 20,
+    "jp": 9,
+    "steal": "Stone",
+    "drop": "Stone x1 (15%) Stone x2 (10%) Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5290,10 +6109,7 @@ const enemyData = [
         "name": "Hurricane Blow",
         "type": "Elem"
       }
-    ],
-    "steal": "Dragon Scale",
-    "drop": "Iron Ore, Revitalizing Jam (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98101.0",
@@ -5302,19 +6118,28 @@ const enemyData = [
     "subArea": "Eastern Sunshade Sands",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 28,
     "hp": 1652,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 123,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 18,
+    "jp": 9,
+    "steal": "Stone",
+    "drop": "Stone x1 (15%) Stone x2 (10%) Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5328,10 +6153,7 @@ const enemyData = [
         "name": "Double Blow",
         "type": "Phys"
       }
-    ],
-    "steal": "Ancient Coin, Holy Water (M)",
-    "drop": "Antidote Herb (M), Cerberus Fang, Revitalizing Jam (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98102.0",
@@ -5340,19 +6162,28 @@ const enemyData = [
     "subArea": "Eastern Sunshade Sands",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 28,
     "hp": 1702,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 123,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 20,
+    "jp": 9,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5366,10 +6197,7 @@ const enemyData = [
         "name": "Venomous Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather",
-    "drop": "Herb, Leaf, Rare Beast Meat",
-    "immunities": "Curse, Petrification"
+    ]
   },
   {
     "id": "98103.0",
@@ -5378,19 +6206,28 @@ const enemyData = [
     "subArea": "Eastern Sunshade Sands",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 28,
     "hp": 1751,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 123,
+    "exp": 22,
+    "jp": 9,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5404,10 +6241,7 @@ const enemyData = [
         "name": "A Ball of a Time",
         "type": "Unknown"
       }
-    ],
-    "steal": "Iron Ore, Antidote Herb (M)",
-    "drop": "Revitalizing Jam",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98104.0",
@@ -5416,19 +6250,28 @@ const enemyData = [
     "subArea": "Eastern Sunshade Sands",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 28,
     "hp": 1836,
     "patk": 312,
     "pdef": 30,
     "matk": 312,
     "mdef": 30,
+    "speed": 151,
+    "crit": 110,
+    "accuracy": 123,
+    "evasion": 110,
+    "exp": 24,
+    "jp": 9,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5442,10 +6285,7 @@ const enemyData = [
         "name": "Double Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Tusk, Quality Beast Horn",
-    "drop": "Meteorite, SP-Restoring Nut (L), Rare Beast Tusk",
-    "immunities": "Sleep, Poison"
+    ]
   },
   {
     "id": "98740.0",
@@ -5454,19 +6294,28 @@ const enemyData = [
     "subArea": "Finesand Ruins",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 29,
     "hp": 3098,
     "patk": 354,
     "pdef": 35,
     "matk": 434,
     "mdef": 35,
+    "speed": 167,
+    "crit": 125,
+    "accuracy": 139,
+    "evasion": 139,
+    "exp": 41,
+    "jp": 11,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5480,10 +6329,7 @@ const enemyData = [
         "name": "Sand Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Griffin Claw, Rare Beast Claw",
-    "drop": "Antidote Herb (M), Olive of Life (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98105.0",
@@ -5492,19 +6338,28 @@ const enemyData = [
     "subArea": "Finesand Ruins",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 1710,
     "patk": 316,
     "pdef": 30,
     "matk": 299,
     "mdef": 30,
+    "speed": 153,
+    "crit": 111,
+    "accuracy": 125,
+    "evasion": 111,
+    "exp": 24,
+    "jp": 10,
+    "steal": "Fire Soulstone",
+    "drop": "Fire Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Ignition",
@@ -5518,10 +6373,7 @@ const enemyData = [
         "name": "Mass Ignition",
         "type": "Elem"
       }
-    ],
-    "steal": "Basilisk Eye, Healing Grape, Beast Fang",
-    "drop": "Nut, Cerberus Fang, Antidote Herb",
-    "immunities": "Terror, Confusion"
+    ]
   },
   {
     "id": "98106.0",
@@ -5530,19 +6382,28 @@ const enemyData = [
     "subArea": "Finesand Ruins",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 1776,
     "patk": 316,
     "pdef": 30,
     "matk": 299,
     "mdef": 30,
+    "speed": 153,
+    "crit": 125,
+    "accuracy": 125,
+    "evasion": 111,
+    "exp": 27,
+    "jp": 10,
+    "steal": "Fire Soulstone",
+    "drop": "Fire Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Scorch and Burn",
@@ -5556,10 +6417,7 @@ const enemyData = [
         "name": "Scorched Earth",
         "type": "Elem"
       }
-    ],
-    "steal": "Star Fragment, Beast Tusk",
-    "drop": "Iron Ore",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98107.0",
@@ -5568,19 +6426,28 @@ const enemyData = [
     "subArea": "Finesand Ruins",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 1871,
     "patk": 316,
     "pdef": 30,
     "matk": 299,
     "mdef": 30,
+    "speed": 153,
+    "crit": 125,
+    "accuracy": 125,
+    "evasion": 111,
+    "exp": 31,
+    "jp": 10,
+    "steal": "Shadow Soulstone",
+    "drop": "Shadow Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Earth Cleave",
@@ -5594,10 +6461,7 @@ const enemyData = [
         "name": "Solar Eclipse",
         "type": "Elem"
       }
-    ],
-    "steal": "Holy Water (M), Quality Beast Meat, Griffin Claw",
-    "drop": "Minotaur Horn",
-    "immunities": "Petrification, Silence"
+    ]
   },
   {
     "id": "98108.0",
@@ -5606,19 +6470,28 @@ const enemyData = [
     "subArea": "Finesand Ruins",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Bow",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 1952,
     "patk": 316,
     "pdef": 30,
     "matk": 316,
     "mdef": 30,
+    "speed": 153,
+    "crit": 111,
+    "accuracy": 125,
+    "evasion": 111,
+    "exp": 33,
+    "jp": 10,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5632,10 +6505,7 @@ const enemyData = [
         "name": "Soporific Fang",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (M), HP-Restoring Herb (M)",
-    "drop": "Gold, SP-Restoring Nut (M)",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98128.0",
@@ -5644,7 +6514,6 @@ const enemyData = [
     "subArea": "Shepherd's Rock Pass",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
@@ -5652,12 +6521,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 1710,
     "patk": 316,
     "pdef": 30,
     "matk": 316,
     "mdef": 30,
+    "speed": 153,
+    "crit": 125,
+    "accuracy": 125,
+    "evasion": 111,
+    "exp": 18,
+    "jp": 10,
+    "steal": "Lumber",
+    "drop": "Lumber x1 (15%) Lumber x2 (10%) Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5671,10 +6550,7 @@ const enemyData = [
         "name": "Mighty Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (L), Blessed Olive (L), Olive of Life",
-    "drop": "Revitalizing Jam (M), Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98129.0",
@@ -5683,19 +6559,28 @@ const enemyData = [
     "subArea": "Shepherd's Rock Pass",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Bow",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 1750,
     "patk": 316,
     "pdef": 30,
     "matk": 316,
     "mdef": 30,
+    "speed": 153,
+    "crit": 125,
+    "accuracy": 125,
+    "evasion": 111,
+    "exp": 20,
+    "jp": 10,
+    "steal": "Lumber",
+    "drop": "Lumber x1 (15%) Lumber x2 (10%) Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5709,10 +6594,7 @@ const enemyData = [
         "name": "Stab Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water, Shiny Coin",
-    "drop": "Sphinx Feather, Moonstone, Inspiring Plum Basket",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98130.0",
@@ -5721,19 +6603,28 @@ const enemyData = [
     "subArea": "Shepherd's Rock Pass",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 29,
     "hp": 1873,
     "patk": 316,
     "pdef": 30,
     "matk": 299,
     "mdef": 30,
+    "speed": 153,
+    "crit": 125,
+    "accuracy": 125,
+    "evasion": 111,
+    "exp": 23,
+    "jp": 10,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5747,10 +6638,7 @@ const enemyData = [
         "name": "Galeforce Slash",
         "type": "Elem"
       }
-    ],
-    "steal": "Holy Water (M), Herb",
-    "drop": "Nut",
-    "immunities": "Blind, Paralysis"
+    ]
   },
   {
     "id": "98131.0",
@@ -5759,19 +6647,28 @@ const enemyData = [
     "subArea": "Shepherd's Rock Pass",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fan",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 1941,
     "patk": 316,
     "pdef": 35,
     "matk": 316,
     "mdef": 35,
+    "speed": 153,
+    "crit": 111,
+    "accuracy": 125,
+    "evasion": 97,
+    "exp": 26,
+    "jp": 10,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5785,10 +6682,7 @@ const enemyData = [
         "name": "Big Boulder Blast",
         "type": "Phys"
       }
-    ],
-    "steal": "Inspiring Plum Basket",
-    "drop": "Beast Horn",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "32401.0",
@@ -5797,19 +6691,28 @@ const enemyData = [
     "subArea": "Flamesgrace Wilds",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Fan",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 1792,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 113,
+    "accuracy": 127,
+    "evasion": 113,
+    "exp": 22,
+    "jp": 10,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Wild Hard Claw",
@@ -5823,10 +6726,7 @@ const enemyData = [
         "name": "Improved Offense",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ancient Coin, Blessed Olive (L), Phoenix Feather",
-    "drop": "Nut, Unicorn Horn, Manticore Stinger",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "32402.0",
@@ -5835,19 +6735,28 @@ const enemyData = [
     "subArea": "Flamesgrace Wilds",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Staff",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 1988,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 113,
+    "accuracy": 127,
+    "evasion": 113,
+    "exp": 27,
+    "jp": 10,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Roll Attack",
@@ -5861,10 +6770,7 @@ const enemyData = [
         "name": "Soporific Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Claw, Blessed Olive (L), Wind Soulstone",
-    "drop": "Beast Horn, Quality Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32381.0",
@@ -5873,19 +6779,28 @@ const enemyData = [
     "subArea": "Flamesgrace Wilds",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Bow",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 1919,
     "patk": 319,
     "pdef": 31,
     "matk": 311,
     "mdef": 31,
+    "speed": 155,
+    "crit": 127,
+    "accuracy": 127,
+    "evasion": 113,
+    "exp": 25,
+    "jp": 10,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Thousand Scythes",
@@ -5899,10 +6814,7 @@ const enemyData = [
         "name": "Soporific Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather",
-    "drop": "Quality Beast Fang",
-    "immunities": "Blind, Instant Death"
+    ]
   },
   {
     "id": "32386.0",
@@ -5911,7 +6823,6 @@ const enemyData = [
     "subArea": "Flamesgrace Wilds",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -5919,12 +6830,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 30,
     "hp": 1772,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 127,
+    "accuracy": 127,
+    "evasion": 113,
+    "exp": 20,
+    "jp": 10,
+    "steal": "Stone",
+    "drop": "Stone x1 (15%) Stone x2 (10%) Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5938,10 +6859,7 @@ const enemyData = [
         "name": "Rush Stab",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive (L)",
-    "drop": "Quality Beast Tusk",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98766.0",
@@ -5950,19 +6868,28 @@ const enemyData = [
     "subArea": "Path to the Flamebearer's Shrine",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 33,
     "hp": 2183,
     "patk": 358,
     "pdef": 24,
     "matk": 358,
     "mdef": 24,
+    "speed": 446,
+    "crit": 133,
+    "accuracy": 133,
+    "evasion": 118,
+    "exp": 31,
+    "jp": 12,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -5976,10 +6903,7 @@ const enemyData = [
         "name": "Hard Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Meat, Rare Beast Tusk",
-    "drop": "Chimera Fang",
-    "immunities": "Terror, Instant Death"
+    ]
   },
   {
     "id": "98777.0",
@@ -5988,7 +6912,6 @@ const enemyData = [
     "subArea": "Path to the Flamebearer's Shrine",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -5996,12 +6919,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Dagger",
     "level": 33,
     "hp": 2051,
     "patk": 358,
     "pdef": 32,
     "matk": 358,
     "mdef": 32,
+    "speed": 446,
+    "crit": 133,
+    "accuracy": 133,
+    "evasion": 118,
+    "exp": 29,
+    "jp": 12,
+    "steal": "Quality Stone",
+    "drop": "Quality Stone x1 (15%) Quality Stone x2 (10%) Quality Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Thrash",
@@ -6015,10 +6948,7 @@ const enemyData = [
         "name": "Inspiration",
         "type": "Unknown"
       }
-    ],
-    "steal": "Healing Grape, Holy Water",
-    "drop": "Rare Beast Fang, Rusty Coin",
-    "immunities": "Paralysis, Silence"
+    ]
   },
   {
     "id": "98776.0",
@@ -6027,7 +6957,6 @@ const enemyData = [
     "subArea": "Path to the Flamebearer's Shrine",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Staff",
     "weaknesses": [
       "Staff",
       "Tome",
@@ -6035,12 +6964,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Staff",
     "level": 33,
     "hp": 1940,
     "patk": 358,
     "pdef": 32,
     "matk": 358,
     "mdef": 32,
+    "speed": 446,
+    "crit": 133,
+    "accuracy": 133,
+    "evasion": 118,
+    "exp": 23,
+    "jp": 12,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6054,10 +6993,7 @@ const enemyData = [
         "name": "Sharp Fang",
         "type": "Phys"
       }
-    ],
-    "steal": "Unicorn Horn",
-    "drop": "Beast Hide",
-    "immunities": "Poison, Petrification"
+    ]
   },
   {
     "id": "32409.0",
@@ -6066,19 +7002,28 @@ const enemyData = [
     "subArea": "Path to the Flamebearer's Shrine",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Tome",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 33,
     "hp": 2033,
     "patk": 358,
     "pdef": 35,
     "matk": 358,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 25,
+    "jp": 12,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -6092,10 +7037,7 @@ const enemyData = [
         "name": "Horrific Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life (M), Phoenix Feather",
-    "drop": "Revitalizing Jam (L), EXP",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98135.0",
@@ -6104,19 +7046,28 @@ const enemyData = [
     "subArea": "Valley of Death: East Valley of Death Valley of Death: West",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Fan",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 1887,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 113,
+    "accuracy": 127,
+    "evasion": 99,
+    "exp": 25,
+    "jp": 10,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6130,10 +7081,7 @@ const enemyData = [
         "name": "Soporific Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Fire Soulstone, Olive of Life",
-    "drop": "Meteorite, Star Fragment",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98134.0",
@@ -6142,19 +7090,28 @@ const enemyData = [
     "subArea": "Valley of Death: East",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Tome",
       "Ice"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 1943,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 113,
+    "accuracy": 127,
+    "evasion": 99,
+    "exp": 25,
+    "jp": 10,
+    "steal": "Herb of Clamor",
+    "drop": "Herb of Clamor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6168,10 +7125,7 @@ const enemyData = [
         "name": "Masticate",
         "type": "Unknown"
       }
-    ],
-    "steal": "Dragon Scale, Antidote Herb",
-    "drop": "Blessed Olive (M)",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98133.0",
@@ -6180,19 +7134,28 @@ const enemyData = [
     "subArea": "Valley of Death: East Valley of Death",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 1829,
     "patk": 319,
     "pdef": 31,
     "matk": 311,
     "mdef": 31,
+    "speed": 155,
+    "crit": 127,
+    "accuracy": 127,
+    "evasion": 113,
+    "exp": 22,
+    "jp": 10,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6206,10 +7169,7 @@ const enemyData = [
         "name": "Galeforce Slash",
         "type": "Elem"
       }
-    ],
-    "steal": "Silver Nugget, Revitalizing Jam (L)",
-    "drop": "Silver Nugget, Olive",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98132.0",
@@ -6218,19 +7178,28 @@ const enemyData = [
     "subArea": "Valley of Death: East",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Bow",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 1772,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 127,
+    "accuracy": 127,
+    "evasion": 113,
+    "exp": 20,
+    "jp": 10,
+    "steal": "Lumber",
+    "drop": "Lumber x1 (15%) Lumber x2 (10%) Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6244,10 +7213,7 @@ const enemyData = [
         "name": "Gather Strength",
         "type": "Unknown"
       }
-    ],
-    "steal": "Blessed Olive, Quality Beast Hide, Silver Nugget",
-    "drop": "Sunshard",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98136.0",
@@ -6256,19 +7222,28 @@ const enemyData = [
     "subArea": "Valley of Death Valley of Death: West",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 1772,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 127,
+    "accuracy": 127,
+    "evasion": 113,
+    "exp": 20,
+    "jp": 10,
+    "steal": "Lumber",
+    "drop": "Lumber x1 (15%) Lumber x2 (10%) Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6282,10 +7257,7 @@ const enemyData = [
         "name": "Two-Tiered Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Wind Soulstone, Revitalizing Jam (L)",
-    "drop": "SP-Restoring Nut (L)",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98749.0",
@@ -6294,19 +7266,28 @@ const enemyData = [
     "subArea": "Valley of Death",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Staff",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 3101,
     "patk": 358,
     "pdef": 31,
     "matk": 446,
     "mdef": 31,
+    "speed": 183,
+    "crit": 127,
+    "accuracy": 141,
+    "evasion": 141,
+    "exp": 44,
+    "jp": 11,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6320,10 +7301,7 @@ const enemyData = [
         "name": "Strong Thorn Storm",
         "type": "Phys"
       }
-    ],
-    "steal": "Hydra Scale, Copper Ore, Inspiring Plum",
-    "drop": "Grape, HP-Restoring Herb (M), Quality Beast Horn",
-    "immunities": "Confusion, Stun"
+    ]
   },
   {
     "id": "98137.0",
@@ -6332,19 +7310,28 @@ const enemyData = [
     "subArea": "Valley of Death Valley of Death: West",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Tome",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 1984,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 113,
+    "accuracy": 127,
+    "evasion": 99,
+    "exp": 27,
+    "jp": 10,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6358,10 +7345,7 @@ const enemyData = [
         "name": "Bam!",
         "type": "Phys"
       }
-    ],
-    "steal": "Basilisk Eye, SP-Restoring Nut (L)",
-    "drop": "Gold Dust",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98138.0",
@@ -6370,19 +7354,28 @@ const enemyData = [
     "subArea": "Valley of Death: West",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 1815,
     "patk": 319,
     "pdef": 31,
     "matk": 319,
     "mdef": 31,
+    "speed": 155,
+    "crit": 127,
+    "accuracy": 127,
+    "evasion": 113,
+    "exp": 22,
+    "jp": 10,
+    "steal": "Lumber",
+    "drop": "Lumber x1 (15%) Lumber x2 (10%) Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6396,10 +7389,7 @@ const enemyData = [
         "name": "Hack",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide, Basilisk Eye, Holy Water (L)",
-    "drop": "Rare Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98174.0",
@@ -6408,19 +7398,28 @@ const enemyData = [
     "subArea": "Stillwater Subterrane",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 1842,
     "patk": 323,
     "pdef": 31,
     "matk": 303,
     "mdef": 31,
+    "speed": 158,
+    "crit": 115,
+    "accuracy": 129,
+    "evasion": 115,
+    "exp": 21,
+    "jp": 10,
+    "steal": "Wind Soulstone",
+    "drop": "Wind Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -6434,10 +7433,7 @@ const enemyData = [
         "name": "Mighty Gale",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Horn, Gold Dust, SP-Restoring Nut (L)",
-    "drop": "Beast Tusk, Inspiring Plum Basket, Silver Nugget",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98175.0",
@@ -6446,19 +7442,28 @@ const enemyData = [
     "subArea": "Stillwater Subterrane Man-Eating Miser's Hideout",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 1917,
     "patk": 323,
     "pdef": 31,
     "matk": 303,
     "mdef": 31,
+    "speed": 158,
+    "crit": 115,
+    "accuracy": 129,
+    "evasion": 115,
+    "exp": 23,
+    "jp": 10,
+    "steal": "Thunder Soulstone",
+    "drop": "Thunder Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -6472,10 +7477,7 @@ const enemyData = [
         "name": "Electrical Discharge",
         "type": "Elem"
       }
-    ],
-    "steal": "Wind Soulstone, Rare Beast Tusk, Quality Beast Meat",
-    "drop": "Healing Grape Bunch, Rare Beast Meat",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98176.0",
@@ -6484,19 +7486,28 @@ const enemyData = [
     "subArea": "Stillwater Subterrane Man-Eating Miser's Hideout",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 1956,
     "patk": 323,
     "pdef": 31,
     "matk": 303,
     "mdef": 31,
+    "speed": 158,
+    "crit": 115,
+    "accuracy": 129,
+    "evasion": 115,
+    "exp": 26,
+    "jp": 10,
+    "steal": "Light Soulstone",
+    "drop": "Light Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -6510,10 +7521,7 @@ const enemyData = [
         "name": "Midnight Sun",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Hide, Lightning Soulstone, Rare Beast Hide",
-    "drop": "Olive of Life (M), Moonstone",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98177.0",
@@ -6522,19 +7530,28 @@ const enemyData = [
     "subArea": "Stillwater Subterrane",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 2038,
     "patk": 323,
     "pdef": 31,
     "matk": 303,
     "mdef": 31,
+    "speed": 158,
+    "crit": 115,
+    "accuracy": 129,
+    "evasion": 115,
+    "exp": 29,
+    "jp": 10,
+    "steal": "Shadow Soulstone",
+    "drop": "Shadow Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -6548,10 +7565,7 @@ const enemyData = [
         "name": "Solar Eclipse",
         "type": "Elem"
       }
-    ],
-    "steal": "Antidote Herb",
-    "drop": "HP-Restoring Herb (L), Sphinx Feather, Beast Horn",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98309.0",
@@ -6560,19 +7574,28 @@ const enemyData = [
     "subArea": "Castle Riven Man-Eating Miser's Hideout",
     "type": "Boss",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Bow",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 1930,
     "patk": 323,
     "pdef": 31,
     "matk": 303,
     "mdef": 27,
+    "speed": 158,
+    "crit": 115,
+    "accuracy": 129,
+    "evasion": 115,
+    "exp": 30,
+    "jp": 10,
+    "steal": "Light Soulstone",
+    "drop": "Light Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6586,10 +7609,7 @@ const enemyData = [
         "name": "Strong Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Meat",
-    "drop": "SP-Restoring Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98308.0",
@@ -6598,19 +7618,28 @@ const enemyData = [
     "subArea": "Castle Riven Man-Eating Miser's Hideout",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 1806,
     "patk": 323,
     "pdef": 27,
     "matk": 303,
     "mdef": 31,
+    "speed": 158,
+    "crit": 115,
+    "accuracy": 129,
+    "evasion": 115,
+    "exp": 27,
+    "jp": 10,
+    "steal": "Light Soulstone",
+    "drop": "Light Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Light Shot",
@@ -6624,10 +7653,7 @@ const enemyData = [
         "name": "Repeated Light Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "SP-Restoring Nut (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98759.0",
@@ -6636,7 +7662,6 @@ const enemyData = [
     "subArea": "Castle Riven",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -6644,12 +7669,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 3224,
     "patk": 362,
     "pdef": 31,
     "matk": 332,
     "mdef": 31,
+    "speed": 186,
+    "crit": 129,
+    "accuracy": 143,
+    "evasion": 143,
+    "exp": 46,
+    "jp": 11,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6663,10 +7698,7 @@ const enemyData = [
         "name": "Meteor Storm",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Meat",
-    "drop": "Sphinx Feather, Antidote Herb, Antidote Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98310.0",
@@ -6675,7 +7707,6 @@ const enemyData = [
     "subArea": "Castle Riven",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -6683,12 +7714,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Dagger",
     "level": 31,
     "hp": 1979,
     "patk": 323,
     "pdef": 31,
     "matk": 303,
     "mdef": 27,
+    "speed": 158,
+    "crit": 115,
+    "accuracy": 129,
+    "evasion": 115,
+    "exp": 34,
+    "jp": 10,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6702,10 +7743,7 @@ const enemyData = [
         "name": "Spirited Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Basilisk Eye, Beast Claw",
-    "drop": "Copper Ore",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98311.0",
@@ -6714,7 +7752,6 @@ const enemyData = [
     "subArea": "Castle Riven",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Staff",
@@ -6722,12 +7759,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Bow",
     "level": 31,
     "hp": 2110,
     "patk": 323,
     "pdef": 31,
     "matk": 303,
     "mdef": 27,
+    "speed": 158,
+    "crit": 115,
+    "accuracy": 129,
+    "evasion": 115,
+    "exp": 37,
+    "jp": 10,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6741,10 +7788,7 @@ const enemyData = [
         "name": "Hold Strong!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Claw, SP-Restoring Nut (M)",
-    "drop": "Leaf, Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98087.0",
@@ -6753,19 +7797,28 @@ const enemyData = [
     "subArea": "Road to Castle Edoras",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 32,
     "hp": 1920,
     "patk": 355,
     "pdef": 32,
     "matk": 350,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 28,
+    "jp": 11,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6779,10 +7832,7 @@ const enemyData = [
         "name": "Silencing Arrow",
         "type": "Phys"
       }
-    ],
-    "steal": "Rusty Coin, Beast Fang, Sunshard",
-    "drop": "HP-Restoring Herb (L), Beast Claw",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98088.0",
@@ -6791,19 +7841,28 @@ const enemyData = [
     "subArea": "Road to Castle Edoras",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 32,
     "hp": 1997,
     "patk": 355,
     "pdef": 32,
     "matk": 350,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 32,
+    "jp": 11,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6817,10 +7876,7 @@ const enemyData = [
         "name": "Silencing Arrow",
         "type": "Phys"
       }
-    ],
-    "steal": "Hydra Scale",
-    "drop": "Gold Dust, HP-Restoring Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98737.0",
@@ -6829,19 +7885,28 @@ const enemyData = [
     "subArea": "Road to Castle Edoras",
     "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Fan",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 3360,
     "patk": 388,
     "pdef": 32,
     "matk": 376,
     "mdef": 32,
+    "speed": 189,
+    "crit": 131,
+    "accuracy": 145,
+    "evasion": 145,
+    "exp": 48,
+    "jp": 12,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6855,10 +7920,7 @@ const enemyData = [
         "name": "Swoop",
         "type": "Phys"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "Shiny Coin, Rare Beast Tusk",
-    "immunities": "Stun, Curse"
+    ]
   },
   {
     "id": "98089.0",
@@ -6867,19 +7929,28 @@ const enemyData = [
     "subArea": "Road to Castle Edoras",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Axe",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 2089,
     "patk": 355,
     "pdef": 32,
     "matk": 350,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 36,
+    "jp": 11,
+    "steal": "Metal",
+    "drop": "Metal x1 (15%) Metal x2 (10%) Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6893,10 +7964,7 @@ const enemyData = [
         "name": "Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "Light Soulstone, Rare Beast Tusk",
-    "drop": "SP-Restoring Nut (L)",
-    "immunities": "Paralysis, Instant Death"
+    ]
   },
   {
     "id": "98090.0",
@@ -6905,19 +7973,28 @@ const enemyData = [
     "subArea": "Road to Castle Edoras",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 32,
     "hp": 2141,
     "patk": 355,
     "pdef": 32,
     "matk": 350,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 39,
+    "jp": 11,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6931,10 +8008,7 @@ const enemyData = [
         "name": "Horrible Breath",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive (M)",
-    "drop": "Herb, Quality Beast Fang, Revitalizing Jam",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98091.0",
@@ -6943,7 +8017,6 @@ const enemyData = [
     "subArea": "Castle Edoras Castle Edoras: Upper Floor",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -6951,12 +8024,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Dagger",
     "level": 32,
     "hp": 1920,
     "patk": 355,
     "pdef": 32,
     "matk": 350,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 28,
+    "jp": 11,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -6970,10 +8053,7 @@ const enemyData = [
         "name": "Speed Up",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water (L), Quality Beast Hide, Sunshard",
-    "drop": "Revitalizing Jam (L), EXP, Iron Ore",
-    "immunities": "Terror, Paralysis"
+    ]
   },
   {
     "id": "98092.0",
@@ -6982,7 +8062,6 @@ const enemyData = [
     "subArea": "Castle Edoras Castle Edoras: Upper Floor",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -6990,12 +8069,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 32,
     "hp": 1920,
     "patk": 355,
     "pdef": 32,
     "matk": 350,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 28,
+    "jp": 11,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7009,10 +8098,7 @@ const enemyData = [
         "name": "Uncritical Eye",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Horn",
-    "drop": "SP-Restoring Nut (M), Silver Nugget",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98093.0",
@@ -7021,19 +8107,28 @@ const enemyData = [
     "subArea": "Castle Edoras Castle Edoras: Upper Floor Castle Edoras: Courtyard",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Staff",
       "Ice"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 1920,
     "patk": 355,
     "pdef": 32,
     "matk": 350,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 22,
+    "jp": 11,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7047,10 +8142,7 @@ const enemyData = [
         "name": "Fiery Blow",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Silver Nugget",
-    "drop": "Quality Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98094.0",
@@ -7059,7 +8151,6 @@ const enemyData = [
     "subArea": "Castle Edoras Castle Edoras: Upper Floor Castle Edoras: Courtyard",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
@@ -7067,12 +8158,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 32,
     "hp": 2012,
     "patk": 355,
     "pdef": 32,
     "matk": 360,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 24,
+    "jp": 11,
+    "steal": "Olive of Life",
+    "drop": "Olive of Life x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7086,10 +8187,7 @@ const enemyData = [
         "name": "Charge!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Minotaur Horn, Blessed Olive, Quality Beast Claw",
-    "drop": "Olive of Life (M)",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98095.0",
@@ -7098,7 +8196,6 @@ const enemyData = [
     "subArea": "Castle Edoras: Upper Floor Castle Edoras: Courtyard",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Staff",
@@ -7106,12 +8203,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 2096,
     "patk": 355,
     "pdef": 32,
     "matk": 360,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 28,
+    "jp": 11,
+    "steal": "Healing Grape",
+    "drop": "Healing Grape x1 (10%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7125,10 +8232,7 @@ const enemyData = [
         "name": "Hold Strong!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Inspiring Plum Basket",
-    "drop": "Dragon Scale, Quality Beast Meat",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98096.0",
@@ -7137,7 +8241,6 @@ const enemyData = [
     "subArea": "Castle Edoras Castle Edoras: Upper Floor Castle Edoras: Courtyard",
     "type": "Regular",
     "shields": 3,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
@@ -7145,12 +8248,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 32,
     "hp": 2135,
     "patk": 355,
     "pdef": 32,
     "matk": 360,
     "mdef": 32,
+    "speed": 160,
+    "crit": 131,
+    "accuracy": 131,
+    "evasion": 116,
+    "exp": 30,
+    "jp": 11,
+    "steal": "Energizing Pomegranate",
+    "drop": "Energizing Pomegranate x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7164,10 +8277,7 @@ const enemyData = [
         "name": "March Order",
         "type": "Unknown"
       }
-    ],
-    "steal": "Cerberus Fang",
-    "drop": "Quality Beast Meat, Holy Water (M)",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98738.0",
@@ -7176,19 +8286,28 @@ const enemyData = [
     "subArea": "Castle Edoras",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 3360,
     "patk": 388,
     "pdef": 32,
     "matk": 376,
     "mdef": 32,
+    "speed": 189,
+    "crit": 131,
+    "accuracy": 145,
+    "evasion": 145,
+    "exp": 48,
+    "jp": 12,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (7%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Light Shot",
@@ -7202,10 +8321,7 @@ const enemyData = [
         "name": "Wild Light Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Gold Dust, Basilisk Eye, Silver Nugget",
-    "drop": "Chimera Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98739.0",
@@ -7214,19 +8330,28 @@ const enemyData = [
     "subArea": "Castle Edoras: Upper Floor",
     "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 32,
     "hp": 3360,
     "patk": 388,
     "pdef": 32,
     "matk": 376,
     "mdef": 32,
+    "speed": 189,
+    "crit": 131,
+    "accuracy": 145,
+    "evasion": 145,
+    "exp": 48,
+    "jp": 12,
+    "steal": "Light Soulstone",
+    "drop": "Light Soulstone x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7240,10 +8365,7 @@ const enemyData = [
         "name": "Wild Cut",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (M), Herb",
-    "drop": "Soulstone, SP-Restoring Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98750.0",
@@ -7252,19 +8374,28 @@ const enemyData = [
     "subArea": "Cavern of Mists",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Ice",
       "Thunder"
     ],
+    "weakness": "Dagger",
     "level": 33,
     "hp": 3395,
     "patk": 397,
     "pdef": 32,
     "matk": 397,
     "mdef": 32,
+    "speed": 192,
+    "crit": 133,
+    "accuracy": 147,
+    "evasion": 147,
+    "exp": 51,
+    "jp": 12,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7278,10 +8409,7 @@ const enemyData = [
         "name": "Rampage",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Claw",
-    "drop": "Shiny Coin, Antidote Herb",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98139.0",
@@ -7290,19 +8418,28 @@ const enemyData = [
     "subArea": "Cavern of Mists",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 33,
     "hp": 1940,
     "patk": 358,
     "pdef": 32,
     "matk": 358,
     "mdef": 32,
+    "speed": 162,
+    "crit": 133,
+    "accuracy": 133,
+    "evasion": 118,
+    "exp": 30,
+    "jp": 11,
+    "steal": "Bottle of Blinding Dust",
+    "drop": "Bottle of Blinding Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7316,10 +8453,7 @@ const enemyData = [
         "name": "Brandish",
         "type": "Phys"
       }
-    ],
-    "steal": "Iron Ore",
-    "drop": "EXP, Holy Water (M)",
-    "immunities": "Silence, Instant Death"
+    ]
   },
   {
     "id": "98140.0",
@@ -7328,19 +8462,28 @@ const enemyData = [
     "subArea": "Cavern of Mists",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 33,
     "hp": 1977,
     "patk": 358,
     "pdef": 32,
     "matk": 358,
     "mdef": 32,
+    "speed": 162,
+    "crit": 133,
+    "accuracy": 133,
+    "evasion": 118,
+    "exp": 33,
+    "jp": 11,
+    "steal": "Bottle of Poison Dust",
+    "drop": "Bottle of Poison Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7354,10 +8497,7 @@ const enemyData = [
         "name": "Brandish",
         "type": "Phys"
       }
-    ],
-    "steal": "Old Coin, Quality Beast Fang, Antidote Herb (L)",
-    "drop": "Rare Beast Tusk",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98141.0",
@@ -7366,19 +8506,28 @@ const enemyData = [
     "subArea": "Cavern of Mists",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 33,
     "hp": 2110,
     "patk": 358,
     "pdef": 32,
     "matk": 358,
     "mdef": 32,
+    "speed": 162,
+    "crit": 133,
+    "accuracy": 133,
+    "evasion": 118,
+    "exp": 37,
+    "jp": 11,
+    "steal": "Bottle of Sanguine Dust",
+    "drop": "Bottle of Sanguine Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7392,10 +8541,7 @@ const enemyData = [
         "name": "Multi-Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L)",
-    "drop": "Minotaur Horn, Kraken Ink",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98142.0",
@@ -7404,19 +8550,28 @@ const enemyData = [
     "subArea": "Cavern of Mists",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 33,
     "hp": 2228,
     "patk": 358,
     "pdef": 32,
     "matk": 358,
     "mdef": 32,
+    "speed": 446,
+    "crit": 133,
+    "accuracy": 133,
+    "evasion": 118,
+    "exp": 41,
+    "jp": 11,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7430,10 +8585,7 @@ const enemyData = [
         "name": "Venomous Fang",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide, Holy Water (L), Hydra Scale",
-    "drop": "Beast Claw, Leaf, Rusty Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32366.0",
@@ -7442,19 +8594,28 @@ const enemyData = [
     "subArea": "Victors Hollow Trail",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Tome",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 2302,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 33,
+    "jp": 11,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7468,10 +8629,7 @@ const enemyData = [
         "name": "Gather Strength",
         "type": "Unknown"
       }
-    ],
-    "steal": "Phoenix Feather, Basilisk Eye",
-    "drop": "Blessed Olive (L)",
-    "immunities": "Blind, Terror"
+    ]
   },
   {
     "id": "32348.0",
@@ -7480,19 +8638,28 @@ const enemyData = [
     "subArea": "Victors Hollow Trail",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Fan",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 2179,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 30,
+    "jp": 11,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7506,10 +8673,7 @@ const enemyData = [
         "name": "Soporific Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "Ancient Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32352.0",
@@ -7518,19 +8682,28 @@ const enemyData = [
     "subArea": "Victors Hollow Trail",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 2028,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 135,
+    "exp": 24,
+    "jp": 12,
+    "steal": "Quality Lumber",
+    "drop": "Quality Lumber x1 (15%) Quality Lumber x2 (10%) Quality Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7544,10 +8717,7 @@ const enemyData = [
         "name": "Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "Meteorite, Moonstone, Hydra Scale",
-    "drop": "Quality Beast Horn, HP-Restoring Herb",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "32365.0",
@@ -7556,19 +8726,28 @@ const enemyData = [
     "subArea": "Victors Hollow Trail",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Staff",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 2109,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 27,
+    "jp": 12,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7582,30 +8761,36 @@ const enemyData = [
         "name": "Wild Scratch",
         "type": "Phys"
       }
-    ],
-    "steal": "Unicorn Horn",
-    "drop": "Grape, Moonstone",
-    "immunities": "Stun, Paralysis"
+    ]
   },
   {
     "id": "98746.0",
     "name": "Shield Wielder",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 7,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Fan",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 36,
     "hp": 3770,
     "patk": 413,
     "pdef": 33,
     "matk": 413,
     "mdef": 33,
+    "speed": 200,
+    "crit": 138,
+    "accuracy": 154,
+    "evasion": 154,
+    "exp": 59,
+    "jp": 13,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7619,31 +8804,37 @@ const enemyData = [
         "name": "Strong Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Griffin Claw, HP-Restoring Herb (L), Beast Meat",
-    "drop": "Minotaur Horn, Rare Beast Fang",
-    "immunities": "Instant Death, Terror"
+    ]
   },
   {
     "id": "32369.0",
     "name": "Combatant (Scholar)",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2367,
     "patk": 373,
     "pdef": 33,
     "matk": 378,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7657,31 +8848,37 @@ const enemyData = [
         "name": "Lightning Bolt",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Tusk, Healing Grape, Basilisk Eye",
-    "drop": "SP-Restoring Nut, Moonstone, Inspiring Plum Basket",
-    "immunities": "Petrification, Confusion"
+    ]
   },
   {
     "id": "32370.0",
     "name": "Combatant (Dancer)",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Thunder",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 36,
     "hp": 2326,
     "patk": 373,
     "pdef": 33,
     "matk": 378,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Moonlight Waltz",
@@ -7695,31 +8892,37 @@ const enemyData = [
         "name": "Master's Inspiration",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Meat, Light Soulstone",
-    "drop": "Rare Beast Meat, Cerberus Fang, Antidote Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32368.0",
     "name": "Combatant (Apothecary)",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Thunder",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 36,
     "hp": 2353,
     "patk": 373,
     "pdef": 33,
     "matk": 373,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Bottle of Numbing Dust",
+    "drop": "Bottle of Numbing Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bottled Flame",
@@ -7733,31 +8936,37 @@ const enemyData = [
         "name": "Wild Numbing Dust",
         "type": "Phys"
       }
-    ],
-    "steal": "Copper Ore",
-    "drop": "Sunshard, Cerberus Fang",
-    "immunities": "Poison, Petrification"
+    ]
   },
   {
     "id": "32367.0",
     "name": "Combatant (Hunter)",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2328,
     "patk": 373,
     "pdef": 33,
     "matk": 373,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7771,31 +8980,37 @@ const enemyData = [
         "name": "Critical Eye",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Claw",
-    "drop": "Copper Ore",
-    "immunities": "Blind, Petrification"
+    ]
   },
   {
     "id": "32371.0",
     "name": "Combatant (Thief)",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2188,
     "patk": 373,
     "pdef": 33,
     "matk": 373,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Bottle of Sanguine Dust",
+    "drop": "Bottle of Sanguine Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7809,31 +9024,37 @@ const enemyData = [
         "name": "Armor Corrosive",
         "type": "Unknown"
       }
-    ],
-    "steal": "Light Soulstone, Rare Beast Horn",
-    "drop": "Rare Beast Hide",
-    "immunities": "Poison, Instant Death"
+    ]
   },
   {
     "id": "32372.0",
     "name": "Combatant (Merchant)",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 36,
     "hp": 2365,
     "patk": 373,
     "pdef": 33,
     "matk": 378,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Bottle of Sleeping Dust",
+    "drop": "Bottle of Sleeping Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Icestone",
@@ -7847,31 +9068,37 @@ const enemyData = [
         "name": "Light Soulstone",
         "type": "Elem"
       }
-    ],
-    "steal": "Blessed Olive (M), Hydra Scale",
-    "drop": "Grape, Silver Nugget, Revitalizing Jam",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "32373.0",
     "name": "Combatant (Cleric)",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 36,
     "hp": 2305,
     "patk": 373,
     "pdef": 33,
     "matk": 378,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Bottle of Blinding Dust",
+    "drop": "Bottle of Blinding Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Traumatic Bash",
@@ -7885,10 +9112,7 @@ const enemyData = [
         "name": "Heal Wounds",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (M), Quality Beast Meat",
-    "drop": "Revitalizing Jam (L), Quality Beast Hide, Quality Beast Fang",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98748.0",
@@ -7897,19 +9121,28 @@ const enemyData = [
     "subArea": "Great Tree's Tears",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Fire",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 3549,
     "patk": 407,
     "pdef": 32,
     "matk": 407,
     "mdef": 32,
+    "speed": 179,
+    "crit": 135,
+    "accuracy": 150,
+    "evasion": 150,
+    "exp": 53,
+    "jp": 12,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -7923,10 +9156,7 @@ const enemyData = [
         "name": "Mass Silencing Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Silver Nugget, Rare Beast Meat",
-    "drop": "Leaf, Basilisk Eye, Grape",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "32375.0",
@@ -7935,19 +9165,28 @@ const enemyData = [
     "subArea": "Great Tree's Tears",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Tome",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 2028,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 31,
+    "jp": 12,
+    "steal": "Herb of Light",
+    "drop": "Herb of Light x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -7961,10 +9200,7 @@ const enemyData = [
         "name": "Bug Eater",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (L)",
-    "drop": "SP-Restoring Nut",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "32376.0",
@@ -7973,19 +9209,28 @@ const enemyData = [
     "subArea": "Great Tree's Tears",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Staff",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 34,
     "hp": 2126,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 35,
+    "jp": 11,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Scratch",
@@ -7999,10 +9244,7 @@ const enemyData = [
         "name": "Toxic Breath",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Horn",
-    "drop": "Antidote Herb (L)",
-    "immunities": "Sleep, Paralysis"
+    ]
   },
   {
     "id": "32377.0",
@@ -8011,19 +9253,28 @@ const enemyData = [
     "subArea": "Great Tree's Tears",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 2156,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 39,
+    "jp": 11,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Soporific Sting",
@@ -8037,10 +9288,7 @@ const enemyData = [
         "name": "Photosynthesis",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb",
-    "drop": "Moonstone, Copper Ore, Hydra Scale",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32378.0",
@@ -8049,19 +9297,28 @@ const enemyData = [
     "subArea": "Great Tree's Tears",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Tome",
       "Ice"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 2236,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 42,
+    "jp": 12,
+    "steal": "Herb of Clamor",
+    "drop": "Herb of Clamor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Scratch",
@@ -8075,10 +9332,7 @@ const enemyData = [
         "name": "Silencing Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Dragon Scale, Basilisk Eye, Inspiring Plum",
-    "drop": "Beast Hide, HP-Restoring Herb (L)",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98178.0",
@@ -8087,19 +9341,28 @@ const enemyData = [
     "subArea": "Donescu Traverse",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 2028,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 135,
+    "exp": 24,
+    "jp": 11,
+    "steal": "Quality Cloth",
+    "drop": "Quality Cloth x1 (15%) Quality Cloth x2 (10%) Quality Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8113,10 +9376,7 @@ const enemyData = [
         "name": "Inspiration",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Tusk, Copper Ore, Antidote Herb (L)",
-    "drop": "Soulstone, Quality Beast Fang",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98181.0",
@@ -8125,19 +9385,28 @@ const enemyData = [
     "subArea": "Donescu Traverse",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Fan",
       "Ice",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 34,
     "hp": 2314,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 33,
+    "jp": 11,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8151,10 +9420,7 @@ const enemyData = [
         "name": "Toxic Breath",
         "type": "Phys"
       }
-    ],
-    "steal": "Copper Ore, Rare Beast Tusk",
-    "drop": "Rare Beast Tusk, Plum",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98180.0",
@@ -8163,19 +9429,28 @@ const enemyData = [
     "subArea": "Donescu Traverse",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 2166,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 30,
+    "jp": 11,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8189,10 +9464,7 @@ const enemyData = [
         "name": "Spider's Web",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb, Light Soulstone",
-    "drop": "Rare Beast Fang, Phoenix Feather",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98179.0",
@@ -8201,19 +9473,28 @@ const enemyData = [
     "subArea": "Donescu Traverse",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 2100,
     "patk": 367,
     "pdef": 32,
     "matk": 367,
     "mdef": 32,
+    "speed": 164,
+    "crit": 135,
+    "accuracy": 135,
+    "evasion": 120,
+    "exp": 27,
+    "jp": 11,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8227,10 +9508,7 @@ const enemyData = [
         "name": "Quick Stab",
         "type": "Phys"
       }
-    ],
-    "steal": "Hydra Scale, Dragon Scale, Quality Beast Horn",
-    "drop": "Rare Beast Hide, Copper Ore, Chimera Fang",
-    "immunities": "Blind, Instant Death"
+    ]
   },
   {
     "id": "98760.0",
@@ -8239,19 +9517,28 @@ const enemyData = [
     "subArea": "East Cyphlo Banks Cyphlo Banks",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Fan",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 3770,
     "patk": 413,
     "pdef": 33,
     "matk": 395,
     "mdef": 33,
+    "speed": 200,
+    "crit": 138,
+    "accuracy": 154,
+    "evasion": 154,
+    "exp": 59,
+    "jp": 13,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8265,10 +9552,7 @@ const enemyData = [
         "name": "Shell Shield",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Hide, Herb, Nut",
-    "drop": "Beast Fang, Quality Beast Fang",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98182.0",
@@ -8277,19 +9561,28 @@ const enemyData = [
     "subArea": "East Cyphlo Banks Cyphlo Banks",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Staff",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2154,
     "patk": 373,
     "pdef": 33,
     "matk": 378,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Herb of Fortification",
+    "drop": "Herb of Fortification x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8303,10 +9596,7 @@ const enemyData = [
         "name": "Enfeebling Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive",
-    "drop": "Basilisk Eye",
-    "immunities": "Curse, Confusion"
+    ]
   },
   {
     "id": "98183.0",
@@ -8315,19 +9605,28 @@ const enemyData = [
     "subArea": "East Cyphlo Banks Cyphlo Banks",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Tome",
     "weaknesses": [
       "Tome",
       "Fire",
       "Wind",
       "Dark"
     ],
+    "weakness": "Tome",
     "level": 36,
     "hp": 2180,
     "patk": 373,
     "pdef": 33,
     "matk": 378,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 38,
+    "jp": 12,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8341,10 +9640,7 @@ const enemyData = [
         "name": "Icy Tempest",
         "type": "Elem"
       }
-    ],
-    "steal": "Phoenix Feather, Rare Beast Claw",
-    "drop": "Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98184.0",
@@ -8353,19 +9649,28 @@ const enemyData = [
     "subArea": "East Cyphlo Banks Cyphlo Banks",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2367,
     "patk": 373,
     "pdef": 33,
     "matk": 378,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 138,
+    "exp": 43,
+    "jp": 12,
+    "steal": "Quality Cloth",
+    "drop": "Quality Cloth x1 (15%) Quality Cloth x2 (10%) Quality Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8379,10 +9684,7 @@ const enemyData = [
         "name": "Water Hammer",
         "type": "Elem"
       }
-    ],
-    "steal": "Revitalizing Jam (L), Beast Tusk",
-    "drop": "Copper Ore, Iron Ore, Rare Beast Fang",
-    "immunities": "Terror, Poison"
+    ]
   },
   {
     "id": "98185.0",
@@ -8391,19 +9693,28 @@ const enemyData = [
     "subArea": "East Cyphlo Banks Cyphlo Banks",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Ice",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 36,
     "hp": 2378,
     "patk": 373,
     "pdef": 33,
     "matk": 378,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 47,
+    "jp": 12,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8417,10 +9728,7 @@ const enemyData = [
         "name": "Horrible Breath",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Meat",
-    "drop": "Olive, Basilisk Eye",
-    "immunities": "Curse, Sleep"
+    ]
   },
   {
     "id": "98761.0",
@@ -8429,19 +9737,28 @@ const enemyData = [
     "subArea": "Misty Falls",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
       "Wind",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 38,
     "hp": 3994,
     "patk": 431,
     "pdef": 34,
     "matk": 406,
     "mdef": 34,
+    "speed": 205,
+    "crit": 142,
+    "accuracy": 158,
+    "evasion": 158,
+    "exp": 63,
+    "jp": 14,
+    "steal": "Light Soulstone (M)",
+    "drop": "Light Soulstone (M) x1 (4%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Light Shot",
@@ -8455,10 +9772,7 @@ const enemyData = [
         "name": "Wild Light Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Healing Grape",
-    "drop": "EXP, SP-Restoring Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98186.0",
@@ -8467,19 +9781,28 @@ const enemyData = [
     "subArea": "Misty Falls",
     "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 38,
     "hp": 2282,
     "patk": 395,
     "pdef": 34,
     "matk": 395,
     "mdef": 34,
+    "speed": 174,
+    "crit": 142,
+    "accuracy": 142,
+    "evasion": 142,
+    "exp": 37,
+    "jp": 13,
+    "steal": "Quality Cloth",
+    "drop": "Quality Cloth x1 (15%) Quality Cloth x2 (10%) Quality Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8493,10 +9816,7 @@ const enemyData = [
         "name": "Water Hammer",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb (L)",
-    "drop": "Quality Beast Horn, Antidote Herb, Rare Beast Meat",
-    "immunities": "Blind, Sleep"
+    ]
   },
   {
     "id": "98187.0",
@@ -8505,19 +9825,28 @@ const enemyData = [
     "subArea": "Misty Falls",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Staff",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 38,
     "hp": 2367,
     "patk": 395,
     "pdef": 34,
     "matk": 369,
     "mdef": 34,
+    "speed": 174,
+    "crit": 142,
+    "accuracy": 142,
+    "evasion": 126,
+    "exp": 41,
+    "jp": 13,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8531,10 +9860,7 @@ const enemyData = [
         "name": "Blinding Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam, Quality Beast Hide, Ancient Coin",
-    "drop": "Manticore Stinger, Blessed Olive (L), Antidote Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98188.0",
@@ -8543,19 +9869,28 @@ const enemyData = [
     "subArea": "Misty Falls",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 38,
     "hp": 2413,
     "patk": 395,
     "pdef": 34,
     "matk": 395,
     "mdef": 34,
+    "speed": 174,
+    "crit": 142,
+    "accuracy": 142,
+    "evasion": 126,
+    "exp": 46,
+    "jp": 13,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8569,10 +9904,7 @@ const enemyData = [
         "name": "Chew to Bits",
         "type": "Phys"
       }
-    ],
-    "steal": "Fire Soulstone, HP-Restoring Herb (M)",
-    "drop": "Blessed Olive (L)",
-    "immunities": "Poison, Sleep"
+    ]
   },
   {
     "id": "98189.0",
@@ -8581,19 +9913,28 @@ const enemyData = [
     "subArea": "Misty Falls",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Tome",
     "weaknesses": [
       "Tome",
       "Fan",
       "Ice",
       "Dark"
     ],
+    "weakness": "Tome",
     "level": 38,
     "hp": 2538,
     "patk": 369,
     "pdef": 34,
     "matk": 369,
     "mdef": 34,
+    "speed": 174,
+    "crit": 142,
+    "accuracy": 142,
+    "evasion": 126,
+    "exp": 51,
+    "jp": 13,
+    "steal": "Light Soulstone (M)",
+    "drop": "Light Soulstone (M) x1 (4%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Luminescent Strike",
@@ -8607,10 +9948,7 @@ const enemyData = [
         "name": "Luminance",
         "type": "Elem"
       }
-    ],
-    "steal": "Revitalizing Jam, Quality Beast Tusk",
-    "drop": "Plum, Silver Nugget",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "32403.0",
@@ -8619,19 +9957,28 @@ const enemyData = [
     "subArea": "Cathedral of Tytos: Underground Emberglow Laboratory: Inner Chambers",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Staff",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2154,
     "patk": 373,
     "pdef": 33,
     "matk": 373,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 34,
+    "jp": 12,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8645,10 +9992,7 @@ const enemyData = [
         "name": "Wild Scratch",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Tusk",
-    "drop": "Griffin Claw",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "32404.0",
@@ -8657,19 +10001,28 @@ const enemyData = [
     "subArea": "Cathedral of Tytos: Underground Emberglow Laboratory: Inner Chambers",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2255,
     "patk": 373,
     "pdef": 33,
     "matk": 373,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 38,
+    "jp": 12,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8683,10 +10036,7 @@ const enemyData = [
         "name": "Numbing Needle",
         "type": "Phys"
       }
-    ],
-    "steal": "Minotaur Horn",
-    "drop": "Holy Water (M), Plum",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "32405.0",
@@ -8695,19 +10045,28 @@ const enemyData = [
     "subArea": "Cathedral of Tytos: Underground Emberglow Laboratory: Inner Chambers",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2355,
     "patk": 373,
     "pdef": 33,
     "matk": 373,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 43,
+    "jp": 12,
+    "steal": "Bottle of Poison Dust",
+    "drop": "Bottle of Poison Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8721,10 +10080,7 @@ const enemyData = [
         "name": "Brandish",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Claw, Rare Beast Horn",
-    "drop": "EXP, Rare Beast Meat",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "32406.0",
@@ -8733,19 +10089,28 @@ const enemyData = [
     "subArea": "Cathedral of Tytos: Underground",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 2417,
     "patk": 373,
     "pdef": 33,
     "matk": 373,
     "mdef": 33,
+    "speed": 169,
+    "crit": 138,
+    "accuracy": 138,
+    "evasion": 123,
+    "exp": 47,
+    "jp": 12,
+    "steal": "Bottle of Numbing Dust",
+    "drop": "Bottle of Numbing Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8759,10 +10124,7 @@ const enemyData = [
         "name": "Running Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), HP-Restoring Herb, Manticore Stinger",
-    "drop": "Blessed Olive",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98770.0",
@@ -8771,19 +10133,28 @@ const enemyData = [
     "subArea": "Emberglow Laboratory: Inner Chambers",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Fan",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 3770,
     "patk": 413,
     "pdef": 33,
     "matk": 413,
     "mdef": 33,
+    "speed": 200,
+    "crit": 138,
+    "accuracy": 154,
+    "evasion": 154,
+    "exp": 59,
+    "jp": 13,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8797,10 +10168,7 @@ const enemyData = [
         "name": "Double Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (M), Old Coin",
-    "drop": "Rusty Coin",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98109.0",
@@ -8809,19 +10177,28 @@ const enemyData = [
     "subArea": "Sufrataljah Sands",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 2360,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 30,
+    "jp": 13,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8835,10 +10212,7 @@ const enemyData = [
         "name": "Venomous Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Hydra Scale, Healing Grape Bunch",
-    "drop": "Basilisk Eye",
-    "immunities": "Blind, Stun"
+    ]
   },
   {
     "id": "98110.0",
@@ -8847,19 +10221,28 @@ const enemyData = [
     "subArea": "Sufrataljah Sands",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 39,
     "hp": 2460,
     "patk": 398,
     "pdef": 35,
     "matk": 409,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 33,
+    "jp": 13,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8873,10 +10256,7 @@ const enemyData = [
         "name": "Numbing Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Meat, Rare Beast Hide",
-    "drop": "Beast Meat, Rare Beast Horn",
-    "immunities": "Petrification, Terror"
+    ]
   },
   {
     "id": "98111.0",
@@ -8885,19 +10265,28 @@ const enemyData = [
     "subArea": "Sufrataljah Sands",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 2593,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 37,
+    "jp": 13,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8911,10 +10300,7 @@ const enemyData = [
         "name": "Run Over",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (L), Quality Beast Fang",
-    "drop": "Quality Beast Hide, Holy Water (M)",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98112.0",
@@ -8923,19 +10309,28 @@ const enemyData = [
     "subArea": "Sufrataljah Sands",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 2709,
     "patk": 398,
     "pdef": 35,
     "matk": 409,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 144,
+    "exp": 41,
+    "jp": 13,
+    "steal": "Quality Stone",
+    "drop": "Quality Stone x1 (15%) Quality Stone x2 (10%) Quality Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8949,10 +10344,7 @@ const enemyData = [
         "name": "Hurricane Blow",
         "type": "Elem"
       }
-    ],
-    "steal": "Beast Claw, Iron Ore",
-    "drop": "Rare Beast Fang, HP-Restoring Herb (M), Antidote Herb",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98113.0",
@@ -8961,7 +10353,6 @@ const enemyData = [
     "subArea": "Sufrataljah: Palace Sufrataljah: Palace - Upper Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -8969,12 +10360,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 2440,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 32,
+    "jp": 14,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -8988,10 +10389,7 @@ const enemyData = [
         "name": "Restore Health",
         "type": "Unknown"
       }
-    ],
-    "steal": "Fire Soulstone, Blessed Olive (M), Revitalizing Jam (M)",
-    "drop": "JP, Quality Beast Tusk, Antidote Herb",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98114.0",
@@ -9000,7 +10398,6 @@ const enemyData = [
     "subArea": "Sufrataljah: Palace Sufrataljah: Palace - Upper Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -9008,12 +10405,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 2552,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 35,
+    "jp": 14,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9027,10 +10434,7 @@ const enemyData = [
         "name": "Multi-Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "Phoenix Feather",
-    "drop": "Leaf, Gold, Revitalizing Jam (L)",
-    "immunities": "Sleep, Confusion"
+    ]
   },
   {
     "id": "98115.0",
@@ -9039,7 +10443,6 @@ const enemyData = [
     "subArea": "Sufrataljah: Palace Sufrataljah: Palace - Upper Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -9047,12 +10450,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 2679,
     "patk": 406,
     "pdef": 35,
     "matk": 370,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 40,
+    "jp": 14,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9066,10 +10479,7 @@ const enemyData = [
         "name": "Spirited Mole Dance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (M)",
-    "drop": "Antidote Herb (L), Iron Ore, SP-Restoring Nut",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98116.0",
@@ -9078,19 +10488,28 @@ const enemyData = [
     "subArea": "Sufrataljah: Palace Sufrataljah: Palace - Upper Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 2758,
     "patk": 370,
     "pdef": 35,
     "matk": 370,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 43,
+    "jp": 14,
+    "steal": "Wind Soulstone (L)",
+    "drop": "Wind Soulstone (L) x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Gale Shot",
@@ -9104,10 +10523,7 @@ const enemyData = [
         "name": "Wild Gale Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "Blessed Olive",
-    "drop": "Dragon Scale, Hydra Scale, HP-Restoring Herb (L)",
-    "immunities": "Blind, Confusion"
+    ]
   },
   {
     "id": "98741.0",
@@ -9116,19 +10532,28 @@ const enemyData = [
     "subArea": "Sufrataljah: Palace - Upper Floor",
     "type": "Boss",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 4270,
     "patk": 442,
     "pdef": 35,
     "matk": 417,
     "mdef": 35,
+    "speed": 211,
+    "crit": 146,
+    "accuracy": 162,
+    "evasion": 162,
+    "exp": 70,
+    "jp": 15,
+    "steal": "Fire Soulstone (L)",
+    "drop": "Fire Soulstone (L) x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Flame Cut",
@@ -9142,10 +10567,7 @@ const enemyData = [
         "name": "Spirited Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Healing Grape Bunch, Phoenix Feather",
-    "drop": "SP-Restoring Nut (M), Dragon Scale",
-    "immunities": "Curse, Confusion"
+    ]
   },
   {
     "id": "98337.0",
@@ -9154,19 +10576,28 @@ const enemyData = [
     "subArea": "Outersea",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 2360,
     "patk": 398,
     "pdef": 35,
     "matk": 363,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 30,
+    "jp": 13,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9180,10 +10611,7 @@ const enemyData = [
         "name": "Wild Needle Cannon",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Fang, Rare Beast Fang",
-    "drop": "Rare Beast Horn, Chimera Fang, Cerberus Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98338.0",
@@ -9192,19 +10620,28 @@ const enemyData = [
     "subArea": "Outersea",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Fire",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 39,
     "hp": 2444,
     "patk": 398,
     "pdef": 35,
     "matk": 363,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 33,
+    "jp": 13,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9218,10 +10655,7 @@ const enemyData = [
         "name": "Sunshine",
         "type": "Elem"
       }
-    ],
-    "steal": "Holy Water, Cerberus Fang, Blessed Olive (M)",
-    "drop": "SP-Restoring Nut (L)",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98339.0",
@@ -9230,19 +10664,28 @@ const enemyData = [
     "subArea": "Outersea",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 2512,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 37,
+    "jp": 13,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9256,10 +10699,7 @@ const enemyData = [
         "name": "Brutal Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Tusk, Rare Beast Hide",
-    "drop": "Chimera Fang, JP, Kraken Ink",
-    "immunities": "Blind, Curse"
+    ]
   },
   {
     "id": "98340.0",
@@ -9268,19 +10708,28 @@ const enemyData = [
     "subArea": "Outersea",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Thunder",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 39,
     "hp": 2692,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 41,
+    "jp": 13,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9294,10 +10743,7 @@ const enemyData = [
         "name": "Tear to Pieces",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water",
-    "drop": "Blessed Olive (L), Antidote Herb, Rare Beast Tusk",
-    "immunities": "Instant Death, Petrification"
+    ]
   },
   {
     "id": "98349.0",
@@ -9306,19 +10752,28 @@ const enemyData = [
     "subArea": "Shipwreck Island",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Bow",
       "Fire"
     ],
+    "weakness": "Dagger",
     "level": 43,
     "hp": 2658,
     "patk": 414,
     "pdef": 36,
     "matk": 414,
     "mdef": 36,
+    "speed": 185,
+    "crit": 152,
+    "accuracy": 152,
+    "evasion": 135,
+    "exp": 38,
+    "jp": 15,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9332,10 +10787,7 @@ const enemyData = [
         "name": "Duca Kick",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (L)",
-    "drop": "SP-Restoring Nut, Rare Beast Claw, Moonstone",
-    "immunities": "Instant Death, Curse"
+    ]
   },
   {
     "id": "98350.0",
@@ -9344,19 +10796,28 @@ const enemyData = [
     "subArea": "Shipwreck Island",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 43,
     "hp": 2689,
     "patk": 414,
     "pdef": 36,
     "matk": 414,
     "mdef": 36,
+    "speed": 185,
+    "crit": 152,
+    "accuracy": 152,
+    "evasion": 152,
+    "exp": 42,
+    "jp": 15,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9370,10 +10831,7 @@ const enemyData = [
         "name": "Venomous Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Shiny Coin, Holy Water (L)",
-    "drop": "Hydra Scale, Silver Nugget",
-    "immunities": "Petrification, Curse"
+    ]
   },
   {
     "id": "98351.0",
@@ -9382,19 +10840,28 @@ const enemyData = [
     "subArea": "Shipwreck Island",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Fire",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 43,
     "hp": 2839,
     "patk": 414,
     "pdef": 36,
     "matk": 414,
     "mdef": 36,
+    "speed": 185,
+    "crit": 152,
+    "accuracy": 152,
+    "evasion": 135,
+    "exp": 47,
+    "jp": 15,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9408,10 +10875,7 @@ const enemyData = [
         "name": "Rip and Tear",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (L)",
-    "drop": "Star Fragment, HP-Restoring Herb (L)",
-    "immunities": "Instant Death, Poison"
+    ]
   },
   {
     "id": "98352.0",
@@ -9420,19 +10884,28 @@ const enemyData = [
     "subArea": "Shipwreck Island",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Fire",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 43,
     "hp": 2991,
     "patk": 414,
     "pdef": 36,
     "matk": 414,
     "mdef": 36,
+    "speed": 185,
+    "crit": 152,
+    "accuracy": 152,
+    "evasion": 135,
+    "exp": 51,
+    "jp": 15,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9446,10 +10919,7 @@ const enemyData = [
         "name": "Silencing Lick",
         "type": "Phys"
       }
-    ],
-    "steal": "Lightning Soulstone",
-    "drop": "Beast Horn, HP-Restoring Herb (M)",
-    "immunities": "Poison, Instant Death"
+    ]
   },
   {
     "id": "98053.0",
@@ -9458,7 +10928,6 @@ const enemyData = [
     "subArea": "Grandport Coast",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -9466,12 +10935,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 39,
     "hp": 2360,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 40,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 144,
+    "exp": 30,
+    "jp": 13,
+    "steal": "Quality Metal",
+    "drop": "Quality Metal x1 (15%) Quality Metal x2 (10%) Quality Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9485,10 +10964,7 @@ const enemyData = [
         "name": "Inspiration",
         "type": "Unknown"
       }
-    ],
-    "steal": "Manticore Stinger, Dragon Scale",
-    "drop": "Copper Ore",
-    "immunities": "Blind, Confusion"
+    ]
   },
   {
     "id": "98054.0",
@@ -9497,19 +10973,28 @@ const enemyData = [
     "subArea": "Grandport Coast",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Staff",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 39,
     "hp": 2475,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 33,
+    "jp": 13,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9523,10 +11008,7 @@ const enemyData = [
         "name": "Toxic Breath",
         "type": "Phys"
       }
-    ],
-    "steal": "Manticore Stinger, Kraken Ink, Gold Dust",
-    "drop": "Ancient Coin, Rare Beast Claw, EXP",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98055.0",
@@ -9535,19 +11017,28 @@ const enemyData = [
     "subArea": "Grandport Coast",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Fan",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 2526,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 37,
+    "jp": 13,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Body Bash",
@@ -9561,10 +11052,7 @@ const enemyData = [
         "name": "Swoop",
         "type": "Phys"
       }
-    ],
-    "steal": "Nut, Meteorite",
-    "drop": "Dragon Scale, Old Coin, Star Fragment",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98056.0",
@@ -9573,7 +11061,6 @@ const enemyData = [
     "subArea": "Grandport Coast",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -9581,12 +11068,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 39,
     "hp": 2637,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 40,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 144,
+    "exp": 41,
+    "jp": 13,
+    "steal": "Quality Metal",
+    "drop": "Quality Metal x1 (15%) Quality Metal x2 (10%) Quality Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9600,10 +11097,7 @@ const enemyData = [
         "name": "Inspiration",
         "type": "Unknown"
       }
-    ],
-    "steal": "Wind Soulstone, Healing Grape",
-    "drop": "Holy Water (L)",
-    "immunities": "Petrification, Silence"
+    ]
   },
   {
     "id": "98061.0",
@@ -9612,19 +11106,28 @@ const enemyData = [
     "subArea": "Grandport Sewers Grandport Sewers: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Fan",
       "Fire",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 40,
     "hp": 2440,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 32,
+    "jp": 14,
+    "steal": "Bottle of Numbing Dust",
+    "drop": "Bottle of Numbing Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9638,10 +11141,7 @@ const enemyData = [
         "name": "Helmcleaver",
         "type": "Phys"
       }
-    ],
-    "steal": "Rusty Coin",
-    "drop": "HP-Restoring Herb (M), Ancient Coin",
-    "immunities": "Blind, Instant Death"
+    ]
   },
   {
     "id": "98062.0",
@@ -9650,19 +11150,28 @@ const enemyData = [
     "subArea": "Grandport Sewers Grandport Sewers: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Thunder",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 40,
     "hp": 2523,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 146,
+    "exp": 35,
+    "jp": 14,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9676,10 +11185,7 @@ const enemyData = [
         "name": "Strip Armaments",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Tusk, Olive of Life (M), Quality Beast Hide",
-    "drop": "Griffin Claw, Quality Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98063.0",
@@ -9688,19 +11194,28 @@ const enemyData = [
     "subArea": "Grandport Sewers Grandport Sewers: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Wind",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 40,
     "hp": 2678,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 40,
+    "jp": 14,
+    "steal": "Herb of Fortification",
+    "drop": "Herb of Fortification x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9714,10 +11229,7 @@ const enemyData = [
         "name": "Enfeebling Attack",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water (L), Kraken Ink",
-    "drop": "Griffin Claw, HP-Restoring Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98064.0",
@@ -9726,19 +11238,28 @@ const enemyData = [
     "subArea": "Grandport Sewers",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Tome",
       "Fan",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 40,
     "hp": 2729,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 43,
+    "jp": 14,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9752,10 +11273,7 @@ const enemyData = [
         "name": "Expel Mucus",
         "type": "Phys"
       }
-    ],
-    "steal": "Wind Soulstone, Rare Beast Meat, Healing Grape Bunch",
-    "drop": "Rare Beast Hide",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98065.0",
@@ -9764,19 +11282,28 @@ const enemyData = [
     "subArea": "Grandport Sewers: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Tome",
     "weaknesses": [
       "Tome",
       "Fan",
       "Fire",
       "Light"
     ],
+    "weakness": "Tome",
     "level": 40,
     "hp": 2721,
     "patk": 406,
     "pdef": 35,
     "matk": 370,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 56,
+    "jp": 14,
+    "steal": "Shadow Soulstone (L)",
+    "drop": "Shadow Soulstone (L) x1 (4%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Darkstrike",
@@ -9790,10 +11317,7 @@ const enemyData = [
         "name": "Wild Shadowshot",
         "type": "Elem"
       }
-    ],
-    "steal": "SP-Restoring Nut (M), Beast Horn, Rare Beast Meat",
-    "drop": "Olive of Life (M)",
-    "immunities": "Instant Death, Curse"
+    ]
   },
   {
     "id": "98763.0",
@@ -9802,19 +11326,28 @@ const enemyData = [
     "subArea": "Grandport Sewers: Depths",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 4270,
     "patk": 442,
     "pdef": 35,
     "matk": 417,
     "mdef": 35,
+    "speed": 211,
+    "crit": 146,
+    "accuracy": 162,
+    "evasion": 162,
+    "exp": 70,
+    "jp": 15,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9828,10 +11361,7 @@ const enemyData = [
         "name": "Horrific Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Sunshard, Phoenix Feather",
-    "drop": "JP, Beast Meat, HP-Restoring Herb",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "32339.0",
@@ -9840,7 +11370,6 @@ const enemyData = [
     "subArea": "West Theatropolis Plains Atlasdam Flats",
     "type": "Boss",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -9848,12 +11377,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 39,
     "hp": 2443,
     "patk": 398,
     "pdef": 35,
     "matk": 363,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 144,
+    "exp": 33,
+    "jp": 13,
+    "steal": "Quality Cloth",
+    "drop": "Quality Cloth x1 (15%) Quality Cloth x2 (10%) Quality Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Sweep",
@@ -9867,10 +11406,7 @@ const enemyData = [
         "name": "Unearthly Roar",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (L), Rare Beast Horn",
-    "drop": "Antidote Herb (L), Blessed Olive (L)",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "32340.0",
@@ -9879,19 +11415,28 @@ const enemyData = [
     "subArea": "West Theatropolis Plains Atlasdam Flats",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 2497,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 40,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 37,
+    "jp": 13,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9905,10 +11450,7 @@ const enemyData = [
         "name": "Updraft",
         "type": "Unknown"
       }
-    ],
-    "steal": "Moonstone",
-    "drop": "SP-Restoring Nut (M), Iron Ore",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32342.0",
@@ -9917,7 +11459,6 @@ const enemyData = [
     "subArea": "West Theatropolis Plains",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -9925,12 +11466,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 39,
     "hp": 2677,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 41,
+    "jp": 13,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Wild Bite",
@@ -9944,10 +11495,7 @@ const enemyData = [
         "name": "Spider's Web",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Claw",
-    "drop": "Beast Hide",
-    "immunities": "Stun, Sleep"
+    ]
   },
   {
     "id": "32309.0",
@@ -9956,19 +11504,28 @@ const enemyData = [
     "subArea": "West Theatropolis Plains Atlasdam Flats",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Ice",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 39,
     "hp": 2360,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 144,
+    "exp": 30,
+    "jp": 13,
+    "steal": "Quality Cloth",
+    "drop": "Quality Cloth x1 (15%) Quality Cloth x2 (10%) Quality Cloth x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -9982,10 +11539,7 @@ const enemyData = [
         "name": "Rush Stab",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb, Sphinx Feather",
-    "drop": "Beast Hide, Leaf",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32341.0",
@@ -9994,19 +11548,28 @@ const enemyData = [
     "subArea": "Atlasdam Flats",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Fan",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 39,
     "hp": 2696,
     "patk": 398,
     "pdef": 35,
     "matk": 398,
     "mdef": 35,
+    "speed": 176,
+    "crit": 144,
+    "accuracy": 144,
+    "evasion": 128,
+    "exp": 41,
+    "jp": 13,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Raging Frenzy",
@@ -10020,10 +11583,7 @@ const enemyData = [
         "name": "Soporific Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Healing Grape Bunch, Gold Dust",
-    "drop": "Shiny Coin",
-    "immunities": "Petrification, Instant Death"
+    ]
   },
   {
     "id": "98771.0",
@@ -10032,7 +11592,6 @@ const enemyData = [
     "subArea": "Valley of the Flame",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -10040,12 +11599,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 40,
     "hp": 4270,
     "patk": 442,
     "pdef": 35,
     "matk": 395,
     "mdef": 35,
+    "speed": 194,
+    "crit": 146,
+    "accuracy": 162,
+    "evasion": 162,
+    "exp": 70,
+    "jp": 15,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Ice Sting",
@@ -10059,10 +11628,7 @@ const enemyData = [
         "name": "Photosynthesis",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Hide, Antidote Herb (L)",
-    "drop": "Sphinx Feather, Revitalizing Jam",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "32387.0",
@@ -10071,7 +11637,6 @@ const enemyData = [
     "subArea": "Valley of the Flame Path to the Cave Of Origin Cave Of Origin",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -10079,12 +11644,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 40,
     "hp": 2440,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 146,
+    "exp": 41,
+    "jp": 14,
+    "steal": "Quality Stone",
+    "drop": "Quality Stone x1 (15%) Quality Stone x2 (10%) Quality Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Thrash",
@@ -10098,10 +11673,7 @@ const enemyData = [
         "name": "Inspiration",
         "type": "Unknown"
       }
-    ],
-    "steal": "Moonstone",
-    "drop": "Beast Claw, HP-Restoring Herb, Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32407.0",
@@ -10110,19 +11682,28 @@ const enemyData = [
     "subArea": "Valley of the Flame Path to the Cave Of Origin Cave Of Origin",
     "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Fire",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 2468,
     "patk": 406,
     "pdef": 35,
     "matk": 370,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 146,
+    "exp": 46,
+    "jp": 13,
+    "steal": "Quality Stone",
+    "drop": "Quality Stone x1 (15%) Quality Stone x2 (10%) Quality Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Ice Dragon",
@@ -10136,10 +11717,7 @@ const enemyData = [
         "name": "Slumber Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Kraken Ink",
-    "drop": "JP, Blessed Olive",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "32408.0",
@@ -10148,19 +11726,28 @@ const enemyData = [
     "subArea": "Valley of the Flame Path to the Cave Of Origin",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Tome",
       "Fan",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 2587,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 52,
+    "jp": 13,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Raging Frenzy",
@@ -10174,10 +11761,7 @@ const enemyData = [
         "name": "Extreme Charge",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Meat",
-    "drop": "Blessed Olive (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98778.0",
@@ -10186,18 +11770,27 @@ const enemyData = [
     "subArea": "Valley of the Flame Path to the Cave Of Origin",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Fire"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 2727,
     "patk": 406,
     "pdef": 35,
     "matk": 406,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 56,
+    "jp": 13,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -10211,10 +11804,7 @@ const enemyData = [
         "name": "Horrific Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (M), Holy Water (L)",
-    "drop": "Revitalizing Jam (L), Rare Beast Tusk, JP",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98772.0",
@@ -10223,19 +11813,28 @@ const enemyData = [
     "subArea": "Cave Of Origin",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 4270,
     "patk": 442,
     "pdef": 35,
     "matk": 417,
     "mdef": 35,
+    "speed": 211,
+    "crit": 146,
+    "accuracy": 162,
+    "evasion": 162,
+    "exp": 70,
+    "jp": 15,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Sweep",
@@ -10249,10 +11848,7 @@ const enemyData = [
         "name": "Extreme Charge",
         "type": "Phys"
       }
-    ],
-    "steal": "Silver Nugget, Griffin Claw, Quality Beast Hide",
-    "drop": "Silver Nugget",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32318.0",
@@ -10261,19 +11857,28 @@ const enemyData = [
     "subArea": "Cave Of Origin",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 2782,
     "patk": 370,
     "pdef": 35,
     "matk": 370,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 56,
+    "jp": 13,
+    "steal": "Ice Soulstone (L)",
+    "drop": "Ice Soulstone (L) x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Freeze Shot",
@@ -10287,10 +11892,7 @@ const enemyData = [
         "name": "Augmented Magic",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Fang, HP-Restoring Herb",
-    "drop": "Sphinx Feather",
-    "immunities": "Poison, Curse"
+    ]
   },
   {
     "id": "32333.0",
@@ -10299,19 +11901,28 @@ const enemyData = [
     "subArea": "Cave Of Origin",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 2670,
     "patk": 406,
     "pdef": 35,
     "matk": 412,
     "mdef": 35,
+    "speed": 178,
+    "crit": 146,
+    "accuracy": 146,
+    "evasion": 130,
+    "exp": 52,
+    "jp": 13,
+    "steal": "Ice Soulstone (L)",
+    "drop": "Ice Soulstone (L) x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -10325,10 +11936,7 @@ const enemyData = [
         "name": "Mass Ice Thaw",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Hide",
-    "drop": "Rare Beast Tusk, Gold Dust",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32364.0",
@@ -10337,7 +11945,6 @@ const enemyData = [
     "subArea": "Herminia's Former Manse",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -10345,12 +11952,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 42,
     "hp": 2671,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 133,
+    "exp": 52,
+    "jp": 14,
+    "steal": "Bottle of Blinding Dust",
+    "drop": "Bottle of Blinding Dust x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10364,10 +11981,7 @@ const enemyData = [
         "name": "Improved Offense",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam, Holy Water (M)",
-    "drop": "HP-Restoring Herb",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "32324.0",
@@ -10376,19 +11990,28 @@ const enemyData = [
     "subArea": "Herminia's Former Manse",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fan",
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 42,
     "hp": 2578,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 133,
+    "exp": 46,
+    "jp": 14,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10402,10 +12025,7 @@ const enemyData = [
         "name": "Bloody Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Ancient Coin, Inspiring Plum, Light Soulstone",
-    "drop": "Shiny Coin",
-    "immunities": "Confusion, Sleep"
+    ]
   },
   {
     "id": "98747.0",
@@ -10414,7 +12034,6 @@ const enemyData = [
     "subArea": "Herminia's Former Manse",
     "type": "Regular",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -10422,12 +12041,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 42,
     "hp": 4512,
     "patk": 453,
     "pdef": 36,
     "matk": 560,
     "mdef": 36,
+    "speed": 216,
+    "crit": 150,
+    "accuracy": 166,
+    "evasion": 166,
+    "exp": 78,
+    "jp": 15,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -10441,10 +12070,7 @@ const enemyData = [
         "name": "Improved Offense",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shiny Coin",
-    "drop": "Cerberus Fang, Rusty Coin, Iron Ore",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32374.0",
@@ -10453,7 +12079,6 @@ const enemyData = [
     "subArea": "Herminia's Former Manse",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -10461,12 +12086,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 42,
     "hp": 2763,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 133,
+    "exp": 58,
+    "jp": 14,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10480,10 +12115,7 @@ const enemyData = [
         "name": "Poison Blade",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive, Blessed Olive (M)",
-    "drop": "Inspiring Plum Basket, Rare Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98117.0",
@@ -10492,19 +12124,28 @@ const enemyData = [
     "subArea": "Eternal Quicksand",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 42,
     "hp": 2578,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 150,
+    "exp": 36,
+    "jp": 14,
+    "steal": "Quality Stone",
+    "drop": "Quality Stone x1 (15%) Quality Stone x2 (10%) Quality Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10518,10 +12159,7 @@ const enemyData = [
         "name": "Venomous Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Fang",
-    "drop": "EXP, Beast Fang, Holy Water (M)",
-    "immunities": "Petrification, Sleep"
+    ]
   },
   {
     "id": "98118.0",
@@ -10530,19 +12168,28 @@ const enemyData = [
     "subArea": "Eternal Quicksand",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 42,
     "hp": 2635,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 150,
+    "exp": 40,
+    "jp": 14,
+    "steal": "Quality Stone",
+    "drop": "Quality Stone x1 (15%) Quality Stone x2 (10%) Quality Stone x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10556,10 +12203,7 @@ const enemyData = [
         "name": "Poison Rush",
         "type": "Phys"
       }
-    ],
-    "steal": "Shadow Soulstone, HP-Restoring Herb (M), SP-Restoring Nut (M)",
-    "drop": "Sunshard, Phoenix Feather, HP-Restoring Herb",
-    "immunities": "Instant Death, Curse"
+    ]
   },
   {
     "id": "98119.0",
@@ -10568,19 +12212,28 @@ const enemyData = [
     "subArea": "Eternal Quicksand",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 42,
     "hp": 2749,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 133,
+    "exp": 44,
+    "jp": 14,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10594,10 +12247,7 @@ const enemyData = [
         "name": "Sand Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Tusk, Antidote Herb (M)",
-    "drop": "Rare Beast Meat",
-    "immunities": "Terror, Stun"
+    ]
   },
   {
     "id": "98120.0",
@@ -10606,19 +12256,28 @@ const enemyData = [
     "subArea": "Eternal Quicksand",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 42,
     "hp": 2963,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 133,
+    "exp": 48,
+    "jp": 14,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10632,10 +12291,7 @@ const enemyData = [
         "name": "Improved Offense",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shadow Soulstone, Quality Beast Hide, Rare Beast Hide",
-    "drop": "HP-Restoring Herb (M), Soulstone",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98742.0",
@@ -10644,19 +12300,28 @@ const enemyData = [
     "subArea": "Golden Palace: Upper Floor Golden Palace: Lower Floor",
     "type": "Regular",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Staff",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 4800,
     "patk": 458,
     "pdef": 37,
     "matk": 458,
     "mdef": 37,
+    "speed": 221,
+    "crit": 153,
+    "accuracy": 170,
+    "evasion": 170,
+    "exp": 87,
+    "jp": 16,
+    "steal": "Light Soulstone (L)",
+    "drop": "Light Soulstone (L) x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10670,10 +12335,7 @@ const enemyData = [
         "name": "Solar Ray",
         "type": "Elem"
       }
-    ],
-    "steal": "Antidote Herb, Holy Water (L)",
-    "drop": "SP-Restoring Nut, Rare Beast Hide",
-    "immunities": "Confusion, Terror"
+    ]
   },
   {
     "id": "98121.0",
@@ -10682,19 +12344,28 @@ const enemyData = [
     "subArea": "Golden Palace: Upper Floor Golden Palace: Lower Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 2742,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 52,
+    "jp": 15,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10708,10 +12379,7 @@ const enemyData = [
         "name": "Poison Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Horn, Hydra Scale",
-    "drop": "Basilisk Eye, Plum",
-    "immunities": "Silence, Curse"
+    ]
   },
   {
     "id": "98122.0",
@@ -10720,19 +12388,28 @@ const enemyData = [
     "subArea": "Golden Palace: Upper Floor Golden Palace: Middle Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Fire",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 44,
     "hp": 2844,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 44,
+    "jp": 15,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10746,10 +12423,7 @@ const enemyData = [
         "name": "Strip Armaments",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Fang",
-    "drop": "Gold",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98123.0",
@@ -10758,19 +12432,28 @@ const enemyData = [
     "subArea": "Golden Palace: Upper Floor Golden Palace: Middle Floor",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 2891,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 50,
+    "jp": 15,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10784,10 +12467,7 @@ const enemyData = [
         "name": "Blackout",
         "type": "Elem"
       }
-    ],
-    "steal": "Revitalizing Jam (M), Antidote Herb (M), Phoenix Feather",
-    "drop": "Beast Horn",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98124.0",
@@ -10796,19 +12476,28 @@ const enemyData = [
     "subArea": "Golden Palace: Upper Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 3129,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 70,
+    "jp": 15,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10822,10 +12511,7 @@ const enemyData = [
         "name": "Augmented Magic",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Horn, Griffin Claw",
-    "drop": "Beast Tusk, Quality Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98125.0",
@@ -10834,19 +12520,28 @@ const enemyData = [
     "subArea": "Golden Palace: Middle Floor Golden Palace: Lower Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 2742,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 40,
+    "jp": 15,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10860,10 +12555,7 @@ const enemyData = [
         "name": "Deafening Buzz",
         "type": "Unknown"
       }
-    ],
-    "steal": "Kraken Ink, Rusty Coin",
-    "drop": "HP-Restoring Herb (M)",
-    "immunities": "Sleep, Terror"
+    ]
   },
   {
     "id": "98126.0",
@@ -10872,19 +12564,28 @@ const enemyData = [
     "subArea": "Golden Palace: Middle Floor Golden Palace: Lower Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 2928,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 64,
+    "jp": 15,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -10898,10 +12599,7 @@ const enemyData = [
         "name": "Midnight Sun",
         "type": "Elem"
       }
-    ],
-    "steal": "Phoenix Feather, Chimera Fang",
-    "drop": "Inspiring Plum Basket, HP-Restoring Herb (M)",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98127.0",
@@ -10910,19 +12608,28 @@ const enemyData = [
     "subArea": "Golden Palace: Lower Floor",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 3145,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 70,
+    "jp": 15,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -10936,10 +12643,7 @@ const enemyData = [
         "name": "Boulder Rain",
         "type": "Elem"
       }
-    ],
-    "steal": "Wind Soulstone",
-    "drop": "Herb, EXP, Chimera Fang",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98764.0",
@@ -10948,19 +12652,28 @@ const enemyData = [
     "subArea": "Sea Cavern",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Ice",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 45,
     "hp": 4130,
     "patk": 480,
     "pdef": 35,
     "matk": 480,
     "mdef": 35,
+    "speed": 224,
+    "crit": 155,
+    "accuracy": 173,
+    "evasion": 173,
+    "exp": 66,
+    "jp": 16,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -10974,10 +12687,7 @@ const enemyData = [
         "name": "Hard Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Hide, Sunshard, Shadow Soulstone",
-    "drop": "Unicorn Horn",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98057.0",
@@ -10986,7 +12696,6 @@ const enemyData = [
     "subArea": "Sea Cavern",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -10994,12 +12703,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 2824,
     "patk": 435,
     "pdef": 37,
     "matk": 447,
     "mdef": 44,
+    "speed": 190,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 155,
+    "exp": 39,
+    "jp": 13,
+    "steal": "Quality Metal",
+    "drop": "Quality Metal x1 (15%) Quality Metal x2 (10%) Quality Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11013,10 +12732,7 @@ const enemyData = [
         "name": "Inspiration",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Tusk",
-    "drop": "Holy Water (L), Unicorn Horn, Silver Nugget",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98058.0",
@@ -11025,19 +12741,28 @@ const enemyData = [
     "subArea": "Sea Cavern",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Dagger",
     "level": 45,
     "hp": 2922,
     "patk": 435,
     "pdef": 37,
     "matk": 447,
     "mdef": 37,
+    "speed": 190,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 138,
+    "exp": 43,
+    "jp": 13,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11051,10 +12776,7 @@ const enemyData = [
         "name": "Double Claws",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Horn, Chimera Fang",
-    "drop": "Herb, Gold, Dragon Scale",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98059.0",
@@ -11063,7 +12785,6 @@ const enemyData = [
     "subArea": "Sea Cavern",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -11071,12 +12792,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 3072,
     "patk": 435,
     "pdef": 37,
     "matk": 447,
     "mdef": 37,
+    "speed": 190,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 138,
+    "exp": 48,
+    "jp": 13,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11090,10 +12821,7 @@ const enemyData = [
         "name": "Spark",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Horn, Fire Soulstone",
-    "drop": "Dragon Scale",
-    "immunities": "Silence, Blind"
+    ]
   },
   {
     "id": "98060.0",
@@ -11102,7 +12830,6 @@ const enemyData = [
     "subArea": "Sea Cavern",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -11110,12 +12837,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 3241,
     "patk": 435,
     "pdef": 37,
     "matk": 447,
     "mdef": 37,
+    "speed": 190,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 138,
+    "exp": 53,
+    "jp": 13,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11129,10 +12866,7 @@ const enemyData = [
         "name": "Ice Dragon",
         "type": "Elem"
       }
-    ],
-    "steal": "Holy Water (M)",
-    "drop": "Rare Beast Fang, Healing Grape Bunch, Leaf",
-    "immunities": "Poison, Curse"
+    ]
   },
   {
     "id": "98067.0",
@@ -11141,19 +12875,28 @@ const enemyData = [
     "subArea": "Isle in the Middlesea",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Tome",
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 5586,
     "patk": 449,
     "pdef": 39,
     "matk": 461,
     "mdef": 39,
+    "speed": 199,
+    "crit": 163,
+    "accuracy": 163,
+    "evasion": 145,
+    "exp": 51,
+    "jp": 15,
+    "steal": "Quality Metal",
+    "drop": "Quality Metal x1 (15%) Quality Metal x2 (10%) Quality Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11167,10 +12910,7 @@ const enemyData = [
         "name": "Poison Arrow",
         "type": "Phys"
       }
-    ],
-    "steal": "Ice Soulstone, Antidote Herb (M), SP-Restoring Nut (M)",
-    "drop": "Beast Tusk, Minotaur Horn",
-    "immunities": "Confusion, Sleep"
+    ]
   },
   {
     "id": "98068.0",
@@ -11179,7 +12919,6 @@ const enemyData = [
     "subArea": "Isle in the Middlesea",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -11187,12 +12926,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 6013,
     "patk": 449,
     "pdef": 39,
     "matk": 461,
     "mdef": 39,
+    "speed": 199,
+    "crit": 163,
+    "accuracy": 163,
+    "evasion": 145,
+    "exp": 63,
+    "jp": 15,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11206,10 +12955,7 @@ const enemyData = [
         "name": "Hide in Shell",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Fang, Chimera Fang, Phoenix Feather",
-    "drop": "Manticore Stinger, Leaf, Star Fragment",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98069.0",
@@ -11218,19 +12964,28 @@ const enemyData = [
     "subArea": "Isle in the Middlesea",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Dagger",
     "level": 49,
     "hp": 6219,
     "patk": 449,
     "pdef": 39,
     "matk": 461,
     "mdef": 39,
+    "speed": 199,
+    "crit": 163,
+    "accuracy": 163,
+    "evasion": 145,
+    "exp": 69,
+    "jp": 15,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11244,10 +12999,7 @@ const enemyData = [
         "name": "Double Claws",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Claw, Antidote Herb (L)",
-    "drop": "Beast Hide, Rare Beast Horn",
-    "immunities": "Silence, Confusion"
+    ]
   },
   {
     "id": "98071.0",
@@ -11256,7 +13008,6 @@ const enemyData = [
     "subArea": "Isle in the Middlesea",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -11264,12 +13015,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 5763,
     "patk": 449,
     "pdef": 39,
     "matk": 461,
     "mdef": 39,
+    "speed": 199,
+    "crit": 163,
+    "accuracy": 163,
+    "evasion": 145,
+    "exp": 56,
+    "jp": 15,
+    "steal": "Herb of Awakening",
+    "drop": "Herb of Awakening x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11283,10 +13044,7 @@ const enemyData = [
         "name": "Swallow Whole",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Fang, Olive of Life (M)",
-    "drop": "Antidote Herb (L), Rare Beast Fang, Inspiring Plum Basket",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98345.0",
@@ -11295,19 +13053,28 @@ const enemyData = [
     "subArea": "Isle in the Outersea: West",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Fan",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 50,
     "hp": 5736,
     "patk": 457,
     "pdef": 40,
     "matk": 469,
     "mdef": 40,
+    "speed": 201,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 54,
+    "jp": 17,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11321,10 +13088,7 @@ const enemyData = [
         "name": "Armor Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide, HP-Restoring Herb (M)",
-    "drop": "Rare Beast Fang, Quality Beast Horn, SP-Restoring Nut",
-    "immunities": "Curse, Silence"
+    ]
   },
   {
     "id": "98346.0",
@@ -11333,19 +13097,28 @@ const enemyData = [
     "subArea": "Isle in the Outersea: West",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 50,
     "hp": 5955,
     "patk": 457,
     "pdef": 40,
     "matk": 469,
     "mdef": 40,
+    "speed": 201,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 60,
+    "jp": 17,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11359,31 +13132,37 @@ const enemyData = [
         "name": "Body Press",
         "type": "Phys"
       }
-    ],
-    "steal": "Gold Dust",
-    "drop": "Beast Claw, Rare Beast Tusk",
-    "immunities": "Silence, Blind"
+    ]
   },
   {
     "id": "98347.0",
     "name": "Greater Kingfisher",
     "area": "Coastlands",
     "subArea": "Isle in the Outersea: West",
-    "type": "Boss",
+    "type": "Elite",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Tome",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 50,
     "hp": 6175,
     "patk": 457,
     "pdef": 40,
     "matk": 469,
     "mdef": 40,
+    "speed": 201,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 66,
+    "jp": 17,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11397,10 +13176,7 @@ const enemyData = [
         "name": "Swoop",
         "type": "Phys"
       }
-    ],
-    "steal": "Inspiring Plum, Blessed Olive (L)",
-    "drop": "SP-Restoring Nut (M), Manticore Stinger",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98348.0",
@@ -11409,19 +13185,28 @@ const enemyData = [
     "subArea": "Isle in the Outersea: West",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 50,
     "hp": 6375,
     "patk": 457,
     "pdef": 40,
     "matk": 469,
     "mdef": 40,
+    "speed": 201,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 72,
+    "jp": 17,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11435,10 +13220,7 @@ const enemyData = [
         "name": "Leap",
         "type": "Unknown"
       }
-    ],
-    "steal": "Basilisk Eye",
-    "drop": "Revitalizing Jam (M), Holy Water (M), Gold Dust",
-    "immunities": "Confusion, Sleep"
+    ]
   },
   {
     "id": "98353.0",
@@ -11447,19 +13229,28 @@ const enemyData = [
     "subArea": "Isle in the Outersea: East",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Light",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 50,
     "hp": 5736,
     "patk": 457,
     "pdef": 40,
     "matk": 469,
     "mdef": 40,
+    "speed": 201,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 54,
+    "jp": 17,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Inspiriting Plum (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11473,10 +13264,7 @@ const enemyData = [
         "name": "Venomous Fang",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Hide, Shadow Soulstone",
-    "drop": "Rusty Coin, Griffin Claw, Chimera Fang",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98354.0",
@@ -11485,19 +13273,28 @@ const enemyData = [
     "subArea": "Isle in the Outersea: East",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Bow",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 50,
     "hp": 5903,
     "patk": 457,
     "pdef": 40,
     "matk": 469,
     "mdef": 40,
+    "speed": 201,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 60,
+    "jp": 17,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11511,10 +13308,7 @@ const enemyData = [
         "name": "Soporific Fang",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Horn, Manticore Stinger, Herb",
-    "drop": "Gold Dust, Silver Nugget",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98355.0",
@@ -11523,19 +13317,28 @@ const enemyData = [
     "subArea": "Isle in the Outersea: East",
     "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 50,
     "hp": 6120,
     "patk": 457,
     "pdef": 40,
     "matk": 463,
     "mdef": 40,
+    "speed": 201,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 66,
+    "jp": 17,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Energizing Pomegranate (M) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11549,10 +13352,7 @@ const enemyData = [
         "name": "Eclipse",
         "type": "Elem"
       }
-    ],
-    "steal": "Meteorite, Holy Water",
-    "drop": "Grape",
-    "immunities": "Stun, Terror"
+    ]
   },
   {
     "id": "98356.0",
@@ -11561,19 +13361,28 @@ const enemyData = [
     "subArea": "Isle in the Outersea: East",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Fire",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 50,
     "hp": 6458,
     "patk": 457,
     "pdef": 40,
     "matk": 469,
     "mdef": 40,
+    "speed": 201,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 165,
+    "exp": 72,
+    "jp": 17,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11587,10 +13396,7 @@ const enemyData = [
         "name": "Venomous Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (L), Beast Horn",
-    "drop": "SP-Restoring Nut (L), Chimera Fang",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98143.0",
@@ -11599,19 +13405,28 @@ const enemyData = [
     "subArea": "Berecain Pass: Base Berecain Pass",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Staff",
     "weaknesses": [
       "Staff",
       "Tome",
       "Fan",
       "Ice"
     ],
+    "weakness": "Staff",
     "level": 42,
     "hp": 2578,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 150,
+    "exp": 36,
+    "jp": 14,
+    "steal": "Quality Lumber",
+    "drop": "Quality Lumber x1 (15%) Quality Lumber x2 (10%) Quality Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11625,10 +13440,7 @@ const enemyData = [
         "name": "Mighty Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Wind Soulstone, Dragon Scale, Antidote Herb (L)",
-    "drop": "Unicorn Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98144.0",
@@ -11637,19 +13449,28 @@ const enemyData = [
     "subArea": "Berecain Pass: Base Berecain Pass",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 42,
     "hp": 2618,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 133,
+    "exp": 40,
+    "jp": 14,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11663,10 +13484,7 @@ const enemyData = [
         "name": "Thousand Scythes",
         "type": "Elem"
       }
-    ],
-    "steal": "Beast Fang, Unicorn Horn, Rare Beast Meat",
-    "drop": "Olive of Life (M), Rare Beast Fang",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98145.0",
@@ -11675,19 +13493,28 @@ const enemyData = [
     "subArea": "Berecain Pass: Base Berecain Pass",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 42,
     "hp": 2827,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 133,
+    "exp": 44,
+    "jp": 14,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11701,10 +13528,7 @@ const enemyData = [
         "name": "Wild Ripper",
         "type": "Phys"
       }
-    ],
-    "steal": "Herb",
-    "drop": "Plum",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98146.0",
@@ -11713,19 +13537,28 @@ const enemyData = [
     "subArea": "Berecain Pass: Base Berecain Pass",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Tome",
       "Ice"
     ],
+    "weakness": "Spear",
     "level": 42,
     "hp": 2961,
     "patk": 411,
     "pdef": 36,
     "matk": 411,
     "mdef": 36,
+    "speed": 183,
+    "crit": 150,
+    "accuracy": 150,
+    "evasion": 133,
+    "exp": 48,
+    "jp": 14,
+    "steal": "Herb of Clamor",
+    "drop": "Herb of Clamor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11739,10 +13572,7 @@ const enemyData = [
         "name": "Silencing Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Healing Grape",
-    "drop": "Silver Nugget, EXP",
-    "immunities": "Petrification, Sleep"
+    ]
   },
   {
     "id": "98752.0",
@@ -11751,19 +13581,28 @@ const enemyData = [
     "subArea": "Mt. Berecain",
     "type": "Boss",
     "shields": 8,
-    "weakness": "Staff",
     "weaknesses": [
       "Staff",
       "Tome",
       "Fan",
       "Ice"
     ],
+    "weakness": "Staff",
     "level": 43,
     "hp": 4652,
     "patk": 456,
     "pdef": 36,
     "matk": 456,
     "mdef": 36,
+    "speed": 219,
+    "crit": 152,
+    "accuracy": 168,
+    "evasion": 168,
+    "exp": 83,
+    "jp": 16,
+    "steal": "Quality Lumber",
+    "drop": "Quality Lumber x1 (15%) Quality Lumber x2 (10%) Quality Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11777,10 +13616,7 @@ const enemyData = [
         "name": "Fiery Sweep",
         "type": "Elem"
       }
-    ],
-    "steal": "SP-Restoring Nut, Holy Water (L), Blessed Olive",
-    "drop": "Holy Water (M), Star Fragment",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98147.0",
@@ -11789,19 +13625,28 @@ const enemyData = [
     "subArea": "Mt. Berecain Mt. Berecain: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
       "Fan",
       "Ice"
     ],
+    "weakness": "Axe",
     "level": 43,
     "hp": 2658,
     "patk": 414,
     "pdef": 36,
     "matk": 414,
     "mdef": 36,
+    "speed": 185,
+    "crit": 152,
+    "accuracy": 152,
+    "evasion": 152,
+    "exp": 38,
+    "jp": 15,
+    "steal": "Quality Lumber",
+    "drop": "Quality Lumber x1 (15%) Quality Lumber x2 (10%) Quality Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11815,10 +13660,7 @@ const enemyData = [
         "name": "Mighty Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Nut",
-    "drop": "Soulstone",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98148.0",
@@ -11827,19 +13669,28 @@ const enemyData = [
     "subArea": "Mt. Berecain Mt. Berecain: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Tome",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 43,
     "hp": 2759,
     "patk": 414,
     "pdef": 36,
     "matk": 414,
     "mdef": 36,
+    "speed": 185,
+    "crit": 152,
+    "accuracy": 152,
+    "evasion": 135,
+    "exp": 42,
+    "jp": 15,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11853,10 +13704,7 @@ const enemyData = [
         "name": "Whet",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb",
-    "drop": "Olive of Life (M), Inspiring Plum Basket",
-    "immunities": "Blind, Instant Death"
+    ]
   },
   {
     "id": "98149.0",
@@ -11865,19 +13713,28 @@ const enemyData = [
     "subArea": "Mt. Berecain Mt. Berecain: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 43,
     "hp": 2921,
     "patk": 414,
     "pdef": 36,
     "matk": 414,
     "mdef": 36,
+    "speed": 185,
+    "crit": 152,
+    "accuracy": 152,
+    "evasion": 135,
+    "exp": 47,
+    "jp": 15,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11891,10 +13748,7 @@ const enemyData = [
         "name": "Whirling Attack",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Horn",
-    "drop": "Basilisk Eye",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98150.0",
@@ -11903,19 +13757,28 @@ const enemyData = [
     "subArea": "Mt. Berecain Mt. Berecain: Depths",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Tome",
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 43,
     "hp": 3036,
     "patk": 414,
     "pdef": 36,
     "matk": 414,
     "mdef": 36,
+    "speed": 185,
+    "crit": 152,
+    "accuracy": 152,
+    "evasion": 135,
+    "exp": 51,
+    "jp": 15,
+    "steal": "Fire Soulstone (L)",
+    "drop": "Fire Soulstone (L) x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Fireshot",
@@ -11929,10 +13792,7 @@ const enemyData = [
         "name": "Fiery Sweep",
         "type": "Elem"
       }
-    ],
-    "steal": "Kraken Ink",
-    "drop": "Antidote Herb (L), Quality Beast Meat, Dragon Scale",
-    "immunities": "Curse, Stun"
+    ]
   },
   {
     "id": "98753.0",
@@ -11941,19 +13801,28 @@ const enemyData = [
     "subArea": "Forbidden Temple",
     "type": "Regular",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Staff",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 4800,
     "patk": 458,
     "pdef": 37,
     "matk": 458,
     "mdef": 37,
+    "speed": 221,
+    "crit": 153,
+    "accuracy": 170,
+    "evasion": 170,
+    "exp": 87,
+    "jp": 16,
+    "steal": "Fire Soulstone (L)",
+    "drop": "Fire Soulstone (L) x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -11967,10 +13836,7 @@ const enemyData = [
         "name": "Inferno",
         "type": "Elem"
       }
-    ],
-    "steal": "SP-Restoring Nut (M), Revitalizing Jam (L), Sunshard",
-    "drop": "Hydra Scale, SP-Restoring Nut (L), Ancient Coin",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98151.0",
@@ -11979,19 +13845,28 @@ const enemyData = [
     "subArea": "Forbidden Temple",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Fan",
       "Ice",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 44,
     "hp": 2742,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 52,
+    "jp": 15,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12005,10 +13880,7 @@ const enemyData = [
         "name": "Flame Strike",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Claw, HP-Restoring Herb (L), Rare Beast Fang",
-    "drop": "Quality Beast Fang",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98152.0",
@@ -12017,19 +13889,28 @@ const enemyData = [
     "subArea": "Forbidden Temple",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 2829,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 57,
+    "jp": 15,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12043,10 +13924,7 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (M)",
-    "drop": "Sphinx Feather, JP",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98153.0",
@@ -12055,19 +13933,28 @@ const enemyData = [
     "subArea": "Forbidden Temple",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Ice",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 44,
     "hp": 2996,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 64,
+    "jp": 15,
+    "steal": "Herb of Mending",
+    "drop": "Herb of Mending x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12081,10 +13968,7 @@ const enemyData = [
         "name": "Bloody Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Tusk, Holy Water (L), Olive of Life",
-    "drop": "Copper Ore, HP-Restoring Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98154.0",
@@ -12093,19 +13977,28 @@ const enemyData = [
     "subArea": "Forbidden Temple",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 3080,
     "patk": 416,
     "pdef": 37,
     "matk": 416,
     "mdef": 37,
+    "speed": 187,
+    "crit": 153,
+    "accuracy": 153,
+    "evasion": 136,
+    "exp": 70,
+    "jp": 15,
+    "steal": "Shadow Soulstone (L)",
+    "drop": "Shadow Soulstone (L) x1 (4%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Solar Eclipse",
@@ -12119,10 +14012,7 @@ const enemyData = [
         "name": "Double Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water, Beast Horn, Rare Beast Fang",
-    "drop": "Hydra Scale, Rare Beast Hide, Quality Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98751.0",
@@ -12131,19 +14021,28 @@ const enemyData = [
     "subArea": "Sweltering Cave",
     "type": "Regular",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 4942,
     "patk": 480,
     "pdef": 37,
     "matk": 480,
     "mdef": 37,
+    "speed": 224,
+    "crit": 155,
+    "accuracy": 173,
+    "evasion": 173,
+    "exp": 93,
+    "jp": 16,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12157,10 +14056,7 @@ const enemyData = [
         "name": "Rampage",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (L), Antidote Herb",
-    "drop": "Ancient Coin, Antidote Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98155.0",
@@ -12169,19 +14065,28 @@ const enemyData = [
     "subArea": "Sweltering Cave",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Bow",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 2824,
     "patk": 435,
     "pdef": 37,
     "matk": 447,
     "mdef": 37,
+    "speed": 190,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 138,
+    "exp": 55,
+    "jp": 15,
+    "steal": "Herb of Mending",
+    "drop": "Herb of Mending x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12195,10 +14100,7 @@ const enemyData = [
         "name": "Bloody Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Meat, Blessed Olive (L)",
-    "drop": "Old Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98156.0",
@@ -12207,19 +14109,28 @@ const enemyData = [
     "subArea": "Sweltering Cave",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Tome",
     "weaknesses": [
       "Tome",
       "Ice",
       "Wind",
       "Dark"
     ],
+    "weakness": "Tome",
     "level": 45,
     "hp": 2882,
     "patk": 435,
     "pdef": 37,
     "matk": 447,
     "mdef": 37,
+    "speed": 190,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 138,
+    "exp": 61,
+    "jp": 15,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Body Bash",
@@ -12233,10 +14144,7 @@ const enemyData = [
         "name": "Mass Ignition",
         "type": "Elem"
       }
-    ],
-    "steal": "Rusty Coin, Olive of Life (M), Herb",
-    "drop": "Griffin Claw, Nut",
-    "immunities": "Stun, Instant Death"
+    ]
   },
   {
     "id": "98157.0",
@@ -12245,19 +14153,28 @@ const enemyData = [
     "subArea": "Sweltering Cave",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Fan",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 3030,
     "patk": 435,
     "pdef": 37,
     "matk": 447,
     "mdef": 37,
+    "speed": 190,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 138,
+    "exp": 68,
+    "jp": 15,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12271,10 +14188,7 @@ const enemyData = [
         "name": "Crash",
         "type": "Phys"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "Olive of Life (M), Meteorite",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98158.0",
@@ -12283,19 +14197,28 @@ const enemyData = [
     "subArea": "Sweltering Cave",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
       "Ice",
       "Dark"
     ],
+    "weakness": "Bow",
     "level": 45,
     "hp": 3230,
     "patk": 435,
     "pdef": 37,
     "matk": 447,
     "mdef": 37,
+    "speed": 190,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 138,
+    "exp": 74,
+    "jp": 15,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12309,31 +14232,37 @@ const enemyData = [
         "name": "Fiery Sweep",
         "type": "Elem"
       }
-    ],
-    "steal": "Silver Nugget",
-    "drop": "Rare Beast Hide, Plum",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98252.0",
     "name": "Fallen Laughing Hyaena",
     "area": "Cliftlands",
     "subArea": "Hell: Cragspear Pass Hell: South Cragspear Pass",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
       "Fan",
       "Fire"
     ],
+    "weakness": "Axe",
     "level": 48,
     "hp": 5433,
     "patk": 447,
     "pdef": 45,
     "matk": 459,
     "mdef": 45,
+    "speed": 197,
+    "crit": 161,
+    "accuracy": 161,
+    "evasion": 143,
+    "exp": 48,
+    "jp": 16,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12351,31 +14280,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (M), Fire Soulstone, Unicorn Horn",
-    "drop": "Quality Beast Fang",
-    "immunities": "Stun, Terror"
+    ]
   },
   {
     "id": "98253.0",
     "name": "Fallen Birdian I",
     "area": "Cliftlands",
     "subArea": "Hell: Cragspear Pass Hell: South Cragspear Pass",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 48,
     "hp": 5521,
     "patk": 447,
     "pdef": 45,
     "matk": 459,
     "mdef": 45,
+    "speed": 197,
+    "crit": 161,
+    "accuracy": 161,
+    "evasion": 161,
+    "exp": 54,
+    "jp": 16,
+    "steal": "Quality Metal",
+    "drop": "Quality Metal x1 (15%) Quality Metal x2 (10%) Quality Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12393,31 +14328,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sunshard, Beast Horn, Herb",
-    "drop": "Minotaur Horn, Olive",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98254.0",
     "name": "Fallen Birdian II",
     "area": "Cliftlands",
     "subArea": "Hell: Cragspear Pass Hell: South Cragspear Pass",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 48,
     "hp": 5910,
     "patk": 447,
     "pdef": 45,
     "matk": 459,
     "mdef": 45,
+    "speed": 197,
+    "crit": 161,
+    "accuracy": 161,
+    "evasion": 161,
+    "exp": 60,
+    "jp": 16,
+    "steal": "Quality Metal",
+    "drop": "Quality Metal x1 (15%) Quality Metal x2 (10%) Quality Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12435,10 +14376,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Meat, Blessed Olive, Quality Beast Tusk",
-    "drop": "Silver Nugget, Rare Beast Hide, Star Fragment",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98255.0",
@@ -12447,19 +14385,28 @@ const enemyData = [
     "subArea": "Hell: Cragspear Pass",
     "type": "Boss",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 48,
     "hp": 6089,
     "patk": 447,
     "pdef": 45,
     "matk": 459,
     "mdef": 45,
+    "speed": 197,
+    "crit": 161,
+    "accuracy": 161,
+    "evasion": 143,
+    "exp": 65,
+    "jp": 16,
+    "steal": "Quality Metal",
+    "drop": "Quality Metal x1 (15%) Quality Metal x2 (10%) Quality Metal x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12477,31 +14424,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb, Antidote Herb (L)",
-    "drop": "Unicorn Horn, Holy Water, Herb",
-    "immunities": "Blind, Confusion"
+    ]
   },
   {
     "id": "98256.0",
     "name": "Fallen Armor Eater",
     "area": "Cliftlands",
     "subArea": "Hell: South Cragspear Pass",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 48,
     "hp": 6176,
     "patk": 447,
     "pdef": 45,
     "matk": 459,
     "mdef": 45,
+    "speed": 197,
+    "crit": 161,
+    "accuracy": 161,
+    "evasion": 143,
+    "exp": 65,
+    "jp": 16,
+    "steal": "Herb of Mending",
+    "drop": "Herb of Mending x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12519,10 +14472,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life (M), Beast Claw, HP-Restoring Herb (M)",
-    "drop": "Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98257.0",
@@ -12531,19 +14481,28 @@ const enemyData = [
     "subArea": "Hell: Geist Canyon South Hell: Geist Canyon",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 5586,
     "patk": 449,
     "pdef": 46,
     "matk": 461,
     "mdef": 46,
+    "speed": 199,
+    "crit": 163,
+    "accuracy": 163,
+    "evasion": 145,
+    "exp": 51,
+    "jp": 17,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12561,31 +14520,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Light Soulstone, HP-Restoring Herb",
-    "drop": "Quality Beast Fang, Silver Nugget, Revitalizing Jam (M)",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98260.0",
     "name": "Fallen Two-Handed Hatchling",
     "area": "Cliftlands",
     "subArea": "Hell: Geist Canyon South Hell: Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 5680,
     "patk": 449,
     "pdef": 46,
     "matk": 461,
     "mdef": 46,
+    "speed": 199,
+    "crit": 163,
+    "accuracy": 163,
+    "evasion": 145,
+    "exp": 56,
+    "jp": 17,
+    "steal": "Herb of Healing",
+    "drop": "Herb of Healing x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12603,19 +14568,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "Meteorite, Rare Beast Tusk, SP-Restoring Nut (L)",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98262.0",
     "name": "Fallen Edoras Soldier I",
     "area": "Cliftlands",
     "subArea": "Hell: Geist Canyon South",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -12623,12 +14584,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 49,
     "hp": 6249,
     "patk": 449,
     "pdef": 46,
     "matk": 461,
     "mdef": 46,
+    "speed": 199,
+    "crit": 163,
+    "accuracy": 163,
+    "evasion": 145,
+    "exp": 69,
+    "jp": 17,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12646,31 +14617,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "Beast Claw, Griffin Claw, Unicorn Horn",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98261.0",
     "name": "Fallen Ghoul Weed",
     "area": "Cliftlands",
     "subArea": "Hell: Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 5958,
     "patk": 449,
     "pdef": 46,
     "matk": 461,
     "mdef": 46,
+    "speed": 199,
+    "crit": 163,
+    "accuracy": 163,
+    "evasion": 145,
+    "exp": 63,
+    "jp": 17,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12688,19 +14665,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Tusk",
-    "drop": "Blessed Olive (L)",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98263.0",
     "name": "Fallen Edoras Soldier II",
     "area": "Cliftlands",
     "subArea": "Hell: Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -12709,12 +14682,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 53,
     "hp": 7042,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 69,
+    "jp": 18,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12732,31 +14715,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Claw, Inspiring Plum Basket",
-    "drop": "Quality Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98265.0",
     "name": "Fallen Marmot",
     "area": "Woodlands",
     "subArea": "Hell: Valore Forest Hell: Path to White Grape Hill",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Tome",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 51,
     "hp": 5892,
     "patk": 459,
     "pdef": 48,
     "matk": 471,
     "mdef": 48,
+    "speed": 204,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 56,
+    "jp": 18,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12774,31 +14763,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Old Coin, Silver Nugget",
-    "drop": "Beast Hide, Holy Water (M), SP-Restoring Nut",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98266.0",
     "name": "Fallen Ratkin I",
     "area": "Woodlands",
     "subArea": "Hell: Valore Forest Hell: Path to White Grape Hill",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 51,
     "hp": 5993,
     "patk": 459,
     "pdef": 47,
     "matk": 471,
     "mdef": 47,
+    "speed": 204,
+    "crit": 167,
+    "accuracy": 167,
+    "evasion": 148,
+    "exp": 62,
+    "jp": 18,
+    "steal": "Quality Lumber",
+    "drop": "Quality Lumber x1 (15%) Quality Lumber x2 (10%) Quality Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12816,19 +14811,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ice Soulstone, Cerberus Fang, Moonstone",
-    "drop": "Silver Nugget, Leaf, Plum",
-    "immunities": "Confusion, Sleep"
+    ]
   },
   {
     "id": "98268.0",
     "name": "Fallen Blackrobe (Sword)",
     "area": "Woodlands",
     "subArea": "Hell: Valore Forest Hell: Path to White Grape Hill",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -12836,12 +14827,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 51,
     "hp": 6326,
     "patk": 459,
     "pdef": 47,
     "matk": 471,
     "mdef": 47,
+    "speed": 204,
+    "crit": 167,
+    "accuracy": 167,
+    "evasion": 167,
+    "exp": 69,
+    "jp": 18,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12859,10 +14860,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Beast Claw, Sphinx Feather",
-    "drop": "Hydra Scale",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98269.0",
@@ -12871,19 +14869,28 @@ const enemyData = [
     "subArea": "Hell: Valore Forest Hell: Path to White Grape Hill",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 51,
     "hp": 6674,
     "patk": 459,
     "pdef": 47,
     "matk": 471,
     "mdef": 47,
+    "speed": 204,
+    "crit": 167,
+    "accuracy": 167,
+    "evasion": 148,
+    "exp": 76,
+    "jp": 18,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12901,10 +14908,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb",
-    "drop": "Rare Beast Fang, Revitalizing Jam (L), HP-Restoring Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98258.0",
@@ -12913,19 +14917,28 @@ const enemyData = [
     "subArea": "Hell: Castle Edoras - 1F/2F",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 53,
     "hp": 5793,
     "patk": 468,
     "pdef": 47,
     "matk": 474,
     "mdef": 47,
+    "speed": 208,
+    "crit": 167,
+    "accuracy": 167,
+    "evasion": 148,
+    "exp": 61,
+    "jp": 18,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12943,19 +14956,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Tusk",
-    "drop": "Blessed Olive (M), Beast Hide, Beast Fang",
-    "immunities": "Instant Death, Sleep"
+    ]
   },
   {
     "id": "98264.0",
     "name": "Fallen Edoras Soldier III",
     "area": "Cliftlands",
     "subArea": "Hell: Castle Edoras - 1F/2F",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -12963,12 +14972,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 53,
     "hp": 6808,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 76,
+    "jp": 18,
+    "steal": "Herb of Valor",
+    "drop": "Herb of Valor x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -12986,31 +15005,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water (L)",
-    "drop": "Quality Beast Hide",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98270.0",
     "name": "Fallen Pauper",
     "area": "Cliftlands",
     "subArea": "Hell: Castle Edoras - 1F/2F",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 53,
     "hp": 6339,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 68,
+    "jp": 18,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13028,10 +15053,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Inspiring Plum Basket, Copper Ore",
-    "drop": "Holy Water (M), Quality Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98271.0",
@@ -13040,19 +15062,28 @@ const enemyData = [
     "subArea": "Hell: Castle Edoras - 1F/2F/3F/4F",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Tome",
     "weaknesses": [
       "Tome",
       "Fan",
       "Ice",
       "Wind"
     ],
+    "weakness": "Tome",
     "level": 53,
     "hp": 6204,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 61,
+    "jp": 18,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13070,31 +15101,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Healing Grape Bunch",
-    "drop": "Sphinx Feather, Chimera Fang, Rusty Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98272.0",
     "name": "Fallen Aristocrat",
     "area": "Cliftlands",
     "subArea": "Hell: Castle Edoras - 3F/4F",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 53,
     "hp": 6323,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 68,
+    "jp": 18,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13112,31 +15149,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Iron Ore",
-    "drop": "Quality Beast Hide",
-    "immunities": "Stun, Instant Death"
+    ]
   },
   {
     "id": "98273.0",
     "name": "Fallen Maid",
     "area": "Cliftlands",
     "subArea": "Hell: Castle Edoras - 3F/4F",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 53,
     "hp": 6593,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 76,
+    "jp": 18,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13154,10 +15197,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Griffin Claw, Old Coin, Blessed Olive",
-    "drop": "Rare Beast Horn, Grape, Beast Tusk",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98274.0",
@@ -13166,19 +15206,28 @@ const enemyData = [
     "subArea": "Hell: Castle Edoras - 3F/4F/5F/6F",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Tome",
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 53,
     "hp": 6204,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 61,
+    "jp": 18,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13196,10 +15245,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Hide",
-    "drop": "Ancient Coin, HP-Restoring Herb (L)",
-    "immunities": "Stun, Petrification"
+    ]
   },
   {
     "id": "98275.0",
@@ -13208,19 +15254,28 @@ const enemyData = [
     "subArea": "Hell: Castle Edoras - 5F/6F",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Thunder",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 53,
     "hp": 6005,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 68,
+    "jp": 18,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13238,31 +15293,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shiny Coin, Silver Nugget",
-    "drop": "Holy Water (M)",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98276.0",
     "name": "Fallen Edoras Knight I",
     "area": "Cliftlands",
     "subArea": "Hell: Castle Edoras - 5F/6F",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Staff",
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 53,
     "hp": 6780,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 76,
+    "jp": 18,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13280,31 +15341,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Gold Dust, Beast Tusk",
-    "drop": "Olive, Beast Tusk, Olive of Life (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98277.0",
     "name": "Fallen Edoras Knight II",
     "area": "Cliftlands",
     "subArea": "Hell: Castle Edoras - 5F/6F",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Staff",
       "Fire"
     ],
+    "weakness": "Dagger",
     "level": 53,
     "hp": 6872,
     "patk": 468,
     "pdef": 48,
     "matk": 474,
     "mdef": 48,
+    "speed": 208,
+    "crit": 170,
+    "accuracy": 170,
+    "evasion": 152,
+    "exp": 83,
+    "jp": 18,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13322,10 +15389,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Hide",
-    "drop": "JP, Rare Beast Claw",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98773.0",
@@ -13334,19 +15398,28 @@ const enemyData = [
     "subArea": "Sunken Ship",
     "type": "Regular",
     "shields": 8,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fire",
       "Thunder",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 65,
     "hp": 10980,
     "patk": 525,
     "pdef": 47,
     "matk": 638,
     "mdef": 47,
+    "speed": 279,
+    "crit": 193,
+    "accuracy": 214,
+    "evasion": 214,
+    "exp": 277,
+    "jp": 24,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Rampage",
@@ -13360,10 +15433,7 @@ const enemyData = [
         "name": "Leap",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Tusk",
-    "drop": "Blessed Olive (M), Revitalizing Jam (M)",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98357.0",
@@ -13372,19 +15442,28 @@ const enemyData = [
     "subArea": "Sunken Ship",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 8235,
     "patk": 507,
     "pdef": 47,
     "matk": 507,
     "mdef": 47,
+    "speed": 236,
+    "crit": 193,
+    "accuracy": 193,
+    "evasion": 172,
+    "exp": 166,
+    "jp": 22,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13398,10 +15477,7 @@ const enemyData = [
         "name": "Mighty Tackle",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life (M), Basilisk Eye, Herb",
-    "drop": "Rare Beast Hide, Iron Ore, Chimera Fang",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98358.0",
@@ -13410,19 +15486,28 @@ const enemyData = [
     "subArea": "Sunken Ship",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Fan",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 8644,
     "patk": 507,
     "pdef": 47,
     "matk": 507,
     "mdef": 47,
+    "speed": 236,
+    "crit": 193,
+    "accuracy": 193,
+    "evasion": 172,
+    "exp": 184,
+    "jp": 22,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13436,10 +15521,7 @@ const enemyData = [
         "name": "Jaw Crunch",
         "type": "Phys"
       }
-    ],
-    "steal": "Silver Nugget, Beast Meat",
-    "drop": "Revitalizing Jam (M)",
-    "immunities": "Poison, Terror"
+    ]
   },
   {
     "id": "98359.0",
@@ -13448,19 +15530,28 @@ const enemyData = [
     "subArea": "Sunken Ship",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 65,
     "hp": 8847,
     "patk": 507,
     "pdef": 47,
     "matk": 507,
     "mdef": 47,
+    "speed": 236,
+    "crit": 193,
+    "accuracy": 193,
+    "evasion": 172,
+    "exp": 204,
+    "jp": 22,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13474,10 +15565,7 @@ const enemyData = [
         "name": "Shark Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb",
-    "drop": "Shiny Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98360.0",
@@ -13486,19 +15574,28 @@ const enemyData = [
     "subArea": "Sunken Ship",
     "type": "Regular",
     "shields": 7,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Staff",
       "Thunder",
       "Light"
     ],
+    "weakness": "Bow",
     "level": 65,
     "hp": 9235,
     "patk": 507,
     "pdef": 47,
     "matk": 507,
     "mdef": 47,
+    "speed": 236,
+    "crit": 193,
+    "accuracy": 193,
+    "evasion": 172,
+    "exp": 222,
+    "jp": 22,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13512,31 +15609,37 @@ const enemyData = [
         "name": "Venomous Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Horn",
-    "drop": "Gold, Shiny Coin, SP-Restoring Nut (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98267.0",
     "name": "Fallen Ratkin II",
     "area": "Highlands",
     "subArea": "Hell: Hornburg Pass",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Staff",
       "Fire",
       "Wind"
     ],
+    "weakness": "Bow",
     "level": 54,
     "hp": 6366,
     "patk": 470,
     "pdef": 48,
     "matk": 482,
     "mdef": 48,
+    "speed": 210,
+    "crit": 172,
+    "accuracy": 172,
+    "evasion": 172,
+    "exp": 64,
+    "jp": 18,
+    "steal": "Quality Lumber",
+    "drop": "Quality Lumber x1 (15%) Quality Lumber x2 (10%) Quality Lumber x3 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13554,31 +15657,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Meat, Phoenix Feather, Shadow Soulstone",
-    "drop": "Antidote Herb, Leaf",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98278.0",
     "name": "Fallen Highland Goat",
     "area": "Highlands",
     "subArea": "Hell: Hornburg Pass",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Tome",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 54,
     "hp": 6455,
     "patk": 470,
     "pdef": 48,
     "matk": 482,
     "mdef": 48,
+    "speed": 210,
+    "crit": 172,
+    "accuracy": 172,
+    "evasion": 153,
+    "exp": 71,
+    "jp": 18,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13596,31 +15705,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (L)",
-    "drop": "Healing Grape Bunch, Sunshard",
-    "immunities": "Curse, Blind"
+    ]
   },
   {
     "id": "98279.0",
     "name": "Fallen Giant Falcon",
     "area": "Highlands",
     "subArea": "Hell: Hornburg Pass",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 54,
     "hp": 6800,
     "patk": 470,
     "pdef": 48,
     "matk": 482,
     "mdef": 48,
+    "speed": 210,
+    "crit": 172,
+    "accuracy": 172,
+    "evasion": 153,
+    "exp": 79,
+    "jp": 18,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13638,10 +15753,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Claw, Blessed Olive",
-    "drop": "Cerberus Fang",
-    "immunities": "Confusion, Sleep"
+    ]
   },
   {
     "id": "98280.0",
@@ -13650,19 +15762,28 @@ const enemyData = [
     "subArea": "Hell: Hornburg Castle - Entrance Areas Hell: Hornburg Castle - Central Areas",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Thunder",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 55,
     "hp": 6525,
     "patk": 471,
     "pdef": 49,
     "matk": 489,
     "mdef": 49,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 67,
+    "jp": 19,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13680,19 +15801,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Healing Grape, Dragon Scale",
-    "drop": "Manticore Stinger",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98282.0",
     "name": "Fallen Hornburg Soldier",
     "area": "Highlands",
     "subArea": "Hell: Hornburg Castle - Entrance Areas Hell: Hornburg Castle - Central Areas",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
@@ -13700,12 +15817,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 6976,
     "patk": 471,
     "pdef": 49,
     "matk": 483,
     "mdef": 49,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 83,
+    "jp": 19,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13723,31 +15850,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Manticore Stinger, SP-Restoring Nut (L)",
-    "drop": "EXP, Beast Hide",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98283.0",
     "name": "Fallen Guard Hound",
     "area": "Highlands",
     "subArea": "Hell: Hornburg Castle - Entrance Areas",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Bow",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 7275,
     "patk": 471,
     "pdef": 49,
     "matk": 483,
     "mdef": 49,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 90,
+    "jp": 19,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13765,10 +15898,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ancient Coin",
-    "drop": "Phoenix Feather, Revitalizing Jam (L), Holy Water (M)",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98281.0",
@@ -13777,19 +15907,28 @@ const enemyData = [
     "subArea": "Hell: Hornburg Castle - Entrance Areas Hell: Hornburg Castle - Central Areas",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Tome",
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 6718,
     "patk": 471,
     "pdef": 49,
     "matk": 483,
     "mdef": 49,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 75,
+    "jp": 19,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13807,10 +15946,7 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "Beast Horn, Herb, SP-Restoring Nut (L)",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98284.0",
@@ -13819,19 +15955,28 @@ const enemyData = [
     "subArea": "Hell: Hornburg Castle - Central Areas",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Wind",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 55,
     "hp": 7337,
     "patk": 471,
     "pdef": 49,
     "matk": 483,
     "mdef": 49,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 90,
+    "jp": 19,
+    "steal": "Herb of Mending",
+    "drop": "Herb of Mending x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13849,31 +15994,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Herb, Rusty Coin",
-    "drop": "Iron Ore, Rare Beast Fang",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98259.0",
     "name": "Infernal Mite I",
     "area": "The Gate of Finis",
     "subArea": "Corridors of Contrition Corridors of Contrition: Back Halls",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 59,
     "hp": 7188,
     "patk": 483,
     "pdef": 51,
     "matk": 513,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 83,
+    "jp": 20,
+    "steal": "Herb of Mending",
+    "drop": "Herb of Mending x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13891,31 +16042,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ancient Coin, Revitalizing Jam (L), Olive of Life",
-    "drop": "Soulstone",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98285.0",
     "name": "Infernal Insect IV",
     "area": "The Gate of Finis",
     "subArea": "Corridors of Contrition",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 7396,
     "patk": 483,
     "pdef": 51,
     "matk": 513,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 92,
+    "jp": 20,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13933,31 +16090,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Herb, Blessed Olive (M)",
-    "drop": "Rare Beast Horn, Antidote Herb, EXP",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98287.0",
     "name": "Fallen Aberration I",
     "area": "The Gate of Finis",
     "subArea": "Corridors of Contrition Corridors of Contrition: Back Halls",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 7540,
     "patk": 483,
     "pdef": 51,
     "matk": 513,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 92,
+    "jp": 20,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -13975,31 +16138,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Tusk",
-    "drop": "Revitalizing Jam, Gold, Holy Water (M)",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98288.0",
     "name": "Fallen Aberration II",
     "area": "The Gate of Finis",
     "subArea": "Corridors of Contrition Corridors of Contrition: Back Halls",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 7661,
     "patk": 483,
     "pdef": 51,
     "matk": 513,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 102,
+    "jp": 20,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14017,31 +16186,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Gold Dust, Basilisk Eye, Revitalizing Jam (M)",
-    "drop": "Quality Beast Hide, Antidote Herb (M), Nut",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98289.0",
     "name": "Fallen Monster",
     "area": "The Gate of Finis",
     "subArea": "Corridors of Contrition: Back Halls",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 59,
     "hp": 8012,
     "patk": 483,
     "pdef": 61,
     "matk": 513,
     "mdef": 61,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 112,
+    "jp": 20,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Scratch",
@@ -14063,31 +16238,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Wind Soulstone, Blessed Olive (M), Olive of Life (M)",
-    "drop": "HP-Restoring Herb (L), Nut, Meteorite",
-    "immunities": "Confusion, Sleep"
+    ]
   },
   {
     "id": "98286.0",
     "name": "Infernal Pest IV",
     "area": "The Gate of Finis",
     "subArea": "The Bridge Beyond",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Fire",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 8202,
     "patk": 483,
     "pdef": 51,
     "matk": 513,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 112,
+    "jp": 20,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14105,31 +16286,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut",
-    "drop": "Quality Beast Meat, Herb, SP-Restoring Nut (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98290.0",
     "name": "Fallen Herminia's Soldier",
     "area": "The Gate of Finis",
     "subArea": "The Bridge Beyond",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
       "Fire",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 59,
     "hp": 7188,
     "patk": 483,
     "pdef": 51,
     "matk": 513,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 83,
+    "jp": 20,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14147,19 +16334,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Cerberus Fang, HP-Restoring Herb (L), Healing Grape",
-    "drop": "Quality Beast Fang, Rare Beast Claw, Basilisk Eye",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98291.0",
     "name": "Fallen Blackrobe (Bow)",
     "area": "The Gate of Finis",
     "subArea": "The Bridge Beyond",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -14167,12 +16350,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 59,
     "hp": 7514,
     "patk": 483,
     "pdef": 51,
     "matk": 513,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 92,
+    "jp": 20,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14190,31 +16383,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Claw, Beast Claw, Shadow Soulstone",
-    "drop": "Leaf, Beast Claw",
-    "immunities": "Confusion, Silence"
+    ]
   },
   {
     "id": "98292.0",
     "name": "Infernal Insect V",
     "area": "The Gate of Finis",
     "subArea": "The Bridge Beyond Crimson River Traverse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 59,
     "hp": 7188,
     "patk": 483,
     "pdef": 51,
     "matk": 513,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 83,
+    "jp": 20,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14232,31 +16431,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shiny Coin, Copper Ore",
-    "drop": "Rare Beast Fang, Quality Beast Tusk, Revitalizing Jam",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98293.0",
     "name": "Fallen Thespian (Dancer)",
     "area": "The Gate of Finis",
     "subArea": "Crimson River Traverse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Thunder",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 59,
     "hp": 7441,
     "patk": 483,
     "pdef": 51,
     "matk": 500,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 92,
+    "jp": 20,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14274,31 +16479,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Lightning Soulstone, Inspiring Plum Basket",
-    "drop": "Chimera Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98294.0",
     "name": "Fallen Thespian (Scholar)",
     "area": "The Gate of Finis",
     "subArea": "Crimson River Traverse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 59,
     "hp": 7902,
     "patk": 483,
     "pdef": 51,
     "matk": 500,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 102,
+    "jp": 20,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14316,31 +16527,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Old Coin, Manticore Stinger, Healing Grape Bunch",
-    "drop": "Antidote Herb, Antidote Herb (M)",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98295.0",
     "name": "Fallen Thespian (Leader)",
     "area": "The Gate of Finis",
     "subArea": "Crimson River Traverse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 7986,
     "patk": 483,
     "pdef": 61,
     "matk": 500,
     "mdef": 61,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 112,
+    "jp": 20,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14366,31 +16583,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Gold Dust, Rusty Coin",
-    "drop": "Nut",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98297.0",
     "name": "Divine Soldier (Polearm)",
     "area": "The Heavens",
     "subArea": "Seas of Servility Seas of Servility: Hollow Path",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 8164,
     "patk": 494,
     "pdef": 53,
     "matk": 494,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 117,
+    "jp": 22,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14408,31 +16631,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Fang",
-    "drop": "Beast Fang",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98298.0",
     "name": "Divine Soldier (Bow)",
     "area": "The Heavens",
     "subArea": "Seas of Servility Seas of Servility: Divine Path Skies of Vanity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 8648,
     "patk": 494,
     "pdef": 53,
     "matk": 494,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 130,
+    "jp": 22,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14450,19 +16679,15 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Blessed Olive (M), Quality Beast Claw, SP-Restoring Nut (L)",
-    "drop": "Phoenix Feather, Antidote Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98299.0",
     "name": "Celestial White Whale",
     "area": "The Heavens",
     "subArea": "Seas of Servility Seas of Servility: Hollow Path Seas of Servility: Divine Path",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -14470,12 +16695,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 63,
     "hp": 9043,
     "patk": 494,
     "pdef": 53,
     "matk": 511,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 141,
+    "jp": 22,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14493,31 +16728,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Nut, Fire Soulstone, Basilisk Eye",
-    "drop": "Herb, Nut, Quality Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98296.0",
     "name": "Sacred Flame Curator",
     "area": "The Heavens",
     "subArea": "Seas of Servility Seas of Servility: Hollow Path Seas of Servility: Divine Path",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Tome",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 7881,
     "patk": 494,
     "pdef": 53,
     "matk": 511,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 105,
+    "jp": 22,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Fireshot",
@@ -14535,31 +16776,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Horn, Quality Beast Meat, Revitalizing Jam (M)",
-    "drop": "SP-Restoring Nut (L), Beast Tusk, Revitalizing Jam (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98300.0",
     "name": "Sacred Flame Servant",
     "area": "The Heavens",
     "subArea": "Seas of Servility: Hollow Path Sands of Rapacity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 7881,
     "patk": 494,
     "pdef": 53,
     "matk": 494,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 105,
+    "jp": 22,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14577,31 +16824,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Iron Ore",
-    "drop": "Healing Grape Bunch, Meteorite, Antidote Herb (L)",
-    "immunities": "Silence, Petrification"
+    ]
   },
   {
     "id": "98301.0",
     "name": "Divine Soldier (Hammer)",
     "area": "The Heavens",
     "subArea": "Seas of Servility: Hollow Path",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 8637,
     "patk": 494,
     "pdef": 53,
     "matk": 494,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 130,
+    "jp": 22,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14619,31 +16872,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Wind Soulstone, Rare Beast Hide",
-    "drop": "Moonstone",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98302.0",
     "name": "Divine Soldier (Axe)",
     "area": "The Heavens",
     "subArea": "Seas of Servility: Hollow Path Sands of Rapacity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Staff",
       "Ice",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 63,
     "hp": 8124,
     "patk": 494,
     "pdef": 53,
     "matk": 511,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 117,
+    "jp": 22,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14661,31 +16920,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shiny Coin, Revitalizing Jam (M)",
-    "drop": "Olive",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98303.0",
     "name": "Sacred Remnant",
     "area": "The Heavens",
     "subArea": "Sands of Rapacity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 8479,
     "patk": 494,
     "pdef": 53,
     "matk": 511,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 130,
+    "jp": 22,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14703,31 +16968,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Fang",
-    "drop": "Rare Beast Fang, Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98304.0",
     "name": "Sacral Warrior",
     "area": "The Heavens",
     "subArea": "Sands of Rapacity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
       "Fan",
       "Thunder"
     ],
+    "weakness": "Axe",
     "level": 63,
     "hp": 8958,
     "patk": 494,
     "pdef": 53,
     "matk": 511,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 141,
+    "jp": 22,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14745,31 +17016,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water (M), Iron Ore",
-    "drop": "Holy Water (L), Beast Hide",
-    "immunities": "Instant Death, Confusion"
+    ]
   },
   {
     "id": "98305.0",
     "name": "Holy Howler",
     "area": "The Heavens",
     "subArea": "Skies of Vanity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 63,
     "hp": 7881,
     "patk": 494,
     "pdef": 53,
     "matk": 511,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 105,
+    "jp": 22,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14787,31 +17064,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shiny Coin, SP-Restoring Nut (L), Kraken Ink",
-    "drop": "Rare Beast Claw",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98306.0",
     "name": "Elemental Prism",
     "area": "The Heavens",
     "subArea": "Skies of Vanity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
       "Fan",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 63,
     "hp": 8222,
     "patk": 494,
     "pdef": 53,
     "matk": 511,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 117,
+    "jp": 22,
+    "steal": "Almighty Soulstone",
+    "drop": "Almighty Soulstone x1 (3%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Radiance",
@@ -14829,31 +17112,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Inspiring Plum Basket, Revitalizing Jam (M), Blessed Olive (L)",
-    "drop": "Soulstone, Blessed Olive (M)",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98307.0",
     "name": "Great Holy Eagle",
     "area": "The Heavens",
     "subArea": "Skies of Vanity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 63,
     "hp": 8982,
     "patk": 494,
     "pdef": 53,
     "matk": 511,
     "mdef": 53,
+    "speed": 222,
+    "crit": 189,
+    "accuracy": 189,
+    "evasion": 168,
+    "exp": 141,
+    "jp": 22,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14871,10 +17160,7 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Meat",
-    "drop": "Beast Claw",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98341.0",
@@ -14883,19 +17169,28 @@ const enemyData = [
     "subArea": "Desert Island in the Outersea",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Fire",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 55,
     "hp": 6090,
     "patk": 471,
     "pdef": 42,
     "matk": 483,
     "mdef": 42,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 67,
+    "jp": 19,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14909,10 +17204,7 @@ const enemyData = [
         "name": "Ducaduca Kick",
         "type": "Phys"
       }
-    ],
-    "steal": "Cerberus Fang",
-    "drop": "Rare Beast Tusk",
-    "immunities": "Petrification, Paralysis"
+    ]
   },
   {
     "id": "98342.0",
@@ -14921,19 +17213,28 @@ const enemyData = [
     "subArea": "Desert Island in the Outersea",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Bow",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 6319,
     "patk": 471,
     "pdef": 42,
     "matk": 483,
     "mdef": 42,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 75,
+    "jp": 19,
+    "steal": "Herb of Vitality",
+    "drop": "Herb of Vitality x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14947,10 +17248,7 @@ const enemyData = [
         "name": "Guzzle Blood",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Sunshard",
-    "drop": "Beast Hide",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98343.0",
@@ -14959,19 +17257,28 @@ const enemyData = [
     "subArea": "Desert Island in the Outersea",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Fire",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 55,
     "hp": 6402,
     "patk": 471,
     "pdef": 42,
     "matk": 483,
     "mdef": 42,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 83,
+    "jp": 19,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (3%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -14985,10 +17292,7 @@ const enemyData = [
         "name": "Ingest",
         "type": "Phys"
       }
-    ],
-    "steal": "Minotaur Horn",
-    "drop": "Soulstone, Silver Nugget",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98344.0",
@@ -14997,19 +17301,28 @@ const enemyData = [
     "subArea": "Desert Island in the Outersea",
     "type": "Regular",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 6723,
     "patk": 471,
     "pdef": 42,
     "matk": 483,
     "mdef": 42,
+    "speed": 213,
+    "crit": 174,
+    "accuracy": 174,
+    "evasion": 155,
+    "exp": 90,
+    "jp": 19,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape (M) x1 (8%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -15023,10 +17336,7 @@ const enemyData = [
         "name": "Silencing Voice",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ice Soulstone, Hydra Scale",
-    "drop": "Holy Water (M), Beast Hide, Phoenix Feather",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98002.0",
@@ -15035,7 +17345,6 @@ const enemyData = [
     "subArea": "Cerulean Caverns",
     "type": "Regular",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -15044,12 +17353,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 4,
     "hp": 4000,
     "patk": 210,
     "pdef": 60,
     "matk": 120,
     "mdef": 60,
+    "speed": 90,
+    "crit": 60,
+    "accuracy": 99,
+    "evasion": 93,
+    "exp": 20,
+    "jp": 7,
+    "steal": "n/a",
+    "drop": "Healing Grape x1 (100%)",
+    "immunities": "Instant Death, Paralysis, Sleep, Enchant",
     "skills": [
       {
         "name": "Vicious Charge",
@@ -15075,10 +17394,7 @@ const enemyData = [
         "name": "<skl_user_name> stands ready!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb (M), Wind Soulstone",
-    "drop": "Beast Hide, Hydra Scale",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98008.0",
@@ -15087,7 +17403,6 @@ const enemyData = [
     "subArea": "Wishvale",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15095,12 +17410,22 @@ const enemyData = [
       "Staff",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 3,
     "hp": 500,
     "patk": 120,
     "pdef": 70,
     "matk": 119,
     "mdef": 70,
+    "speed": 72,
+    "crit": 56,
+    "accuracy": 99,
+    "evasion": 93,
+    "exp": 7,
+    "jp": 3,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -15110,10 +17435,7 @@ const enemyData = [
         "name": "Healing Grape",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (M), Manticore Stinger",
-    "drop": "Phoenix Feather, Beast Meat",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98020.0",
@@ -15122,7 +17444,6 @@ const enemyData = [
     "subArea": "Wishvale Trail",
     "type": "Regular",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -15131,12 +17452,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 5,
     "hp": 3500,
     "patk": 145,
     "pdef": 70,
     "matk": 119,
     "mdef": 70,
+    "speed": 92,
+    "crit": 56,
+    "accuracy": 99,
+    "evasion": 93,
+    "exp": 36,
+    "jp": 11,
+    "steal": "n/a",
+    "drop": "Olive of Life x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Trifold Slash",
@@ -15162,10 +17493,7 @@ const enemyData = [
         "name": "<skl_user_name> stands ready!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water (M)",
-    "drop": "Blessed Olive, Silver Nugget",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98030.0",
@@ -15174,7 +17502,6 @@ const enemyData = [
     "subArea": "Wishvale Trail",
     "type": "Regular",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15182,12 +17509,22 @@ const enemyData = [
       "Staff",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 3,
     "hp": 750,
     "patk": 130,
     "pdef": 60,
     "matk": 119,
     "mdef": 60,
+    "speed": 72,
+    "crit": 56,
+    "accuracy": 99,
+    "evasion": 93,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -15197,19 +17534,15 @@ const enemyData = [
         "name": "Slice",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life (M)",
-    "drop": "Quality Beast Horn, Manticore Stinger, EXP",
-    "immunities": "Curse, Instant Death"
+    ]
   },
   {
     "id": "98246.0",
     "name": "Spiked Skink",
     "area": "Kindlers Ch. 1",
     "subArea": "Snowshard Grotto",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15217,12 +17550,22 @@ const enemyData = [
       "Tome",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 8,
     "hp": 1300,
     "patk": 185,
     "pdef": 20,
     "matk": 185,
     "mdef": 20,
+    "speed": 78,
+    "crit": 94,
+    "accuracy": 170,
+    "evasion": 93,
+    "exp": 6,
+    "jp": 1,
+    "steal": "Inspiriting Plum",
+    "drop": "Inspiriting Plum x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -15248,19 +17591,15 @@ const enemyData = [
         "name": "Strong Thorn Storm",
         "type": "Phys"
       }
-    ],
-    "steal": "Chimera Fang, Rusty Coin",
-    "drop": "Chimera Fang, Gold Dust",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5000.0",
     "name": "Burly Blackrobe",
     "area": "Master of Wealth Ch. 1",
     "subArea": "Valore: Main Boulevard",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15268,12 +17607,22 @@ const enemyData = [
       "Bow",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 1,
     "hp": 1500,
     "patk": 130,
     "pdef": 70,
     "matk": 118,
     "mdef": 70,
+    "speed": 92,
+    "crit": 61,
+    "accuracy": 102,
+    "evasion": 95,
+    "exp": 21,
+    "jp": 3,
+    "steal": "Fortifying Nut",
+    "drop": "Fortifying Nut x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15283,19 +17632,15 @@ const enemyData = [
         "name": "Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Kraken Ink, Quality Beast Tusk, Shadow Soulstone",
-    "drop": "SP-Restoring Nut",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "5001.0",
     "name": "Blackrobe",
     "area": "Master of Wealth Ch. 1",
     "subArea": "Valore: Main Boulevard",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 3,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -15304,12 +17649,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 1,
     "hp": 300,
     "patk": 115,
     "pdef": 60,
     "matk": 100,
     "mdef": 60,
+    "speed": 72,
+    "crit": 60,
+    "accuracy": 99,
+    "evasion": 93,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15319,19 +17674,15 @@ const enemyData = [
         "name": "Slice",
         "type": "Phys"
       }
-    ],
-    "steal": "Nut",
-    "drop": "Minotaur Horn",
-    "immunities": "Terror, Silence"
+    ]
   },
   {
     "id": "5002.0",
     "name": "Captain Tristan",
     "area": "Master of Wealth Ch. 1",
     "subArea": "Herminia's Manse: Entrance",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 9,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -15339,12 +17690,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 10,
     "hp": 10609,
     "patk": 258,
     "pdef": 22,
     "matk": 206,
     "mdef": 18,
+    "speed": 79,
+    "crit": 119,
+    "accuracy": 149,
+    "evasion": 90,
+    "exp": 40,
+    "jp": 17,
+    "steal": "Old Armor",
+    "drop": "Old Armor x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15362,19 +17723,15 @@ const enemyData = [
         "name": "Skull Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (M), Hydra Scale",
-    "drop": "Meteorite, Herb",
-    "immunities": "Stun, Petrification"
+    ]
   },
   {
     "id": "5003.0",
     "name": "Mercenary",
     "area": "Master of Wealth Ch. 1",
     "subArea": "Herminia's Manse: Entrance",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15382,12 +17739,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 8,
     "hp": 2652,
     "patk": 226,
     "pdef": 22,
     "matk": 178,
     "mdef": 18,
+    "speed": 79,
+    "crit": 119,
+    "accuracy": 149,
+    "evasion": 90,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15397,19 +17764,15 @@ const enemyData = [
         "name": "Slice",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Fang, Beast Horn, Meteorite",
-    "drop": "Antidote Herb (M), Gold Dust",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5011.0",
     "name": "Abnormal Ruffian",
     "area": "Master of Power Ch. 1",
     "subArea": "Emberglow: East District",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15418,12 +17781,22 @@ const enemyData = [
       "Tome",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 1,
     "hp": 4000,
     "patk": 230,
     "pdef": 25,
     "matk": 160,
     "mdef": 16,
+    "speed": 82,
+    "crit": 115,
+    "accuracy": 140,
+    "evasion": 87,
+    "exp": 21,
+    "jp": 10,
+    "steal": "Nourishing Nut",
+    "drop": "Nourishing Nut x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Graaargh!",
@@ -15433,19 +17806,15 @@ const enemyData = [
         "name": "Run Rampant",
         "type": "Elem"
       }
-    ],
-    "steal": "Moonstone, Quality Beast Fang",
-    "drop": "Beast Fang, Rare Beast Meat",
-    "immunities": "Instant Death, Poison"
+    ]
   },
   {
     "id": "5012.0",
     "name": "Al the Servant",
     "area": "Master of Power Ch. 1",
     "subArea": "Emberglow Laboratory",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15454,12 +17823,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 8000,
     "patk": 300,
     "pdef": 30,
     "matk": 300,
     "mdef": 20,
+    "speed": 95,
+    "crit": 120,
+    "accuracy": 150,
+    "evasion": 93,
+    "exp": 40,
+    "jp": 17,
+    "steal": "Protective Earring",
+    "drop": "Protective Earring x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15485,19 +17864,15 @@ const enemyData = [
         "name": "Wild Ebony Claw",
         "type": "Elem"
       }
-    ],
-    "steal": "Holy Water (M), Gold Dust, Nut",
-    "drop": "Rare Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5025.0",
     "name": "Aide (Vanguard)",
     "area": "Master of Fame Ch. 1",
     "subArea": "Amphitheatre: Dressing Room",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15506,12 +17881,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 6,
     "hp": 3500,
     "patk": 210,
     "pdef": 25,
     "matk": 140,
     "mdef": 15,
+    "speed": 98,
+    "crit": 120,
+    "accuracy": 150,
+    "evasion": 89,
+    "exp": 40,
+    "jp": 17,
+    "steal": "Stone Rod",
+    "drop": "Stone Rod x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15533,19 +17918,15 @@ const enemyData = [
         "name": "Peerless Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (L), Holy Water (L), Inspiring Plum Basket",
-    "drop": "Rare Beast Fang, Phoenix Feather",
-    "immunities": "Instant Death, Poison"
+    ]
   },
   {
     "id": "5026.0",
     "name": "Aide (Rearguard)",
     "area": "Master of Fame Ch. 1",
     "subArea": "Amphitheatre: Dressing Room",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -15554,12 +17935,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 6,
     "hp": 3500,
     "patk": 140,
     "pdef": 15,
     "matk": 210,
     "mdef": 25,
+    "speed": 95,
+    "crit": 120,
+    "accuracy": 150,
+    "evasion": 89,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Spark of Fire",
@@ -15581,19 +17972,15 @@ const enemyData = [
         "name": "Fire Dragon's Breath",
         "type": "Elem"
       }
-    ],
-    "steal": "Light Soulstone, Beast Claw",
-    "drop": "Sunshard, Copper Ore",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5004.0",
     "name": "Sonia",
     "area": "Master of Wealth Ch. 2",
     "subArea": "Subterranean Snow Ruins",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 15,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -15601,12 +17988,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 12,
     "hp": 20400,
     "patk": 282,
     "pdef": 25,
     "matk": 271,
     "mdef": 25,
+    "speed": 136,
+    "crit": 131,
+    "accuracy": 166,
+    "evasion": 158,
+    "exp": 108,
+    "jp": 28,
+    "steal": "HP Thief Mastery",
+    "drop": "HP Thief Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15636,19 +18033,15 @@ const enemyData = [
         "name": "Storm Spike",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (L)",
-    "drop": "Sphinx Feather",
-    "immunities": "Sleep, Curse"
+    ]
   },
   {
     "id": "5014.0",
     "name": "Jurgen",
     "area": "Master of Power Ch. 2",
     "subArea": "Emberglow Slopes",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -15656,12 +18049,22 @@ const enemyData = [
       "Tome",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 14,
     "hp": 9882,
     "patk": 263,
     "pdef": 25,
     "matk": 265,
     "mdef": 25,
+    "speed": 100,
+    "crit": 126,
+    "accuracy": 159,
+    "evasion": 93,
+    "exp": 108,
+    "jp": 28,
+    "steal": "Rehabilitate Mastery",
+    "drop": "Rehabilitate Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15695,19 +18098,15 @@ const enemyData = [
         "name": "Piercing Wild Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk, Rare Beast Hide, Holy Water (L)",
-    "drop": "Rare Beast Hide, Beast Meat, Rare Beast Tusk",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5015.0",
     "name": "Scarlet Wing",
     "area": "Master of Power Ch. 2",
     "subArea": "Emberglow Slopes",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -15715,12 +18114,22 @@ const enemyData = [
       "Fan",
       "Ice"
     ],
+    "weakness": "Dagger",
     "level": 12,
     "hp": 5967,
     "patk": 264,
     "pdef": 25,
     "matk": 232,
     "mdef": 25,
+    "speed": 104,
+    "crit": 131,
+    "accuracy": 166,
+    "evasion": 93,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15730,19 +18139,15 @@ const enemyData = [
         "name": "Slice",
         "type": "Phys"
       }
-    ],
-    "steal": "Inspiring Plum, Basilisk Eye, Unicorn Horn",
-    "drop": "Iron Ore",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "5027.0",
     "name": "Francesca the Actress",
     "area": "Master of Fame Ch. 2",
     "subArea": "Auguste's Villa",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -15751,12 +18156,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 14,
     "hp": 20000,
     "patk": 246,
     "pdef": 23,
     "matk": 292,
     "mdef": 28,
+    "speed": 88,
+    "crit": 128,
+    "accuracy": 162,
+    "evasion": 118,
+    "exp": 108,
+    "jp": 28,
+    "steal": "Song of Nightfall Mastery",
+    "drop": "Song of Nightfall Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "AHAHAHA!",
@@ -15778,19 +18193,15 @@ const enemyData = [
         "name": "I won't let anyone get in his way!",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Meat, Beast Hide, HP-Restoring Herb (M)",
-    "drop": "Rare Beast Meat, Beast Hide, Phoenix Feather",
-    "immunities": "Sleep, Curse"
+    ]
   },
   {
     "id": "5007.0",
     "name": "Rosso",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Valore: Main Boulevard",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -15798,12 +18209,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 14,
     "hp": 17136,
     "patk": 301,
     "pdef": 28,
     "matk": 239,
     "mdef": 23,
+    "speed": 88,
+    "crit": 128,
+    "accuracy": 162,
+    "evasion": 118,
+    "exp": 71,
+    "jp": 33,
+    "steal": "Tough Nut",
+    "drop": "Tough Nut x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -15849,19 +18270,15 @@ const enemyData = [
         "name": "Swift Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Dragon Scale, Phoenix Feather, Kraken Ink",
-    "drop": "Meteorite, Gold",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5008.0",
     "name": "Lady Herminia",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 12,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -15869,12 +18286,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 20,
     "hp": 14469,
     "patk": 324,
     "pdef": 25,
     "matk": 317,
     "mdef": 25,
+    "speed": 114,
+    "crit": 142,
+    "accuracy": 180,
+    "evasion": 106,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Eclipse of the Soul",
@@ -15916,19 +18343,15 @@ const enemyData = [
         "name": "<skl_user_name>'s fan rends space asunder!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Fang, Quality Beast Tusk, Copper Ore",
-    "drop": "Holy Water, Holy Water (L)",
-    "immunities": "Confusion, Poison"
+    ]
   },
   {
     "id": "5009.0",
     "name": "Lady In Waiting",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -15936,12 +18359,22 @@ const enemyData = [
       "Fan",
       "Wind"
     ],
+    "weakness": "Axe",
     "level": 20,
     "hp": 5883,
     "patk": 287,
     "pdef": 25,
     "matk": 279,
     "mdef": 25,
+    "speed": 134,
+    "crit": 142,
+    "accuracy": 181,
+    "evasion": 106,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Knife Throw",
@@ -15959,19 +18392,15 @@ const enemyData = [
         "name": "First Aid",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Meat, Beast Tusk",
-    "drop": "Kraken Ink",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5010.0",
     "name": "Herminia the Huntress",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 15,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -15979,12 +18408,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 20,
     "hp": 23940,
     "patk": 325,
     "pdef": 25,
     "matk": 317,
     "mdef": 25,
+    "speed": 135,
+    "crit": 57,
+    "accuracy": 172,
+    "evasion": 94,
+    "exp": 215,
+    "jp": 46,
+    "steal": "Radiant Arrow Mastery",
+    "drop": "Radiant Arrow Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Shot",
@@ -16042,19 +18481,15 @@ const enemyData = [
         "name": "<skl_user_name> weaves a zone of mental collapse!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shiny Coin, Revitalizing Jam",
-    "drop": "Rare Beast Horn, Olive of Life (M)",
-    "immunities": "Stun, Blind"
+    ]
   },
   {
     "id": "5147.0",
     "name": "Lady Herminia",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 12,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -16062,12 +18497,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 22,
     "hp": 19950,
     "patk": 324,
     "pdef": 25,
     "matk": 317,
     "mdef": 25,
+    "speed": 114,
+    "crit": 142,
+    "accuracy": 180,
+    "evasion": 106,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Eclipse of the Soul",
@@ -16109,19 +18554,15 @@ const enemyData = [
         "name": "<skl_user_name>'s fan rends space asunder!",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (M), Manticore Stinger, Shadow Soulstone",
-    "drop": "Old Coin",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "5148.0",
     "name": "Lady In Waiting",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -16129,12 +18570,22 @@ const enemyData = [
       "Fan",
       "Wind"
     ],
+    "weakness": "Axe",
     "level": 22,
     "hp": 8575,
     "patk": 293,
     "pdef": 25,
     "matk": 286,
     "mdef": 25,
+    "speed": 134,
+    "crit": 142,
+    "accuracy": 181,
+    "evasion": 106,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Knife Throw",
@@ -16152,19 +18603,15 @@ const enemyData = [
         "name": "First Aid",
         "type": "Unknown"
       }
-    ],
-    "steal": "Inspiring Plum Basket, Quality Beast Fang, Copper Ore",
-    "drop": "Basilisk Eye, Beast Tusk, SP-Restoring Nut (M)",
-    "immunities": "Instant Death, Paralysis"
+    ]
   },
   {
     "id": "5151.0",
     "name": "Herminia the Huntress",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 17,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -16172,12 +18619,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 22,
     "hp": 29900,
     "patk": 388,
     "pdef": 24,
     "matk": 323,
     "mdef": 22,
+    "speed": 140,
+    "crit": 78,
+    "accuracy": 261,
+    "evasion": 122,
+    "exp": 215,
+    "jp": 46,
+    "steal": "Radiant Arrow Mastery",
+    "drop": "Radiant Arrow Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Shot",
@@ -16235,19 +18692,15 @@ const enemyData = [
         "name": "<skl_user_name> weaves a zone of mental collapse!",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb",
-    "drop": "EXP, Beast Hide, Basilisk Eye",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98219.0",
     "name": "Manifestation of Mental Decay",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -16255,12 +18708,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 1830,
     "patk": 1,
     "pdef": 21,
     "matk": 1,
     "mdef": 22,
+    "speed": 9999,
+    "crit": 1,
+    "accuracy": 1,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Countdown to Ruin",
@@ -16282,19 +18745,15 @@ const enemyData = [
         "name": "It bides its time...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Hide, Rare Beast Fang, Beast Meat",
-    "drop": "Beast Claw",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98249.0",
     "name": "Manifestation of Mental Decay",
     "area": "Master of Wealth Ch. 3",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -16302,12 +18761,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 2030,
     "patk": 1,
     "pdef": 21,
     "matk": 1,
     "mdef": 22,
+    "speed": 9999,
+    "crit": 1,
+    "accuracy": 1,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Countdown to Ruin",
@@ -16329,10 +18798,7 @@ const enemyData = [
         "name": "It bides its time...",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb",
-    "drop": "Rare Beast Claw, Old Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5020.0",
@@ -16341,19 +18807,28 @@ const enemyData = [
     "subArea": "Emberglow Slopes",
     "type": "Boss",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 16,
     "hp": 7728,
     "patk": 297,
     "pdef": 25,
     "matk": 291,
     "mdef": 25,
+    "speed": 106,
+    "crit": 133,
+    "accuracy": 169,
+    "evasion": 99,
+    "exp": 36,
+    "jp": 10,
+    "steal": "Ice Soulstone (M)",
+    "drop": "Ice Soulstone (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -16375,19 +18850,15 @@ const enemyData = [
         "name": "Scream of Silence",
         "type": "Unknown"
       }
-    ],
-    "steal": "Unicorn Horn, Revitalizing Jam (L)",
-    "drop": "Olive, EXP",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5022.0",
     "name": "Jurgen",
     "area": "Master of Power Ch. 3",
     "subArea": "Emberglow Slopes",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 16,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -16395,12 +18866,22 @@ const enemyData = [
       "Tome",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 18,
     "hp": 14000,
     "patk": 300,
     "pdef": 35,
     "matk": 200,
     "mdef": 25,
+    "speed": 130,
+    "crit": 140,
+    "accuracy": 160,
+    "evasion": 110,
+    "exp": 118,
+    "jp": 33,
+    "steal": "Invigorating Nut",
+    "drop": "Invigorating Nut x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Triple Piercing Thrust",
@@ -16426,19 +18907,15 @@ const enemyData = [
         "name": "Die! Die! DIE!",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut",
-    "drop": "Star Fragment, Beast Meat, Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5023.0",
     "name": "Commander Tytos",
     "area": "Master of Power Ch. 3",
     "subArea": "Cathedral of Tytos",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 17,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -16446,12 +18923,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 20,
     "hp": 16975,
     "patk": 349,
     "pdef": 28,
     "matk": 349,
     "mdef": 23,
+    "speed": 110,
+    "crit": 138,
+    "accuracy": 174,
+    "evasion": 103,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -16497,19 +18984,15 @@ const enemyData = [
         "name": "Dual Thunderblades",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Horn",
-    "drop": "Rare Beast Claw, Beast Tusk",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5024.0",
     "name": "Tytos the Thunderblade",
     "area": "Master of Power Ch. 3",
     "subArea": "Cathedral of Tytos",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 19,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -16517,12 +19000,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 20,
     "hp": 27604,
     "patk": 365,
     "pdef": 28,
     "matk": 365,
     "mdef": 23,
+    "speed": 110,
+    "crit": 138,
+    "accuracy": 174,
+    "evasion": 103,
+    "exp": 215,
+    "jp": 46,
+    "steal": "Brutal Sweep Mastery",
+    "drop": "Brutal Sweep Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -16576,19 +19069,15 @@ const enemyData = [
         "name": "<skl_user_name> has created an energy-draining barrier!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Copper Ore, Basilisk Eye",
-    "drop": "Quality Beast Horn, Revitalizing Jam, Gold Dust",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "5157.0",
     "name": "Commander Tytos",
     "area": "Master of Power Ch. 3",
     "subArea": "Cathedral of Tytos",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 17,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -16596,12 +19085,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 22,
     "hp": 20608,
     "patk": 363,
     "pdef": 28,
     "matk": 363,
     "mdef": 23,
+    "speed": 124,
+    "crit": 142,
+    "accuracy": 180,
+    "evasion": 106,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -16647,19 +19146,15 @@ const enemyData = [
         "name": "Dual Thunderblades",
         "type": "Elem"
       }
-    ],
-    "steal": "Ancient Coin, Antidote Herb",
-    "drop": "Griffin Claw, Rare Beast Hide",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "5159.0",
     "name": "Tytos the Thunderblade",
     "area": "Master of Power Ch. 3",
     "subArea": "Cathedral of Tytos",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 19,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -16667,12 +19162,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 22,
     "hp": 29078,
     "patk": 380,
     "pdef": 28,
     "matk": 380,
     "mdef": 23,
+    "speed": 124,
+    "crit": 142,
+    "accuracy": 180,
+    "evasion": 106,
+    "exp": 215,
+    "jp": 46,
+    "steal": "Brutal Sweep Mastery",
+    "drop": "Brutal Sweep Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -16734,19 +19239,15 @@ const enemyData = [
         "name": "<skl_user_name> has created an energy-draining barrier!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (M)",
-    "drop": "Revitalizing Jam (L), Nut",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "5030.0",
     "name": "Auguste the Playwright",
     "area": "Master of Fame Ch. 3",
     "subArea": "Amphitheatre: Backstage",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -16754,12 +19255,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 17264,
     "patk": 286,
     "pdef": 23,
     "matk": 340,
     "mdef": 28,
+    "speed": 120,
+    "crit": 138,
+    "accuracy": 174,
+    "evasion": 103,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -16801,19 +19312,15 @@ const enemyData = [
         "name": "Auguste's resistances to attacks outside of his weak points have increased!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Manticore Stinger, Blessed Olive (L)",
-    "drop": "Quality Beast Fang, HP-Restoring Herb (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5031.0",
     "name": "Auguste the Prince of Thieves",
     "area": "Master of Fame Ch. 3",
     "subArea": "Amphitheatre: Backstage",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 15,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -16821,12 +19328,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 19980,
     "patk": 289,
     "pdef": 23,
     "matk": 345,
     "mdef": 28,
+    "speed": 125,
+    "crit": 138,
+    "accuracy": 174,
+    "evasion": 103,
+    "exp": 215,
+    "jp": 46,
+    "steal": "Blade of Vengeance Mastery",
+    "drop": "Blade of Vengeance Mastery x1 (100%)",
+    "immunities": "Blindness, Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -16884,19 +19401,15 @@ const enemyData = [
         "name": "<skl_user_name> creates a deadly zone!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb (M)",
-    "drop": "SP-Restoring Nut",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "5165.0",
     "name": "Auguste the Playwright",
     "area": "Master of Fame Ch. 3",
     "subArea": "Amphitheatre: Backstage",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -16904,12 +19417,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 22,
     "hp": 20125,
     "patk": 297,
     "pdef": 23,
     "matk": 356,
     "mdef": 28,
+    "speed": 129,
+    "crit": 142,
+    "accuracy": 180,
+    "evasion": 106,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -16951,19 +19474,15 @@ const enemyData = [
         "name": "Auguste's resistances to attacks outside of his weak points have increased!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Gold Dust",
-    "drop": "Herb, SP-Restoring Nut",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "5167.0",
     "name": "Auguste the Prince of Thieves",
     "area": "Master of Fame Ch. 3",
     "subArea": "Amphitheatre: Backstage",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 15,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -16971,12 +19490,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 22,
     "hp": 21090,
     "patk": 301,
     "pdef": 23,
     "matk": 360,
     "mdef": 28,
+    "speed": 144,
+    "crit": 142,
+    "accuracy": 180,
+    "evasion": 106,
+    "exp": 215,
+    "jp": 46,
+    "steal": "Blade of Vengeance Mastery",
+    "drop": "Blade of Vengeance Mastery x1 (100%)",
+    "immunities": "Blindness, Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17034,19 +19563,15 @@ const enemyData = [
         "name": "<skl_user_name> creates a deadly zone!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Fire Soulstone, Herb, Rare Beast Tusk",
-    "drop": "Rare Beast Fang, Gold, Revitalizing Jam (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98221.0",
     "name": "Ruinous Rancor",
     "area": "Master of Fame Ch. 3",
     "subArea": "Amphitheatre: Backstage",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -17054,12 +19579,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 1560,
     "patk": 270,
     "pdef": 25,
     "matk": 263,
     "mdef": 25,
+    "speed": 110,
+    "crit": 138,
+    "accuracy": 174,
+    "evasion": 103,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Fatal Sentence",
@@ -17077,19 +19612,15 @@ const enemyData = [
         "name": "Fatal Sentence",
         "type": "Unknown"
       }
-    ],
-    "steal": "Inspiring Plum",
-    "drop": "Antidote Herb, Basilisk Eye",
-    "immunities": "Poison, Petrification"
+    ]
   },
   {
     "id": "98010.0",
     "name": "Sazantos",
     "area": "Finale",
     "subArea": "Wishvale Trail",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 13,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -17097,12 +19628,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 25,
     "hp": 28274,
     "patk": 394,
     "pdef": 30,
     "matk": 386,
     "mdef": 30,
+    "speed": 125,
+    "crit": 154,
+    "accuracy": 197,
+    "evasion": 116,
+    "exp": 179,
+    "jp": 44,
+    "steal": "Healing Grape Bunch",
+    "drop": "Healing Grape Bunch x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17156,19 +19697,15 @@ const enemyData = [
         "name": "Shadowcleaver",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb",
-    "drop": "HP-Restoring Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5136.0",
     "name": "Ring-Sealed Beast",
     "area": "Finale",
     "subArea": "Isle of Orsa: Altar",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 18,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -17177,12 +19714,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 25,
     "hp": 19496,
     "patk": 380,
     "pdef": 36,
     "matk": 380,
     "mdef": 24,
+    "speed": 100,
+    "crit": 154,
+    "accuracy": 197,
+    "evasion": 100,
+    "exp": 190,
+    "jp": 46,
+    "steal": "Protective Cuffs",
+    "drop": "Protective Cuffs x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "It prepares to attack a target!",
@@ -17220,19 +19767,15 @@ const enemyData = [
         "name": "Countdown to Ruin",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (M), Quality Beast Horn",
-    "drop": "HP-Restoring Herb (L), Ancient Coin, Rusty Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5032.0",
     "name": "Mesara the Thief",
     "area": "Master of All Ch. 1",
     "subArea": "Gray Grotto: Depths",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -17240,12 +19783,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 23000,
     "patk": 350,
     "pdef": 40,
     "matk": 290,
     "mdef": 30,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 200,
+    "evasion": 150,
+    "exp": 204,
+    "jp": 48,
+    "steal": "Iron Vest",
+    "drop": "Iron Vest x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "With a daunting look, <skl_user_name> takes aim.",
@@ -17279,19 +19832,15 @@ const enemyData = [
         "name": "Skull Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide, Quality Beast Horn",
-    "drop": "Olive of Life (M), Blessed Olive, Beast Hide",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "5033.0",
     "name": "Thief",
     "area": "Master of All Ch. 1",
     "subArea": "Gray Grotto: Depths",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -17300,12 +19849,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 7000,
     "patk": 300,
     "pdef": 25,
     "matk": 220,
     "mdef": 20,
+    "speed": 130,
+    "crit": 160,
+    "accuracy": 170,
+    "evasion": 130,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17323,19 +19882,15 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Iron Ore, Meteorite",
-    "drop": "HP-Restoring Herb (L)",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "5034.0",
     "name": "Thief",
     "area": "Master of All Ch. 1",
     "subArea": "Gray Grotto: Depths",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -17344,12 +19899,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 7000,
     "patk": 300,
     "pdef": 25,
     "matk": 220,
     "mdef": 20,
+    "speed": 130,
+    "crit": 160,
+    "accuracy": 170,
+    "evasion": 130,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17367,19 +19932,15 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Iron Ore, Healing Grape Bunch",
-    "drop": "Revitalizing Jam (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5035.0",
     "name": "M'suhi the Viper",
     "area": "Master of All Ch. 2",
     "subArea": "Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 14,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Staff",
@@ -17387,12 +19948,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Bow",
     "level": 35,
     "hp": 26000,
     "patk": 420,
     "pdef": 45,
     "matk": 350,
     "mdef": 38,
+    "speed": 163,
+    "crit": 210,
+    "accuracy": 220,
+    "evasion": 150,
+    "exp": 218,
+    "jp": 50,
+    "steal": "Serpent's Fang Mastery",
+    "drop": "Serpent's Fang Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17430,19 +20001,15 @@ const enemyData = [
         "name": "Serpent's Blade",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Beast Horn, Quality Beast Claw",
-    "drop": "Revitalizing Jam (M)",
-    "immunities": "Poison, Curse"
+    ]
   },
   {
     "id": "5191.0",
     "name": "Thief",
     "area": "Master of All Ch. 2",
     "subArea": "Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -17451,12 +20018,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 35,
     "hp": 7000,
     "patk": 310,
     "pdef": 25,
     "matk": 220,
     "mdef": 20,
+    "speed": 135,
+    "crit": 160,
+    "accuracy": 170,
+    "evasion": 130,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17470,19 +20047,15 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Inspiring Plum, Rusty Coin, Quality Beast Horn",
-    "drop": "Ancient Coin, Olive, SP-Restoring Nut (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5192.0",
     "name": "Thief",
     "area": "Master of All Ch. 2",
     "subArea": "Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -17491,12 +20064,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 35,
     "hp": 7000,
     "patk": 310,
     "pdef": 25,
     "matk": 220,
     "mdef": 20,
+    "speed": 135,
+    "crit": 160,
+    "accuracy": 170,
+    "evasion": 130,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17510,31 +20093,37 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Silver Nugget, Quality Beast Claw, Wind Soulstone",
-    "drop": "Blessed Olive (L), Antidote Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5036.0",
     "name": "Edoras Infantryman I",
     "area": "Master of All Ch. 3",
     "subArea": "Cragspear: Slums",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Staff",
       "Tome",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 36,
     "hp": 3172,
     "patk": 317,
     "pdef": 52,
     "matk": 264,
     "mdef": 45,
+    "speed": 160,
+    "crit": 110,
+    "accuracy": 238,
+    "evasion": 115,
+    "exp": 51,
+    "jp": 15,
+    "steal": "Nourishing Nut (M)",
+    "drop": "Healing Grape (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17552,31 +20141,37 @@ const enemyData = [
         "name": "Offensive Formation",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shadow Soulstone",
-    "drop": "Beast Claw, Griffin Claw, Rare Beast Claw",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "5037.0",
     "name": "Edoras Infantryman II",
     "area": "Master of All Ch. 3",
     "subArea": "Cragspear: Slums",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Bow",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 36,
     "hp": 3172,
     "patk": 317,
     "pdef": 52,
     "matk": 264,
     "mdef": 45,
+    "speed": 160,
+    "crit": 110,
+    "accuracy": 238,
+    "evasion": 115,
+    "exp": 51,
+    "jp": 15,
+    "steal": "Invigorating Nut (M)",
+    "drop": "Inspiriting Plum (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17594,19 +20189,15 @@ const enemyData = [
         "name": "Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Meat",
-    "drop": "Moonstone",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "5038.0",
     "name": "Gimel the Brigand Leader",
     "area": "Master of All Ch. 3",
     "subArea": "Waterpool Caves",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 10,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -17614,12 +20205,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 40,
     "hp": 28000,
     "patk": 430,
     "pdef": 50,
     "matk": 380,
     "mdef": 38,
+    "speed": 200,
+    "crit": 220,
+    "accuracy": 200,
+    "evasion": 150,
+    "exp": 231,
+    "jp": 51,
+    "steal": "Herb of Clamor",
+    "drop": "Herb of Clamor x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17653,19 +20254,15 @@ const enemyData = [
         "name": "Mass Skill Steal",
         "type": "Phys"
       }
-    ],
-    "steal": "Herb, Basilisk Eye",
-    "drop": "Blessed Olive, Moonstone, Chimera Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5039.0",
     "name": "Thief",
     "area": "Master of All Ch. 3",
     "subArea": "Waterpool Caves",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -17673,12 +20270,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 7500,
     "patk": 330,
     "pdef": 40,
     "matk": 200,
     "mdef": 28,
+    "speed": 160,
+    "crit": 180,
+    "accuracy": 180,
+    "evasion": 130,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17696,19 +20303,15 @@ const enemyData = [
         "name": "Pilfer Magic",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide, SP-Restoring Nut",
-    "drop": "Quality Beast Meat, Sphinx Feather, Blessed Olive (M)",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "5040.0",
     "name": "Thief",
     "area": "Master of All Ch. 3",
     "subArea": "Waterpool Caves",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -17716,12 +20319,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 7500,
     "patk": 330,
     "pdef": 40,
     "matk": 200,
     "mdef": 28,
+    "speed": 160,
+    "crit": 180,
+    "accuracy": 180,
+    "evasion": 130,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17739,10 +20352,7 @@ const enemyData = [
         "name": "Pilfer Magic",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb, Chimera Fang",
-    "drop": "Beast Claw, Rare Beast Hide",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98549.0",
@@ -17751,7 +20361,6 @@ const enemyData = [
     "subArea": "Finesand Ruins",
     "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -17760,12 +20369,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 29,
     "hp": 8000,
     "patk": 380,
     "pdef": 80,
     "matk": 200,
     "mdef": 60,
+    "speed": 170,
+    "crit": 60,
+    "accuracy": 180,
+    "evasion": 100,
+    "exp": 39,
+    "jp": 11,
+    "steal": "Olive of Life",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -17779,10 +20398,7 @@ const enemyData = [
         "name": "Wild Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (M), Old Coin, Herb",
-    "drop": "Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98248.0",
@@ -17791,7 +20407,6 @@ const enemyData = [
     "subArea": "Finesand Ruins",
     "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -17800,12 +20415,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 29,
     "hp": 8000,
     "patk": 380,
     "pdef": 80,
     "matk": 200,
     "mdef": 60,
+    "speed": 170,
+    "crit": 60,
+    "accuracy": 180,
+    "evasion": 100,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -17819,19 +20444,15 @@ const enemyData = [
         "name": "Wild Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "Gold Dust, Rare Beast Horn",
-    "drop": "Rusty Coin, HP-Restoring Herb (M)",
-    "immunities": "Petrification, Paralysis"
+    ]
   },
   {
     "id": "98247.0",
     "name": "Lizardmen Leader",
     "area": "Kindlers Ch. 3",
     "subArea": "Finesand Ruins",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 17,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -17839,12 +20460,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 25000,
     "patk": 480,
     "pdef": 100,
     "matk": 300,
     "mdef": 80,
+    "speed": 200,
+    "crit": 80,
+    "accuracy": 190,
+    "evasion": 110,
+    "exp": 147,
+    "jp": 40,
+    "steal": "Heavy Axe",
+    "drop": "Heavy Axe x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -17874,19 +20505,15 @@ const enemyData = [
         "name": "Bombardment",
         "type": "Phys"
       }
-    ],
-    "steal": "Minotaur Horn, Gold Dust, Herb",
-    "drop": "Beast Fang",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98591.0",
     "name": "Emerald Direwolf",
     "area": "Kindlers Ch. 5",
     "subArea": "Path to the Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -17895,12 +20522,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 33,
     "hp": 58893,
     "patk": 453,
     "pdef": 60,
     "matk": 444,
     "mdef": 60,
+    "speed": 212,
+    "crit": 172,
+    "accuracy": 267,
+    "evasion": 227,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death, Paralysis, Sleep, Enchant",
     "skills": [
       {
         "name": "Bite",
@@ -17962,19 +20599,15 @@ const enemyData = [
         "name": "Hasten",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Claw, Iron Ore",
-    "drop": "Beast Fang",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98592.0",
     "name": "Emerald Direwolf",
     "area": "Kindlers Ch. 5",
     "subArea": "Path to the Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -17983,12 +20616,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 33,
     "hp": 58893,
     "patk": 521,
     "pdef": 60,
     "matk": 497,
     "mdef": 60,
+    "speed": 232,
+    "crit": 172,
+    "accuracy": 267,
+    "evasion": 227,
+    "exp": 327,
+    "jp": 46,
+    "steal": "Maiming Bite Mastery",
+    "drop": "Maiming Bite Mastery x1 (100%)",
+    "immunities": "Instant Death, Paralysis, Sleep, Enchant",
     "skills": [
       {
         "name": "Bite",
@@ -18050,19 +20693,15 @@ const enemyData = [
         "name": "Hasten",
         "type": "Unknown"
       }
-    ],
-    "steal": "Hydra Scale",
-    "drop": "Nut, Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5041.0",
     "name": "Cerro the Emissary",
     "area": "Master of All Ch. 4",
     "subArea": "Sunshade Sands",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 14,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -18070,12 +20709,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 43,
     "hp": 41580,
     "patk": 486,
     "pdef": 44,
     "matk": 394,
     "mdef": 36,
+    "speed": 171,
+    "crit": 165,
+    "accuracy": 212,
+    "evasion": 137,
+    "exp": 256,
+    "jp": 53,
+    "steal": "Healing Grape Bunch",
+    "drop": "Triple Strike Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18101,19 +20750,15 @@ const enemyData = [
         "name": "Deadly Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive, HP-Restoring Herb (L)",
-    "drop": "Antidote Herb (L), Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5043.0",
     "name": "Gonzalez the Ironarm",
     "area": "Master of All Ch. 5",
     "subArea": "Valley of Death",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -18121,12 +20766,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 34188,
     "patk": 537,
     "pdef": 48,
     "matk": 354,
     "mdef": 32,
+    "speed": 137,
+    "crit": 147,
+    "accuracy": 215,
+    "evasion": 110,
+    "exp": 171,
+    "jp": 43,
+    "steal": "Smite of Fury Mastery",
+    "drop": "Smite of Fury Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18160,10 +20815,7 @@ const enemyData = [
         "name": "<skl_user_name> bolsters his defense!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water, Ice Soulstone",
-    "drop": "Leaf",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "5044.0",
@@ -18172,7 +20824,6 @@ const enemyData = [
     "subArea": "Valley of Death: West",
     "type": "Boss",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -18180,12 +20831,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 32,
     "hp": 37488,
     "patk": 452,
     "pdef": 40,
     "matk": 418,
     "mdef": 40,
+    "speed": 139,
+    "crit": 170,
+    "accuracy": 219,
+    "evasion": 128,
+    "exp": 285,
+    "jp": 57,
+    "steal": "Dragon's Scarf",
+    "drop": "Dragon's Scarf x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18223,10 +20884,7 @@ const enemyData = [
         "name": "<skl_user_name> unleashes his true power!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ice Soulstone, Wind Soulstone, Light Soulstone",
-    "drop": "Healing Grape Bunch, SP-Restoring Nut (M)",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "5045.0",
@@ -18235,7 +20893,6 @@ const enemyData = [
     "subArea": "Valley of Death: West",
     "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -18243,12 +20900,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 5070,
     "patk": 381,
     "pdef": 40,
     "matk": 347,
     "mdef": 40,
+    "speed": 137,
+    "crit": 167,
+    "accuracy": 216,
+    "evasion": 126,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18262,10 +20929,7 @@ const enemyData = [
         "name": "Wild Cut",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (M)",
-    "drop": "Silver Nugget, Dragon Scale",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "5046.0",
@@ -18274,7 +20938,6 @@ const enemyData = [
     "subArea": "Valley of Death: West",
     "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -18282,12 +20945,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 5070,
     "patk": 381,
     "pdef": 40,
     "matk": 347,
     "mdef": 40,
+    "speed": 137,
+    "crit": 167,
+    "accuracy": 216,
+    "evasion": 126,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18301,10 +20974,7 @@ const enemyData = [
         "name": "Wild Cut",
         "type": "Phys"
       }
-    ],
-    "steal": "Minotaur Horn, Hydra Scale",
-    "drop": "SP-Restoring Nut (M), Rare Beast Fang",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "5047.0",
@@ -18313,7 +20983,6 @@ const enemyData = [
     "subArea": "Valley of Death: West",
     "type": "Boss",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -18321,12 +20990,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 32,
     "hp": 100000,
     "patk": 380,
     "pdef": 80,
     "matk": 380,
     "mdef": 80,
+    "speed": 159,
+    "crit": 185,
+    "accuracy": 216,
+    "evasion": 126,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18352,19 +21031,15 @@ const enemyData = [
         "name": "The power of the ring has been unleashed!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Unicorn Horn, Rare Beast Horn",
-    "drop": "Shiny Coin, Revitalizing Jam",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5048.0",
     "name": "Mysterious Assassin",
     "area": "Master of All Ch. 6",
     "subArea": "Cragspear",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -18372,12 +21047,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 32,
     "hp": 27783,
     "patk": 450,
     "pdef": 50,
     "matk": 420,
     "mdef": 41,
+    "speed": 180,
+    "crit": 170,
+    "accuracy": 219,
+    "evasion": 160,
+    "exp": 180,
+    "jp": 59,
+    "steal": "Olive of Life (M)",
+    "drop": "Olive of Life (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Gelid Slash",
@@ -18403,31 +21088,37 @@ const enemyData = [
         "name": "What this realm truly needs is an absolute ruler!",
         "type": "Phys"
       }
-    ],
-    "steal": "Kraken Ink, Meteorite",
-    "drop": "Cerberus Fang",
-    "immunities": "Poison, Curse"
+    ]
   },
   {
     "id": "5140.0",
     "name": "Edoras Soldier",
     "area": "Master of All Ch. 6",
     "subArea": "Cragspear",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 5450,
     "patk": 401,
     "pdef": 45,
     "matk": 367,
     "mdef": 45,
+    "speed": 139,
+    "crit": 170,
+    "accuracy": 185,
+    "evasion": 160,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Herb of Vitality",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18449,31 +21140,37 @@ const enemyData = [
         "name": "Soldiers of Edoras bar the path!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Fire Soulstone",
-    "drop": "Quality Beast Claw, Olive, Inspiring Plum Basket",
-    "immunities": "Stun, Poison"
+    ]
   },
   {
     "id": "5141.0",
     "name": "Edoras Soldier",
     "area": "Master of All Ch. 6",
     "subArea": "Cragspear",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 5450,
     "patk": 401,
     "pdef": 45,
     "matk": 367,
     "mdef": 45,
+    "speed": 139,
+    "crit": 170,
+    "accuracy": 185,
+    "evasion": 160,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Herb of Vitality",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18495,31 +21192,37 @@ const enemyData = [
         "name": "Soldiers of Edoras bar the path!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Phoenix Feather, Minotaur Horn",
-    "drop": "Rare Beast Claw, Revitalizing Jam",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "5142.0",
     "name": "Edoras Soldier",
     "area": "Master of All Ch. 6",
     "subArea": "Cragspear",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 32,
     "hp": 5450,
     "patk": 401,
     "pdef": 45,
     "matk": 367,
     "mdef": 45,
+    "speed": 139,
+    "crit": 170,
+    "accuracy": 185,
+    "evasion": 160,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Herb of Vitality",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18541,19 +21244,15 @@ const enemyData = [
         "name": "Soldiers of Edoras bar the path!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ancient Coin, Chimera Fang",
-    "drop": "Revitalizing Jam (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5064.0",
     "name": "Edoras Defender of Wealth",
     "area": "Master of All Ch. 6",
     "subArea": "Cragspear",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -18561,12 +21260,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 47154,
     "patk": 421,
     "pdef": 45,
     "matk": 503,
     "mdef": 55,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18596,19 +21305,15 @@ const enemyData = [
         "name": "Light Soulstone (L)",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Hide, Revitalizing Jam (L)",
-    "drop": "HP-Restoring Herb (L), Sunshard, Silver Nugget",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "5065.0",
     "name": "Edoras Defender of Fame",
     "area": "Master of All Ch. 6",
     "subArea": "Cragspear",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
@@ -18616,12 +21321,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 47154,
     "patk": 491,
     "pdef": 60,
     "matk": 480,
     "mdef": 60,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18647,19 +21362,15 @@ const enemyData = [
         "name": "Full Swing",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (L)",
-    "drop": "Gold",
-    "immunities": "Poison, Petrification"
+    ]
   },
   {
     "id": "5066.0",
     "name": "Edoras Defender of Power",
     "area": "Master of All Ch. 6",
     "subArea": "Cragspear",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -18667,12 +21378,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 34,
     "hp": 47154,
     "patk": 514,
     "pdef": 55,
     "matk": 412,
     "mdef": 45,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18698,19 +21419,15 @@ const enemyData = [
         "name": "Vigorous Assault",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life (M), Kraken Ink, Cerberus Fang",
-    "drop": "Quality Beast Fang, Rare Beast Claw, Beast Fang",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "5049.0",
     "name": "Gonska the Jester",
     "area": "Master of All Ch. 7",
     "subArea": "Castle Riven",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -18721,12 +21438,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 33,
     "hp": 54873,
     "patk": 480,
     "pdef": 45,
     "matk": 537,
     "mdef": 54,
+    "speed": 173,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 327,
+    "jp": 60,
+    "steal": "Arcane Explosion Mastery",
+    "drop": "Arcane Explosion Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18776,10 +21503,7 @@ const enemyData = [
         "name": "<skl_user_name> readies himself!",
         "type": "Elem"
       }
-    ],
-    "steal": "Old Coin, Beast Meat",
-    "drop": "Olive, Minotaur Horn",
-    "immunities": "Sleep, Stun"
+    ]
   },
   {
     "id": "5050.0",
@@ -18788,7 +21512,6 @@ const enemyData = [
     "subArea": "Cragspear",
     "type": "Boss",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -18796,12 +21519,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 49600,
     "patk": 507,
     "pdef": 60,
     "matk": 453,
     "mdef": 50,
+    "speed": 144,
+    "crit": 204,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 342,
+    "jp": 62,
+    "steal": "Counter Position Mastery",
+    "drop": "Counter Position Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18843,10 +21576,7 @@ const enemyData = [
         "name": "<skl_user_name> unleashes his true power!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (M), Quality Beast Hide",
-    "drop": "Iron Ore, HP-Restoring Herb (M), Gold",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5051.0",
@@ -18855,7 +21585,6 @@ const enemyData = [
     "subArea": "Cragspear",
     "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -18863,12 +21592,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 9842,
     "patk": 412,
     "pdef": 50,
     "matk": 383,
     "mdef": 50,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18882,10 +21621,7 @@ const enemyData = [
         "name": "Wild Cut",
         "type": "Phys"
       }
-    ],
-    "steal": "Shiny Coin, Hydra Scale",
-    "drop": "Quality Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5052.0",
@@ -18894,7 +21630,6 @@ const enemyData = [
     "subArea": "Cragspear",
     "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -18902,12 +21637,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 9842,
     "patk": 412,
     "pdef": 50,
     "matk": 383,
     "mdef": 50,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18921,19 +21666,15 @@ const enemyData = [
         "name": "Wild Cut",
         "type": "Phys"
       }
-    ],
-    "steal": "Kraken Ink, HP-Restoring Herb",
-    "drop": "Griffin Claw",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "5058.0",
     "name": "Edoras Defender of Power",
     "area": "Master of All Ch. 8",
     "subArea": "Castle Edoras",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -18941,12 +21682,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 34,
     "hp": 47154,
     "patk": 514,
     "pdef": 55,
     "matk": 412,
     "mdef": 45,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 131,
+    "jp": 34,
+    "steal": "n/a",
+    "drop": "Healing Grape Bunch x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -18972,19 +21723,15 @@ const enemyData = [
         "name": "Vigorous Assault",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive (L)",
-    "drop": "Rare Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5057.0",
     "name": "Edoras Defender of Fame",
     "area": "Master of All Ch. 8",
     "subArea": "Castle Edoras: Upper Floor",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
@@ -18992,12 +21739,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 47154,
     "patk": 491,
     "pdef": 60,
     "matk": 480,
     "mdef": 60,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 131,
+    "jp": 34,
+    "steal": "n/a",
+    "drop": "Olive of Life (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19023,19 +21780,15 @@ const enemyData = [
         "name": "Full Swing",
         "type": "Phys"
       }
-    ],
-    "steal": "Old Coin",
-    "drop": "Blessed Olive, Phoenix Feather, Iron Ore",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5056.0",
     "name": "Edoras Defender of Wealth",
     "area": "Master of All Ch. 8",
     "subArea": "Castle Edoras: Throne Room",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -19043,12 +21796,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 47154,
     "patk": 421,
     "pdef": 45,
     "matk": 503,
     "mdef": 55,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 132,
+    "exp": 131,
+    "jp": 34,
+    "steal": "n/a",
+    "drop": "Inspiriting Plum (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19078,10 +21841,7 @@ const enemyData = [
         "name": "Light Soulstone (L)",
         "type": "Elem"
       }
-    ],
-    "steal": "Ancient Coin",
-    "drop": "Quality Beast Horn, Sphinx Feather",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5053.0",
@@ -19090,7 +21850,6 @@ const enemyData = [
     "subArea": "Castle Edoras: Throne Room",
     "type": "Boss",
     "shields": 99,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -19106,12 +21865,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 52640,
     "patk": 507,
     "pdef": 60,
     "matk": 496,
     "mdef": 60,
+    "speed": 154,
+    "crit": 184,
+    "accuracy": 240,
+    "evasion": 140,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Olive of Life (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Flood of Despair",
@@ -19161,10 +21930,7 @@ const enemyData = [
         "name": "<skl_user_name>'s mighty shield has weakened!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Horn",
-    "drop": "Quality Beast Claw, SP-Restoring Nut (L)",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "5054.0",
@@ -19173,7 +21939,6 @@ const enemyData = [
     "subArea": "Castle Edoras: Throne Room",
     "type": "Boss",
     "shields": 15,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -19189,12 +21954,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 84194,
     "patk": 544,
     "pdef": 75,
     "matk": 513,
     "mdef": 75,
+    "speed": 148,
+    "crit": 206,
+    "accuracy": 266,
+    "evasion": 136,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Reinvigorating Jam",
+    "drop": "n/a",
+    "immunities": "Instant Death, Sleep, Blindness, Enchant",
     "skills": [
       {
         "name": "Attack",
@@ -19252,19 +22027,15 @@ const enemyData = [
         "name": "Bow down to me.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Unicorn Horn, Iron Ore, Old Coin",
-    "drop": "Quality Beast Tusk",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "5055.0",
     "name": "Master of All",
     "area": "Master of All Ch. 8",
     "subArea": "Castle Edoras: Throne Room",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 18,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -19280,12 +22051,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 120995,
     "patk": 587,
     "pdef": 100,
     "matk": 577,
     "mdef": 100,
+    "speed": 148,
+    "crit": 197,
+    "accuracy": 255,
+    "evasion": 136,
+    "exp": 616,
+    "jp": 78,
+    "steal": "Elemental Expertise Mastery",
+    "drop": "Elemental Expertise Mastery x1 (100%)",
+    "immunities": "Instant Death, Sleep, Blindness, Enchant",
     "skills": [
       {
         "name": "BeATiNG",
@@ -19347,19 +22128,15 @@ const enemyData = [
         "name": "Chaos Vortex",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Tusk, Revitalizing Jam (M), Copper Ore",
-    "drop": "Quality Beast Hide, Old Coin",
-    "immunities": "Curse, Terror"
+    ]
   },
   {
     "id": "5188.0",
     "name": "Sazantos",
     "area": "Finale",
     "subArea": "Isle of Orsa: Depths",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 19,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -19367,12 +22144,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 35,
     "hp": 28496,
     "patk": 485,
     "pdef": 100,
     "matk": 456,
     "mdef": 100,
+    "speed": 146,
+    "crit": 177,
+    "accuracy": 227,
+    "evasion": 134,
+    "exp": 366,
+    "jp": 64,
+    "steal": "Flameguard's Charm",
+    "drop": "Flameguard's Charm x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19426,19 +22213,15 @@ const enemyData = [
         "name": "Shadowcleaver",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (M), Wind Soulstone",
-    "drop": "Holy Water (L), Revitalizing Jam (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5062.0",
     "name": "Blackrobe (Axe)",
     "area": "Bestower of Wealth Prologue",
     "subArea": "Herminia's Manse: Entrance",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -19446,12 +22229,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 37,
     "hp": 9044,
     "patk": 519,
     "pdef": 55,
     "matk": 519,
     "mdef": 55,
+    "speed": 148,
+    "crit": 186,
+    "accuracy": 324,
+    "evasion": 141,
+    "exp": 246,
+    "jp": 39,
+    "steal": "Critical Nut (M)",
+    "drop": "Critical Nut (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19477,19 +22270,15 @@ const enemyData = [
         "name": "Protect Allies",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Tusk, Olive of Life, Ice Soulstone",
-    "drop": "Beast Tusk",
-    "immunities": "Instant Death, Paralysis"
+    ]
   },
   {
     "id": "5063.0",
     "name": "Blackrobe (Bow)",
     "area": "Bestower of Wealth Prologue",
     "subArea": "Herminia's Manse: Entrance",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -19497,12 +22286,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 37,
     "hp": 9101,
     "patk": 490,
     "pdef": 55,
     "matk": 490,
     "mdef": 55,
+    "speed": 154,
+    "crit": 186,
+    "accuracy": 324,
+    "evasion": 141,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19528,19 +22327,15 @@ const enemyData = [
         "name": "Protect Allies",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rusty Coin, Beast Fang",
-    "drop": "Rare Beast Tusk",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "5070.0",
     "name": "Blackrobe (Dagger)",
     "area": "Bestower of Wealth Prologue",
     "subArea": "Herminia's Manse: Entrance",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -19548,12 +22343,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 37,
     "hp": 9025,
     "patk": 500,
     "pdef": 55,
     "matk": 500,
     "mdef": 55,
+    "speed": 150,
+    "crit": 186,
+    "accuracy": 324,
+    "evasion": 141,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19579,19 +22384,15 @@ const enemyData = [
         "name": "Protect Allies",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Fang, Holy Water, Meteorite",
-    "drop": "Beast Claw",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5074.0",
     "name": "Foreign Emissary (Circle Blade)",
     "area": "Bestower of Power Prologue",
     "subArea": "Castle Edoras Gate",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -19599,12 +22400,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 28000,
     "patk": 500,
     "pdef": 58,
     "matk": 400,
     "mdef": 45,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 200,
+    "evasion": 165,
+    "exp": 123,
+    "jp": 34,
+    "steal": "Slippery Nut (M)",
+    "drop": "Slippery Nut (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19634,19 +22445,15 @@ const enemyData = [
         "name": "<skl_user_name> says a prayer...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Copper Ore, Antidote Herb (L), Chimera Fang",
-    "drop": "Holy Water (M), Olive, Holy Water (L)",
-    "immunities": "Petrification, Confusion"
+    ]
   },
   {
     "id": "5075.0",
     "name": "Foreign Emissary (Staff)",
     "area": "Bestower of Power Prologue",
     "subArea": "Castle Edoras Gate",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -19654,12 +22461,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 36,
     "hp": 32000,
     "patk": 493,
     "pdef": 50,
     "matk": 430,
     "mdef": 40,
+    "speed": 135,
+    "crit": 150,
+    "accuracy": 200,
+    "evasion": 160,
+    "exp": 123,
+    "jp": 34,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19689,19 +22506,15 @@ const enemyData = [
         "name": "<skl_user_name> says a prayer...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Herb",
-    "drop": "Copper Ore, Antidote Herb",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5076.0",
     "name": "Black Scarlet (Polearm)",
     "area": "Bestower of Fame Prologue",
     "subArea": "Emberglow",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -19709,12 +22522,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 28000,
     "patk": 515,
     "pdef": 55,
     "matk": 423,
     "mdef": 50,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 200,
+    "evasion": 163,
+    "exp": 123,
+    "jp": 34,
+    "steal": "Resistant Nut (M)",
+    "drop": "Resistant Nut (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19740,19 +22563,15 @@ const enemyData = [
         "name": "Runaway Stampede",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (L)",
-    "drop": "Gold, SP-Restoring Nut",
-    "immunities": "Petrification, Blind"
+    ]
   },
   {
     "id": "5077.0",
     "name": "Black Scarlet (Hammer)",
     "area": "Bestower of Fame Prologue",
     "subArea": "Emberglow",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -19760,12 +22579,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 26000,
     "patk": 500,
     "pdef": 61,
     "matk": 423,
     "mdef": 50,
+    "speed": 140,
+    "crit": 179,
+    "accuracy": 200,
+    "evasion": 169,
+    "exp": 123,
+    "jp": 34,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19787,19 +22616,15 @@ const enemyData = [
         "name": "Protective Shield",
         "type": "Unknown"
       }
-    ],
-    "steal": "Iron Ore",
-    "drop": "Antidote Herb (L)",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5071.0",
     "name": "Delvecchio",
     "area": "Bestower of Wealth Ch. 1",
     "subArea": "Victors Hollow: Old Quarter",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 9,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -19807,12 +22632,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 36380,
     "patk": 531,
     "pdef": 61,
     "matk": 440,
     "mdef": 50,
+    "speed": 152,
+    "crit": 186,
+    "accuracy": 324,
+    "evasion": 141,
+    "exp": 410,
+    "jp": 68,
+    "steal": "Inspiriting Plum Basket",
+    "drop": "Inspiriting Plum Basket x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19874,19 +22709,15 @@ const enemyData = [
         "name": "<skl_user_name> calls for his lackeys!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Manticore Stinger, Copper Ore, Quality Beast Hide",
-    "drop": "JP, Rare Beast Tusk, Rusty Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5078.0",
     "name": "Delvecchio's Lackey (Axe)",
     "area": "Bestower of Wealth Ch. 1",
     "subArea": "Victors Hollow: Old Quarter",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -19894,12 +22725,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 38,
     "hp": 9044,
     "patk": 519,
     "pdef": 55,
     "matk": 519,
     "mdef": 55,
+    "speed": 148,
+    "crit": 186,
+    "accuracy": 324,
+    "evasion": 141,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19921,19 +22762,15 @@ const enemyData = [
         "name": "Protect Delvecchio",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Horn, Shadow Soulstone",
-    "drop": "JP, Blessed Olive (M), Basilisk Eye",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "5079.0",
     "name": "Delvecchio's Lackey (Bow)",
     "area": "Bestower of Wealth Ch. 1",
     "subArea": "Victors Hollow: Old Quarter",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -19941,12 +22778,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 38,
     "hp": 9101,
     "patk": 490,
     "pdef": 55,
     "matk": 490,
     "mdef": 55,
+    "speed": 154,
+    "crit": 186,
+    "accuracy": 324,
+    "evasion": 141,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -19968,19 +22815,15 @@ const enemyData = [
         "name": "Protect Delvecchio",
         "type": "Unknown"
       }
-    ],
-    "steal": "Griffin Claw, Holy Water (L), Blessed Olive (L)",
-    "drop": "Healing Grape Bunch",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5080.0",
     "name": "Delvecchio's Lackey (Dagger)",
     "area": "Bestower of Wealth Ch. 1",
     "subArea": "Victors Hollow: Old Quarter",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -19988,12 +22831,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 38,
     "hp": 9025,
     "patk": 500,
     "pdef": 55,
     "matk": 500,
     "mdef": 55,
+    "speed": 150,
+    "crit": 186,
+    "accuracy": 324,
+    "evasion": 141,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20015,19 +22868,15 @@ const enemyData = [
         "name": "Protect Delvecchio",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life (M), Herb, Ice Soulstone",
-    "drop": "SP-Restoring Nut (M), Unicorn Horn",
-    "immunities": "Stun, Paralysis"
+    ]
   },
   {
     "id": "5072.0",
     "name": "Mandarino",
     "area": "Bestower of Wealth Ch. 1",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -20039,12 +22888,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 39,
     "hp": 46173,
     "patk": 600,
     "pdef": 66,
     "matk": 395,
     "mdef": 44,
+    "speed": 156,
+    "crit": 188,
+    "accuracy": 327,
+    "evasion": 130,
+    "exp": 222,
+    "jp": 36,
+    "steal": "Champion's Charm",
+    "drop": "Champion's Charm x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20106,19 +22965,15 @@ const enemyData = [
         "name": "Animosity",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb (M), Inspiring Plum, Unicorn Horn",
-    "drop": "Holy Water, Star Fragment",
-    "immunities": "Curse, Instant Death"
+    ]
   },
   {
     "id": "5073.0",
     "name": "Remone",
     "area": "Bestower of Wealth Ch. 1",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -20130,12 +22985,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 39,
     "hp": 46173,
     "patk": 420,
     "pdef": 44,
     "matk": 600,
     "mdef": 66,
+    "speed": 168,
+    "crit": 215,
+    "accuracy": 327,
+    "evasion": 152,
+    "exp": 222,
+    "jp": 36,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20193,19 +23058,15 @@ const enemyData = [
         "name": "Unassailable Defense Form",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Claw, HP-Restoring Herb (L), Light Soulstone",
-    "drop": "Antidote Herb, Gold Dust, Gold",
-    "immunities": "Paralysis, Terror"
+    ]
   },
   {
     "id": "5081.0",
     "name": "Cavalry (Bow)",
     "area": "Bestower of Power Ch. 1",
     "subArea": "Cyphlo Banks",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
@@ -20213,12 +23074,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 38,
     "hp": 13500,
     "patk": 500,
     "pdef": 55,
     "matk": 432,
     "mdef": 50,
+    "speed": 140,
+    "crit": 160,
+    "accuracy": 265,
+    "evasion": 180,
+    "exp": 66,
+    "jp": 13,
+    "steal": "Critical Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20236,19 +23107,15 @@ const enemyData = [
         "name": "Wild Stall Arrow",
         "type": "Phys"
       }
-    ],
-    "steal": "Herb, Minotaur Horn",
-    "drop": "Hydra Scale, SP-Restoring Nut (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5082.0",
     "name": "Cavalry (Polearm)",
     "area": "Bestower of Power Ch. 1",
     "subArea": "Cyphlo Banks",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
@@ -20256,12 +23123,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Bow",
     "level": 38,
     "hp": 12500,
     "patk": 495,
     "pdef": 58,
     "matk": 450,
     "mdef": 50,
+    "speed": 150,
+    "crit": 180,
+    "accuracy": 280,
+    "evasion": 175,
+    "exp": 66,
+    "jp": 13,
+    "steal": "Fortifying Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20279,19 +23156,15 @@ const enemyData = [
         "name": "Wild Hunting Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Hide",
-    "drop": "SP-Restoring Nut (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5083.0",
     "name": "Captain Na'gu",
     "area": "Bestower of Power Ch. 1",
     "subArea": "Cyphlo Banks",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -20303,12 +23176,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 38,
     "hp": 49300,
     "patk": 560,
     "pdef": 61,
     "matk": 500,
     "mdef": 53,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 300,
+    "evasion": 185,
+    "exp": 267,
+    "jp": 53,
+    "steal": "Beastly Scarf",
+    "drop": "Beastly Scarf x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20374,31 +23257,37 @@ const enemyData = [
         "name": "Mass Double Hard Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life, Herb",
-    "drop": "Sunshard",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "5084.0",
     "name": "Empress Tatloch",
     "area": "Bestower of Power Ch. 1",
     "subArea": "Cyphlo Banks",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 25,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 150000,
     "patk": 565,
     "pdef": 65,
     "matk": 530,
     "mdef": 65,
+    "speed": 170,
+    "crit": 200,
+    "accuracy": 400,
+    "evasion": 195,
+    "exp": 444,
+    "jp": 71,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20432,19 +23321,15 @@ const enemyData = [
         "name": "Gale Dance",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb (M)",
-    "drop": "Healing Grape Bunch, Blessed Olive (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5085.0",
     "name": "Cavalry (Bow)",
     "area": "Bestower of Power Ch. 1",
     "subArea": "Cyphlo Banks",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
@@ -20452,12 +23337,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 39,
     "hp": 15000,
     "patk": 510,
     "pdef": 60,
     "matk": 432,
     "mdef": 52,
+    "speed": 142,
+    "crit": 165,
+    "accuracy": 255,
+    "evasion": 183,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20475,19 +23370,15 @@ const enemyData = [
         "name": "Wild Stall Arrow",
         "type": "Phys"
       }
-    ],
-    "steal": "Wind Soulstone, Rare Beast Hide, SP-Restoring Nut (M)",
-    "drop": "Antidote Herb (L), Holy Water, JP",
-    "immunities": "Silence, Terror"
+    ]
   },
   {
     "id": "5086.0",
     "name": "Cavalry (Polearm)",
     "area": "Bestower of Power Ch. 1",
     "subArea": "Cyphlo Banks",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
@@ -20495,12 +23386,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Bow",
     "level": 39,
     "hp": 14000,
     "patk": 505,
     "pdef": 62,
     "matk": 450,
     "mdef": 52,
+    "speed": 155,
+    "crit": 185,
+    "accuracy": 276,
+    "evasion": 178,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20518,19 +23419,15 @@ const enemyData = [
         "name": "Wild Hunting Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Herb",
-    "drop": "Holy Water (L)",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5093.0",
     "name": "Monster (Townsperson)",
     "area": "Bestower of Fame Ch. 1",
     "subArea": "Cathedral of Tytos: Entrance",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 18,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -20538,12 +23435,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 37,
     "hp": 49868,
     "patk": 520,
     "pdef": 59,
     "matk": 437,
     "mdef": 40,
+    "speed": 150,
+    "crit": 181,
+    "accuracy": 351,
+    "evasion": 140,
+    "exp": 106,
+    "jp": 19,
+    "steal": "Tough Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Scratch",
@@ -20577,19 +23484,15 @@ const enemyData = [
         "name": "<skl_user_name>'s flesh begins to swell...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Blessed Olive (M), Shiny Coin, HP-Restoring Herb (L)",
-    "drop": "Quality Beast Meat, Plum",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98819.0",
     "name": "Scarlet Wing",
     "area": "Bestower of Fame Ch. 1",
     "subArea": "Cathedral of Tytos",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -20597,12 +23500,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 11781,
     "patk": 473,
     "pdef": 55,
     "matk": 473,
     "mdef": 55,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 56,
+    "jp": 12,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Slice",
@@ -20616,19 +23529,15 @@ const enemyData = [
         "name": "Mince",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Horn, Ice Soulstone",
-    "drop": "Shiny Coin, Holy Water (L), Gold",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98820.0",
     "name": "Scarlet Wing",
     "area": "Bestower of Fame Ch. 1",
     "subArea": "Cathedral of Tytos",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -20636,12 +23545,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 9537,
     "patk": 473,
     "pdef": 55,
     "matk": 473,
     "mdef": 55,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 42,
+    "jp": 9,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Sunder",
@@ -20655,19 +23574,15 @@ const enemyData = [
         "name": "Spin Swing",
         "type": "Phys"
       }
-    ],
-    "steal": "Lightning Soulstone, Ice Soulstone, Beast Tusk",
-    "drop": "Beast Tusk, Meteorite, Quality Beast Hide",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98821.0",
     "name": "Scarlet Wing",
     "area": "Bestower of Fame Ch. 1",
     "subArea": "Cathedral of Tytos",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -20675,12 +23590,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 7293,
     "patk": 473,
     "pdef": 55,
     "matk": 473,
     "mdef": 55,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 42,
+    "jp": 9,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Light Bash",
@@ -20694,19 +23619,15 @@ const enemyData = [
         "name": "Wild Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "Sunshard",
-    "drop": "Star Fragment",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "5091.0",
     "name": "Monster (Man)",
     "area": "Bestower of Fame Ch. 1",
     "subArea": "Emberglow Laboratory: Inner Chambers",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 15,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -20714,12 +23635,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 38,
     "hp": 39479,
     "patk": 536,
     "pdef": 65,
     "matk": 506,
     "mdef": 60,
+    "speed": 152,
+    "crit": 183,
+    "accuracy": 354,
+    "evasion": 150,
+    "exp": 106,
+    "jp": 19,
+    "steal": "Healing Grape (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Head Bash",
@@ -20745,19 +23676,15 @@ const enemyData = [
         "name": "Megaquake",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Fang",
-    "drop": "Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5092.0",
     "name": "Monster (Woman)",
     "area": "Bestower of Fame Ch. 1",
     "subArea": "Emberglow Laboratory: Inner Chambers",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -20765,12 +23692,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 38,
     "hp": 28611,
     "patk": 552,
     "pdef": 60,
     "matk": 506,
     "mdef": 60,
+    "speed": 152,
+    "crit": 210,
+    "accuracy": 354,
+    "evasion": 155,
+    "exp": 106,
+    "jp": 19,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Scratch",
@@ -20796,19 +23733,15 @@ const enemyData = [
         "name": "Berserker Blow",
         "type": "Phys"
       }
-    ],
-    "steal": "Inspiring Plum Basket, Blessed Olive",
-    "drop": "Phoenix Feather",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "5087.0",
     "name": "Monaris the Monstrous",
     "area": "Bestower of Fame Ch. 1",
     "subArea": "Emberglow Laboratory: Inner Chambers",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -20816,12 +23749,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 39,
     "hp": 77220,
     "patk": 579,
     "pdef": 66,
     "matk": 465,
     "mdef": 54,
+    "speed": 152,
+    "crit": 183,
+    "accuracy": 237,
+    "evasion": 139,
+    "exp": 444,
+    "jp": 71,
+    "steal": "Rosary of Redemption",
+    "drop": "Rosary of Redemption x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wallop",
@@ -20867,19 +23810,15 @@ const enemyData = [
         "name": "<skl_user_name>'s flesh peels off.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Horn, Rare Beast Claw",
-    "drop": "SP-Restoring Nut (L), Quality Beast Hide, JP",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "5088.0",
     "name": "Lookout (Whip)",
     "area": "Bestower of Wealth Ch. 2",
     "subArea": "Sufrataljah: Palace Entrance",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -20887,12 +23826,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 13272,
     "patk": 510,
     "pdef": 66,
     "matk": 496,
     "mdef": 54,
+    "speed": 167,
+    "crit": 352,
+    "accuracy": 259,
+    "evasion": 152,
+    "exp": 56,
+    "jp": 15,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20914,19 +23863,15 @@ const enemyData = [
         "name": "Paralyzing Whip",
         "type": "Phys"
       }
-    ],
-    "steal": "Copper Ore, Hydra Scale",
-    "drop": "Antidote Herb (L), Quality Beast Hide, Rare Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5097.0",
     "name": "Lookout (Polearm)",
     "area": "Bestower of Wealth Ch. 2",
     "subArea": "Sufrataljah: Palace Entrance",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 9,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -20934,12 +23879,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 10910,
     "patk": 510,
     "pdef": 66,
     "matk": 496,
     "mdef": 54,
+    "speed": 167,
+    "crit": 352,
+    "accuracy": 259,
+    "evasion": 152,
+    "exp": 56,
+    "jp": 15,
+    "steal": "Olive of Life (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -20961,19 +23916,15 @@ const enemyData = [
         "name": "Peerless Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Fire Soulstone, Inspiring Plum Basket",
-    "drop": "Phoenix Feather",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "5089.0",
     "name": "Judah the Believer",
     "area": "Bestower of Wealth Ch. 2",
     "subArea": "Sufrataljah: Palace - Upper Floor",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 16,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -20981,12 +23932,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 47,
     "hp": 42268,
     "patk": 515,
     "pdef": 48,
     "matk": 520,
     "mdef": 72,
+    "speed": 171,
+    "crit": 356,
+    "accuracy": 265,
+    "evasion": 156,
+    "exp": 588,
+    "jp": 80,
+    "steal": "Shadow of Remorse Mastery",
+    "drop": "Shadow of Remorse Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -21052,19 +24013,15 @@ const enemyData = [
         "name": "I deliver salvation unto you!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shadow Soulstone",
-    "drop": "Antidote Herb",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5098.0",
     "name": "Judah's Aide (Axe)",
     "area": "Bestower of Wealth Ch. 2",
     "subArea": "Sufrataljah: Palace - Upper Floor",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
@@ -21072,12 +24029,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 46,
     "hp": 12250,
     "patk": 515,
     "pdef": 72,
     "matk": 450,
     "mdef": 48,
+    "speed": 153,
+    "crit": 356,
+    "accuracy": 265,
+    "evasion": 156,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -21115,19 +24082,15 @@ const enemyData = [
         "name": "O lord... Grant me salvation...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Horn, Quality Beast Horn",
-    "drop": "Beast Tusk",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "5099.0",
     "name": "Judah's Aide (Fan)",
     "area": "Bestower of Wealth Ch. 2",
     "subArea": "Sufrataljah: Palace - Upper Floor",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -21135,12 +24098,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 46,
     "hp": 11625,
     "patk": 495,
     "pdef": 66,
     "matk": 520,
     "mdef": 54,
+    "speed": 210,
+    "crit": 356,
+    "accuracy": 265,
+    "evasion": 156,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -21178,31 +24151,37 @@ const enemyData = [
         "name": "O lord... Grant me salvation...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Moonstone",
-    "drop": "Inspiring Plum Basket, Beast Fang",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "5103.0",
     "name": "G'roha Commander",
     "area": "Bestower of Power Ch. 2",
     "subArea": "Grandport Sewers: Depths",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 17,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 41,
     "hp": 60000,
     "patk": 585,
     "pdef": 62,
     "matk": 550,
     "mdef": 57,
+    "speed": 165,
+    "crit": 200,
+    "accuracy": 300,
+    "evasion": 185,
+    "exp": 389,
+    "jp": 60,
+    "steal": "Refreshing Jam",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -21240,19 +24219,15 @@ const enemyData = [
         "name": "<skl_user_name> says a prayer...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Claw",
-    "drop": "Holy Water (L), Beast Horn, Leaf",
-    "immunities": "Poison, Instant Death"
+    ]
   },
   {
     "id": "5114.0",
     "name": "G'roha Soldier",
     "area": "Bestower of Power Ch. 2",
     "subArea": "Grandport Sewers: Depths",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 11,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
@@ -21260,12 +24235,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Bow",
     "level": 41,
     "hp": 16500,
     "patk": 510,
     "pdef": 60,
     "matk": 450,
     "mdef": 52,
+    "speed": 155,
+    "crit": 185,
+    "accuracy": 276,
+    "evasion": 178,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -21291,19 +24276,15 @@ const enemyData = [
         "name": "Cover",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Horn, Healing Grape Bunch",
-    "drop": "Beast Claw, Beast Horn, Holy Water",
-    "immunities": "Instant Death, Confusion"
+    ]
   },
   {
     "id": "5090.0",
     "name": "Pelagia the Conjurer",
     "area": "Bestower of Power Ch. 2",
     "subArea": "Grandport Bazaar",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 18,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -21318,12 +24299,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 42,
     "hp": 113878,
     "patk": 518,
     "pdef": 68,
     "matk": 621,
     "mdef": 83,
+    "speed": 160,
+    "crit": 193,
+    "accuracy": 282,
+    "evasion": 163,
+    "exp": 588,
+    "jp": 80,
+    "steal": "Quadruple Slam Mastery",
+    "drop": "Quadruple Slam Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "No tricks or schemes.",
@@ -21389,19 +24380,15 @@ const enemyData = [
         "name": "Fool's Glacier",
         "type": "Elem"
       }
-    ],
-    "steal": "Ice Soulstone, Manticore Stinger, Dragon Scale",
-    "drop": "EXP, Copper Ore, Moonstone",
-    "immunities": "Sleep, Paralysis"
+    ]
   },
   {
     "id": "5094.0",
     "name": "Elite Black Scarlet",
     "area": "Bestower of Fame Ch. 2",
     "subArea": "Atlasdam Palace Gate",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 10,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Staff",
@@ -21409,12 +24396,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 28864,
     "patk": 560,
     "pdef": 61,
     "matk": 437,
     "mdef": 51,
+    "speed": 156,
+    "crit": 188,
+    "accuracy": 361,
+    "evasion": 155,
+    "exp": 168,
+    "jp": 47,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -21440,19 +24437,15 @@ const enemyData = [
         "name": "Magic Interceptor Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Claw",
-    "drop": "Quality Beast Claw, Herb",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "5104.0",
     "name": "Monster (Man)",
     "area": "Bestower of Fame Ch. 2",
     "subArea": "Flamesgrace Cathedral",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 15,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
@@ -21460,12 +24453,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 40,
     "hp": 63420,
     "patk": 569,
     "pdef": 79,
     "matk": 511,
     "mdef": 72,
+    "speed": 156,
+    "crit": 188,
+    "accuracy": 244,
+    "evasion": 143,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Healing Grape (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Head Bash",
@@ -21491,19 +24494,15 @@ const enemyData = [
         "name": "Megaquake",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk",
-    "drop": "Holy Water",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "5105.0",
     "name": "Monster (Woman)",
     "area": "Bestower of Fame Ch. 2",
     "subArea": "Flamesgrace Cathedral",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -21511,12 +24510,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 58212,
     "patk": 555,
     "pdef": 75,
     "matk": 537,
     "mdef": 75,
+    "speed": 188,
+    "crit": 188,
+    "accuracy": 244,
+    "evasion": 186,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Scratch",
@@ -21542,19 +24551,15 @@ const enemyData = [
         "name": "Berserker Blow",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life (M), SP-Restoring Nut",
-    "drop": "Rare Beast Meat, Holy Water, Olive",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "5095.0",
     "name": "Monster (Black Scarlet)",
     "area": "Bestower of Fame Ch. 2",
     "subArea": "Flamesgrace Cathedral",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 22,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -21565,12 +24570,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 41,
     "hp": 97395,
     "patk": 594,
     "pdef": 81,
     "matk": 513,
     "mdef": 72,
+    "speed": 158,
+    "crit": 190,
+    "accuracy": 247,
+    "evasion": 144,
+    "exp": 317,
+    "jp": 59,
+    "steal": "Refreshing Jam",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Tackle",
@@ -21604,10 +24619,7 @@ const enemyData = [
         "name": "The Black Scarlet's body is mutating...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ice Soulstone, Cerberus Fang",
-    "drop": "Basilisk Eye",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5096.0",
@@ -21616,7 +24628,6 @@ const enemyData = [
     "subArea": "Cave Of Origin",
     "type": "Boss",
     "shields": 22,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -21624,12 +24635,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 42,
     "hp": 95094,
     "patk": 579,
     "pdef": 75,
     "matk": 568,
     "mdef": 75,
+    "speed": 160,
+    "crit": 193,
+    "accuracy": 249,
+    "evasion": 147,
+    "exp": 588,
+    "jp": 80,
+    "steal": "Flash of Malice Mastery",
+    "drop": "Flash of Malice Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -21671,28 +24692,32 @@ const enemyData = [
         "name": "Trial of the Darkest Depths",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Meat",
-    "drop": "Moonstone, Dragon Scale, Plum",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "5106.0",
     "name": "Dark Wisp of Ruin",
     "area": "Bestower of Fame Ch. 2",
     "subArea": "Cave Of Origin",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 0,
+    "weaknesses": [],
     "weakness": "None",
-    "weaknesses": [
-      "None"
-    ],
     "level": 42,
     "hp": 13156,
     "patk": 600,
     "pdef": 1,
     "matk": 600,
     "mdef": 1,
+    "speed": 99,
+    "crit": 99,
+    "accuracy": 666,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "<skl_user_name>'s darkness is amplified.",
@@ -21702,28 +24727,32 @@ const enemyData = [
         "name": "<skl_user_name>'s darkness writhes.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Moonstone, Quality Beast Fang",
-    "drop": "Holy Water (M)",
-    "immunities": "Poison, Instant Death"
+    ]
   },
   {
     "id": "5109.0",
     "name": "Dark Wisp of Death",
     "area": "Bestower of Fame Ch. 2",
     "subArea": "Cave Of Origin",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 0,
+    "weaknesses": [],
     "weakness": "None",
-    "weaknesses": [
-      "None"
-    ],
     "level": 42,
     "hp": 7974,
     "patk": 600,
     "pdef": 1,
     "matk": 600,
     "mdef": 1,
+    "speed": 99,
+    "crit": 99,
+    "accuracy": 666,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "<skl_user_name> unleashes a dark miasma!",
@@ -21733,19 +24762,15 @@ const enemyData = [
         "name": "<skl_user_name>'s darkness writhes.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Phoenix Feather, Light Soulstone",
-    "drop": "Manticore Stinger, Quality Beast Fang",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "5108.0",
     "name": "Oskha the Have-Not",
     "area": "Bestower of Wealth Ch. 3",
     "subArea": "Herminia's Former Manse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Tome",
@@ -21754,12 +24779,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 47,
     "hp": 84586,
     "patk": 684,
     "pdef": 77,
     "matk": 549,
     "mdef": 63,
+    "speed": 306,
+    "crit": 206,
+    "accuracy": 269,
+    "evasion": 157,
+    "exp": 716,
+    "jp": 87,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Lacerate",
@@ -21805,19 +24840,15 @@ const enemyData = [
         "name": "I am the Have-Not...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Meat",
-    "drop": "Star Fragment",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5115.0",
     "name": "Oskha the Have-Not",
     "area": "Bestower of Wealth Ch. 3",
     "subArea": "Silver Spring",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -21827,12 +24858,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 48,
     "hp": 87507,
     "patk": 684,
     "pdef": 90,
     "matk": 631,
     "mdef": 90,
+    "speed": 306,
+    "crit": 206,
+    "accuracy": 269,
+    "evasion": 157,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Lacerate",
@@ -21898,31 +24939,37 @@ const enemyData = [
         "name": "Issue Defensive Guard",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sphinx Feather, Quality Beast Tusk, Rare Beast Horn",
-    "drop": "Copper Ore, Basilisk Eye, Rare Beast Fang",
-    "immunities": "Paralysis, Sleep"
+    ]
   },
   {
     "id": "5116.0",
     "name": "Altered Ivory Remnant",
     "area": "Bestower of Wealth Ch. 3",
     "subArea": "Silver Spring",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Fan",
       "Wind",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 47,
     "hp": 13000,
     "patk": 558,
     "pdef": 60,
     "matk": 586,
     "mdef": 60,
+    "speed": 255,
+    "crit": 204,
+    "accuracy": 265,
+    "evasion": 156,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -21956,31 +25003,37 @@ const enemyData = [
         "name": "Fourfold Lotusfang",
         "type": "Phys"
       }
-    ],
-    "steal": "Fire Soulstone, Dragon Scale",
-    "drop": "Star Fragment, Antidote Herb (M), Nut",
-    "immunities": "Silence, Terror"
+    ]
   },
   {
     "id": "5117.0",
     "name": "Altered Gold Remnant",
     "area": "Bestower of Wealth Ch. 3",
     "subArea": "Silver Spring",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Staff",
       "Ice",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 47,
     "hp": 13000,
     "patk": 558,
     "pdef": 60,
     "matk": 586,
     "mdef": 60,
+    "speed": 255,
+    "crit": 204,
+    "accuracy": 265,
+    "evasion": 156,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -22014,19 +25067,15 @@ const enemyData = [
         "name": "Fourfold Lotusfang",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Horn, Antidote Herb (M)",
-    "drop": "Quality Beast Meat, Phoenix Feather, Antidote Herb (M)",
-    "immunities": "Terror, Silence"
+    ]
   },
   {
     "id": "5107.0",
     "name": "Oskha the Trader",
     "area": "Bestower of Wealth Ch. 3",
     "subArea": "Silver Spring",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Tome",
@@ -22034,12 +25083,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 48,
     "hp": 238602,
     "patk": 741,
     "pdef": 117,
     "matk": 654,
     "mdef": 95,
+    "speed": 225,
+    "crit": 206,
+    "accuracy": 269,
+    "evasion": 157,
+    "exp": 1203,
+    "jp": 109,
+    "steal": "Twin Strike Mastery",
+    "drop": "Twin Strike Mastery x1 (100%)",
+    "immunities": "Instant Death, Sleep, Enchant",
     "skills": [
       {
         "name": "Raging Strike",
@@ -22097,19 +25156,15 @@ const enemyData = [
         "name": "Thou shall have not.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Claw",
-    "drop": "Rare Beast Meat, Griffin Claw, Rare Beast Fang",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "5211.0",
     "name": "G'roha Soldier (Polearm)",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Middlesea Event Battles",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
@@ -22117,12 +25172,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Bow",
     "level": 44,
     "hp": 8288,
     "patk": 430,
     "pdef": 60,
     "matk": 409,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 255,
+    "evasion": 187,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Nourishing Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -22144,19 +25209,15 @@ const enemyData = [
         "name": "Power Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Meat, Holy Water, Antidote Herb (L)",
-    "drop": "Holy Water, Meteorite",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5212.0",
     "name": "Cavalry (Bow)",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Middlesea Event Battles",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
@@ -22164,12 +25225,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 8990,
     "patk": 490,
     "pdef": 63,
     "matk": 405,
     "mdef": 54,
+    "speed": 165,
+    "crit": 197,
+    "accuracy": 290,
+    "evasion": 180,
+    "exp": 59,
+    "jp": 16,
+    "steal": "Sharp Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -22187,19 +25258,15 @@ const enemyData = [
         "name": "Wild Stall Arrow",
         "type": "Phys"
       }
-    ],
-    "steal": "Nut, Star Fragment, Kraken Ink",
-    "drop": "Copper Ore, Antidote Herb",
-    "immunities": "Confusion, Poison"
+    ]
   },
   {
     "id": "5213.0",
     "name": "Cavalry (Polearm)",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Middlesea Event Battles",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
@@ -22207,12 +25274,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Bow",
     "level": 44,
     "hp": 8580,
     "patk": 490,
     "pdef": 63,
     "matk": 405,
     "mdef": 54,
+    "speed": 165,
+    "crit": 197,
+    "accuracy": 290,
+    "evasion": 180,
+    "exp": 59,
+    "jp": 16,
+    "steal": "Invigorating Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -22230,19 +25307,15 @@ const enemyData = [
         "name": "Wild Hunting Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Silver Nugget, Revitalizing Jam",
-    "drop": "Antidote Herb (L), Beast Fang",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "5214.0",
     "name": "G'roha Soldier (Circle Blade)",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Middlesea Event Battles",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -22250,12 +25323,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 8288,
     "patk": 430,
     "pdef": 60,
     "matk": 409,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 255,
+    "evasion": 187,
+    "exp": 59,
+    "jp": 16,
+    "steal": "Light Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -22273,19 +25356,15 @@ const enemyData = [
         "name": "Waltz Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Healing Grape",
-    "drop": "JP, Rare Beast Meat, Rare Beast Claw",
-    "immunities": "Silence, Terror"
+    ]
   },
   {
     "id": "5215.0",
     "name": "G'roha Soldier (Staff)",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Middlesea Event Battles",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -22293,12 +25372,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 8288,
     "patk": 430,
     "pdef": 60,
     "matk": 409,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 255,
+    "evasion": 187,
+    "exp": 59,
+    "jp": 16,
+    "steal": "Magic Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -22316,31 +25405,37 @@ const enemyData = [
         "name": "Numbing Trap",
         "type": "Unknown"
       }
-    ],
-    "steal": "Healing Grape, Rare Beast Horn",
-    "drop": "Healing Grape Bunch",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "5210.0",
     "name": "G'roha Commander",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Middlesea Event Battles",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 12,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 14500,
     "patk": 460,
     "pdef": 60,
     "matk": 468,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 255,
+    "evasion": 187,
+    "exp": 389,
+    "jp": 60,
+    "steal": "Fortifying Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Sickle Reprise",
@@ -22362,19 +25457,15 @@ const enemyData = [
         "name": "Sickle Storm",
         "type": "Phys"
       }
-    ],
-    "steal": "Nut, Rare Beast Fang",
-    "drop": "Quality Beast Hide",
-    "immunities": "Terror, Instant Death"
+    ]
   },
   {
     "id": "5208.0",
     "name": "Cavalry (Bow)",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Middlesea Final Event Battle",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 12,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
@@ -22382,12 +25473,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 11900,
     "patk": 500,
     "pdef": 63,
     "matk": 405,
     "mdef": 54,
+    "speed": 167,
+    "crit": 197,
+    "accuracy": 290,
+    "evasion": 180,
+    "exp": 59,
+    "jp": 16,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -22405,19 +25506,15 @@ const enemyData = [
         "name": "Wild Stall Arrow",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Horn, SP-Restoring Nut (M)",
-    "drop": "Basilisk Eye",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5209.0",
     "name": "Cavalry (Polearm)",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Middlesea Final Event Battle",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 13,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Tome",
@@ -22425,12 +25522,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Bow",
     "level": 44,
     "hp": 11900,
     "patk": 500,
     "pdef": 63,
     "matk": 405,
     "mdef": 54,
+    "speed": 165,
+    "crit": 197,
+    "accuracy": 290,
+    "evasion": 180,
+    "exp": 59,
+    "jp": 16,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -22448,19 +25555,15 @@ const enemyData = [
         "name": "Wild Hunting Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Herb",
-    "drop": "JP",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5112.0",
     "name": "Pelagia the Conjurer (Ruin)",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Tatloch's Ship",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 21,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -22475,12 +25578,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 86944,
     "patk": 536,
     "pdef": 81,
     "matk": 643,
     "mdef": 99,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 292,
+    "evasion": 168,
+    "exp": 647,
+    "jp": 84,
+    "steal": "Energizing Pomegranate (L)",
+    "drop": "Energizing Pomegranate (L) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "No tricks, no bluffs.",
@@ -22546,28 +25659,32 @@ const enemyData = [
         "name": "Fool's Glacier",
         "type": "Elem"
       }
-    ],
-    "steal": "Griffin Claw, Ancient Coin",
-    "drop": "Quality Beast Tusk, Antidote Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5204.0",
     "name": "Phantom Soldier",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Tatloch's Ship",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 0,
+    "weaknesses": [],
     "weakness": "None",
-    "weaknesses": [
-      "None"
-    ],
     "level": 45,
     "hp": 9999,
     "patk": 467,
     "pdef": 9999,
     "matk": 665,
     "mdef": 9999,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 300,
+    "evasion": 205,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Dark Ally",
@@ -22585,31 +25702,37 @@ const enemyData = [
         "name": "Annihilate",
         "type": "Unknown"
       }
-    ],
-    "steal": "Meteorite, Ice Soulstone, Antidote Herb (L)",
-    "drop": "Old Coin",
-    "immunities": "Terror, Blind"
+    ]
   },
   {
     "id": "5100.0",
     "name": "Empress Tatloch",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Tatloch's Ship",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Staff",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 47,
     "hp": 76475,
     "patk": 570,
     "pdef": 66,
     "matk": 513,
     "mdef": 54,
+    "speed": 171,
+    "crit": 204,
+    "accuracy": 320,
+    "evasion": 194,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -22675,19 +25798,15 @@ const enemyData = [
         "name": "Panther's Offering",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life",
-    "drop": "Grape, Blessed Olive, Blessed Olive (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5101.0",
     "name": "Maa'fa the Black Panther",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Tatloch's Ship",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 16,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -22695,12 +25814,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Axe",
     "level": 47,
     "hp": 43932,
     "patk": 570,
     "pdef": 90,
     "matk": 480,
     "mdef": 90,
+    "speed": 223,
+    "crit": 204,
+    "accuracy": 320,
+    "evasion": 190,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Blindness, Instant Death",
     "skills": [
       {
         "name": "<skl_user_name> protects its master.",
@@ -22738,19 +25867,15 @@ const enemyData = [
         "name": "Wild Rampage",
         "type": "Phys"
       }
-    ],
-    "steal": "Light Soulstone, Moonstone, Iron Ore",
-    "drop": "Phoenix Feather, HP-Restoring Herb (M), Quality Beast Hide",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5110.0",
     "name": "Tatloch the Lady of Grace",
     "area": "Bestower of Power Ch. 3",
     "subArea": "Tatloch's Ship",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 28,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -22758,12 +25883,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 48,
     "hp": 213486,
     "patk": 600,
     "pdef": 108,
     "matk": 600,
     "mdef": 108,
+    "speed": 173,
+    "crit": 206,
+    "accuracy": 302,
+    "evasion": 173,
+    "exp": 1203,
+    "jp": 109,
+    "steal": "Dance of Immunity Mastery",
+    "drop": "Dance of Immunity Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Heighten",
@@ -22829,19 +25964,15 @@ const enemyData = [
         "name": "<skl_user_name> is in a state of bliss.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ancient Coin, HP-Restoring Herb (L), Olive of Life (M)",
-    "drop": "Manticore Stinger",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "5113.0",
     "name": "Towering Idol",
     "area": "Bestower of Fame Ch. 3",
     "subArea": "Forbidden Temple: Lower Floor",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -22850,12 +25981,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 96064,
     "patk": 701,
     "pdef": 180,
     "matk": 688,
     "mdef": 90,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 136,
+    "exp": 647,
+    "jp": 84,
+    "steal": "Shadow Soulstone (L)",
+    "drop": "Shadow Soulstone (L) x1 (100%)",
+    "immunities": "Instant Death, Sleep",
     "skills": [
       {
         "name": "Boulder Bash",
@@ -22897,19 +26038,15 @@ const enemyData = [
         "name": "Battering Ram",
         "type": "Phys"
       }
-    ],
-    "steal": "Silver Nugget",
-    "drop": "Silver Nugget, Soulstone, Quality Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5111.0",
     "name": "Ceraphina the Charitable",
     "area": "Bestower of Fame Ch. 3",
     "subArea": "Forbidden Temple: Lower Floor",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -22917,12 +26054,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 47,
     "hp": 122794,
     "patk": 585,
     "pdef": 76,
     "matk": 600,
     "mdef": 94,
+    "speed": 157,
+    "crit": 204,
+    "accuracy": 319,
+    "evasion": 157,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Resurrection Mastery",
+    "drop": "Resurrection Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "No one shall stop me...!",
@@ -22984,31 +26131,37 @@ const enemyData = [
         "name": "Dark Hex",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Tusk",
-    "drop": "Quality Beast Fang, EXP",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "5102.0",
     "name": "Lyblac",
     "area": "Bestower of Fame Ch. 3",
     "subArea": "Forbidden Temple: Lower Floor",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 48,
     "hp": 198237,
     "patk": 559,
     "pdef": 81,
     "matk": 671,
     "mdef": 99,
+    "speed": 173,
+    "crit": 206,
+    "accuracy": 352,
+    "evasion": 157,
+    "exp": 1203,
+    "jp": 109,
+    "steal": "Almighty Olive",
+    "drop": "Almighty Olive x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Forceful Blow",
@@ -23074,19 +26227,15 @@ const enemyData = [
         "name": "Sinister Shroud",
         "type": "Unknown"
       }
-    ],
-    "steal": "Healing Grape Bunch, Basilisk Eye",
-    "drop": "Quality Beast Meat",
-    "immunities": "Stun, Petrification"
+    ]
   },
   {
     "id": "5118.0",
     "name": "Suffering Soul",
     "area": "Finale (3)",
     "subArea": "Isle of Orsa: Underground Altar",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -23094,12 +26243,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 49,
     "hp": 50308,
     "patk": 467,
     "pdef": 120,
     "matk": 456,
     "mdef": 120,
+    "speed": 175,
+    "crit": 209,
+    "accuracy": 272,
+    "evasion": 160,
+    "exp": 132,
+    "jp": 18,
+    "steal": "Critical Nut (L)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Delusion",
@@ -23157,19 +26316,15 @@ const enemyData = [
         "name": "Shatter Soul",
         "type": "Elem"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Shadow Soulstone",
-    "drop": "Quality Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "31521.0",
     "name": "Seething Soul",
     "area": "Finale (3)",
     "subArea": "Isle of Orsa: Underground Altar",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -23177,12 +26332,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 49,
     "hp": 41923,
     "patk": 570,
     "pdef": 110,
     "matk": 456,
     "mdef": 90,
+    "speed": 175,
+    "crit": 209,
+    "accuracy": 272,
+    "evasion": 160,
+    "exp": 132,
+    "jp": 18,
+    "steal": "Sharp Nut (L)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Delusion",
@@ -23224,10 +26389,7 @@ const enemyData = [
         "name": "Raging Rend",
         "type": "Phys"
       }
-    ],
-    "steal": "Gold Dust",
-    "drop": "Minotaur Horn",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "31522.0",
@@ -23236,7 +26398,6 @@ const enemyData = [
     "subArea": "Isle of Orsa: Underground Altar",
     "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -23244,12 +26405,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 49,
     "hp": 42665,
     "patk": 467,
     "pdef": 90,
     "matk": 557,
     "mdef": 110,
+    "speed": 175,
+    "crit": 209,
+    "accuracy": 272,
+    "evasion": 160,
+    "exp": 132,
+    "jp": 18,
+    "steal": "Slippery Nut (L)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Delusion",
@@ -23303,31 +26474,37 @@ const enemyData = [
         "name": "Infestation",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sphinx Feather, Nut",
-    "drop": "Beast Fang, Beast Tusk, SP-Restoring Nut (L)",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "5119.0",
     "name": "Fallen Mahrez",
     "area": "Bestower of All 1",
     "subArea": "Hell: Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 18,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Staff",
       "Fan",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 51,
     "hp": 183768,
     "patk": 692,
     "pdef": 156,
     "matk": 583,
     "mdef": 117,
+    "speed": 179,
+    "crit": 303,
+    "accuracy": 302,
+    "evasion": 163,
+    "exp": 862,
+    "jp": 93,
+    "steal": "Defiant Spirit Mastery",
+    "drop": "Defiant Spirit Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -23369,28 +26546,32 @@ const enemyData = [
         "name": "<skl_user_name> wails in grief!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ancient Coin, Old Coin",
-    "drop": "HP-Restoring Herb (M), Star Fragment, HP-Restoring Herb (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "31552.0",
     "name": "Vile Memory",
     "area": "Bestower of All 1",
     "subArea": "Hell: Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 0,
+    "weaknesses": [],
     "weakness": "None",
-    "weaknesses": [
-      "None"
-    ],
     "level": 51,
     "hp": 999,
     "patk": 1,
     "pdef": 1,
     "matk": 1,
     "mdef": 1,
+    "speed": 1,
+    "crit": 1,
+    "accuracy": 1,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "<skl_user_name> writhes...",
@@ -23404,28 +26585,32 @@ const enemyData = [
         "name": "Annihilate",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Claw",
-    "drop": "Hydra Scale",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "31553.0",
     "name": "Beloved Memory",
     "area": "Bestower of All 1",
     "subArea": "Hell: Geist Canyon",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 0,
+    "weaknesses": [],
     "weakness": "None",
-    "weaknesses": [
-      "None"
-    ],
     "level": 51,
     "hp": 999,
     "patk": 1,
     "pdef": 1,
     "matk": 1,
     "mdef": 1,
+    "speed": 1,
+    "crit": 1,
+    "accuracy": 1,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "<skl_user_name> takes control of the fallen Mahrez.",
@@ -23439,19 +26624,15 @@ const enemyData = [
         "name": "Annihilate",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Tusk",
-    "drop": "Quality Beast Tusk, Healing Grape Bunch, Quality Beast Meat",
-    "immunities": "Paralysis, Instant Death"
+    ]
   },
   {
     "id": "5120.0",
     "name": "Fallen Sonia",
     "area": "Bestower of All 2",
     "subArea": "Hell: White Grape Hill",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 17,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -23459,12 +26640,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 53,
     "hp": 142647,
     "patk": 675,
     "pdef": 150,
     "matk": 663,
     "mdef": 150,
+    "speed": 220,
+    "crit": 218,
+    "accuracy": 284,
+    "evasion": 370,
+    "exp": 564,
+    "jp": 96,
+    "steal": "Stronger Strikes Mastery",
+    "drop": "Stronger Strikes Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Swift Stance",
@@ -23506,19 +26697,15 @@ const enemyData = [
         "name": "Winds of Envy",
         "type": "Elem"
       }
-    ],
-    "steal": "Beast Tusk",
-    "drop": "Grape, Beast Claw, SP-Restoring Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5121.0",
     "name": "Fallen Elrica",
     "area": "Bestower of All 2",
     "subArea": "Castle Edoras",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 21,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -23526,12 +26713,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 53,
     "hp": 179142,
     "patk": 682,
     "pdef": 152,
     "matk": 730,
     "mdef": 180,
+    "speed": 233,
+    "crit": 268,
+    "accuracy": 284,
+    "evasion": 167,
+    "exp": 940,
+    "jp": 96,
+    "steal": "Formidable Stance Mastery",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Ghostly Blade",
@@ -23585,19 +26782,15 @@ const enemyData = [
         "name": "Walk the path of righteousness...",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Claw",
-    "drop": "Quality Beast Claw, Phoenix Feather, SP-Restoring Nut",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98315.0",
     "name": "Fallen Edoras Defender of Power",
     "area": "Bestower of All 3",
     "subArea": "Hell: Castle Edoras - Remembrance Hall",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -23605,12 +26798,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 58,
     "hp": 195641,
     "patk": 724,
     "pdef": 85,
     "matk": 722,
     "mdef": 85,
+    "speed": 183,
+    "crit": 218,
+    "accuracy": 284,
+    "evasion": 208,
+    "exp": 365,
+    "jp": 52,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Thrust",
@@ -23656,19 +26859,15 @@ const enemyData = [
         "name": "Vigorous Assault",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Hide, Antidote Herb (M)",
-    "drop": "Rare Beast Tusk",
-    "immunities": "Blind, Paralysis"
+    ]
   },
   {
     "id": "98316.0",
     "name": "Fallen Edoras Defender of Wealth",
     "area": "Bestower of All 3",
     "subArea": "Hell: Castle Edoras - 4F",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -23676,12 +26875,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 58,
     "hp": 182754,
     "patk": 735,
     "pdef": 85,
     "matk": 796,
     "mdef": 85,
+    "speed": 183,
+    "crit": 218,
+    "accuracy": 284,
+    "evasion": 208,
+    "exp": 365,
+    "jp": 52,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Brutal Bash",
@@ -23731,19 +26940,15 @@ const enemyData = [
         "name": "Light Soulstone (L)",
         "type": "Elem"
       }
-    ],
-    "steal": "Beast Fang, Sunshard, Old Coin",
-    "drop": "Sphinx Feather, JP",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98317.0",
     "name": "Fallen Edoras Defender of Fame",
     "area": "Bestower of All 3",
     "subArea": "Hell: Castle Edoras - 6F",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Tome",
@@ -23751,12 +26956,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 58,
     "hp": 169868,
     "patk": 724,
     "pdef": 85,
     "matk": 583,
     "mdef": 85,
+    "speed": 183,
+    "crit": 218,
+    "accuracy": 284,
+    "evasion": 208,
+    "exp": 365,
+    "jp": 52,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Raging Strike",
@@ -23806,19 +27021,15 @@ const enemyData = [
         "name": "Full Swing",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut, Olive of Life",
-    "drop": "Minotaur Horn, Rare Beast Fang, Griffin Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5122.0",
     "name": "Fallen Lebrandt",
     "area": "Bestower of All 3",
     "subArea": "Hell: Castle Edoras",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 23,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -23826,12 +27037,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 55,
     "hp": 101201,
     "patk": 633,
     "pdef": 160,
     "matk": 595,
     "mdef": 160,
+    "speed": 187,
+    "crit": 318,
+    "accuracy": 290,
+    "evasion": 170,
+    "exp": 619,
+    "jp": 100,
+    "steal": "Perseverance Mastery",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -23877,19 +27098,15 @@ const enemyData = [
         "name": "Fallen Vassal's Ray",
         "type": "Elem"
       }
-    ],
-    "steal": "Herb",
-    "drop": "Gold, Holy Water (L)",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "5123.0",
     "name": "Cursed Princess Elrica",
     "area": "Bestower of All 3",
     "subArea": "Hell: Castle Edoras",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 25,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -23905,12 +27122,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 203424,
     "patk": 698,
     "pdef": 172,
     "matk": 758,
     "mdef": 204,
+    "speed": 262,
+    "crit": 297,
+    "accuracy": 290,
+    "evasion": 170,
+    "exp": 1031,
+    "jp": 100,
+    "steal": "Blessing in Disguise",
+    "drop": "Wild Infernal Blade Mastery x1 (100%)",
+    "immunities": "Instant Death, Sleep, Enchant",
     "skills": [
       {
         "name": "Attack",
@@ -23972,31 +27199,37 @@ const enemyData = [
         "name": "The Accurst Flame envelops Elrica...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Tusk",
-    "drop": "Rare Beast Horn, Moonstone, Phoenix Feather",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98318.0",
     "name": "Cursed Fallen Giant Falcon",
     "area": "Bestower of All 4",
     "subArea": "Hell: Hornburg Pass",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 147147,
     "patk": 655,
     "pdef": 85,
     "matk": 663,
     "mdef": 85,
+    "speed": 185,
+    "crit": 220,
+    "accuracy": 287,
+    "evasion": 210,
+    "exp": 391,
+    "jp": 53,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Tornado Slash",
@@ -24034,10 +27267,7 @@ const enemyData = [
         "name": "Galeforce Slash",
         "type": "Elem"
       }
-    ],
-    "steal": "Blessed Olive (L), Iron Ore",
-    "drop": "Beast Meat, Kraken Ink",
-    "immunities": "Silence, Sleep"
+    ]
   },
   {
     "id": "98319.0",
@@ -24046,7 +27276,6 @@ const enemyData = [
     "subArea": "Hell: Hornburg Pass",
     "type": "Boss",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -24055,12 +27284,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 59,
     "hp": 158613,
     "patk": 655,
     "pdef": 75,
     "matk": 663,
     "mdef": 75,
+    "speed": 182,
+    "crit": 182,
+    "accuracy": 242,
+    "evasion": 202,
+    "exp": 391,
+    "jp": 53,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Threefold Cleave",
@@ -24098,19 +27337,15 @@ const enemyData = [
         "name": "Multi-Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk, Shadow Soulstone",
-    "drop": "Rusty Coin, Gold Dust",
-    "immunities": "Terror, Sleep"
+    ]
   },
   {
     "id": "5126.0",
     "name": "Rondo of the Knights Ardante",
     "area": "Bestower of All 4",
     "subArea": "Hell: Hornburg Castle - Central Area",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -24118,12 +27353,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 57,
     "hp": 33512,
     "patk": 657,
     "pdef": 70,
     "matk": 653,
     "mdef": 70,
+    "speed": 191,
+    "crit": 323,
+    "accuracy": 297,
+    "evasion": 150,
+    "exp": 695,
+    "jp": 103,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Accept my guidance.",
@@ -24141,19 +27386,15 @@ const enemyData = [
         "name": "Rondo summons his strength!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Claw, Holy Water (L)",
-    "drop": "Minotaur Horn",
-    "immunities": "Instant Death, Sleep"
+    ]
   },
   {
     "id": "31715.0",
     "name": "Sacred Flame",
     "area": "Bestower of All 4",
     "subArea": "Hell: Hornburg Castle - Central Area",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -24161,12 +27402,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 57,
     "hp": 9808,
     "patk": 592,
     "pdef": 77,
     "matk": 588,
     "mdef": 63,
+    "speed": 212,
+    "crit": 405,
+    "accuracy": 297,
+    "evasion": 174,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "The Sacred Flame's power flows into Rondo.",
@@ -24180,19 +27431,15 @@ const enemyData = [
         "name": "Lustrous Light",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb, Holy Water (M)",
-    "drop": "Quality Beast Horn, Rare Beast Horn",
-    "immunities": "Petrification, Terror"
+    ]
   },
   {
     "id": "31766.0",
     "name": "Sacred Flame",
     "area": "Bestower of All 4",
     "subArea": "Hell: Hornburg Castle - Central Area",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -24200,12 +27447,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 57,
     "hp": 9999,
     "patk": 592,
     "pdef": 63,
     "matk": 512,
     "mdef": 77,
+    "speed": 192,
+    "crit": 323,
+    "accuracy": 297,
+    "evasion": 185,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "The Sacred Flame's power flows into Rondo.",
@@ -24215,19 +27472,15 @@ const enemyData = [
         "name": "The Sacred Flame's power fills Rondo!",
         "type": "Elem"
       }
-    ],
-    "steal": "Rusty Coin, Phoenix Feather",
-    "drop": "Olive",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "5127.0",
     "name": "Sonzon the Flameguard",
     "area": "Bestower of All 4",
     "subArea": "Hell: Hornburg Castle - Central Area",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 25,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -24236,12 +27489,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 57,
     "hp": 206336,
     "patk": 708,
     "pdef": 190,
     "matk": 705,
     "mdef": 190,
+    "speed": 267,
+    "crit": 327,
+    "accuracy": 464,
+    "evasion": 174,
+    "exp": 1158,
+    "jp": 103,
+    "steal": "Almighty Olive",
+    "drop": "Light Dragon Shot Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Light Dragon's Breath",
@@ -24283,19 +27546,15 @@ const enemyData = [
         "name": "Blade of Judgment",
         "type": "Phys"
       }
-    ],
-    "steal": "Cerberus Fang, Beast Meat",
-    "drop": "Olive of Life (M)",
-    "immunities": "Petrification, Sleep"
+    ]
   },
   {
     "id": "31712.0",
     "name": "Sacred Flame",
     "area": "Bestower of All 4",
     "subArea": "Hell: Hornburg Castle - Central Area",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Ice",
@@ -24303,12 +27562,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 57,
     "hp": 30510,
     "patk": 610,
     "pdef": 75,
     "matk": 630,
     "mdef": 75,
+    "speed": 200,
+    "crit": 250,
+    "accuracy": 250,
+    "evasion": 174,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Holy Light",
@@ -24326,19 +27595,15 @@ const enemyData = [
         "name": "Light Shield Collapse",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Horn, Quality Beast Meat, Silver Nugget",
-    "drop": "Basilisk Eye",
-    "immunities": "Petrification, Stun"
+    ]
   },
   {
     "id": "31713.0",
     "name": "Sacred Flame",
     "area": "Bestower of All 4",
     "subArea": "Hell: Hornburg Castle - Central Area",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Ice",
@@ -24346,12 +27611,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 57,
     "hp": 30510,
     "patk": 610,
     "pdef": 75,
     "matk": 630,
     "mdef": 75,
+    "speed": 200,
+    "crit": 250,
+    "accuracy": 250,
+    "evasion": 174,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Holy Light",
@@ -24369,19 +27644,15 @@ const enemyData = [
         "name": "Light Shield Collapse",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Hide, Beast Horn, Minotaur Horn",
-    "drop": "Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5128.0",
     "name": "Fallen Scarlet Wing",
     "area": "Bestower of All 5",
     "subArea": "Hornburg Battle Ruins",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 10,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -24389,12 +27660,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 73542,
     "patk": 621,
     "pdef": 126,
     "matk": 613,
     "mdef": 126,
+    "speed": 206,
+    "crit": 232,
+    "accuracy": 302,
+    "evasion": 178,
+    "exp": 792,
+    "jp": 80,
+    "steal": "Revitalizing Jam",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -24428,19 +27709,15 @@ const enemyData = [
         "name": "Triple Skull Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Hydra Scale",
-    "drop": "Blessed Olive (M), Leaf, Healing Grape Bunch",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "5129.0",
     "name": "Fallen Monster",
     "area": "Bestower of All 5",
     "subArea": "Hornburg Battle Ruins",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 12,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
@@ -24448,12 +27725,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 59,
     "hp": 91588,
     "patk": 621,
     "pdef": 147,
     "matk": 613,
     "mdef": 147,
+    "speed": 206,
+    "crit": 232,
+    "accuracy": 302,
+    "evasion": 178,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Reinvigorating Jam",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Scratch",
@@ -24487,31 +27774,37 @@ const enemyData = [
         "name": "Help...me...",
         "type": "Phys"
       }
-    ],
-    "steal": "Manticore Stinger, SP-Restoring Nut (M)",
-    "drop": "Blessed Olive (L)",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "31939.0",
     "name": "Menacing Infernal Beast",
     "area": "Bestower of All 5",
     "subArea": "Corridors of Contrition: Back Halls",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 59,
     "hp": 57330,
     "patk": 651,
     "pdef": 51,
     "matk": 671,
     "mdef": 51,
+    "speed": 162,
+    "crit": 191,
+    "accuracy": 191,
+    "evasion": 162,
+    "exp": 238,
+    "jp": 32,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Double Bite",
@@ -24553,19 +27846,15 @@ const enemyData = [
         "name": "Raging Deathstrike",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Hide, HP-Restoring Herb (L), Unicorn Horn",
-    "drop": "Silver Nugget, Rare Beast Hide, Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "31940.0",
     "name": "Infernal Insect IV",
     "area": "Bestower of All 5",
     "subArea": "Corridors of Contrition: Back Halls",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -24573,12 +27862,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 24843,
     "patk": 651,
     "pdef": 51,
     "matk": 671,
     "mdef": 51,
+    "speed": 191,
+    "crit": 191,
+    "accuracy": 191,
+    "evasion": 162,
+    "exp": 79,
+    "jp": 10,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -24592,19 +27891,15 @@ const enemyData = [
         "name": "Enfeebling Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Meat, Rare Beast Horn",
-    "drop": "Quality Beast Tusk, Holy Water (L), Beast Meat",
-    "immunities": "Poison, Confusion"
+    ]
   },
   {
     "id": "31944.0",
     "name": "Fallen Aberration II",
     "area": "Bestower of All 5",
     "subArea": "Corridors of Contrition: Back Halls",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -24612,12 +27907,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Dagger",
     "level": 59,
     "hp": 37184,
     "patk": 651,
     "pdef": 51,
     "matk": 671,
     "mdef": 51,
+    "speed": 191,
+    "crit": 191,
+    "accuracy": 191,
+    "evasion": 191,
+    "exp": 79,
+    "jp": 10,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -24631,31 +27936,37 @@ const enemyData = [
         "name": "Thrice Rent",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam, Olive of Life",
-    "drop": "Minotaur Horn, Beast Horn",
-    "immunities": "Terror, Blind"
+    ]
   },
   {
     "id": "31945.0",
     "name": "Fallen Monster",
     "area": "Bestower of All 5",
     "subArea": "Corridors of Contrition: Back Halls",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 9,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 59,
     "hp": 37184,
     "patk": 651,
     "pdef": 51,
     "matk": 585,
     "mdef": 51,
+    "speed": 222,
+    "crit": 182,
+    "accuracy": 182,
+    "evasion": 162,
+    "exp": 159,
+    "jp": 21,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Scratch",
@@ -24673,19 +27984,15 @@ const enemyData = [
         "name": "Doping",
         "type": "Unknown"
       }
-    ],
-    "steal": "Gold Dust, Unicorn Horn, Beast Hide",
-    "drop": "Moonstone, Beast Meat",
-    "immunities": "Terror, Confusion"
+    ]
   },
   {
     "id": "5130.0",
     "name": "Cursed Commander Tytos",
     "area": "Bestower of All 5",
     "subArea": "Corridors of Contrition: Back Halls",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 25,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -24693,12 +28000,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 59,
     "hp": 199472,
     "patk": 771,
     "pdef": 246,
     "matk": 654,
     "mdef": 185,
+    "speed": 232,
+    "crit": 332,
+    "accuracy": 385,
+    "evasion": 186,
+    "exp": 1848,
+    "jp": 134,
+    "steal": "Empowering Necklace",
+    "drop": "Contrition of Power x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Oppression",
@@ -24752,19 +28069,15 @@ const enemyData = [
         "name": "Cursed Thundering Gale",
         "type": "Elem"
       }
-    ],
-    "steal": "Beast Fang, Revitalizing Jam (L)",
-    "drop": "Meteorite, Gold, Rare Beast Horn",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98323.0",
     "name": "Cursed Fallen Soldier",
     "area": "Bestower of All 6",
     "subArea": "The Bridge Beyond",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -24772,12 +28085,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 64,
     "hp": 181350,
     "patk": 631,
     "pdef": 85,
     "matk": 605,
     "mdef": 85,
+    "speed": 212,
+    "crit": 191,
+    "accuracy": 212,
+    "evasion": 212,
+    "exp": 545,
+    "jp": 58,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Cut",
@@ -24823,19 +28146,15 @@ const enemyData = [
         "name": "Stunning Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Cerberus Fang, Wind Soulstone, Phoenix Feather",
-    "drop": "Shiny Coin, Rare Beast Fang, Revitalizing Jam (L)",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "31989.0",
     "name": "Fallen Lady-in-Waiting",
     "area": "Bestower of All 6",
     "subArea": "The Bridge Beyond",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 16,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -24843,12 +28162,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Axe",
     "level": 60,
     "hp": 118658,
     "patk": 715,
     "pdef": 210,
     "matk": 707,
     "mdef": 210,
+    "speed": 208,
+    "crit": 244,
+    "accuracy": 322,
+    "evasion": 188,
+    "exp": 751,
+    "jp": 81,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Knife Throw",
@@ -24874,19 +28203,15 @@ const enemyData = [
         "name": "Fourfold Knife Throw",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Fang",
-    "drop": "Star Fragment",
-    "immunities": "Instant Death, Silence"
+    ]
   },
   {
     "id": "32064.0",
     "name": "Fallen Herminia's Soldier",
     "area": "Bestower of All 6",
     "subArea": "The Bridge Beyond",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 9,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
@@ -24894,12 +28219,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Axe",
     "level": 60,
     "hp": 35990,
     "patk": 692,
     "pdef": 231,
     "matk": 558,
     "mdef": 189,
+    "speed": 198,
+    "crit": 234,
+    "accuracy": 306,
+    "evasion": 180,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -24921,19 +28256,15 @@ const enemyData = [
         "name": "Protect Fallen Lady-in-Waiting",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Fang",
-    "drop": "Rare Beast Meat, Griffin Claw",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "5131.0",
     "name": "Cursed Lady Herminia",
     "area": "Bestower of All 6",
     "subArea": "Wealth's Dominion",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 22,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -24941,12 +28272,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 61,
     "hp": 177840,
     "patk": 751,
     "pdef": 210,
     "matk": 743,
     "mdef": 210,
+    "speed": 224,
+    "crit": 261,
+    "accuracy": 392,
+    "evasion": 189,
+    "exp": 1448,
+    "jp": 109,
+    "steal": "Mighty Belt",
+    "drop": "Contrition of Wealth x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Thousand Scythes",
@@ -24996,19 +28337,15 @@ const enemyData = [
         "name": "Cursed Predation",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Blessed Olive (M), HP-Restoring Herb",
-    "drop": "Blessed Olive (L), Chimera Fang, HP-Restoring Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "31990.0",
     "name": "Fallen Francesca",
     "area": "Bestower of All 6",
     "subArea": "Crimson River Traverse",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 19,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -25016,12 +28353,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 60,
     "hp": 169302,
     "patk": 644,
     "pdef": 189,
     "matk": 778,
     "mdef": 231,
+    "speed": 203,
+    "crit": 239,
+    "accuracy": 314,
+    "evasion": 184,
+    "exp": 751,
+    "jp": 81,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "AHAHAHA!",
@@ -25051,19 +28398,15 @@ const enemyData = [
         "name": "Dance of Ruin",
         "type": "Elem"
       }
-    ],
-    "steal": "Lightning Soulstone, Holy Water (M)",
-    "drop": "HP-Restoring Herb (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "5132.0",
     "name": "Cursed Master Auguste",
     "area": "Bestower of All 6",
     "subArea": "Fame's Dominion",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 21,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -25075,12 +28418,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 61,
     "hp": 179664,
     "patk": 676,
     "pdef": 189,
     "matk": 818,
     "mdef": 231,
+    "speed": 255,
+    "crit": 261,
+    "accuracy": 392,
+    "evasion": 189,
+    "exp": 1448,
+    "jp": 109,
+    "steal": "Stimulating Necklace",
+    "drop": "Contrition of Fame x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Mass Fatal Sentence",
@@ -25122,19 +28475,15 @@ const enemyData = [
         "name": "Physical Shackling Meter",
         "type": "Phys"
       }
-    ],
-    "steal": "Gold Dust",
-    "drop": "Rare Beast Tusk, Phoenix Feather, Griffin Claw",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "5133.0",
     "name": "Sazantos",
     "area": "Bestower of All 6",
     "subArea": "Ridge of the Imprisoned God",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
@@ -25142,12 +28491,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 61,
     "hp": 159116,
     "patk": 785,
     "pdef": 210,
     "matk": 792,
     "mdef": 210,
+    "speed": 195,
+    "crit": 205,
+    "accuracy": 365,
+    "evasion": 200,
+    "exp": 2028,
+    "jp": 109,
+    "steal": "Almighty Olive",
+    "drop": "Elemental Edge Mastery x1 (100%)",
+    "immunities": "Instant Death, Sleep, Enchant",
     "skills": [
       {
         "name": "Signa...",
@@ -25205,19 +28564,15 @@ const enemyData = [
         "name": "I will bestow all upon you.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Kraken Ink, Rare Beast Tusk, SP-Restoring Nut (M)",
-    "drop": "Quality Beast Meat, Unicorn Horn",
-    "immunities": "Confusion, Paralysis"
+    ]
   },
   {
     "id": "5134.0",
     "name": "Dark Priestess Signa",
     "area": "Bestower of All 6",
     "subArea": "Ridge of the Imprisoned God",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -25225,12 +28580,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 61,
     "hp": 138341,
     "patk": 588,
     "pdef": 168,
     "matk": 831,
     "mdef": 252,
+    "speed": 203,
+    "crit": 230,
+    "accuracy": 300,
+    "evasion": 215,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Price of Power Mastery",
+    "drop": "n/a",
+    "immunities": "Instant Death, Sleep, Enchant",
     "skills": [
       {
         "name": "I shall protect you, Sir Sazantos!",
@@ -25284,29 +28649,35 @@ const enemyData = [
         "name": "Sir Sazantos...!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Star Fragment, Quality Beast Meat",
-    "drop": "SP-Restoring Nut (L), Old Coin",
-    "immunities": "Paralysis, Stun"
+    ]
   },
   {
     "id": "98040.0",
     "name": "Cardinal",
     "area": "Bestower of All 7",
     "subArea": "Cathedral of Ash Cathedral of Ash: Underground",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 7000,
     "patk": 420,
     "pdef": 50,
     "matk": 360,
     "mdef": 40,
+    "speed": 1,
+    "crit": 200,
+    "accuracy": 315,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -25320,29 +28691,35 @@ const enemyData = [
         "name": "Luminescence",
         "type": "Elem"
       }
-    ],
-    "steal": "Basilisk Eye, SP-Restoring Nut, Quality Beast Horn",
-    "drop": "Old Coin, Iron Ore, Antidote Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "99128.0",
     "name": "Cardinal",
     "area": "Bestower of All 7",
     "subArea": "Cathedral of Ash Cathedral of Ash: Underground",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 7000,
     "patk": 420,
     "pdef": 50,
     "matk": 360,
     "mdef": 40,
+    "speed": 1,
+    "crit": 200,
+    "accuracy": 315,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -25356,29 +28733,35 @@ const enemyData = [
         "name": "Luminescence",
         "type": "Elem"
       }
-    ],
-    "steal": "Inspiring Plum",
-    "drop": "Hydra Scale",
-    "immunities": "Curse, Confusion"
+    ]
   },
   {
     "id": "99129.0",
     "name": "Cardinal",
     "area": "Bestower of All 7",
     "subArea": "Cathedral of Ash Cathedral of Ash: Underground",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 7000,
     "patk": 420,
     "pdef": 50,
     "matk": 360,
     "mdef": 40,
+    "speed": 1,
+    "crit": 200,
+    "accuracy": 315,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -25392,30 +28775,36 @@ const enemyData = [
         "name": "Luminescence",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Tusk, Sphinx Feather",
-    "drop": "Griffin Claw, Holy Water, Manticore Stinger",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98544.0",
     "name": "Sentinel",
     "area": "Bestower of All 7",
     "subArea": "Cathedral of Ash: Underground",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 4500,
     "patk": 400,
     "pdef": 50,
     "matk": 400,
     "mdef": 50,
+    "speed": 1,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 1,
+    "exp": 893,
+    "jp": 86,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Shadowshot",
@@ -25425,10 +28814,7 @@ const enemyData = [
         "name": "Repeated Shadowshot",
         "type": "Elem"
       }
-    ],
-    "steal": "Light Soulstone, Nut, Inspiring Plum Basket",
-    "drop": "Antidote Herb, Revitalizing Jam",
-    "immunities": "Instant Death, Curse"
+    ]
   },
   {
     "id": "98545.0",
@@ -25437,18 +28823,27 @@ const enemyData = [
     "subArea": "Cathedral of Ash: Underground",
     "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 6000,
     "patk": 400,
     "pdef": 55,
     "matk": 400,
     "mdef": 55,
+    "speed": 1,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 1,
+    "exp": 893,
+    "jp": 86,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -25462,30 +28857,36 @@ const enemyData = [
         "name": "Strong Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water (M), Beast Claw",
-    "drop": "Dragon Scale",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98546.0",
     "name": "Gold Remnant",
     "area": "Bestower of All 7",
     "subArea": "Cathedral of Ash: Underground",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 8000,
     "patk": 430,
     "pdef": 60,
     "matk": 430,
     "mdef": 60,
+    "speed": 1,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 1,
+    "exp": 893,
+    "jp": 86,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -25499,30 +28900,36 @@ const enemyData = [
         "name": "Bloody Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Holy Water (M), Healing Grape Bunch",
-    "drop": "Antidote Herb (L), Silver Nugget",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98547.0",
     "name": "Gold Revenant",
     "area": "Bestower of All 7",
     "subArea": "Cathedral of Ash: Underground",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 63,
     "hp": 10000,
     "patk": 470,
     "pdef": 65,
     "matk": 470,
     "mdef": 65,
+    "speed": 1,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 1,
+    "exp": 893,
+    "jp": 86,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -25544,30 +28951,36 @@ const enemyData = [
         "name": "Magic Counter Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Meat, Dragon Scale",
-    "drop": "Holy Water (L), Dragon Scale",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98041.0",
     "name": "Cardinal Teragraf",
     "area": "Bestower of All 7",
     "subArea": "Cathedral of Ash: Underground",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 65000,
     "patk": 450,
     "pdef": 50,
     "matk": 400,
     "mdef": 30,
+    "speed": 150,
+    "crit": 200,
+    "accuracy": 315,
+    "evasion": 150,
+    "exp": 1736,
+    "jp": 114,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death, Sleep, Enchant",
     "skills": [
       {
         "name": "Steel Defenses",
@@ -25629,30 +29042,36 @@ const enemyData = [
         "name": "Pontiff Odypus's Judgment",
         "type": "Elem"
       }
-    ],
-    "steal": "Fire Soulstone",
-    "drop": "Leaf, Blessed Olive (M)",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98032.0",
     "name": "Warrior",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 30000,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Phantasmic Shot",
@@ -25686,30 +29105,36 @@ const enemyData = [
         "name": "The power of the Accurst Flame rages!",
         "type": "Elem"
       }
-    ],
-    "steal": "Hydra Scale, Rare Beast Meat",
-    "drop": "Quality Beast Hide, Inspiring Plum Basket, Phoenix Feather",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98033.0",
     "name": "Apothecary",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 0,
     "hp": 30000,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Phantasmic Shot",
@@ -25743,30 +29168,36 @@ const enemyData = [
         "name": "The power of the Accurst Flame rages!",
         "type": "Elem"
       }
-    ],
-    "steal": "Shiny Coin",
-    "drop": "JP, Quality Beast Tusk",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98034.0",
     "name": "Thief",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 30000,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Phantasmic Shot",
@@ -25800,30 +29231,36 @@ const enemyData = [
         "name": "The power of the Accurst Flame rages!",
         "type": "Elem"
       }
-    ],
-    "steal": "Inspiring Plum",
-    "drop": "Blessed Olive",
-    "immunities": "Stun, Poison"
+    ]
   },
   {
     "id": "98035.0",
     "name": "Scholar",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Staff",
     "weaknesses": [
       "Staff",
       "Tome",
       "Light"
     ],
+    "weakness": "Staff",
     "level": 0,
     "hp": 30000,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Phantasmic Shot",
@@ -25857,30 +29294,36 @@ const enemyData = [
         "name": "The power of the Accurst Flame rages!",
         "type": "Elem"
       }
-    ],
-    "steal": "Shiny Coin, HP-Restoring Herb (M)",
-    "drop": "Iron Ore, Revitalizing Jam",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98036.0",
     "name": "Cleric",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Staff",
     "weaknesses": [
       "Staff",
       "Fan",
       "Light"
     ],
+    "weakness": "Staff",
     "level": 0,
     "hp": 30000,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Phantasmic Shot",
@@ -25914,30 +29357,36 @@ const enemyData = [
         "name": "The power of the Accurst Flame rages!",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb (L)",
-    "drop": "Holy Water",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98037.0",
     "name": "Hunter",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 0,
     "hp": 30000,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Phantasmic Shot",
@@ -25971,30 +29420,36 @@ const enemyData = [
         "name": "The power of the Accurst Flame rages!",
         "type": "Elem"
       }
-    ],
-    "steal": "Star Fragment, Beast Fang",
-    "drop": "Rare Beast Fang, SP-Restoring Nut, Manticore Stinger",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98038.0",
     "name": "Merchant",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 0,
     "hp": 30000,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Phantasmic Shot",
@@ -26028,30 +29483,36 @@ const enemyData = [
         "name": "The power of the Accurst Flame rages!",
         "type": "Elem"
       }
-    ],
-    "steal": "Shadow Soulstone",
-    "drop": "Rusty Coin, Antidote Herb, Quality Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98039.0",
     "name": "Dancer",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Fan",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 0,
     "hp": 30000,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Phantasmic Shot",
@@ -26085,19 +29546,15 @@ const enemyData = [
         "name": "The power of the Accurst Flame rages!",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Hide, Quality Beast Tusk",
-    "drop": "Rare Beast Fang, Rare Beast Meat, Holy Water (M)",
-    "immunities": "Stun, Petrification"
+    ]
   },
   {
     "id": "98856.0",
     "name": "Accurst Flame",
     "area": "Bestower of All 7",
     "subArea": "Flamebearer's Shrine",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -26106,12 +29563,22 @@ const enemyData = [
       "Fan",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 33333,
     "patk": 400,
     "pdef": 50,
     "matk": 380,
     "mdef": 40,
+    "speed": 160,
+    "crit": 200,
+    "accuracy": 270,
+    "evasion": 1,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Black Flame",
@@ -26141,31 +29608,37 @@ const enemyData = [
         "name": "Cursed Mending",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Horn",
-    "drop": "Meteorite, Rare Beast Hide, Blessed Olive (M)",
-    "immunities": "Curse, Poison"
+    ]
   },
   {
     "id": "98327.0",
     "name": "Sacred Beast of the Seas",
     "area": "Bestower of All 8",
     "subArea": "Seas of Servility",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 26,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 73,
     "hp": 278733,
     "patk": 663,
     "pdef": 108,
     "matk": 663,
     "mdef": 108,
+    "speed": 221,
+    "crit": 199,
+    "accuracy": 221,
+    "evasion": 221,
+    "exp": 798,
+    "jp": 61,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Coil",
@@ -26219,31 +29692,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Sphinx Feather, Healing Grape",
-    "drop": "Quality Beast Hide, Shiny Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98329.0",
     "name": "Sacred Beast of the Sands",
     "area": "Bestower of All 8",
     "subArea": "Sands of Rapacity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 73,
     "hp": 237689,
     "patk": 640,
     "pdef": 85,
     "matk": 655,
     "mdef": 85,
+    "speed": 236,
+    "crit": 275,
+    "accuracy": 362,
+    "evasion": 221,
+    "exp": 798,
+    "jp": 61,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Blinding Glare",
@@ -26301,31 +29780,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb (M), Minotaur Horn",
-    "drop": "Holy Water (L), HP-Restoring Herb (L)",
-    "immunities": "Paralysis, Silence"
+    ]
   },
   {
     "id": "98331.0",
     "name": "Sacred Beast of the Skies",
     "area": "Bestower of All 8",
     "subArea": "Skies of Vanity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Ice",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 73,
     "hp": 237689,
     "patk": 663,
     "pdef": 85,
     "matk": 617,
     "mdef": 85,
+    "speed": 236,
+    "crit": 275,
+    "accuracy": 362,
+    "evasion": 221,
+    "exp": 798,
+    "jp": 61,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Raging Strike",
@@ -26383,19 +29868,15 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Moonstone, Quality Beast Horn",
-    "drop": "Rare Beast Claw",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "32192.0",
     "name": "Saint Sazantos",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -26404,12 +29885,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 65,
     "hp": 220000,
     "patk": 935,
     "pdef": 85,
     "matk": 940,
     "mdef": 85,
+    "speed": 200,
+    "crit": 236,
+    "accuracy": 405,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Immeasurable Power Mastery",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Spiritual Sunder",
@@ -26467,19 +29958,15 @@ const enemyData = [
         "name": "Shadowmist Blade",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive (L)",
-    "drop": "Beast Horn, Revitalizing Jam (L)",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "5195.0",
     "name": "Creator Orsazantos",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -26495,12 +29982,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 330000,
     "patk": 974,
     "pdef": 85,
     "matk": 993,
     "mdef": 85,
+    "speed": 202,
+    "crit": 239,
+    "accuracy": 650,
+    "evasion": 100,
+    "exp": 4050,
+    "jp": 147,
+    "steal": "Almighty Olive",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Triple Blow",
@@ -26558,19 +30055,15 @@ const enemyData = [
         "name": "Light of Night",
         "type": "Unknown"
       }
-    ],
-    "steal": "Shadow Soulstone, Antidote Herb (L), Rare Beast Hide",
-    "drop": "Unicorn Horn, Griffin Claw",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "32196.0",
     "name": "Ring of the Huntress",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Staff",
@@ -26579,12 +30072,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 0,
     "hp": 58044,
     "patk": 793,
     "pdef": 170,
     "matk": 782,
     "mdef": 194,
+    "speed": 186,
+    "crit": 245,
+    "accuracy": 322,
+    "evasion": 100,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Fathomless Arrow",
@@ -26610,19 +30113,15 @@ const enemyData = [
         "name": "Temptation of the Night",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb, Quality Beast Fang",
-    "drop": "Rare Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32197.0",
     "name": "Ring of the Thunderblade",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Bow",
     "weaknesses": [
       "Bow",
       "Fan",
@@ -26631,12 +30130,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Bow",
     "level": 0,
     "hp": 69435,
     "patk": 803,
     "pdef": 185,
     "matk": 803,
     "mdef": 168,
+    "speed": 178,
+    "crit": 245,
+    "accuracy": 322,
+    "evasion": 100,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Castigate",
@@ -26662,19 +30171,15 @@ const enemyData = [
         "name": "Thundersquall",
         "type": "Elem"
       }
-    ],
-    "steal": "Shiny Coin",
-    "drop": "Beast Horn, Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32198.0",
     "name": "Ring of the Prince of Thieves",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 6,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -26683,12 +30188,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 0,
     "hp": 48150,
     "patk": 788,
     "pdef": 180,
     "matk": 795,
     "mdef": 174,
+    "speed": 195,
+    "crit": 248,
+    "accuracy": 325,
+    "evasion": 100,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Rhythm Unto Quietus",
@@ -26714,10 +30229,7 @@ const enemyData = [
         "name": "Mass Fatal Sentence",
         "type": "Unknown"
       }
-    ],
-    "steal": "Phoenix Feather, Cerberus Fang",
-    "drop": "Healing Grape Bunch, Manticore Stinger, Moonstone",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32199.0",
@@ -26726,7 +30238,6 @@ const enemyData = [
     "subArea": "Altar of Heavenly Peals",
     "type": "Boss",
     "shields": 12,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -26734,12 +30245,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 0,
     "hp": 136658,
     "patk": 775,
     "pdef": 190,
     "matk": 781,
     "mdef": 190,
+    "speed": 213,
+    "crit": 250,
+    "accuracy": 380,
+    "evasion": 100,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Divine Blow",
@@ -26777,19 +30298,15 @@ const enemyData = [
         "name": "Magic Counter Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Hydra Scale",
-    "drop": "Soulstone, Manticore Stinger",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32200.0",
     "name": "Ring of the Charitable",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -26798,12 +30315,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 62865,
     "patk": 788,
     "pdef": 181,
     "matk": 805,
     "mdef": 176,
+    "speed": 194,
+    "crit": 252,
+    "accuracy": 390,
+    "evasion": 100,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Eternal Sleep",
@@ -26833,19 +30360,15 @@ const enemyData = [
         "name": "Cursed Barrier",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Horn, Revitalizing Jam (L)",
-    "drop": "Cerberus Fang, Unicorn Horn, Phoenix Feather",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "32201.0",
     "name": "Ring of the Lady of Grace",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -26854,12 +30377,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 80370,
     "patk": 785,
     "pdef": 172,
     "matk": 807,
     "mdef": 196,
+    "speed": 200,
+    "crit": 252,
+    "accuracy": 400,
+    "evasion": 100,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Toxic Tentacles",
@@ -26889,19 +30422,15 @@ const enemyData = [
         "name": "Absorption Barrier",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sphinx Feather",
-    "drop": "Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32202.0",
     "name": "Ring of the Trader",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 9,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
@@ -26910,12 +30439,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 71603,
     "patk": 815,
     "pdef": 186,
     "matk": 782,
     "mdef": 170,
+    "speed": 187,
+    "crit": 252,
+    "accuracy": 450,
+    "evasion": 100,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Twin Flash",
@@ -26945,19 +30484,15 @@ const enemyData = [
         "name": "Stillness Barrier",
         "type": "Unknown"
       }
-    ],
-    "steal": "Lightning Soulstone, Quality Beast Fang",
-    "drop": "Rare Beast Tusk, Leaf",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "5196.0",
     "name": "Bestower of All",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 20,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -26974,12 +30509,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 500000,
     "patk": 974,
     "pdef": 231,
     "matk": 995,
     "mdef": 231,
+    "speed": 219,
+    "crit": 257,
+    "accuracy": 700,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "Rejuvenating Jam",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Judgment",
@@ -27045,19 +30590,15 @@ const enemyData = [
         "name": "The Void",
         "type": "Elem"
       }
-    ],
-    "steal": "Shadow Soulstone, Ancient Coin, Revitalizing Jam (M)",
-    "drop": "SP-Restoring Nut (L)",
-    "immunities": "Sleep, Confusion"
+    ]
   },
   {
     "id": "32193.0",
     "name": "Bestower of All",
     "area": "Bestower of All 8",
     "subArea": "Altar of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 99,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -27066,12 +30607,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 70000,
     "patk": 480,
     "pdef": 80,
     "matk": 480,
     "mdef": 80,
+    "speed": 180,
+    "crit": 10,
+    "accuracy": 583,
+    "evasion": 10,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Divine Abyss",
@@ -27081,19 +30632,15 @@ const enemyData = [
         "name": "The Void",
         "type": "Elem"
       }
-    ],
-    "steal": "Gold Dust, Quality Beast Claw",
-    "drop": "Silver Nugget, Star Fragment, Hydra Scale",
-    "immunities": "Silence, Stun"
+    ]
   },
   {
     "id": "5135.0",
     "name": "Aelfric the Flamebringer",
     "area": "Unlocking the True Ending",
     "subArea": "Flamebearer's Shrine: Sanctum",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 14,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -27101,12 +30648,22 @@ const enemyData = [
       "Fan",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 65,
     "hp": 118675,
     "patk": 850,
     "pdef": 170,
     "matk": 850,
     "mdef": 170,
+    "speed": 378,
+    "crit": 210,
+    "accuracy": 500,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Holy Light",
@@ -27172,19 +30729,15 @@ const enemyData = [
         "name": "Flamebringer's Guidance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Hide, Copper Ore, Rare Beast Claw",
-    "drop": "Rare Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32127.0",
     "name": "Aelfric the Flamebringer",
     "area": "Unlocking the True Ending",
     "subArea": "Flamebearer's Shrine: Sanctum",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 18,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
@@ -27192,12 +30745,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 65,
     "hp": 132430,
     "patk": 925,
     "pdef": 178,
     "matk": 925,
     "mdef": 178,
+    "speed": 388,
+    "crit": 226,
+    "accuracy": 500,
+    "evasion": 150,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Holy Light",
@@ -27263,19 +30826,15 @@ const enemyData = [
         "name": "Flamebringer's Guidance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Moonstone",
-    "drop": "Holy Water, Rare Beast Tusk",
-    "immunities": "Sleep, Confusion"
+    ]
   },
   {
     "id": "32128.0",
     "name": "Aelfric the Flamebringer",
     "area": "Unlocking the True Ending",
     "subArea": "Flamebearer's Shrine: Sanctum",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 23,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Fan",
@@ -27283,12 +30842,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 65,
     "hp": 180000,
     "patk": 1000,
     "pdef": 193,
     "matk": 1000,
     "mdef": 193,
+    "speed": 415,
+    "crit": 245,
+    "accuracy": 500,
+    "evasion": 150,
+    "exp": 2250,
+    "jp": 147,
+    "steal": "Resurrect Mastery",
+    "drop": "Resurrect Mastery x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Holy Light",
@@ -27354,28 +30923,32 @@ const enemyData = [
         "name": "Flamebringer's Guidance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Claw",
-    "drop": "Kraken Ink",
-    "immunities": "None"
+    ]
   },
   {
     "id": "32129.0",
     "name": "Great Flame",
     "area": "Unlocking the True Ending",
     "subArea": "Flamebearer's Shrine: Sanctum",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 0,
+    "weaknesses": [],
     "weakness": "None",
-    "weaknesses": [
-      "None"
-    ],
     "level": 65,
     "hp": 99999,
     "patk": 99,
     "pdef": 9999,
     "matk": 99,
     "mdef": 9999,
+    "speed": 1,
+    "crit": 99,
+    "accuracy": 75,
+    "evasion": 70,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Augmenting effects vanish in the Great Flame's light!",
@@ -27389,19 +30962,15 @@ const enemyData = [
         "name": "The Great Flame revives Aelfric and fades away...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Meat, Light Soulstone, Old Coin",
-    "drop": "Olive of Life (M), Chimera Fang, HP-Restoring Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98031.0",
     "name": "Or'galdera",
     "area": "Bestower of All 8 - True Ending",
     "subArea": "Altat of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 30,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -27417,12 +30986,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 264040,
     "patk": 884,
     "pdef": 230,
     "matk": 869,
     "mdef": 230,
+    "speed": 208,
+    "crit": 245,
+    "accuracy": 322,
+    "evasion": 170,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Veil of Night",
@@ -27472,19 +31051,15 @@ const enemyData = [
         "name": "Banish Soul",
         "type": "Elem"
       }
-    ],
-    "steal": "Star Fragment, Rare Beast Claw",
-    "drop": "Antidote Herb",
-    "immunities": "Instant Death, Silence"
+    ]
   },
   {
     "id": "98780.0",
     "name": "Void-Sundering Arm",
     "area": "Bestower of All 8 - True Ending",
     "subArea": "Altat of Heavenly Peals",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 17,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -27495,12 +31070,22 @@ const enemyData = [
       "Tome",
       "Fan"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 190112,
     "patk": 814,
     "pdef": 203,
     "matk": 920,
     "mdef": 230,
+    "speed": 250,
+    "crit": 245,
+    "accuracy": 355,
+    "evasion": 207,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "<skl_user_name>'s movements have become erratic!",
@@ -27546,10 +31131,7 @@ const enemyData = [
         "name": "The energy shrouding <skl_user_name> is altered.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Cerberus Fang, Antidote Herb (L), Hydra Scale",
-    "drop": "Manticore Stinger, Chimera Fang, Holy Water (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98781.0",
@@ -27558,7 +31140,6 @@ const enemyData = [
     "subArea": "Altat of Heavenly Peals",
     "type": "Boss",
     "shields": 10,
-    "weakness": "Fire",
     "weaknesses": [
       "Fire",
       "Ice",
@@ -27567,12 +31148,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Fire",
     "level": 0,
     "hp": 194682,
     "patk": 937,
     "pdef": 230,
     "matk": 800,
     "mdef": 203,
+    "speed": 229,
+    "crit": 294,
+    "accuracy": 387,
+    "evasion": 188,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "<skl_user_name> begins to shake violently!",
@@ -27614,31 +31205,37 @@ const enemyData = [
         "name": "The energy shrouding <skl_user_name> is altered.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water",
-    "drop": "Antidote Herb, Gold, SP-Restoring Nut (M)",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98599.0",
     "name": "Ocean Octopuff Traveler",
     "area": "Coastlands",
     "subArea": "Middlesea / Outersea",
-    "type": "Regular",
+    "type": "Rare",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 5,
     "patk": 105,
     "pdef": 300,
     "matk": 100,
     "mdef": 400,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 500,
+    "jp": 300,
+    "steal": "Octopus Suction Cup",
+    "drop": "Octopus Suction Cup x1 (5%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Bag Toss",
@@ -27652,31 +31249,37 @@ const enemyData = [
         "name": "Flee",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life (M), Healing Grape Bunch",
-    "drop": "Olive, Soulstone",
-    "immunities": "Terror, Paralysis"
+    ]
   },
   {
     "id": "98594.0",
     "name": "Cait",
     "area": "Any",
     "subArea": "Low Level",
-    "type": "Regular",
+    "type": "Rare",
     "shields": 2,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 5,
     "patk": 105,
     "pdef": 92,
     "matk": 100,
     "mdef": 92,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 1000,
+    "jp": 150,
+    "steal": "Cat Whisker",
+    "drop": "Cat Whisker x1 (5%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Leaf Toss",
@@ -27690,31 +31293,37 @@ const enemyData = [
         "name": "Flee",
         "type": "Unknown"
       }
-    ],
-    "steal": "Chimera Fang",
-    "drop": "Gold Dust",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98595.0",
     "name": "Cultured Cait",
     "area": "Any",
     "subArea": "Mid Level",
-    "type": "Regular",
+    "type": "Rare",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 20,
     "hp": 8,
     "patk": 105,
     "pdef": 118,
     "matk": 100,
     "mdef": 118,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 1250,
+    "jp": 400,
+    "steal": "Cat Whisker",
+    "drop": "Cat Whisker x1 (5%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Leaf Toss",
@@ -27728,31 +31337,37 @@ const enemyData = [
         "name": "Flee",
         "type": "Unknown"
       }
-    ],
-    "steal": "Copper Ore, Star Fragment, Revitalizing Jam (L)",
-    "drop": "Beast Claw, HP-Restoring Herb (L), Olive",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98596.0",
     "name": "Chubby Cait",
     "area": "Any",
     "subArea": "Higher Level",
-    "type": "Regular",
+    "type": "Rare",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 80,
     "patk": 105,
     "pdef": 153,
     "matk": 100,
     "mdef": 153,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 2000,
+    "jp": 1000,
+    "steal": "Cat Whisker",
+    "drop": "Cat Whisker x1 (5%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Leaf Toss",
@@ -27766,31 +31381,37 @@ const enemyData = [
         "name": "Flee",
         "type": "Unknown"
       }
-    ],
-    "steal": "Basilisk Eye, Quality Beast Claw",
-    "drop": "Antidote Herb, SP-Restoring Nut (M)",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98597.0",
     "name": "Fallen Cait",
     "area": "Any",
     "subArea": "Hell",
-    "type": "Regular",
+    "type": "Rare",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 50,
     "hp": 8,
     "patk": 105,
     "pdef": 188,
     "matk": 100,
     "mdef": 188,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 4000,
+    "jp": 400,
+    "steal": "Cat Whisker",
+    "drop": "Cat Whisker x1 (5%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Leaf Toss",
@@ -27808,31 +31429,37 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Hydra Scale, Rare Beast Tusk",
-    "drop": "Griffin Claw",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98598.0",
     "name": "Holy Cait",
     "area": "Land",
     "subArea": "Heaven",
-    "type": "Regular",
+    "type": "Rare",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 60,
     "hp": 80,
     "patk": 105,
     "pdef": 223,
     "matk": 100,
     "mdef": 223,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 10000,
+    "jp": 1000,
+    "steal": "Cat Whisker",
+    "drop": "Cat Whisker x1 (5%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Leaf Toss",
@@ -27850,31 +31477,37 @@ const enemyData = [
         "name": "<skl_user_name>'s light shines brighter!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb, Blessed Olive, Rare Beast Horn",
-    "drop": "Nut, Beast Horn",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98600.0",
     "name": "King Octopuff",
     "area": "Seas",
     "subArea": "Heaven",
-    "type": "Boss",
+    "type": "Rare",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 80,
     "patk": 105,
     "pdef": 400,
     "matk": 100,
     "mdef": 550,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 1000,
+    "jp": 1500,
+    "steal": "Octopus Suction Cup",
+    "drop": "Octopus Suction Cup x1 (5%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Bag Toss",
@@ -27888,19 +31521,15 @@ const enemyData = [
         "name": "Flee",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Tusk, Sunshard",
-    "drop": "SP-Restoring Nut (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98804.0",
     "name": "Acdam",
     "area": "An Encounter with Tressa",
     "subArea": "Theatropolis",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 8,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -27908,12 +31537,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 24,
     "hp": 8600,
     "patk": 294,
     "pdef": 30,
     "matk": 267,
     "mdef": 22,
+    "speed": 123,
+    "crit": 151,
+    "accuracy": 194,
+    "evasion": 100,
+    "exp": 117,
+    "jp": 33,
+    "steal": "Bottle of Numbing Dust",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -27923,19 +31562,15 @@ const enemyData = [
         "name": "Wild Numbing Dust",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Fang, Quality Beast Hide",
-    "drop": "Meteorite, Sunshard",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98805.0",
     "name": "Acdam Member",
     "area": "An Encounter with Tressa",
     "subArea": "Theatropolis",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 4,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -27943,12 +31578,22 @@ const enemyData = [
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 24,
     "hp": 3000,
     "patk": 248,
     "pdef": 10,
     "matk": 165,
     "mdef": 5,
+    "speed": 80,
+    "crit": 147,
+    "accuracy": 187,
+    "evasion": 60,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -27962,19 +31607,15 @@ const enemyData = [
         "name": "Stab Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "Silver Nugget",
-    "drop": "Blessed Olive (M), Revitalizing Jam (M)",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98798.0",
     "name": "Dreige",
     "area": "An Encounter with Therion",
     "subArea": "Gray Grotto",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -27982,12 +31623,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 27,
     "hp": 18450,
     "patk": 378,
     "pdef": 39,
     "matk": 321,
     "mdef": 32,
+    "speed": 134,
+    "crit": 158,
+    "accuracy": 202,
+    "evasion": 135,
+    "exp": 143,
+    "jp": 37,
+    "steal": "Slippery Nut (M)",
+    "drop": "Tri-Edge Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Double Throw",
@@ -28013,19 +31664,15 @@ const enemyData = [
         "name": "Dreige tightens the grip on his knife!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Tusk",
-    "drop": "Quality Beast Claw, Rare Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98799.0",
     "name": "Dreige's Lackey",
     "area": "An Encounter with Therion",
     "subArea": "Gray Grotto",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -28033,12 +31680,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 27,
     "hp": 5000,
     "patk": 283,
     "pdef": 18,
     "matk": 203,
     "mdef": 14,
+    "speed": 109,
+    "crit": 158,
+    "accuracy": 202,
+    "evasion": 124,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -28052,31 +31709,37 @@ const enemyData = [
         "name": "Stab Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (M), Beast Fang",
-    "drop": "HP-Restoring Herb",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98822.0",
     "name": "The Big 'Un",
     "area": "The Big 'Un",
     "subArea": "Clearbrook Traverse",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 29,
     "hp": 27301,
     "patk": 446,
     "pdef": 44,
     "matk": 466,
     "mdef": 36,
+    "speed": 133,
+    "crit": 163,
+    "accuracy": 209,
+    "evasion": 100,
+    "exp": 41,
+    "jp": 11,
+    "steal": "Thunder Soulstone (M)",
+    "drop": "Thunder Soulstone (L) x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Electrocute",
@@ -28094,19 +31757,15 @@ const enemyData = [
         "name": "Thunderstorm",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb (M)",
-    "drop": "Phoenix Feather, Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98785.0",
     "name": "???",
     "area": "An Encounter with Heidne",
     "subArea": "Sunshade Sands",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 20,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -28114,12 +31773,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 43624,
     "patk": 380,
     "pdef": 60,
     "matk": 380,
     "mdef": 60,
+    "speed": 135,
+    "crit": 165,
+    "accuracy": 212,
+    "evasion": 130,
+    "exp": 170,
+    "jp": 41,
+    "steal": "Reaping Slash Mastery",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Offense Breaker",
@@ -28145,19 +31814,15 @@ const enemyData = [
         "name": "Swift Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Meat",
-    "drop": "EXP, Gold Dust, Holy Water (M)",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98806.0",
     "name": "Rosso",
     "area": "An Encounter with Primrose",
     "subArea": "Sunshade",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -28165,12 +31830,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 30,
     "hp": 41328,
     "patk": 486,
     "pdef": 60,
     "matk": 489,
     "mdef": 60,
+    "speed": 135,
+    "crit": 165,
+    "accuracy": 212,
+    "evasion": 155,
+    "exp": 170,
+    "jp": 41,
+    "steal": "Fortifying Nut",
+    "drop": "Fortifying Nut x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -28216,19 +31891,15 @@ const enemyData = [
         "name": "Swift Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Hide, Quality Beast Fang",
-    "drop": "Revitalizing Jam (L), Beast Tusk",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98847.0",
     "name": "Heidne",
     "area": "An Encounter with Heidne",
     "subArea": "Flamesgrace Wilds",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 20,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -28236,12 +31907,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 43624,
     "patk": 450,
     "pdef": 60,
     "matk": 450,
     "mdef": 60,
+    "speed": 135,
+    "crit": 165,
+    "accuracy": 212,
+    "evasion": 155,
+    "exp": 170,
+    "jp": 41,
+    "steal": "Ice Soulstone (M)",
+    "drop": "Inhibit Offense Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Offense Breaker",
@@ -28267,31 +31948,37 @@ const enemyData = [
         "name": "Swift Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Dragon Scale, Iron Ore, Hydra Scale",
-    "drop": "Holy Water, Blessed Olive (M), SP-Restoring Nut (L)",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98848.0",
     "name": "Slave Trader",
     "area": "One's True Worth",
     "subArea": "Finesand Ruins",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 35,
     "hp": 17760,
     "patk": 320,
     "pdef": 40,
     "matk": 300,
     "mdef": 50,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 46,
+    "jp": 16,
+    "steal": "Heavy Coin Pouch",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -28313,19 +32000,15 @@ const enemyData = [
         "name": "Peerless Strike",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Tusk, Meteorite, Revitalizing Jam",
-    "drop": "Iron Ore",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98849.0",
     "name": "Heidne",
     "area": "One's True Worth",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 20,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -28333,12 +32016,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 43624,
     "patk": 450,
     "pdef": 60,
     "matk": 450,
     "mdef": 60,
+    "speed": 135,
+    "crit": 165,
+    "accuracy": 212,
+    "evasion": 155,
+    "exp": 170,
+    "jp": 41,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Offense Breaker",
@@ -28364,19 +32057,15 @@ const enemyData = [
         "name": "Swift Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb (M)",
-    "drop": "Antidote Herb",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98812.0",
     "name": "Mighty Mánagarmr",
     "area": "Alpaca Roundup",
     "subArea": "Shepherd's Rock Pass",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -28384,12 +32073,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 45900,
     "patk": 525,
     "pdef": 55,
     "matk": 486,
     "mdef": 45,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 80,
+    "exp": 165,
+    "jp": 47,
+    "steal": "Nourishing Nut (M)",
+    "drop": "Savage Claw Mastery x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -28415,19 +32114,15 @@ const enemyData = [
         "name": "Wild Hard Claw",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water, Beast Tusk",
-    "drop": "Revitalizing Jam, Quality Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98786.0",
     "name": "Vaughner's Underling I",
     "area": "Heidne and the Man-Eating Miser",
     "subArea": "Man-Eating Miser's Hideout",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 12,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Staff",
@@ -28435,12 +32130,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 9400,
     "patk": 400,
     "pdef": 50,
     "matk": 413,
     "mdef": 40,
+    "speed": 128,
+    "crit": 144,
+    "accuracy": 274,
+    "evasion": 150,
+    "exp": 46,
+    "jp": 16,
+    "steal": "Bottle of Poison Dust",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Slice",
@@ -28454,19 +32159,15 @@ const enemyData = [
         "name": "Poison Blade",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Fang, Fire Soulstone",
-    "drop": "Dragon Scale",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98787.0",
     "name": "Vaughner's Underling II",
     "area": "Heidne and the Man-Eating Miser",
     "subArea": "Man-Eating Miser's Hideout",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 12,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -28474,12 +32175,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 9500,
     "patk": 400,
     "pdef": 50,
     "matk": 413,
     "mdef": 40,
+    "speed": 128,
+    "crit": 144,
+    "accuracy": 274,
+    "evasion": 150,
+    "exp": 46,
+    "jp": 16,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -28493,19 +32204,15 @@ const enemyData = [
         "name": "Speed Up",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Meat, Wind Soulstone",
-    "drop": "Gold",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98788.0",
     "name": "Vaughner the Man-Eating Miser",
     "area": "Heidne and the Man-Eating Miser",
     "subArea": "Man-Eating Miser's Hideout",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 22,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -28513,12 +32220,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 47925,
     "patk": 500,
     "pdef": 55,
     "matk": 516,
     "mdef": 50,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 165,
+    "jp": 47,
+    "steal": "Herb of Vitality",
+    "drop": "Ruthless Assault Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Blade",
@@ -28548,19 +32265,15 @@ const enemyData = [
         "name": "<skl_user_name> stands ready!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Blessed Olive (M)",
-    "drop": "HP-Restoring Herb (L), Meteorite",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98789.0",
     "name": "Vaughner's Guard",
     "area": "Heidne and the Man-Eating Miser",
     "subArea": "Man-Eating Miser's Hideout",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 13,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -28568,12 +32281,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 15984,
     "patk": 470,
     "pdef": 50,
     "matk": 496,
     "mdef": 40,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 46,
+    "jp": 16,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -28595,31 +32318,37 @@ const enemyData = [
         "name": "Cover",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Meat, Gold Dust, Rare Beast Tusk",
-    "drop": "JP, Healing Grape Bunch, Meteorite",
-    "immunities": "Blind, Silence"
+    ]
   },
   {
     "id": "98800.0",
     "name": "Imposter Olberic",
     "area": "An Encounter with Olberic",
     "subArea": "Shepherd's Rock",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 5,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 13000,
     "patk": 340,
     "pdef": 20,
     "matk": 340,
     "mdef": 20,
+    "speed": 120,
+    "crit": 130,
+    "accuracy": 224,
+    "evasion": 100,
+    "exp": 206,
+    "jp": 47,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Slice",
@@ -28637,31 +32366,37 @@ const enemyData = [
         "name": "Concoct: Anesthetic Bloodbane",
         "type": "Unknown"
       }
-    ],
-    "steal": "Meteorite",
-    "drop": "Quality Beast Horn, Quality Beast Meat, Sunshard",
-    "immunities": "Sleep, Instant Death"
+    ]
   },
   {
     "id": "98807.0",
     "name": "Frost Bear",
     "area": "An Encounter with Alfyn",
     "subArea": "Flamesgrace Wilds",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 12,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Fan",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 16872,
     "patk": 450,
     "pdef": 50,
     "matk": 300,
     "mdef": 30,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 46,
+    "jp": 16,
+    "steal": "Healing Grape",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Wild Hard Claw",
@@ -28675,31 +32410,37 @@ const enemyData = [
         "name": "Improved Offense",
         "type": "Unknown"
       }
-    ],
-    "steal": "Dragon Scale, Antidote Herb",
-    "drop": "Blessed Olive, Olive of Life (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98808.0",
     "name": "Hoary Howler",
     "area": "An Encounter with Alfyn",
     "subArea": "Flamesgrace Wilds",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Bow",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 17760,
     "patk": 350,
     "pdef": 40,
     "matk": 390,
     "mdef": 50,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 46,
+    "jp": 16,
+    "steal": "Herb of Awakening",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Soporific Fang",
@@ -28713,31 +32454,37 @@ const enemyData = [
         "name": "Galeforce Slash",
         "type": "Elem"
       }
-    ],
-    "steal": "Quality Beast Hide, SP-Restoring Nut",
-    "drop": "Rusty Coin, Rare Beast Tusk",
-    "immunities": "Poison, Terror"
+    ]
   },
   {
     "id": "98809.0",
     "name": "Winter Wanderweed",
     "area": "An Encounter with Alfyn",
     "subArea": "Flamesgrace Wilds",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Staff",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 34,
     "hp": 15984,
     "patk": 340,
     "pdef": 40,
     "matk": 390,
     "mdef": 50,
+    "speed": 144,
+    "crit": 174,
+    "accuracy": 224,
+    "evasion": 164,
+    "exp": 46,
+    "jp": 16,
+    "steal": "Herb of Awakening",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Roll Attack",
@@ -28751,31 +32498,37 @@ const enemyData = [
         "name": "Soporific Sting",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Fang, Blessed Olive, Hydra Scale",
-    "drop": "Rare Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98791.0",
     "name": "Wild Boar",
     "area": "An Encounter with H'aanit",
     "subArea": "Great Tree's Tears",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Tome",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 30212,
     "patk": 527,
     "pdef": 60,
     "matk": 529,
     "mdef": 60,
+    "speed": 156,
+    "crit": 188,
+    "accuracy": 244,
+    "evasion": 178,
+    "exp": 182,
+    "jp": 55,
+    "steal": "Healing Grape (M)",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -28789,31 +32542,37 @@ const enemyData = [
         "name": "Gather Strength",
         "type": "Unknown"
       }
-    ],
-    "steal": "Blessed Olive",
-    "drop": "Sphinx Feather, Dragon Scale",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98792.0",
     "name": "Ivory Shadow",
     "area": "An Encounter with H'aanit",
     "subArea": "Great Tree's Tears",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 25,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Tome",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 43,
     "hp": 80358,
     "patk": 700,
     "pdef": 72,
     "matk": 468,
     "mdef": 48,
+    "speed": 162,
+    "crit": 195,
+    "accuracy": 252,
+    "evasion": 185,
+    "exp": 258,
+    "jp": 59,
+    "steal": "Nourishing Nut (M)",
+    "drop": "Nourishing Nut (M) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -28839,31 +32598,37 @@ const enemyData = [
         "name": "The ivory shadow adopts a low stance.",
         "type": "Unknown"
       }
-    ],
-    "steal": "Light Soulstone, Herb",
-    "drop": "Rare Beast Meat, SP-Restoring Nut (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98782.0",
     "name": "River Frogking I",
     "area": "An Encounter with Carinda",
     "subArea": "East Clearbrook Traverse",
-    "type": "Boss",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 37,
     "hp": 25000,
     "patk": 505,
     "pdef": 55,
     "matk": 415,
     "mdef": 45,
+    "speed": 150,
+    "crit": 181,
+    "accuracy": 234,
+    "evasion": 171,
+    "exp": 55,
+    "jp": 18,
+    "steal": "Cleansing Leaf",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Body Bash",
@@ -28885,31 +32650,37 @@ const enemyData = [
         "name": "Unearthly Roar",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Silver Nugget",
-    "drop": "Dragon Scale",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98783.0",
     "name": "Slayer Bug",
     "area": "An Encounter with Carinda",
     "subArea": "East Clearbrook Traverse",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Staff",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 37,
     "hp": 16000,
     "patk": 440,
     "pdef": 50,
     "matk": 442,
     "mdef": 50,
+    "speed": 150,
+    "crit": 181,
+    "accuracy": 234,
+    "evasion": 171,
+    "exp": 55,
+    "jp": 18,
+    "steal": "Cleansing Leaf",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Wild Scratch",
@@ -28931,31 +32702,37 @@ const enemyData = [
         "name": "Extreme Charge",
         "type": "Phys"
       }
-    ],
-    "steal": "Moonstone",
-    "drop": "Copper Ore, Gold Dust, Quality Beast Hide",
-    "immunities": "Instant Death, Stun"
+    ]
   },
   {
     "id": "98784.0",
     "name": "Motley Slug",
     "area": "An Encounter with Carinda",
     "subArea": "East Clearbrook Traverse",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 8,
-    "weakness": "Tome",
     "weaknesses": [
       "Tome",
       "Fire",
       "Ice",
       "Light"
     ],
+    "weakness": "Tome",
     "level": 37,
     "hp": 14000,
     "patk": 405,
     "pdef": 40,
     "matk": 470,
     "mdef": 55,
+    "speed": 150,
+    "crit": 181,
+    "accuracy": 234,
+    "evasion": 171,
+    "exp": 55,
+    "jp": 18,
+    "steal": "Cleansing Leaf",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -28965,19 +32742,15 @@ const enemyData = [
         "name": "Scratch",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Horn",
-    "drop": "Kraken Ink, Chimera Fang, Gold Dust",
-    "immunities": "Curse, Terror"
+    ]
   },
   {
     "id": "98867.0",
     "name": "Thief",
     "area": "A Long-Lost Love",
     "subArea": "Cavern of Mists",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -28985,12 +32758,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 17499,
     "patk": 390,
     "pdef": 30,
     "matk": 360,
     "mdef": 20,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 231,
+    "evasion": 130,
+    "exp": 50,
+    "jp": 16,
+    "steal": "Sharp Nut (M)",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29012,19 +32795,15 @@ const enemyData = [
         "name": "Mass Armor Down",
         "type": "Unknown"
       }
-    ],
-    "steal": "Moonstone",
-    "drop": "Olive, Rusty Coin, Kraken Ink",
-    "immunities": "Poison, Blind"
+    ]
   },
   {
     "id": "98868.0",
     "name": "Thief",
     "area": "A Long-Lost Love",
     "subArea": "Cavern of Mists",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -29032,12 +32811,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 17499,
     "patk": 390,
     "pdef": 30,
     "matk": 360,
     "mdef": 20,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 231,
+    "evasion": 130,
+    "exp": 50,
+    "jp": 16,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29059,19 +32848,15 @@ const enemyData = [
         "name": "Mass Armor Down",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rusty Coin",
-    "drop": "JP, Silver Nugget, Quality Beast Claw",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98869.0",
     "name": "Thief",
     "area": "A Long-Lost Love",
     "subArea": "Cavern of Mists",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 9,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -29079,12 +32864,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Spear",
     "level": 36,
     "hp": 14000,
     "patk": 380,
     "pdef": 30,
     "matk": 400,
     "mdef": 40,
+    "speed": 100,
+    "crit": 179,
+    "accuracy": 231,
+    "evasion": 130,
+    "exp": 50,
+    "jp": 16,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29106,31 +32901,37 @@ const enemyData = [
         "name": "Mass Armor Down",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Claw, Griffin Claw",
-    "drop": "Healing Grape Bunch, Unicorn Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98790.0",
     "name": "Colossal Blightant",
     "area": "An Encounter with Esperre",
     "subArea": "Sufrataljah Sands",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 76791,
     "patk": 550,
     "pdef": 60,
     "matk": 555,
     "mdef": 60,
+    "speed": 140,
+    "crit": 188,
+    "accuracy": 244,
+    "evasion": 130,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Jaw Crunch",
@@ -29152,31 +32953,37 @@ const enemyData = [
         "name": "Stoneblood",
         "type": "Elem"
       }
-    ],
-    "steal": "Holy Water (L), Shiny Coin",
-    "drop": "Dragon Scale, Olive, Manticore Stinger",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98801.0",
     "name": "Colossal Blightant",
     "area": "An Encounter with Esperre",
     "subArea": "Sufrataljah Sands",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 76791,
     "patk": 550,
     "pdef": 60,
     "matk": 555,
     "mdef": 60,
+    "speed": 140,
+    "crit": 188,
+    "accuracy": 244,
+    "evasion": 130,
+    "exp": 218,
+    "jp": 55,
+    "steal": "Bottle of Poison Dust",
+    "drop": "Antidote Stone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Jaw Crunch",
@@ -29202,19 +33009,15 @@ const enemyData = [
         "name": "<skl_user_name>'s stomach becomes enlarged!",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Beast Meat, Gold Dust",
-    "drop": "Rare Beast Claw, Quality Beast Tusk, Rusty Coin",
-    "immunities": "Instant Death, Curse"
+    ]
   },
   {
     "id": "98796.0",
     "name": "Immoral Noble",
     "area": "An Encounter with Xerc",
     "subArea": "Grandport: Estate Entrance",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 16,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -29222,12 +33025,22 @@ const enemyData = [
       "Tome",
       "Fan"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 38350,
     "patk": 575,
     "pdef": 61,
     "matk": 585,
     "mdef": 50,
+    "speed": 156,
+    "crit": 188,
+    "accuracy": 244,
+    "evasion": 156,
+    "exp": 272,
+    "jp": 55,
+    "steal": "Almighty Soulstone",
+    "drop": "Energizing Pomegranate (L) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -29249,19 +33062,15 @@ const enemyData = [
         "name": "Not so fast!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life, Revitalizing Jam (M)",
-    "drop": "Star Fragment, Hydra Scale, Shiny Coin",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98797.0",
     "name": "Immoral Noble's Lackey",
     "area": "An Encounter with Xerc",
     "subArea": "Grandport: Estate Entrance",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 15,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -29269,12 +33078,22 @@ const enemyData = [
       "Bow",
       "Fan"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 25606,
     "patk": 552,
     "pdef": 61,
     "matk": 455,
     "mdef": 50,
+    "speed": 143,
+    "crit": 183,
+    "accuracy": 237,
+    "evasion": 123,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -29292,31 +33111,37 @@ const enemyData = [
         "name": "Wild Numbing Blade",
         "type": "Phys"
       }
-    ],
-    "steal": "Shiny Coin",
-    "drop": "Star Fragment",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98793.0",
     "name": "Gluttonous Salamander",
     "area": "An Encounter with Cyrus",
     "subArea": "Atlasdam Flats",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 25,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 43,
     "hp": 80358,
     "patk": 583,
     "pdef": 60,
     "matk": 584,
     "mdef": 60,
+    "speed": 130,
+    "crit": 195,
+    "accuracy": 252,
+    "evasion": 100,
+    "exp": 258,
+    "jp": 59,
+    "steal": "Olive of Life (L)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Tail Slap",
@@ -29346,19 +33171,15 @@ const enemyData = [
         "name": "<skl_user_name> unhinges its jaws!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Tusk, Sphinx Feather",
-    "drop": "Basilisk Eye",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98794.0",
     "name": "Edwin",
     "area": "An Encounter with Ophilia",
     "subArea": "Flamesgrace Wilds",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 20,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -29366,12 +33187,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 61625,
     "patk": 540,
     "pdef": 50,
     "matk": 510,
     "mdef": 30,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 255,
+    "evasion": 187,
+    "exp": 339,
+    "jp": 60,
+    "steal": "Critical Nut (M)",
+    "drop": "Stimulating Cuffs x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -29401,31 +33232,37 @@ const enemyData = [
         "name": "<skl_user_name> stands ready!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Gold Dust",
-    "drop": "Unicorn Horn, Basilisk Eye, Beast Fang",
-    "immunities": "Paralysis, Terror"
+    ]
   },
   {
     "id": "98795.0",
     "name": "Edwin's Subordinate",
     "area": "An Encounter with Ophilia",
     "subArea": "Flamesgrace Wilds",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Dagger",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 16170,
     "patk": 500,
     "pdef": 40,
     "matk": 500,
     "mdef": 40,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 255,
+    "evasion": 187,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Ignition",
@@ -29443,19 +33280,15 @@ const enemyData = [
         "name": "Ethereal Healing",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb, Revitalizing Jam (M), Healing Grape Bunch",
-    "drop": "Basilisk Eye",
-    "immunities": "Sleep, Instant Death"
+    ]
   },
   {
     "id": "98870.0",
     "name": "Detof Clan Pursuer",
     "area": "The Missing Brother",
     "subArea": "East Cyphlo Banks",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 13,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -29463,12 +33296,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 20272,
     "patk": 500,
     "pdef": 40,
     "matk": 450,
     "mdef": 30,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 170,
+    "exp": 80,
+    "jp": 20,
+    "steal": "Critical Nut (M)",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29490,19 +33333,15 @@ const enemyData = [
         "name": "Mass Physical Boost",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Fang",
-    "drop": "Moonstone, SP-Restoring Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98871.0",
     "name": "Detof Clan Pursuer",
     "area": "The Missing Brother",
     "subArea": "East Cyphlo Banks",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 13,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -29510,12 +33349,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 20272,
     "patk": 500,
     "pdef": 40,
     "matk": 450,
     "mdef": 30,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 170,
+    "exp": 80,
+    "jp": 20,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29537,19 +33386,15 @@ const enemyData = [
         "name": "Mass Physical Boost",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Tusk, Olive of Life (M)",
-    "drop": "Iron Ore, Rusty Coin, Griffin Claw",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98872.0",
     "name": "Detof Clan Pursuer",
     "area": "The Missing Brother",
     "subArea": "East Cyphlo Banks",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 11,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -29557,12 +33402,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 17500,
     "patk": 490,
     "pdef": 34,
     "matk": 450,
     "mdef": 45,
+    "speed": 130,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 170,
+    "exp": 80,
+    "jp": 20,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29584,31 +33439,37 @@ const enemyData = [
         "name": "Mass Physical Boost",
         "type": "Unknown"
       }
-    ],
-    "steal": "Hydra Scale",
-    "drop": "Antidote Herb, Antidote Herb (L)",
-    "immunities": "Paralysis, Sleep"
+    ]
   },
   {
     "id": "98842.0",
     "name": "Fierce Fly",
     "area": "Treasure Event Battle 1",
     "subArea": "Golden Palace: Middle Floor",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 44,
     "hp": 12699,
     "patk": 517,
     "pdef": 60,
     "matk": 517,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 256,
+    "evasion": 187,
+    "exp": 40,
+    "jp": 15,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29622,31 +33483,37 @@ const enemyData = [
         "name": "Deafening Buzz",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Horn, Dragon Scale",
-    "drop": "Beast Meat, Beast Tusk, Blessed Olive",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98843.0",
     "name": "Brigand Bones II",
     "area": "Treasure Event Battle 1",
     "subArea": "Golden Palace: Middle Floor",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 6,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Fire",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 44,
     "hp": 12699,
     "patk": 517,
     "pdef": 60,
     "matk": 517,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 256,
+    "evasion": 187,
+    "exp": 44,
+    "jp": 15,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29660,31 +33527,37 @@ const enemyData = [
         "name": "Strip Armaments",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Fang, Meteorite",
-    "drop": "Beast Hide, Herb",
-    "immunities": "Petrification, Curse"
+    ]
   },
   {
     "id": "98844.0",
     "name": "Light Revenant",
     "area": "Treasure Event Battle 2",
     "subArea": "Golden Palace: Lower Floor",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Staff",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 20235,
     "patk": 493,
     "pdef": 60,
     "matk": 493,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 256,
+    "evasion": 187,
+    "exp": 87,
+    "jp": 16,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29698,31 +33571,37 @@ const enemyData = [
         "name": "Solar Ray",
         "type": "Elem"
       }
-    ],
-    "steal": "Blessed Olive (M), Holy Water (M)",
-    "drop": "Iron Ore",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98846.0",
     "name": "Gold Remnant",
     "area": "Treasure Event Battle 2",
     "subArea": "Golden Palace: Lower Floor",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 15438,
     "patk": 493,
     "pdef": 60,
     "matk": 534,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 256,
+    "evasion": 187,
+    "exp": 70,
+    "jp": 15,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -29736,31 +33615,37 @@ const enemyData = [
         "name": "Boulder Rain",
         "type": "Elem"
       }
-    ],
-    "steal": "Shiny Coin",
-    "drop": "Sphinx Feather",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98844.0",
     "name": "Light Revenant",
     "area": "Treasure Event Battle 3",
     "subArea": "Golden Palace: Lower Floor",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Staff",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 20235,
     "patk": 493,
     "pdef": 60,
     "matk": 493,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 256,
+    "evasion": 187,
+    "exp": 87,
+    "jp": 16,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29774,31 +33659,37 @@ const enemyData = [
         "name": "Solar Ray",
         "type": "Elem"
       }
-    ],
-    "steal": "Blessed Olive, Sunshard, Inspiring Plum Basket",
-    "drop": "Star Fragment",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98845.0",
     "name": "Ivory Remnant",
     "area": "Treasure Event Battle 3",
     "subArea": "Golden Palace: Lower Floor",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 15438,
     "patk": 493,
     "pdef": 60,
     "matk": 534,
     "mdef": 60,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 256,
+    "evasion": 187,
+    "exp": 64,
+    "jp": 15,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bite",
@@ -29812,19 +33703,15 @@ const enemyData = [
         "name": "Midnight Sun",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb (M), Dragon Scale",
-    "drop": "Kraken Ink",
-    "immunities": "Curse, Petrification"
+    ]
   },
   {
     "id": "98731.0",
     "name": "Giant Gator",
     "area": "An Encounter with Reime",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -29833,12 +33720,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 40,
     "hp": 31022,
     "patk": 625,
     "pdef": 88,
     "matk": 522,
     "mdef": 72,
+    "speed": 156,
+    "crit": 188,
+    "accuracy": 244,
+    "evasion": 178,
+    "exp": 218,
+    "jp": 55,
+    "steal": "Healing Grape (M)",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29860,31 +33757,37 @@ const enemyData = [
         "name": "Unearthly Roar",
         "type": "Phys"
       }
-    ],
-    "steal": "Meteorite, Antidote Herb (L), Beast Fang",
-    "drop": "Phoenix Feather, Griffin Claw, Blessed Olive (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98906.0",
     "name": "Spiked Skink",
     "area": "An Encounter with Reime",
     "subArea": "Subterranean Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Staff",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 40,
     "hp": 22000,
     "patk": 590,
     "pdef": 60,
     "matk": 500,
     "mdef": 40,
+    "speed": 183,
+    "crit": 127,
+    "accuracy": 141,
+    "evasion": 141,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -29898,19 +33801,15 @@ const enemyData = [
         "name": "Strong Thorn Storm",
         "type": "Phys"
       }
-    ],
-    "steal": "Revitalizing Jam (L), Rare Beast Meat",
-    "drop": "Soulstone, Phoenix Feather",
-    "immunities": "Terror"
+    ]
   },
   {
     "id": "98732.0",
     "name": "Barenga",
     "area": "An Encounter with Reime",
     "subArea": "Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -29918,12 +33817,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 59434,
     "patk": 656,
     "pdef": 88,
     "matk": 546,
     "mdef": 72,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 360,
+    "jp": 61,
+    "steal": "Herb of Vitality",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -29941,31 +33850,37 @@ const enemyData = [
         "name": "Flail",
         "type": "Phys"
       }
-    ],
-    "steal": "Moonstone",
-    "drop": "Quality Beast Claw, Quality Beast Hide",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98902.0",
     "name": "Barenga's Right Arm",
     "area": "An Encounter with Reime",
     "subArea": "Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Fan",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 15000,
     "patk": 620,
     "pdef": 65,
     "matk": 500,
     "mdef": 65,
+    "speed": 155,
+    "crit": 206,
+    "accuracy": 269,
+    "evasion": 160,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Sting",
@@ -29979,31 +33894,37 @@ const enemyData = [
         "name": "Triple Bite",
         "type": "Phys"
       }
-    ],
-    "steal": "Shadow Soulstone, Copper Ore, Revitalizing Jam",
-    "drop": "Quality Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98903.0",
     "name": "Barenga's Left Arm",
     "area": "An Encounter with Reime",
     "subArea": "Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 5,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
       "Staff",
       "Wind"
     ],
+    "weakness": "Axe",
     "level": 45,
     "hp": 13450,
     "patk": 620,
     "pdef": 65,
     "matk": 500,
     "mdef": 65,
+    "speed": 165,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 160,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Pierce",
@@ -30017,19 +33938,15 @@ const enemyData = [
         "name": "Repeated Thrust",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Meat",
-    "drop": "Quality Beast Claw",
-    "immunities": "Curse, Instant Death"
+    ]
   },
   {
     "id": "98733.0",
     "name": "Chilritta",
     "area": "An Encounter with Reime",
     "subArea": "Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -30037,12 +33954,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 50,
     "hp": 120000,
     "patk": 561,
     "pdef": 90,
     "matk": 650,
     "mdef": 80,
+    "speed": 150,
+    "crit": 211,
+    "accuracy": 274,
+    "evasion": 201,
+    "exp": 456,
+    "jp": 68,
+    "steal": "Magic Nut (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Fireshot",
@@ -30064,19 +33991,15 @@ const enemyData = [
         "name": "Scorching Spell",
         "type": "Elem"
       }
-    ],
-    "steal": "Copper Ore, Minotaur Horn, Manticore Stinger",
-    "drop": "Beast Hide, Antidote Herb, HP-Restoring Herb (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98904.0",
     "name": "Chilritta's #1 Apprentice",
     "area": "An Encounter with Reime",
     "subArea": "Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -30084,12 +34007,22 @@ const enemyData = [
       "Fan",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 50,
     "hp": 32000,
     "patk": 530,
     "pdef": 65,
     "matk": 630,
     "mdef": 65,
+    "speed": 140,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Slam",
@@ -30103,31 +34036,37 @@ const enemyData = [
         "name": "Multifire",
         "type": "Elem"
       }
-    ],
-    "steal": "Iron Ore",
-    "drop": "Rusty Coin, Old Coin, Quality Beast Tusk",
-    "immunities": "Terror, Silence"
+    ]
   },
   {
     "id": "98905.0",
     "name": "Chilritta's #2 Apprentice",
     "area": "An Encounter with Reime",
     "subArea": "Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 6,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Fan",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 50,
     "hp": 21075,
     "patk": 520,
     "pdef": 60,
     "matk": 610,
     "mdef": 60,
+    "speed": 140,
+    "crit": 195,
+    "accuracy": 252,
+    "evasion": 185,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Traumatic Bash",
@@ -30145,30 +34084,36 @@ const enemyData = [
         "name": "Repeated Brutal Bludgeon",
         "type": "Phys"
       }
-    ],
-    "steal": "Minotaur Horn",
-    "drop": "Manticore Stinger",
-    "immunities": "Petrification, Sleep"
+    ]
   },
   {
     "id": "98730.0",
     "name": "Reime",
     "area": "An Encounter with Reime",
     "subArea": "Arena",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 29,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Fan",
       "Thunder"
     ],
+    "weakness": "Axe",
     "level": 60,
     "hp": 440000,
     "patk": 789,
     "pdef": 98,
     "matk": 759,
     "mdef": 90,
+    "speed": 198,
+    "crit": 234,
+    "accuracy": 305,
+    "evasion": 214,
+    "exp": 751,
+    "jp": 81,
+    "steal": "Vengeful Blade Mastery",
+    "drop": "Judicious Blade Mastery x1 (100%)",
+    "immunities": "Instant Death, Sleep, Enchant",
     "skills": [
       {
         "name": "Vengeful Blade's Hilt",
@@ -30234,31 +34179,37 @@ const enemyData = [
         "name": "Reckless Lotus Blade",
         "type": "Phys"
       }
-    ],
-    "steal": "Rusty Coin, Basilisk Eye, Phoenix Feather",
-    "drop": "Gold Dust",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98813.0",
     "name": "Light Elemental",
     "area": "An Assistant like No Other",
     "subArea": "Atlasdam Flats",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 7,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
       "Wind",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 45,
     "hp": 14726,
     "patk": 448,
     "pdef": 54,
     "matk": 466,
     "mdef": 66,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 80,
+    "jp": 20,
+    "steal": "Light Soulstone (L)",
+    "drop": "Light Soulstone (XL) x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Light Shot",
@@ -30272,19 +34223,15 @@ const enemyData = [
         "name": "Wild Light Shot",
         "type": "Elem"
       }
-    ],
-    "steal": "SP-Restoring Nut (L), Healing Grape Bunch",
-    "drop": "Healing Grape Bunch",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98874.0",
     "name": "Immoral Scholar",
     "area": "An Assistant like No Other",
     "subArea": "Atlasdam Flats",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 15,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -30292,12 +34239,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 38606,
     "patk": 480,
     "pdef": 50,
     "matk": 530,
     "mdef": 60,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 150,
+    "exp": 96,
+    "jp": 20,
+    "steal": "Invigorating Nut (M)",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Icewind",
@@ -30315,19 +34272,15 @@ const enemyData = [
         "name": "Ancient Magic",
         "type": "Elem"
       }
-    ],
-    "steal": "Beast Hide, Healing Grape Bunch, Beast Meat",
-    "drop": "Blessed Olive, Shiny Coin",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98875.0",
     "name": "Immoral Scholar's Lackey",
     "area": "An Assistant like No Other",
     "subArea": "Atlasdam Flats",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -30335,12 +34288,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 17500,
     "patk": 500,
     "pdef": 30,
     "matk": 450,
     "mdef": 25,
+    "speed": 150,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 96,
+    "jp": 20,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30358,19 +34321,15 @@ const enemyData = [
         "name": "Improved Magic",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life (M), Antidote Herb",
-    "drop": "Basilisk Eye, Iron Ore",
-    "immunities": "Curse, Blind"
+    ]
   },
   {
     "id": "98876.0",
     "name": "Immoral Scholar's Lackey",
     "area": "An Assistant like No Other",
     "subArea": "Atlasdam Flats",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 10,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
@@ -30378,12 +34337,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 16000,
     "patk": 500,
     "pdef": 30,
     "matk": 450,
     "mdef": 25,
+    "speed": 150,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 96,
+    "jp": 20,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30401,19 +34370,15 @@ const enemyData = [
         "name": "Improved Magic",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water",
-    "drop": "Cerberus Fang, Holy Water (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98817.0",
     "name": "Former Edoras Captain",
     "area": "The Blade of the Weak",
     "subArea": "Isle in the Middlesea",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 8,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
@@ -30421,12 +34386,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 45,
     "hp": 58506,
     "patk": 563,
     "pdef": 60,
     "matk": 815,
     "mdef": 60,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 55,
+    "jp": 14,
+    "steal": "Olive of Life (M)",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30440,19 +34415,15 @@ const enemyData = [
         "name": "Charge!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Tusk, Beast Tusk, Minotaur Horn",
-    "drop": "HP-Restoring Herb (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98818.0",
     "name": "Former Edoras Soldier",
     "area": "The Blade of the Weak",
     "subArea": "Isle in the Middlesea",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -30460,12 +34431,22 @@ const enemyData = [
       "Ice",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 22444,
     "patk": 497,
     "pdef": 60,
     "matk": 497,
     "mdef": 60,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 49,
+    "jp": 13,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30479,31 +34460,37 @@ const enemyData = [
         "name": "Fiery Blow",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water (L)",
-    "drop": "Beast Hide, Inspiring Plum Basket",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98814.0",
     "name": "Forbidden Magic Guardian",
     "area": "Great Expectations",
     "subArea": "Forbidden Temple: Lower Floor",
-    "type": "Boss",
+    "type": "Sidequest",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Staff",
       "Fan"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 39004,
     "patk": 518,
     "pdef": 60,
     "matk": 555,
     "mdef": 60,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 74,
+    "jp": 19,
+    "steal": "Fortifying Nut (M)",
+    "drop": "Fortifying Nut (M) x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30517,19 +34504,15 @@ const enemyData = [
         "name": "Spirited Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life, Antidote Herb, Beast Horn",
-    "drop": "Herb, Revitalizing Jam, Griffin Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98815.0",
     "name": "Black Scarlet (Polearm)",
     "area": "What Remains of the Black Scarlet",
     "subArea": "Path to the Cave Of Origin",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -30537,12 +34520,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 14726,
     "patk": 466,
     "pdef": 66,
     "matk": 466,
     "mdef": 54,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 49,
+    "jp": 13,
+    "steal": "Healing Grape (M)",
+    "drop": "Healing Grape Bunch x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30568,19 +34561,15 @@ const enemyData = [
         "name": "Runaway Stampede",
         "type": "Phys"
       }
-    ],
-    "steal": "Ancient Coin",
-    "drop": "Revitalizing Jam (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98816.0",
     "name": "Black Scarlet (Hammer)",
     "area": "What Remains of the Black Scarlet",
     "subArea": "Path to the Cave Of Origin",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -30588,12 +34577,22 @@ const enemyData = [
       "Fire",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 13989,
     "patk": 466,
     "pdef": 60,
     "matk": 544,
     "mdef": 60,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 49,
+    "jp": 13,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Healing Grape Bunch x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30627,19 +34626,15 @@ const enemyData = [
         "name": "Protective Shield",
         "type": "Unknown"
       }
-    ],
-    "steal": "Wind Soulstone, Healing Grape",
-    "drop": "Moonstone, EXP, SP-Restoring Nut (M)",
-    "immunities": "Blind, Sleep"
+    ]
   },
   {
     "id": "98811.0",
     "name": "Ruler of the Sands",
     "area": "Unnatural Tremors",
     "subArea": "Sweltering Cave",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 20,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -30647,12 +34642,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 52450,
     "patk": 590,
     "pdef": 66,
     "matk": 500,
     "mdef": 54,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 112,
+    "exp": 288,
+    "jp": 61,
+    "steal": "Fire Soulstone (L)",
+    "drop": "Fang of Ferocity x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30678,19 +34683,15 @@ const enemyData = [
         "name": "Acid Spray",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life, Gold Dust, Quality Beast Fang",
-    "drop": "Rusty Coin, Beast Claw, Phoenix Feather",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98810.0",
     "name": "Abysmal One",
     "area": "In Search of What Remains",
     "subArea": "Sunken Ship",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 25,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -30698,12 +34699,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 288580,
     "patk": 658,
     "pdef": 135,
     "matk": 658,
     "mdef": 120,
+    "speed": 187,
+    "crit": 222,
+    "accuracy": 290,
+    "evasion": 100,
+    "exp": 457,
+    "jp": 75,
+    "steal": "Refreshing Jam",
+    "drop": "Eye of Calamity x1 (100%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30733,31 +34744,37 @@ const enemyData = [
         "name": "Triple Tentacle Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "Moonstone",
-    "drop": "Ancient Coin",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "31801.0",
     "name": "Menacing Fallen Hornburg Knight",
     "area": "Treasure Event Battle 4",
     "subArea": "Hell: Hornburg Castle - West",
-    "type": "Rare",
+    "type": "Sidequest",
     "shields": 13,
-    "weakness": "Tome",
     "weaknesses": [
       "Tome",
       "Fan",
       "Fire",
       "Wind"
     ],
+    "weakness": "Tome",
     "level": 55,
     "hp": 54270,
     "patk": 594,
     "pdef": 49,
     "matk": 594,
     "mdef": 49,
+    "speed": 146,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 134,
+    "jp": 20,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30787,19 +34804,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ice Soulstone",
-    "drop": "Antidote Herb (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "31802.0",
     "name": "Fallen Hornburg Soldier",
     "area": "Treasure Event Battle 4",
     "subArea": "Hell: Hornburg Castle - West",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
@@ -30807,12 +34820,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 33489,
     "patk": 552,
     "pdef": 49,
     "matk": 552,
     "mdef": 49,
+    "speed": 146,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 101,
+    "jp": 15,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30830,19 +34853,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Light Soulstone, Shadow Soulstone",
-    "drop": "Leaf, Beast Fang, Revitalizing Jam",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "99130.0",
     "name": "Fallen Hornburg Soldier",
     "area": "Treasure Event Battle 4",
     "subArea": "Hell: Hornburg Castle - West",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
@@ -30850,12 +34869,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 33489,
     "patk": 552,
     "pdef": 49,
     "matk": 552,
     "mdef": 49,
+    "speed": 146,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 101,
+    "jp": 15,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "none",
     "skills": [
       {
         "name": "Attack",
@@ -30873,19 +34902,15 @@ const enemyData = [
         "name": "<skl_user_name> roars in anguish!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Unicorn Horn, Rare Beast Fang, Rare Beast Claw",
-    "drop": "Sunshard, Quality Beast Hide, Hydra Scale",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98886.0",
     "name": "Warbringer's Phantom",
     "area": "The Eight Sacred Treasures",
     "subArea": "Isle of Heroes Past",
-    "type": "Regular",
+    "type": "Sidequest",
     "shields": 20,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -30902,12 +34927,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 60,
     "hp": 195470,
     "patk": 660,
     "pdef": 260,
     "matk": 1,
     "mdef": 160,
+    "speed": 298,
+    "crit": 380,
+    "accuracy": 400,
+    "evasion": 185,
+    "exp": 751,
+    "jp": 81,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Art of the Sword",
@@ -30973,19 +35008,15 @@ const enemyData = [
         "name": "She summons three weapons!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Light Soulstone, Ancient Coin",
-    "drop": "Dragon Scale",
-    "immunities": "Terror, Instant Death"
+    ]
   },
   {
     "id": "98850.0",
     "name": "Demon Blade's Curse",
     "area": "An Indestructible Flame",
     "subArea": "Agapea",
-    "type": "Boss",
+    "type": "Sidequest",
     "shields": 25,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -30993,12 +35024,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 405000,
     "patk": 905,
     "pdef": 96,
     "matk": 957,
     "mdef": 160,
+    "speed": 231,
+    "crit": 236,
+    "accuracy": 600,
+    "evasion": 100,
+    "exp": 2175,
+    "jp": 118,
+    "steal": "Shadow Soulstone (L)",
+    "drop": "Shadow Soulstone (XL) x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "It prepares to attack a target!",
@@ -31044,19 +35085,15 @@ const enemyData = [
         "name": "It prepares to attack a target!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Minotaur Horn",
-    "drop": "Old Coin, Star Fragment, Rare Beast Tusk",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98042.0",
     "name": "Amatsukami no Orochi",
     "area": "Superboss",
     "subArea": "Cove of Clouds",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 29,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -31072,12 +35109,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 1200000,
     "patk": 980,
     "pdef": 85,
     "matk": 960,
     "mdef": 85,
+    "speed": 320,
+    "crit": 323,
+    "accuracy": 427,
+    "evasion": 313,
+    "exp": 74453,
+    "jp": 203,
+    "steal": "Rejuvenating Jam",
+    "drop": "Dragonfire Mastery x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Tail Lash",
@@ -31127,10 +35174,7 @@ const enemyData = [
         "name": "Primal Inferno",
         "type": "Elem"
       }
-    ],
-    "steal": "Nut",
-    "drop": "SP-Restoring Nut",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98898.0",
@@ -31139,19 +35183,28 @@ const enemyData = [
     "subArea": "Cove of Clouds",
     "type": "Boss",
     "shields": 15,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Tome",
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 0,
     "hp": 120000,
     "patk": 754,
     "pdef": 56,
     "matk": 756,
     "mdef": 50,
+    "speed": 390,
+    "crit": 323,
+    "accuracy": 427,
+    "evasion": 300,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Primal Embers",
@@ -31189,10 +35242,7 @@ const enemyData = [
         "name": "Encumbrance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rusty Coin, Fire Soulstone",
-    "drop": "Soulstone, Nut, Revitalizing Jam (L)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98899.0",
@@ -31201,19 +35251,28 @@ const enemyData = [
     "subArea": "Cove of Clouds",
     "type": "Boss",
     "shields": 12,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fan",
       "Fire",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 0,
     "hp": 100000,
     "patk": 754,
     "pdef": 36,
     "matk": 756,
     "mdef": 65,
+    "speed": 350,
+    "crit": 323,
+    "accuracy": 427,
+    "evasion": 300,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Icy Tempest",
@@ -31243,10 +35302,7 @@ const enemyData = [
         "name": "An enveloping light radiates from the cerulean orb...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Kraken Ink, Cerberus Fang",
-    "drop": "Herb",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98900.0",
@@ -31255,19 +35311,28 @@ const enemyData = [
     "subArea": "Cove of Clouds",
     "type": "Boss",
     "shields": 8,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Wind",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 0,
     "hp": 80000,
     "patk": 754,
     "pdef": 47,
     "matk": 756,
     "mdef": 65,
+    "speed": 360,
+    "crit": 323,
+    "accuracy": 427,
+    "evasion": 300,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Primal Levinbolt",
@@ -31301,10 +35366,7 @@ const enemyData = [
         "name": "An enveloping light radiates from the golden orb...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Revitalizing Jam (M), Quality Beast Tusk, HP-Restoring Herb (L)",
-    "drop": "Inspiring Plum Basket, Gold Dust",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98901.0",
@@ -31313,19 +35375,28 @@ const enemyData = [
     "subArea": "Cove of Clouds",
     "type": "Boss",
     "shields": 13,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Thunder",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 0,
     "hp": 110000,
     "patk": 754,
     "pdef": 65,
     "matk": 756,
     "mdef": 75,
+    "speed": 340,
+    "crit": 323,
+    "accuracy": 427,
+    "evasion": 300,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Primal Tempest",
@@ -31359,10 +35430,7 @@ const enemyData = [
         "name": "An enveloping light radiates from the jade orb...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Fire Soulstone, HP-Restoring Herb (L), Cerberus Fang",
-    "drop": "Sphinx Feather, Herb",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98895.0",
@@ -31371,44 +35439,59 @@ const enemyData = [
     "subArea": "Banquet of Nought: Main Hall",
     "type": "Regular",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 8888,
     "patk": 105,
     "pdef": 153,
     "matk": 100,
     "mdef": 153,
-    "skills": [],
-    "steal": "Beast Tusk, Inspiring Plum",
-    "drop": "EXP, Quality Beast Claw",
-    "immunities": "Paralysis, Stun"
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 300,
+    "exp": 576,
+    "jp": 59,
+    "steal": "n/a",
+    "drop": "Quality Whiskey x1 (100%)",
+    "immunities": "All",
+    "skills": []
   },
   {
     "id": "98896.0",
     "name": "Chubby Cait",
     "area": "Extra",
     "subArea": "Banquet of Nought: Main Hall",
-    "type": "Regular",
+    "type": "Rare",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 80,
     "patk": 105,
     "pdef": 400,
     "matk": 100,
     "mdef": 550,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 2000,
+    "jp": 1000,
+    "steal": "n/a",
+    "drop": "Cat Whisker x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Bag Toss",
@@ -31418,31 +35501,37 @@ const enemyData = [
         "name": "Mass Bag Toss",
         "type": "Phys"
       }
-    ],
-    "steal": "SP-Restoring Nut (M), HP-Restoring Herb, Beast Tusk",
-    "drop": "SP-Restoring Nut (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98897.0",
     "name": "King Octopuff",
     "area": "Extra",
     "subArea": "Banquet of Nought: Main Hall",
-    "type": "Boss",
+    "type": "Rare",
     "shields": 4,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 80,
     "patk": 105,
     "pdef": 400,
     "matk": 100,
     "mdef": 550,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 1000,
+    "jp": 1500,
+    "steal": "n/a",
+    "drop": "Octopus Suction Cup x1 (5%)",
+    "immunities": "none",
     "skills": [
       {
         "name": "Leaf Toss",
@@ -31452,10 +35541,7 @@ const enemyData = [
         "name": "Big Leaf Toss",
         "type": "Phys"
       }
-    ],
-    "steal": "Phoenix Feather, Healing Grape Bunch, Quality Beast Claw",
-    "drop": "Manticore Stinger, Blessed Olive",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98857.0",
@@ -31464,7 +35550,6 @@ const enemyData = [
     "subArea": "Path to Waterpool Caves",
     "type": "Regular",
     "shields": 18,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -31472,12 +35557,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 35,
     "hp": 114684,
     "patk": 543,
     "pdef": 55,
     "matk": 532,
     "mdef": 55,
+    "speed": 125,
+    "crit": 154,
+    "accuracy": 197,
+    "evasion": 144,
+    "exp": 191,
+    "jp": 39,
+    "steal": "Olive of Life (M)",
+    "drop": "Nourishing Nut (L) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -31531,10 +35626,7 @@ const enemyData = [
         "name": "Successive Strike",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Fang, Revitalizing Jam (M), Old Coin",
-    "drop": "Quality Beast Fang, Beast Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98882.0",
@@ -31543,7 +35635,6 @@ const enemyData = [
     "subArea": "Path to Herminia's Manse",
     "type": "Regular",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -31556,12 +35647,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 35,
     "hp": 93558,
     "patk": 543,
     "pdef": 55,
     "matk": 512,
     "mdef": 55,
+    "speed": 125,
+    "crit": 154,
+    "accuracy": 197,
+    "evasion": 144,
+    "exp": 191,
+    "jp": 39,
+    "steal": "Herb of Vitality",
+    "drop": "Invigorating Nut (L) x1 (100%)",
+    "immunities": "Instant Death, Sleep",
     "skills": [
       {
         "name": "<skl_user_name> changed their defensive form.",
@@ -31599,10 +35700,7 @@ const enemyData = [
         "name": "The man-eating flora lets out a piercing shriek!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water (M), Rare Beast Fang",
-    "drop": "Holy Water (L), Beast Horn, Iron Ore",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98884.0",
@@ -31611,7 +35709,6 @@ const enemyData = [
     "subArea": "Path to Herminia's Manse",
     "type": "Regular",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -31619,12 +35716,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 35,
     "hp": 31186,
     "patk": 484,
     "pdef": 55,
     "matk": 488,
     "mdef": 55,
+    "speed": 146,
+    "crit": 177,
+    "accuracy": 227,
+    "evasion": 167,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death, Sleep",
     "skills": [
       {
         "name": "Attack",
@@ -31638,10 +35745,7 @@ const enemyData = [
         "name": "Mold Burst",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water",
-    "drop": "Phoenix Feather, Copper Ore, Cerberus Fang",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98887.0",
@@ -31650,7 +35754,6 @@ const enemyData = [
     "subArea": "Gray Grotto: Depths",
     "type": "Regular",
     "shields": 22,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -31665,12 +35768,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 179928,
     "patk": 640,
     "pdef": 60,
     "matk": 572,
     "mdef": 60,
+    "speed": 146,
+    "crit": 177,
+    "accuracy": 227,
+    "evasion": 167,
+    "exp": 325,
+    "jp": 49,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "Reinvigorating Jam x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Bestial Roar",
@@ -31724,10 +35837,7 @@ const enemyData = [
         "name": "Rotting Breath",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Fang, Kraken Ink",
-    "drop": "Gold",
-    "immunities": "Instant Death, Blind"
+    ]
   },
   {
     "id": "98889.0",
@@ -31736,7 +35846,6 @@ const enemyData = [
     "subArea": "Finesand Ruins",
     "type": "Regular",
     "shields": 20,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -31745,12 +35854,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 184926,
     "patk": 616,
     "pdef": 60,
     "matk": 652,
     "mdef": 60,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 325,
+    "jp": 49,
+    "steal": "Resistant Nut (M)",
+    "drop": "Tough Nut (L) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Falling Rocks",
@@ -31796,10 +35915,7 @@ const enemyData = [
         "name": "Harden",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life, Beast Claw, Beast Meat",
-    "drop": "Rare Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98891.0",
@@ -31808,7 +35924,6 @@ const enemyData = [
     "subArea": "Atlasdam Flats",
     "type": "Regular",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -31820,12 +35935,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 300403,
     "patk": 654,
     "pdef": 85,
     "matk": 645,
     "mdef": 85,
+    "speed": 174,
+    "crit": 205,
+    "accuracy": 268,
+    "evasion": 196,
+    "exp": 536,
+    "jp": 60,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Light Nut (L) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Body Bash",
@@ -31871,10 +35996,7 @@ const enemyData = [
         "name": "Slice Off",
         "type": "Phys"
       }
-    ],
-    "steal": "Wind Soulstone, Quality Beast Hide",
-    "drop": "Hydra Scale",
-    "immunities": "Instant Death, Curse"
+    ]
   },
   {
     "id": "98893.0",
@@ -31883,7 +36005,6 @@ const enemyData = [
     "subArea": "The Outersea",
     "type": "Regular",
     "shields": 25,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -31891,12 +36012,22 @@ const enemyData = [
       "Tome",
       "Fire"
     ],
+    "weakness": "Spear",
     "level": 55,
     "hp": 284336,
     "patk": 642,
     "pdef": 90,
     "matk": 642,
     "mdef": 90,
+    "speed": 187,
+    "crit": 222,
+    "accuracy": 290,
+    "evasion": 212,
+    "exp": 536,
+    "jp": 60,
+    "steal": "Ice Soulstone (XL)",
+    "drop": "Ice Soulstone (XL) x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -31946,10 +36077,7 @@ const enemyData = [
         "name": "Feeding Frenzy",
         "type": "Phys"
       }
-    ],
-    "steal": "Manticore Stinger, Quality Beast Tusk, Beast Fang",
-    "drop": "Kraken Ink",
-    "immunities": "Paralysis"
+    ]
   },
   {
     "id": "98863.0",
@@ -31958,7 +36086,6 @@ const enemyData = [
     "subArea": "Mt. Berecain",
     "type": "Regular",
     "shields": 17,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -31973,12 +36100,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 191487,
     "patk": 713,
     "pdef": 350,
     "matk": 702,
     "mdef": 350,
+    "speed": 358,
+    "crit": 245,
+    "accuracy": 406,
+    "evasion": 228,
+    "exp": 2250,
+    "jp": 88,
+    "steal": "Fire Soulstone (XL)",
+    "drop": "Fire Soulstone (XL) x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Charge",
@@ -32044,19 +36181,15 @@ const enemyData = [
         "name": "Blazing Aura",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Hide, Dragon Scale, Chimera Fang",
-    "drop": "Chimera Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98858.0",
     "name": "Gigantes",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 22,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
@@ -32064,12 +36197,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 147960,
     "patk": 572,
     "pdef": 60,
     "matk": 572,
     "mdef": 60,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 230,
+    "evasion": 169,
+    "exp": 600,
+    "jp": 82,
+    "steal": "Olive of Life (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -32123,19 +36266,15 @@ const enemyData = [
         "name": "Successive Strike",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Claw, Lightning Soulstone",
-    "drop": "Herb",
-    "immunities": "Instant Death, Confusion"
+    ]
   },
   {
     "id": "98883.0",
     "name": "Man-Eating Flora",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 18,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -32148,12 +36287,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 125518,
     "patk": 627,
     "pdef": 60,
     "matk": 593,
     "mdef": 60,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 230,
+    "evasion": 169,
+    "exp": 600,
+    "jp": 82,
+    "steal": "Herb of Vitality",
+    "drop": "n/a",
+    "immunities": "Instant Death, Sleep",
     "skills": [
       {
         "name": "<skl_user_name> changed their defensive form.",
@@ -32191,19 +36340,15 @@ const enemyData = [
         "name": "The man-eating flora lets out a piercing shriek!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sphinx Feather, SP-Restoring Nut (L)",
-    "drop": "SP-Restoring Nut",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98885.0",
     "name": "Man-Eating Virus",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -32211,12 +36356,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 31186,
     "patk": 553,
     "pdef": 60,
     "matk": 470,
     "mdef": 60,
+    "speed": 146,
+    "crit": 177,
+    "accuracy": 227,
+    "evasion": 167,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "Instant Death, Sleep",
     "skills": [
       {
         "name": "Attack",
@@ -32230,19 +36385,15 @@ const enemyData = [
         "name": "Mold Burst",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk, Star Fragment, Ice Soulstone",
-    "drop": "Holy Water (L), Nut",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98888.0",
     "name": "Tyrannodrake",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 26,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -32257,12 +36408,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 55,
     "hp": 370688,
     "patk": 702,
     "pdef": 65,
     "matk": 623,
     "mdef": 65,
+    "speed": 146,
+    "crit": 177,
+    "accuracy": 227,
+    "evasion": 167,
+    "exp": 991,
+    "jp": 100,
+    "steal": "Inspiriting Plum (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Bestial Roar",
@@ -32316,19 +36477,15 @@ const enemyData = [
         "name": "Rotting Breath",
         "type": "Elem"
       }
-    ],
-    "steal": "Kraken Ink, Olive of Life (M), Sphinx Feather",
-    "drop": "Sphinx Feather",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98890.0",
     "name": "Sand Lion",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 25,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -32337,12 +36494,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 55,
     "hp": 375032,
     "patk": 678,
     "pdef": 65,
     "matk": 715,
     "mdef": 65,
+    "speed": 187,
+    "crit": 222,
+    "accuracy": 290,
+    "evasion": 212,
+    "exp": 991,
+    "jp": 100,
+    "steal": "Healing Grape (M)",
+    "drop": "n/a",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Falling Rocks",
@@ -32388,19 +36555,15 @@ const enemyData = [
         "name": "Harden",
         "type": "Unknown"
       }
-    ],
-    "steal": "SP-Restoring Nut (M), Copper Ore",
-    "drop": "SP-Restoring Nut, Griffin Claw",
-    "immunities": "Terror, Instant Death"
+    ]
   },
   {
     "id": "98892.0",
     "name": "Auðnvarg",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 28,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -32412,12 +36575,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 580600,
     "patk": 707,
     "pdef": 102,
     "matk": 701,
     "mdef": 102,
+    "speed": 208,
+    "crit": 245,
+    "accuracy": 322,
+    "evasion": 235,
+    "exp": 2175,
+    "jp": 118,
+    "steal": "Energizing Pomegranate (M)",
+    "drop": "Reinvigorating Jam x1 (10%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Body Bash",
@@ -32463,19 +36636,15 @@ const enemyData = [
         "name": "Slice Off",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Fang, Light Soulstone",
-    "drop": "Holy Water (L), HP-Restoring Herb (L), Quality Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98894.0",
     "name": "Battle-Worn Shark",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 30,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -32486,12 +36655,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 65,
     "hp": 601203,
     "patk": 790,
     "pdef": 108,
     "matk": 790,
     "mdef": 108,
+    "speed": 224,
+    "crit": 266,
+    "accuracy": 348,
+    "evasion": 254,
+    "exp": 2175,
+    "jp": 118,
+    "steal": "Ice Soulstone (XL)",
+    "drop": "Refreshing Jam x1 (10%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -32541,19 +36720,15 @@ const enemyData = [
         "name": "Feeding Frenzy",
         "type": "Phys"
       }
-    ],
-    "steal": "HP-Restoring Herb (M), Rusty Coin, Rare Beast Claw",
-    "drop": "JP",
-    "immunities": "Curse, Sleep"
+    ]
   },
   {
     "id": "98851.0",
     "name": "Sultravi",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 13,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -32568,12 +36743,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 75,
     "hp": 216396,
     "patk": 759,
     "pdef": 350,
     "matk": 747,
     "mdef": 350,
+    "speed": 379,
+    "crit": 268,
+    "accuracy": 435,
+    "evasion": 247,
+    "exp": 5907,
+    "jp": 102,
+    "steal": "Fire Soulstone (XL)",
+    "drop": "Almighty Olive x1 (5%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Charge",
@@ -32639,19 +36824,15 @@ const enemyData = [
         "name": "Blazing Aura",
         "type": "Unknown"
       }
-    ],
-    "steal": "Meteorite",
-    "drop": "Rare Beast Tusk",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98852.0",
     "name": "Immortal Flame",
     "area": "Arena",
     "subArea": "Wishvale",
-    "type": "Regular",
+    "type": "Arena",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -32659,12 +36840,22 @@ const enemyData = [
       "Ice",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 75,
     "hp": 28490,
     "patk": 604,
     "pdef": 300,
     "matk": 591,
     "mdef": 300,
+    "speed": 239,
+    "crit": 268,
+    "accuracy": 369,
+    "evasion": 215,
+    "exp": 0,
+    "jp": 0,
+    "steal": "n/a",
+    "drop": "n/a",
+    "immunities": "All",
     "skills": [
       {
         "name": "Incinerate",
@@ -32678,19 +36869,15 @@ const enemyData = [
         "name": "Combustion",
         "type": "Elem"
       }
-    ],
-    "steal": "Manticore Stinger",
-    "drop": "Revitalizing Jam, Star Fragment, EXP",
-    "immunities": "Confusion, Blind"
+    ]
   },
   {
     "id": "98194.0",
     "name": "Menacing Frostwing Serpent",
     "area": "Frostlands",
     "subArea": "Snowshard Grotto",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -32698,12 +36885,22 @@ const enemyData = [
       "Bow",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 10,
     "hp": 4498,
     "patk": 232,
     "pdef": 19,
     "matk": 166,
     "mdef": 19,
+    "speed": 119,
+    "crit": 99,
+    "accuracy": 99,
+    "evasion": 99,
+    "exp": 14,
+    "jp": 9,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -32737,19 +36934,15 @@ const enemyData = [
         "name": "Howling Whiteout",
         "type": "Elem"
       }
-    ],
-    "steal": "Star Fragment, Blessed Olive (M)",
-    "drop": "Olive of Life (M), Holy Water (M), Quality Beast Hide",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98191.0",
     "name": "Menacing Ettin Asp",
     "area": "Flatlands",
     "subArea": "Serpent's Burrow",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 6,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -32757,12 +36950,22 @@ const enemyData = [
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 11,
     "hp": 4552,
     "patk": 175,
     "pdef": 22,
     "matk": 175,
     "mdef": 22,
+    "speed": 101,
+    "crit": 122,
+    "accuracy": 101,
+    "evasion": 101,
+    "exp": 19,
+    "jp": 10,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -32780,19 +36983,15 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Griffin Claw",
-    "drop": "Basilisk Eye, SP-Restoring Nut, Griffin Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98195.0",
     "name": "Menacing Demon Deer",
     "area": "Woodlands",
     "subArea": "Herminia's Manse: Entrance",
-    "type": "Boss",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -32800,12 +36999,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 11,
     "hp": 6068,
     "patk": 244,
     "pdef": 30,
     "matk": 244,
     "mdef": 30,
+    "speed": 101,
+    "crit": 101,
+    "accuracy": 101,
+    "evasion": 101,
+    "exp": 19,
+    "jp": 10,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -32823,31 +37032,37 @@ const enemyData = [
         "name": "Horn Smash",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Fang",
-    "drop": "Quality Beast Claw",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98192.0",
     "name": "Menacing Ice Lizardman IV",
     "area": "Frostlands",
     "subArea": "Emberglow Laboratory: Entrance",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Bow",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 11,
     "hp": 6784,
     "patk": 244,
     "pdef": 38,
     "matk": 244,
     "mdef": 38,
+    "speed": 101,
+    "crit": 122,
+    "accuracy": 112,
+    "evasion": 112,
+    "exp": 19,
+    "jp": 10,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -32865,19 +37080,15 @@ const enemyData = [
         "name": "Storm Thrust",
         "type": "Elem"
       }
-    ],
-    "steal": "Ancient Coin",
-    "drop": "HP-Restoring Herb (L), Meteorite",
-    "immunities": "Paralysis, Silence"
+    ]
   },
   {
     "id": "98193.0",
     "name": "Menacing Senior Fellow I",
     "area": "Frostlands",
     "subArea": "Emberglow Laboratory",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -32885,12 +37096,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 11,
     "hp": 6068,
     "patk": 244,
     "pdef": 30,
     "matk": 244,
     "mdef": 30,
+    "speed": 101,
+    "crit": 91,
+    "accuracy": 101,
+    "evasion": 101,
+    "exp": 19,
+    "jp": 10,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -32908,19 +37129,15 @@ const enemyData = [
         "name": "Wild Numbing Dust",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Lightning Soulstone, Rare Beast Meat",
-    "drop": "Blessed Olive, Basilisk Eye",
-    "immunities": "Silence, Paralysis"
+    ]
   },
   {
     "id": "98190.0",
     "name": "Menacing Thespian (Leader)",
     "area": "Flatlands",
     "subArea": "Amphitheatre: Dressing Room",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -32928,12 +37145,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 11,
     "hp": 6068,
     "patk": 244,
     "pdef": 30,
     "matk": 244,
     "mdef": 30,
+    "speed": 101,
+    "crit": 91,
+    "accuracy": 101,
+    "evasion": 101,
+    "exp": 19,
+    "jp": 10,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -32955,19 +37182,15 @@ const enemyData = [
         "name": "Wind Soulstone",
         "type": "Elem"
       }
-    ],
-    "steal": "Iron Ore, Hydra Scale",
-    "drop": "Herb",
-    "immunities": "Sleep, Poison"
+    ]
   },
   {
     "id": "98200.0",
     "name": "Menacing Accursed Armor",
     "area": "Frostlands",
     "subArea": "Subterranean Snow Ruins",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -32975,12 +37198,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 15,
     "hp": 7506,
     "patk": 292,
     "pdef": 28,
     "matk": 292,
     "mdef": 28,
+    "speed": 121,
+    "crit": 121,
+    "accuracy": 132,
+    "evasion": 110,
+    "exp": 33,
+    "jp": 14,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -33002,19 +37235,15 @@ const enemyData = [
         "name": "Horrific Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Hide, Minotaur Horn",
-    "drop": "Holy Water (M), Rare Beast Horn",
-    "immunities": "Stun, Paralysis"
+    ]
   },
   {
     "id": "98198.0",
     "name": "Menacing Wind Elemental",
     "area": "Flatlands",
     "subArea": "Knights Ardante Garrison",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
@@ -33022,12 +37251,22 @@ const enemyData = [
       "Thunder",
       "Dark"
     ],
+    "weakness": "Axe",
     "level": 15,
     "hp": 7506,
     "patk": 209,
     "pdef": 28,
     "matk": 292,
     "mdef": 28,
+    "speed": 110,
+    "crit": 121,
+    "accuracy": 110,
+    "evasion": 110,
+    "exp": 33,
+    "jp": 14,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Gale Strike",
@@ -33045,19 +37284,15 @@ const enemyData = [
         "name": "Great Wind",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Horn",
-    "drop": "Quality Beast Fang, Olive of Life (M)",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98199.0",
     "name": "Menacing Frost Bear",
     "area": "Frostlands",
     "subArea": "Emberglow Slopes",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -33065,12 +37300,22 @@ const enemyData = [
       "Tome",
       "Fire"
     ],
+    "weakness": "Sword",
     "level": 15,
     "hp": 7506,
     "patk": 292,
     "pdef": 28,
     "matk": 292,
     "mdef": 28,
+    "speed": 110,
+    "crit": 132,
+    "accuracy": 110,
+    "evasion": 110,
+    "exp": 33,
+    "jp": 14,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -33096,19 +37341,15 @@ const enemyData = [
         "name": "Bloody Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "Inspiring Plum Basket, SP-Restoring Nut (M)",
-    "drop": "Revitalizing Jam",
-    "immunities": "Terror, Sleep"
+    ]
   },
   {
     "id": "98197.0",
     "name": "Menacing Guard Dog",
     "area": "Woodlands",
     "subArea": "Auguste's Villa",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -33116,12 +37357,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 15,
     "hp": 7506,
     "patk": 292,
     "pdef": 28,
     "matk": 292,
     "mdef": 28,
+    "speed": 132,
+    "crit": 121,
+    "accuracy": 121,
+    "evasion": 121,
+    "exp": 33,
+    "jp": 14,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -33147,19 +37398,15 @@ const enemyData = [
         "name": "Bloody Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Horn, Healing Grape, Rare Beast Hide",
-    "drop": "Old Coin",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98196.0",
     "name": "Herminia's Mighty Soldier II",
     "area": "Woodlands",
     "subArea": "Herminia's Manse",
-    "type": "Regular",
+    "type": "Elite",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -33167,12 +37414,22 @@ const enemyData = [
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 21,
     "hp": 10545,
     "patk": 364,
     "pdef": 31,
     "matk": 304,
     "mdef": 23,
+    "speed": 122,
+    "crit": 122,
+    "accuracy": 147,
+    "evasion": 135,
+    "exp": 40,
+    "jp": 19,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -33190,19 +37447,15 @@ const enemyData = [
         "name": "Spirited Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Olive of Life, Beast Fang",
-    "drop": "Soulstone, Hydra Scale, Olive",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98204.0",
     "name": "Menacing Sticky Slug",
     "area": "Woodlands",
     "subArea": "Herminia's Manse: Cellars",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 7,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -33210,12 +37463,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 21,
     "hp": 8923,
     "patk": 304,
     "pdef": 31,
     "matk": 304,
     "mdef": 31,
+    "speed": 122,
+    "crit": 122,
+    "accuracy": 122,
+    "evasion": 122,
+    "exp": 40,
+    "jp": 19,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -33237,19 +37500,15 @@ const enemyData = [
         "name": "<skl_user_name> is more resistant to magical attacks!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Fire Soulstone",
-    "drop": "Rare Beast Claw, Grape",
-    "immunities": "Paralysis, Sleep"
+    ]
   },
   {
     "id": "98201.0",
     "name": "Menacing Thespian (Ruffian)",
     "area": "Flatlands",
     "subArea": "Amphitheatre: Backstage",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -33257,12 +37516,22 @@ const enemyData = [
       "Tome",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 21,
     "hp": 10545,
     "patk": 364,
     "pdef": 31,
     "matk": 364,
     "mdef": 31,
+    "speed": 122,
+    "crit": 122,
+    "accuracy": 122,
+    "evasion": 122,
+    "exp": 40,
+    "jp": 19,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -33280,19 +37549,15 @@ const enemyData = [
         "name": "Strong Stab Flurry",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Hide",
-    "drop": "Blessed Olive, Inspiring Plum Basket, Silver Nugget",
-    "immunities": "Terror, Instant Death"
+    ]
   },
   {
     "id": "98202.0",
     "name": "Menacing Thespian (Guard)",
     "area": "Flatlands",
     "subArea": "Amphitheatre: Underground",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 8,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
@@ -33300,12 +37565,22 @@ const enemyData = [
       "Tome",
       "Thunder"
     ],
+    "weakness": "Sword",
     "level": 21,
     "hp": 9734,
     "patk": 364,
     "pdef": 31,
     "matk": 364,
     "mdef": 31,
+    "speed": 122,
+    "crit": 122,
+    "accuracy": 122,
+    "evasion": 122,
+    "exp": 40,
+    "jp": 19,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Attack",
@@ -33323,31 +37598,37 @@ const enemyData = [
         "name": "Strong Spirited Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Rusty Coin",
-    "drop": "Beast Tusk, Moonstone",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98210.0",
     "name": "Menacing Cetus Maximus",
     "area": "Coastlands",
     "subArea": "Isle of Orsa: Depths",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Thunder",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 26,
     "hp": 16520,
     "patk": 509,
     "pdef": 30,
     "matk": 425,
     "mdef": 30,
+    "speed": 93,
+    "crit": 133,
+    "accuracy": 159,
+    "evasion": 159,
+    "exp": 57,
+    "jp": 21,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Swallow Whole",
@@ -33369,31 +37650,37 @@ const enemyData = [
         "name": "<skl_user_name> is more resistant to magical attacks!",
         "type": "Unknown"
       }
-    ],
-    "steal": "HP-Restoring Herb, Rusty Coin",
-    "drop": "Beast Claw, Revitalizing Jam (L)",
-    "immunities": "Terror, Silence"
+    ]
   },
   {
     "id": "98208.0",
     "name": "Menacing Barnacle Tortoise",
     "area": "Coastlands",
     "subArea": "Middlesea",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 13,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Bow",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 30,
     "hp": 58560,
     "patk": 481,
     "pdef": 55,
     "matk": 418,
     "mdef": 55,
+    "speed": 125,
+    "crit": 154,
+    "accuracy": 197,
+    "evasion": 144,
+    "exp": 73,
+    "jp": 20,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Bite",
@@ -33411,19 +37698,15 @@ const enemyData = [
         "name": "<skl_user_name> bolsters its defense!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Holy Water, Blessed Olive, Beast Horn",
-    "drop": "Holy Water (M), Moonstone",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98211.0",
     "name": "Menacing Lightning Elemental",
     "area": "Cliftlands",
     "subArea": "Gray Grotto: Depths",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 12,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Tome",
@@ -33432,12 +37715,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 30,
     "hp": 21818,
     "patk": 406,
     "pdef": 35,
     "matk": 473,
     "mdef": 35,
+    "speed": 141,
+    "crit": 141,
+    "accuracy": 141,
+    "evasion": 141,
+    "exp": 73,
+    "jp": 25,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Lightning Shot",
@@ -33455,31 +37748,37 @@ const enemyData = [
         "name": "<skl_user_name> bolsters its defense!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life, Chimera Fang",
-    "drop": "Gold",
-    "immunities": "Paralysis, Poison"
+    ]
   },
   {
     "id": "98212.0",
     "name": "Menacing Carmine Eagle",
     "area": "Cliftlands",
     "subArea": "Geist Canyon",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Tome",
       "Wind"
     ],
+    "weakness": "Sword",
     "level": 31,
     "hp": 26706,
     "patk": 581,
     "pdef": 53,
     "matk": 485,
     "mdef": 53,
+    "speed": 186,
+    "crit": 158,
+    "accuracy": 158,
+    "evasion": 158,
+    "exp": 77,
+    "jp": 26,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Scratch",
@@ -33497,19 +37796,15 @@ const enemyData = [
         "name": "It begins to store power...",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Horn, SP-Restoring Nut (L), Beast Fang",
-    "drop": "Antidote Herb, JP, Gold Dust",
-    "immunities": "Instant Death"
+    ]
   },
   {
     "id": "98213.0",
     "name": "Menacing Master Thief II",
     "area": "Riverlands",
     "subArea": "Waterpool Caves",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 16,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -33517,12 +37812,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 33,
     "hp": 60995,
     "patk": 440,
     "pdef": 55,
     "matk": 466,
     "mdef": 44,
+    "speed": 177,
+    "crit": 177,
+    "accuracy": 177,
+    "evasion": 162,
+    "exp": 84,
+    "jp": 27,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Cut",
@@ -33540,31 +37845,37 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Beast Fang, SP-Restoring Nut, Blessed Olive (M)",
-    "drop": "Quality Beast Claw",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98214.0",
     "name": "Menacing Desert Worm",
     "area": "Sunlands",
     "subArea": "Finesand Ruins",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 16,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Fan",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 34,
     "hp": 62643,
     "patk": 457,
     "pdef": 55,
     "matk": 499,
     "mdef": 55,
+    "speed": 133,
+    "crit": 163,
+    "accuracy": 209,
+    "evasion": 153,
+    "exp": 88,
+    "jp": 28,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Whirling Attack",
@@ -33582,19 +37893,15 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rare Beast Fang, Rare Beast Horn",
-    "drop": "Manticore Stinger, Kraken Ink",
-    "immunities": "Confusion, Blind"
+    ]
   },
   {
     "id": "98215.0",
     "name": "Menacing Highland Ratking I",
     "area": "Highlands",
     "subArea": "Valley of Death",
-    "type": "Boss",
+    "type": "Elite",
     "shields": 17,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
@@ -33603,12 +37910,22 @@ const enemyData = [
       "Thunder",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 35,
     "hp": 62643,
     "patk": 465,
     "pdef": 60,
     "matk": 517,
     "mdef": 60,
+    "speed": 146,
+    "crit": 177,
+    "accuracy": 227,
+    "evasion": 167,
+    "exp": 94,
+    "jp": 29,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Grand Spin Attack",
@@ -33626,31 +37943,37 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Griffin Claw, Healing Grape Bunch, HP-Restoring Herb",
-    "drop": "Soulstone, Inspiring Plum Basket, Shiny Coin",
-    "immunities": "Curse"
+    ]
   },
   {
     "id": "98217.0",
     "name": "Menacing Guardian Mk.II",
     "area": "Riverlands",
     "subArea": "Castle Riven",
-    "type": "Boss",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Staff",
       "Fan"
     ],
+    "weakness": "Sword",
     "level": 36,
     "hp": 31970,
     "patk": 545,
     "pdef": 55,
     "matk": 467,
     "mdef": 55,
+    "speed": 184,
+    "crit": 200,
+    "accuracy": 184,
+    "evasion": 184,
+    "exp": 97,
+    "jp": 33,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Ripper",
@@ -33672,19 +37995,15 @@ const enemyData = [
         "name": "<skl_user_name> is more resistant to magical attacks!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Silver Nugget",
-    "drop": "Blessed Olive (M), Rare Beast Claw, Inspiring Plum Basket",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98218.0",
     "name": "Menacing Dreadwing",
     "area": "Cliftlands",
     "subArea": "Road to Castle Edoras",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -33692,12 +38011,22 @@ const enemyData = [
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 37,
     "hp": 34254,
     "patk": 544,
     "pdef": 55,
     "matk": 544,
     "mdef": 55,
+    "speed": 200,
+    "crit": 184,
+    "accuracy": 184,
+    "evasion": 169,
+    "exp": 101,
+    "jp": 34,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Scratch",
@@ -33719,19 +38048,15 @@ const enemyData = [
         "name": "<skl_user_name> is more resistant to magical attacks!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Inspiring Plum Basket",
-    "drop": "Blessed Olive (M), Minotaur Horn, Revitalizing Jam",
-    "immunities": "Blind, Sleep"
+    ]
   },
   {
     "id": "98216.0",
     "name": "Menacing Woolly Spider",
     "area": "Highlands",
     "subArea": "Cavern of Mists",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -33739,12 +38064,22 @@ const enemyData = [
       "Fire",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 38,
     "hp": 43428,
     "patk": 682,
     "pdef": 55,
     "matk": 487,
     "mdef": 55,
+    "speed": 158,
+    "crit": 205,
+    "accuracy": 189,
+    "evasion": 189,
+    "exp": 105,
+    "jp": 32,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Bite",
@@ -33762,31 +38097,37 @@ const enemyData = [
         "name": "Toxic Breath",
         "type": "Phys"
       }
-    ],
-    "steal": "Copper Ore, Inspiring Plum, Healing Grape Bunch",
-    "drop": "Quality Beast Horn, Rare Beast Hide",
-    "immunities": "Paralysis, Blind"
+    ]
   },
   {
     "id": "98224.0",
     "name": "Menacing Combatant (Warrior)",
     "area": "Woodlands",
     "subArea": "Subterranean Arena",
-    "type": "Rare",
+    "type": "Arena",
     "shields": 18,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 41,
     "hp": 79599,
     "patk": 523,
     "pdef": 60,
     "matk": 558,
     "mdef": 60,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 231,
+    "evasion": 169,
+    "exp": 123,
+    "jp": 33,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Spirited Slash",
@@ -33808,31 +38149,37 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Antidote Herb (L), Old Coin, Beast Tusk",
-    "drop": "SP-Restoring Nut (L), HP-Restoring Herb (M), Blessed Olive (L)",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98222.0",
     "name": "Menacing Icky Slug",
     "area": "Woodlands",
     "subArea": "Great Tree's Tears",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 19,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Tome",
       "Fan",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 41,
     "hp": 78083,
     "patk": 590,
     "pdef": 60,
     "matk": 600,
     "mdef": 60,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 230,
+    "evasion": 169,
+    "exp": 123,
+    "jp": 33,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Shadowshot",
@@ -33858,31 +38205,37 @@ const enemyData = [
         "name": "Weakness Lock",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life, Nut",
-    "drop": "Quality Beast Hide, Healing Grape Bunch",
-    "immunities": "Sleep, Silence"
+    ]
   },
   {
     "id": "98225.0",
     "name": "Menacing River Froggen II",
     "area": "Riverlands",
     "subArea": "East Cyphlo Banks",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Staff",
       "Wind",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 41,
     "hp": 63990,
     "patk": 607,
     "pdef": 60,
     "matk": 607,
     "mdef": 60,
+    "speed": 164,
+    "crit": 164,
+    "accuracy": 164,
+    "evasion": 164,
+    "exp": 123,
+    "jp": 33,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Body Bash",
@@ -33904,31 +38257,37 @@ const enemyData = [
         "name": "Unearthly Roar",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Hide, Ice Soulstone, Copper Ore",
-    "drop": "Quality Beast Horn, Quality Beast Claw, Gold Dust",
-    "immunities": "Poison"
+    ]
   },
   {
     "id": "98226.0",
     "name": "Mighty Slayer Bug",
     "area": "Riverlands",
     "subArea": "Cyphlo Banks",
-    "type": "Regular",
+    "type": "Elite",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Axe",
       "Fire",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 41,
     "hp": 63990,
     "patk": 570,
     "pdef": 60,
     "matk": 607,
     "mdef": 60,
+    "speed": 164,
+    "crit": 181,
+    "accuracy": 164,
+    "evasion": 164,
+    "exp": 123,
+    "jp": 33,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Scratch",
@@ -33950,31 +38309,37 @@ const enemyData = [
         "name": "Extreme Charge",
         "type": "Phys"
       }
-    ],
-    "steal": "Rare Beast Hide",
-    "drop": "Leaf, Revitalizing Jam (L)",
-    "immunities": "Petrification"
+    ]
   },
   {
     "id": "98223.0",
     "name": "Menacing Reaper Crab",
     "area": "Riverlands",
     "subArea": "Misty Falls",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 11,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 43,
     "hp": 87606,
     "patk": 620,
     "pdef": 60,
     "matk": 557,
     "mdef": 60,
+    "speed": 152,
+    "crit": 183,
+    "accuracy": 237,
+    "evasion": 173,
+    "exp": 138,
+    "jp": 35,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Bash",
@@ -33996,19 +38361,15 @@ const enemyData = [
         "name": "Hard Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Inspiring Plum Basket",
-    "drop": "Revitalizing Jam (L), Blessed Olive (M), JP",
-    "immunities": "Paralysis, Silence"
+    ]
   },
   {
     "id": "98227.0",
     "name": "Menacing Test Subject (Big Beast)",
     "area": "Frostlands",
     "subArea": "Emberglow Laboratory: Inner Chambers",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -34017,12 +38378,22 @@ const enemyData = [
       "Wind",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 41,
     "hp": 81120,
     "patk": 590,
     "pdef": 60,
     "matk": 558,
     "mdef": 60,
+    "speed": 148,
+    "crit": 179,
+    "accuracy": 231,
+    "evasion": 169,
+    "exp": 123,
+    "jp": 33,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -34048,31 +38419,37 @@ const enemyData = [
         "name": "Bloody Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "Ice Soulstone, Dragon Scale, Griffin Claw",
-    "drop": "Olive of Life (M)",
-    "immunities": "Confusion"
+    ]
   },
   {
     "id": "98229.0",
     "name": "Menacing Gold Wind Curator",
     "area": "Sunlands",
     "subArea": "Sufrataljah: Palace - Upper Floor",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 16,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Spear",
     "level": 45,
     "hp": 94907,
     "patk": 633,
     "pdef": 65,
     "matk": 603,
     "mdef": 65,
+    "speed": 156,
+    "crit": 188,
+    "accuracy": 244,
+    "evasion": 178,
+    "exp": 154,
+    "jp": 36,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Mighty Gale",
@@ -34094,31 +38471,37 @@ const enemyData = [
         "name": "Raging Wind",
         "type": "Elem"
       }
-    ],
-    "steal": "HP-Restoring Herb (L), Inspiring Plum",
-    "drop": "Soulstone",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98548.0",
     "name": "Menacing Electric Catfish",
     "area": "Coastlands",
     "subArea": "Outersea",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 22,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Axe",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 44,
     "hp": 92400,
     "patk": 631,
     "pdef": 55,
     "matk": 593,
     "mdef": 55,
+    "speed": 154,
+    "crit": 186,
+    "accuracy": 241,
+    "evasion": 176,
+    "exp": 188,
+    "jp": 40,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Electrocute",
@@ -34136,19 +38519,15 @@ const enemyData = [
         "name": "Thunderstorm",
         "type": "Elem"
       }
-    ],
-    "steal": "Kraken Ink, Unicorn Horn",
-    "drop": "Revitalizing Jam, HP-Restoring Herb (L)",
-    "immunities": "Curse, Paralysis"
+    ]
   },
   {
     "id": "98243.0",
     "name": "Menacing Ice Remnant Mk.II",
     "area": "Coastlands",
     "subArea": "Shipwreck Island",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 28,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -34156,12 +38535,22 @@ const enemyData = [
       "Fire",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 48,
     "hp": 95850,
     "patk": 630,
     "pdef": 54,
     "matk": 641,
     "mdef": 54,
+    "speed": 162,
+    "crit": 195,
+    "accuracy": 252,
+    "evasion": 185,
+    "exp": 229,
+    "jp": 39,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Ice Thaw",
@@ -34183,31 +38572,37 @@ const enemyData = [
         "name": "<skl_user_name> is more resistant to magical attacks!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Olive of Life (M), SP-Restoring Nut, Beast Hide",
-    "drop": "Grape",
-    "immunities": "Sleep"
+    ]
   },
   {
     "id": "98232.0",
     "name": "Menacing Cleaving Armor",
     "area": "Coastlands",
     "subArea": "Grandport Sewers: Depths",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 12,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Staff",
       "Thunder",
       "Light"
     ],
+    "weakness": "Axe",
     "level": 45,
     "hp": 117992,
     "patk": 653,
     "pdef": 65,
     "matk": 653,
     "mdef": 65,
+    "speed": 173,
+    "crit": 173,
+    "accuracy": 173,
+    "evasion": 173,
+    "exp": 200,
+    "jp": 36,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Cut",
@@ -34229,10 +38624,7 @@ const enemyData = [
         "name": "Horrific Cleave",
         "type": "Phys"
       }
-    ],
-    "steal": "Beast Hide, Unicorn Horn, Manticore Stinger",
-    "drop": "Soulstone, Blessed Olive (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98230.0",
@@ -34241,19 +38633,28 @@ const enemyData = [
     "subArea": "Valley of the Flame",
     "type": "Rare",
     "shields": 15,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 45,
     "hp": 30,
     "patk": 559,
     "pdef": 999,
     "matk": 559,
     "mdef": 999,
+    "speed": 138,
+    "crit": 155,
+    "accuracy": 155,
+    "evasion": 999,
+    "exp": 1000,
+    "jp": 75,
+    "steal": "n/a",
+    "drop": "Cat Whisker x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Leaf Toss",
@@ -34263,31 +38664,37 @@ const enemyData = [
         "name": "Big Leaf Toss",
         "type": "Phys"
       }
-    ],
-    "steal": "Blessed Olive, Beast Hide, Sphinx Feather",
-    "drop": "Star Fragment, Griffin Claw",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98231.0",
     "name": "Mighty Ice Lizardman VI",
     "area": "Frostlands",
     "subArea": "Cave Of Origin",
-    "type": "Regular",
+    "type": "Elite",
     "shields": 22,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Fire",
       "Wind"
     ],
+    "weakness": "Dagger",
     "level": 45,
     "hp": 112860,
     "patk": 568,
     "pdef": 65,
     "matk": 603,
     "mdef": 65,
+    "speed": 177,
+    "crit": 211,
+    "accuracy": 274,
+    "evasion": 201,
+    "exp": 200,
+    "jp": 36,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Double Stab",
@@ -34309,31 +38716,37 @@ const enemyData = [
         "name": "Strong Sweep",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk, HP-Restoring Herb, Herb",
-    "drop": "Revitalizing Jam (M), Inspiring Plum Basket, Rare Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98234.0",
     "name": "Menacing Master Thief III",
     "area": "Woodlands",
     "subArea": "Herminia's Former Manse",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 12,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 47,
     "hp": 114807,
     "patk": 579,
     "pdef": 65,
     "matk": 631,
     "mdef": 65,
+    "speed": 160,
+    "crit": 193,
+    "accuracy": 249,
+    "evasion": 183,
+    "exp": 218,
+    "jp": 38,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wide Leg Sweep",
@@ -34355,31 +38768,37 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Chimera Fang",
-    "drop": "Holy Water, Revitalizing Jam",
-    "immunities": "Poison, Stun"
+    ]
   },
   {
     "id": "98235.0",
     "name": "Menacing Ivory Revenant",
     "area": "Sunlands",
     "subArea": "Golden Palace: Upper Floor",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Staff",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 124800,
     "patk": 701,
     "pdef": 65,
     "matk": 701,
     "mdef": 65,
+    "speed": 181,
+    "crit": 181,
+    "accuracy": 181,
+    "evasion": 181,
+    "exp": 240,
+    "jp": 40,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Brutal Bash",
@@ -34405,30 +38824,36 @@ const enemyData = [
         "name": "Weakness Lock",
         "type": "Unknown"
       }
-    ],
-    "steal": "Sphinx Feather",
-    "drop": "Quality Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98236.0",
     "name": "Menacing Gold Revenant",
     "area": "Sunlands",
     "subArea": "Golden Palace: Lower Floor",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 22,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 104643,
     "patk": 590,
     "pdef": 65,
     "matk": 651,
     "mdef": 65,
+    "speed": 164,
+    "crit": 197,
+    "accuracy": 255,
+    "evasion": 187,
+    "exp": 240,
+    "jp": 40,
+    "steal": "n/a",
+    "drop": "Cat God's Statue x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Brutal Bash",
@@ -34450,31 +38875,37 @@ const enemyData = [
         "name": "Magic Counter Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Hide, HP-Restoring Herb (M)",
-    "drop": "SP-Restoring Nut (L), Quality Beast Fang, Rare Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98240.0",
     "name": "Menacing Ettin Boa",
     "area": "Coastlands",
     "subArea": "Sea Cavern",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 26,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
       "Fire",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 50,
     "hp": 139379,
     "patk": 653,
     "pdef": 70,
     "matk": 607,
     "mdef": 70,
+    "speed": 146,
+    "crit": 165,
+    "accuracy": 165,
+    "evasion": 146,
+    "exp": 253,
+    "jp": 50,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Double Bite",
@@ -34496,31 +38927,37 @@ const enemyData = [
         "name": "Two-Headed Assault Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Horn, Revitalizing Jam",
-    "drop": "EXP",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98228.0",
     "name": "Menacing Stormy Sea Birdking I",
     "area": "Coastlands",
     "subArea": "Sea Cavern",
-    "type": "Boss",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Bow",
       "Tome",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 50,
     "hp": 134524,
     "patk": 713,
     "pdef": 65,
     "matk": 713,
     "mdef": 65,
+    "speed": 201,
+    "crit": 183,
+    "accuracy": 183,
+    "evasion": 183,
+    "exp": 195,
+    "jp": 41,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Cut",
@@ -34542,19 +38979,15 @@ const enemyData = [
         "name": "Trifold Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Rare Beast Tusk",
-    "drop": "Rare Beast Horn, Quality Beast Tusk",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98209.0",
     "name": "Menacing Treasure Bones",
     "area": "Coastlands",
     "subArea": "Isle in the Middlesea",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 26,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Axe",
@@ -34562,12 +38995,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Spear",
     "level": 54,
     "hp": 168642,
     "patk": 752,
     "pdef": 65,
     "matk": 667,
     "mdef": 65,
+    "speed": 191,
+    "crit": 191,
+    "accuracy": 191,
+    "evasion": 191,
+    "exp": 232,
+    "jp": 46,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Spin Attack",
@@ -34585,31 +39028,37 @@ const enemyData = [
         "name": "<skl_user_name> bolsters its defense!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Dragon Scale, Quality Beast Meat, Antidote Herb",
-    "drop": "Beast Fang",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98241.0",
     "name": "Menacing Stormy Sea Birdking II",
     "area": "Coastlands",
     "subArea": "Isle in the Outersea: West",
-    "type": "Boss",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
       "Tome",
       "Thunder"
     ],
+    "weakness": "Axe",
     "level": 55,
     "hp": 154128,
     "patk": 722,
     "pdef": 58,
     "matk": 580,
     "mdef": 58,
+    "speed": 193,
+    "crit": 193,
+    "accuracy": 193,
+    "evasion": 193,
+    "exp": 317,
+    "jp": 45,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Cut",
@@ -34631,31 +39080,37 @@ const enemyData = [
         "name": "Trifold Bash",
         "type": "Phys"
       }
-    ],
-    "steal": "Chimera Fang",
-    "drop": "HP-Restoring Herb (L), HP-Restoring Herb, Phoenix Feather",
-    "immunities": "Poison, Confusion"
+    ]
   },
   {
     "id": "98244.0",
     "name": "Menacing Ice Elemental",
     "area": "Coastlands",
     "subArea": "Isle in the Outersea: East",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 29,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Fire",
       "Thunder",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 55,
     "hp": 115101,
     "patk": 690,
     "pdef": 58,
     "matk": 715,
     "mdef": 58,
+    "speed": 177,
+    "crit": 211,
+    "accuracy": 274,
+    "evasion": 201,
+    "exp": 317,
+    "jp": 45,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Gelid Strike",
@@ -34673,31 +39128,37 @@ const enemyData = [
         "name": "<skl_user_name> bolsters its defense!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Rusty Coin, Rare Beast Claw, SP-Restoring Nut",
-    "drop": "Gold, Antidote Herb (M), Quality Beast Claw",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98233.0",
     "name": "Menacing Deadly Chameleon",
     "area": "Highlands",
     "subArea": "Sweltering Cave",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 12,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Bow",
       "Fire"
     ],
+    "weakness": "Spear",
     "level": 50,
     "hp": 120120,
     "patk": 647,
     "pdef": 65,
     "matk": 658,
     "mdef": 65,
+    "speed": 167,
+    "crit": 200,
+    "accuracy": 259,
+    "evasion": 190,
+    "exp": 253,
+    "jp": 41,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -34719,31 +39180,37 @@ const enemyData = [
         "name": "Rampage",
         "type": "Phys"
       }
-    ],
-    "steal": "Antidote Herb (M)",
-    "drop": "Holy Water, HP-Restoring Herb (M)",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98237.0",
     "name": "Menacing Quartz Turtle",
     "area": "Highlands",
     "subArea": "Mt. Berecain",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 15,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Wind",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 48,
     "hp": 123200,
     "patk": 675,
     "pdef": 65,
     "matk": 675,
     "mdef": 65,
+    "speed": 143,
+    "crit": 179,
+    "accuracy": 179,
+    "evasion": 179,
+    "exp": 229,
+    "jp": 39,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Bite",
@@ -34761,31 +39228,37 @@ const enemyData = [
         "name": "<skl_user_name> bolsters its defense!",
         "type": "Unknown"
       }
-    ],
-    "steal": "Kraken Ink",
-    "drop": "HP-Restoring Herb (L), HP-Restoring Herb, Revitalizing Jam (L)",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98238.0",
     "name": "Menacing Ashen Remnant",
     "area": "Highlands",
     "subArea": "Forbidden Temple: Upper Floor",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Axe",
       "Ice",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 49,
     "hp": 124800,
     "patk": 701,
     "pdef": 54,
     "matk": 701,
     "mdef": 54,
+    "speed": 181,
+    "crit": 217,
+    "accuracy": 181,
+    "evasion": 181,
+    "exp": 240,
+    "jp": 40,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -34815,31 +39288,37 @@ const enemyData = [
         "name": "Eye for an Eye",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Hide, Healing Grape Bunch",
-    "drop": "Rare Beast Hide, Hydra Scale, Cerberus Fang",
-    "immunities": "Silence"
+    ]
   },
   {
     "id": "98239.0",
     "name": "Menacing Blood Revenant",
     "area": "Highlands",
     "subArea": "Forbidden Temple: Lower Floor",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 26,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Staff",
       "Ice"
     ],
+    "weakness": "Sword",
     "level": 49,
     "hp": 108630,
     "patk": 745,
     "pdef": 75,
     "matk": 681,
     "mdef": 75,
+    "speed": 181,
+    "crit": 181,
+    "accuracy": 181,
+    "evasion": 181,
+    "exp": 240,
+    "jp": 40,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Brutal Bash",
@@ -34865,31 +39344,37 @@ const enemyData = [
         "name": "Weakness Lock",
         "type": "Unknown"
       }
-    ],
-    "steal": "Quality Beast Horn, Antidote Herb (L), Blessed Olive (L)",
-    "drop": "Quality Beast Hide",
-    "immunities": "Blind, Curse"
+    ]
   },
   {
     "id": "98313.0",
     "name": "Menacing Fallen Edoras Knight I",
     "area": "Cliftlands",
     "subArea": "Hell: Geist Canyon South",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 14,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Fan",
       "Ice",
       "Dark"
     ],
+    "weakness": "Dagger",
     "level": 54,
     "hp": 141300,
     "patk": 570,
     "pdef": 57,
     "matk": 570,
     "mdef": 57,
+    "speed": 191,
+    "crit": 172,
+    "accuracy": 280,
+    "evasion": 191,
+    "exp": 302,
+    "jp": 49,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Successive Strike Stance",
@@ -34927,31 +39412,37 @@ const enemyData = [
         "name": "Death's Blade",
         "type": "Phys"
       }
-    ],
-    "steal": "Unicorn Horn, Inspiring Plum Basket, Olive of Life",
-    "drop": "Rare Beast Hide, Beast Meat",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98314.0",
     "name": "Menacing Fallen Direfang",
     "area": "Woodlands",
     "subArea": "Hell: Path to White Grape Hill",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 22,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Ice",
       "Light"
     ],
+    "weakness": "Sword",
     "level": 56,
     "hp": 215645,
     "patk": 743,
     "pdef": 85,
     "matk": 711,
     "mdef": 85,
+    "speed": 179,
+    "crit": 213,
+    "accuracy": 277,
+    "evasion": 203,
+    "exp": 330,
+    "jp": 51,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -34989,19 +39480,15 @@ const enemyData = [
         "name": "Leeching Rake",
         "type": "Phys"
       }
-    ],
-    "steal": "Copper Ore, Chimera Fang, Hydra Scale",
-    "drop": "SP-Restoring Nut, Rare Beast Horn, Rare Beast Tusk",
-    "immunities": "Confusion, Petrification"
+    ]
   },
   {
     "id": "98245.0",
     "name": "Menacing Crested Portly Penguin",
     "area": "Coastlands",
     "subArea": "Sunken Ship",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 34,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
@@ -35017,12 +39504,22 @@ const enemyData = [
       "Light",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 70,
     "hp": 336000,
     "patk": 829,
     "pdef": 85,
     "matk": 835,
     "mdef": 85,
+    "speed": 229,
+    "crit": 268,
+    "accuracy": 352,
+    "evasion": 258,
+    "exp": 966,
+    "jp": 59,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Sunshine",
@@ -35044,19 +39541,15 @@ const enemyData = [
         "name": "Rainbow Flash",
         "type": "Elem"
       }
-    ],
-    "steal": "Sphinx Feather, Ancient Coin, Rare Beast Horn",
-    "drop": "Iron Ore",
-    "immunities": "Sleep, Poison"
+    ]
   },
   {
     "id": "98320.0",
     "name": "Menacing Fallen Hornburg Knight",
     "area": "Highlands",
     "subArea": "Hell: Hornburg Castle - West",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
@@ -35065,12 +39558,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Spear",
     "level": 60,
     "hp": 200901,
     "patk": 614,
     "pdef": 85,
     "matk": 572,
     "mdef": 85,
+    "speed": 204,
+    "crit": 184,
+    "accuracy": 204,
+    "evasion": 204,
+    "exp": 417,
+    "jp": 54,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Shadowshot",
@@ -35112,31 +39615,37 @@ const enemyData = [
         "name": "Spirited Slash",
         "type": "Phys"
       }
-    ],
-    "steal": "Quality Beast Tusk, Rare Beast Horn",
-    "drop": "Rare Beast Tusk",
-    "immunities": "Blind"
+    ]
   },
   {
     "id": "98321.0",
     "name": "Menacing Sacred Flame Guardian",
     "area": "Highlands",
     "subArea": "Hell: Hornburg Castle - Eastern Central Area",
-    "type": "Boss",
+    "type": "Elite",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Spear",
       "Thunder",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 60,
     "hp": 157458,
     "patk": 663,
     "pdef": 51,
     "matk": 672,
     "mdef": 61,
+    "speed": 184,
+    "crit": 184,
+    "accuracy": 204,
+    "evasion": 204,
+    "exp": 417,
+    "jp": 54,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Wild Cut",
@@ -35182,30 +39691,36 @@ const enemyData = [
         "name": "Greataxe of Light",
         "type": "Elem"
       }
-    ],
-    "steal": "Rare Beast Claw, Quality Beast Horn",
-    "drop": "Copper Ore, Rare Beast Hide, Star Fragment",
-    "immunities": "Confusion, Sleep"
+    ]
   },
   {
     "id": "98322.0",
     "name": "Menacing Fallen Monster",
     "area": "The Gate of Finis",
     "subArea": "Corridors of Contrition: Back Halls",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 24,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 64,
     "hp": 197632,
     "patk": 627,
     "pdef": 64,
     "matk": 550,
     "mdef": 64,
+    "speed": 289,
+    "crit": 191,
+    "accuracy": 245,
+    "evasion": 212,
+    "exp": 545,
+    "jp": 58,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Scratch",
@@ -35255,19 +39770,15 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Healing Grape Bunch, Beast Fang, Herb",
-    "drop": "Silver Nugget",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98324.0",
     "name": "Menacing Infernal Sludge",
     "area": "The Gate of Finis",
     "subArea": "The Bridge Beyond",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 24,
-    "weakness": "Staff",
     "weaknesses": [
       "Staff",
       "Tome",
@@ -35275,12 +39786,22 @@ const enemyData = [
       "Ice",
       "Light"
     ],
+    "weakness": "Staff",
     "level": 64,
     "hp": 142800,
     "patk": 681,
     "pdef": 64,
     "matk": 605,
     "mdef": 64,
+    "speed": 212,
+    "crit": 191,
+    "accuracy": 212,
+    "evasion": 212,
+    "exp": 545,
+    "jp": 58,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Brutal Bash",
@@ -35326,31 +39847,37 @@ const enemyData = [
         "name": "Entwine",
         "type": "Phys"
       }
-    ],
-    "steal": "Sphinx Feather, Holy Water (M)",
-    "drop": "Revitalizing Jam (L), Gold Dust, Grape",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98325.0",
     "name": "Menacing Fallen Deviant II",
     "area": "The Gate of Finis",
     "subArea": "Crimson River Traverse",
-    "type": "Rare",
+    "type": "Elite",
     "shields": 24,
-    "weakness": "Dagger",
     "weaknesses": [
       "Dagger",
       "Bow",
       "Fan",
       "Light"
     ],
+    "weakness": "Dagger",
     "level": 64,
     "hp": 166260,
     "patk": 681,
     "pdef": 64,
     "matk": 605,
     "mdef": 64,
+    "speed": 212,
+    "crit": 191,
+    "accuracy": 212,
+    "evasion": 212,
+    "exp": 545,
+    "jp": 58,
+    "steal": "n/a",
+    "drop": "Radiant Cornerstone x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -35396,19 +39923,15 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Ancient Coin, Gold Dust, Olive of Life",
-    "drop": "Kraken Ink, Soulstone, Cerberus Fang",
-    "immunities": "Stun"
+    ]
   },
   {
     "id": "98326.0",
     "name": "Sanct Oliphant",
     "area": "The Heavens",
     "subArea": "Seas of Servility: Hollow Path",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 25,
-    "weakness": "Axe",
     "weaknesses": [
       "Axe",
       "Bow",
@@ -35416,12 +39939,22 @@ const enemyData = [
       "Fire",
       "Thunder"
     ],
+    "weakness": "Axe",
     "level": 78,
     "hp": 313122,
     "patk": 711,
     "pdef": 85,
     "matk": 688,
     "mdef": 85,
+    "speed": 221,
+    "crit": 199,
+    "accuracy": 332,
+    "evasion": 221,
+    "exp": 798,
+    "jp": 61,
+    "steal": "n/a",
+    "drop": "Leviathan Greatbow x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Charge",
@@ -35467,31 +40000,37 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Meteorite, Quality Beast Claw",
-    "drop": "Quality Beast Horn, Rare Beast Horn, Gold",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98328.0",
     "name": "Sanct Garmr",
     "area": "The Heavens",
     "subArea": "Sands of Rapacity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Spear",
     "weaknesses": [
       "Spear",
       "Dagger",
       "Ice",
       "Wind"
     ],
+    "weakness": "Spear",
     "level": 78,
     "hp": 293152,
     "patk": 642,
     "pdef": 85,
     "matk": 582,
     "mdef": 85,
+    "speed": 300,
+    "crit": 264,
+    "accuracy": 332,
+    "evasion": 254,
+    "exp": 798,
+    "jp": 61,
+    "steal": "n/a",
+    "drop": "Purging Flame Mastery x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Chew to Bits",
@@ -35541,30 +40080,36 @@ const enemyData = [
         "name": "Searing Flame",
         "type": "Elem"
       }
-    ],
-    "steal": "Inspiring Plum Basket",
-    "drop": "Blessed Olive (L), Antidote Herb (L)",
-    "immunities": "Instant Death, Terror"
+    ]
   },
   {
     "id": "98330.0",
     "name": "Sanct Cauchemar",
     "area": "The Heavens",
     "subArea": "Skies of Vanity",
-    "type": "Regular",
+    "type": "Boss",
     "shields": 24,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Bow",
       "Dark"
     ],
+    "weakness": "Sword",
     "level": 78,
     "hp": 301200,
     "patk": 727,
     "pdef": 85,
     "matk": 727,
     "mdef": 85,
+    "speed": 300,
+    "crit": 264,
+    "accuracy": 332,
+    "evasion": 221,
+    "exp": 798,
+    "jp": 61,
+    "steal": "n/a",
+    "drop": "Hero's Axe x1 (100%)",
+    "immunities": "Instant Death",
     "skills": [
       {
         "name": "Lightning Strike",
@@ -35610,31 +40155,37 @@ const enemyData = [
         "name": "Successive Strike Stance",
         "type": "Unknown"
       }
-    ],
-    "steal": "Healing Grape Bunch",
-    "drop": "Sphinx Feather, Unicorn Horn",
-    "immunities": "None"
+    ]
   },
   {
     "id": "98601.0",
     "name": "Menacing King Octopuff",
     "area": "Coastlands",
     "subArea": "Desert Island in the Outersea",
-    "type": "Boss",
+    "type": "Rare",
     "shields": 10,
-    "weakness": "Sword",
     "weaknesses": [
       "Sword",
       "Dagger",
       "Axe",
       "Staff"
     ],
+    "weakness": "Sword",
     "level": 60,
     "hp": 80,
     "patk": 622,
     "pdef": 400,
     "matk": 622,
     "mdef": 550,
+    "speed": 999,
+    "crit": 230,
+    "accuracy": 150,
+    "evasion": 999,
+    "exp": 1000,
+    "jp": 1500,
+    "steal": "n/a",
+    "drop": "Octopus Suction Cup x1 (100%)",
+    "immunities": "All",
     "skills": [
       {
         "name": "Bag Toss",
@@ -35644,9 +40195,6 @@ const enemyData = [
         "name": "Mass Bag Toss",
         "type": "Phys"
       }
-    ],
-    "steal": "Holy Water, HP-Restoring Herb (L)",
-    "drop": "Dragon Scale, Kraken Ink",
-    "immunities": "None"
+    ]
   }
 ];
