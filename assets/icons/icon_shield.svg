@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Shield">
+  <rect width="24" height="24" rx="4" fill="#182638"/>
+  <!-- Shield Shape -->
+  <path d="M12 3C6.5 3 2 6.5 2 10.5c0 4.5 4.5 8.5 10 11.5 5.5-3 10-7 10-11.5C22 6.5 17.5 3 12 3z" fill="#e2e8f0"/>
+  <!-- Boss / Center -->
+  <circle cx="12" cy="12" r="3.5" fill="#94a3b8"/>
+  <!-- Cross / Emblem -->
+  <path d="M12 8.5v7M8.5 12h7" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Border -->
+  <path d="M12 3C6.5 3 2 6.5 2 10.5c0 4.5 4.5 8.5 10 11.5 5.5-3 10-7 10-11.5C22 6.5 17.5 3 12 3z" fill="none" stroke="#475569" stroke-width="1.5"/>
+</svg>

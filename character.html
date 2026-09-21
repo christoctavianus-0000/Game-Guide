@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Octopath Traveler 0 // Character & Job Codex</title>
+  <meta name="description" content="Character and protagonist job codex for Octopath Traveler 0. Browse party members, fixed jobs, and their skill trees with direct links back to the skill codex." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <nav class="site-nav" aria-label="Codex sections">
+      <div class="site-nav-inner">
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH 0 CODEX</span>
+        <div class="site-nav-links">
+          <a class="site-nav-link" href="index.html">⚔️ Skill Codex</a>
+          <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
+          <a class="site-nav-link active" href="character.html" aria-current="page">🧭 Character / Jobs</a>
+          <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="site-rail" aria-label="Codex selector">
+      <div class="site-rail-inner">
+        <span class="site-rail-brand" aria-hidden="true">✦</span>
+        <span class="site-rail-caption">Codex</span>
+        <div class="site-rail-links">
+          <a class="site-rail-link" href="index.html">
+            <span class="site-rail-icon" aria-hidden="true">⚔️</span>
+            <span class="site-rail-text">Skills</span>
+          </a>
+          <a class="site-rail-link" href="equipment.html">
+            <span class="site-rail-icon" aria-hidden="true">🛡️</span>
+            <span class="site-rail-text">Gear</span>
+          </a>
+          <a class="site-rail-link active" href="character.html" aria-current="page">
+            <span class="site-rail-icon" aria-hidden="true">🧭</span>
+            <span class="site-rail-text">Chars</span>
+          </a>
+          <a class="site-rail-link" href="enemy.html">
+            <span class="site-rail-icon" aria-hidden="true">🐉</span>
+            <span class="site-rail-text">Enemies</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <header class="top-header">
+      <div class="header-container">
+        <div class="brand-area">
+          <div class="brand-crest">
+            <span class="crest-icon">🧭</span>
+          </div>
+          <div>
+            <div class="brand-kicker">OCTOPATH TRAVELER 0</div>
+            <h1 class="brand-title">Character &amp; Job Codex</h1>
+          </div>
+        </div>
+
+        <div class="metrics-bar" id="characterMetricsBar">
+          <div class="metric-pill">
+            <span class="metric-label">Characters</span>
+            <span class="metric-val" id="metricCharacterCount">0</span>
+          </div>
+          <div class="metric-pill support">
+            <span class="metric-label">Jobs</span>
+            <span class="metric-val" id="metricJobCount">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="filter-panel">
+        <div class="filter-panel-inner">
+          <div class="search-and-subtypes">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔎</span>
+              <input id="characterSearchInput" type="search" placeholder="Search character, job, or skill name..." autocomplete="off" />
+              <button id="clearCharacterSearch" class="clear-search-btn" type="button" title="Clear search">✕</button>
+            </div>
+
+            <div class="category-tabs" id="characterJobTabs" role="tablist" aria-label="Filter by job">
+              <button class="cat-tab active" data-category="all" role="tab" aria-selected="true">
+                <span class="cat-icon">🌐</span>
+                <span class="cat-name">All</span>
+              </button>
+              <button class="cat-tab" data-category="Warrior" role="tab" aria-selected="false">
+                <span class="cat-icon">⚔️</span>
+                <span class="cat-name">Warrior</span>
+              </button>
+              <button class="cat-tab" data-category="Dancer" role="tab" aria-selected="false">
+                <span class="cat-icon">💃</span>
+                <span class="cat-name">Dancer</span>
+              </button>
+              <button class="cat-tab" data-category="Merchant" role="tab" aria-selected="false">
+                <span class="cat-icon">💰</span>
+                <span class="cat-name">Merchant</span>
+              </button>
+              <button class="cat-tab" data-category="Scholar" role="tab" aria-selected="false">
+                <span class="cat-icon">📚</span>
+                <span class="cat-name">Scholar</span>
+              </button>
+              <button class="cat-tab" data-category="Cleric" role="tab" aria-selected="false">
+                <span class="cat-icon">⛪</span>
+                <span class="cat-name">Cleric</span>
+              </button>
+              <button class="cat-tab" data-category="Thief" role="tab" aria-selected="false">
+                <span class="cat-icon">🗝️</span>
+                <span class="cat-name">Thief</span>
+              </button>
+              <button class="cat-tab" data-category="Hunter" role="tab" aria-selected="false">
+                <span class="cat-icon">🏹</span>
+                <span class="cat-name">Hunter</span>
+              </button>
+              <button class="cat-tab" data-category="Apothecary" role="tab" aria-selected="false">
+                <span class="cat-icon">🧪</span>
+                <span class="cat-name">Apothecary</span>
+              </button>
+              <button class="cat-tab" data-category="Architect" role="tab" aria-selected="false">
+                <span class="cat-icon">🏗️</span>
+                <span class="cat-name">Architect</span>
+              </button>
+              <button class="cat-tab" data-category="Cait Scholar" role="tab" aria-selected="false">
+                <span class="cat-icon">🐱</span>
+                <span class="cat-name">Cait Scholar</span>
+              </button>
+              <button class="cat-tab" data-category="Captain" role="tab" aria-selected="false">
+                <span class="cat-icon">⚓</span>
+                <span class="cat-name">Captain</span>
+              </button>
+              <button class="cat-tab" data-category="Empress" role="tab" aria-selected="false">
+                <span class="cat-icon">👑</span>
+                <span class="cat-name">Empress</span>
+              </button>
+              <button class="cat-tab" data-category="Flamebringer" role="tab" aria-selected="false">
+                <span class="cat-icon">🔥</span>
+                <span class="cat-name">Flamebringer</span>
+              </button>
+              <button class="cat-tab" data-category="King" role="tab" aria-selected="false">
+                <span class="cat-icon">🤴</span>
+                <span class="cat-name">King</span>
+              </button>
+              <button class="cat-tab" data-category="Knight Ardante" role="tab" aria-selected="false">
+                <span class="cat-icon">🛡️</span>
+                <span class="cat-name">Knight Ardante</span>
+              </button>
+              <button class="cat-tab" data-category="Lord" role="tab" aria-selected="false">
+                <span class="cat-icon">🏰</span>
+                <span class="cat-name">Lord</span>
+              </button>
+              <button class="cat-tab" data-category="Queen" role="tab" aria-selected="false">
+                <span class="cat-icon">👸</span>
+                <span class="cat-name">Queen</span>
+              </button>
+              <button class="cat-tab" data-category="Wise King" role="tab" aria-selected="false">
+                <span class="cat-icon">🧙</span>
+                <span class="cat-name">Wise King</span>
+              </button>
+            </div>
+
+            <div class="secondary-filter-row">
+              <div class="filter-group">
+                <label for="characterWeaponFilter" class="filter-label">Weapon</label>
+                <select id="characterWeaponFilter" class="filter-select">
+                  <option value="all">All Weapons</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-display-section">
+        <div id="characterGrid" class="skills-grid"></div>
+        <div id="characterEmptyState" class="empty-state-card" style="display:none;">
+          <div class="empty-icon">🧭</div>
+          <h3>No matching characters or jobs</h3>
+          <p>Try a different name, weapon type, or skill keyword.</p>
+          <button class="primary-btn" id="characterResetBtn" type="button">Clear Search</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-overlay" id="characterDetailModal" aria-hidden="true">
+      <div class="modal-window">
+        <button class="modal-close-btn" id="characterModalCloseBtn" aria-label="Close dialog">✕</button>
+        <div class="modal-header">
+          <div class="modal-icon-badge" id="characterModalBadge"><span>🧭</span></div>
+          <div class="modal-title-area">
+            <div class="modal-meta-row">
+              <span class="modal-category-chip" id="characterModalKind">Character</span>
+              <span class="modal-subtype-chip" id="characterModalMeta">Weapons</span>
+            </div>
+            <h2 class="modal-skill-name" id="characterModalName">Character Name</h2>
+            <div class="modal-id-tag" id="characterModalId">Job ID</div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4 class="modal-section-heading">Overview</h4>
+            <div class="modal-description-box" id="characterModalDescription">Description</div>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-heading">Skill Tree</h4>
+            <div class="source-link-list" id="characterSkillList"></div>
+          </div>
+
+          <div class="modal-section" id="characterJobSwitchSection" style="display:none;">
+            <h4 class="modal-section-heading">Switch Job</h4>
+            <div class="source-link-list" id="characterJobSwitchList"></div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="secondary-btn" id="characterModalDoneBtn" type="button">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="characterData.js"></script>
+  <script src="characterApp.js"></script>
+</body>
+</html>

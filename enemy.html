@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Octopath Traveler 0 // Enemy Codex</title>
+  <meta name="description" content="Bestiary codex for Octopath Traveler 0. Filter enemies by area, sub area, weakness, and enemy type, and compare shields and stats at a glance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <nav class="site-nav" aria-label="Codex sections">
+      <div class="site-nav-inner">
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH 0 CODEX</span>
+        <div class="site-nav-links">
+          <a class="site-nav-link" href="index.html">⚔️ Skill Codex</a>
+          <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
+          <a class="site-nav-link" href="character.html">🧭 Character / Jobs</a>
+          <a class="site-nav-link active" href="enemy.html" aria-current="page">🐉 Enemy Codex</a>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="site-rail" aria-label="Codex selector">
+      <div class="site-rail-inner">
+        <span class="site-rail-brand" aria-hidden="true">✦</span>
+        <span class="site-rail-caption">Codex</span>
+        <div class="site-rail-links">
+          <a class="site-rail-link" href="index.html">
+            <span class="site-rail-icon" aria-hidden="true">⚔️</span>
+            <span class="site-rail-text">Skills</span>
+          </a>
+          <a class="site-rail-link" href="equipment.html">
+            <span class="site-rail-icon" aria-hidden="true">🛡️</span>
+            <span class="site-rail-text">Gear</span>
+          </a>
+          <a class="site-rail-link" href="character.html">
+            <span class="site-rail-icon" aria-hidden="true">🧭</span>
+            <span class="site-rail-text">Chars</span>
+          </a>
+          <a class="site-rail-link active" href="enemy.html" aria-current="page">
+            <span class="site-rail-icon" aria-hidden="true">🐉</span>
+            <span class="site-rail-text">Enemies</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <header class="top-header">
+      <div class="header-container">
+        <div class="brand-area">
+          <div class="brand-crest">
+            <span class="crest-icon">🐉</span>
+          </div>
+          <div>
+            <div class="brand-kicker">OCTOPATH TRAVELER 0</div>
+            <h1 class="brand-title">Enemy Bestiary</h1>
+          </div>
+        </div>
+
+        <div class="metrics-bar" id="enemyMetricsBar">
+          <div class="metric-pill">
+            <span class="metric-label">Enemies</span>
+            <span class="metric-val" id="enemyMetricTotal">0</span>
+          </div>
+          <div class="metric-pill support">
+            <span class="metric-label">Areas</span>
+            <span class="metric-val" id="enemyMetricAreas">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="filter-panel">
+        <div class="filter-panel-inner">
+          <div class="category-tabs" id="enemyTypeTabs" role="tablist" aria-label="Filter by enemy type">
+            <button class="cat-tab active" data-category="all" role="tab" aria-selected="true">
+              <span class="cat-icon">🌐</span>
+              <span class="cat-label">All</span>
+              <span class="cat-count" id="enemyCatCountAll">0</span>
+            </button>
+            <button class="cat-tab" data-category="Regular" role="tab" aria-selected="false">
+              <span class="cat-icon">👹</span>
+              <span class="cat-label">Regular</span>
+              <span class="cat-count" id="enemyCatCountRegular">0</span>
+            </button>
+            <button class="cat-tab" data-category="Boss" role="tab" aria-selected="false">
+              <span class="cat-icon">👑</span>
+              <span class="cat-label">Boss</span>
+              <span class="cat-count" id="enemyCatCountBoss">0</span>
+            </button>
+            <button class="cat-tab" data-category="Rare" role="tab" aria-selected="false">
+              <span class="cat-icon">✨</span>
+              <span class="cat-label">Rare</span>
+              <span class="cat-count" id="enemyCatCountRare">0</span>
+            </button>
+          </div>
+
+          <div class="search-and-subtypes">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔎</span>
+              <input id="enemySearchInput" type="search" placeholder="Search enemy, area, sub area, or weakness..." autocomplete="off" />
+              <button id="enemyClearSearch" class="clear-search-btn" type="button" title="Clear search">✕</button>
+            </div>
+
+            <div class="secondary-filter-row">
+              <div class="filter-group">
+                <label for="enemyAreaFilter" class="filter-label">Area</label>
+                <select id="enemyAreaFilter" class="filter-select">
+                  <option value="all">All Areas</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="enemySubAreaFilter" class="filter-label">Sub Area</label>
+                <select id="enemySubAreaFilter" class="filter-select">
+                  <option value="all">All Sub Areas</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="enemyWeaknessFilter" class="filter-label">Weakness</label>
+                <select id="enemyWeaknessFilter" class="filter-select">
+                  <option value="all">All Weaknesses</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="enemySortFilter" class="filter-label">Sort By</label>
+                <select id="enemySortFilter" class="filter-select">
+                  <option value="name-asc">Name (A-Z)</option>
+                  <option value="name-desc">Name (Z-A)</option>
+                  <option value="area-asc">Area (A-Z)</option>
+                  <option value="subarea-asc">Sub Area (A-Z)</option>
+                  <option value="type-asc">Type (A-Z)</option>
+                  <option value="shields-desc">Shield ↓</option>
+                  <option value="shields-asc">Shield ↑</option>
+                  <option value="weakness-asc">Weakness (A-Z)</option>
+                  <option value="level-desc">Level ↓</option>
+                  <option value="level-asc">Level ↑</option>
+                  <option value="hp-desc">HP ↓</option>
+                  <option value="hp-asc">HP ↑</option>
+                  <option value="patk-desc">P.ATK ↓</option>
+                  <option value="patk-asc">P.ATK ↑</option>
+                  <option value="pdef-desc">P.DEF ↓</option>
+                  <option value="pdef-asc">P.DEF ↑</option>
+                  <option value="steal-asc">Steal (A-Z)</option>
+                  <option value="steal-desc">Steal (Z-A)</option>
+                  <option value="drop-asc">Drop (A-Z)</option>
+                  <option value="drop-desc">Drop (Z-A)</option>
+                </select>
+              </div>
+
+              <div class="filter-status">
+                <span id="enemyResultsCount">Showing 0 enemies</span>
+                <button class="reset-link-btn" id="enemyResetBtn" type="button">Reset Filters</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="enemy-table-section">
+        <div class="enemy-table-shell">
+          <table class="enemy-table">
+            <thead>
+              <tr>
+                <th class="sortable" data-sort-key="name">Name</th>
+                <th class="sortable" data-sort-key="area">Area</th>
+                <th class="sortable" data-sort-key="subArea">Sub Area</th>
+                <th class="sortable" data-sort-key="type">Type</th>
+                <th class="sortable num" data-sort-key="shields">Shield</th>
+                <th class="sortable weakness-header" data-sort-key="weakness">
+                  <div class="weakness-header-content">
+                    <span class="weakness-header-title">Weaknesses</span>
+                    <div class="weakness-header-icons" aria-label="Click to sort by specific weakness">
+                      <span class="weakness-icon" data-weakness="Sword" title="Sort by Sword weakness"><img src="assets/icons/icon_sword.png" alt="Sword" /></span>
+                      <span class="weakness-icon" data-weakness="Spear" title="Sort by Spear weakness"><img src="assets/icons/icon_polearm.png" alt="Spear" /></span>
+                      <span class="weakness-icon" data-weakness="Dagger" title="Sort by Dagger weakness"><img src="assets/icons/icon_dagger.png" alt="Dagger" /></span>
+                      <span class="weakness-icon" data-weakness="Axe" title="Sort by Axe weakness"><img src="assets/icons/icon_axe.png" alt="Axe" /></span>
+                      <span class="weakness-icon" data-weakness="Bow" title="Sort by Bow weakness"><img src="assets/icons/icon_bow.png" alt="Bow" /></span>
+                      <span class="weakness-icon" data-weakness="Staff" title="Sort by Staff weakness"><img src="assets/icons/icon_staff.png" alt="Staff" /></span>
+                      <span class="weakness-icon" data-weakness="Tome" title="Sort by Tome weakness"><img src="assets/icons/icon_tome.png" alt="Tome" /></span>
+                      <span class="weakness-icon" data-weakness="Fan" title="Sort by Fan weakness"><img src="assets/icons/icon_fan.png" alt="Fan" /></span>
+                      <span class="weakness-icon" data-weakness="Fire" title="Sort by Fire weakness"><img src="assets/icons/icon_fire.png" alt="Fire" /></span>
+                      <span class="weakness-icon" data-weakness="Ice" title="Sort by Ice weakness"><img src="assets/icons/icon_ice.png" alt="Ice" /></span>
+                      <span class="weakness-icon" data-weakness="Thunder" title="Sort by Thunder weakness"><img src="assets/icons/icon_lightning.png" alt="Thunder" /></span>
+                      <span class="weakness-icon" data-weakness="Wind" title="Sort by Wind weakness"><img src="assets/icons/icon_wind.png" alt="Wind" /></span>
+                      <span class="weakness-icon" data-weakness="Light" title="Sort by Light weakness"><img src="assets/icons/icon_light.png" alt="Light" /></span>
+                      <span class="weakness-icon" data-weakness="Dark" title="Sort by Dark weakness"><img src="assets/icons/icon_dark.png" alt="Dark" /></span>
+                    </div>
+                  </div>
+                </th>
+                <th class="sortable num" data-sort-key="level">Lvl</th>
+                <th>Steal</th>
+                <th>Drop</th>
+              </tr>
+            </thead>
+            <tbody id="enemyTableBody"></tbody>
+          </table>
+        </div>
+
+        <div class="empty-state-card" id="enemyEmptyState" style="display:none;">
+          <div class="empty-icon">🐉</div>
+          <h3>No matching enemies found</h3>
+          <p>Try a different area, weakness, or type filter.</p>
+          <button class="primary-btn" id="enemyEmptyResetBtn" type="button">Clear Filters</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-overlay" id="enemyModal" role="dialog" aria-modal="true" aria-labelledby="enemyModalTitle">
+    <div class="modal-window">
+      <div class="modal-content" id="enemyModalContent"></div>
+    </div>
+  </div>
+
+  <script src="enemyData.js"></script>
+  <script src="enemyApp.js"></script>
+</body>
+</html>

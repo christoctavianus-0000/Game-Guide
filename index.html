@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Octopath Traveler 0 // Skill Codex</title>
+  <meta name="description" content="Interactive skill database and combat codex for Octopath Traveler 0 (Champions of the Continent). Browse physical, elemental, support, and passive skills with potency and boost scaling." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Shared Site Navigation -->
+    <nav class="site-nav" aria-label="Codex sections">
+      <div class="site-nav-inner">
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH 0 CODEX</span>
+        <div class="site-nav-links">
+          <a class="site-nav-link active" href="index.html" aria-current="page">⚔️ Skill Codex</a>
+          <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
+          <a class="site-nav-link" href="character.html">🧭 Character / Jobs</a>
+          <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
+        </div>
+      </div>
+    </nav>
+    <aside class="site-rail" aria-label="Codex selector">
+      <div class="site-rail-inner">
+        <span class="site-rail-brand" aria-hidden="true">✦</span>
+        <span class="site-rail-caption">Codex</span>
+        <div class="site-rail-links">
+          <a class="site-rail-link active" href="index.html" aria-current="page">
+            <span class="site-rail-icon" aria-hidden="true">⚔️</span>
+            <span class="site-rail-text">Skills</span>
+          </a>
+          <a class="site-rail-link" href="equipment.html">
+            <span class="site-rail-icon" aria-hidden="true">🛡️</span>
+            <span class="site-rail-text">Gear</span>
+          </a>
+          <a class="site-rail-link" href="character.html">
+            <span class="site-rail-icon" aria-hidden="true">🧭</span>
+            <span class="site-rail-text">Chars</span>
+          </a>
+          <a class="site-rail-link" href="enemy.html">
+            <span class="site-rail-icon" aria-hidden="true">🐉</span>
+            <span class="site-rail-text">Enemies</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Header & Hero -->
+    <header class="top-header">
+      <div class="header-container">
+        <div class="brand-area">
+          <div class="brand-crest">
+            <span class="crest-icon">✦</span>
+          </div>
+          <div>
+            <div class="brand-kicker">OCTOPATH TRAVELER 0</div>
+            <h1 class="brand-title">Skill Codex & Battle Database</h1>
+          </div>
+        </div>
+
+        <!-- Database Metrics Bar -->
+        <div class="metrics-bar" id="metricsBar">
+          <div class="metric-pill">
+            <span class="metric-label">Total Skills</span>
+            <span class="metric-val" id="metricTotal">2,787</span>
+          </div>
+          <div class="metric-pill physical">
+            <span class="metric-label">Physical</span>
+            <span class="metric-val" id="metricPhysical">1,257</span>
+          </div>
+          <div class="metric-pill elemental">
+            <span class="metric-label">Elemental</span>
+            <span class="metric-val" id="metricElemental">451</span>
+          </div>
+          <div class="metric-pill support">
+            <span class="metric-label">Support</span>
+            <span class="metric-val" id="metricSupport">642</span>
+          </div>
+          <div class="metric-pill passive">
+            <span class="metric-label">Passive</span>
+            <span class="metric-val" id="metricPassive">437</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="ghost-pill-btn" id="favToggleBtn" title="View Bookmarked Skills">
+            <span class="btn-icon">★</span>
+            <span id="favCount">Bookmarks (0)</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- High-Level Category Tabs -->
+      <section class="category-nav-section">
+        <div class="category-tabs" id="categoryTabs">
+          <button class="cat-tab active" data-category="All">
+            <span class="cat-icon">🌐</span>
+            <span class="cat-name">All Skills</span>
+            <span class="cat-badge" id="catCountAll">2,787</span>
+          </button>
+          <button class="cat-tab" data-category="Physical">
+            <span class="cat-icon">⚔️</span>
+            <span class="cat-name">Physical Attacks</span>
+            <span class="cat-badge" id="catCountPhysical">1,257</span>
+          </button>
+          <button class="cat-tab" data-category="Elemental">
+            <span class="cat-icon">✨</span>
+            <span class="cat-name">Elemental Magic</span>
+            <span class="cat-badge" id="catCountElemental">451</span>
+          </button>
+          <button class="cat-tab" data-category="Support">
+            <span class="cat-icon">💚</span>
+            <span class="cat-name">Support & Recovery</span>
+            <span class="cat-badge" id="catCountSupport">642</span>
+          </button>
+          <button class="cat-tab" data-category="Passive">
+            <span class="cat-icon">🛡️</span>
+            <span class="cat-name">Passive Abilities</span>
+            <span class="cat-badge" id="catCountPassive">437</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Sub-Filter & Search Command Bar -->
+      <section class="filter-panel">
+        <div class="filter-panel-inner">
+          <!-- Primary Search & Subtype row -->
+          <div class="search-and-subtypes">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔍</span>
+              <input 
+                type="search" 
+                id="skillSearchInput" 
+                placeholder="Search by skill name, description, weapon, element, or ailment..." 
+                autocomplete="off" 
+                spellcheck="false"
+              />
+              <button class="clear-search-btn" id="clearSearchBtn" title="Clear search">✕</button>
+            </div>
+
+            <!-- Dynamic Subtype Chips Container (changes based on selected Category) -->
+            <div class="subtype-chips-wrap" id="subtypeChipsWrap">
+              <!-- Rendered dynamically by app.js -->
+            </div>
+          </div>
+
+          <!-- Secondary Filters & Sorters row -->
+          <div class="secondary-filter-row">
+            <div class="filter-group">
+              <label for="targetFilter" class="filter-label">Target</label>
+              <select id="targetFilter" class="filter-select">
+                <option value="all">All Targets</option>
+                <option value="Single Foe">Single Foe</option>
+                <option value="All Foes">All Foes</option>
+                <option value="Random Foes">Random Foes</option>
+                <option value="Single Ally">Single Ally</option>
+                <option value="All Allies">All Allies</option>
+                <option value="Self">Self</option>
+                <option value="Front/Back Row">Front/Back Row</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="spFilter" class="filter-label">SP Cost</label>
+              <select id="spFilter" class="filter-select">
+                <option value="all">Any SP</option>
+                <option value="0">0 SP (Free / Passive)</option>
+                <option value="1-15">1 – 15 SP (Low)</option>
+                <option value="16-30">16 – 30 SP (Mid)</option>
+                <option value="31+">31+ SP (High / Ultimate)</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="sortFilter" class="filter-label">Sort By</label>
+              <select id="sortFilter" class="filter-select">
+                <option value="name-asc">Name (A → Z)</option>
+                <option value="name-desc">Name (Z → A)</option>
+                <option value="sp-asc">SP Cost (Low → High)</option>
+                <option value="sp-desc">SP Cost (High → Low)</option>
+                <option value="potency-desc">Max Boost Potency</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <button class="view-toggle-btn" id="viewToggleBtn" type="button" title="Switch to Table View">
+                <span class="view-icon">☰</span>
+                <span class="view-text">Table</span>
+              </button>
+            </div>
+
+            <div class="filter-status">
+              <span id="resultsCount">Showing 0 skills</span>
+              <button class="reset-link-btn" id="resetFiltersBtn">Reset Filters</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill Grid Section -->
+      <section class="skills-display-section">
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill Cards rendered dynamically by app.js -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state-card" id="emptyState" style="display: none;">
+          <div class="empty-icon">⚔️</div>
+          <h3>No matching skills found</h3>
+          <p>Try adjusting your search keywords or clearing your active filters.</p>
+          <button class="primary-btn" id="emptyResetBtn">Clear All Filters</button>
+        </div>
+
+        <!-- Pagination & Load More Controls -->
+        <div class="pagination-footer" id="paginationFooter">
+          <div class="pagination-info" id="paginationInfo">Showing 1-48 of 2,787</div>
+          <div class="pagination-buttons">
+            <button class="page-btn" id="prevPageBtn" disabled>‹ Previous</button>
+            <span class="page-current" id="pageCurrent">Page 1</span>
+            <button class="page-btn" id="nextPageBtn">Next ›</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Detail Modal -->
+    <div class="modal-overlay" id="detailModal" aria-hidden="true">
+      <div class="modal-window">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
+        <div class="modal-header">
+          <div class="modal-icon-badge" id="modalIconBadge">
+            <span id="modalGlyph">✦</span>
+          </div>
+          <div class="modal-title-area">
+            <div class="modal-meta-row">
+              <span class="modal-category-chip" id="modalCategory">Category</span>
+              <span class="modal-subtype-chip" id="modalSubType">Subtype</span>
+              <span class="modal-sp-chip" id="modalSp">SP: 0</span>
+              <span class="modal-target-chip" id="modalTarget">Target</span>
+            </div>
+            <h2 class="modal-skill-name" id="modalSkillName">Skill Name</h2>
+            <div class="modal-id-tag" id="modalId">ID: 000000</div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4 class="modal-section-heading">Skill Description</h4>
+            <div class="modal-description-box" id="modalDescription">Description text goes here...</div>
+          </div>
+
+          <!-- Boost Potency Progression Table -->
+          <div class="modal-section" id="modalBoostSection">
+            <h4 class="modal-section-heading">Boost Potency Scaling</h4>
+            <div class="boost-table-wrap">
+              <table class="boost-table">
+                <thead>
+                  <tr>
+                    <th>Boost Level</th>
+                    <th>Base (Lv 1)</th>
+                    <th>Boost 1 (Lv 2)</th>
+                    <th>Boost 2 (Lv 3)</th>
+                    <th>MAX Boost (Lv 4)</th>
+                  </tr>
+                </thead>
+                <tbody id="modalBoostTbody">
+                  <!-- Injected via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Additional Status & Combat Effects -->
+          <div class="modal-section" id="modalAilmentsSection">
+            <h4 class="modal-section-heading">Ailment & Status Effects</h4>
+            <div class="ailments-list" id="modalAilmentsList">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+          <div class="modal-section" id="modalSourceSection">
+            <h4 class="modal-section-heading">Skill Source</h4>
+            <div class="source-link-list" id="modalSource">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+          <!-- Extra Technical Stats -->
+          <div class="modal-section">
+            <h4 class="modal-section-heading">Combat Specifications</h4>
+            <div class="specs-grid" id="modalSpecsGrid">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="secondary-btn" id="modalFavBtn">★ Add to Bookmarks</button>
+          <button class="primary-btn" id="modalDoneBtn">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>Octopath Traveler 0 (Champions of the Continent) Skill Database • Extracted directly from official game tables</p>
+        <p class="footer-sub">All assets, skill names, and imagery are copyright © SQUARE ENIX CO., LTD.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Load Extracted Skill Data & Logic -->
+  <script src="characterData.js"></script>
+  <script src="skillData.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

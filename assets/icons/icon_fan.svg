@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Fan">
+  <rect width="24" height="24" rx="4" fill="#182638"/>
+  <path d="M12 18.5c-4.4 0-7.7-2.6-7.7-6.4 0-3.4 3.1-6.4 7.7-6.4s7.7 3 7.7 6.4c0 3.8-3.3 6.4-7.7 6.4Z" fill="#f8fafc"/>
+  <path d="M12 18.5V6.1M12 18.5 5.1 11.1M12 18.5l6.9-7.4M12 18.5 8.6 6.6M12 18.5l3.4-11.9" stroke="#52708c" stroke-width=".9"/>
+  <circle cx="12" cy="18.3" r="1.6" fill="#e5c158" stroke="#fff0a8" stroke-width=".5"/>
+</svg>

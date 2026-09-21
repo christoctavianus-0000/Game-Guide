@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Tome">
+  <rect width="24" height="24" rx="4" fill="#182638"/>
+  <path d="M5.5 6.3c2.5-1 4.9-.7 6.5.9v10.1c-1.6-1.6-4-1.9-6.5-.9V6.3Zm13 0c-2.5-1-4.9-.7-6.5.9v10.1c1.6-1.6 4-1.9 6.5-.9V6.3Z" fill="#f8fafc"/>
+  <path d="M12 7.2v10.1M7.7 9.3h2.3M14 9.3h2.3M7.7 11.7h2.3M14 11.7h2.3" stroke="#36516c" stroke-width=".8" stroke-linecap="round"/>
+  <path d="m15.8 4.2.5 1.1 1.2.2-1 .8.2 1.2-1-.6-1 .6.2-1.2-1-.8 1.2-.2.5-1.1Z" fill="#e5c158"/>
+</svg>

@@ -1,0 +1,158 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Update Equipment Icons",
+			"type": "shell",
+			"command": "node update_icons.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run Equipment Codex Tests",
+			"type": "shell",
+			"command": "node --test tests/equipmentCodex.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run All Tests",
+			"type": "shell",
+			"command": "node --test tests/*.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run All Tests",
+			"type": "shell",
+			"command": "node --test tests/*.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Check Enemy Data Keys",
+			"type": "shell",
+			"command": "node -e \"const data = require('./enemyData.js'); const keys = new Set(); (Array.isArray(window?.enemyData || enemyData) ? (window?.enemyData || enemyData) : []).forEach(e => Object.keys(e).forEach(k => keys.add(k))); console.log('Keys:', Array.from(keys));\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check Enemy Data Keys",
+			"type": "shell",
+			"command": "node check_keys.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check Keys",
+			"type": "shell",
+			"command": "node check_keys.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run Enemy Codex Tests",
+			"type": "shell",
+			"command": "node --test tests/enemyCodex.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run All Tests",
+			"type": "shell",
+			"command": "node --test tests/*.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Add Steal/Drop Data",
+			"type": "shell",
+			"command": "node add_steal_drop.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run All Tests",
+			"type": "shell",
+			"command": "node --test tests/*.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run All Tests",
+			"type": "shell",
+			"command": "node --test tests/*.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run Equipment Tests",
+			"type": "shell",
+			"command": "node --test tests/equipmentCodex.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run Equipment Tests",
+			"type": "shell",
+			"command": "node --test tests/equipmentCodex.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run Equipment Tests",
+			"type": "shell",
+			"command": "node --test tests/equipmentCodex.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run All Tests",
+			"type": "shell",
+			"command": "node --test tests/*.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run All Tests",
+			"type": "shell",
+			"command": "node --test tests/*.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run Character Tests",
+			"type": "shell",
+			"command": "node --test tests/characterCodex.test.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run All Tests",
+			"type": "shell",
+			"command": "node --test",
+			"args": [
+				"tests/*.test.js"
+			],
+			"group": "test"
+		}
+	]
+}

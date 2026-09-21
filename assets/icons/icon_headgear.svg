@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Headgear">
+  <rect width="24" height="24" rx="4" fill="#182638"/>
+  <!-- Helmet Dome -->
+  <path d="M5 13.5C5 8.8 8.1 5 12 5s7 3.8 7 8.5v1.5H5v-1.5z" fill="#e2e8f0"/>
+  <!-- Visor / Eye Slit -->
+  <path d="M7 11h10v2H7z" fill="#0f172a"/>
+  <!-- Nose Guard -->
+  <path d="M11 11h2v5h-2z" fill="#94a3b8"/>
+  <!-- Cheek Guards -->
+  <path d="M5 14h2v4H5zm12 0h2v4h-2z" fill="#94a3b8"/>
+  <!-- Crest / Plume Base -->
+  <path d="M11 3.5h2V5h-2z" fill="#f59e0b"/>
+</svg>
