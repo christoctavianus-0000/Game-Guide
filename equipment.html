@@ -14,11 +14,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div class="site-wrapper">
     <!-- Shared Site Navigation -->
     <nav class="site-nav" aria-label="Codex sections">
       <div class="site-nav-inner">
-        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH 0 CODEX</span>
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH TRAVELER 0 CODEX</span>
         <div class="site-nav-links">
           <a class="site-nav-link" href="index.html">⚔️ Skill Codex</a>
           <a class="site-nav-link active" href="equipment.html" aria-current="page">🛡️ Equipment Codex</a>
@@ -33,7 +36,7 @@
         <span class="site-rail-caption">Codex</span>
         <div class="site-rail-links">
           <a class="site-rail-link" href="index.html">
-            <span class="site-rail-icon" aria-hidden="true">⚔️</span>
+            <span class="site-rail-icon" aria-hidden="true">✦</span>
             <span class="site-rail-text">Skills</span>
           </a>
           <a class="site-rail-link active" href="equipment.html" aria-current="page">
@@ -95,7 +98,7 @@
     </header>
 
     <!-- Main Content Area -->
-    <main class="main-content">
+    <main class="main-content" id="main-content">
       <!-- High-Level Category Tabs -->
       <section class="category-nav-section">
         <div class="category-tabs" id="categoryTabs">
@@ -135,8 +138,9 @@
                 placeholder="Search by item name, type, effect, source, or stat..."
                 autocomplete="off"
                 spellcheck="false"
+                aria-label="Search equipment"
               />
-              <button class="clear-search-btn" id="clearSearchBtn" title="Clear search">✕</button>
+              <button class="clear-search-btn" id="clearSearchBtn" title="Clear search" aria-label="Clear search">✕</button>
             </div>
 
             <!-- Dynamic Subtype Chips Container (changes based on selected Category) -->
@@ -212,14 +216,16 @@
               <tr>
                 <th class="sortable" data-sort-key="name">Item</th>
                 <th class="sortable" data-sort-key="type">Type</th>
-                <th class="sortable num" data-sort-key="patk" title="Phys. Atk.">PATK</th>
-                <th class="sortable num" data-sort-key="matk" title="Elem. Atk.">MATK</th>
-                <th class="sortable num" data-sort-key="pdef" title="Phys. Def.">PDEF</th>
-                <th class="sortable num" data-sort-key="mdef" title="Elem. Def.">MDEF</th>
-                <th class="sortable num" data-sort-key="spd" title="Speed">SPD</th>
-                <th class="sortable num" data-sort-key="crt" title="Critical">CRT</th>
-                <th class="sortable num" data-sort-key="acc" title="Accuracy">ACC</th>
-                <th class="sortable num" data-sort-key="eva" title="Evasion">EVA</th>
+                <th class="sortable num" data-sort-key="hp" title="HP"><span class="th-stat-text">HP</span></th>
+                <th class="sortable num" data-sort-key="sp" title="SP"><span class="th-stat-text">SP</span></th>
+                <th class="sortable num" data-sort-key="patk" title="Phys. Atk."><img src="assets/icons/icon_patk.png" alt="" class="th-stat-icon"> PATK</th>
+                <th class="sortable num" data-sort-key="matk" title="Elem. Atk."><img src="assets/icons/icon_matk.png" alt="" class="th-stat-icon"> MATK</th>
+                <th class="sortable num" data-sort-key="pdef" title="Phys. Def."><img src="assets/icons/icon_pdef.png" alt="" class="th-stat-icon"> PDEF</th>
+                <th class="sortable num" data-sort-key="mdef" title="Elem. Def."><img src="assets/icons/icon_mdef.png" alt="" class="th-stat-icon"> MDEF</th>
+                <th class="sortable num" data-sort-key="spd" title="Speed"><img src="assets/icons/icon_spd.png" alt="" class="th-stat-icon"> SPD</th>
+                <th class="sortable num" data-sort-key="crt" title="Critical"><img src="assets/icons/icon_crt.png" alt="" class="th-stat-icon"> CRT</th>
+                <th class="sortable num" data-sort-key="acc" title="Accuracy"><img src="assets/icons/icon_acc.png" alt="" class="th-stat-icon"> ACC</th>
+                <th class="sortable num" data-sort-key="eva" title="Evasion"><img src="assets/icons/icon_eva.png" alt="" class="th-stat-icon"> EVA</th>
                 <th class="sortable num" data-sort-key="cost" title="Lowest listed price">Price</th>
                 <th>Source</th>
               </tr>
@@ -255,7 +261,7 @@
     </main>
 
 <!-- Detail Modal -->
-    <div class="modal-overlay" id="detailModal" aria-hidden="true">
+    <div class="modal-overlay" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalItemName" aria-hidden="true">
       <div class="modal-window">
         <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
         <div class="modal-header">

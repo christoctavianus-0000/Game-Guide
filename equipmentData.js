@@ -8357,7 +8357,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Leather Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8381,7 +8381,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Leather Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8405,7 +8405,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Ordinary Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8429,7 +8429,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Pointed Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8453,7 +8453,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Feathered Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8477,7 +8477,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Bronze Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8501,7 +8501,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Silver Hairpiece",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 10,
@@ -8525,7 +8525,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Iron Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8549,7 +8549,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Circlet",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 15,
@@ -8573,7 +8573,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Headgear",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8597,7 +8597,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Black Cap",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8621,7 +8621,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Flying Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8645,7 +8645,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sturdy Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8669,7 +8669,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Fighter's Headband",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 150,
       "sp": 0,
@@ -8693,7 +8693,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Chakra Band",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8717,7 +8717,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Saintly Tiara",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 21,
@@ -8741,7 +8741,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Snowy Hood",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8765,7 +8765,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Silver Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8789,7 +8789,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Gold Hairpiece",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 36,
@@ -8813,7 +8813,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Bishop's Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8837,7 +8837,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Falcon Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8861,7 +8861,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Hasty Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8885,7 +8885,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Lady's Tiara",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 25,
@@ -8909,7 +8909,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Antique Ceremonial Mask",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8933,7 +8933,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Starlight Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8957,7 +8957,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Elder's Circlet",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -8981,7 +8981,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Horned Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9005,7 +9005,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Collector's Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 300,
       "sp": 0,
@@ -9029,7 +9029,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Grand Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9053,7 +9053,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Elemental Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9077,7 +9077,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Fur Cap",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9101,7 +9101,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Enchanted Circlet",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 53,
@@ -9125,7 +9125,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Cursed Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": -66,
@@ -9149,7 +9149,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Silent Bandanna",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9173,7 +9173,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Oasis Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9197,7 +9197,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Imperial Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9221,7 +9221,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Platinum Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9245,7 +9245,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Adamantine Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9269,7 +9269,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Hypnos Crown",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 72,
@@ -9293,7 +9293,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Crystal Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9317,7 +9317,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Champion's Helm",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 99,
@@ -9341,7 +9341,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Dragon Cap",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9365,7 +9365,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Anchorite's Hat",
     "type": "Headgear",
-    "icon": "assets/icons/icon_headgear.svg",
+    "icon": "assets/icons/icon_headgear.png",
     "stats": {
       "hp": 0,
       "sp": 50,
@@ -9389,7 +9389,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Villager's Clothes",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9413,7 +9413,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Leather Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9437,7 +9437,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9461,7 +9461,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Leather Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9485,7 +9485,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Linen Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9509,7 +9509,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Old Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9533,7 +9533,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Bronze Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9557,7 +9557,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Bronze Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9581,7 +9581,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Traditional Dancer Garb",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 12,
@@ -9605,7 +9605,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Wind Attire",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9629,7 +9629,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Black Attire",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9653,7 +9653,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Copper Breastplate",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9677,7 +9677,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Fur Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9701,7 +9701,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Quality Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9725,7 +9725,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sturdy Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9749,7 +9749,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Peacebringer's Garb",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 98,
       "sp": 0,
@@ -9773,7 +9773,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Iron Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9797,7 +9797,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sturdy Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9821,7 +9821,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Iron Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9845,7 +9845,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Snowy Cape",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9869,7 +9869,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Charm Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 21,
@@ -9893,7 +9893,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Silver Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9917,7 +9917,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Silver Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9941,7 +9941,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Spiked Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9965,7 +9965,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Falcon Garb",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -9989,7 +9989,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "White Wolf Scarf",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10013,7 +10013,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Elemental Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10037,7 +10037,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Grand Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10061,7 +10061,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Grand Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10085,7 +10085,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Exotic Garb",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10109,7 +10109,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Fur Coat",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10133,7 +10133,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Elemental Light Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10157,7 +10157,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Rainbow Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10181,7 +10181,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Silent Cape",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10205,7 +10205,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Elemental Heavy Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10229,7 +10229,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Imperial Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10253,7 +10253,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Primeval Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 35,
@@ -10277,7 +10277,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Platinum Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10301,7 +10301,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Ornate Costume",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10325,7 +10325,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Quartz Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 60,
@@ -10349,7 +10349,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Imperial Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10373,7 +10373,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Vest of Joy",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10397,7 +10397,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Platinum Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10421,7 +10421,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Ardante Attire",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 42,
@@ -10445,7 +10445,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Lord's Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10469,7 +10469,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "High House's Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10493,7 +10493,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Ethereal Dancer Garb",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10517,7 +10517,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Anchorite's Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10541,7 +10541,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sorcerer's Robe",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10565,7 +10565,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Dragon's Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10589,7 +10589,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Crystal Vest",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10613,7 +10613,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Cursed Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10637,7 +10637,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Champion's Armor",
     "type": "Body Armor",
-    "icon": "assets/icons/icon_body_armor.svg",
+    "icon": "assets/icons/icon_armor.png",
     "stats": {
       "hp": 990,
       "sp": 0,
@@ -10661,7 +10661,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Buckler",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10685,7 +10685,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Small Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10709,7 +10709,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Round Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10733,7 +10733,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sturdy Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10757,7 +10757,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Iron Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 60,
       "sp": 0,
@@ -10781,7 +10781,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Weathered Treasure Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10805,7 +10805,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Kite Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10829,7 +10829,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Plate Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10853,7 +10853,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Evasive Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10877,7 +10877,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Silver Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 150,
       "sp": 0,
@@ -10901,7 +10901,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Tattered Sacred Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 20,
@@ -10925,7 +10925,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Elemental Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10949,7 +10949,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Spiked Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10973,7 +10973,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Commander's Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -10997,7 +10997,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Tower Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11021,7 +11021,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "High House Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11045,7 +11045,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Diamond Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11069,7 +11069,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Adamantine Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11093,7 +11093,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sun Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11117,7 +11117,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Quartz Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11141,7 +11141,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Knight's Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11165,7 +11165,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Leviathan Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11189,7 +11189,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Gargantuan Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11213,7 +11213,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Force Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11237,7 +11237,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Giant Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11261,7 +11261,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Forbidden Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11285,7 +11285,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Battle-Tested Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11309,7 +11309,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Cursed Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11333,7 +11333,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Champion's Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11357,7 +11357,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Dragon Shield",
     "type": "Shield",
-    "icon": "assets/icons/icon_shield.svg",
+    "icon": "assets/icons/icon_shield.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11381,7 +11381,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "SP Cleansing Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11405,7 +11405,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Invigorating Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11429,7 +11429,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Fortifying Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11453,7 +11453,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Vivifying Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11477,7 +11477,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Calming Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11501,7 +11501,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Bright Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11525,7 +11525,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Articulate Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11549,7 +11549,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Lively Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11573,7 +11573,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Wakeful Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11597,7 +11597,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Congealing Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11621,7 +11621,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Antidote Stone",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11645,7 +11645,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Dark Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11669,7 +11669,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Light Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11693,7 +11693,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Wind Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11717,7 +11717,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Lightning Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11741,7 +11741,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Ice Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11765,7 +11765,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Fire Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11789,7 +11789,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Void Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11813,7 +11813,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Gleaming Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11837,7 +11837,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Tempest Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11861,7 +11861,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Thunderstorm Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11885,7 +11885,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Blizzard Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11909,7 +11909,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Inferno Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11933,7 +11933,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Tattered Shoes",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11957,7 +11957,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Silver Locket",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -11981,7 +11981,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Battle Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12005,7 +12005,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Traveler's Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 30,
       "sp": 0,
@@ -12029,7 +12029,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Ancient Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 30,
       "sp": 10,
@@ -12053,7 +12053,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Falcon Gloves",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12077,7 +12077,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Crescent Moon Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12101,7 +12101,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Divine Halo",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 30,
@@ -12125,7 +12125,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Critical Earring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12149,7 +12149,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sprightly Earring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12173,7 +12173,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Enlightening Earring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12197,7 +12197,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Unerring Earring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12221,7 +12221,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Protective Earring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12245,7 +12245,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Stimulating Earring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 10,
@@ -12269,7 +12269,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Empowering Earring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 50,
       "sp": 0,
@@ -12293,7 +12293,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Critical Cuffs",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12317,7 +12317,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sprightly Cuffs",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12341,7 +12341,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Enlightening Cuffs",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12365,7 +12365,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Unerring Cuffs",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12389,7 +12389,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Protective Cuffs",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12413,7 +12413,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Stimulating Cuffs",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 30,
@@ -12437,7 +12437,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Empowering Cuffs",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 200,
       "sp": 0,
@@ -12461,7 +12461,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Critical Bracelet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12485,7 +12485,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sprightly Bracelet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12509,7 +12509,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Enlightening Bracelet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12533,7 +12533,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Unerring Bracelet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12557,7 +12557,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Protective Bracelet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12581,7 +12581,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Stimulating Bracelet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 50,
@@ -12605,7 +12605,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Empowering Bracelet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 500,
       "sp": 0,
@@ -12629,7 +12629,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Critical Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12653,7 +12653,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sprightly Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12677,7 +12677,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Enlightening Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12701,7 +12701,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Unerring Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12725,7 +12725,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Protective Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12749,7 +12749,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Stimulating Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 80,
@@ -12773,7 +12773,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Empowering Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 1000,
       "sp": 0,
@@ -12797,7 +12797,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Beastly Scarf",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12821,7 +12821,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Dragon's Scarf",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12845,7 +12845,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Spirit Scarf",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12869,7 +12869,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Imperial Scarf",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12893,7 +12893,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Mighty Belt",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12917,7 +12917,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Elemental Ward",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12941,7 +12941,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Guardian Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12965,7 +12965,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Mental Belt",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -12989,7 +12989,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Physical Belt",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13013,7 +13013,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Elemental Augmentor",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13037,7 +13037,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Prince of Thieves Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13061,7 +13061,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Rosary of Redemption",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13085,7 +13085,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Jade Ring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 100,
       "sp": 10,
@@ -13109,7 +13109,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Man-Eating Miser's Ring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 150,
       "sp": 0,
@@ -13133,7 +13133,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Gold Earring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 60,
@@ -13157,7 +13157,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Shadowsage Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 40,
@@ -13181,7 +13181,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Blazon of Protection",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13205,7 +13205,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Blessed Blazon",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13229,7 +13229,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Brooch of Resolution",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13253,7 +13253,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Aqeeq Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13277,7 +13277,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Ward of the Knight Ardante",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13301,7 +13301,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Rainbow Shell Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13325,7 +13325,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Amulet of the Nomad",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13349,7 +13349,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Blissful Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 40,
@@ -13373,7 +13373,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Amulet of Granatt",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13397,7 +13397,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Librarian's Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 120,
@@ -13421,7 +13421,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Assistant's Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 1200,
       "sp": 0,
@@ -13445,7 +13445,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sailor's Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13469,7 +13469,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Champion's Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13493,7 +13493,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Flameguard's Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13517,7 +13517,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Charm of Compassion",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13541,7 +13541,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Enfeebling Amulet",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13565,7 +13565,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Prosperity Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13589,7 +13589,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Victory Ring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13613,7 +13613,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Champion's Belt",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13637,7 +13637,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Mark of Fortitude",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13661,7 +13661,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Eye of Calamity",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13685,7 +13685,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Gale Feather",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13709,7 +13709,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Finisher's Claws",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13733,7 +13733,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sandstorm Plague Mandible",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13757,7 +13757,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Fang of Ferocity",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13781,7 +13781,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Blessing in Disguise",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13805,7 +13805,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Contrition of Fame",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 66,
@@ -13829,7 +13829,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Contrition of Power",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 444,
       "sp": -66,
@@ -13853,7 +13853,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Contrition of Wealth",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": -444,
       "sp": 0,
@@ -13877,7 +13877,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Belt of the Seas",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 500,
       "sp": 50,
@@ -13901,7 +13901,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Anklet of the Sands",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13925,7 +13925,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Pendant of the Skies",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13949,7 +13949,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Royal Hawk's Claw",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13973,7 +13973,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Scarlet Stone of Protection",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -13997,7 +13997,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Hand-Sewn Gloves",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14021,7 +14021,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Foreign Ring",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14045,7 +14045,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Crest of Hornburg",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 1200,
       "sp": 0,
@@ -14069,7 +14069,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Champion's Mark",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14093,7 +14093,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Rebellious Collar",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14117,7 +14117,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Bloodsoaked Cup",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14141,7 +14141,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Royal Cuffs",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 200,
       "sp": 0,
@@ -14165,7 +14165,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Academy Insignia",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 30,
@@ -14189,7 +14189,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Memorial Pendant",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14213,7 +14213,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Famous Actress's Necklace",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14237,7 +14237,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Illusory Cape",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14261,7 +14261,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Kitty Cape",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14285,7 +14285,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Seal of Oath",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14309,7 +14309,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Proof of Valor",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14333,7 +14333,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Tears of Hope",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14357,7 +14357,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Mark of Salvation",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14381,7 +14381,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Seal of the Sacred Flame",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14405,7 +14405,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Yaya's Hairpin",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 50,
@@ -14429,7 +14429,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Sacred Flame Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14453,7 +14453,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Promise Charm",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14477,7 +14477,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Fighter's Wristband",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14501,7 +14501,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Lucky Coin",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14525,7 +14525,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Brooch of Joy",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14549,7 +14549,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "JP Augmentor",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14573,7 +14573,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "EXP Augmentor",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14597,7 +14597,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Alluring Ribbon",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,
@@ -14621,7 +14621,7 @@ const equipmentData = [
     "kind": "Armor",
     "name": "Spurning Ribbon",
     "type": "Accessories",
-    "icon": "assets/icons/icon_accessories.svg",
+    "icon": "assets/icons/icon_accessories.png",
     "stats": {
       "hp": 0,
       "sp": 0,

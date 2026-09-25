@@ -221,13 +221,21 @@
     `;
 
     elements.enemyModalContent.innerHTML = modalHTML;
+    state.previousFocus = document.activeElement;
     elements.enemyModal.classList.add('active');
-    document.getElementById('enemyModalClose').addEventListener('click', closeEnemyModal);
+    elements.enemyModal.setAttribute('aria-hidden', 'false');
+    const closeBtn = document.getElementById('enemyModalClose');
+    if (closeBtn) closeBtn.addEventListener('click', closeEnemyModal);
+    if (closeBtn && typeof closeBtn.focus === 'function') closeBtn.focus();
   }
 
   function closeEnemyModal() {
     state.modalEnemy = null;
     elements.enemyModal.classList.remove('active');
+    elements.enemyModal.setAttribute('aria-hidden', 'true');
+    if (state.previousFocus && typeof state.previousFocus.focus === 'function') {
+      state.previousFocus.focus();
+    }
   }
 
   function getFilteredEnemies() {
@@ -329,6 +337,11 @@
     }).join('');
 
     elements.enemyTableBody.innerHTML = rows;
+    // Stagger animation for table rows
+    elements.enemyTableBody.querySelectorAll('tr').forEach((tr, i) => {
+      tr.classList.add('row-enter');
+      tr.style.animationDelay = `${i * 25}ms`;
+    });
     elements.enemyMetricTotal.textContent = String(dataset.length);
     elements.enemyMetricAreas.textContent = String(new Set(dataset.map(enemy => cleanText(enemy.area))).size);
     elements.enemyResultsCount.textContent = `Showing ${filtered.length} enemies`;
@@ -499,6 +512,20 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && state.modalEnemy) {
         closeEnemyModal();
+        return;
+      }
+      if (e.key === 'Tab' && elements.enemyModal.classList.contains('active')) {
+        const focusable = elements.enemyModal.querySelectorAll(
+          'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey) {
+          if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+        } else {
+          if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
       }
     });
   }

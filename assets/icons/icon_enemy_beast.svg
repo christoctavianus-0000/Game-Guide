@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Enemy Beast">
+  <rect width="24" height="24" rx="4" fill="#182638"/>
+  <!-- Beast head silhouette -->
+  <path d="M4 10c0-4.4 3.6-8 8-8s8 3.6 8 8c0 2.5-1.5 5-3 6.5V20c0 1.1-.9 2-2 2H9c-1.1 0-2-.9-2-2v-3.5C5.5 15 4 12.5 4 10z" fill="#6b7280"/>
+  <!-- Left ear tuft -->
+  <path d="M5 7l-2-4c-.2-.6.2-1.2.7-1l1 .4c.5.2.8.8.6 1.4L5 7z" fill="#9ca3af"/>
+  <!-- Right ear tuft -->
+  <path d="M19 7l2-4c.2-.6-.2-1.2-.7-1l-1 .4c-.5.2-.8.8-.6 1.4L19 7z" fill="#9ca3af"/>
+  <!-- Muzzle -->
+  <ellipse cx="12" cy="14" rx="3.5" ry="2.8" fill="#d1d5db"/>
+  <!-- Eyes - angry -->
+  <path d="M7.5 9l2.5-1v2.5l-2.5-1z" fill="#fbbf24"/>
+  <circle cx="9" cy="9.8" r="0.7" fill="#182638"/>
+  <path d="M16.5 9l-2.5-1v2.5l2.5-1z" fill="#fbbf24"/>
+  <circle cx="15" cy="9.8" r="0.7" fill="#182638"/>
+  <!-- Angry brow lines -->
+  <path d="M7 7.5l3 1" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M17 7.5l-3 1" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M11 13.2c0 0 .5-.8 1-.8s1 .8 1 .8" fill="#374151"/>
+  <!-- Fangs -->
+  <path d="M9.5 15.5l.8 2M14.5 15.5l-.8 2" stroke="#f8fafc" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

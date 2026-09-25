@@ -52,21 +52,21 @@
     ],
     Support: [
       { id: 'all', label: 'All Support', icon: '' },
-      { id: 'Recovery', label: 'Healing & Recovery', glyph: '💚' },
-      { id: 'Buff', label: 'Stat Buffs', glyph: '🛡️' },
-      { id: 'Debuff', label: 'Enemy Debuffs', glyph: '⚡' },
+      { id: 'Recovery', label: 'Healing & Recovery', icon: 'assets/icons/icon_recovery.png' },
+      { id: 'Buff', label: 'Stat Buffs', icon: 'assets/icons/icon_buff.png' },
+      { id: 'Debuff', label: 'Enemy Debuffs', icon: 'assets/icons/icon_debuff.png' },
       { id: 'Utility', label: 'Utility & Revive', glyph: '✦' }
     ],
     Passive: [
       { id: 'all', label: 'All Passives', icon: '' },
-      { id: 'Passive Trait', label: 'Battle Traits', glyph: '🛡️' }
+      { id: 'Passive Trait', label: 'Battle Traits', icon: 'assets/icons/icon_passive.png' }
     ],
     All: [
       { id: 'all', label: 'All Skills', icon: '' },
       { id: 'Physical', label: 'Physical', glyph: '⚔️' },
       { id: 'Elemental', label: 'Elemental', glyph: '✨' },
       { id: 'Support', label: 'Support', glyph: '💚' },
-      { id: 'Passive', label: 'Passive', glyph: '🛡️' }
+      { id: 'Passive', label: 'Passive', icon: 'assets/icons/icon_passive.png' }
     ]
   };
 
@@ -396,8 +396,14 @@
             if (skill.icon) {
               iconHtml = `<img src="${escapeHtml(skill.icon)}" alt="${escapeHtml(skill.subType)}" class="table-icon-img" />`;
             } else {
-              const fallbackGlyphs = { Physical: '⚔️', Elemental: '✨', Support: '💚', Passive: '🛡️' };
+              const fallbackGlyphs = { Physical: '⚔️', Elemental: '✨', Support: '💚' };
+              const fallbackIcons = { Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' };
+              if (fallbackIcons[skill.category] || fallbackIcons[skill.subType]) {
+                const fbSrc = fallbackIcons[skill.subType] || fallbackIcons[skill.category];
+                iconHtml = `<img src="${fbSrc}" alt="${skill.subType || skill.category}" class="table-glyph" />`;
+              } else {
               iconHtml = `<span class="table-glyph">${fallbackGlyphs[skill.category] || '✦'}</span>`;
+              }
             }
 
             const spDisplay = skill.sp > 0 ? `${skill.sp} SP` : 'PASSIVE';
@@ -489,10 +495,15 @@
         const fallbackGlyphs = {
           Physical: '⚔️',
           Elemental: '✨',
-          Support: '💚',
-          Passive: '🛡️'
+          Support: '💚'
         };
+        const fallbackIcons = { Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' };
+        if (fallbackIcons[skill.category] || fallbackIcons[skill.subType]) {
+          const fbSrc = fallbackIcons[skill.subType] || fallbackIcons[skill.category];
+          iconHtml = `<img src="${escapeHtml(fbSrc)}" alt="${escapeHtml(skill.subType || skill.category)}" class="card-glyph" />`;
+        } else {
         iconHtml = `<span class="card-glyph">${fallbackGlyphs[skill.category] || '✦'}</span>`;
+        }
       }
 
       // SP Badge
@@ -565,6 +576,7 @@
         toggleFavorite(skill.id);
       });
 
+      card.classList.add('card-enter');
       elements.skillsGrid.appendChild(card);
     });
   }
@@ -589,8 +601,14 @@
     if (skill.icon) {
       iconHtml = `<img src="${escapeHtml(skill.icon)}" alt="${escapeHtml(skill.subType)}" />`;
     } else {
-      const fallbackGlyphs = { Physical: '⚔️', Elemental: '✨', Support: '💚', Passive: '🛡️' };
+      const fallbackGlyphs = { Physical: '⚔️', Elemental: '✨', Support: '💚' };
+      const fallbackIcons = { Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' };
+      if (fallbackIcons[skill.category] || fallbackIcons[skill.subType]) {
+        const fbSrc = fallbackIcons[skill.subType] || fallbackIcons[skill.category];
+        iconHtml = `<img src="${escapeHtml(fbSrc)}" alt="${escapeHtml(skill.subType || skill.category)}" />`;
+      } else {
       iconHtml = `<span>${fallbackGlyphs[skill.category] || '✦'}</span>`;
+      }
     }
     elements.modalIconBadge.innerHTML = iconHtml;
 
@@ -707,9 +725,11 @@
     updateModalFavButton();
 
     // Show modal
+    state.previousFocus = document.activeElement;
     elements.detailModal.classList.add('active');
     elements.detailModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    if (typeof elements.modalCloseBtn.focus === 'function') elements.modalCloseBtn.focus();
   }
 
   function closeModal() {
@@ -717,6 +737,9 @@
     elements.detailModal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
     state.selectedSkill = null;
+    if (state.previousFocus && typeof state.previousFocus.focus === 'function') {
+      state.previousFocus.focus();
+    }
   }
 
   function toggleFavorite(id) {
@@ -887,6 +910,20 @@
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && elements.detailModal.classList.contains('active')) {
         closeModal();
+        return;
+      }
+      if ((e.key === 'Tab') && elements.detailModal.classList.contains('active')) {
+        const focusable = elements.detailModal.querySelectorAll(
+          'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey) {
+          if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+        } else {
+          if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
       }
     });
   }

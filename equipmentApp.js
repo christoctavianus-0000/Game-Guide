@@ -21,14 +21,14 @@
   };
 
   // Stats shown as table columns and sortable headers
-  const TABLE_STATS = ['patk', 'matk', 'pdef', 'mdef', 'spd', 'crt', 'acc', 'eva'];
+  const TABLE_STATS = ['hp', 'sp', 'patk', 'matk', 'pdef', 'mdef', 'spd', 'crt', 'acc', 'eva'];
   const STAT_ORDER = ['patk', 'matk', 'pdef', 'mdef', 'spd', 'crt', 'acc', 'eva', 'hp', 'sp'];
 
   const TYPE_GLYPHS = {
-    Headgear: 'assets/icons/icon_headgear.svg',
-    'Body Armor': 'assets/icons/icon_body_armor.svg',
-    Shield: 'assets/icons/icon_shield.svg',
-    Accessories: 'assets/icons/icon_accessories.svg'
+    Headgear: 'assets/icons/icon_headgear.png',
+    'Body Armor': 'assets/icons/icon_armor.png',
+    Shield: 'assets/icons/icon_shield.png',
+    Accessories: 'assets/icons/icon_accessories.png'
   };
 
   const KIND_GLYPHS = { Weapon: '⚔️', Armor: '🛡️' };
@@ -75,8 +75,8 @@
     All: [
       { id: 'all', label: 'All Equipment', glyph: '🌐' },
       { id: 'Weapon', label: 'Weapons', icon: 'assets/icons/icon_sword.png' },
-      { id: 'Armor', label: 'Armor', icon: 'assets/icons/icon_shield.svg' },
-      { id: 'Accessories', label: 'Accessories', icon: 'assets/icons/icon_accessories.svg' }
+      { id: 'Armor', label: 'Armor', icon: 'assets/icons/icon_armor.png' },
+      { id: 'Accessories', label: 'Accessories', icon: 'assets/icons/icon_accessories.png' }
     ],
     Weapon: [
       { id: 'all', label: 'All Weapons', glyph: '⚔️' },
@@ -90,13 +90,13 @@
       { id: 'Fan', label: 'Fan', icon: 'assets/icons/icon_fan.png' }
     ],
     Armor: [
-      { id: 'all', label: 'All Armor', icon: 'assets/icons/icon_shield.svg' },
-      { id: 'Headgear', label: 'Headgear', icon: 'assets/icons/icon_headgear.svg' },
-      { id: 'Body Armor', label: 'Body Armor', icon: 'assets/icons/icon_body_armor.svg' },
-      { id: 'Shield', label: 'Shield', icon: 'assets/icons/icon_shield.svg' }
+      { id: 'all', label: 'All Armor', icon: 'assets/icons/icon_armor.png' },
+      { id: 'Headgear', label: 'Headgear', icon: 'assets/icons/icon_headgear.png' },
+      { id: 'Body Armor', label: 'Body Armor', icon: 'assets/icons/icon_armor.png' },
+      { id: 'Shield', label: 'Shield', icon: 'assets/icons/icon_shield.png' }
     ],
     Accessories: [
-      { id: 'all', label: 'All Accessories', icon: 'assets/icons/icon_accessories.svg' }
+      { id: 'all', label: 'All Accessories', icon: 'assets/icons/icon_accessories.png' }
     ]
   };
 
@@ -111,8 +111,6 @@
       return { key: statKey, label: STAT_META[statKey].full };
     })
   ).concat([
-    { key: 'hp', label: 'HP' },
-    { key: 'sp', label: 'SP' },
     { key: 'cost', label: 'Price' }
   ]);
 
@@ -580,10 +578,20 @@
       elements.equipGrid.style.display = 'none';
       elements.equipTableWrap.style.display = 'block';
       renderTable(pageItems, filtered);
+      // Stagger animation for table rows
+      elements.equipTableBody.querySelectorAll('tr').forEach((tr, i) => {
+        tr.classList.add('row-enter');
+        tr.style.animationDelay = `${i * 25}ms`;
+      });
     } else {
       elements.equipTableWrap.style.display = 'none';
       elements.equipGrid.style.display = '';
       renderGrid(pageItems, filtered);
+      // Stagger animation for grid cards
+      elements.equipGrid.querySelectorAll('.skill-card').forEach((card, i) => {
+        card.classList.add('card-enter');
+        card.style.animationDelay = `${i * 35}ms`;
+      });
     }
 
     elements.paginationInfo.textContent = 'Showing ' + (startIdx + 1) + '–' + endIdx + ' of ' + total.toLocaleString();
@@ -655,9 +663,11 @@
 
     updateModalFavButton();
 
+    state.previousFocus = document.activeElement;
     elements.detailModal.classList.add('active');
     elements.detailModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    if (typeof elements.modalCloseBtn.focus === 'function') elements.modalCloseBtn.focus();
   }
 
   function closeModal() {
@@ -665,6 +675,9 @@
     elements.detailModal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
     state.selectedItem = null;
+    if (state.previousFocus && typeof state.previousFocus.focus === 'function') {
+      state.previousFocus.focus();
+    }
   }
 
   function toggleFavorite(id) {
@@ -875,6 +888,20 @@
     window.addEventListener('keydown', function (event) {
       if (event.key === 'Escape' && elements.detailModal.classList.contains('active')) {
         closeModal();
+        return;
+      }
+      if (event.key === 'Tab' && elements.detailModal.classList.contains('active')) {
+        var focusable = elements.detailModal.querySelectorAll(
+          'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+        if (event.shiftKey) {
+          if (document.activeElement === first) { event.preventDefault(); last.focus(); }
+        } else {
+          if (document.activeElement === last) { event.preventDefault(); first.focus(); }
+        }
       }
     });
   }

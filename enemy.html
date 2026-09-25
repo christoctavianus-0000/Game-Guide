@@ -11,10 +11,13 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div class="site-wrapper">
     <nav class="site-nav" aria-label="Codex sections">
       <div class="site-nav-inner">
-        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH 0 CODEX</span>
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH TRAVELER 0 CODEX</span>
         <div class="site-nav-links">
           <a class="site-nav-link" href="index.html">⚔️ Skill Codex</a>
           <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
@@ -30,7 +33,7 @@
         <span class="site-rail-caption">Codex</span>
         <div class="site-rail-links">
           <a class="site-rail-link" href="index.html">
-            <span class="site-rail-icon" aria-hidden="true">⚔️</span>
+            <span class="site-rail-icon" aria-hidden="true">✦</span>
             <span class="site-rail-text">Skills</span>
           </a>
           <a class="site-rail-link" href="equipment.html">
@@ -74,7 +77,7 @@
       </div>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
       <section class="filter-panel">
         <div class="filter-panel-inner">
           <div class="category-tabs" id="enemyTypeTabs" role="tablist" aria-label="Filter by enemy type">
@@ -118,8 +121,8 @@
           <div class="search-and-subtypes">
             <div class="search-input-wrap">
               <span class="search-icon">🔎</span>
-              <input id="enemySearchInput" type="search" placeholder="Search enemy, area, sub area, or weakness..." autocomplete="off" />
-              <button id="enemyClearSearch" class="clear-search-btn" type="button" title="Clear search">✕</button>
+              <input id="enemySearchInput" type="search" placeholder="Search enemy, area, sub area, or weakness..." autocomplete="off" aria-label="Search enemies" />
+              <button id="enemyClearSearch" class="clear-search-btn" type="button" title="Clear search" aria-label="Clear search">✕</button>
             </div>
 
             <div class="secondary-filter-row">

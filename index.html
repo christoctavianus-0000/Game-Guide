@@ -14,11 +14,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div class="site-wrapper">
     <!-- Shared Site Navigation -->
     <nav class="site-nav" aria-label="Codex sections">
       <div class="site-nav-inner">
-        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH 0 CODEX</span>
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH TRAVELER 0 CODEX</span>
         <div class="site-nav-links">
           <a class="site-nav-link active" href="index.html" aria-current="page">⚔️ Skill Codex</a>
           <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
@@ -33,7 +36,7 @@
         <span class="site-rail-caption">Codex</span>
         <div class="site-rail-links">
           <a class="site-rail-link active" href="index.html" aria-current="page">
-            <span class="site-rail-icon" aria-hidden="true">⚔️</span>
+            <span class="site-rail-icon" aria-hidden="true">✦</span>
             <span class="site-rail-text">Skills</span>
           </a>
           <a class="site-rail-link" href="equipment.html">
@@ -99,7 +102,7 @@
     </header>
 
     <!-- Main Content Area -->
-    <main class="main-content">
+    <main class="main-content" id="main-content">
       <!-- High-Level Category Tabs -->
       <section class="category-nav-section">
         <div class="category-tabs" id="categoryTabs">
@@ -124,7 +127,7 @@
             <span class="cat-badge" id="catCountSupport">642</span>
           </button>
           <button class="cat-tab" data-category="Passive">
-            <span class="cat-icon">🛡️</span>
+            <img class="cat-icon" src="assets/icons/icon_passive.png" alt="Passive" />
             <span class="cat-name">Passive Abilities</span>
             <span class="cat-badge" id="catCountPassive">437</span>
           </button>
@@ -144,8 +147,9 @@
                 placeholder="Search by skill name, description, weapon, element, or ailment..." 
                 autocomplete="off" 
                 spellcheck="false"
+                aria-label="Search skills"
               />
-              <button class="clear-search-btn" id="clearSearchBtn" title="Clear search">✕</button>
+              <button class="clear-search-btn" id="clearSearchBtn" title="Clear search" aria-label="Clear search">✕</button>
             </div>
 
             <!-- Dynamic Subtype Chips Container (changes based on selected Category) -->
@@ -234,7 +238,7 @@
     </main>
 
     <!-- Detail Modal -->
-    <div class="modal-overlay" id="detailModal" aria-hidden="true">
+    <div class="modal-overlay" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalSkillName" aria-hidden="true">
       <div class="modal-window">
         <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
         <div class="modal-header">

@@ -3715,7 +3715,7 @@ const characterData = {
     {
       "id": "warrior",
       "name": "Warrior",
-      "weapons": "Sword/Spear",
+      "weapons": "Sword/Polearm",
       "skills": [
         {
           "name": "Cross Strike",
@@ -3921,7 +3921,7 @@ const characterData = {
     {
       "id": "merchant",
       "name": "Merchant",
-      "weapons": "Spear/Bow",
+      "weapons": "Polearm/Bow",
       "skills": [
         {
           "name": "Deadly Thrust",

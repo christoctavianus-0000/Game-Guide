@@ -153,6 +153,52 @@
 				"tests/*.test.js"
 			],
 			"group": "test"
+		},
+		{
+			"label": "Git Status",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status",
+				"--short"
+			]
+		},
+		{
+			"label": "Cleanup temp file",
+			"type": "shell",
+			"command": "Remove-Item",
+			"args": [
+				".",
+				"/f"
+			]
+		},
+		{
+			"label": "Remove sync_hp_sp.js",
+			"type": "shell",
+			"command": "Remove-Item",
+			"args": [
+				"sync_hp_sp.js"
+			]
+		},
+		{
+			"label": "Remove test file",
+			"type": "shell",
+			"command": "Remove-Item",
+			"args": [
+				"-Path",
+				"test123.txt",
+				"-ErrorAction",
+				"SilentlyContinue"
+			]
+		},
+		{
+			"label": "Git Add All",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"add",
+				"-A"
+			]
 		}
 	]
 }

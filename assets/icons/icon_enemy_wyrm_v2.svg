@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Enemy Wyrm">
+  <rect width="24" height="24" rx="3" fill="#0c0a12"/>
+  <rect width="24" height="24" rx="3" fill="url(#wyrmVignette)" opacity="0.6"/>
+  <defs><radialGradient id="wyrmVignette" cx="50%" cy="40%" r="55%"><stop offset="0%" stop-color="#0a1a0f" stop-opacity="0"/><stop offset="100%" stop-color="#050308" stop-opacity="0.9"/></radialGradient></defs>
+  <!-- Dragon snout / head silhouette -->
+  <path d="M12 4.5c-3.5 0-6 2.5-6 5.8 0 1.8.8 3.5 2 4.5l-1 4c0 .5.3.9.8.9h8.4c.5 0 .8-.4.8-.9l-1-4c1.2-1 2-2.7 2-4.5 0-3.3-2.5-5.8-6-5.8z" fill="#0d1810"/>
+  <!-- Scale plates on forehead -->
+  <path d="M10 6l2-1 2 1M9.5 8l2.5-1 2.5 1M9 10l3-1 3 1" fill="none" stroke="#142618" stroke-width="0.3"/>
+  <!-- Horns - dark, swept back -->
+  <path d="M6.5 6L3.5 2.5c-.2-.4.1-.9.6-.7l.8.3c.4.2.6.6.5 1L6.5 6z" fill="#141c14" stroke="#1c281c" stroke-width="0.2"/>
+  <path d="M17.5 6l3-3.5c.2-.4-.1-.9-.6-.7l-.8.3c-.4.2-.6.6-.5 1L17.5 6z" fill="#141c14" stroke="#1c281c" stroke-width="0.2"/>
+  <!-- Horn ridges -->
+  <path d="M5 4.5l1.2-.2M19 4.5l-1.2-.2" stroke="#1c281c" stroke-width="0.25"/>
+  <!-- Eyes - reptile slits -->
+  <path d="M8.5 8.5l2-.3v1.2l-2 .3z" fill="#1b2816"/>
+  <path d="M15.5 8.5l-2-.3v1.2l2 .3z" fill="#1b2816"/>
+  <!-- Amber eye slit glow -->
+  <line x1="9.5" y1="8.6" x2="9.5" y2="9.3" stroke="#4d4010" stroke-width="0.5" opacity="0.6"/>
+  <line x1="14.5" y1="8.6" x2="14.5" y2="9.3" stroke="#4d4010" stroke-width="0.5" opacity="0.6"/>
+  <!-- Brow ridge - heavy -->
+  <path d="M7.5 8l3 .2" stroke="#080e0a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M16.5 8l-3 .2" stroke="#080e0a" stroke-width="0.6" stroke-linecap="round"/>
+  <!-- Snout ridge -->
+  <path d="M9 12c0 1 1.3 1.8 3 1.8s3-.8 3-1.8" fill="none" stroke="#142618" stroke-width="0.6"/>
+  <!-- Nostrils -->
+  <ellipse cx="10.5" cy="12.2" rx="0.3" ry="0.2" fill="#080e0a"/>
+  <ellipse cx="13.5" cy="12.2" rx="0.3" ry="0.2" fill="#080e0a"/>
+  <!-- Smoldering smoke wisps -->
+  <path d="M10.8 13.8c-.2.6 0 1.2.3 1.5" fill="none" stroke="#251210" stroke-width="0.3" opacity="0.5"/>
+  <path d="M13.2 13.8c.2.6 0 1.2-.3 1.5" fill="none" stroke="#251210" stroke-width="0.3" opacity="0.5"/>
+</svg>

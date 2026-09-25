@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Enemy Beast">
+  <rect width="24" height="24" rx="3" fill="#0c0a12"/>
+  <rect width="24" height="24" rx="3" fill="url(#beastVignette)" opacity="0.5"/>
+  <defs><radialGradient id="beastVignette" cx="50%" cy="42%" r="55%"><stop offset="0%" stop-color="#1a1510" stop-opacity="0"/><stop offset="100%" stop-color="#050308" stop-opacity="0.9"/></radialGradient></defs>
+  <!-- Beast head silhouette -->
+  <path d="M4.5 10.5c0-4 3.2-7.2 7.5-7.2s7.5 3.2 7.5 7.2c0 2-1.2 4-2.5 5.2l.5 2.8c0 .6-.4 1-1 1H7.5c-.6 0-1-.4-1-1l.5-2.8c-1.3-1.2-2.5-3.2-2.5-5.2z" fill="#15120e"/>
+  <!-- Fur texture lines -->
+  <path d="M6 8c1-.8 2.2-1.5 3.5-1.8M14.5 6.2c1.3.3 2.5 1 3.5 1.8M7 11c.5-.8 1.5-1.3 2.5-1.5M14.5 9.5c1 .2 2 .7 2.5 1.5" stroke="#231e18" stroke-width="0.25" opacity="0.5"/>
+  <!-- Ears - pointed, torn -->
+  <path d="M5.5 7l-1.5-3.5c-.1-.4.2-.8.6-.6l.8.3c.3.1.5.5.4.8l.3 2.5" fill="#1a1612" stroke="#231e18" stroke-width="0.2"/>
+  <path d="M18.5 7l1.5-3.5c.1-.4-.2-.8-.6-.6l-.8.3c-.3.1-.5.5-.4.8l-.3 2.5" fill="#1a1612" stroke="#231e18" stroke-width="0.2"/>
+  <!-- Snout area -->
+  <path d="M9 13c0 0 1.2-1.2 3-1.2s3 1.2 3 1.2" fill="none" stroke="#231e18" stroke-width="0.6"/>
+  <!-- Eyes - deep set, predatory -->
+  <path d="M8 9.8l2-.5v1.2l-1 .3c-.4.1-.7-.3-.6-.7L8 9.8z" fill="#2a2015"/>
+  <path d="M16 9.8l-2-.5v1.2l1 .3c.4.1.7-.3.6-.7L16 9.8z" fill="#2a2015"/>
+  <!-- Eye glint -->
+  <circle cx="9.3" cy="10.1" r="0.25" fill="#4a3520" opacity="0.6"/>
+  <circle cx="14.7" cy="10.1" r="0.25" fill="#4a3520" opacity="0.6"/>
+  <!-- Brow ridges - heavy -->
+  <path d="M7.5 9l2.8.6" stroke="#0e0c0a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M16.5 9l-2.8.6" stroke="#0e0c0a" stroke-width="0.6" stroke-linecap="round"/>
+  <!-- Nose -->
+  <ellipse cx="12" cy="12.5" rx="1" ry="0.6" fill="#1e1a16"/>
+  <!-- Fangs -->
+  <path d="M9.8 14.8c.1.5.2 1.2.4 1.5" stroke="#1e1a16" stroke-width="0.5" stroke-linecap="round"/>
+  <path d="M14.2 14.8c-.1.5-.2 1.2-.4 1.5" stroke="#1e1a16" stroke-width="0.5" stroke-linecap="round"/>
+  <!-- Scar -->
+  <path d="M15 7.5l1.5 2" stroke="#1e1a16" stroke-width="0.3" opacity="0.5"/>
+</svg>

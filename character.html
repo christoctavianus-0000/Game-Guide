@@ -11,10 +11,13 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div class="site-wrapper">
     <nav class="site-nav" aria-label="Codex sections">
       <div class="site-nav-inner">
-        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH 0 CODEX</span>
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH TRAVELER 0 CODEX</span>
         <div class="site-nav-links">
           <a class="site-nav-link" href="index.html">⚔️ Skill Codex</a>
           <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
@@ -30,7 +33,7 @@
         <span class="site-rail-caption">Codex</span>
         <div class="site-rail-links">
           <a class="site-rail-link" href="index.html">
-            <span class="site-rail-icon" aria-hidden="true">⚔️</span>
+            <span class="site-rail-icon" aria-hidden="true">✦</span>
             <span class="site-rail-text">Skills</span>
           </a>
           <a class="site-rail-link" href="equipment.html">
@@ -74,14 +77,14 @@
       </div>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
       <section class="filter-panel">
         <div class="filter-panel-inner">
           <div class="search-and-subtypes">
             <div class="search-input-wrap">
               <span class="search-icon">🔎</span>
-              <input id="characterSearchInput" type="search" placeholder="Search character, job, or skill name..." autocomplete="off" />
-              <button id="clearCharacterSearch" class="clear-search-btn" type="button" title="Clear search">✕</button>
+              <input id="characterSearchInput" type="search" placeholder="Search character, job, or skill name..." autocomplete="off" aria-label="Search characters and jobs" />
+              <button id="clearCharacterSearch" class="clear-search-btn" type="button" title="Clear search" aria-label="Clear search">✕</button>
             </div>
 
             <div class="category-tabs" id="characterJobTabs" role="tablist" aria-label="Filter by job">
@@ -90,85 +93,83 @@
                 <span class="cat-name">All</span>
               </button>
               <button class="cat-tab" data-category="Warrior" role="tab" aria-selected="false">
-                <span class="cat-icon">⚔️</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_warrior.png" alt="Warrior" class="job-tab-icon"></span>
                 <span class="cat-name">Warrior</span>
               </button>
               <button class="cat-tab" data-category="Dancer" role="tab" aria-selected="false">
-                <span class="cat-icon">💃</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_dancer.png" alt="Dancer" class="job-tab-icon"></span>
                 <span class="cat-name">Dancer</span>
               </button>
               <button class="cat-tab" data-category="Merchant" role="tab" aria-selected="false">
-                <span class="cat-icon">💰</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_merchant.png" alt="Merchant" class="job-tab-icon"></span>
                 <span class="cat-name">Merchant</span>
               </button>
               <button class="cat-tab" data-category="Scholar" role="tab" aria-selected="false">
-                <span class="cat-icon">📚</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_scholar.png" alt="Scholar" class="job-tab-icon"></span>
                 <span class="cat-name">Scholar</span>
               </button>
               <button class="cat-tab" data-category="Cleric" role="tab" aria-selected="false">
-                <span class="cat-icon">⛪</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_cleric.png" alt="Cleric" class="job-tab-icon"></span>
                 <span class="cat-name">Cleric</span>
               </button>
               <button class="cat-tab" data-category="Thief" role="tab" aria-selected="false">
-                <span class="cat-icon">🗝️</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_thief.png" alt="Thief" class="job-tab-icon"></span>
                 <span class="cat-name">Thief</span>
               </button>
               <button class="cat-tab" data-category="Hunter" role="tab" aria-selected="false">
-                <span class="cat-icon">🏹</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_hunter.png" alt="Hunter" class="job-tab-icon"></span>
                 <span class="cat-name">Hunter</span>
               </button>
               <button class="cat-tab" data-category="Apothecary" role="tab" aria-selected="false">
-                <span class="cat-icon">🧪</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_apothecary.png" alt="Apothecary" class="job-tab-icon"></span>
                 <span class="cat-name">Apothecary</span>
               </button>
               <button class="cat-tab" data-category="Architect" role="tab" aria-selected="false">
-                <span class="cat-icon">🏗️</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_architect.png" alt="Architect" class="job-tab-icon"></span>
                 <span class="cat-name">Architect</span>
               </button>
               <button class="cat-tab" data-category="Cait Scholar" role="tab" aria-selected="false">
-                <span class="cat-icon">🐱</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_cait_scholar.png" alt="Cait Scholar" class="job-tab-icon"></span>
                 <span class="cat-name">Cait Scholar</span>
               </button>
               <button class="cat-tab" data-category="Captain" role="tab" aria-selected="false">
-                <span class="cat-icon">⚓</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_captain.png" alt="Captain" class="job-tab-icon"></span>
                 <span class="cat-name">Captain</span>
               </button>
               <button class="cat-tab" data-category="Empress" role="tab" aria-selected="false">
-                <span class="cat-icon">👑</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_empress.png" alt="Empress" class="job-tab-icon"></span>
                 <span class="cat-name">Empress</span>
               </button>
               <button class="cat-tab" data-category="Flamebringer" role="tab" aria-selected="false">
-                <span class="cat-icon">🔥</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_flameguard.png" alt="Flamebringer" class="job-tab-icon"></span>
                 <span class="cat-name">Flamebringer</span>
               </button>
               <button class="cat-tab" data-category="King" role="tab" aria-selected="false">
-                <span class="cat-icon">🤴</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_king.png" alt="King" class="job-tab-icon"></span>
                 <span class="cat-name">King</span>
               </button>
               <button class="cat-tab" data-category="Knight Ardante" role="tab" aria-selected="false">
-                <span class="cat-icon">🛡️</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_knight_ardante.png" alt="Knight Ardante" class="job-tab-icon"></span>
                 <span class="cat-name">Knight Ardante</span>
               </button>
               <button class="cat-tab" data-category="Lord" role="tab" aria-selected="false">
-                <span class="cat-icon">🏰</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_lord.png" alt="Lord" class="job-tab-icon"></span>
                 <span class="cat-name">Lord</span>
               </button>
               <button class="cat-tab" data-category="Queen" role="tab" aria-selected="false">
-                <span class="cat-icon">👸</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_queen.png" alt="Queen" class="job-tab-icon"></span>
                 <span class="cat-name">Queen</span>
               </button>
               <button class="cat-tab" data-category="Wise King" role="tab" aria-selected="false">
-                <span class="cat-icon">🧙</span>
+                <span class="cat-icon"><img src="assets/icons/jobs/job_wise_king.png" alt="Wise King" class="job-tab-icon"></span>
                 <span class="cat-name">Wise King</span>
               </button>
             </div>
 
             <div class="secondary-filter-row">
               <div class="filter-group">
-                <label for="characterWeaponFilter" class="filter-label">Weapon</label>
-                <select id="characterWeaponFilter" class="filter-select">
-                  <option value="all">All Weapons</option>
-                </select>
+                <label class="filter-label">Weapon</label>
+                <div class="weapon-icon-filter" id="weaponIconFilter" role="radiogroup" aria-label="Weapon filter"></div>
               </div>
             </div>
           </div>
@@ -186,7 +187,7 @@
       </section>
     </main>
 
-    <div class="modal-overlay" id="characterDetailModal" aria-hidden="true">
+    <div class="modal-overlay" id="characterDetailModal" role="dialog" aria-modal="true" aria-labelledby="characterModalName" aria-hidden="true">
       <div class="modal-window">
         <button class="modal-close-btn" id="characterModalCloseBtn" aria-label="Close dialog">✕</button>
         <div class="modal-header">
@@ -202,9 +203,21 @@
         </div>
 
         <div class="modal-body">
-          <div class="modal-section">
-            <h4 class="modal-section-heading">Overview</h4>
-            <div class="modal-description-box" id="characterModalDescription">Description</div>
+          <div class="char-modal-top">
+            <div class="char-modal-image-panel" id="characterModalImagePanel">
+              <img id="characterModalImage" class="char-modal-image" src="" alt="" style="display:none;">
+              <div id="characterModalImageFallback" class="char-modal-image-fallback"></div>
+              <div class="char-modal-image-toggle" id="characterModalImageToggle" style="display:none;">
+                <button type="button" class="char-modal-img-btn active" id="characterModalPortraitBtn" aria-label="Show portrait">Portrait</button>
+                <button type="button" class="char-modal-img-btn" id="characterModalSpriteBtn" aria-label="Show sprite">Sprite</button>
+              </div>
+            </div>
+            <div class="char-modal-overview">
+              <div class="modal-section">
+                <h4 class="modal-section-heading">Overview</h4>
+                <div class="modal-description-box" id="characterModalDescription">Description</div>
+              </div>
+            </div>
           </div>
 
           <div class="modal-section">
