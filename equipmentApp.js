@@ -509,12 +509,14 @@
       }).join('');
 
       html += '<tr class="equip-row" data-id="' + escapeHtml(item.id) + '">' +
-        '<td class="equip-name-cell">' +
-          iconMarkup(item, 'table-icon-img') +
-          '<span class="equip-name-text">' + escapeHtml(item.name) + '</span>' +
-          '<button class="card-fav-btn' + (isFav ? ' is-fav' : '') + '" data-fav-id="' + escapeHtml(item.id) + '" title="Bookmark Item">' +
-            (isFav ? '★' : '☆') +
-          '</button>' +
+        '<td>' +
+          '<div class="equip-name-cell">' +
+            iconMarkup(item, 'table-icon-img') +
+            '<span class="equip-name-text">' + escapeHtml(item.name) + '</span>' +
+            '<button class="card-fav-btn' + (isFav ? ' is-fav' : '') + '" data-fav-id="' + escapeHtml(item.id) + '" title="Bookmark Item">' +
+              (isFav ? '★' : '☆') +
+            '</button>' +
+          '</div>' +
         '</td>' +
         '<td>' + escapeHtml(item.type) + '</td>' +
         statCells +

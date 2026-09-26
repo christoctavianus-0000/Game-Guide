@@ -199,6 +199,47 @@
 				"add",
 				"-A"
 			]
+		},
+		{
+			"label": "Git Commit",
+			"type": "shell",
+			"command": "git commit -m \"Character modal image panel + equipment HP/SP columns\"",
+			"args": []
+		},
+		{
+			"label": "Git Commit",
+			"type": "shell",
+			"command": "git commit -m \"Character modal image panel + equipment HP/SP columns\""
+		},
+		{
+			"label": "Git Commit",
+			"type": "shell",
+			"command": "git commit -m \"Character modal image panel + equipment HP/SP columns\" -m \"Character codex: portrait/sprite toggle in modal, click image to toggle, job icon fallback\" -m \"Equipment codex: HP/SP table columns and data sync\" -m \"Square character cards, contextual weapon filter\" -m \"UI/typography/accessibility audit improvements\" -m \"36/36 tests passing\""
+		},
+		{
+			"label": "Git Commit from file",
+			"type": "shell",
+			"command": "git commit -F COMMIT_MSG.txt"
+		},
+		{
+			"label": "Git Log",
+			"type": "shell",
+			"command": "git log --oneline -1"
+		},
+		{
+			"label": "Git Status",
+			"type": "shell",
+			"command": "git status --short"
+		},
+		{
+			"label": "Remove commit msg file",
+			"type": "shell",
+			"command": "Remove-Item COMMIT_MSG.txt"
+		},
+		{
+			"label": "Git Push",
+			"type": "shell",
+			"command": "git push"
 		}
 	]
 }
