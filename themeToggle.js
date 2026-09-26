@@ -22,7 +22,7 @@
     });
   }
 
-  // Apply saved theme immediately
+  // Apply saved theme immediately (inline script in <head> also does this before paint)
   applyTheme(getTheme());
 
   btns.forEach(function (btn) {

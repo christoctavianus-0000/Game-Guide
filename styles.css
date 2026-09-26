@@ -66,46 +66,46 @@
    LIGHT THEME
    ========================================================================== */
 [data-theme="light"] {
-  --bg-abyss: #f4f4f5;
-  --bg-canvas: #eaeaea;
-  --bg-surface: #ffffff;
-  --bg-surface-elevated: #f4f4f5;
-  --bg-surface-card: #ffffff;
-  --bg-surface-hover: #e4e4e7;
+  --bg-abyss: #e8e6e1;
+  --bg-canvas: #e2dfda;
+  --bg-surface: #f2f0ec;
+  --bg-surface-elevated: #f7f5f2;
+  --bg-surface-card: #f7f5f2;
+  --bg-surface-hover: #dddbd6;
 
-  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-subtle: rgba(0, 0, 0, 0.07);
   --border-card: rgba(0, 0, 0, 0.1);
-  --border-gold: rgba(0, 0, 0, 0.15);
+  --border-gold: rgba(0, 0, 0, 0.13);
   --border-gold-glow: rgba(0, 0, 0, 0.08);
 
-  --text-primary: #18181b;
+  --text-primary: #27272a;
   --text-secondary: #52525b;
   --text-muted: #71717a;
   --text-gold: #57534e;
   --text-gold-bright: #292524;
 
   --cat-physical: #b45309;
-  --cat-physical-glow: rgba(180, 83, 9, 0.12);
-  --cat-physical-bg: rgba(180, 83, 9, 0.08);
+  --cat-physical-glow: rgba(180, 83, 9, 0.1);
+  --cat-physical-bg: rgba(180, 83, 9, 0.06);
 
   --cat-elemental: #0369a1;
-  --cat-elemental-glow: rgba(3, 105, 161, 0.12);
-  --cat-elemental-bg: rgba(3, 105, 161, 0.08);
+  --cat-elemental-glow: rgba(3, 105, 161, 0.1);
+  --cat-elemental-bg: rgba(3, 105, 161, 0.06);
 
   --cat-support: #15803d;
-  --cat-support-glow: rgba(21, 128, 61, 0.12);
-  --cat-support-bg: rgba(21, 128, 61, 0.08);
+  --cat-support-glow: rgba(21, 128, 61, 0.1);
+  --cat-support-bg: rgba(21, 128, 61, 0.06);
 
   --cat-passive: #7e22ce;
-  --cat-passive-glow: rgba(126, 34, 206, 0.12);
-  --cat-passive-bg: rgba(126, 34, 206, 0.08);
+  --cat-passive-glow: rgba(126, 34, 206, 0.1);
+  --cat-passive-bg: rgba(126, 34, 206, 0.06);
 
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.08);
 
-  --focus-ring: 0 0 0 2px rgba(0, 0, 0, 0.4);
+  --focus-ring: 0 0 0 2px rgba(0, 0, 0, 0.35);
 
-  --texture-opacity: 0.03;
+  --texture-opacity: 0.025;
 }
 
 /* ==========================================================================
@@ -3186,4 +3186,61 @@ body::before {
 
 [data-theme="light"] .theme-toggle-btn {
   border-color: var(--border-card);
+}
+
+/* Character card artwork overlay — softer in light mode */
+[data-theme="light"] .card-artwork-overlay {
+  background: linear-gradient(to bottom, rgba(232, 230, 225, 0.15) 0%, rgba(232, 230, 225, 0.35) 40%, rgba(232, 230, 225, 0.7) 75%, rgba(232, 230, 225, 0.88) 100%);
+}
+
+[data-theme="light"] .skill-card.has-artwork {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .skill-card.has-artwork .card-skill-name {
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="light"] .skill-card.has-artwork:hover {
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+/* Fixed theme toggle — top-right of viewport, always visible */
+.theme-toggle-fixed {
+  position: fixed;
+  top: 12px;
+  right: 20px;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-card);
+}
+
+.theme-toggle-fixed:hover {
+  color: var(--text-primary);
+  background: var(--bg-surface-hover);
+  border-color: var(--border-card);
+}
+
+.theme-toggle-fixed:focus-visible {
+  box-shadow: var(--focus-ring);
+  outline: none;
+}
+
+/* Desktop: nudge right to avoid rail overlap */
+@media (min-width: 1100px) {
+  .theme-toggle-fixed {
+    right: 24px;
+  }
 }

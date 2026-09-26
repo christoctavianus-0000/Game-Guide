@@ -13,7 +13,12 @@
 
   <link rel="stylesheet" href="styles.css" />
   <script>
-    (function(){var t=localStorage.getItem('octo0_theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})();
+    (function(){
+      var t = localStorage.getItem('octo0_theme');
+      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      else if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      else document.documentElement.removeAttribute('data-theme');
+    })();
   </script>
 </head>
 <body>
@@ -30,11 +35,10 @@
           <a class="site-nav-link active" href="equipment.html" aria-current="page">🛡️ Equipment Codex</a>
           <a class="site-nav-link" href="character.html">🧭 Character / Jobs</a>
           <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
-          <span class="site-nav-divider" aria-hidden="true"></span>
-          <button class="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">🌙</button>
         </div>
       </div>
     </nav>
+    <button class="theme-toggle-btn theme-toggle-fixed" type="button" aria-label="Switch to light theme" title="Toggle theme">🌙</button>
     <aside class="site-rail" aria-label="Codex selector">
       <div class="site-rail-inner">
         <span class="site-rail-brand" aria-hidden="true">✦</span>
@@ -57,9 +61,7 @@
             <span class="site-rail-text">Enemies</span>
           </a>
         </div>
-        <div class="site-rail-bottom">
-          <button class="theme-toggle-btn site-rail-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">🌙</button>
-        </div>
+
       </div>
     </aside>
 
