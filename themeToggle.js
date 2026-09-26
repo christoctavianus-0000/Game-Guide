@@ -9,7 +9,14 @@
   var btns = document.querySelectorAll('.theme-toggle-btn');
 
   function getTheme() {
-    return localStorage.getItem(STORAGE_KEY) || 'dark';
+    // Try localStorage first, then window.name fallback for file:// isolation
+    var t = localStorage.getItem(STORAGE_KEY);
+    if (t) return t;
+    try {
+      var wn = window.name;
+      if (wn && (wn === 'light' || wn === 'dark')) return wn;
+    } catch (e) { /* ignore */ }
+    return 'dark';
   }
 
   function applyTheme(theme) {
@@ -29,6 +36,7 @@
     btn.addEventListener('click', function () {
       var next = getTheme() === 'dark' ? 'light' : 'dark';
       localStorage.setItem(STORAGE_KEY, next);
+      try { window.name = next; } catch (e) { /* ignore */ }
       applyTheme(next);
     });
   });
