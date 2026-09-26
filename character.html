@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function(){var t=localStorage.getItem('octo0_theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})();
+  </script>
 </head>
 <body>
   <!-- Skip link for keyboard users -->
@@ -23,6 +26,8 @@
           <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
           <a class="site-nav-link active" href="character.html" aria-current="page">🧭 Character / Jobs</a>
           <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
+          <span class="site-nav-divider" aria-hidden="true"></span>
+          <button class="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">🌙</button>
         </div>
       </div>
     </nav>
@@ -48,6 +53,9 @@
             <span class="site-rail-icon" aria-hidden="true">🐉</span>
             <span class="site-rail-text">Enemies</span>
           </a>
+        </div>
+        <div class="site-rail-bottom">
+          <button class="theme-toggle-btn site-rail-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">🌙</button>
         </div>
       </div>
     </aside>
@@ -240,5 +248,6 @@
 
   <script src="characterData.js"></script>
   <script src="characterApp.js"></script>
+  <script src="themeToggle.js"></script>
 </body>
 </html>
