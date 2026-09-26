@@ -3205,42 +3205,10 @@ body::before {
   border-color: rgba(0, 0, 0, 0.18);
 }
 
-/* Fixed theme toggle — top-right of viewport, always visible */
-.theme-toggle-fixed {
-  position: fixed;
-  top: 12px;
-  right: 20px;
-  z-index: 100;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  border: 1px solid var(--border-subtle);
-  background: var(--bg-surface);
-  color: var(--text-secondary);
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 1;
-  transition: var(--transition-fast);
-  box-shadow: var(--shadow-card);
-}
-
-.theme-toggle-fixed:hover {
-  color: var(--text-primary);
-  background: var(--bg-surface-hover);
-  border-color: var(--border-card);
-}
-
-.theme-toggle-fixed:focus-visible {
-  box-shadow: var(--focus-ring);
-  outline: none;
-}
-
-/* Desktop: nudge right to avoid rail overlap */
-@media (min-width: 1100px) {
-  .theme-toggle-fixed {
-    right: 24px;
-  }
+/* Header actions: stacked layout for toggle above bookmark */
+.header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
 }
