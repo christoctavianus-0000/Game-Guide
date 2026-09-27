@@ -19,7 +19,10 @@
     pageSize: 48,
     showFavoritesOnly: false,
     favorites: /** @type {Set<string>} */ (new Set(JSON.parse(localStorage.getItem('octo0_skill_favs') || '[]'))),
-    selectedSkill: null
+    /** @type {SkillRecord | null} */
+    selectedSkill: null,
+    /** @type {HTMLElement | null} */
+    previousFocus: null
   };
 
   // Subtype metadata with icons
@@ -373,6 +376,7 @@
   /**
    * Render skill table view
    */
+  /** @param {SkillRecord[]} skills */
   function renderSkillTable(skills) {
     elements.skillsGrid.innerHTML = `
       <table class="skill-table" role="grid">
@@ -395,8 +399,8 @@
             if (skill.icon) {
               iconHtml = `<img src="${escapeHtml(skill.icon)}" alt="${escapeHtml(skill.subType)}" class="table-icon-img" />`;
             } else {
-              const fallbackGlyphs = { Physical: '⚔️', Elemental: '✨', Support: '💚' };
-              const fallbackIcons = { Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' };
+              const fallbackGlyphs = /** @type {Record<string, string>} */ ({ Physical: '⚔️', Elemental: '✨', Support: '💚' });
+              const fallbackIcons = /** @type {Record<string, string>} */ ({ Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' });
               if (fallbackIcons[skill.category] || fallbackIcons[skill.subType]) {
                 const fbSrc = fallbackIcons[skill.subType] || fallbackIcons[skill.category];
                 iconHtml = `<img src="${fbSrc}" alt="${skill.subType || skill.category}" class="table-glyph" />`;
@@ -448,7 +452,7 @@
     // Add click handlers for table rows
     elements.skillsGrid.querySelectorAll('.skill-table tbody tr').forEach(row => {
       row.addEventListener('click', (e) => {
-        if (e.target.closest('.table-fav-btn') || e.target.closest('.table-inspect-btn')) return;
+        if ((/** @type {HTMLElement} */ (e.target)).closest('.table-fav-btn') || (/** @type {HTMLElement} */ (e.target)).closest('.table-inspect-btn')) return;
         const skillId = row.getAttribute('data-id');
         const skill = dataset.find(s => s.id === skillId);
         if (skill) openModal(skill);
@@ -477,6 +481,7 @@
   /**
    * Render individual skill cards
    */
+  /** @param {SkillRecord[]} skills */
   function renderSkillCards(skills) {
     elements.skillsGrid.innerHTML = '';
 
@@ -491,12 +496,12 @@
       if (skill.icon) {
         iconHtml = `<img src="${escapeHtml(skill.icon)}" alt="${escapeHtml(skill.subType)}" class="card-icon-img" />`;
       } else {
-        const fallbackGlyphs = {
+        const fallbackGlyphs = /** @type {Record<string, string>} */ ({
           Physical: '⚔️',
           Elemental: '✨',
           Support: '💚'
-        };
-        const fallbackIcons = { Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' };
+        });
+        const fallbackIcons = /** @type {Record<string, string>} */ ({ Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' });
         if (fallbackIcons[skill.category] || fallbackIcons[skill.subType]) {
           const fbSrc = fallbackIcons[skill.subType] || fallbackIcons[skill.category];
           iconHtml = `<img src="${escapeHtml(fbSrc)}" alt="${escapeHtml(skill.subType || skill.category)}" class="card-glyph" />`;
@@ -569,7 +574,7 @@
       });
 
       // Favorite toggle button on card
-      const favBtn = card.querySelector('.card-fav-btn');
+      const favBtn = /** @type {HTMLElement} */ (card.querySelector('.card-fav-btn'));
       favBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         toggleFavorite(skill.id);
@@ -583,6 +588,7 @@
   /**
    * Open and populate the Skill Detail Modal
    */
+  /** @param {string} name */
   function openSkillByName(name) {
     if (!name) return;
     const target = String(name).trim();
@@ -592,6 +598,7 @@
     }
   }
 
+  /** @param {SkillRecord} skill */
   function openModal(skill) {
     state.selectedSkill = skill;
 
@@ -600,8 +607,8 @@
     if (skill.icon) {
       iconHtml = `<img src="${escapeHtml(skill.icon)}" alt="${escapeHtml(skill.subType)}" />`;
     } else {
-      const fallbackGlyphs = { Physical: '⚔️', Elemental: '✨', Support: '💚' };
-      const fallbackIcons = { Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' };
+      const fallbackGlyphs = /** @type {Record<string, string>} */ ({ Physical: '⚔️', Elemental: '✨', Support: '💚' });
+      const fallbackIcons = /** @type {Record<string, string>} */ ({ Passive: 'assets/icons/icon_passive.png', Buff: 'assets/icons/icon_buff.png', Debuff: 'assets/icons/icon_debuff.png', Recovery: 'assets/icons/icon_recovery.png' });
       if (fallbackIcons[skill.category] || fallbackIcons[skill.subType]) {
         const fbSrc = fallbackIcons[skill.subType] || fallbackIcons[skill.category];
         iconHtml = `<img src="${escapeHtml(fbSrc)}" alt="${escapeHtml(skill.subType || skill.category)}" />`;
@@ -622,18 +629,18 @@
     elements.modalDescription.textContent = skill.detail || 'No detailed lore or combat notes provided.';
 
     // Character / job source links from the workbook exports
-    const sourceMap = (() => {
+    const sourceMap = /** @type {Record<string, SkillSourceEntry[]>} */ ((() => {
       const win = typeof window !== 'undefined' ? window : null;
-      const fromWindow = win && (win.characterJobData || win.characterSourceIndex) ? (
-        win.characterJobData && win.characterJobData.skillIndex ? win.characterJobData.skillIndex : win.characterSourceIndex
+      const fromWindow = win && ((/** @type {any} */ (win)).characterJobData || (/** @type {any} */ (win)).characterSourceIndex) ? (
+        (/** @type {any} */ (win)).characterJobData && (/** @type {any} */ (win)).characterJobData.skillIndex ? (/** @type {any} */ (win)).characterJobData.skillIndex : (/** @type {any} */ (win)).characterSourceIndex
       ) : null;
       const fromGlobal = typeof characterJobData !== 'undefined' && characterJobData && characterJobData.skillIndex
         ? characterJobData.skillIndex
         : (typeof characterSourceIndex !== 'undefined' ? characterSourceIndex : null);
       return fromWindow || fromGlobal || {};
-    })();
+    })());
 
-    const normalizeSourceName = value => String(value || '').trim().toLowerCase();
+    const normalizeSourceName = (/** @type {unknown} */ value) => String(value || '').trim().toLowerCase();
     const skillSourceEntries = (() => {
       const wanted = normalizeSourceName(skill.name);
       const direct = sourceMap[skill.name] || sourceMap[skill.name.toLowerCase()] || [];
@@ -646,7 +653,7 @@
     })();
 
     const sourceMarkup = skillSourceEntries.length
-      ? skillSourceEntries.map(source => {
+      ? skillSourceEntries.map((/** @type {SkillSourceEntry} */ source) => {
           const label = source.label || source.name || 'Character / Job';
           const href = source.href || 'character.html';
           return `
@@ -724,7 +731,7 @@
     updateModalFavButton();
 
     // Show modal
-    state.previousFocus = document.activeElement;
+    state.previousFocus = /** @type {HTMLElement} */ (document.activeElement);
     elements.detailModal.classList.add('active');
     elements.detailModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -741,6 +748,7 @@
     }
   }
 
+  /** @param {string} id */
   function toggleFavorite(id) {
     if (state.favorites.has(id)) {
       state.favorites.delete(id);
@@ -782,6 +790,7 @@
     });
 
     // Search Input with live debounce
+    /** @type {ReturnType<typeof setTimeout> | null} */
     let searchDebounce = null;
     elements.skillSearchInput.addEventListener('input', () => {
       clearTimeout(searchDebounce);
@@ -919,9 +928,9 @@
         const first = focusable[0];
         const last = focusable[focusable.length - 1];
         if (e.shiftKey) {
-          if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+          if (document.activeElement === first) { e.preventDefault(); (/** @type {HTMLElement} */ (last)).focus(); }
         } else {
-          if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+          if (document.activeElement === last) { e.preventDefault(); (/** @type {HTMLElement} */ (first)).focus(); }
         }
       }
     });

@@ -96,6 +96,7 @@ interface SkillCodexElements {
   targetFilter: InteractiveElement | null;
   spFilter: InteractiveElement | null;
   sortFilter: InteractiveElement | null;
+  viewToggleBtn: InteractiveElement | null;
   resultsCount: HTMLElement | null;
   resetFiltersBtn: InteractiveElement | null;
   skillsGrid: HTMLElement | null;
@@ -181,3 +182,18 @@ interface EquipmentCodexElements {
 /** Ambient globals injected by the generated data files. */
 declare const skillData: SkillRecord[];
 declare const equipmentData: EquipmentRecord[];
+
+/** Skill source index keyed by skill name, injected by character.html. */
+interface SkillSourceEntry {
+  label: string;
+  name: string;
+  href: string;
+  type: string;
+}
+
+interface CharacterJobData {
+  skillIndex: Record<string, SkillSourceEntry[]>;
+}
+
+declare const characterJobData: CharacterJobData | undefined;
+declare const characterSourceIndex: Record<string, SkillSourceEntry[]> | undefined;

@@ -51,7 +51,9 @@
     sortKey: 'name',
     sortDir: 'asc',
     weaknessSort: null,
-    modalEnemy: null
+    modalEnemy: null,
+    currentPage: 1,
+    pageSize: 48
   };
 
   const dataset = Array.isArray(window.enemyData)
@@ -82,7 +84,12 @@
     enemyEmptyResetBtn: document.getElementById('enemyEmptyResetBtn'),
     enemyModal: document.getElementById('enemyModal'),
     enemyModalClose: document.getElementById('enemyModalClose'),
-    enemyModalContent: document.getElementById('enemyModalContent')
+    enemyModalContent: document.getElementById('enemyModalContent'),
+    enemyPaginationFooter: document.getElementById('enemyPaginationFooter'),
+    enemyPaginationInfo: document.getElementById('enemyPaginationInfo'),
+    enemyPrevPageBtn: document.getElementById('enemyPrevPageBtn'),
+    enemyNextPageBtn: document.getElementById('enemyNextPageBtn'),
+    enemyPageCurrent: document.getElementById('enemyPageCurrent')
   };
 
   function cleanText(value) {
@@ -339,7 +346,15 @@
 
   function renderTable() {
     const filtered = getFilteredEnemies();
-    const rows = filtered.map(enemy => {
+    const total = filtered.length;
+    const totalPages = Math.ceil(total / state.pageSize) || 1;
+    if (state.currentPage > totalPages) state.currentPage = totalPages;
+    if (state.currentPage < 1) state.currentPage = 1;
+    const startIdx = (state.currentPage - 1) * state.pageSize;
+    const endIdx = Math.min(startIdx + state.pageSize, total);
+    const pageItems = filtered.slice(startIdx, endIdx);
+
+    const rows = pageItems.map(enemy => {
       const weaknesses = normalizeWeaknesses(enemy.weaknesses);
       const weaknessGrid = renderWeaknessGrid(weaknesses);
 
@@ -368,10 +383,21 @@
     });
     elements.enemyMetricTotal.textContent = String(dataset.length);
     elements.enemyMetricAreas.textContent = String(new Set(dataset.map(enemy => cleanText(enemy.area))).size);
-    elements.enemyResultsCount.textContent = `Showing ${filtered.length} enemies`;
-    elements.enemyEmptyState.style.display = filtered.length ? 'none' : 'block';
+    elements.enemyResultsCount.textContent = `Showing ${total} enemies`;
+    elements.enemyEmptyState.style.display = total ? 'none' : 'block';
     updateHeaderSortIndicators();
     updateWeaknessHeaderIcons();
+
+    // Pagination footer
+    if (total === 0) {
+      elements.enemyPaginationFooter.style.display = 'none';
+    } else {
+      elements.enemyPaginationFooter.style.display = 'flex';
+      elements.enemyPaginationInfo.textContent = 'Showing ' + (startIdx + 1) + '–' + endIdx + ' of ' + total.toLocaleString();
+      elements.enemyPageCurrent.textContent = 'Page ' + state.currentPage + ' of ' + totalPages;
+      elements.enemyPrevPageBtn.disabled = state.currentPage <= 1;
+      elements.enemyNextPageBtn.disabled = state.currentPage >= totalPages;
+    }
 
     // Bind enemy name clicks to open modal
     document.querySelectorAll('.enemy-name-btn').forEach(btn => {
@@ -422,21 +448,25 @@
   function bindEvents() {
     elements.enemySearchInput.addEventListener('input', () => {
       state.searchQuery = elements.enemySearchInput.value.trim().toLowerCase();
+      state.currentPage = 1;
       renderTable();
     });
 
     elements.enemyAreaFilter.addEventListener('change', () => {
       state.area = elements.enemyAreaFilter.value;
+      state.currentPage = 1;
       renderTable();
     });
 
     elements.enemySubAreaFilter.addEventListener('change', () => {
       state.subArea = elements.enemySubAreaFilter.value;
+      state.currentPage = 1;
       renderTable();
     });
 
     elements.enemyWeaknessFilter.addEventListener('change', () => {
       state.weakness = elements.enemyWeaknessFilter.value;
+      state.currentPage = 1;
       renderTable();
     });
 
@@ -453,6 +483,7 @@
         tab.setAttribute('aria-selected', 'true');
         
         state.type = tab.getAttribute('data-category') || 'all';
+        state.currentPage = 1;
         renderTable();
       });
     }
@@ -495,6 +526,7 @@
     elements.enemyClearSearch.addEventListener('click', () => {
       state.searchQuery = '';
       elements.enemySearchInput.value = '';
+      state.currentPage = 1;
       renderTable();
     });
 
@@ -519,6 +551,7 @@
           allTab.setAttribute('aria-selected', 'true');
         }
       }
+      state.currentPage = 1;
       renderFilters();
       renderTable();
     });
@@ -526,6 +559,26 @@
     elements.enemyEmptyResetBtn.addEventListener('click', () => {
       elements.enemyResetBtn.click();
     });
+
+    // Pagination buttons
+    if (elements.enemyPrevPageBtn) {
+      elements.enemyPrevPageBtn.addEventListener('click', () => {
+        if (state.currentPage > 1) {
+          state.currentPage--;
+          renderTable();
+        }
+      });
+    }
+    if (elements.enemyNextPageBtn) {
+      elements.enemyNextPageBtn.addEventListener('click', () => {
+        const filtered = getFilteredEnemies();
+        const totalPages = Math.ceil(filtered.length / state.pageSize) || 1;
+        if (state.currentPage < totalPages) {
+          state.currentPage++;
+          renderTable();
+        }
+      });
+    }
 
     elements.enemyModal.addEventListener('click', (e) => {
       if (e.target === elements.enemyModal) {
