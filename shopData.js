@@ -7023,7 +7023,7 @@ const shopData = {
       "source": "shops"
     },
     {
-      "id": "shop-agapea-coastlands-elemental-ward":
+      "id": "shop-agapea-coastlands-elemental-ward",
       "name": "Elemental Ward",
       "price": 5000,
       "location": "Agapea (Coastlands)",

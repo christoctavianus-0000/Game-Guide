@@ -13,7 +13,7 @@ const { loadCodex, ROOT } = require('./helpers/dom-stub.js');
 function openShopCodex(options) {
   return loadCodex(Object.assign({
     html: 'shop.html',
-    scripts: ['shopData.js', 'shopApp.js']
+    scripts: ['shopData.js', 'equipmentData.js', 'shopApp.js']
   }, options || {}));
 }
 
