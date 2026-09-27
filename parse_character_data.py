@@ -48,6 +48,7 @@ def parse_character_sheet(ws) -> list[dict]:
     characters: list[dict] = []
     current: dict | None = None
     pending_unlock = ""
+    pending_amity_parts: list[str] = []
     current_skill_type: str | None = None
 
     for row in rows:
@@ -65,6 +66,7 @@ def parse_character_sheet(ws) -> list[dict]:
 
         if label.startswith("Unlock Requirements:"):
             pending_unlock = label.replace("Unlock Requirements:", "").strip()
+            pending_amity_parts = []
             current_skill_type = None
             continue
 
@@ -82,6 +84,11 @@ def parse_character_sheet(ws) -> list[dict]:
 
         if is_character_entry:
             if current is not None:
+                # Convert amity list to string before appending
+                if "amity" in current and isinstance(current["amity"], list):
+                    current["amity"] = "; ".join(current["amity"])
+                elif "amity" not in current:
+                    current["amity"] = ""
                 characters.append(current)
             name, job_name, weapons = split_character_label(label)
             current = {
@@ -117,10 +124,23 @@ def parse_character_sheet(ws) -> list[dict]:
                 }
             )
 
+        # Collect amity info from column I (index 8) for skill rows
+        if current is not None and col_i:
+            amity_text = clean_text(col_i)
+            if amity_text and amity_text != 'Amity' and amity_text != 'Other':
+                if "amity" not in current:
+                    current["amity"] = []
+                current["amity"].append(amity_text)
+
         if is_character_entry:
             continue
 
     if current is not None:
+        # Convert amity list to string before appending
+        if "amity" in current and isinstance(current["amity"], list):
+            current["amity"] = "; ".join(current["amity"])
+        elif "amity" not in current:
+            current["amity"] = ""
         characters.append(current)
 
     return characters

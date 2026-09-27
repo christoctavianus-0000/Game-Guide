@@ -14,10 +14,12 @@
   <link rel="stylesheet" href="styles.css" />
   <script>
     (function(){
-      var t = localStorage.getItem('octo0_theme');
-      if (!t) try { t = window.name; } catch(e) {}
-      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
-      else if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      var K='octo0_theme',V={dark:1,light:1},t=null;
+      try{t=localStorage.getItem(K)}catch(e){}
+      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
+      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
       else document.documentElement.removeAttribute('data-theme');
     })();
   </script>
@@ -36,6 +38,7 @@
           <a class="site-nav-link active" href="equipment.html" aria-current="page">🛡️ Equipment Codex</a>
           <a class="site-nav-link" href="character.html">🧭 Character / Jobs</a>
           <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
+          <a class="site-nav-link" href="shop.html">🏪 Shop Codex</a>
         </div>
       </div>
     </nav>
@@ -59,6 +62,10 @@
           <a class="site-rail-link" href="enemy.html">
             <span class="site-rail-icon" aria-hidden="true">🐉</span>
             <span class="site-rail-text">Enemies</span>
+          </a>
+          <a class="site-rail-link" href="shop.html">
+            <span class="site-rail-icon" aria-hidden="true">🏪</span>
+            <span class="site-rail-text">Shops</span>
           </a>
         </div>
 
@@ -111,6 +118,7 @@
     <!-- Main Content Area -->
     <main class="main-content" id="main-content">
       <!-- High-Level Category Tabs -->
+      <div class="sticky-filter-wrap">
       <section class="category-nav-section">
         <div class="category-tabs" id="categoryTabs">
           <button class="cat-tab active" data-category="All">
@@ -209,9 +217,12 @@
             </div>
 
             <div class="filter-status">
-          </div>
+              <span id="resultsCount">Showing 0 items</span>
+              <button class="reset-link-btn" id="resetFiltersBtn">Reset Filters</button>
+            </div>
         </div>
       </section>
+      </div>
 
 <!-- Equipment Display Section -->
       <section class="skills-display-section">
@@ -246,9 +257,6 @@
             </tbody>
           </table>
         </div>
-
-        <!-- Filter Reset Button -->
-        <button class="secondary-btn" id="resetFiltersBtn">Reset Filters</button>
 
         <!-- Empty State -->
         <div class="empty-state-card" id="emptyState" style="display: none;">
@@ -331,6 +339,7 @@
   </div>
 
   <!-- Load Extracted Equipment Data & Logic -->
+  <script src="shopData.js"></script>
   <script src="equipmentData.js"></script>
   <script src="equipmentApp.js"></script>
   <script src="themeToggle.js"></script>

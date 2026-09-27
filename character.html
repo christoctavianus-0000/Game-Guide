@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="styles.css" />
   <script>
     (function(){
-      var t = localStorage.getItem('octo0_theme');
-      if (!t) try { t = window.name; } catch(e) {}
-      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
-      else if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      var K='octo0_theme',V={dark:1,light:1},t=null;
+      try{t=localStorage.getItem(K)}catch(e){}
+      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
+      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
       else document.documentElement.removeAttribute('data-theme');
     })();
   </script>
@@ -32,6 +34,7 @@
           <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
           <a class="site-nav-link active" href="character.html" aria-current="page">🧭 Character / Jobs</a>
           <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
+          <a class="site-nav-link" href="shop.html">🏪 Shop Codex</a>
         </div>
       </div>
     </nav>
@@ -56,6 +59,10 @@
           <a class="site-rail-link" href="enemy.html">
             <span class="site-rail-icon" aria-hidden="true">🐉</span>
             <span class="site-rail-text">Enemies</span>
+          </a>
+          <a class="site-rail-link" href="shop.html">
+            <span class="site-rail-icon" aria-hidden="true">🏪</span>
+            <span class="site-rail-text">Shops</span>
           </a>
         </div>
 
@@ -92,16 +99,9 @@
     </header>
 
     <main class="main-content" id="main-content">
-      <section class="filter-panel">
-        <div class="filter-panel-inner">
-          <div class="search-and-subtypes">
-            <div class="search-input-wrap">
-              <span class="search-icon">🔎</span>
-              <input id="characterSearchInput" type="search" placeholder="Search character, job, or skill name..." autocomplete="off" aria-label="Search characters and jobs" />
-              <button id="clearCharacterSearch" class="clear-search-btn" type="button" title="Clear search" aria-label="Clear search">✕</button>
-            </div>
-
-            <div class="category-tabs" id="characterJobTabs" role="tablist" aria-label="Filter by job">
+      <div class="sticky-filter-wrap">
+      <section class="category-nav-section">
+        <div class="category-tabs" id="characterJobTabs" role="tablist" aria-label="Filter by job">
               <button class="cat-tab active" data-category="all" role="tab" aria-selected="true">
                 <span class="cat-icon">🌐</span>
                 <span class="cat-name">All</span>
@@ -178,17 +178,33 @@
                 <span class="cat-icon"><img src="assets/icons/jobs/job_wise_king.png" alt="Wise King" class="job-tab-icon"></span>
                 <span class="cat-name">Wise King</span>
               </button>
+        </div>
+      </section>
+
+      <section class="filter-panel">
+        <div class="filter-panel-inner">
+          <div class="search-and-subtypes">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔎</span>
+              <input id="characterSearchInput" type="search" placeholder="Search character, job, or skill name..." autocomplete="off" aria-label="Search characters and jobs" />
+              <button id="clearCharacterSearch" class="clear-search-btn" type="button" title="Clear search" aria-label="Clear search">✕</button>
+            </div>
+          </div>
+
+          <div class="secondary-filter-row">
+            <div class="filter-group">
+              <label class="filter-label">Weapon</label>
+              <div class="weapon-icon-filter" id="weaponIconFilter" role="radiogroup" aria-label="Weapon filter"></div>
             </div>
 
-            <div class="secondary-filter-row">
-              <div class="filter-group">
-                <label class="filter-label">Weapon</label>
-                <div class="weapon-icon-filter" id="weaponIconFilter" role="radiogroup" aria-label="Weapon filter"></div>
-              </div>
+            <div class="filter-status">
+              <span id="characterResultsCount">Showing 0 characters</span>
+              <button class="reset-link-btn" id="characterResetBtn">Reset Filters</button>
             </div>
           </div>
         </div>
       </section>
+      </div>
 
       <section class="skills-display-section">
         <div id="characterGrid" class="skills-grid"></div>
@@ -196,7 +212,7 @@
           <div class="empty-icon">🧭</div>
           <h3>No matching characters or jobs</h3>
           <p>Try a different name, weapon type, or skill keyword.</p>
-          <button class="primary-btn" id="characterResetBtn" type="button">Clear Search</button>
+          <button class="primary-btn" id="characterEmptyResetBtn" type="button">Clear Search</button>
         </div>
       </section>
     </main>
@@ -230,6 +246,10 @@
               <div class="modal-section">
                 <h4 class="modal-section-heading">Overview</h4>
                 <div class="modal-description-box" id="characterModalDescription">Description</div>
+              </div>
+              <div class="modal-section" id="characterModalAmitySection" style="display:none;">
+                <h4 class="modal-section-heading">Amity</h4>
+                <div class="modal-amity-box" id="characterModalAmity"></div>
               </div>
             </div>
           </div>

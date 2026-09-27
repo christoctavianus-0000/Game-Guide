@@ -614,6 +614,13 @@
            '</div>';
   }
 
+  function specItemRaw(label, valueHtml) {
+    return '<div class="spec-item">' +
+             '<span class="spec-label">' + escapeHtml(label) + '</span>' +
+             '<span class="spec-value">' + valueHtml + '</span>' +
+           '</div>';
+  }
+
   function openModal(item) {
     state.selectedItem = item;
 
@@ -661,7 +668,15 @@
       specItem('Effect Family', item.effectFamily) +
       specItem('Acquisition Region', item.sourceRegion) +
       specItem('Full Source', item.source || 'Unknown') +
-      specItem('Price', priceText(item));
+      specItem('Price', priceText(item)) +
+      (function () {
+        var shopLocs = getShopLocations(item.name);
+        if (!shopLocs.length) return '';
+        var links = shopLocs.map(function (loc) {
+          return '<a href="shop.html?location=' + encodeURIComponent(loc) + '" class="shop-link">' + escapeHtml(loc) + '</a>';
+        }).join(', ');
+        return specItemRaw('Available in Shops', links);
+      })();
 
     updateModalFavButton();
 
@@ -908,12 +923,44 @@
     });
   }
 
+  function findItemByName(name) {
+    if (!name) return null;
+    var normalized = String(name).trim().toLowerCase();
+    return items.find(function (item) {
+      return String(item.name || '').trim().toLowerCase() === normalized;
+    }) || null;
+  }
+
+  function getShopLocations(itemName) {
+    if (typeof shopData === 'undefined' || !shopData || !Array.isArray(shopData.allItems)) return [];
+    var normalized = String(itemName).trim().toLowerCase();
+    var locations = [];
+    var seen = {};
+    shopData.allItems.forEach(function (s) {
+      if (String(s.name || '').trim().toLowerCase() === normalized && !seen[s.location]) {
+        seen[s.location] = true;
+        locations.push(s.location);
+      }
+    });
+    return locations.sort();
+  }
+
   function init() {
     populateSortOptions();
     updateMetrics();
     renderSubtypeChips();
     bindEvents();
     render();
+
+    // Deep-link: ?item=ItemName auto-opens the matching item modal
+    var params = new URLSearchParams(window.location.search || '');
+    var requestedItem = params.get('item');
+    if (requestedItem) {
+      var match = findItemByName(requestedItem);
+      if (match) {
+        openModal(match);
+      }
+    }
   }
 
   // Run on DOM ready

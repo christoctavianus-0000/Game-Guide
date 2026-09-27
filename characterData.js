@@ -104,7 +104,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Healing Grape - Initial Inquire; Lv 2: Invigorating Nut (M) - Reach Lv. 6 for Wishvale; Lv 3: Dual Axe - Reach Lv. 8 for Wishvale"
     },
     {
       "id": "phenn",
@@ -210,7 +211,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Energizing Pomegranate - Initial Inquire; Lv 2: Tough Nut (M) - Reach Lv. 6 for Wishvale; Lv 3: Rippling Shot - Reach Lv. 8 for Wishvale"
     },
     {
       "id": "laurana",
@@ -316,7 +318,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Refreshing Jam - Initial Inquire; Lv 2: Invigorating Nut (M) - Give Sausage Stew; Lv 3: Umbral Fan - Give Yaya's Hairpin"
     },
     {
       "id": "heidne",
@@ -422,7 +425,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Herb of Mending - Initial Inquire; Lv 2: Sharp Nut (M) - Give Roast Iridove; Lv 3: Sprightly Necklace - Give \"Wish Upon the Shooting Star\""
     },
     {
       "id": "celsus",
@@ -528,7 +532,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Inspiriting Plum (M) - Initial Inquire; Lv 2: Slippery Nut (M) - Give Sautéed Veal; Lv 3: Boosting Break Mastery - Give White Hollowlilies"
     },
     {
       "id": "macy",
@@ -634,7 +639,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Olive of Life (M) - Initial Inquire; Lv 2: Invigorating Nut (M) - Give Nourishing Root; Lv 3: Book of Eastern Medicine - Give Foreign Tome"
     },
     {
       "id": "alexia",
@@ -740,7 +746,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Thunder Soulstone (M) - Initial Inquire; Lv 2: Magic Nut (M) - Give Mysterious Ancient Text; Lv 3: Curse of Shadow Mastery - Give Bernstein Records"
     },
     {
       "id": "viator",
@@ -846,7 +853,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Healing Grape (M) - Initial Inquire; Lv 2: Tough Nut (M) - Give Sewing Kit; Lv 3: Gargantuan Shield - Complete \"The Eight Sacred Treasures\""
     },
     {
       "id": "ludo",
@@ -952,7 +960,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Energizing Pomegranite (M) - Initial Inquire; Lv 2: Nourishing Nut (M) - Give Curry with Rice; Lv 3: Quartz Shield - Complete \"A Long-Lost Love\""
     },
     {
       "id": "pius",
@@ -1058,7 +1067,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Healing Grape Bunch - Initial Inquire; Lv 2: Resistant Nut (M) - Give Fruit Yogurt; Lv 3: Seal of the Sacred Flame - Give Damaged Sacred Seal"
     },
     {
       "id": "saoirse",
@@ -1164,7 +1174,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Inspiriting Plum - Initial Inquire; Lv 2: Light Nut (M) - Give Lamb Bourguigon; Lv 3: Song of Blessings Mastery - Give Run Rampart Mastery"
     },
     {
       "id": "carinda",
@@ -1270,7 +1281,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Inspiriting Plum Basket - Initial Inquire; Lv 2: Light Nut (M) - Give River Bean Patties; Lv 3: Heavy Longspear - Complete \"Donescu's Successor\""
     },
     {
       "id": "xerc",
@@ -1376,7 +1388,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Ice Soulstone (L) - Initial Inquire; Lv 2: Magic Nut (M) - Give Light Soulstone (L); Lv 3: Quartz Robe - Complete \"An Assistant Like No Other\""
     },
     {
       "id": "reime",
@@ -1482,7 +1495,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Almighty Olive - Initial Inquire; Lv 2: Fortifying Nut (L) - Give Chicken Skewers; Lv 3: Physical Prowess Mastery - Inquire Further"
     },
     {
       "id": "delitia",
@@ -1588,7 +1602,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Herb of Awakening - Initial Inquire; Lv 2: Critical Nut (M) - Give Seafood Acqua Pizza; Lv 3: Unerring Necklace - Complete \"The Missing Brother\""
     },
     {
       "id": "esperre",
@@ -1694,7 +1709,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Herb of Vitality - Initial Inquire; Lv 2: Resistant Nut (M) - Give Rejuvenating Seafood Sauté; Lv 3: Stimulating Necklace - Give Esperre's Father's Letter"
     },
     {
       "id": "goodwin",
@@ -1800,7 +1816,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Herb of Vigor - Initial Inquire; Lv 2: Critical Nut (M) - Give Good Luck Omelette; Lv 3: Song of Roaring Thunder Mastery - Give Bouillabaisse"
     },
     {
       "id": "olberic",
@@ -1906,7 +1923,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Reinvigorating Jam - Initial Inquire; Lv 2: Nourishing Nut (M) - Give Mutton Stew; Lv 3: Crest of Hornburg - Give Crest of a Ruined Nation"
     },
     {
       "id": "tressa",
@@ -2012,7 +2030,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Energizing Pomegranate (M) - Initial Inquire; Lv 2: Slippery Nut (M) - Give Tressalad; Lv 3: Lucky Coin - Give Cait Furball"
     },
     {
       "id": "therion",
@@ -2118,7 +2137,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Red Apple - Initial Inquire; Lv 2: Light Nut (M) - Give Apple Pie; Lv 3: Hellfire Mastery - Give Prince of Thieves Necklace"
     },
     {
       "id": "alfyn",
@@ -2224,7 +2244,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Herb of Vitality - Initial Inquire; Lv 2: Fortifying Nut (M) - Give Clam & Fish Meuniere; Lv 3: Preventative Measures Mastery - Give Vivify Mastery"
     },
     {
       "id": "h-aanit",
@@ -2330,7 +2351,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Wind Soulstone (L) - Initial Inquire; Lv 2: Sharp Nut (M) - Give Roast Iridove; Lv 3: Woodland Bow - Give Worn Bow"
     },
     {
       "id": "ophilia",
@@ -2436,7 +2458,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Olive of Life (L) - Initial Inquire; Lv 2: Slippery Nut (L) - Give Potage; Lv 3: Staff of the Sacred Church - Give \"A Little Prayer\""
     },
     {
       "id": "cyrus",
@@ -2542,7 +2565,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Fire Soulstone (L) - Initial Inquire; Lv 2: Magic Nut (M) - Give Exotic Savory Pizza; Lv 3: Tonitrus Canere Mastery - Give Rune Grimoire"
     },
     {
       "id": "primrose",
@@ -2648,7 +2672,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Shadow Soulstone (M) - Initial Inquire; Lv 2: Resistant Nut (M) - Give Stewed Chicken & Tomatoes; Lv 3: High House Dagger - Give Cursed Dagger"
     },
     {
       "id": "bargello",
@@ -2754,7 +2779,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Energizing Pomegranate (L) - Initial Inquire; Lv 2: Light Nut (L) - Give Marinated Octopus & Plounder; Lv 3: Defiant Spirit Mastery - Give White Grape Blossom"
     },
     {
       "id": "alaune",
@@ -2860,7 +2886,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Olive of Life (L) - Initial Inquire; Lv 2: Magic Nut (L) - Give Berry Pie; Lv 3: Mark of Salvation - Give White Silk Handkerchief"
     },
     {
       "id": "richard",
@@ -2966,7 +2993,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Revitalizing Jam - Initial Inquire; Lv 2: Sharp Nut (L) - Give Bean Salad; Lv 3: Crystal Helm - Give Flag of Riven"
     },
     {
       "id": "solon",
@@ -3072,7 +3100,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Revitalizing Jam - Initial Inquire; Lv 2: Resistant Nut (L) - Give Lamb Bourguignon; Lv 3: Elemental Augmentor - Give Freshly Shorn Fleece"
     },
     {
       "id": "eltrix",
@@ -3178,7 +3207,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Almighty Olive - Initial Inquire; Lv 2: Tough Nut (L) - Give Bouillabaisse; Lv 3: Enchanted Sword - Give Arcangelo's Pirate Flag"
     },
     {
       "id": "rondo",
@@ -3284,7 +3314,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Reinvigorating Jam - Initial Inquire; Lv 2: Fortifying Nut (L) - Give Milk Soup; Lv 3: Ardante Attire - Give Ward of the Knight Ardante"
     },
     {
       "id": "el",
@@ -3390,7 +3421,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "N/A"
     },
     {
       "id": "tatloch",
@@ -3496,7 +3528,8 @@ const characterData = {
           "unmasterable": false,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Octopath Rolls - Initial Inquire; Lv 2: Critical Nut (L) - Complete \"In Search of What Remains\"; Lv 3: Spirit of the Stage Mastery - Give Rinyuu's Stew"
     },
     {
       "id": "sazantos",
@@ -3602,7 +3635,8 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Nothing - Initial Inquire; Lv 2: Nourishing Nut (L) - Complete \"An Indestructible Flame\"; Lv 3: Purging Flame Mastery, Champion's Shield, Champion's Helm, Champion's Armor - Give Cursed Shield, Cursed Helm, Cursed Armor"
     },
     {
       "id": "isla",
@@ -3708,14 +3742,15 @@ const characterData = {
           "unmasterable": true,
           "other": ""
         }
-      ]
+      ],
+      "amity": "Lv 1: Rejuvenating Jam - Initial Inquire; Lv 2: Invigorating Nut (L) - Give Tuna; Lv 3: Elemental Edge Mastery - Give Elemental Augmentor; Lettter Fragment Location; Theatropolis: inside the library, shiny spot on a bookshelf.; Waterpool Caves: find the item among the crates and sacks.; Atlasdam: require \"Animal Whisperer\" ability to entreat the item from a cat.; Path to Herminia's Manse: After activating the arena facility in Wishvale: find the item behind an elite monster.; Golden Palace: find the item in the lowest floor. (This specific spot can be replaced by choosing this item as a \"Belonging\" when creating your character.)"
     }
   ],
   "jobs": [
     {
       "id": "warrior",
       "name": "Warrior",
-      "weapons": "Sword/Polearm",
+      "weapons": "Sword/Spear",
       "skills": [
         {
           "name": "Cross Strike",
@@ -3921,7 +3956,7 @@ const characterData = {
     {
       "id": "merchant",
       "name": "Merchant",
-      "weapons": "Polearm/Bow",
+      "weapons": "Spear/Bow",
       "skills": [
         {
           "name": "Deadly Thrust",
@@ -4537,10 +4572,17 @@ const characterData = {
       ]
     }
   ],
-  "sourceIndex": {
-    "First Aid": [
+  "protagonist": {
+    "id": "protagonist",
+    "name": "Protagonist",
+    "title": "Hero",
+    "job": "Protagonist",
+    "weapons": "Sword/Spear, Fan/Dagger, Spear/Bow, Tome/Staff, Staff/Fan, Dagger/Sword, Bow/Axe, Axe/Tome",
+    "unlock": "Acts as the party's main character and can switch between the available protagonist jobs.",
+    "skills": [
       {
-        "type": "character",
+        "name": "Cross Strike",
+        "type": "Battle",
         "cost": "12.0",
         "description": "Deal sword damage to a foe",
         "unlock": "",
@@ -5536,7 +5578,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Chop Wood": [
       {
         "type": "character",
@@ -5592,7 +5642,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Share SP": [
       {
         "type": "character",
@@ -5720,7 +5778,22 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Elem. Def. +50": [
       {
         "type": "character",
@@ -5819,7 +5892,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Unsung Hero": [
       {
         "type": "character",
@@ -6001,7 +6082,22 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Eye for an Eye": [
       {
         "type": "character",
@@ -6043,7 +6139,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Ethereal Healing": [
       {
         "type": "character",
@@ -6119,7 +6223,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Speed +50": [
       {
         "type": "character",
@@ -6183,7 +6295,22 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Encore": [
       {
         "type": "character",
@@ -6198,7 +6325,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Steal": [
       {
         "type": "character",
@@ -6220,7 +6355,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Reaping Slash": [
       {
         "type": "character",
@@ -6460,7 +6603,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Vim and Vigor": [
       {
         "type": "character",
@@ -6534,7 +6685,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Prism Mist": [
       {
         "type": "character",
@@ -6633,7 +6792,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Pray": [
       {
         "type": "character",
@@ -6821,7 +6988,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Foresight": [
       {
         "type": "character",
@@ -6852,7 +7027,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Appraisal": [
       {
         "type": "character",
@@ -6969,7 +7152,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Fierce Rush": [
       {
         "type": "character",
@@ -7039,7 +7230,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Wild Strike": [
       {
         "type": "character",
@@ -7061,7 +7260,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Sweep": [
       {
         "type": "character",
@@ -7268,7 +7475,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Immobilizing Shot": [
       {
         "type": "character",
@@ -7301,7 +7516,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Trick of the Trade": [
       {
         "type": "character",
@@ -7359,7 +7582,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Blizzard": [
       {
         "type": "character",
@@ -7390,7 +7621,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Soulstone's Might": [
       {
         "type": "character",
@@ -7458,7 +7697,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "SP Luck": [
       {
         "type": "character",
@@ -7507,7 +7754,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Double Thrust": [
       {
         "type": "character",
@@ -7594,7 +7849,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Retreating Shot": [
       {
         "type": "character",
@@ -7670,7 +7933,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Exacerbate": [
       {
         "type": "character",
@@ -7746,7 +8017,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Weak to Poison": [
       {
         "type": "character",
@@ -7908,7 +8187,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Abide": [
       {
         "type": "character",
@@ -7923,7 +8210,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Cross Strike": [
       {
         "type": "character",
@@ -7952,7 +8247,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Wild Thrust": [
       {
         "type": "character",
@@ -8003,7 +8306,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Tradewinds": [
       {
         "type": "character",
@@ -8027,7 +8338,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Peerless Strike": [
       {
         "type": "character",
@@ -8060,7 +8379,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "SP Saver": [
       {
         "type": "character",
@@ -8093,7 +8420,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Shackle Foe": [
       {
         "type": "character",
@@ -8126,7 +8461,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Assassination": [
       {
         "type": "character",
@@ -8193,7 +8536,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Amputation": [
       {
         "type": "character",
@@ -8208,7 +8559,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Empoison": [
       {
         "type": "character",
@@ -8250,7 +8609,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Heightened Healing": [
       {
         "type": "character",
@@ -8274,7 +8641,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Summon Linde": [
       {
         "type": "character",
@@ -8316,7 +8691,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Arrowstorm": [
       {
         "type": "character",
@@ -8406,7 +8789,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Sheltering Veil": [
       {
         "type": "character",
@@ -8430,7 +8821,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Heal More": [
       {
         "type": "character",
@@ -8479,7 +8878,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Persistence": [
       {
         "type": "character",
@@ -8519,7 +8926,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Fire Storm": [
       {
         "type": "character",
@@ -8559,7 +8974,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Rechant": [
       {
         "type": "character",
@@ -8583,7 +9006,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Moonlight Waltz": [
       {
         "type": "character",
@@ -8607,7 +9038,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Night Ode": [
       {
         "type": "character",
@@ -8658,7 +9097,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Double Edge": [
       {
         "type": "character",
@@ -8682,7 +9129,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Mafioso": [
       {
         "type": "character",
@@ -9385,7 +9840,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Counter Posture": [
       {
         "type": "job",
@@ -9393,7 +9856,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Assault": [
       {
         "type": "job",
@@ -9401,7 +9872,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Upending Strike": [
       {
         "type": "job",
@@ -9409,7 +9888,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Brand's Blade": [
       {
         "type": "job",
@@ -9417,7 +9904,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Ultimate"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Ultimate"
+      }
+    ],
     "Peak Performance": [
       {
         "type": "job",
@@ -9425,7 +9920,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Defiant Spirit": [
       {
         "type": "job",
@@ -9433,7 +9936,15 @@ const characterData = {
         "label": "Warrior",
         "href": "character.html#job-warrior",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Warrior",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Coney Caper": [
       {
         "type": "job",
@@ -9441,7 +9952,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Frosty Refrain": [
       {
         "type": "job",
@@ -9449,7 +9968,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Porcupine Stomp": [
       {
         "type": "job",
@@ -9457,7 +9984,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Triple Arc": [
       {
         "type": "job",
@@ -9465,7 +10000,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Sealticge's Seduction": [
       {
         "type": "job",
@@ -9473,7 +10016,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Ultimate"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Ultimate"
+      }
+    ],
     "Boost Start": [
       {
         "type": "job",
@@ -9481,7 +10032,15 @@ const characterData = {
         "label": "Dancer",
         "href": "character.html#job-dancer",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Dancer",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Deadly Thrust": [
       {
         "type": "job",
@@ -9489,7 +10048,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Piercing Thrust": [
       {
         "type": "job",
@@ -9497,7 +10064,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Bifelgan's Bounty": [
       {
         "type": "job",
@@ -9505,7 +10080,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Ultimate"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Ultimate"
+      }
+    ],
     "Borrow BP": [
       {
         "type": "job",
@@ -9513,7 +10096,15 @@ const characterData = {
         "label": "Merchant",
         "href": "character.html#job-merchant",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Merchant",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Firestorm": [
       {
         "type": "job",
@@ -9521,7 +10112,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Blinding Light": [
       {
         "type": "job",
@@ -9529,7 +10128,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Alephan's Enlightenment": [
       {
         "type": "job",
@@ -9537,7 +10144,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Ultimate"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Ultimate"
+      }
+    ],
     "Lasting Memory": [
       {
         "type": "job",
@@ -9545,7 +10160,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Mystic Breath": [
       {
         "type": "job",
@@ -9553,7 +10176,15 @@ const characterData = {
         "label": "Scholar",
         "href": "character.html#job-scholar",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Scholar",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Sacred Flame's Protection": [
       {
         "type": "job",
@@ -9561,7 +10192,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Light of Judgement": [
       {
         "type": "job",
@@ -9569,7 +10208,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Celestial Veil": [
       {
         "type": "job",
@@ -9577,7 +10224,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Wonderous Veil": [
       {
         "type": "job",
@@ -9585,7 +10240,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Aelfric's Favor": [
       {
         "type": "job",
@@ -9593,7 +10256,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Ultimate"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Ultimate"
+      }
+    ],
     "Elem. Def +50": [
       {
         "type": "job",
@@ -9601,7 +10272,15 @@ const characterData = {
         "label": "Cleric",
         "href": "character.html#job-cleric",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Cleric",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Shadow Bind": [
       {
         "type": "job",
@@ -9609,7 +10288,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Aeber's Artifice": [
       {
         "type": "job",
@@ -9617,7 +10304,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Ultimate"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Ultimate"
+      }
+    ],
     "Entrap": [
       {
         "type": "job",
@@ -9625,7 +10320,15 @@ const characterData = {
         "label": "Thief",
         "href": "character.html#job-thief",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Thief",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Boomerang Toss": [
       {
         "type": "job",
@@ -9633,7 +10336,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "First Shot": [
       {
         "type": "job",
@@ -9641,7 +10352,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Two-Tiered Shot": [
       {
         "type": "job",
@@ -9649,7 +10368,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Draefendi's Rage": [
       {
         "type": "job",
@@ -9657,7 +10384,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Ultimate"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Ultimate"
+      }
+    ],
     "Extra Experience": [
       {
         "type": "job",
@@ -9665,7 +10400,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Invigorating Break": [
       {
         "type": "job",
@@ -9673,7 +10416,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Crit +50": [
       {
         "type": "job",
@@ -9681,7 +10432,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Sniper": [
       {
         "type": "job",
@@ -9689,7 +10448,15 @@ const characterData = {
         "label": "Hunter",
         "href": "character.html#job-hunter",
         "skillType": "Support"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Hunter",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ],
     "Enshroud": [
       {
         "type": "job",
@@ -9697,7 +10464,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Heal All": [
       {
         "type": "job",
@@ -9705,7 +10480,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Cross Cleave": [
       {
         "type": "job",
@@ -9713,7 +10496,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Battle"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Battle"
+      }
+    ],
     "Dohter's Charity": [
       {
         "type": "job",
@@ -9721,7 +10512,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Ultimate"
-      },    ],
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Ultimate"
+      }
+    ],
     "Inspiriting Break": [
       {
         "type": "job",
@@ -9729,7 +10528,15 @@ const characterData = {
         "label": "Apothecary",
         "href": "character.html#job-apothecary",
         "skillType": "Support"
-      },    ]
+      },
+      {
+        "type": "job",
+        "id": "protagonist",
+        "label": "Protagonist - Apothecary",
+        "href": "character.html#protagonist",
+        "skillType": "Support"
+      }
+    ]
   }
 };
 const characterSourceIndex = characterData.sourceIndex;

@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="styles.css" />
   <script>
     (function(){
-      var t = localStorage.getItem('octo0_theme');
-      if (!t) try { t = window.name; } catch(e) {}
-      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
-      else if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      var K='octo0_theme',V={dark:1,light:1},t=null;
+      try{t=localStorage.getItem(K)}catch(e){}
+      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
+      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
       else document.documentElement.removeAttribute('data-theme');
     })();
   </script>
@@ -32,6 +34,7 @@
           <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
           <a class="site-nav-link" href="character.html">🧭 Character / Jobs</a>
           <a class="site-nav-link active" href="enemy.html" aria-current="page">🐉 Enemy Codex</a>
+          <a class="site-nav-link" href="shop.html">🏪 Shop Codex</a>
         </div>
       </div>
     </nav>
@@ -56,6 +59,10 @@
           <a class="site-rail-link active" href="enemy.html" aria-current="page">
             <span class="site-rail-icon" aria-hidden="true">🐉</span>
             <span class="site-rail-text">Enemies</span>
+          </a>
+          <a class="site-rail-link" href="shop.html">
+            <span class="site-rail-icon" aria-hidden="true">🏪</span>
+            <span class="site-rail-text">Shops</span>
           </a>
         </div>
 
@@ -92,9 +99,9 @@
     </header>
 
     <main class="main-content" id="main-content">
-      <section class="filter-panel">
-        <div class="filter-panel-inner">
-          <div class="category-tabs" id="enemyTypeTabs" role="tablist" aria-label="Filter by enemy type">
+      <div class="sticky-filter-wrap">
+      <section class="category-nav-section">
+        <div class="category-tabs" id="enemyTypeTabs" role="tablist" aria-label="Filter by enemy type">
             <button class="cat-tab active" data-category="all" role="tab" aria-selected="true">
               <span class="cat-icon">🌐</span>
               <span class="cat-label">All</span>
@@ -130,8 +137,11 @@
               <span class="cat-label">Rare</span>
               <span class="cat-count" id="enemyCatCountRare">0</span>
             </button>
-          </div>
+        </div>
+      </section>
 
+      <section class="filter-panel">
+        <div class="filter-panel-inner">
           <div class="search-and-subtypes">
             <div class="search-input-wrap">
               <span class="search-icon">🔎</span>
@@ -195,6 +205,7 @@
           </div>
         </div>
       </section>
+      </div>
 
       <section class="enemy-table-section">
         <div class="enemy-table-shell">

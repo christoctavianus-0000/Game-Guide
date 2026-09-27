@@ -18,6 +18,30 @@
     { key: 'Dark', name: 'Dark', icon: 'assets/icons/icon_dark.png' }
   ];
 
+  const ENEMY_STAT_META = [
+    { key: 'hp',       label: 'HP',   icon: 'assets/icons/icon_hp.png' },
+    { key: 'sp',       label: 'SP',   icon: 'assets/icons/icon_sp.png' },
+    { key: 'patk',     label: 'PATK', icon: 'assets/icons/icon_patk.png' },
+    { key: 'pdef',     label: 'PDEF', icon: 'assets/icons/icon_pdef.png' },
+    { key: 'matk',     label: 'MATK', icon: 'assets/icons/icon_matk.png' },
+    { key: 'mdef',     label: 'MDEF', icon: 'assets/icons/icon_mdef.png' },
+    { key: 'speed',    label: 'SPD',  icon: 'assets/icons/icon_spd.png' },
+    { key: 'crit',     label: 'CRT',  icon: 'assets/icons/icon_crt.png' },
+    { key: 'accuracy', label: 'ACC',  icon: 'assets/icons/icon_acc.png' },
+    { key: 'evasion',  label: 'EVA',  icon: 'assets/icons/icon_eva.png' }
+  ];
+
+  function renderStatTable(enemy) {
+    var ths = ENEMY_STAT_META.map(function (s) {
+      return '<th><img src="' + s.icon + '" alt="" class="th-stat-icon"> ' + s.label + '</th>';
+    }).join('');
+    var tds = ENEMY_STAT_META.map(function (s) {
+      var val = enemy[s.key] != null ? Number(enemy[s.key]) : null;
+      return '<td class="num' + (val ? ' has-value' : ' is-zero') + '">' + (val ? val.toLocaleString() : '—') + '</td>';
+    }).join('');
+    return '<div class="enemy-modal-stats-wrap"><table class="enemy-modal-stats-table"><thead><tr>' + ths + '</tr></thead><tbody><tr>' + tds + '</tr></tbody></table></div>';
+  }
+
   const state = {
     searchQuery: '',
     area: 'all',
@@ -192,9 +216,9 @@
             <span class="field-label">Shield:</span>
             <span class="field-value">${Number(enemy.shields) || 0}</span>
           </div>
-          <div class="enemy-modal-field">
-            <span class="field-label">HP:</span>
-            <span class="field-value">${Number(enemy.hp) || 0}</span>
+          <div class="enemy-modal-field full-width">
+            <span class="field-label">Stats:</span>
+            ${renderStatTable(enemy)}
           </div>
           <div class="enemy-modal-field full-width">
             <span class="field-label">Weaknesses:</span>

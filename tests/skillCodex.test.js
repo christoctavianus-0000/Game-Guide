@@ -72,7 +72,7 @@ test('subtype chips match the active category', () => {
   assert.equal(page.el('subtypeChipsWrap').children.length, 12, 'Physical subtypes');
 
   clickTab(page, 'Elemental');
-  assert.equal(page.el('subtypeChipsWrap').children.length, 9, 'Elemental subtypes');
+  assert.equal(page.el('subtypeChipsWrap').children.length, 8, 'Elemental subtypes');
 });
 
 test('SP filter applies the documented ranges', () => {

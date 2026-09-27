@@ -91,6 +91,8 @@
     grid: document.getElementById('characterGrid'),
     emptyState: document.getElementById('characterEmptyState'),
     resetBtn: document.getElementById('characterResetBtn'),
+    resultsCount: document.getElementById('characterResultsCount'),
+    emptyResetBtn: document.getElementById('characterEmptyResetBtn'),
     modal: document.getElementById('characterDetailModal'),
     modalBadge: document.getElementById('characterModalBadge'),
     modalKind: document.getElementById('characterModalKind'),
@@ -98,6 +100,8 @@
     modalName: document.getElementById('characterModalName'),
     modalId: document.getElementById('characterModalId'),
     modalDescription: document.getElementById('characterModalDescription'),
+    modalAmitySection: document.getElementById('characterModalAmitySection'),
+    modalAmity: document.getElementById('characterModalAmity'),
     skillList: document.getElementById('characterSkillList'),
     jobSwitchSection: document.getElementById('characterJobSwitchSection'),
     jobSwitchList: document.getElementById('characterJobSwitchList'),
@@ -164,6 +168,7 @@
         subtitle: `Job: ${jobName}`,
         weapons: character.weapons || '',
         description: character.unlock || 'Available through story progression.',
+        amity: character.amity || '',
         skills: character.skills || [],
         href: `#${character.id}`
       });
@@ -194,7 +199,10 @@
   }
 
   function parseWeapons(weaponStr) {
-    return String(weaponStr || '').split(/[\/,]/).map(part => part.trim().replace(/\s+only$/i, '').replace(/spear$/i, 'polearm')).filter(Boolean);
+    return String(weaponStr || '').split(/[\/,]/).map(part => {
+      const clean = part.trim().replace(/\s+only$/i, '').replace(/spear$/i, 'polearm');
+      return clean ? clean.charAt(0).toUpperCase() + clean.slice(1).toLowerCase() : '';
+    }).filter(Boolean);
   }
 
   function getWeaponOptions(jobFilter) {
@@ -227,16 +235,17 @@
 
   function getWeaponIconPath(weapon) {
     const iconMap = {
-      'Sword': 'assets/icons/icon_sword.png',
-      'Dagger': 'assets/icons/icon_dagger.png',
-      'Axe': 'assets/icons/icon_axe.png',
-      'Bow': 'assets/icons/icon_bow.png',
-      'Polearm': 'assets/icons/icon_polearm.png',
-      'Staff': 'assets/icons/icon_staff.png',
-      'Fan': 'assets/icons/icon_fan.png',
-      'Tome': 'assets/icons/icon_tome.png'
+      'sword': 'assets/icons/icon_sword.png',
+      'dagger': 'assets/icons/icon_dagger.png',
+      'axe': 'assets/icons/icon_axe.png',
+      'bow': 'assets/icons/icon_bow.png',
+      'polearm': 'assets/icons/icon_polearm.png',
+      'spear': 'assets/icons/icon_polearm.png',
+      'staff': 'assets/icons/icon_staff.png',
+      'fan': 'assets/icons/icon_fan.png',
+      'tome': 'assets/icons/icon_tome.png'
     };
-    return iconMap[weapon] || '';
+    return iconMap[String(weapon).toLowerCase()] || '';
   }
 
   function renderFilterControls() {
@@ -283,6 +292,9 @@
 
   function render() {
     const filtered = getFilteredEntries();
+    if (elements.resultsCount) {
+      elements.resultsCount.textContent = `Showing ${filtered.length.toLocaleString()} character${filtered.length === 1 ? '' : 's'}`;
+    }
     if (filtered.length === 0) {
       elements.grid.innerHTML = '';
       elements.emptyState.style.display = 'block';
@@ -359,9 +371,29 @@
       : `${entry.job || 'Job'} • ${entry.weapons || 'No weapon lock'}`;
     elements.modalName.textContent = entry.name;
     elements.modalId.textContent = isJob ? `Job ID: #${entry.id}` : `Character ID: #${entry.id}`;
-    elements.modalDescription.textContent = isJob
-      ? entry.description
-      : `${entry.name} is aligned with the ${entry.job || 'assigned'} job. ${entry.description}`;
+    if (isJob) {
+      elements.modalDescription.textContent = entry.description;
+    } else {
+      elements.modalDescription.textContent = `${entry.name} is aligned with the ${entry.job || 'assigned'} job. ${entry.description}`;
+    }
+    // Amity block (characters only)
+    if (!isJob && entry.amity) {
+      const levels = entry.amity.split(/;\s*/).filter(Boolean);
+      const amityHtml = levels.map(lv => {
+        const colonIdx = lv.indexOf(':');
+        if (colonIdx > -1) {
+          const label = escapeHtml(lv.slice(0, colonIdx + 1));
+          const value = escapeHtml(lv.slice(colonIdx + 1).trim());
+          return `<div class="amity-row"><span class="amity-label">${label}</span> ${value}</div>`;
+        }
+        return `<div class="amity-row">${escapeHtml(lv)}</div>`;
+      }).join('');
+      elements.modalAmity.innerHTML = amityHtml;
+      elements.modalAmitySection.style.display = '';
+    } else if (elements.modalAmitySection) {
+      elements.modalAmity.innerHTML = '';
+      elements.modalAmitySection.style.display = 'none';
+    }
     elements.modalBadge.innerHTML = getJobIconHTML(isJob ? entry.name : entry.job, 'modal-job-icon', isJob ? '🧭' : '🛡️');
 
     // Portrait / Sprite panel
@@ -588,6 +620,12 @@
         
         renderFilterControls();
         render();
+      });
+    }
+
+    if (elements.emptyResetBtn) {
+      elements.emptyResetBtn.addEventListener('click', () => {
+        elements.resetBtn.click();
       });
     }
 

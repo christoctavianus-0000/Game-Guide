@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Octopath Traveler 0 // Shop Codex</title>
+  <meta name="description" content="Shop codex for Octopath Traveler 0. Browse items available at towns and shops across the world." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function(){
+      var K='octo0_theme',V={dark:1,light:1},t=null;
+      try{t=localStorage.getItem(K)}catch(e){}
+      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
+      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
+      else document.documentElement.removeAttribute('data-theme');
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="site-wrapper">
+    <nav class="site-nav" aria-label="Codex sections">
+      <div class="site-nav-inner">
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH TRAVELER 0 CODEX</span>
+        <div class="site-nav-links">
+          <a class="site-nav-link" href="index.html">⚔️ Skill Codex</a>
+          <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
+          <a class="site-nav-link" href="character.html">🧭 Character / Jobs</a>
+          <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
+          <a class="site-nav-link active" href="shop.html" aria-current="page">🏪 Shop Codex</a>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="site-rail" aria-label="Codex selector">
+      <div class="site-rail-inner">
+        <span class="site-rail-brand" aria-hidden="true">✦</span>
+        <span class="site-rail-caption">Codex</span>
+        <div class="site-rail-links">
+          <a class="site-rail-link" href="index.html">
+            <span class="site-rail-icon" aria-hidden="true">✦</span>
+            <span class="site-rail-text">Skills</span>
+          </a>
+          <a class="site-rail-link" href="equipment.html">
+            <span class="site-rail-icon" aria-hidden="true">🛡️</span>
+            <span class="site-rail-text">Gear</span>
+          </a>
+          <a class="site-rail-link" href="character.html">
+            <span class="site-rail-icon" aria-hidden="true">🧭</span>
+            <span class="site-rail-text">Chars</span>
+          </a>
+          <a class="site-rail-link" href="enemy.html">
+            <span class="site-rail-icon" aria-hidden="true">🐉</span>
+            <span class="site-rail-text">Enemies</span>
+          </a>
+          <a class="site-rail-link active" href="shop.html">
+            <span class="site-rail-icon" aria-hidden="true">🏪</span>
+            <span class="site-rail-text">Shops</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <header class="top-header">
+      <div class="header-container">
+        <div class="brand-area">
+          <div class="brand-crest">
+            <span class="crest-icon">🏪</span>
+          </div>
+          <div>
+            <div class="brand-kicker">OCTOPATH TRAVELER 0</div>
+            <h1 class="brand-title">Shop & Inventory Codex</h1>
+          </div>
+        </div>
+
+        <div class="metrics-bar" id="characterMetricsBar">
+          <div class="metric-pill">
+            <span class="metric-label">Items</span>
+            <span class="metric-val" id="metricItemCount">0</span>
+          </div>
+          <div class="metric-pill support">
+            <span class="metric-label">Locations</span>
+            <span class="metric-val" id="metricLocationCount">0</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <div class="sticky-filter-wrap">
+      <section class="category-nav-section">
+        <!-- Empty for future location tabs -->
+      </section>
+
+      <!-- Sub-Filter & Search Command Bar -->
+      <section class="filter-panel">
+        <div class="filter-panel-inner">
+          <!-- Primary Search row -->
+          <div class="search-and-subtypes">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔍</span>
+              <input
+                type="search"
+                id="shopSearchInput"
+                placeholder="Search by item name or location..."
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Search shop items"
+              />
+              <button class="clear-search-btn" id="clearShopSearch" title="Clear search" aria-label="Clear search">✕</button>
+            </div>
+          </div>
+
+          <!-- Secondary Filters & Sorters row -->
+          <div class="secondary-filter-row">
+            <div class="filter-group">
+              <label for="shopLocationFilter" class="filter-label">Location</label>
+              <select id="shopLocationFilter" class="filter-select">
+                <option value="all">All Locations</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="shopSortFilter" class="filter-label">Sort By</label>
+              <select id="shopSortFilter" class="filter-select">
+                <option value="location-asc">Location (A → Z)</option>
+                <option value="location-desc">Location (Z → A)</option>
+                <option value="name-asc">Name (A → Z)</option>
+                <option value="name-desc">Name (Z → A)</option>
+                <option value="price-asc">Price (Low → High)</option>
+                <option value="price-desc">Price (High → Low)</option>
+              </select>
+            </div>
+
+            <div class="filter-status">
+              <span id="shopResultsCount">Showing 0 items</span>
+              <button class="reset-link-btn" id="shopResetBtn" type="button">Reset Filters</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <section class="skills-display-section">
+        <!-- Sortable Table View -->
+        <div class="equip-table-wrap" id="shopTableWrap">
+          <table class="equip-table">
+            <thead>
+              <tr>
+                <th class="sortable" data-sort-key="location">Location</th>
+                <th class="sortable" data-sort-key="name">Item</th>
+                <th class="sortable num" data-sort-key="price">Price</th>
+              </tr>
+            </thead>
+            <tbody id="shopTableBody">
+              <!-- Rows rendered by shopApp.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="shopEmptyState" style="display:none;">
+          <div class="empty-icon">📦</div>
+          <p>No items match your search.</p>
+          <button class="primary-btn shop-reset-empty-btn" type="button">Clear All Filters</button>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination-footer" id="shopPaginationFooter" style="display:none;">
+          <div class="pagination-info" id="shopResultsCountFooter"></div>
+          <div class="pagination-info" id="shopPaginationInfo"></div>
+          <div class="pagination-buttons">
+            <button class="page-btn" id="shopPrevPageBtn" disabled>‹ Previous</button>
+            <span class="page-current" id="shopPageCurrent">Page 1</span>
+            <button class="page-btn" id="shopNextPageBtn">Next ›</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="detailModal" class="detail-modal" style="display:none;" aria-modal="true" role="dialog" aria-labelledby="detailModalTitle" aria-describedby="detailModalDesc">
+    <div class="modal-header">
+      <h2 id="detailModalTitle">Item Details</h2>
+      <button class="modal-close-btn" aria-label="Close details" onclick="closeDetailModal()" title="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h4 class="modal-section-heading" id="detailSectionOverview">Overview</h4>
+        <div class="modal-description-box" id="detailModalDescription">Description</div>
+      </div>
+      <div class="modal-section" style="display:none;" id="detailSectionAmity">
+        <h4 class="modal-section-heading">Amity</h4>
+        <div class="modal-amity-box" id="detailModalAmity"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="secondary-btn" onclick="closeDetailModal()" type="button">Done</button>
+    </div>
+  </div>
+
+  <script src="shopData.js"></script>
+  <script src="equipmentData.js"></script>
+  <script src="shopApp.js"></script>
+  <script src="themeToggle.js"></script>
+</body>
+</html>
