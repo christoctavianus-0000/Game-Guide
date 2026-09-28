@@ -9,6 +9,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 WORKBOOK = Path("Octopath traveler 0 database .xlsx")
+OUTPUT_JSON = Path("shopData.json")
 OUTPUT_JS = Path("shopData.js")
 
 
@@ -156,9 +157,10 @@ def main() -> None:
         "allItems": all_shop_items + wishvale_items,
     }
 
-    js = f"const shopData = {json.dumps(data, ensure_ascii=False, indent=2)};\n"
-    OUTPUT_JS.write_text(js, encoding="utf-8")
-    print(f"Wrote {OUTPUT_JS}")
+    serialized = json.dumps(data, ensure_ascii=False, indent=2)
+    OUTPUT_JSON.write_text(serialized + "\n", encoding="utf-8")
+    OUTPUT_JS.write_text(f"const shopData = {serialized};\n", encoding="utf-8")
+    print(f"Wrote {OUTPUT_JSON} and {OUTPUT_JS}")
     print(f"  Wishvale items: {len(wishvale_items)}")
     print(f"  Shop locations: {len(shops)}")
     print(f"  All items: {len(all_shop_items) + len(wishvale_items)}")

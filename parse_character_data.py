@@ -9,6 +9,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 WORKBOOK = Path("Octopath traveler 0 database .xlsx")
+OUTPUT_JSON = Path("characterData.json")
 OUTPUT_JS = Path("characterData.js")
 
 
@@ -280,6 +281,7 @@ def main() -> None:
         "sourceIndex": index,
     }
     serialized = json.dumps(payload, ensure_ascii=False, indent=2)
+    OUTPUT_JSON.write_text(serialized + "\n", encoding="utf-8")
     OUTPUT_JS.write_text(f"const characterData = {serialized};\nconst characterSourceIndex = characterData.sourceIndex;\n", encoding="utf-8")
     print(f"Exported {len(characters)} characters and {len(jobs)} jobs, with {len(index)} skill source keys.")
 

@@ -16,6 +16,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 WORKBOOK = Path("Octopath traveler 0 database .xlsx")
+OUTPUT_JSON = Path("masterySourceData.json")
 OUTPUT_JS = Path("masterySourceData.js")
 
 # Source columns I-L (1-indexed: 9-12)
@@ -95,8 +96,9 @@ def main():
     lines.append("};")
     lines.append("")
 
+    OUTPUT_JSON.write_text(json.dumps(sources, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     OUTPUT_JS.write_text("\r\n".join(lines), encoding="utf-8")
-    print(f"Wrote {len(sources)} mastery skills to {OUTPUT_JS}")
+    print(f"Wrote {len(sources)} mastery skills to {OUTPUT_JSON} and {OUTPUT_JS}")
 
     # Print category stats
     from collections import Counter
