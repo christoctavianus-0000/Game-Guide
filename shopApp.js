@@ -1,6 +1,6 @@
 /**
  * OCTOPATH TRAVELER 0 // SHOP CODEX
- * Table-based Shop & Inventory Database
+ * Chunk-card based Shop & Inventory Database
  */
 
 (function () {
@@ -15,10 +15,7 @@
   var state = {
     activeLocation: 'all',
     searchQuery: '',
-    sortKey: 'location',
-    sortDir: 'asc',
-    currentPage: 1,
-    pageSize: 48
+    collapsedLocations: {}
   };
 
   var elements = {
@@ -29,17 +26,11 @@
     locationFilter: document.getElementById('shopLocationFilter'),
     sortFilter: document.getElementById('shopSortFilter'),
     resultsCount: document.getElementById('shopResultsCount'),
-    tableWrap: document.getElementById('shopTableWrap'),
-    tableBody: document.getElementById('shopTableBody'),
+    chunksGrid: document.getElementById('shopChunksGrid'),
     emptyState: document.getElementById('shopEmptyState'),
     resetBtn: document.getElementById('shopResetBtn'),
     emptyResetBtn: document.querySelector('.shop-reset-empty-btn'),
-    paginationFooter: document.getElementById('shopPaginationFooter'),
-    paginationInfo: document.getElementById('shopPaginationInfo'),
-    resultsCountFooter: document.getElementById('shopResultsCountFooter'),
-    prevPageBtn: document.getElementById('shopPrevPageBtn'),
-    nextPageBtn: document.getElementById('shopNextPageBtn'),
-    pageCurrent: document.getElementById('shopPageCurrent'),
+
     modal: document.getElementById('detailModal'),
     modalTitle: document.getElementById('detailModalTitle'),
     modalDescription: document.getElementById('detailModalDescription'),
@@ -80,7 +71,24 @@
     return 'equipment.html?item=' + encodeURIComponent(name);
   }
 
-  // ---- Filtering & Sorting ------------------------------------------------
+  // ---- Grouping -----------------------------------------------------------
+
+  function groupByLocation(items) {
+    var groups = {};
+    items.forEach(function (item) {
+      var loc = item.location || 'Unknown';
+      if (!groups[loc]) groups[loc] = [];
+      groups[loc].push(item);
+    });
+    // Sort locations by name
+    var sorted = {};
+    Object.keys(groups).sort().forEach(function (loc) {
+      sorted[loc] = groups[loc];
+    });
+    return sorted;
+  }
+
+  // ---- Filtering ----------------------------------------------------------
 
   function getFilteredItems() {
     var items = getAllItems();
@@ -93,27 +101,9 @@
       var query = state.searchQuery.toLowerCase();
       items = items.filter(function (item) {
         return (item.name || '').toLowerCase().indexOf(query) !== -1 ||
-               (item.location || '').toLowerCase().indexOf(query) !== -1 ||
-               (item.type || '').toLowerCase().indexOf(query) !== -1;
+               (item.location || '').toLowerCase().indexOf(query) !== -1;
       });
     }
-
-    var key = state.sortKey;
-    var dir = state.sortDir === 'desc' ? -1 : 1;
-
-    items.sort(function (a, b) {
-      if (key === 'price') {
-        var aVal = a.price || 0;
-        var bVal = b.price || 0;
-        if (aVal === bVal) return (a.name || '').localeCompare(b.name || '');
-        return (aVal - bVal) * dir;
-      }
-      var aStr = String(a[key] || '').toLowerCase();
-      var bStr = String(b[key] || '').toLowerCase();
-      var cmp = aStr.localeCompare(bStr);
-      if (cmp !== 0) return cmp * dir;
-      return (a.name || '').localeCompare(b.name || '');
-    });
 
     return items;
   }
@@ -138,82 +128,91 @@
       elements.locationFilter.innerHTML = opts;
       elements.locationFilter.value = state.activeLocation;
     }
-
     if (elements.sortFilter) {
       elements.sortFilter.value = state.sortKey + '-' + state.sortDir;
     }
   }
 
-  function renderTable() {
-    if (!elements.tableBody) return;
+  function renderChunks() {
+    if (!elements.chunksGrid) return;
     var items = getFilteredItems();
     var total = items.length;
-    var totalPages = Math.ceil(total / state.pageSize) || 1;
-
-    if (state.currentPage > totalPages) state.currentPage = totalPages;
-    if (state.currentPage < 1) state.currentPage = 1;
-
-    var startIdx = (state.currentPage - 1) * state.pageSize;
-    var endIdx = Math.min(startIdx + state.pageSize, total);
-    var pageItems = items.slice(startIdx, endIdx);
 
     if (elements.resultsCount) {
       elements.resultsCount.textContent = 'Showing ' + total.toLocaleString() + ' item' + (total === 1 ? '' : 's');
     }
 
     if (total === 0) {
-      elements.tableBody.innerHTML = '';
-      if (elements.tableWrap) elements.tableWrap.style.display = 'none';
+      elements.chunksGrid.innerHTML = '';
       if (elements.emptyState) elements.emptyState.style.display = 'block';
       if (elements.paginationFooter) elements.paginationFooter.style.display = 'none';
       return;
     }
+
     if (elements.emptyState) elements.emptyState.style.display = 'none';
-    if (elements.tableWrap) elements.tableWrap.style.display = '';
-    if (elements.paginationFooter) elements.paginationFooter.style.display = 'flex';
 
-    if (elements.resultsCountFooter) {
-      elements.resultsCountFooter.textContent = 'Showing ' + (startIdx + 1) + '–' + endIdx + ' of ' + total.toLocaleString();
-    }
-    if (elements.paginationInfo) {
-      elements.paginationInfo.textContent = 'Showing ' + (startIdx + 1) + '–' + endIdx + ' of ' + total.toLocaleString();
-    }
-    if (elements.pageCurrent) {
-      elements.pageCurrent.textContent = 'Page ' + state.currentPage + ' of ' + totalPages;
-    }
-    if (elements.prevPageBtn) elements.prevPageBtn.disabled = state.currentPage <= 1;
-    if (elements.nextPageBtn) elements.nextPageBtn.disabled = state.currentPage >= totalPages;
+    var groups = groupByLocation(items);
 
+    // Render chunk cards
     var html = '';
-    pageItems.forEach(function (item) {
-      var equipment = findEquipmentByName(item.name);
-      var nameCell = equipment
-        ? '<a class="shop-item-link" href="' + escapeHtml(getEquipmentLink(item.name)) + '" title="View in Equipment Codex">' + escapeHtml(item.name) + '</a>'
-        : escapeHtml(item.name);
-      var priceCell = item.price ? item.price.toLocaleString() + ' leaves' : '—';
+    Object.keys(groups).forEach(function (loc) {
+      var groupItems = groups[loc];
+      var totalCount = groupItems.length;
+      var isCollapsed = !!state.collapsedLocations[loc];
 
-      html += '<tr class="equip-row">' +
-        '<td>' + escapeHtml(item.location || '—') + '</td>' +
-        '<td><div class="equip-name-cell"><span class="equip-name-text">' + nameCell + '</span></div></td>' +
-        '<td class="num">' + priceCell + '</td>' +
-      '</tr>';
+      html += '<div class="shop-chunk' + (isCollapsed ? ' collapsed' : '') + '" data-location="' + escapeHtml(loc) + '">';
+      html += '<div class="shop-chunk-header" role="button" tabindex="0" aria-expanded="' + (!isCollapsed) + '">';
+      html += '<div class="shop-chunk-header-left">';
+      html += '<span class="shop-chunk-name">' + escapeHtml(loc) + '</span>';
+      html += '<span class="shop-chunk-count">' + totalCount + ' item' + (totalCount === 1 ? '' : 's') + '</span>';
+      html += '</div>';
+      html += '<span class="shop-chunk-chevron">' + (isCollapsed ? '▸' : '▾') + '</span>';
+      html += '</div>';
+      html += '<div class="shop-chunk-body">';
+      html += '<div class="shop-chunk-items">';
+
+      groupItems.forEach(function (item) {
+        var equipment = findEquipmentByName(item.name);
+        var nameHtml = equipment
+          ? '<a class="shop-item-link" href="' + escapeHtml(getEquipmentLink(item.name)) + '" title="View in Equipment Codex">' + escapeHtml(item.name) + '</a>'
+          : '<span class="shop-item-name">' + escapeHtml(item.name) + '</span>';
+        var priceHtml = item.price ? '<span class="shop-chunk-price">' + item.price.toLocaleString() + ' leaves</span>' : '<span class="shop-chunk-price">—</span>';
+
+        html += '<div class="shop-chunk-item-row">';
+        html += '<div class="shop-chunk-item-name">' + nameHtml + '</div>';
+        html += priceHtml;
+        html += '</div>';
+      });
+
+      html += '</div></div></div>';
     });
 
-    elements.tableBody.innerHTML = html;
+    elements.chunksGrid.innerHTML = html;
 
-    elements.tableBody.querySelectorAll('tr').forEach(function (tr, i) {
-      tr.classList.add('row-enter');
-      tr.style.animationDelay = (i * 20) + 'ms';
+    // Reattach expand/collapse event listeners
+    elements.chunksGrid.querySelectorAll('.shop-chunk-header').forEach(function (header) {
+      header.addEventListener('click', function () {
+        var chunk = header.closest('.shop-chunk');
+        var loc = chunk.getAttribute('data-location');
+        state.collapsedLocations[loc] = !state.collapsedLocations[loc];
+        chunk.classList.toggle('collapsed');
+        header.setAttribute('aria-expanded', String(!state.collapsedLocations[loc]));
+        header.querySelector('.shop-chunk-chevron').textContent = state.collapsedLocations[loc] ? '▸' : '▾';
+      });
+      header.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          header.click();
+        }
+      });
     });
-
-    updateSortHeaders();
   }
 
   // ---- Modal -------------------------------------------------------------
 
   function openModal(item) {
     if (!item) return;
-    elements.modalTitle.textContent = item.name || 'Item';
+    if (elements.modalTitle) elements.modalTitle.textContent = item.name || 'Item';
     var equipment = findEquipmentByName(item.name);
     var desc = 'Available at ' + (item.location || 'Unknown');
     if (item.price) desc += ' for ' + item.price.toLocaleString() + ' leaves.';
@@ -222,9 +221,9 @@
     if (equipment) {
       desc += ' This item matches equipment in the Equipment Codex.';
     }
-    elements.modalDescription.textContent = desc;
+    if (elements.modalDescription) elements.modalDescription.textContent = desc;
     if (elements.modalAmitySection) elements.modalAmitySection.style.display = 'none';
-    elements.modal.style.display = 'flex';
+    if (elements.modal) elements.modal.style.display = 'flex';
   }
 
   function closeModal() {
@@ -233,25 +232,14 @@
 
   window.closeDetailModal = closeModal;
 
-  // ---- Events -----------------------------------------------------------
-
-  function updateSortHeaders() {
-    if (!elements.tableWrap) return;
-    elements.tableWrap.querySelectorAll('th.sortable').forEach(function (cell) {
-      var isActive = cell.getAttribute('data-sort-key') === state.sortKey;
-      cell.classList.toggle('sort-active', isActive);
-      cell.classList.toggle('sort-asc', isActive && state.sortDir === 'asc');
-      cell.classList.toggle('sort-desc', isActive && state.sortDir === 'desc');
-    });
-  }
+  // ---- Events ------------------------------------------------------------
 
   function bindEvents() {
     if (elements.locationFilter) {
       elements.locationFilter.addEventListener('change', function () {
         state.activeLocation = elements.locationFilter.value;
-        state.currentPage = 1;
-        renderTable();
-      });
+      renderChunks();
+    });
     }
 
     if (elements.sortFilter) {
@@ -260,8 +248,7 @@
         var direction = parts.pop();
         state.sortKey = parts.join('-');
         state.sortDir = direction === 'asc' ? 'asc' : 'desc';
-        state.currentPage = 1;
-        renderTable();
+        renderChunks();
       });
     }
 
@@ -271,8 +258,7 @@
         clearTimeout(searchDebounce);
         searchDebounce = setTimeout(function () {
           state.searchQuery = elements.searchInput.value.trim();
-          state.currentPage = 1;
-          renderTable();
+          renderChunks();
         }, 200);
       });
     }
@@ -281,20 +267,17 @@
       elements.clearSearchBtn.addEventListener('click', function () {
         if (elements.searchInput) elements.searchInput.value = '';
         state.searchQuery = '';
-        state.currentPage = 1;
-        renderTable();
+        renderChunks();
       });
     }
 
     function doReset() {
       state.activeLocation = 'all';
       state.searchQuery = '';
-      state.sortKey = 'location';
-      state.sortDir = 'asc';
-      state.currentPage = 1;
+      state.collapsedLocations = {};
       if (elements.searchInput) elements.searchInput.value = '';
       populateDropdowns();
-      renderTable();
+      renderChunks();
     }
 
     if (elements.resetBtn) {
@@ -304,53 +287,15 @@
       elements.emptyResetBtn.addEventListener('click', doReset);
     }
 
-    if (elements.prevPageBtn) {
-      elements.prevPageBtn.addEventListener('click', function () {
-        if (state.currentPage > 1) {
-          state.currentPage--;
-          renderTable();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      });
-    }
-
-    if (elements.nextPageBtn) {
-      elements.nextPageBtn.addEventListener('click', function () {
-        var totalPages = Math.ceil(getFilteredItems().length / state.pageSize);
-        if (state.currentPage < totalPages) {
-          state.currentPage++;
-          renderTable();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      });
-    }
-
-    if (elements.tableWrap) {
-      elements.tableWrap.querySelectorAll('th.sortable').forEach(function (header) {
-        header.addEventListener('click', function () {
-          var key = header.getAttribute('data-sort-key');
-          if (!key) return;
-          if (state.sortKey === key) {
-            state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
-          } else {
-            state.sortKey = key;
-            state.sortDir = (key === 'name' || key === 'location') ? 'asc' : 'desc';
-          }
-          state.currentPage = 1;
-          if (elements.sortFilter) elements.sortFilter.value = state.sortKey + '-' + state.sortDir;
-          renderTable();
-        });
-      });
-    }
-
-    if (elements.tableBody) {
-      elements.tableBody.addEventListener('click', function (event) {
+    // Click on item row opens modal (only if not a link click)
+    if (elements.chunksGrid) {
+      elements.chunksGrid.addEventListener('click', function (event) {
         if (event.target.closest('a')) return;
-        var row = event.target.closest('tr');
+        var row = event.target.closest('.shop-chunk-item-row');
         if (!row) return;
-        var nameEl = row.querySelector('.equip-name-text');
+        var nameEl = row.querySelector('.shop-chunk-item-name');
         if (!nameEl) return;
-        var name = nameEl.textContent.replace(' ↗', '').trim();
+        var name = nameEl.textContent.trim();
         var item = getAllItems().find(function (i) { return i.name === name; });
         if (item) openModal(item);
       });
@@ -385,7 +330,7 @@
     renderMetrics();
     populateDropdowns();
     bindEvents();
-    renderTable();
+    renderChunks();
   }
 
   if (document.readyState === 'loading') {
@@ -394,3 +339,4 @@
     init();
   }
 })();
+

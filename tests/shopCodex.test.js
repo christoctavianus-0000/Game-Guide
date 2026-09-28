@@ -28,16 +28,16 @@ test('renders metrics for shop items and locations', () => {
   assert.ok(Number(page.text('metricLocationCount')) > 0);
 });
 
-test('starts on all items and populates table rows', () => {
+test('starts on all items and populates chunk cards', () => {
   const page = openShopCodex();
   const allItems = getAllItems(page);
-  const rowCount = page.countChildren('shopTableBody');
-  // tableBody uses innerHTML to render <tr> rows; stub parses <article> only,
-  // so check via innerHTML regex
-  const trCount = (page.html('shopTableBody').match(/<tr\b/g) || []).length;
-  assert.ok(trCount > 0, 'should render table rows');
-  assert.ok(trCount <= 48, 'should not exceed page size');
-  assert.ok(trCount <= allItems.length, 'should not exceed total items');
+  // Rendered chunks go into shopChunksGrid via innerHTML
+  const gridHtml = page.html('shopChunksGrid');
+  const chunkCount = (gridHtml.match(/<div class="shop-chunk\b/g) || []).length;
+  const rowCount = (gridHtml.match(/shop-chunk-item-row/g) || []).length;
+  assert.ok(chunkCount > 0, 'should render chunk cards');
+  assert.ok(rowCount > 0, 'should render item rows inside chunks');
+  assert.ok(rowCount <= allItems.length, 'should not exceed total items');
 });
 
 test('location filter updates displayed items', () => {
@@ -79,11 +79,14 @@ test('deep-link with ?location= pre-selects a location', () => {
   assert.equal(page.text('shopResultsCount'), `Showing ${count} items`);
 });
 
-test('table columns are in order: Location, Item, Price', () => {
-  const fs = require('fs');
-  const html = fs.readFileSync(path.join(ROOT, 'shop.html'), 'utf8');
-  const keys = [...html.matchAll(/data-sort-key="([^"]+)"/g)].map(m => m[1]);
-  assert.deepEqual(keys, ['location', 'name', 'price']);
+test('chunk headers show location name and item count', () => {
+  const page = openShopCodex();
+  const gridHtml = page.html('shopChunksGrid');
+  // Each chunk header should contain a shop-chunk-name and shop-chunk-count
+  const nameMatches = (gridHtml.match(/shop-chunk-name/g) || []).length;
+  const countMatches = (gridHtml.match(/shop-chunk-count/g) || []).length;
+  assert.ok(nameMatches > 0, 'should have chunk names');
+  assert.equal(nameMatches, countMatches, 'each chunk name should have a count');
 });
 
 test('reset button clears all filters and sorting', () => {

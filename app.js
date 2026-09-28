@@ -14,6 +14,7 @@
     targetFilter: 'all',
     spFilter: 'all',
     sortFilter: 'name-asc',
+    tableSort: { key: 'name', dir: 'asc' },
     viewMode: 'grid',
     currentPage: 1,
     pageSize: 48,
@@ -309,6 +310,37 @@
 
       return true;
     }).sort((a, b) => {
+      // In table mode, use column header sort
+      const useTable = state.viewMode === 'table';
+      const key = useTable ? state.tableSort.key : null;
+      const dir = useTable ? state.tableSort.dir : null;
+      const mul = dir === 'desc' ? -1 : 1;
+
+      if (useTable && key) {
+        switch (key) {
+          case 'name':
+            return mul * a.name.localeCompare(b.name);
+          case 'category':
+            return mul * (a.category || '').localeCompare(b.category || '');
+          case 'subType':
+            return mul * (a.subType || '').localeCompare(b.subType || '');
+          case 'sp':
+            return mul * ((a.sp || 0) - (b.sp || 0));
+          case 'target':
+            return mul * (a.target || '').localeCompare(b.target || '');
+          case 'potency': {
+            const maxA = Math.max(...(a.ratios || [0]));
+            const maxB = Math.max(...(b.ratios || [0]));
+            return mul * (maxA - maxB);
+          }
+          case 'detail':
+            return mul * ((a.detail || '').localeCompare(b.detail || ''));
+          default:
+            return 0;
+        }
+      }
+
+      // Grid mode: use dropdown sort
       switch (state.sortFilter) {
         case 'name-asc':
           return a.name.localeCompare(b.name);
@@ -383,13 +415,13 @@
         <thead>
           <tr>
             <th scope="col">Icon</th>
-            <th scope="col">Name</th>
-            <th scope="col">Category</th>
-            <th scope="col">Subtype</th>
-            <th scope="col">SP</th>
-            <th scope="col">Target</th>
-            <th scope="col">Potency</th>
-            <th scope="col"></th>
+            <th scope="col" class="sortable" data-sort="name">Name</th>
+            <th scope="col" class="sortable" data-sort="category">Category</th>
+            <th scope="col" class="sortable" data-sort="subType">Subtype</th>
+            <th scope="col" class="sortable" data-sort="sp">SP</th>
+            <th scope="col" class="sortable" data-sort="target">Target</th>
+            <th scope="col" class="sortable" data-sort="potency">Potency</th>
+            <th scope="col" class="sortable" data-sort="detail">Description</th>
           </tr>
         </thead>
         <tbody>
@@ -441,7 +473,7 @@
                 <td>${spDisplay}</td>
                 <td>${escapeHtml(skill.target)}</td>
                 <td>${potencyHtml}</td>
-                <td><button class="table-inspect-btn" data-id="${escapeHtml(skill.id)}" title="Inspect">Inspect</button></td>
+                <td class="table-desc-cell">${escapeHtml(skill.detail || '')}</td>
               </tr>
             `;
           }).join('')}
@@ -452,7 +484,7 @@
     // Add click handlers for table rows
     elements.skillsGrid.querySelectorAll('.skill-table tbody tr').forEach(row => {
       row.addEventListener('click', (e) => {
-        if ((/** @type {HTMLElement} */ (e.target)).closest('.table-fav-btn') || (/** @type {HTMLElement} */ (e.target)).closest('.table-inspect-btn')) return;
+        if ((/** @type {HTMLElement} */ (e.target)).closest('.table-fav-btn')) return;
         const skillId = row.getAttribute('data-id');
         const skill = dataset.find(s => s.id === skillId);
         if (skill) openModal(skill);
@@ -467,14 +499,32 @@
       });
     });
 
-    // Inspect buttons in table
-    elements.skillsGrid.querySelectorAll('.table-inspect-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const skillId = btn.getAttribute('data-id');
-        const skill = dataset.find(s => s.id === skillId);
-        if (skill) openModal(skill);
+    // Sortable column headers
+    applyTableSortIndicator();
+    elements.skillsGrid.querySelectorAll('.skill-table th.sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const key = th.getAttribute('data-sort');
+        if (!key) return;
+        if (state.tableSort.key === key) {
+          state.tableSort.dir = state.tableSort.dir === 'asc' ? 'desc' : 'asc';
+        } else {
+          state.tableSort.key = key;
+          state.tableSort.dir = key === 'sp' || key === 'potency' ? 'desc' : 'asc';
+        }
+        state.currentPage = 1;
+        render();
       });
+    });
+  }
+
+  /** Apply sort arrow indicator to active column header */
+  function applyTableSortIndicator() {
+    const headers = elements.skillsGrid.querySelectorAll('.skill-table th.sortable');
+    headers.forEach(th => {
+      th.classList.remove('sort-active', 'sort-asc', 'sort-desc');
+      if (th.getAttribute('data-sort') === state.tableSort.key) {
+        th.classList.add('sort-active', state.tableSort.dir === 'asc' ? 'sort-asc' : 'sort-desc');
+      }
     });
   }
 
@@ -652,21 +702,81 @@
       return matched;
     })();
 
-    const sourceMarkup = skillSourceEntries.length
-      ? skillSourceEntries.map((/** @type {SkillSourceEntry} */ source) => {
-          const label = source.label || source.name || 'Character / Job';
-          const href = source.href || 'character.html';
-          return `
+    // Mastery / world sources (from masterySourceData.js)
+    const masteryMap = /** @type {Record<string, MasterySourceEntry[]>} */ ((() => {
+      const win = typeof window !== 'undefined' ? window : null;
+      const fromWindow = win && /** @type {any} */ (win).masterySourceIndex ? /** @type {any} */ (win).masterySourceIndex : null;
+      const fromGlobal = typeof masterySourceIndex !== 'undefined' ? masterySourceIndex : null;
+      return fromWindow || fromGlobal || {};
+    })());
+
+    const masteryEntries = (() => {
+      const wanted = normalizeSourceName(skill.name);
+      const direct = masteryMap[skill.name] || masteryMap[skill.name.toLowerCase()] || [];
+      if (direct.length) return direct;
+      return Object.keys(masteryMap).flatMap(key => {
+        if (normalizeSourceName(key) === wanted) return masteryMap[key] || [];
+        return [];
+      });
+    })();
+
+    /** Category icon + label map */
+    const CATEGORY_META = /** @type {Record<string, { icon: string; label: string }>} */ ({
+      'Chest':       { icon: '📦', label: 'Chest' },
+      'Boss':        { icon: '💀', label: 'Boss / Steal / Drop' },
+      'NPC':         { icon: '💬', label: 'NPC' },
+      'Trade Goods': { icon: '🏪', label: 'Trade Goods' },
+      'Other':       { icon: 'ℹ️', label: 'Other' },
+    });
+
+    /** Group mastery entries by category, preserving order */
+    const groupedMastery = (() => {
+      const groups = /** @type {Record<string, string[]>} */ ({});
+      for (const entry of masteryEntries) {
+        const cat = entry.category || 'Other';
+        if (!groups[cat]) groups[cat] = [];
+        if (entry.text && !groups[cat].includes(entry.text)) groups[cat].push(entry.text);
+      }
+      return groups;
+    })();
+
+    // Build combined source markup
+    const parts = [];
+
+    // 1. Character / Job source links (clickable)
+    if (skillSourceEntries.length) {
+      parts.push(skillSourceEntries.map((/** @type {SkillSourceEntry} */ source) => {
+        const label = source.label || source.name || 'Character / Job';
+        const href = source.href || 'character.html';
+        return `
             <a class="source-link-item" href="${escapeHtml(href)}">
               <span class="source-kind">${escapeHtml(source.type === 'job' ? 'Job' : 'Character')}</span>
               <span>${escapeHtml(label)}</span>
-            </a>
-          `;
-        }).join('')
-      : '<div class="source-link-item"><span class="source-kind">Unassigned</span><span>No character or job currently lists this skill.</span></div>';
+            </a>`;
+      }).join(''));
+    }
+
+    // 2. Mastery / world sources grouped by category
+    const masteryOrder = ['Chest', 'Boss', 'NPC', 'Trade Goods', 'Other'];
+    for (const cat of masteryOrder) {
+      const texts = groupedMastery[cat];
+      if (!texts || !texts.length) continue;
+      const meta = CATEGORY_META[cat] || CATEGORY_META['Other'];
+      parts.push(`<div class="source-category-group">`);
+      parts.push(`<div class="source-category-heading">${meta.icon} ${escapeHtml(meta.label)}</div>`);
+      for (const text of texts) {
+        parts.push(`<div class="source-link-item source-info-item"><span>${escapeHtml(text)}</span></div>`);
+      }
+      parts.push(`</div>`);
+    }
+
+    // Fallback if nothing at all
+    if (!parts.length) {
+      parts.push('<div class="source-link-item"><span class="source-kind">Unassigned</span><span>No character or job currently lists this skill.</span></div>');
+    }
 
     if (elements.modalSource) {
-      elements.modalSource.innerHTML = sourceMarkup;
+      elements.modalSource.innerHTML = parts.join('');
     }
 
     // Boost Scaling Table
@@ -852,6 +962,7 @@
       state.targetFilter = 'all';
       state.spFilter = 'all';
       state.sortFilter = 'name-asc';
+      state.tableSort = { key: 'name', dir: 'asc' };
       state.viewMode = 'grid';
       state.showFavoritesOnly = false;
       state.currentPage = 1;

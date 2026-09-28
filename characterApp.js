@@ -671,13 +671,15 @@
     bindEvents();
 
     const hash = typeof window !== 'undefined' ? (window.location && window.location.hash ? window.location.hash.replace(/^#/, '') : '') : '';
-    if (hash) {
+    const deferredHashEntry = hash ? (() => {
       const normalizedHash = hash.replace(/^job-/, '');
-      const targetEntry = getCharacterEntries().find(entry => entry.id === normalizedHash);
-      if (targetEntry) openModal(targetEntry.type, targetEntry.id);
-    }
+      return getCharacterEntries().find(entry => entry.id === normalizedHash);
+    })() : null;
 
-    preloadAssets().then(() => { render(); });
+    preloadAssets().then(() => {
+      render();
+      if (deferredHashEntry) openModal(deferredHashEntry.type, deferredHashEntry.id);
+    });
   }
 
   if (document.readyState === 'loading') {

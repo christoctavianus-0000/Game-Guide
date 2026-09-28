@@ -215,3 +215,70 @@ test('skill modal shows character or job source links when the skill belongs to 
   assert.ok(page.html('modalSource').includes('href="character.html#stia"'));
   assert.ok(page.html('modalSource').includes('Stia - Architect'));
 });
+
+test('skill modal renders mastery source entries grouped by category', async () => {
+  const data = {
+    masterySourceIndex: {
+      'First Aid': [
+        { text: 'Blue Chest, Flamesgrace Cathedral', category: 'Chest' },
+        { text: 'Healer, Flamesgrace', category: 'NPC' },
+      ]
+    }
+  };
+
+  const page = openSkillCodex(data);
+  clickTab(page, 'Support');
+
+  const target = skills.find(skill => skill.name === 'First Aid');
+  assert.ok(target, 'First Aid is in the dataset');
+
+  page.el('skillSearchInput').value = target.name;
+  page.fire('skillSearchInput', 'input');
+  await new Promise(resolve => setTimeout(resolve, 220));
+
+  const card = page.cardElements('skillsGrid').find(el => el.getAttribute('data-id') === target.id);
+  card.dispatch('click', { target: page.targetStub('.not-a-fav-button') });
+
+  const src = page.html('modalSource');
+  assert.ok(src.includes('source-category-group'), 'has category groups');
+  assert.ok(src.includes('Chest'), 'renders chest category heading');
+  assert.ok(src.includes('Blue Chest, Flamesgrace Cathedral'), 'renders chest source text');
+  assert.ok(src.includes('NPC'), 'renders NPC category heading');
+  assert.ok(src.includes('Healer, Flamesgrace'), 'renders NPC source text');
+});
+
+test('skill modal renders both character and mastery sources when both exist', async () => {
+  const data = {
+    characterJobData: {
+      skillIndex: {
+        'First Aid': [{
+          type: 'character',
+          id: 'stia',
+          label: 'Stia - Architect',
+          href: 'character.html#stia'
+        }]
+      }
+    },
+    masterySourceIndex: {
+      'First Aid': [
+        { text: 'Gold Chest, Stillwater', category: 'Chest' },
+      ]
+    }
+  };
+
+  const page = openSkillCodex(data);
+  clickTab(page, 'Support');
+
+  const target = skills.find(skill => skill.name === 'First Aid');
+  page.el('skillSearchInput').value = target.name;
+  page.fire('skillSearchInput', 'input');
+  await new Promise(resolve => setTimeout(resolve, 220));
+
+  const card = page.cardElements('skillsGrid').find(el => el.getAttribute('data-id') === target.id);
+  card.dispatch('click', { target: page.targetStub('.not-a-fav-button') });
+
+  const src = page.html('modalSource');
+  assert.ok(src.includes('href="character.html#stia"'), 'has character link');
+  assert.ok(src.includes('source-category-group'), 'has mastery category groups');
+  assert.ok(src.includes('Gold Chest, Stillwater'), 'has mastery source text');
+});

@@ -85,8 +85,10 @@ test('job export keeps battle skills when the job label and skill share the row'
   );
 });
 
-test('character page opens the matching modal from a hash link', () => {
+test('character page opens the matching modal from a hash link', async () => {
   const page = openCharacterCodex({ hash: '#phenn' });
+  // modal opens after preloadAssets resolves (microtask)
+  await Promise.resolve();
 
   assert.ok(page.el('characterDetailModal').classList.contains('active'));
   assert.equal(page.el('characterModalName').textContent, 'Phenn');

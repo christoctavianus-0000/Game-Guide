@@ -154,20 +154,9 @@
       </div>
 
       <section class="skills-display-section">
-        <!-- Sortable Table View -->
-        <div class="equip-table-wrap" id="shopTableWrap">
-          <table class="equip-table">
-            <thead>
-              <tr>
-                <th class="sortable" data-sort-key="location">Location</th>
-                <th class="sortable" data-sort-key="name">Item</th>
-                <th class="sortable num" data-sort-key="price">Price</th>
-              </tr>
-            </thead>
-            <tbody id="shopTableBody">
-              <!-- Rows rendered by shopApp.js -->
-            </tbody>
-          </table>
+        <!-- Shop Chunk Grid -->
+        <div class="shop-chunk-grid" id="shopChunksGrid">
+          <!-- Chunks rendered by shopApp.js -->
         </div>
 
         <!-- Empty State -->
@@ -177,16 +166,6 @@
           <button class="primary-btn shop-reset-empty-btn" type="button">Clear All Filters</button>
         </div>
 
-        <!-- Pagination Controls -->
-        <div class="pagination-footer" id="shopPaginationFooter" style="display:none;">
-          <div class="pagination-info" id="shopResultsCountFooter"></div>
-          <div class="pagination-info" id="shopPaginationInfo"></div>
-          <div class="pagination-buttons">
-            <button class="page-btn" id="shopPrevPageBtn" disabled>‹ Previous</button>
-            <span class="page-current" id="shopPageCurrent">Page 1</span>
-            <button class="page-btn" id="shopNextPageBtn">Next ›</button>
-          </div>
-        </div>
       </section>
     </main>
   </div>

@@ -197,3 +197,11 @@ interface CharacterJobData {
 
 declare const characterJobData: CharacterJobData | undefined;
 declare const characterSourceIndex: Record<string, SkillSourceEntry[]> | undefined;
+
+/** Mastery skill source entry (from mastery skills sheet). */
+interface MasterySourceEntry {
+  text: string;
+  category: string;
+}
+
+declare const masterySourceIndex: Record<string, MasterySourceEntry[]> | undefined;

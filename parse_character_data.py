@@ -264,18 +264,6 @@ def build_source_index(characters: list[dict], jobs: list[dict]) -> dict[str, li
             }
             sources.setdefault(name, []).append(entry)
 
-    protagonist = build_protagonist_entry(jobs)
-    for skill in protagonist["skills"]:
-        name = skill["name"]
-        entry = {
-            "type": "job",
-            "id": "protagonist",
-            "label": f"Protagonist - {skill['sourceJob']}",
-            "href": "character.html#protagonist",
-            "skillType": skill["type"],
-        }
-        sources.setdefault(name, []).append(entry)
-
     return sources
 
 
