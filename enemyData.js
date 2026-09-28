@@ -17539,7 +17539,7 @@ const enemyData = [
   {
     "id": "98246.0",
     "name": "Spiked Skink",
-    "area": "Kindlers Ch. 1",
+    "area": "Frostlands",
     "subArea": "Snowshard Grotto",
     "type": "Boss",
     "shields": 4,
@@ -17679,7 +17679,7 @@ const enemyData = [
   {
     "id": "5002.0",
     "name": "Captain Tristan",
-    "area": "Master of Wealth Ch. 1",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse: Entrance",
     "type": "Boss",
     "shields": 9,
@@ -17728,7 +17728,7 @@ const enemyData = [
   {
     "id": "5003.0",
     "name": "Mercenary",
-    "area": "Master of Wealth Ch. 1",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse: Entrance",
     "type": "Boss",
     "shields": 4,
@@ -17811,7 +17811,7 @@ const enemyData = [
   {
     "id": "5012.0",
     "name": "Al the Servant",
-    "area": "Master of Power Ch. 1",
+    "area": "Frostlands",
     "subArea": "Emberglow Laboratory",
     "type": "Boss",
     "shields": 8,
@@ -17869,7 +17869,7 @@ const enemyData = [
   {
     "id": "5025.0",
     "name": "Aide (Vanguard)",
-    "area": "Master of Fame Ch. 1",
+    "area": "Flatlands",
     "subArea": "Amphitheatre: Dressing Room",
     "type": "Boss",
     "shields": 5,
@@ -17923,7 +17923,7 @@ const enemyData = [
   {
     "id": "5026.0",
     "name": "Aide (Rearguard)",
-    "area": "Master of Fame Ch. 1",
+    "area": "Flatlands",
     "subArea": "Amphitheatre: Dressing Room",
     "type": "Boss",
     "shields": 4,
@@ -17977,7 +17977,7 @@ const enemyData = [
   {
     "id": "5004.0",
     "name": "Sonia",
-    "area": "Master of Wealth Ch. 2",
+    "area": "Frostlands",
     "subArea": "Subterranean Snow Ruins",
     "type": "Boss",
     "shields": 15,
@@ -18038,7 +18038,7 @@ const enemyData = [
   {
     "id": "5014.0",
     "name": "Jurgen",
-    "area": "Master of Power Ch. 2",
+    "area": "Frostlands",
     "subArea": "Emberglow Slopes",
     "type": "Boss",
     "shields": 13,
@@ -18103,7 +18103,7 @@ const enemyData = [
   {
     "id": "5015.0",
     "name": "Scarlet Wing",
-    "area": "Master of Power Ch. 2",
+    "area": "Frostlands",
     "subArea": "Emberglow Slopes",
     "type": "Boss",
     "shields": 6,
@@ -18144,7 +18144,7 @@ const enemyData = [
   {
     "id": "5027.0",
     "name": "Francesca the Actress",
-    "area": "Master of Fame Ch. 2",
+    "area": "Woodlands",
     "subArea": "Auguste's Villa",
     "type": "Boss",
     "shields": 14,
@@ -18275,7 +18275,7 @@ const enemyData = [
   {
     "id": "5008.0",
     "name": "Lady Herminia",
-    "area": "Master of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse",
     "type": "Boss",
     "shields": 12,
@@ -18348,7 +18348,7 @@ const enemyData = [
   {
     "id": "5009.0",
     "name": "Lady In Waiting",
-    "area": "Master of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse",
     "type": "Boss",
     "shields": 8,
@@ -18397,7 +18397,7 @@ const enemyData = [
   {
     "id": "5010.0",
     "name": "Herminia the Huntress",
-    "area": "Master of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse",
     "type": "Boss",
     "shields": 15,
@@ -18486,7 +18486,7 @@ const enemyData = [
   {
     "id": "5147.0",
     "name": "Lady Herminia",
-    "area": "Master of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse",
     "type": "Boss",
     "shields": 12,
@@ -18559,7 +18559,7 @@ const enemyData = [
   {
     "id": "5148.0",
     "name": "Lady In Waiting",
-    "area": "Master of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse",
     "type": "Boss",
     "shields": 8,
@@ -18608,7 +18608,7 @@ const enemyData = [
   {
     "id": "5151.0",
     "name": "Herminia the Huntress",
-    "area": "Master of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse",
     "type": "Boss",
     "shields": 17,
@@ -18697,7 +18697,7 @@ const enemyData = [
   {
     "id": "98219.0",
     "name": "Manifestation of Mental Decay",
-    "area": "Master of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse",
     "type": "Boss",
     "shields": 12,
@@ -18750,7 +18750,7 @@ const enemyData = [
   {
     "id": "98249.0",
     "name": "Manifestation of Mental Decay",
-    "area": "Master of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse",
     "type": "Boss",
     "shields": 8,
@@ -18803,7 +18803,7 @@ const enemyData = [
   {
     "id": "5020.0",
     "name": "Snow Yak",
-    "area": "Master of Power Ch. 3",
+    "area": "Frostlands",
     "subArea": "Emberglow Slopes",
     "type": "Boss",
     "shields": 10,
@@ -18855,7 +18855,7 @@ const enemyData = [
   {
     "id": "5022.0",
     "name": "Jurgen",
-    "area": "Master of Power Ch. 3",
+    "area": "Frostlands",
     "subArea": "Emberglow Slopes",
     "type": "Boss",
     "shields": 16,
@@ -18912,7 +18912,7 @@ const enemyData = [
   {
     "id": "5023.0",
     "name": "Commander Tytos",
-    "area": "Master of Power Ch. 3",
+    "area": "Frostlands",
     "subArea": "Cathedral of Tytos",
     "type": "Boss",
     "shields": 17,
@@ -18989,7 +18989,7 @@ const enemyData = [
   {
     "id": "5024.0",
     "name": "Tytos the Thunderblade",
-    "area": "Master of Power Ch. 3",
+    "area": "Frostlands",
     "subArea": "Cathedral of Tytos",
     "type": "Boss",
     "shields": 19,
@@ -19074,7 +19074,7 @@ const enemyData = [
   {
     "id": "5157.0",
     "name": "Commander Tytos",
-    "area": "Master of Power Ch. 3",
+    "area": "Frostlands",
     "subArea": "Cathedral of Tytos",
     "type": "Boss",
     "shields": 17,
@@ -19151,7 +19151,7 @@ const enemyData = [
   {
     "id": "5159.0",
     "name": "Tytos the Thunderblade",
-    "area": "Master of Power Ch. 3",
+    "area": "Frostlands",
     "subArea": "Cathedral of Tytos",
     "type": "Boss",
     "shields": 19,
@@ -19244,7 +19244,7 @@ const enemyData = [
   {
     "id": "5030.0",
     "name": "Auguste the Playwright",
-    "area": "Master of Fame Ch. 3",
+    "area": "Flatlands",
     "subArea": "Amphitheatre: Backstage",
     "type": "Boss",
     "shields": 13,
@@ -19317,7 +19317,7 @@ const enemyData = [
   {
     "id": "5031.0",
     "name": "Auguste the Prince of Thieves",
-    "area": "Master of Fame Ch. 3",
+    "area": "Flatlands",
     "subArea": "Amphitheatre: Backstage",
     "type": "Boss",
     "shields": 15,
@@ -19406,7 +19406,7 @@ const enemyData = [
   {
     "id": "5165.0",
     "name": "Auguste the Playwright",
-    "area": "Master of Fame Ch. 3",
+    "area": "Flatlands",
     "subArea": "Amphitheatre: Backstage",
     "type": "Boss",
     "shields": 13,
@@ -19479,7 +19479,7 @@ const enemyData = [
   {
     "id": "5167.0",
     "name": "Auguste the Prince of Thieves",
-    "area": "Master of Fame Ch. 3",
+    "area": "Flatlands",
     "subArea": "Amphitheatre: Backstage",
     "type": "Boss",
     "shields": 15,
@@ -19568,7 +19568,7 @@ const enemyData = [
   {
     "id": "98221.0",
     "name": "Ruinous Rancor",
-    "area": "Master of Fame Ch. 3",
+    "area": "Flatlands",
     "subArea": "Amphitheatre: Backstage",
     "type": "Boss",
     "shields": 6,
@@ -19617,7 +19617,7 @@ const enemyData = [
   {
     "id": "98010.0",
     "name": "Sazantos",
-    "area": "Finale",
+    "area": "Woodlands",
     "subArea": "Wishvale Trail",
     "type": "Boss",
     "shields": 13,
@@ -19772,7 +19772,7 @@ const enemyData = [
   {
     "id": "5032.0",
     "name": "Mesara the Thief",
-    "area": "Master of All Ch. 1",
+    "area": "Cliftlands",
     "subArea": "Gray Grotto: Depths",
     "type": "Boss",
     "shields": 11,
@@ -19837,7 +19837,7 @@ const enemyData = [
   {
     "id": "5033.0",
     "name": "Thief",
-    "area": "Master of All Ch. 1",
+    "area": "Cliftlands",
     "subArea": "Gray Grotto: Depths",
     "type": "Boss",
     "shields": 6,
@@ -19887,7 +19887,7 @@ const enemyData = [
   {
     "id": "5034.0",
     "name": "Thief",
-    "area": "Master of All Ch. 1",
+    "area": "Cliftlands",
     "subArea": "Gray Grotto: Depths",
     "type": "Boss",
     "shields": 6,
@@ -19937,7 +19937,7 @@ const enemyData = [
   {
     "id": "5035.0",
     "name": "M'suhi the Viper",
-    "area": "Master of All Ch. 2",
+    "area": "Cliftlands",
     "subArea": "Geist Canyon",
     "type": "Boss",
     "shields": 14,
@@ -20006,7 +20006,7 @@ const enemyData = [
   {
     "id": "5191.0",
     "name": "Thief",
-    "area": "Master of All Ch. 2",
+    "area": "Cliftlands",
     "subArea": "Geist Canyon",
     "type": "Boss",
     "shields": 5,
@@ -20052,7 +20052,7 @@ const enemyData = [
   {
     "id": "5192.0",
     "name": "Thief",
-    "area": "Master of All Ch. 2",
+    "area": "Cliftlands",
     "subArea": "Geist Canyon",
     "type": "Boss",
     "shields": 5,
@@ -20194,7 +20194,7 @@ const enemyData = [
   {
     "id": "5038.0",
     "name": "Gimel the Brigand Leader",
-    "area": "Master of All Ch. 3",
+    "area": "Riverlands",
     "subArea": "Waterpool Caves",
     "type": "Boss",
     "shields": 10,
@@ -20259,7 +20259,7 @@ const enemyData = [
   {
     "id": "5039.0",
     "name": "Thief",
-    "area": "Master of All Ch. 3",
+    "area": "Riverlands",
     "subArea": "Waterpool Caves",
     "type": "Boss",
     "shields": 6,
@@ -20308,7 +20308,7 @@ const enemyData = [
   {
     "id": "5040.0",
     "name": "Thief",
-    "area": "Master of All Ch. 3",
+    "area": "Riverlands",
     "subArea": "Waterpool Caves",
     "type": "Boss",
     "shields": 6,
@@ -20357,7 +20357,7 @@ const enemyData = [
   {
     "id": "98549.0",
     "name": "Desert Lizardking I",
-    "area": "Kindlers Ch. 3",
+    "area": "Sunlands",
     "subArea": "Finesand Ruins",
     "type": "Boss",
     "shields": 6,
@@ -20403,7 +20403,7 @@ const enemyData = [
   {
     "id": "98248.0",
     "name": "Desert Lizardking",
-    "area": "Kindlers Ch. 3",
+    "area": "Sunlands",
     "subArea": "Finesand Ruins",
     "type": "Boss",
     "shields": 6,
@@ -20449,7 +20449,7 @@ const enemyData = [
   {
     "id": "98247.0",
     "name": "Lizardmen Leader",
-    "area": "Kindlers Ch. 3",
+    "area": "Sunlands",
     "subArea": "Finesand Ruins",
     "type": "Boss",
     "shields": 17,
@@ -20510,7 +20510,7 @@ const enemyData = [
   {
     "id": "98591.0",
     "name": "Emerald Direwolf",
-    "area": "Kindlers Ch. 5",
+    "area": "Frostlands",
     "subArea": "Path to the Flamebearer's Shrine",
     "type": "Boss",
     "shields": 10,
@@ -20604,7 +20604,7 @@ const enemyData = [
   {
     "id": "98592.0",
     "name": "Emerald Direwolf",
-    "area": "Kindlers Ch. 5",
+    "area": "Frostlands",
     "subArea": "Path to the Flamebearer's Shrine",
     "type": "Boss",
     "shields": 10,
@@ -20698,7 +20698,7 @@ const enemyData = [
   {
     "id": "5041.0",
     "name": "Cerro the Emissary",
-    "area": "Master of All Ch. 4",
+    "area": "Sunlands",
     "subArea": "Sunshade Sands",
     "type": "Boss",
     "shields": 14,
@@ -20755,7 +20755,7 @@ const enemyData = [
   {
     "id": "5043.0",
     "name": "Gonzalez the Ironarm",
-    "area": "Master of All Ch. 5",
+    "area": "Highlands",
     "subArea": "Valley of Death",
     "type": "Boss",
     "shields": 14,
@@ -20820,7 +20820,7 @@ const enemyData = [
   {
     "id": "5044.0",
     "name": "General Krauser",
-    "area": "Master of All Ch. 5",
+    "area": "Highlands",
     "subArea": "Valley of Death: West",
     "type": "Boss",
     "shields": 10,
@@ -20889,7 +20889,7 @@ const enemyData = [
   {
     "id": "5045.0",
     "name": "General's Subordinate",
-    "area": "Master of All Ch. 5",
+    "area": "Highlands",
     "subArea": "Valley of Death: West",
     "type": "Boss",
     "shields": 5,
@@ -20934,7 +20934,7 @@ const enemyData = [
   {
     "id": "5046.0",
     "name": "General's Subordinate",
-    "area": "Master of All Ch. 5",
+    "area": "Highlands",
     "subArea": "Valley of Death: West",
     "type": "Boss",
     "shields": 5,
@@ -20979,7 +20979,7 @@ const enemyData = [
   {
     "id": "5047.0",
     "name": "King Pardis III",
-    "area": "Master of All Ch. 5",
+    "area": "Highlands",
     "subArea": "Valley of Death: West",
     "type": "Boss",
     "shields": 13,
@@ -21424,7 +21424,7 @@ const enemyData = [
   {
     "id": "5049.0",
     "name": "Gonska the Jester",
-    "area": "Master of All Ch. 7",
+    "area": "Riverlands",
     "subArea": "Castle Riven",
     "type": "Boss",
     "shields": 11,
@@ -21671,7 +21671,7 @@ const enemyData = [
   {
     "id": "5058.0",
     "name": "Edoras Defender of Power",
-    "area": "Master of All Ch. 8",
+    "area": "Cliftlands",
     "subArea": "Castle Edoras",
     "type": "Boss",
     "shields": 11,
@@ -22133,7 +22133,7 @@ const enemyData = [
   {
     "id": "5188.0",
     "name": "Sazantos",
-    "area": "Finale",
+    "area": "Coastlands",
     "subArea": "Isle of Orsa: Depths",
     "type": "Boss",
     "shields": 19,
@@ -22218,7 +22218,7 @@ const enemyData = [
   {
     "id": "5062.0",
     "name": "Blackrobe (Axe)",
-    "area": "Bestower of Wealth Prologue",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse: Entrance",
     "type": "Boss",
     "shields": 4,
@@ -22275,7 +22275,7 @@ const enemyData = [
   {
     "id": "5063.0",
     "name": "Blackrobe (Bow)",
-    "area": "Bestower of Wealth Prologue",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse: Entrance",
     "type": "Boss",
     "shields": 5,
@@ -22332,7 +22332,7 @@ const enemyData = [
   {
     "id": "5070.0",
     "name": "Blackrobe (Dagger)",
-    "area": "Bestower of Wealth Prologue",
+    "area": "Woodlands",
     "subArea": "Herminia's Manse: Entrance",
     "type": "Boss",
     "shields": 5,
@@ -23063,7 +23063,7 @@ const enemyData = [
   {
     "id": "5081.0",
     "name": "Cavalry (Bow)",
-    "area": "Bestower of Power Ch. 1",
+    "area": "Riverlands",
     "subArea": "Cyphlo Banks",
     "type": "Boss",
     "shields": 8,
@@ -23112,7 +23112,7 @@ const enemyData = [
   {
     "id": "5082.0",
     "name": "Cavalry (Polearm)",
-    "area": "Bestower of Power Ch. 1",
+    "area": "Riverlands",
     "subArea": "Cyphlo Banks",
     "type": "Boss",
     "shields": 7,
@@ -23161,7 +23161,7 @@ const enemyData = [
   {
     "id": "5083.0",
     "name": "Captain Na'gu",
-    "area": "Bestower of Power Ch. 1",
+    "area": "Riverlands",
     "subArea": "Cyphlo Banks",
     "type": "Boss",
     "shields": 12,
@@ -23262,7 +23262,7 @@ const enemyData = [
   {
     "id": "5084.0",
     "name": "Empress Tatloch",
-    "area": "Bestower of Power Ch. 1",
+    "area": "Riverlands",
     "subArea": "Cyphlo Banks",
     "type": "Boss",
     "shields": 25,
@@ -23326,7 +23326,7 @@ const enemyData = [
   {
     "id": "5085.0",
     "name": "Cavalry (Bow)",
-    "area": "Bestower of Power Ch. 1",
+    "area": "Riverlands",
     "subArea": "Cyphlo Banks",
     "type": "Boss",
     "shields": 7,
@@ -23375,7 +23375,7 @@ const enemyData = [
   {
     "id": "5086.0",
     "name": "Cavalry (Polearm)",
-    "area": "Bestower of Power Ch. 1",
+    "area": "Riverlands",
     "subArea": "Cyphlo Banks",
     "type": "Boss",
     "shields": 8,
@@ -23489,7 +23489,7 @@ const enemyData = [
   {
     "id": "98819.0",
     "name": "Scarlet Wing",
-    "area": "Bestower of Fame Ch. 1",
+    "area": "Frostlands",
     "subArea": "Cathedral of Tytos",
     "type": "Boss",
     "shields": 7,
@@ -23534,7 +23534,7 @@ const enemyData = [
   {
     "id": "98820.0",
     "name": "Scarlet Wing",
-    "area": "Bestower of Fame Ch. 1",
+    "area": "Frostlands",
     "subArea": "Cathedral of Tytos",
     "type": "Boss",
     "shields": 6,
@@ -23579,7 +23579,7 @@ const enemyData = [
   {
     "id": "98821.0",
     "name": "Scarlet Wing",
-    "area": "Bestower of Fame Ch. 1",
+    "area": "Frostlands",
     "subArea": "Cathedral of Tytos",
     "type": "Boss",
     "shields": 6,
@@ -23624,7 +23624,7 @@ const enemyData = [
   {
     "id": "5091.0",
     "name": "Monster (Man)",
-    "area": "Bestower of Fame Ch. 1",
+    "area": "Frostlands",
     "subArea": "Emberglow Laboratory: Inner Chambers",
     "type": "Boss",
     "shields": 15,
@@ -23681,7 +23681,7 @@ const enemyData = [
   {
     "id": "5092.0",
     "name": "Monster (Woman)",
-    "area": "Bestower of Fame Ch. 1",
+    "area": "Frostlands",
     "subArea": "Emberglow Laboratory: Inner Chambers",
     "type": "Boss",
     "shields": 14,
@@ -23738,7 +23738,7 @@ const enemyData = [
   {
     "id": "5087.0",
     "name": "Monaris the Monstrous",
-    "area": "Bestower of Fame Ch. 1",
+    "area": "Frostlands",
     "subArea": "Emberglow Laboratory: Inner Chambers",
     "type": "Boss",
     "shields": 20,
@@ -23921,7 +23921,7 @@ const enemyData = [
   {
     "id": "5089.0",
     "name": "Judah the Believer",
-    "area": "Bestower of Wealth Ch. 2",
+    "area": "Sunlands",
     "subArea": "Sufrataljah: Palace - Upper Floor",
     "type": "Boss",
     "shields": 16,
@@ -24018,7 +24018,7 @@ const enemyData = [
   {
     "id": "5098.0",
     "name": "Judah's Aide (Axe)",
-    "area": "Bestower of Wealth Ch. 2",
+    "area": "Sunlands",
     "subArea": "Sufrataljah: Palace - Upper Floor",
     "type": "Boss",
     "shields": 12,
@@ -24087,7 +24087,7 @@ const enemyData = [
   {
     "id": "5099.0",
     "name": "Judah's Aide (Fan)",
-    "area": "Bestower of Wealth Ch. 2",
+    "area": "Sunlands",
     "subArea": "Sufrataljah: Palace - Upper Floor",
     "type": "Boss",
     "shields": 11,
@@ -24156,7 +24156,7 @@ const enemyData = [
   {
     "id": "5103.0",
     "name": "G'roha Commander",
-    "area": "Bestower of Power Ch. 2",
+    "area": "Coastlands",
     "subArea": "Grandport Sewers: Depths",
     "type": "Boss",
     "shields": 17,
@@ -24224,7 +24224,7 @@ const enemyData = [
   {
     "id": "5114.0",
     "name": "G'roha Soldier",
-    "area": "Bestower of Power Ch. 2",
+    "area": "Coastlands",
     "subArea": "Grandport Sewers: Depths",
     "type": "Boss",
     "shields": 11,
@@ -24624,7 +24624,7 @@ const enemyData = [
   {
     "id": "5096.0",
     "name": "Guardian of the Tainted Flame",
-    "area": "Bestower of Fame Ch. 2",
+    "area": "Frostlands",
     "subArea": "Cave Of Origin",
     "type": "Boss",
     "shields": 22,
@@ -24697,7 +24697,7 @@ const enemyData = [
   {
     "id": "5106.0",
     "name": "Dark Wisp of Ruin",
-    "area": "Bestower of Fame Ch. 2",
+    "area": "Frostlands",
     "subArea": "Cave Of Origin",
     "type": "Boss",
     "shields": 0,
@@ -24732,7 +24732,7 @@ const enemyData = [
   {
     "id": "5109.0",
     "name": "Dark Wisp of Death",
-    "area": "Bestower of Fame Ch. 2",
+    "area": "Frostlands",
     "subArea": "Cave Of Origin",
     "type": "Boss",
     "shields": 0,
@@ -24767,7 +24767,7 @@ const enemyData = [
   {
     "id": "5108.0",
     "name": "Oskha the Have-Not",
-    "area": "Bestower of Wealth Ch. 3",
+    "area": "Woodlands",
     "subArea": "Herminia's Former Manse",
     "type": "Boss",
     "shields": 20,
@@ -25969,7 +25969,7 @@ const enemyData = [
   {
     "id": "5113.0",
     "name": "Towering Idol",
-    "area": "Bestower of Fame Ch. 3",
+    "area": "Highlands",
     "subArea": "Forbidden Temple: Lower Floor",
     "type": "Boss",
     "shields": 24,
@@ -26043,7 +26043,7 @@ const enemyData = [
   {
     "id": "5111.0",
     "name": "Ceraphina the Charitable",
-    "area": "Bestower of Fame Ch. 3",
+    "area": "Highlands",
     "subArea": "Forbidden Temple: Lower Floor",
     "type": "Boss",
     "shields": 24,
@@ -26136,7 +26136,7 @@ const enemyData = [
   {
     "id": "5102.0",
     "name": "Lyblac",
-    "area": "Bestower of Fame Ch. 3",
+    "area": "Highlands",
     "subArea": "Forbidden Temple: Lower Floor",
     "type": "Boss",
     "shields": 24,
@@ -26702,7 +26702,7 @@ const enemyData = [
   {
     "id": "5121.0",
     "name": "Fallen Elrica",
-    "area": "Bestower of All 2",
+    "area": "Cliftlands",
     "subArea": "Castle Edoras",
     "type": "Boss",
     "shields": 21,

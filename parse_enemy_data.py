@@ -185,10 +185,58 @@ def parse_bestiary(ws):
     return records
 
 
+_REGIONS = ("Frostlands", "Flatlands", "Woodlands", "Coastlands",
+            "Cliftlands", "Riverlands", "Sunlands", "Highlands")
+
+
+def correct_boss_areas(enemies: list[dict]) -> int:
+    """Fix boss areas using subArea→region mapping from regular enemies.
+
+    The workbook stores story-chapter names (e.g. "Master of Wealth Ch. 3")
+    as the area for story bosses, but the codex should show the geographic
+    region (e.g. "Woodlands").  This cross-references each boss's subArea
+    against regular-enemy subAreas to recover the correct region.
+    Returns the number of bosses corrected.
+    """
+    # 1. Build subArea → region from regular (non-boss) enemies only.
+    sub_to_region: dict[str, str] = {}
+    for e in enemies:
+        if e["type"] in ("Boss", "Rare", "Arena", "Sidequest"):
+            continue
+        sa = e.get("subArea", "").strip()
+        area = e.get("area", "").strip()
+        if sa and area in _REGIONS:
+            key = sa.lower()
+            if key not in sub_to_region:
+                sub_to_region[key] = area
+
+    # 2. Correct boss areas.
+    fixed = 0
+    for e in enemies:
+        if e["type"] != "Boss":
+            continue
+        current_area = e.get("area", "")
+        # Only fix bosses whose area is a story-chapter / meta label
+        if current_area in _REGIONS:
+            continue
+        sa = e.get("subArea", "").strip()
+        if not sa:
+            continue
+        region = sub_to_region.get(sa.lower())
+        if region and region != current_area:
+            e["area"] = region
+            fixed += 1
+    return fixed
+
+
 def main() -> None:
     workbook = load_workbook(WORKBOOK, read_only=True, data_only=True)
     ws = workbook["Bestiary"]
     enemies = parse_bestiary(ws)
+
+    fixed = correct_boss_areas(enemies)
+    if fixed:
+        print(f"Corrected {fixed} boss areas via subArea cross-reference.")
 
     OUTPUT_JSON.write_text(json.dumps(enemies, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     OUTPUT_JS.write_text(f"const enemyData = {json.dumps(enemies, ensure_ascii=False, indent=2)};\n", encoding="utf-8")
