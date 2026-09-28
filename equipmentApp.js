@@ -498,7 +498,7 @@
   }
 
   function renderTable(pageItems, filtered) {
-    const columnCount = TABLE_STATS.length + 4;
+    const columnCount = TABLE_STATS.length + 5;
     let html = '';
     pageItems.forEach(function (item) {
 
@@ -522,6 +522,7 @@
         statCells +
         '<td class="num">' + (item.costValue === null ? '—' : item.costValue.toLocaleString()) + '</td>' +
         '<td class="equip-source-cell">' + (item.source ? escapeHtml(item.source) : '—') + '</td>' +
+        '<td class="equip-desc-cell">' + (item.effect ? escapeHtml(item.effect) : '—') + '</td>' +
       '</tr>';
     });
 

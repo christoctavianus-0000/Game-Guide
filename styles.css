@@ -2394,8 +2394,8 @@ body::before {
 .equip-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 1080px;
-  font-size: 0.86rem;
+  min-width: 880px;
+  font-size: 0.78rem;
 }
 
 .equip-table thead th {
@@ -2404,21 +2404,21 @@ body::before {
   z-index: 2;
   text-align: left;
   font-family: var(--font-tech);
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-muted);
   background: var(--bg-surface-elevated);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 8px 12px;
+  padding: 5px 6px;
   white-space: nowrap;
 }
 
 .th-stat-icon {
-  height: 14px;
-  width: 14px;
+  height: 11px;
+  width: 11px;
   vertical-align: -2px;
-  margin-right: 2px;
+  margin-right: 1px;
   image-rendering: pixelated;
 }
 
@@ -2460,7 +2460,7 @@ body::before {
 }
 
 .equip-table td {
-  padding: 9px 12px;
+  padding: 5px 6px;
   border-bottom: 1px solid var(--border-subtle);
   color: var(--text-primary);
   vertical-align: middle;
@@ -2469,7 +2469,7 @@ body::before {
 .equip-table td.num {
   text-align: right;
   font-family: var(--font-tech);
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   font-variant-numeric: tabular-nums;
 }
 
@@ -2490,13 +2490,13 @@ body::before {
 .equip-name-cell {
   display: flex;
   align-items: center;
-  gap: 9px;
-  min-width: 240px;
+  gap: 6px;
+  min-width: 180px;
 }
 
 .table-icon-img {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   object-fit: contain;
 }
 
@@ -2507,8 +2507,20 @@ body::before {
 
 .equip-source-cell {
   color: var(--text-secondary);
-  max-width: 280px;
-  font-size: 0.8rem;
+  max-width: 200px;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.equip-desc-cell {
+  color: var(--text-secondary);
+  max-width: 220px;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .equip-table tbody tr.group-row td {
@@ -2527,8 +2539,8 @@ body::before {
   border: none;
   color: var(--text-muted);
   cursor: pointer;
-  font-size: 0.95rem;
-  padding: 2px 4px;
+  font-size: 0.8rem;
+  padding: 1px 2px;
 }
 
 .equip-table .card-fav-btn.is-fav {

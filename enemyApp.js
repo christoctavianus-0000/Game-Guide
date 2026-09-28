@@ -282,7 +282,7 @@
       if (state.type !== 'all' && enemy.type !== state.type) return false;
 
       if (query) {
-        const haystack = [enemy.name, enemy.area, enemy.subArea, enemy.type, weaknessValues.join(' '), skillText].join(' ').toLowerCase();
+        const haystack = [enemy.name, enemy.area, enemy.subArea, enemy.type, weaknessValues.join(' '), skillText, enemy.steal, enemy.drop].join(' ').toLowerCase();
         if (!haystack.includes(query)) return false;
       }
 
