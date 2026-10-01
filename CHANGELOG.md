@@ -2,6 +2,13 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — NPC Codex
+
+- New page `npc.html` + `npcApp.js` + `npcData.js`: area-chunk tables (click header to expand/collapse, same `.shop-chunk` pattern as the shop codex), type tabs (All/Fame/Power/Wealth), search + area filter + sort (story order, name, level, danger). Table columns: Name, Type, Level, Invite, Danger, Helper Skill, Items.
+- Data pipeline: workbook sheets `Townspeople` + `Resident Skills` parsed by `parse_npc_data.py`, registered as `npcData/parse_npc_data` in `update_data.py`. 741 NPCs. `Add`-type rows are folded into their leader NPC's `adds[]` (leader = sort number directly above) and are never rendered as table rows; search still covers add names/items.
+- Modal per spec: Inquire; path-action items (Purchase/Contend/Entreat chosen by type); Invite (skill name, description, requires, facility); Hire/Impress/Recruit helper table (danger, strength, helper skill, type icon, uses, description); enemy-style stat table + weakness grid + drop with percentage; battle-adds table; Notes (col AO) shown only for Wishvale NPCs. All dataset strings escaped via `escapeHtml()`.
+- NPC nav + rail links added to `index.html`, `equipment.html`, `character.html`, `enemy.html`; shared styles appended to `styles.css` (`npc-table`, badges, helper chips, modal lists). `tests/npcCodex.test.js` covers metrics, chunk rows, area filter, type counts, and data-shape invariants.
+
 ## Unreleased — Floating left codex selector
 
 - Added a fixed `.site-rail` selector on the left edge of both pages (`index.html`, `equipment.html`): vertically centered, 82px wide, with Skills/Gear links, a `Codex` caption, the active page marked with `aria-current="page"`, and gold active/hover states matching the top nav.

@@ -26,6 +26,7 @@ PYTHON_PARSERS = [
     ("equipmentData", "parse_equipment_data"),
     ("enemyData", "parse_enemy_data"),
     ("shopData", "parse_shop_data"),
+    ("npcData", "parse_npc_data"),
     ("masterySourceData", "parse_mastery_sources"),
 ]
 

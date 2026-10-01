@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Equipment Chest/Treasure -->
+  <!-- Chest body (wood) -->
+  <rect x="4" y="8" width="16" height="10" rx="2" 
+        fill="#8B4513" stroke="#5C2E0A" stroke-width="1.5"/>
+  <!-- Metal band across middle -->
+  <path d="M4 13 L20 13" stroke="#B8860B" stroke-width="2.5"/>
+  <!-- Lid clasp area -->
+  <rect x="9" y="8" width="6" height="3" 
+        fill="#654321" stroke="#4A3117" stroke-width="1"/>
+  <!-- Lock mechanism -->
+  <circle cx="12" cy="13" r="1.5" fill="#FFD700" stroke="#DAA520" stroke-width="1.2"/>
+  <path d="M12 14.5 L12 16" stroke="#FFD700" stroke-width="1.5"/>
+  <!-- Corner reinforcements -->
+  <circle cx="6" cy="13" r="0.8" fill="#B8860B"/>
+  <circle cx="18" cy="13" r="0.8" fill="#B8860B"/>
+  <!-- Wood grain detail -->
+  <path d="M6 10 Q8 10.5 10 10" stroke="#654321" stroke-width="0.5" opacity="0.4"/>
+  <path d="M14 15 Q16 15.5 18 15" stroke="#654321" stroke-width="0.5" opacity="0.4"/>
+</svg>

@@ -1690,7 +1690,8 @@ body::before {
   overscroll-behavior: contain;
 }
 
-.modal-overlay.active {
+.modal-overlay.active,
+.modal-overlay.open {
   opacity: 1;
   pointer-events: auto;
 }
@@ -1710,7 +1711,8 @@ body::before {
   transition: transform var(--transition-smooth);
 }
 
-.modal-overlay.active .modal-window {
+.modal-overlay.active .modal-window,
+.modal-overlay.open .modal-window {
   transform: scale(1);
 }
 
@@ -2237,7 +2239,7 @@ body::before {
   }
 
   .site-rail-brand {
-    display: block;
+    display: none;
     color: var(--text-secondary);
     font-size: 0.9rem;
     line-height: 1;
@@ -2953,6 +2955,305 @@ body::before {
 }
 
 /* ==========================================================================
+   NPC MODAL STYLING
+   ========================================================================== */
+
+.enemy-modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.enemy-modal-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.enemy-modal-name {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.enemy-modal-meta-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.enemy-modal-area {
+  color: var(--text-secondary);
+}
+
+.enemy-modal-sep {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.enemy-modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-section-heading {
+  font-family: var(--font-tech);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.modal-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.modal-item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-item {
+  padding: 6px 8px;
+  background: var(--bg-abyss);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+.modal-invite-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background: var(--bg-abyss);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.npc-invite-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.modal-invite-skill {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.modal-requires {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.enemy-modal-stats-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.enemy-modal-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.enemy-modal-stats-table thead {
+  background: var(--bg-surface-elevated);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.enemy-modal-stats-table th {
+  font-family: var(--font-tech);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 8px 12px;
+  text-align: left;
+  color: var(--text-muted);
+}
+
+.enemy-modal-stats-table td {
+  padding: 10px 12px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.enemy-modal-stats-table tbody tr:hover {
+  background: var(--bg-surface-hover);
+}
+
+.enemy-modal-stats-table th,
+.enemy-modal-stats-table td {
+  min-width: 80px;
+  text-align: right;
+}
+
+.enemy-modal-stats-table th:first-child,
+.enemy-modal-stats-table td:first-child {
+  text-align: left;
+}
+
+.npc-helper-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.npc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.npc-helper-table thead {
+  background: var(--bg-surface-elevated);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.npc-helper-table th {
+  font-family: var(--font-tech);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 8px 12px;
+  text-align: left;
+  color: var(--text-muted);
+}
+
+.npc-helper-table td {
+  padding: 10px 12px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.npc-helper-table tbody tr:hover {
+  background: var(--bg-surface-hover);
+}
+
+.npc-table.npc-helper-table.stats-table th,
+.npc-table.npc-helper-table.stats-table td {
+  min-width: 80px;
+  text-align: left;
+}
+
+.npc-table.npc-helper-table.stats-table .th-stat-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.npc-table.npc-helper-table.stats-table .has-value {
+  color: var(--text-primary);
+}
+
+.npc-table.npc-helper-table.stats-table .is-zero {
+  color: var(--text-muted);
+}
+
+.npc-helper-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: inline-block;
+  line-height: 1;
+}
+
+.npc-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-tech);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+}
+
+.enemy-weakness-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.enemy-atk-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.enemy-atk-icon img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  display: block;
+}
+
+.enemy-atk-icon:hover {
+  border-color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+  z-index: 2;
+}
+
+.enemy-atk-icon.is-weak {
+  border-color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.enemy-atk-icon.is-weak img {
+  filter: drop-shadow(0 0 4px var(--text-primary));
+}
+
+.enemy-atk-icon.not-weak {
+  opacity: 0.4;
+}
+
+.enemy-atk-icon.not-weak img {
+  filter: grayscale(100%) brightness(60%);
+}
+
+/* ==========================================================================
    SHOP CODEX — Chunk Grid
    ========================================================================== */
 
@@ -2968,13 +3269,45 @@ body::before {
   text-decoration: underline;
 }
 
-/* Chunk grid: responsive square-ish cards */
+/* Chunk grid: responsive square-ish cards for Shop, full-width stacked for NPC */
 .shop-chunk-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
   padding: 8px 0;
   align-items: start;
+}
+
+/* NPC codex: one area per full-width row, stacked */
+#npcChunksGrid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 0;
+  padding: 8px 0;
+}
+
+/* NPC modal: use .open class */
+#npcModal .modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+#npcModal .modal-overlay.open .modal-window {
+  transform: scale(1);
+}
+
+/* Separators between areas */
+#npcChunksGrid .shop-chunk {
+  border-bottom: 1px solid var(--border-subtle);
+}
+#npcChunksGrid .shop-chunk-header {
+  border-bottom: 1px solid var(--border-subtle);
+}
+#npcChunksGrid .shop-chunk:not(:last-child) {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+#npcChunksGrid .shop-chunk.collapsed .shop-chunk-body {
+  display: none;
 }
 
 .shop-chunk {
@@ -3046,6 +3379,36 @@ body::before {
   font-size: 0.85rem;
   color: var(--text-secondary);
   transition: transform var(--transition-fast);
+}
+
+/* ===== NPC Codex ===== */
+.npc-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.npc-table th { text-align: left; padding: 8px 10px; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-secondary); border-bottom: 1px solid var(--border-subtle); white-space: nowrap; }
+.npc-table th.sortable { cursor: pointer; user-select: none; transition: color var(--transition-fast); }
+.npc-table th.sortable:hover { color: var(--text-primary); }
+.npc-table th.sortable.sort-active { color: var(--accent-gold, #d4a84b); }
+.npc-table th.sortable .sort-arrow { font-size: 0.65rem; margin-left: 4px; color: var(--accent-gold, #d4a84b); }
+.npc-table td { padding: 8px 10px; border-bottom: 1px solid var(--border-subtle); color: var(--text-primary); vertical-align: top; }
+.npc-table tbody tr.npc-row { cursor: pointer; transition: background var(--transition-fast); }
+.npc-table tbody tr.npc-row:hover, .npc-table tbody tr.npc-row:focus { background: var(--bg-surface-hover, rgba(255,255,255,0.03)); outline: none; }
+.npc-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.npc-name-cell { font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+.npc-dash { color: var(--text-secondary); opacity: 0.6; }
+.npc-type-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 99px; font-size: 0.72rem; font-weight: 600; background: var(--bg-surface-elevated); color: var(--text-secondary); white-space: nowrap; }
+.npc-type-badge[data-type="Fame"] { color: #e8c36a; }
+.npc-type-badge[data-type="Power"] { color: #e07a7a; }
+.npc-type-badge[data-type="Wealth"] { color: #7ad19b; }
+.npc-invite-name { color: var(--accent-gold, #d4a84b); font-weight: 500; }
+.npc-helper-chip { display: inline-flex; align-items: center; gap: 5px; }
+.npc-helper-icon { font-size: 0.9rem; }
+.npc-items-cell { color: var(--text-secondary); font-size: 0.8rem; }
+.npc-chunk-table-wrap { overflow-x: auto; }
+.npc-modal-meta-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 4px; font-size: 0.85rem; color: var(--text-secondary); }
+.modal-item-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.modal-item { padding: 4px 0; border-bottom: 1px dashed var(--border-subtle); font-size: 0.85rem; color: var(--text-primary); }
+.modal-requires { font-size: 0.8rem; color: var(--text-secondary); margin: 4px 0 0; }
+.npc-helper-table-wrap { overflow-x: auto; }
+.modal-helper-intro { font-size: 0.78rem; color: var(--text-secondary); margin: 2px 0 8px; }
   flex-shrink: 0;
 }
 

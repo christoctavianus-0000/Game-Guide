@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Octopath Traveler 0 // NPC Codex</title>
+  <meta name="description" content="NPC codex for Octopath Traveler 0. Browse townspeople by area, path action, invite skills, helper skills, and battle drops." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function(){
+      var K='octo0_theme',V={dark:1,light:1},t=null;
+      try{t=localStorage.getItem(K)}catch(e){}
+      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
+      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
+      else document.documentElement.removeAttribute('data-theme');
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="site-wrapper">
+    <nav class="site-nav" aria-label="Codex sections">
+      <div class="site-nav-inner">
+        <span class="site-nav-brand"><span class="nav-crest">✦</span> OCTOPATH TRAVELER 0 CODEX</span>
+        <div class="site-nav-links">
+          <a class="site-nav-link" href="index.html">⚔️ Skill Codex</a>
+          <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
+          <a class="site-nav-link" href="character.html">🧭 Character / Jobs</a>
+          <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
+          <a class="site-nav-link" href="shop.html">🏪 Shop Codex</a>
+          <a class="site-nav-link active" href="npc.html" aria-current="page">🧑 NPC Codex</a>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="site-rail" aria-label="Codex selector">
+      <div class="site-rail-inner">
+        <span class="site-rail-brand" aria-hidden="true">✦</span>
+        <div class="site-rail-links">
+          <a class="site-rail-link" href="index.html">
+            <span class="site-rail-icon" aria-hidden="true">✦</span>
+            <span class="site-rail-text">Skills</span>
+          </a>
+          <a class="site-rail-link" href="equipment.html">
+            <span class="site-rail-icon" aria-hidden="true">🛡️</span>
+            <span class="site-rail-text">Gear</span>
+          </a>
+          <a class="site-rail-link" href="character.html">
+            <span class="site-rail-icon" aria-hidden="true">🧭</span>
+            <span class="site-rail-text">Chars</span>
+          </a>
+          <a class="site-rail-link" href="enemy.html">
+            <span class="site-rail-icon" aria-hidden="true">🐉</span>
+            <span class="site-rail-text">Enemies</span>
+          </a>
+          <a class="site-rail-link" href="shop.html">
+            <span class="site-rail-icon" aria-hidden="true">🏪</span>
+            <span class="site-rail-text">Shops</span>
+          </a>
+          <a class="site-rail-link active" href="npc.html" aria-current="page">
+            <span class="site-rail-icon" aria-hidden="true">🧑</span>
+            <span class="site-rail-text">NPCs</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <header class="top-header">
+      <div class="header-container">
+        <div class="brand-area">
+          <div class="brand-crest">
+            <span class="crest-icon">🧑</span>
+          </div>
+          <div>
+            <div class="brand-kicker">OCTOPATH TRAVELER 0</div>
+            <h1 class="brand-title">NPC Codex</h1>
+          </div>
+        </div>
+
+        <div class="metrics-bar" id="npcMetricsBar">
+          <div class="metric-pill">
+            <span class="metric-label">NPCs</span>
+            <span class="metric-val" id="npcMetricTotal">0</span>
+          </div>
+          <div class="metric-pill support">
+            <span class="metric-label">Areas</span>
+            <span class="metric-val" id="npcMetricAreas">0</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <div class="sticky-filter-wrap">
+      <section class="category-nav-section">
+        <div class="category-tabs" id="npcTypeTabs" role="tablist" aria-label="Filter by NPC type">
+          <button class="cat-tab active" data-category="all" role="tab" aria-selected="true">
+            <span class="cat-icon">🌐</span>
+            <span class="cat-label">All</span>
+            <span class="cat-count" id="npcCatCountAll">0</span>
+          </button>
+          <button class="cat-tab" data-category="Fame" role="tab" aria-selected="false">
+            <span class="cat-icon">🌟</span>
+            <span class="cat-label">Fame</span>
+            <span class="cat-count" id="npcCatCountFame">0</span>
+          </button>
+          <button class="cat-tab" data-category="Power" role="tab" aria-selected="false">
+            <span class="cat-icon">⚔️</span>
+            <span class="cat-label">Power</span>
+            <span class="cat-count" id="npcCatCountPower">0</span>
+          </button>
+          <button class="cat-tab" data-category="Wealth" role="tab" aria-selected="false">
+            <span class="cat-icon">💰</span>
+            <span class="cat-label">Wealth</span>
+            <span class="cat-count" id="npcCatCountWealth">0</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Sub-Filter & Search Command Bar -->
+      <section class="filter-panel">
+        <div class="filter-panel-inner">
+          <!-- Primary Search row -->
+          <div class="search-and-subtypes">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔍</span>
+              <input
+                type="search"
+                id="npcSearchInput"
+                placeholder="Search NPC, area, skill, or item..."
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Search NPCs"
+              />
+              <button class="clear-search-btn" id="npcClearSearch" title="Clear search" aria-label="Clear search">✕</button>
+            </div>
+          </div>
+
+          <!-- Secondary Filters & Sorters row -->
+          <div class="secondary-filter-row">
+            <div class="filter-group">
+              <label for="npcAreaFilter" class="filter-label">Area</label>
+              <select id="npcAreaFilter" class="filter-select">
+                <option value="all">All Areas</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="npcSortFilter" class="filter-label">Sort By</label>
+              <select id="npcSortFilter" class="filter-select">
+                <option value="area-asc">Area (Story Order)</option>
+                <option value="name-asc">Name (A → Z)</option>
+                <option value="name-desc">Name (Z → A)</option>
+                <option value="level-asc">Level (Low → High)</option>
+                <option value="level-desc">Level (High → Low)</option>
+                <option value="danger-asc">Danger (Low → High)</option>
+                <option value="danger-desc">Danger (High → Low)</option>
+              </select>
+            </div>
+
+            <div class="filter-status">
+              <span id="npcResultsCount">Showing 0 NPCs</span>
+              <button class="reset-link-btn" id="npcResetBtn" type="button">Reset Filters</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <section class="skills-display-section">
+        <!-- NPC Chunk Grid: one expandable chunk per area, table inside -->
+        <div class="shop-chunk-grid" id="npcChunksGrid">
+          <!-- Chunks rendered by npcApp.js -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="npcEmptyState" style="display:none;">
+          <div class="empty-icon">🧑</div>
+          <p>No NPCs match your search.</p>
+          <button class="primary-btn npc-reset-empty-btn" type="button">Clear All Filters</button>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-overlay" id="npcModal" role="dialog" aria-modal="true" aria-labelledby="npcModalTitle" aria-hidden="true">
+    <div class="modal-window">
+      <div class="modal-content" id="npcModalContent"></div>
+    </div>
+  </div>
+
+  <script src="npcData.js"></script>
+  <script src="npcApp.js"></script>
+  <script src="themeToggle.js"></script>
+</body>
+</html>

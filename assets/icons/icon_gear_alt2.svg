@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Armor Chest Piece -->
+  <!-- Main armor body -->
+  <path d="M12 2 L6 5 L6 9 C6 13 8 16 12 18 C16 16 18 13 18 9 L18 5 Z" 
+        fill="#B0B0B0" stroke="#707070" stroke-width="1.5"/>
+  <!-- Shoulder straps -->
+  <path d="M9 8 L12 10 L15 8" stroke="#8B7355" stroke-width="2" fill="none"/>
+  <!-- Center ornament/gem -->
+  <circle cx="12" cy="12" r="1.5" fill="#DC143C" stroke="#8B0000" stroke-width="1"/>
+  <!-- Belt detail -->
+  <path d="M10 14 L14 14" stroke="#FFD700" stroke-width="2"/>
+  <!-- Metallic highlights -->
+  <path d="M8 7 C8 7 10 6 12 6 C14 6 16 7 16 7" stroke="#E8E8E8" stroke-width="0.8" opacity="0.6"/>
+</svg>
