@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon Card Battle // Codex</title>
+  <meta name="description" content="Interactive Digimon Digital Card Battle card database with full card attributes, filters, and search." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function(){
+      var K='digimon_codex_theme',V={dark:1,light:1},t=null;
+      try{t=localStorage.getItem(K)}catch(e){}
+      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
+      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
+      else document.documentElement.removeAttribute('data-theme');
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Header & Hero -->
+    <header class="top-header">
+      <div class="header-container">
+        <div class="brand-area">
+          <div class="brand-crest">
+            <span class="crest-icon">🀄</span>
+          </div>
+          <div>
+            <div class="brand-kicker">DIGIMON CARD BATTLE</div>
+            <h1 class="brand-title">Card Codex</h1>
+          </div>
+        </div>
+
+        <!-- Database Metrics Bar -->
+        <div class="metrics-bar" id="metricsBar">
+          <div class="metric-pill total">
+            <span class="metric-label">Total Cards</span>
+            <span class="metric-val" id="metricTotal">301</span>
+          </div>
+          <div class="metric-pill physical">
+            <span class="metric-label">Level U</span>
+            <span class="metric-val" id="metricU">0</span>
+          </div>
+          <div class="metric-pill elemental">
+            <span class="metric-label">Level C</span>
+            <span class="metric-val" id="metricC">0</span>
+          </div>
+          <div class="metric-pill support">
+            <span class="metric-label">Level R</span>
+            <span class="metric-val" id="metricR">0</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-label">Dark</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Category Tabs -->
+      <div class="category-tabs" id="categoryTabs">
+        <button class="tab-btn active" data-category="all">All Cards <span class="tab-count">301</span></button>
+        <button class="tab-btn" data-category="Fire">Fire <span class="tab-count">34</span></button>
+        <button class="tab-btn" data-category="Ice">Ice <span class="tab-count">35</span></button>
+        <button class="tab-btn" data-category="Nature">Nature <span class="tab-count">34</span></button>
+        <button class="tab-btn" data-category="Darkness">Darkness <span class="tab-count">36</span></button>
+        <button class="tab-btn" data-category="Rare">Rare <span class="tab-count">33</span></button>
+        <button class="tab-btn" data-category="Partner">Partner <span class="tab-count">19</span></button>
+        <button class="tab-btn" data-category="Option">Option <span class="tab-count">110</span></button>
+      </div>
+
+      <!-- Search & Filter -->
+      <div class="search-filter" id="searchFilter">
+        <input type="text" id="cardSearch" placeholder="Search by name or number..." aria-label="Search cards" />
+        <select id="levelFilter" aria-label="Filter by level">
+          <option value="all">All Levels</option>
+          <option value="U">Level U</option>
+          <option value="C">Level C</option>
+          <option value="R">Level R</option>
+          <option value="A">Level A</option>
+          <option value="R P">Level R P</option>
+          <option value="Option">Option</option>
+        </select>
+      </div>
+
+      <!-- Card Table -->
+      <section class="card-table-section" id="cardTableSection">
+        <table class="card-table" id="cardTable">
+          <thead>
+            <tr>
+              <th class="no-col">No.</th>
+              <th class="icon-col">Icon</th>
+              <th class="name-col">Name</th>
+              <th class="level-col">Level</th>
+              <th class="spec-col">Specialty</th>
+              <th class="hp-col">HP</th>
+              <th class="dp-col">DP</th>
+              <th class="pp-col">+P</th>
+              <th class="circle-col">Circle Attack</th>
+              <th class="triangle-col">Triangle Attack</th>
+              <th class="x-col">X Attack</th>
+              <th class="support-col">Support Effect</th>
+            </tr>
+          </thead>
+          <tbody id="cardTableBody">
+            <!-- Cards rendered by JS -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- CARD DATABASE LOADED BY JS -->
+  <script src="cardData.js"></script>
+  <script src="themeToggle.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
