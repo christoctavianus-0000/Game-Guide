@@ -52,8 +52,8 @@
     sortDir: 'asc',
     weaknessSort: null,
     modalEnemy: null,
-    currentPage: 1,
-    pageSize: 48
+    collapsedAreas: {},
+    chunkSort: {}
   };
 
   const dataset = Array.isArray(window.enemyData)
@@ -79,17 +79,12 @@
     enemySortFilter: document.getElementById('enemySortFilter'),
     enemyResultsCount: document.getElementById('enemyResultsCount'),
     enemyResetBtn: document.getElementById('enemyResetBtn'),
-    enemyTableBody: document.getElementById('enemyTableBody'),
+    enemyChunksGrid: document.getElementById('enemyChunksGrid'),
     enemyEmptyState: document.getElementById('enemyEmptyState'),
     enemyEmptyResetBtn: document.getElementById('enemyEmptyResetBtn'),
     enemyModal: document.getElementById('enemyModal'),
     enemyModalClose: document.getElementById('enemyModalClose'),
-    enemyModalContent: document.getElementById('enemyModalContent'),
-    enemyPaginationFooter: document.getElementById('enemyPaginationFooter'),
-    enemyPaginationInfo: document.getElementById('enemyPaginationInfo'),
-    enemyPrevPageBtn: document.getElementById('enemyPrevPageBtn'),
-    enemyNextPageBtn: document.getElementById('enemyNextPageBtn'),
-    enemyPageCurrent: document.getElementById('enemyPageCurrent')
+    enemyModalContent: document.getElementById('enemyModalContent')
   };
 
   function cleanText(value) {
@@ -344,70 +339,257 @@
     }).join('');
   }
 
-  function renderTable() {
-    const filtered = getFilteredEnemies();
-    const total = filtered.length;
-    const totalPages = Math.ceil(total / state.pageSize) || 1;
-    if (state.currentPage > totalPages) state.currentPage = totalPages;
-    if (state.currentPage < 1) state.currentPage = 1;
-    const startIdx = (state.currentPage - 1) * state.pageSize;
-    const endIdx = Math.min(startIdx + state.pageSize, total);
-    const pageItems = filtered.slice(startIdx, endIdx);
-
-    const rows = pageItems.map(enemy => {
-      const weaknesses = normalizeWeaknesses(enemy.weaknesses);
-      const weaknessGrid = renderWeaknessGrid(weaknesses);
-
-      return `
-        <tr class="enemy-row" data-enemy-id="${enemy.id}">
-          <td class="enemy-name-cell"><button class="enemy-name-btn" data-enemy-id="${enemy.id}">${cleanText(enemy.name)}</button></td>
-          <td>${cleanText(enemy.area)}</td>
-          <td>${cleanText(enemy.subArea)}</td>
-          <td><span class="enemy-type-badge" data-type="${cleanText(enemy.type || 'Regular')}">${cleanText(enemy.type || 'Regular')}</span></td>
-          <td class="num font-num enemy-shield-val">${Number(enemy.shields) || 0}</td>
-          <td class="enemy-weakness-cell">
-            <div class="enemy-weakness-grid">${weaknessGrid}</div>
-          </td>
-          <td class="num font-num">${Number(enemy.level) || 0}</td>
-          <td>${enemy.steal || '—'}</td>
-          <td>${enemy.drop || '—'}</td>
-        </tr>
-      `;
-    }).join('');
-
-    elements.enemyTableBody.innerHTML = rows;
-    // Stagger animation for table rows
-    elements.enemyTableBody.querySelectorAll('tr').forEach((tr, i) => {
-      tr.classList.add('row-enter');
-      tr.style.animationDelay = `${i * 25}ms`;
+  function groupByArea(items) {
+    const groups = {};
+    items.forEach(enemy => {
+      const area = enemy.area || 'Unknown';
+      if (!groups[area]) groups[area] = [];
+      groups[area].push(enemy);
     });
-    elements.enemyMetricTotal.textContent = String(dataset.length);
-    elements.enemyMetricAreas.textContent = String(new Set(dataset.map(enemy => cleanText(enemy.area))).size);
-    elements.enemyResultsCount.textContent = `Showing ${total} enemies`;
-    elements.enemyEmptyState.style.display = total ? 'none' : 'block';
-    updateHeaderSortIndicators();
-    updateWeaknessHeaderIcons();
 
-    // Pagination footer
-    if (total === 0) {
-      elements.enemyPaginationFooter.style.display = 'none';
-    } else {
-      elements.enemyPaginationFooter.style.display = 'flex';
-      elements.enemyPaginationInfo.textContent = 'Showing ' + (startIdx + 1) + '–' + endIdx + ' of ' + total.toLocaleString();
-      elements.enemyPageCurrent.textContent = 'Page ' + state.currentPage + ' of ' + totalPages;
-      elements.enemyPrevPageBtn.disabled = state.currentPage <= 1;
-      elements.enemyNextPageBtn.disabled = state.currentPage >= totalPages;
+    const areas = Object.keys(groups).sort();
+    const sorted = {};
+    areas.forEach(area => {
+      let members = groups[area].slice();
+      if (state.sortKey === 'area') {
+        members.sort((a, b) => cleanText(a.name).localeCompare(cleanText(b.name)));
+      } else {
+        members.sort((a, b) => {
+          const dir = state.sortDir === 'desc' ? -1 : 1;
+          const key = state.sortKey;
+
+          if (key === 'name' || key === 'subArea' || key === 'type' || key === 'steal' || key === 'drop') {
+            const valA = cleanText(a[key]);
+            const valB = cleanText(b[key]);
+            const cmp = valA.localeCompare(valB);
+            return cmp !== 0 ? cmp * dir : cleanText(a.name).localeCompare(cleanText(b.name));
+          }
+
+          if (key === 'weakness') {
+            if (state.weaknessSort) {
+              const target = state.weaknessSort;
+              const hasA = normalizeWeaknesses(a.weaknesses).includes(target) ? 1 : 0;
+              const hasB = normalizeWeaknesses(b.weaknesses).includes(target) ? 1 : 0;
+              if (hasA !== hasB) return (hasA - hasB) * dir;
+              const countA = normalizeWeaknesses(a.weaknesses).length;
+              const countB = normalizeWeaknesses(b.weaknesses).length;
+              if (countA !== countB) return countB - countA;
+              return cleanText(a.name).localeCompare(cleanText(b.name));
+            }
+            const countA = normalizeWeaknesses(a.weaknesses).length;
+            const countB = normalizeWeaknesses(b.weaknesses).length;
+            if (countA !== countB) return (countA - countB) * dir;
+            return cleanText(a.name).localeCompare(cleanText(b.name));
+          }
+
+          const numA = Number(a[key]) || 0;
+          const numB = Number(b[key]) || 0;
+          if (numA !== numB) return (numA - numB) * dir;
+          return cleanText(a.name).localeCompare(cleanText(b.name));
+        });
+      }
+      sorted[area] = members;
+    });
+    return sorted;
+  }
+
+  function renderEnemyRow(enemy) {
+    const weaknesses = normalizeWeaknesses(enemy.weaknesses);
+    const weaknessGrid = renderWeaknessGrid(weaknesses);
+    return `
+      <tr class="enemy-row" data-enemy-id="${enemy.id}">
+        <td class="enemy-name-cell"><button class="enemy-name-btn" data-enemy-id="${enemy.id}">${cleanText(enemy.name)}</button></td>
+        <td>${cleanText(enemy.subArea)}</td>
+        <td><span class="enemy-type-badge" data-type="${cleanText(enemy.type || 'Regular')}">${cleanText(enemy.type || 'Regular')}</span></td>
+        <td class="num font-num enemy-shield-val">${Number(enemy.shields) || 0}</td>
+        <td class="enemy-weakness-cell">
+          <div class="enemy-weakness-grid">${weaknessGrid}</div>
+        </td>
+        <td class="num font-num">${Number(enemy.level) || 0}</td>
+        <td>${enemy.steal || '—'}</td>
+        <td>${enemy.drop || '—'}</td>
+      </tr>
+    `;
+  }
+
+  function renderChunkTable(members, chunkKey) {
+    let html = '<table class="enemy-table"><thead><tr>' +
+      '<th class="sortable" data-sort-key="name" data-chunk="' + chunkKey + '">Name</th>' +
+      '<th class="sortable" data-sort-key="subArea" data-chunk="' + chunkKey + '">Sub Area</th>' +
+      '<th class="sortable" data-sort-key="type" data-chunk="' + chunkKey + '">Type</th>' +
+      '<th class="sortable num" data-sort-key="shields" data-chunk="' + chunkKey + '">Shield</th>' +
+      '<th class="sortable weakness-header" data-sort-key="weakness" data-chunk="' + chunkKey + '">Weaknesses</th>' +
+      '<th class="sortable num" data-sort-key="level" data-chunk="' + chunkKey + '">Lvl</th>' +
+      '<th class="sortable" data-sort-key="steal" data-chunk="' + chunkKey + '">Steal</th>' +
+      '<th class="sortable" data-sort-key="drop" data-chunk="' + chunkKey + '">Drop</th>' +
+      '</tr></thead><tbody>';
+    members.forEach(e => { html += renderEnemyRow(e); });
+    html += '</tbody></table>';
+    return html;
+  }
+
+  function sortChunkMembers(area, key) {
+    const groups = groupByArea(getFilteredEnemies());
+    const members = groups[area];
+    if (!members) return;
+
+    const prev = state.chunkSort[area];
+    const oldKey = prev ? prev.key : null;
+    const oldDir = prev ? prev.dir : 'asc';
+    const newDir = (key === oldKey && oldDir === 'asc') ? 'desc' : 'asc';
+
+    members.sort((a, b) => {
+      const sign = newDir === 'desc' ? -1 : 1;
+      let av, bv;
+
+      if (key === 'subArea' || key === 'type' || key === 'steal' || key === 'drop') {
+        av = cleanText(a[key]);
+        bv = cleanText(b[key]);
+      } else if (key === 'shields' || key === 'level') {
+        av = Number(a[key]) || 0;
+        bv = Number(b[key]) || 0;
+        if (av !== bv) return sign * (av - bv);
+        return cleanText(a.name).localeCompare(cleanText(b.name));
+      } else if (key === 'weakness') {
+        const weakA = normalizeWeaknesses(a.weaknesses).length;
+        const weakB = normalizeWeaknesses(b.weaknesses).length;
+        if (weakA !== weakB) return sign * (weakA - weakB);
+        return cleanText(a.name).localeCompare(cleanText(b.name));
+      } else {
+        av = cleanText(a[key] || 'name');
+        bv = cleanText(b[key] || 'name');
+      }
+
+      if (av == null) av = '';
+      if (bv == null) bv = '';
+      return sign * String(av).localeCompare(String(bv));
+    });
+
+    state.chunkSort[area] = { key, dir: newDir };
+
+    const chunk = document.querySelector('.shop-chunk[data-area="' + area.replace(/"/g, '\\"') + '"]');
+    if (chunk) {
+      const tableWrap = chunk.querySelector('.enemy-chunk-table-wrap');
+      if (tableWrap) {
+        tableWrap.innerHTML = renderChunkTable(members, area);
+        attachSortHandlers();
+        updateSortIndicators(area, key, newDir);
+        bindEnemyRowEvents();
+      }
+    }
+  }
+
+  function updateSortIndicators(area, key, dir) {
+    const chunk = document.querySelector('.shop-chunk[data-area="' + area.replace(/"/g, '\\"') + '"]');
+    if (!chunk) return;
+    Array.prototype.forEach.call(chunk.querySelectorAll('th.sortable'), function (th) {
+      const k = th.getAttribute('data-sort-key');
+      const active = k === key;
+      th.classList.toggle('sort-active', active);
+      let arrow = th.querySelector('.sort-arrow');
+      if (!arrow) {
+        arrow = document.createElement('span');
+        arrow.className = 'sort-arrow';
+        th.appendChild(arrow);
+      }
+      arrow.textContent = active ? (dir === 'asc' ? '▲' : '▼') : '';
+    });
+  }
+
+  function attachSortHandlers() {
+    Array.prototype.forEach.call(document.querySelectorAll('th.sortable'), function (th) {
+      th.removeEventListener('click', handleChunkSort);
+      th.addEventListener('click', handleChunkSort);
+    });
+  }
+
+  function handleChunkSort(e) {
+    e.stopPropagation();
+    const th = e.currentTarget;
+    const key = th.getAttribute('data-sort-key');
+    const chunk = th.getAttribute('data-chunk');
+    sortChunkMembers(chunk, key);
+  }
+
+  function bindEnemyRowEvents() {
+    document.querySelectorAll('.enemy-name-btn').forEach(btn => {
+      btn.removeEventListener('click', handleEnemyRowClick);
+      btn.addEventListener('click', handleEnemyRowClick);
+    });
+  }
+
+  function handleEnemyRowClick(e) {
+    e.preventDefault();
+    const enemyId = this.getAttribute('data-enemy-id');
+    const enemy = dataset.find(e => String(e.id) === String(enemyId));
+    if (enemy) openEnemyModal(enemy);
+  }
+
+  function renderChunks() {
+    if (!elements.enemyChunksGrid) return;
+    const items = getFilteredEnemies();
+    const total = items.length;
+
+    if (elements.enemyResultsCount) {
+      elements.enemyResultsCount.textContent = 'Showing ' + total.toLocaleString() + ' enemi' + (total === 1 ? '' : 'es');
     }
 
-    // Bind enemy name clicks to open modal
-    document.querySelectorAll('.enemy-name-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const enemyId = btn.getAttribute('data-enemy-id');
-        const enemy = dataset.find(e => String(e.id) === String(enemyId));
-        if (enemy) openEnemyModal(enemy);
+    if (total === 0) {
+      elements.enemyChunksGrid.innerHTML = '';
+      if (elements.enemyEmptyState) elements.enemyEmptyState.style.display = 'block';
+      return;
+    }
+
+    if (elements.enemyEmptyState) elements.enemyEmptyState.style.display = 'none';
+
+    const groups = groupByArea(items);
+    let html = '';
+    Object.keys(groups).forEach(area => {
+      const members = groups[area];
+      const collapsed = !!state.collapsedAreas[area];
+      html += '<div class="shop-chunk' + (collapsed ? ' collapsed' : '') + '" data-area="' + area.replace(/"/g, '&quot;') + '">';
+      html += '<div class="shop-chunk-header" role="button" tabindex="0" aria-expanded="' + (!collapsed) + '">';
+      html += '<div class="shop-chunk-header-left">';
+      html += '<span class="shop-chunk-name">' + cleanText(area) + '</span>';
+      html += '<span class="shop-chunk-count">' + members.length + ' enemi' + (members.length === 1 ? '' : 'es') + '</span>';
+      html += '</div>';
+      html += '<span class="shop-chunk-chevron">' + (collapsed ? '▸' : '▾') + '</span>';
+      html += '</div>';
+      html += '<div class="shop-chunk-body"><div class="shop-chunk-items enemy-chunk-table-wrap">';
+      html += renderChunkTable(members, area);
+      html += '</div></div></div>';
+    });
+
+    elements.enemyChunksGrid.innerHTML = html;
+
+    Array.prototype.forEach.call(elements.enemyChunksGrid.querySelectorAll('.shop-chunk-header'), function (header) {
+      function toggle() {
+        const chunk = header.parentNode;
+        const area = chunk.getAttribute('data-area');
+        state.collapsedAreas[area] = !state.collapsedAreas[area];
+        chunk.classList.toggle('collapsed');
+        header.setAttribute('aria-expanded', String(!state.collapsedAreas[area]));
+        const chev = header.querySelector('.shop-chunk-chevron');
+        if (chev) chev.textContent = state.collapsedAreas[area] ? '▸' : '▾';
+      }
+      header.addEventListener('click', toggle);
+      header.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle();
+        }
       });
     });
+
+    elements.enemyMetricTotal.textContent = String(dataset.length);
+    elements.enemyMetricAreas.textContent = String(new Set(dataset.map(e => cleanText(e.area))).size);
+
+    attachSortHandlers();
+    bindEnemyRowEvents();
+  }
+
+  function renderTable() {
+    renderChunks();
   }
 
   function handleHeaderClick(header) {
@@ -415,12 +597,7 @@
     if (!key) return;
 
     if (state.sortKey === key) {
-      if (key === 'weakness' && state.weaknessSort !== null) {
-        state.weaknessSort = null;
-        state.sortDir = 'desc';
-      } else {
-        state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
-      }
+      state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
     } else {
       state.sortKey = key;
       state.weaknessSort = null;
@@ -428,46 +605,28 @@
       state.sortDir = isNumeric ? 'desc' : 'asc';
     }
 
-    syncSortSelect();
-    renderTable();
-  }
-
-  function handleWeaknessIconClick(e, weakness) {
-    e.stopPropagation();
-    if (state.sortKey === 'weakness' && state.weaknessSort === weakness) {
-      state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
-    } else {
-      state.sortKey = 'weakness';
-      state.weaknessSort = weakness;
-      state.sortDir = 'desc';
-    }
-    syncSortSelect();
-    renderTable();
+    renderChunks();
   }
 
   function bindEvents() {
     elements.enemySearchInput.addEventListener('input', () => {
       state.searchQuery = elements.enemySearchInput.value.trim().toLowerCase();
-      state.currentPage = 1;
-      renderTable();
+      renderChunks();
     });
 
     elements.enemyAreaFilter.addEventListener('change', () => {
       state.area = elements.enemyAreaFilter.value;
-      state.currentPage = 1;
-      renderTable();
+      renderChunks();
     });
 
     elements.enemySubAreaFilter.addEventListener('change', () => {
       state.subArea = elements.enemySubAreaFilter.value;
-      state.currentPage = 1;
-      renderTable();
+      renderChunks();
     });
 
     elements.enemyWeaknessFilter.addEventListener('change', () => {
       state.weakness = elements.enemyWeaknessFilter.value;
-      state.currentPage = 1;
-      renderTable();
+      renderChunks();
     });
 
     if (elements.enemyTypeTabs) {
@@ -483,14 +642,36 @@
         tab.setAttribute('aria-selected', 'true');
         
         state.type = tab.getAttribute('data-category') || 'all';
-        state.currentPage = 1;
-        renderTable();
+        renderChunks();
+      });
+    }
+
+    if (elements.enemyAreaFilter) {
+      elements.enemyAreaFilter.addEventListener('change', () => {
+        state.area = elements.enemyAreaFilter.value;
+        state.subArea = 'all';
+        if (elements.enemySubAreaFilter) elements.enemySubAreaFilter.value = 'all';
+        renderChunks();
+      });
+    }
+
+    if (elements.enemySubAreaFilter) {
+      elements.enemySubAreaFilter.addEventListener('change', () => {
+        state.subArea = elements.enemySubAreaFilter.value;
+        renderChunks();
+      });
+    }
+
+    if (elements.enemyWeaknessFilter) {
+      elements.enemyWeaknessFilter.addEventListener('change', () => {
+        state.weakness = elements.enemyWeaknessFilter.value;
+        renderChunks();
       });
     }
 
     elements.enemySortFilter.addEventListener('change', () => {
       const val = elements.enemySortFilter.value;
-      if (val.startsWith('shield-')) {
+      if (val.startsWith('shields-')) {
         state.sortKey = 'shields';
         state.weaknessSort = null;
         state.sortDir = val.endsWith('-desc') ? 'desc' : 'asc';
@@ -506,28 +687,13 @@
           state.sortDir = 'asc';
         }
       }
-      renderTable();
-    });
-
-    document.querySelectorAll('.enemy-table th.sortable').forEach(header => {
-      header.addEventListener('click', (e) => {
-        if (e.target.closest('.weakness-icon')) return;
-        handleHeaderClick(header);
-      });
-    });
-
-    document.querySelectorAll('.weakness-icon').forEach(icon => {
-      icon.addEventListener('click', (e) => {
-        const weakness = icon.getAttribute('data-weakness');
-        handleWeaknessIconClick(e, weakness);
-      });
+      renderChunks();
     });
 
     elements.enemyClearSearch.addEventListener('click', () => {
       state.searchQuery = '';
       elements.enemySearchInput.value = '';
-      state.currentPage = 1;
-      renderTable();
+      renderChunks();
     });
 
     elements.enemyResetBtn.addEventListener('click', () => {
@@ -539,6 +705,7 @@
       state.sortKey = 'name';
       state.sortDir = 'asc';
       state.weaknessSort = null;
+      state.collapsedAreas = {};
       elements.enemySearchInput.value = '';
       if (elements.enemyTypeTabs) {
         document.querySelectorAll('#enemyTypeTabs .cat-tab').forEach(t => {
@@ -551,39 +718,25 @@
           allTab.setAttribute('aria-selected', 'true');
         }
       }
-      state.currentPage = 1;
-      renderFilters();
-      renderTable();
+      elements.enemyAreaFilter.value = 'all';
+      elements.enemySubAreaFilter.value = 'all';
+      elements.enemyWeaknessFilter.value = 'all';
+      elements.enemySortFilter.value = 'name-asc';
+      renderChunks();
     });
 
-    elements.enemyEmptyResetBtn.addEventListener('click', () => {
-      elements.enemyResetBtn.click();
-    });
-
-    // Pagination buttons
-    if (elements.enemyPrevPageBtn) {
-      elements.enemyPrevPageBtn.addEventListener('click', () => {
-        if (state.currentPage > 1) {
-          state.currentPage--;
-          renderTable();
-        }
+    if (elements.enemyEmptyResetBtn) {
+      elements.enemyEmptyResetBtn.addEventListener('click', () => {
+        elements.enemyResetBtn.click();
       });
     }
-    if (elements.enemyNextPageBtn) {
-      elements.enemyNextPageBtn.addEventListener('click', () => {
-        const filtered = getFilteredEnemies();
-        const totalPages = Math.ceil(filtered.length / state.pageSize) || 1;
-        if (state.currentPage < totalPages) {
-          state.currentPage++;
-          renderTable();
-        }
-      });
+
+    if (elements.enemyModalClose) {
+      elements.enemyModalClose.addEventListener('click', closeEnemyModal);
     }
 
     elements.enemyModal.addEventListener('click', (e) => {
-      if (e.target === elements.enemyModal) {
-        closeEnemyModal();
-      }
+      if (e.target === elements.enemyModal) closeEnemyModal();
     });
 
     document.addEventListener('keydown', (e) => {
@@ -615,3 +768,5 @@
 
   init();
 })();
+
+

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Octopath Traveler 0 // Shop Codex</title>
-  <meta name="description" content="Shop codex for Octopath Traveler 0. Browse items available at towns and shops across the world." />
+  <title>Octopath Traveler 0 // NPC Codex</title>
+  <meta name="description" content="NPC codex for Octopath Traveler 0. Browse townspeople by area, path action, invite skills, helper skills, and battle drops." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
@@ -35,8 +35,8 @@
           <a class="site-nav-link" href="equipment.html">🛡️ Equipment Codex</a>
           <a class="site-nav-link" href="character.html">🧭 Character / Jobs</a>
           <a class="site-nav-link" href="enemy.html">⚔️ Enemy Codex</a>
-          <a class="site-nav-link active" href="shop.html" aria-current="page">🏪 Shop Codex</a>
-          <a class="site-nav-link" href="npc.html">🧑 NPC Codex</a>
+          <a class="site-nav-link" href="shop.html">🏪 Shop Codex</a>
+          <a class="site-nav-link active" href="npc.html" aria-current="page">🧑 NPC Codex</a>
         </div>
       </div>
     </nav>
@@ -61,11 +61,11 @@
             <span class="site-rail-icon" aria-hidden="true">🐉</span>
             <span class="site-rail-text">Enemies</span>
           </a>
-          <a class="site-rail-link active" href="shop.html">
+          <a class="site-rail-link" href="shop.html">
             <span class="site-rail-icon" aria-hidden="true">🏪</span>
             <span class="site-rail-text">Shops</span>
           </a>
-          <a class="site-rail-link" href="npc.html">
+          <a class="site-rail-link active" href="npc.html" aria-current="page">
             <span class="site-rail-icon" aria-hidden="true">🧑</span>
             <span class="site-rail-text">NPCs</span>
           </a>
@@ -77,22 +77,22 @@
       <div class="header-container">
         <div class="brand-area">
           <div class="brand-crest">
-            <span class="crest-icon">🏪</span>
+            <span class="crest-icon">🧑</span>
           </div>
           <div>
             <div class="brand-kicker">OCTOPATH TRAVELER 0</div>
-            <h1 class="brand-title">Shop & Inventory Codex</h1>
+            <h1 class="brand-title">NPC Codex</h1>
           </div>
         </div>
 
-        <div class="metrics-bar" id="characterMetricsBar">
+        <div class="metrics-bar" id="npcMetricsBar">
           <div class="metric-pill">
-            <span class="metric-label">Items</span>
-            <span class="metric-val" id="metricItemCount">0</span>
+            <span class="metric-label">NPCs</span>
+            <span class="metric-val" id="npcMetricTotal">0</span>
           </div>
           <div class="metric-pill support">
-            <span class="metric-label">Locations</span>
-            <span class="metric-val" id="metricLocationCount">0</span>
+            <span class="metric-label">Areas</span>
+            <span class="metric-val" id="npcMetricAreas">0</span>
           </div>
         </div>
 
@@ -105,7 +105,28 @@
     <main class="main-content" id="main-content">
       <div class="sticky-filter-wrap">
       <section class="category-nav-section">
-        <!-- Empty for future location tabs -->
+        <div class="category-tabs" id="npcTypeTabs" role="tablist" aria-label="Filter by NPC type">
+          <button class="cat-tab active" data-category="all" role="tab" aria-selected="true">
+            <span class="cat-icon">🌐</span>
+            <span class="cat-label">All</span>
+            <span class="cat-count" id="npcCatCountAll">0</span>
+          </button>
+          <button class="cat-tab" data-category="Fame" role="tab" aria-selected="false">
+            <span class="cat-icon">🌟</span>
+            <span class="cat-label">Fame</span>
+            <span class="cat-count" id="npcCatCountFame">0</span>
+          </button>
+          <button class="cat-tab" data-category="Power" role="tab" aria-selected="false">
+            <span class="cat-icon">⚔️</span>
+            <span class="cat-label">Power</span>
+            <span class="cat-count" id="npcCatCountPower">0</span>
+          </button>
+          <button class="cat-tab" data-category="Wealth" role="tab" aria-selected="false">
+            <span class="cat-icon">💰</span>
+            <span class="cat-label">Wealth</span>
+            <span class="cat-count" id="npcCatCountWealth">0</span>
+          </button>
+        </div>
       </section>
 
       <!-- Sub-Filter & Search Command Bar -->
@@ -117,40 +138,41 @@
               <span class="search-icon">🔍</span>
               <input
                 type="search"
-                id="shopSearchInput"
-                placeholder="Search by item name or location..."
+                id="npcSearchInput"
+                placeholder="Search NPC, area, skill, or item..."
                 autocomplete="off"
                 spellcheck="false"
-                aria-label="Search shop items"
+                aria-label="Search NPCs"
               />
-              <button class="clear-search-btn" id="clearShopSearch" title="Clear search" aria-label="Clear search">✕</button>
+              <button class="clear-search-btn" id="npcClearSearch" title="Clear search" aria-label="Clear search">✕</button>
             </div>
           </div>
 
           <!-- Secondary Filters & Sorters row -->
           <div class="secondary-filter-row">
             <div class="filter-group">
-              <label for="shopLocationFilter" class="filter-label">Location</label>
-              <select id="shopLocationFilter" class="filter-select">
-                <option value="all">All Locations</option>
+              <label for="npcAreaFilter" class="filter-label">Area</label>
+              <select id="npcAreaFilter" class="filter-select">
+                <option value="all">All Areas</option>
               </select>
             </div>
 
             <div class="filter-group">
-              <label for="shopSortFilter" class="filter-label">Sort By</label>
-              <select id="shopSortFilter" class="filter-select">
-                <option value="location-asc">Location (A → Z)</option>
-                <option value="location-desc">Location (Z → A)</option>
+              <label for="npcSortFilter" class="filter-label">Sort By</label>
+              <select id="npcSortFilter" class="filter-select">
+                <option value="area-asc">Area (Story Order)</option>
                 <option value="name-asc">Name (A → Z)</option>
                 <option value="name-desc">Name (Z → A)</option>
-                <option value="price-asc">Price (Low → High)</option>
-                <option value="price-desc">Price (High → Low)</option>
+                <option value="level-asc">Level (Low → High)</option>
+                <option value="level-desc">Level (High → Low)</option>
+                <option value="danger-asc">Danger (Low → High)</option>
+                <option value="danger-desc">Danger (High → Low)</option>
               </select>
             </div>
 
             <div class="filter-status">
-              <span id="shopResultsCount">Showing 0 items</span>
-              <button class="reset-link-btn" id="shopResetBtn" type="button">Reset Filters</button>
+              <span id="npcResultsCount">Showing 0 NPCs</span>
+              <button class="reset-link-btn" id="npcResetBtn" type="button">Reset Filters</button>
             </div>
           </div>
         </div>
@@ -158,45 +180,32 @@
       </div>
 
       <section class="skills-display-section">
-        <!-- Shop Chunk Grid -->
-        <div class="shop-chunk-grid" id="shopChunksGrid">
-          <!-- Chunks rendered by shopApp.js -->
+        <!-- NPC Chunk Grid: one expandable chunk per area, table inside -->
+        <div class="shop-chunk-grid" id="npcChunksGrid">
+          <!-- Chunks rendered by npcApp.js -->
         </div>
 
         <!-- Empty State -->
-        <div class="empty-state" id="shopEmptyState" style="display:none;">
-          <div class="empty-icon">📦</div>
-          <p>No items match your search.</p>
-          <button class="primary-btn shop-reset-empty-btn" type="button">Clear All Filters</button>
+        <div class="empty-state" id="npcEmptyState" style="display:none;">
+          <div class="empty-icon">🧑</div>
+          <p>No NPCs match your search.</p>
+          <button class="primary-btn npc-reset-empty-btn" type="button">Clear All Filters</button>
         </div>
 
       </section>
     </main>
   </div>
 
-  <div id="detailModal" class="detail-modal" style="display:none;" aria-modal="true" role="dialog" aria-labelledby="detailModalTitle" aria-describedby="detailModalDesc">
-    <div class="modal-header">
-      <h2 id="detailModalTitle">Item Details</h2>
-      <button class="modal-close-btn" aria-label="Close details" onclick="closeDetailModal()" title="Close">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-section">
-        <h4 class="modal-section-heading" id="detailSectionOverview">Overview</h4>
-        <div class="modal-description-box" id="detailModalDescription">Description</div>
-      </div>
-      <div class="modal-section" style="display:none;" id="detailSectionAmity">
-        <h4 class="modal-section-heading">Amity</h4>
-        <div class="modal-amity-box" id="detailModalAmity"></div>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button class="secondary-btn" onclick="closeDetailModal()" type="button">Done</button>
+  <div class="modal-overlay" id="npcModal" role="dialog" aria-modal="true" aria-labelledby="npcModalTitle" aria-hidden="true">
+    <div class="modal-window">
+      <div class="modal-content" id="npcModalContent"></div>
     </div>
   </div>
 
-  <script src="shopData.js"></script>
-  <script src="equipmentData.js"></script>
-  <script src="shopApp.js"></script>
+  <script src="npcData.js"></script>
+  <script src="npcApp.js"></script>
   <script src="themeToggle.js"></script>
 </body>
 </html>
+
+

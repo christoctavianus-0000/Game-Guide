@@ -2,6 +2,13 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Project restructure
+
+- Moved entire project into `Octopath Traveler 0/` subfolder under `Game Guide/` to support multi-game structure.
+- Moved `assets/`, `tests/`, `types/` directories into the subfolder alongside all source files.
+- All relative asset paths (`assets/...`) preserved; no code changes required beyond the move.
+- Git history preserved via staged renames.
+
 ## Unreleased — NPC Codex
 
 - New page `npc.html` + `npcApp.js` + `npcData.js`: area-chunk tables (click header to expand/collapse, same `.shop-chunk` pattern as the shop codex), type tabs (All/Fame/Power/Wealth), search + area filter + sort (story order, name, level, danger). Table columns: Name, Type, Level, Invite, Danger, Helper Skill, Items.

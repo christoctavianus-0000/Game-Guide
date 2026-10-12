@@ -201,3 +201,5 @@ const masterySourceIndex = {
   "Wind's Breath":[{"text": "Monster Arena, Defeat Tyrannodrake", "category": "Boss"}],
   "Windblast":[{"text": "Blue Chest behind Menacing Icky Slug, Great Tree's Tears", "category": "Chest"}]
 };
+
+

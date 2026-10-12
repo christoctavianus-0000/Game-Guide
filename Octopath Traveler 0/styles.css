@@ -3278,6 +3278,29 @@ body::before {
   align-items: start;
 }
 
+/* Enemy codex: one area per full-width row, stacked */
+#enemyChunksGrid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 0;
+  padding: 8px 0;
+}
+
+/* Separators between areas */
+#enemyChunksGrid .shop-chunk {
+  border-bottom: 1px solid var(--border-subtle);
+}
+#enemyChunksGrid .shop-chunk-header {
+  border-bottom: 1px solid var(--border-subtle);
+}
+#enemyChunksGrid .shop-chunk:not(:last-child) {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+#enemyChunksGrid .shop-chunk.collapsed .shop-chunk-body {
+  display: none;
+}
+
 /* NPC codex: one area per full-width row, stacked */
 #npcChunksGrid {
   display: grid !important;
@@ -3928,3 +3951,5 @@ body::before {
   align-items: flex-end;
   gap: 8px;
 }
+
+

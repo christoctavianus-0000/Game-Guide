@@ -211,61 +211,17 @@
       </section>
       </div>
 
-      <section class="enemy-table-section">
-        <div class="enemy-table-shell">
-          <table class="enemy-table">
-            <thead>
-              <tr>
-                <th class="sortable" data-sort-key="name">Name</th>
-                <th class="sortable" data-sort-key="area">Area</th>
-                <th class="sortable" data-sort-key="subArea">Sub Area</th>
-                <th class="sortable" data-sort-key="type">Type</th>
-                <th class="sortable num" data-sort-key="shields">Shield</th>
-                <th class="sortable weakness-header" data-sort-key="weakness">
-                  <div class="weakness-header-content">
-                    <span class="weakness-header-title">Weaknesses</span>
-                    <div class="weakness-header-icons" aria-label="Click to sort by specific weakness">
-                      <span class="weakness-icon" data-weakness="Sword" title="Sort by Sword weakness"><img src="assets/icons/icon_sword.png" alt="Sword" /></span>
-                      <span class="weakness-icon" data-weakness="Spear" title="Sort by Spear weakness"><img src="assets/icons/icon_polearm.png" alt="Spear" /></span>
-                      <span class="weakness-icon" data-weakness="Dagger" title="Sort by Dagger weakness"><img src="assets/icons/icon_dagger.png" alt="Dagger" /></span>
-                      <span class="weakness-icon" data-weakness="Axe" title="Sort by Axe weakness"><img src="assets/icons/icon_axe.png" alt="Axe" /></span>
-                      <span class="weakness-icon" data-weakness="Bow" title="Sort by Bow weakness"><img src="assets/icons/icon_bow.png" alt="Bow" /></span>
-                      <span class="weakness-icon" data-weakness="Staff" title="Sort by Staff weakness"><img src="assets/icons/icon_staff.png" alt="Staff" /></span>
-                      <span class="weakness-icon" data-weakness="Tome" title="Sort by Tome weakness"><img src="assets/icons/icon_tome.png" alt="Tome" /></span>
-                      <span class="weakness-icon" data-weakness="Fan" title="Sort by Fan weakness"><img src="assets/icons/icon_fan.png" alt="Fan" /></span>
-                      <span class="weakness-icon" data-weakness="Fire" title="Sort by Fire weakness"><img src="assets/icons/icon_fire.png" alt="Fire" /></span>
-                      <span class="weakness-icon" data-weakness="Ice" title="Sort by Ice weakness"><img src="assets/icons/icon_ice.png" alt="Ice" /></span>
-                      <span class="weakness-icon" data-weakness="Thunder" title="Sort by Thunder weakness"><img src="assets/icons/icon_lightning.png" alt="Thunder" /></span>
-                      <span class="weakness-icon" data-weakness="Wind" title="Sort by Wind weakness"><img src="assets/icons/icon_wind.png" alt="Wind" /></span>
-                      <span class="weakness-icon" data-weakness="Light" title="Sort by Light weakness"><img src="assets/icons/icon_light.png" alt="Light" /></span>
-                      <span class="weakness-icon" data-weakness="Dark" title="Sort by Dark weakness"><img src="assets/icons/icon_dark.png" alt="Dark" /></span>
-                    </div>
-                  </div>
-                </th>
-                <th class="sortable num" data-sort-key="level">Lvl</th>
-                <th>Steal</th>
-                <th>Drop</th>
-              </tr>
-            </thead>
-            <tbody id="enemyTableBody"></tbody>
-          </table>
+      <section class="skills-display-section">
+        <!-- Enemy Chunk Grid: one expandable chunk per area, table inside -->
+        <div class="shop-chunk-grid" id="enemyChunksGrid">
+          <!-- Chunks rendered by enemyApp.js -->
         </div>
 
-        <div class="empty-state-card" id="enemyEmptyState" style="display:none;">
+        <!-- Empty State -->
+        <div class="empty-state" id="enemyEmptyState" style="display:none;">
           <div class="empty-icon">🐉</div>
-          <h3>No matching enemies found</h3>
-          <p>Try a different area, weakness, or type filter.</p>
-          <button class="primary-btn" id="enemyEmptyResetBtn" type="button">Clear Filters</button>
-        </div>
-
-        <!-- Pagination Controls -->
-        <div class="pagination-footer" id="enemyPaginationFooter">
-          <div class="pagination-info" id="enemyPaginationInfo">Showing 1–48 of 0</div>
-          <div class="pagination-buttons">
-            <button class="page-btn" id="enemyPrevPageBtn" disabled>‹ Previous</button>
-            <span class="page-current" id="enemyPageCurrent">Page 1</span>
-            <button class="page-btn" id="enemyNextPageBtn">Next ›</button>
-          </div>
+          <p>No enemies match your search.</p>
+          <button class="primary-btn enemy-reset-empty-btn" id="enemyEmptyResetBtn" type="button">Clear All Filters</button>
         </div>
       </section>
     </main>
@@ -282,3 +238,5 @@
   <script src="themeToggle.js"></script>
 </body>
 </html>
+
+
