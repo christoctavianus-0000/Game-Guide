@@ -12,6 +12,64 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentCategory = 'all';
   let currentSearch = '';
   let currentLevel = 'all';
+  let sortKey = 'no';
+  let sortDir = 1;
+
+  function parseNum(value) {
+    const n = parseInt(String(value || '').replace(/[^0-9-]/g, ''), 10);
+    return Number.isNaN(n) ? -1 : n;
+  }
+
+  function attackPower(text) {
+    const m = String(text || '').match(/\((\d+)\)/);
+    return m ? parseInt(m[1], 10) : -1;
+  }
+
+  function sortVal(card, key) {
+    switch (key) {
+      case 'no': return parseNum(card.no);
+      case 'hp': return parseNum(card.hp);
+      case 'dp': return parseNum(card.dp);
+      case 'plusP': return parseNum(card.plusP);
+      case 'circle': return attackPower(card.circle);
+      case 'triangle': return attackPower(card.triangle);
+      case 'x': return attackPower(card.x);
+      case 'name': return (card.name || '').toLowerCase();
+      case 'level': return (card.level || '').toLowerCase();
+      case 'specialty': return (card.specialty || '').toLowerCase();
+      case 'support': return (card.support || '').toLowerCase();
+      default: return '';
+    }
+  }
+
+  function sortRows(rows) {
+    return rows.slice().sort((a, b) => {
+      const va = sortVal(a, sortKey);
+      const vb = sortVal(b, sortKey);
+      let cmp = 0;
+      if (typeof va === 'number' && typeof vb === 'number') cmp = va - vb;
+      else cmp = String(va).localeCompare(String(vb));
+      if (cmp === 0) cmp = parseNum(a.no) - parseNum(b.no);
+      return cmp * sortDir;
+    });
+  }
+
+  function updateSortIndicators() {
+    document.querySelectorAll('.th-sort').forEach(btn => {
+      const key = btn.getAttribute('data-sort-btn');
+      const ind = btn.querySelector('.sort-ind');
+      const th = btn.closest('th');
+      if (key === sortKey) {
+        if (ind) ind.textContent = sortDir === 1 ? '▲' : '▼';
+        if (th) th.setAttribute('aria-sort', sortDir === 1 ? 'ascending' : 'descending');
+        btn.classList.add('sorted');
+      } else {
+        if (ind) ind.textContent = '';
+        if (th) th.removeAttribute('aria-sort');
+        btn.classList.remove('sorted');
+      }
+    });
+  }
 
   // Initialize metrics
   document.getElementById('metricTotal').textContent = CARD_DATABASE.length;
@@ -68,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderTable() {
-    const filtered = CARD_DATABASE.filter(card => {
+    const filtered = sortRows(CARD_DATABASE.filter(card => {
       if (currentCategory !== 'all' && card.category.toLowerCase() !== currentCategory.toLowerCase()) {
         return false;
       }
@@ -82,7 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!matchName && !matchNo) return false;
       }
       return true;
-    });
+    }));
+    updateSortIndicators();
 
     if (filtered.length === 0) {
       tableBody.innerHTML = `<tr><td colspan="12" style="text-align: center; padding: 3rem; color: var(--text-muted);">No cards found matching your criteria.</td></tr>`;
@@ -135,6 +194,16 @@ document.addEventListener('DOMContentLoaded', () => {
   levelFilter.addEventListener('change', (e) => {
     currentLevel = e.target.value;
     renderTable();
+  });
+
+  // Sortable column headers
+  document.querySelectorAll('.th-sort').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.getAttribute('data-sort-btn');
+      if (sortKey === key) sortDir = -sortDir;
+      else { sortKey = key; sortDir = 1; }
+      renderTable();
+    });
   });
 
   // Initial render
