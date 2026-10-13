@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('metricR').textContent = CARD_DATABASE.filter(c => c.level === 'R').length;
 
   const ATTACK_ICON_LABELS = {
-    circle: 'Circle attack',
-    triangle: 'Triangle attack',
-    x: 'X attack'
+    circle: '[circle icon] attack',
+    triangle: '[triangle icon] attack',
+    x: '[x icon] attack'
   };
 
   function attackIconHtml(token) {
@@ -137,7 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const query = currentSearch.toLowerCase();
         const matchName = card.name.toLowerCase().includes(query);
         const matchNo = card.no.toLowerCase().includes(query);
-        if (!matchName && !matchNo) return false;
+        const matchSupport = (card.support || '').toLowerCase().includes(query);
+        if (!matchName && !matchNo && !matchSupport) return false;
       }
       return true;
     }));
