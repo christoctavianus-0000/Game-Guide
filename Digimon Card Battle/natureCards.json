@@ -19,7 +19,9 @@
     "support": "Opponent uses O.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/069_Valkyrimon.jpg"
+    "localIcon": "assets/cards/069_Valkyrimon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "070",
@@ -39,7 +41,9 @@
     "support": "If opponent's Specialty is Darkness, own Attack Power is +200 & HP +200.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/070_Seraphimon.jpg"
+    "localIcon": "assets/cards/070_Seraphimon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "071",
@@ -63,7 +67,9 @@
       "x"
     ],
     "category": "Nature",
-    "localIcon": "assets/cards/071_Magnadramon.jpg"
+    "localIcon": "assets/cards/071_Magnadramon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "072",
@@ -83,7 +89,9 @@
     "support": "If own level is U, own Attack Power is doubled.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/072_AeroVeedramon.jpg"
+    "localIcon": "assets/cards/072_AeroVeedramon.jpg",
+    "materialValue": 17,
+    "resultValue": 0
   },
   {
     "no": "073",
@@ -103,7 +111,9 @@
     "support": "If opponent's HP are 1000+, own attack becomes \"Eat-up HP.\"",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/073_Rosemon.jpg"
+    "localIcon": "assets/cards/073_Rosemon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "074",
@@ -123,7 +133,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/074_HerculesKabuterimon.jpg"
+    "localIcon": "assets/cards/074_HerculesKabuterimon.jpg",
+    "materialValue": 17,
+    "resultValue": 32
   },
   {
     "no": "075",
@@ -143,7 +155,9 @@
     "support": "If opponent's Specialty is Darkness, boost own Attack Power +500.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/075_MagnaAngemon.jpg"
+    "localIcon": "assets/cards/075_MagnaAngemon.jpg",
+    "materialValue": 16,
+    "resultValue": 31
   },
   {
     "no": "076",
@@ -165,7 +179,9 @@
     "support": "If opponent's Specialty is not Nature, attack second.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/076_Silphymon.jpg"
+    "localIcon": "assets/cards/076_Silphymon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "077",
@@ -185,7 +201,9 @@
     "support": "If opponent's Specialty is Darkness, recover own HP by +500.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/077_Angewomon.jpg"
+    "localIcon": "assets/cards/077_Angewomon.jpg",
+    "materialValue": 15,
+    "resultValue": 29
   },
   {
     "no": "078",
@@ -205,7 +223,9 @@
     "support": "Recover own HP by +200.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/078_Lillymon.jpg"
+    "localIcon": "assets/cards/078_Lillymon.jpg",
+    "materialValue": 15,
+    "resultValue": 28
   },
   {
     "no": "079",
@@ -227,7 +247,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/079_MegaKabuterimon.jpg"
+    "localIcon": "assets/cards/079_MegaKabuterimon.jpg",
+    "materialValue": 14,
+    "resultValue": 27
   },
   {
     "no": "080",
@@ -247,7 +269,9 @@
     "support": "Opponent's Support Effect is voided. Own Attack Power is halved.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/080_Piximon.jpg"
+    "localIcon": "assets/cards/080_Piximon.jpg",
+    "materialValue": 14,
+    "resultValue": 26
   },
   {
     "no": "081",
@@ -267,7 +291,9 @@
     "support": "If own level is U, own Attack Power is doubled.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/081_Veedramon.jpg"
+    "localIcon": "assets/cards/081_Veedramon.jpg",
+    "materialValue": 13,
+    "resultValue": 25
   },
   {
     "no": "082",
@@ -287,7 +313,9 @@
     "support": "If opponent's Specialty is Darkness, own Attack Power is tripled.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/082_Angemon.jpg"
+    "localIcon": "assets/cards/082_Angemon.jpg",
+    "materialValue": 13,
+    "resultValue": 24
   },
   {
     "no": "083",
@@ -309,7 +337,9 @@
     "support": "If own HP are less than 500, boost own Attack Power +300.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/083_R-Gatomon.jpg"
+    "localIcon": "assets/cards/083_R-Gatomon.jpg",
+    "materialValue": 12,
+    "resultValue": 23
   },
   {
     "no": "084",
@@ -331,7 +361,9 @@
     "support": "Boost own Attack Power +100.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/084_Togemon.jpg"
+    "localIcon": "assets/cards/084_Togemon.jpg",
+    "materialValue": 11,
+    "resultValue": 22
   },
   {
     "no": "085",
@@ -351,7 +383,9 @@
     "support": "If own level is lower, boost own Attack Power +500.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/085_Leomon.jpg"
+    "localIcon": "assets/cards/085_Leomon.jpg",
+    "materialValue": 11,
+    "resultValue": 21
   },
   {
     "no": "086",
@@ -373,7 +407,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/086_Kabuterimon.jpg"
+    "localIcon": "assets/cards/086_Kabuterimon.jpg",
+    "materialValue": 11,
+    "resultValue": 20
   },
   {
     "no": "087",
@@ -395,7 +431,9 @@
     "support": "Recover own HP by +100. Boost own Attack Power by +100.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/087_Airdramon.jpg"
+    "localIcon": "assets/cards/087_Airdramon.jpg",
+    "materialValue": 10,
+    "resultValue": 19
   },
   {
     "no": "088",
@@ -417,7 +455,9 @@
     "support": "If opponent's Specialty is Darkness, lower opponent's Attack Power to 0.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/088_Unimon.jpg"
+    "localIcon": "assets/cards/088_Unimon.jpg",
+    "materialValue": 10,
+    "resultValue": 18
   },
   {
     "no": "089",
@@ -437,7 +477,9 @@
     "support": "Attack first.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/089_Ninjamon.jpg"
+    "localIcon": "assets/cards/089_Ninjamon.jpg",
+    "materialValue": 9,
+    "resultValue": 17
   },
   {
     "no": "090",
@@ -459,7 +501,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/090_Kuwagamon.jpg"
+    "localIcon": "assets/cards/090_Kuwagamon.jpg",
+    "materialValue": 9,
+    "resultValue": 16
   },
   {
     "no": "091",
@@ -479,7 +523,9 @@
     "support": "Boost own Attack Power +200.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/091_Drimogemon.jpg"
+    "localIcon": "assets/cards/091_Drimogemon.jpg",
+    "materialValue": 8,
+    "resultValue": 15
   },
   {
     "no": "092",
@@ -499,7 +545,9 @@
     "support": "Changes opponent's Specialty to Nature.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/092_Vegiemon.jpg"
+    "localIcon": "assets/cards/092_Vegiemon.jpg",
+    "materialValue": 8,
+    "resultValue": 14
   },
   {
     "no": "093",
@@ -521,7 +569,9 @@
     "support": "Lower opponent's Attack Power to 0. Opponent's HP are doubled.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/093_Kokatorimon.jpg"
+    "localIcon": "assets/cards/093_Kokatorimon.jpg",
+    "materialValue": 7,
+    "resultValue": 13
   },
   {
     "no": "094",
@@ -541,7 +591,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/094_Yanmamon.jpg"
+    "localIcon": "assets/cards/094_Yanmamon.jpg",
+    "materialValue": 7,
+    "resultValue": 12
   },
   {
     "no": "095",
@@ -561,7 +613,9 @@
     "support": "If own Level is R, boost own Attack Power +300.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/095_J-Mojyamon.jpg"
+    "localIcon": "assets/cards/095_J-Mojyamon.jpg",
+    "materialValue": 6,
+    "resultValue": 11
   },
   {
     "no": "096",
@@ -583,7 +637,9 @@
     "support": "If opponent's Specialty is Darkness, lower opponent's Attack Power -200.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/096_MoriShellmon.jpg"
+    "localIcon": "assets/cards/096_MoriShellmon.jpg",
+    "materialValue": 6,
+    "resultValue": 10
   },
   {
     "no": "097",
@@ -605,7 +661,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/097_Tentomon.jpg"
+    "localIcon": "assets/cards/097_Tentomon.jpg",
+    "materialValue": 5,
+    "resultValue": 9
   },
   {
     "no": "098",
@@ -625,7 +683,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/098_Palmon.jpg"
+    "localIcon": "assets/cards/098_Palmon.jpg",
+    "materialValue": 4,
+    "resultValue": 8
   },
   {
     "no": "099",
@@ -647,7 +707,9 @@
     "support": "Changes own Specialty to Nature. Draw 1 Card.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/099_Salamon.jpg"
+    "localIcon": "assets/cards/099_Salamon.jpg",
+    "materialValue": 4,
+    "resultValue": 7
   },
   {
     "no": "100",
@@ -667,7 +729,9 @@
     "support": "If opponent's Specialty is Ice, boost own Attack Power +300.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/100_Elecmon.jpg"
+    "localIcon": "assets/cards/100_Elecmon.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "101",
@@ -689,7 +753,9 @@
     "support": "If own HP are more than opponent's HP, own Attack Power is doubled.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/101_Gotsumon.jpg"
+    "localIcon": "assets/cards/101_Gotsumon.jpg",
+    "materialValue": 3,
+    "resultValue": 5
   },
   {
     "no": "102",
@@ -709,6 +775,8 @@
     "support": "Lower both Attack Powers -200.",
     "supportIcons": [],
     "category": "Nature",
-    "localIcon": "assets/cards/102_Kunemon.jpg"
+    "localIcon": "assets/cards/102_Kunemon.jpg",
+    "materialValue": 2,
+    "resultValue": 4
   }
 ]

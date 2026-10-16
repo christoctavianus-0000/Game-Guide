@@ -19,7 +19,9 @@
     "support": "Boost own Attack Power +100. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/172_Flamedramon.jpg"
+    "localIcon": "assets/cards/172_Flamedramon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "173",
@@ -41,7 +43,9 @@
     "support": "Boost own Attack Power by +100. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/173_Magnamon.jpg"
+    "localIcon": "assets/cards/173_Magnamon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "174",
@@ -63,7 +67,9 @@
     "support": "If foe's Specialty is Darkness, own Attack Power is Doubled. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/174_Baronmon.jpg"
+    "localIcon": "assets/cards/174_Baronmon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "175",
@@ -83,7 +89,9 @@
     "support": "Boost own Attack Power +100. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/175_Veemon.jpg"
+    "localIcon": "assets/cards/175_Veemon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "176",
@@ -105,7 +113,9 @@
     "support": "Discard 2 Cards from opponent's Online Deck. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/176_Submarimon.jpg"
+    "localIcon": "assets/cards/176_Submarimon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "177",
@@ -127,7 +137,9 @@
     "support": "Lower Opponent's Attack Power -100. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/177_Quetzalmon.jpg"
+    "localIcon": "assets/cards/177_Quetzalmon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "178",
@@ -147,7 +159,9 @@
     "support": "Change own Specialty to Nature. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/178_Tylomon.jpg"
+    "localIcon": "assets/cards/178_Tylomon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "179",
@@ -169,7 +183,9 @@
     "support": "Draw 3 Cards.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/179_Halsemon.jpg"
+    "localIcon": "assets/cards/179_Halsemon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "180",
@@ -189,7 +205,9 @@
     "support": "If foe's Specialty is Nature, own Attack Power is doubled. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/180_Pegasusmon.jpg"
+    "localIcon": "assets/cards/180_Pegasusmon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "181",
@@ -211,7 +229,9 @@
     "support": "Change own Specialty to Nature. Draw 1 card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/181_Nefertimon.jpg"
+    "localIcon": "assets/cards/181_Nefertimon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "182",
@@ -233,7 +253,9 @@
     "support": "Draw 3 Cards.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/182_Hawkmon.jpg"
+    "localIcon": "assets/cards/182_Hawkmon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "183",
@@ -255,7 +277,9 @@
     "support": "If foe's Specialty is Darkness, own Attack Power is doubled. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/183_Patamon.jpg"
+    "localIcon": "assets/cards/183_Patamon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "184",
@@ -277,7 +301,9 @@
     "support": "Change own Specialty to Nature. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/184_Gatomon.jpg"
+    "localIcon": "assets/cards/184_Gatomon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "185",
@@ -299,7 +325,9 @@
     "support": "Boost own Attack Power by +100. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/185_Raidramon.jpg"
+    "localIcon": "assets/cards/185_Raidramon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "186",
@@ -319,7 +347,9 @@
     "support": "Lower Opponent's Attack Power -100. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/186_Shadramon.jpg"
+    "localIcon": "assets/cards/186_Shadramon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "187",
@@ -341,7 +371,9 @@
     "support": "Lower Opponent's Attack Power -100. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/187_Wormmon.jpg"
+    "localIcon": "assets/cards/187_Wormmon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "188",
@@ -363,7 +395,9 @@
     "support": "Draw 3 Cards.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/188_Shurimon.jpg"
+    "localIcon": "assets/cards/188_Shurimon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "189",
@@ -383,7 +417,9 @@
     "support": "Discard 2 Cards from opponent's Online Deck. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/189_Digmon.jpg"
+    "localIcon": "assets/cards/189_Digmon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "190",
@@ -405,6 +441,8 @@
     "support": "Discard 2 Cards from opponent's Online Deck. Draw 1 Card.",
     "supportIcons": [],
     "category": "Partner",
-    "localIcon": "assets/cards/190_Armadillomon.jpg"
+    "localIcon": "assets/cards/190_Armadillomon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   }
 ]

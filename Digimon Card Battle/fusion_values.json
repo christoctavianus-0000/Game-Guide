@@ -1,0 +1,1640 @@
+[
+  {
+    "Color": "Red",
+    "Name": "Imperialdramon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Red",
+    "Name": "Omnimon I",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Red",
+    "Name": "WarGreymon",
+    "Material": 18,
+    "Result": 35
+  },
+  {
+    "Color": "Red",
+    "Name": "Pheonixmon",
+    "Material": 17,
+    "Result": 34
+  },
+  {
+    "Color": "Red",
+    "Name": "Paildramon",
+    "Material": 17,
+    "Result": 33
+  },
+  {
+    "Color": "Red",
+    "Name": "Gigidramon",
+    "Material": 16,
+    "Result": 32
+  },
+  {
+    "Color": "Red",
+    "Name": "RealMetalGreymon",
+    "Material": 16,
+    "Result": 31
+  },
+  {
+    "Color": "Red",
+    "Name": "Garudamon",
+    "Material": 15,
+    "Result": 30
+  },
+  {
+    "Color": "Red",
+    "Name": "MasterTyrannomon",
+    "Material": 15,
+    "Result": 29
+  },
+  {
+    "Color": "Red",
+    "Name": "MetalGreymon",
+    "Material": 14,
+    "Result": 28
+  },
+  {
+    "Color": "Red",
+    "Name": "Meteormon",
+    "Material": 14,
+    "Result": 27
+  },
+  {
+    "Color": "Red",
+    "Name": "Vermilimon",
+    "Material": 14,
+    "Result": 26
+  },
+  {
+    "Color": "Red",
+    "Name": "Exveemon",
+    "Material": 13,
+    "Result": 25
+  },
+  {
+    "Color": "Red",
+    "Name": "Aquilamon",
+    "Material": 12,
+    "Result": 24
+  },
+  {
+    "Color": "Red",
+    "Name": "Greymon",
+    "Material": 12,
+    "Result": 23
+  },
+  {
+    "Color": "Red",
+    "Name": "Apemon",
+    "Material": 11,
+    "Result": 22
+  },
+  {
+    "Color": "Red",
+    "Name": "Tyrannomon",
+    "Material": 11,
+    "Result": 21
+  },
+  {
+    "Color": "Red",
+    "Name": "Monocromon",
+    "Material": 10,
+    "Result": 20
+  },
+  {
+    "Color": "Red",
+    "Name": "Meramon",
+    "Material": 10,
+    "Result": 19
+  },
+  {
+    "Color": "Red",
+    "Name": "Centarumon",
+    "Material": 9,
+    "Result": 18
+  },
+  {
+    "Color": "Red",
+    "Name": "Birdramon",
+    "Material": 9,
+    "Result": 17
+  },
+  {
+    "Color": "Red",
+    "Name": "Tankmon",
+    "Material": 8,
+    "Result": 16
+  },
+  {
+    "Color": "Red",
+    "Name": "RedVegiemon",
+    "Material": 8,
+    "Result": 15
+  },
+  {
+    "Color": "Red",
+    "Name": "Piddomon",
+    "Material": 7,
+    "Result": 14
+  },
+  {
+    "Color": "Red",
+    "Name": "Akatorimon",
+    "Material": 7,
+    "Result": 13
+  },
+  {
+    "Color": "Red",
+    "Name": "BomberNanimon",
+    "Material": 6,
+    "Result": 12
+  },
+  {
+    "Color": "Red",
+    "Name": "Flarerizamon",
+    "Material": 6,
+    "Result": 11
+  },
+  {
+    "Color": "Red",
+    "Name": "Agumon",
+    "Material": 5,
+    "Result": 10
+  },
+  {
+    "Color": "Red",
+    "Name": "Solarmon",
+    "Material": 4,
+    "Result": 9
+  },
+  {
+    "Color": "Red",
+    "Name": "Biyomon",
+    "Material": 4,
+    "Result": 8
+  },
+  {
+    "Color": "Red",
+    "Name": "Muchomon",
+    "Material": 3,
+    "Result": 7
+  },
+  {
+    "Color": "Red",
+    "Name": "Candlemon",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Red",
+    "Name": "D-Otamamon",
+    "Material": 2,
+    "Result": 5
+  },
+  {
+    "Color": "Red",
+    "Name": "Goburimon",
+    "Material": 2,
+    "Result": 4
+  },
+  {
+    "Color": "Blue",
+    "Name": "Vikemon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Blue",
+    "Name": "Omnimon II",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Blue",
+    "Name": "MetalSeadramon",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Blue",
+    "Name": "MetalGarurumon",
+    "Material": 17,
+    "Result": 35
+  },
+  {
+    "Color": "Blue",
+    "Name": "MarineAngemon",
+    "Material": 17,
+    "Result": 34
+  },
+  {
+    "Color": "Blue",
+    "Name": "WereGarurumon",
+    "Material": 16,
+    "Result": 33
+  },
+  {
+    "Color": "Blue",
+    "Name": "Zudomon",
+    "Material": 16,
+    "Result": 32
+  },
+  {
+    "Color": "Blue",
+    "Name": "Panjyamon",
+    "Material": 15,
+    "Result": 31
+  },
+  {
+    "Color": "Blue",
+    "Name": "MegaSeadramon",
+    "Material": 15,
+    "Result": 30
+  },
+  {
+    "Color": "Blue",
+    "Name": "WaruSeadramon",
+    "Material": 14,
+    "Result": 29
+  },
+  {
+    "Color": "Blue",
+    "Name": "Braciomon",
+    "Material": 14,
+    "Result": 28
+  },
+  {
+    "Color": "Blue",
+    "Name": "BlueMeramon",
+    "Material": 13,
+    "Result": 27
+  },
+  {
+    "Color": "Blue",
+    "Name": "Garurumon",
+    "Material": 13,
+    "Result": 26
+  },
+  {
+    "Color": "Blue",
+    "Name": "Ikkakumon",
+    "Material": 12,
+    "Result": 25
+  },
+  {
+    "Color": "Blue",
+    "Name": "Dolphmon",
+    "Material": 12,
+    "Result": 24
+  },
+  {
+    "Color": "Blue",
+    "Name": "Whamon",
+    "Material": 11,
+    "Result": 23
+  },
+  {
+    "Color": "Blue",
+    "Name": "Seadramon",
+    "Material": 11,
+    "Result": 22
+  },
+  {
+    "Color": "Blue",
+    "Name": "Gesomon",
+    "Material": 10,
+    "Result": 21
+  },
+  {
+    "Color": "Blue",
+    "Name": "Frigimon",
+    "Material": 10,
+    "Result": 20
+  },
+  {
+    "Color": "Blue",
+    "Name": "Gekomon",
+    "Material": 9,
+    "Result": 19
+  },
+  {
+    "Color": "Blue",
+    "Name": "Coelamon",
+    "Material": 9,
+    "Result": 18
+  },
+  {
+    "Color": "Blue",
+    "Name": "Mojyamon",
+    "Material": 8,
+    "Result": 17
+  },
+  {
+    "Color": "Blue",
+    "Name": "Shellmon",
+    "Material": 8,
+    "Result": 16
+  },
+  {
+    "Color": "Blue",
+    "Name": "Sorcerimon",
+    "Material": 7,
+    "Result": 15
+  },
+  {
+    "Color": "Blue",
+    "Name": "IceDevimon",
+    "Material": 7,
+    "Result": 14
+  },
+  {
+    "Color": "Blue",
+    "Name": "Hyogamon",
+    "Material": 6,
+    "Result": 13
+  },
+  {
+    "Color": "Blue",
+    "Name": "Icemon",
+    "Material": 6,
+    "Result": 12
+  },
+  {
+    "Color": "Blue",
+    "Name": "Gomamon",
+    "Material": 5,
+    "Result": 11
+  },
+  {
+    "Color": "Blue",
+    "Name": "Gabumon",
+    "Material": 5,
+    "Result": 10
+  },
+  {
+    "Color": "Blue",
+    "Name": "Betamon",
+    "Material": 4,
+    "Result": 9
+  },
+  {
+    "Color": "Blue",
+    "Name": "Penguinmon",
+    "Material": 4,
+    "Result": 8
+  },
+  {
+    "Color": "Blue",
+    "Name": "Gizamon",
+    "Material": 3,
+    "Result": 7
+  },
+  {
+    "Color": "Blue",
+    "Name": "Otamamon",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Blue",
+    "Name": "SnowAgumon",
+    "Material": 2,
+    "Result": 5
+  },
+  {
+    "Color": "Blue",
+    "Name": "SnowGoburimon",
+    "Material": 2,
+    "Result": 4
+  },
+  {
+    "Color": "Green",
+    "Name": "Valkyrimon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Green",
+    "Name": "Seraphimon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Green",
+    "Name": "Magnadramon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Green",
+    "Name": "AeroVeedramon",
+    "Material": 17,
+    "Result": 0
+  },
+  {
+    "Color": "Green",
+    "Name": "Rosemon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Green",
+    "Name": "HerculesKabuterimon",
+    "Material": 17,
+    "Result": 32
+  },
+  {
+    "Color": "Green",
+    "Name": "MagnaAngemon",
+    "Material": 16,
+    "Result": 31
+  },
+  {
+    "Color": "Green",
+    "Name": "Sylphymon",
+    "Material": 16,
+    "Result": 30
+  },
+  {
+    "Color": "Green",
+    "Name": "Angewomon",
+    "Material": 15,
+    "Result": 29
+  },
+  {
+    "Color": "Green",
+    "Name": "Lillymon",
+    "Material": 15,
+    "Result": 28
+  },
+  {
+    "Color": "Green",
+    "Name": "MegaKabuterimon",
+    "Material": 14,
+    "Result": 27
+  },
+  {
+    "Color": "Green",
+    "Name": "Piximon",
+    "Material": 14,
+    "Result": 26
+  },
+  {
+    "Color": "Green",
+    "Name": "Veedramon",
+    "Material": 13,
+    "Result": 25
+  },
+  {
+    "Color": "Green",
+    "Name": "Angemon",
+    "Material": 13,
+    "Result": 24
+  },
+  {
+    "Color": "Green",
+    "Name": "R-Gatomon",
+    "Material": 12,
+    "Result": 23
+  },
+  {
+    "Color": "Green",
+    "Name": "Togemon",
+    "Material": 11,
+    "Result": 22
+  },
+  {
+    "Color": "Green",
+    "Name": "Leomon",
+    "Material": 11,
+    "Result": 21
+  },
+  {
+    "Color": "Green",
+    "Name": "Kabuterimon",
+    "Material": 11,
+    "Result": 20
+  },
+  {
+    "Color": "Green",
+    "Name": "Airdramon",
+    "Material": 10,
+    "Result": 19
+  },
+  {
+    "Color": "Green",
+    "Name": "Unimon",
+    "Material": 10,
+    "Result": 18
+  },
+  {
+    "Color": "Green",
+    "Name": "Ninjamon",
+    "Material": 9,
+    "Result": 17
+  },
+  {
+    "Color": "Green",
+    "Name": "Kuwagamon",
+    "Material": 9,
+    "Result": 16
+  },
+  {
+    "Color": "Green",
+    "Name": "Drimogemon",
+    "Material": 8,
+    "Result": 15
+  },
+  {
+    "Color": "Green",
+    "Name": "Vegiemon",
+    "Material": 8,
+    "Result": 14
+  },
+  {
+    "Color": "Green",
+    "Name": "Kokatorimon",
+    "Material": 7,
+    "Result": 13
+  },
+  {
+    "Color": "Green",
+    "Name": "Yanmamon",
+    "Material": 7,
+    "Result": 12
+  },
+  {
+    "Color": "Green",
+    "Name": "J-Mojyamon",
+    "Material": 6,
+    "Result": 11
+  },
+  {
+    "Color": "Green",
+    "Name": "MoriShellmon",
+    "Material": 6,
+    "Result": 10
+  },
+  {
+    "Color": "Green",
+    "Name": "Tentomon",
+    "Material": 5,
+    "Result": 9
+  },
+  {
+    "Color": "Green",
+    "Name": "Palmon",
+    "Material": 4,
+    "Result": 8
+  },
+  {
+    "Color": "Green",
+    "Name": "Salamon",
+    "Material": 4,
+    "Result": 7
+  },
+  {
+    "Color": "Green",
+    "Name": "Elecmon",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Green",
+    "Name": "Gotsumon",
+    "Material": 3,
+    "Result": 5
+  },
+  {
+    "Color": "Green",
+    "Name": "Kunemon",
+    "Material": 2,
+    "Result": 4
+  },
+  {
+    "Color": "Black",
+    "Name": "Apokarimon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Black",
+    "Name": "GranKuwagamon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Black",
+    "Name": "Diaboromon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Black",
+    "Name": "VenomMyotismon",
+    "Material": 17,
+    "Result": "?"
+  },
+  {
+    "Color": "Black",
+    "Name": "Piedmon",
+    "Material": 18,
+    "Result": 35
+  },
+  {
+    "Color": "Black",
+    "Name": "Machinedramon",
+    "Material": 17,
+    "Result": 34
+  },
+  {
+    "Color": "Black",
+    "Name": "Infermon",
+    "Material": 17,
+    "Result": 33
+  },
+  {
+    "Color": "Black",
+    "Name": "LadyDevimon",
+    "Material": 16,
+    "Result": 32
+  },
+  {
+    "Color": "Black",
+    "Name": "Myotismon",
+    "Material": 16,
+    "Result": 31
+  },
+  {
+    "Color": "Black",
+    "Name": "Megadramon",
+    "Material": 15,
+    "Result": 30
+  },
+  {
+    "Color": "Black",
+    "Name": "SkullGreymon",
+    "Material": 15,
+    "Result": 29
+  },
+  {
+    "Color": "Black",
+    "Name": "Phantomon",
+    "Material": 14,
+    "Result": 28
+  },
+  {
+    "Color": "Black",
+    "Name": "WaruMonzaemon",
+    "Material": 19,
+    "Result": 27
+  },
+  {
+    "Color": "Black",
+    "Name": "Andromon",
+    "Material": 13,
+    "Result": 26
+  },
+  {
+    "Color": "Black",
+    "Name": "Stingmon",
+    "Material": 13,
+    "Result": 25
+  },
+  {
+    "Color": "Black",
+    "Name": "Wizardmon",
+    "Material": 12,
+    "Result": 24
+  },
+  {
+    "Color": "Black",
+    "Name": "Devidramon",
+    "Material": 12,
+    "Result": 23
+  },
+  {
+    "Color": "Black",
+    "Name": "Devimon",
+    "Material": 11,
+    "Result": 22
+  },
+  {
+    "Color": "Black",
+    "Name": "Tuskmon",
+    "Material": 11,
+    "Result": 21
+  },
+  {
+    "Color": "Black",
+    "Name": "Orgemon",
+    "Material": 10,
+    "Result": 20
+  },
+  {
+    "Color": "Black",
+    "Name": "Bakemon",
+    "Material": 10,
+    "Result": 19
+  },
+  {
+    "Color": "Black",
+    "Name": "Guardromon",
+    "Material": 9,
+    "Result": 18
+  },
+  {
+    "Color": "Black",
+    "Name": "Tekkamon",
+    "Material": 9,
+    "Result": 17
+  },
+  {
+    "Color": "Black",
+    "Name": "Gururumon",
+    "Material": 8,
+    "Result": 16
+  },
+  {
+    "Color": "Black",
+    "Name": "Soulmon",
+    "Material": 8,
+    "Result": 15
+  },
+  {
+    "Color": "Black",
+    "Name": "Fugamon",
+    "Material": 7,
+    "Result": 14
+  },
+  {
+    "Color": "Black",
+    "Name": "Saberdramon",
+    "Material": 7,
+    "Result": 13
+  },
+  {
+    "Color": "Black",
+    "Name": "Darkrizamon",
+    "Material": 6,
+    "Result": 12
+  },
+  {
+    "Color": "Black",
+    "Name": "Zassomon",
+    "Material": 6,
+    "Result": 11
+  },
+  {
+    "Color": "Black",
+    "Name": "DemiDevimon",
+    "Material": 5,
+    "Result": 10
+  },
+  {
+    "Color": "Black",
+    "Name": "BKGatomon",
+    "Material": 4,
+    "Result": 9
+  },
+  {
+    "Color": "Black",
+    "Name": "Kokuwamon",
+    "Material": 4,
+    "Result": 8
+  },
+  {
+    "Color": "Black",
+    "Name": "Tsukaimon",
+    "Material": 3,
+    "Result": 7
+  },
+  {
+    "Color": "Black",
+    "Name": "Dokunemon",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Black",
+    "Name": "Aruraumon",
+    "Material": 2,
+    "Result": 5
+  },
+  {
+    "Color": "Black",
+    "Name": "Sharmamon",
+    "Material": 2,
+    "Result": 4
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Puppetmon",
+    "Material": "?",
+    "Result": "?"
+  },
+  {
+    "Color": "Yellow",
+    "Name": "SuperStarmon",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Yellow",
+    "Name": "MetalEtemon",
+    "Material": 17,
+    "Result": 0
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Shakkoumon",
+    "Material": 17,
+    "Result": 33
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Jijimon",
+    "Material": 16,
+    "Result": 32
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Digitamamon",
+    "Material": 16,
+    "Result": 31
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Vademon",
+    "Material": 15,
+    "Result": 30
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Giromon",
+    "Material": 15,
+    "Result": 29
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Monzaemon",
+    "Material": 14,
+    "Result": 28
+  },
+  {
+    "Color": "Yellow",
+    "Name": "MetalMamemon",
+    "Material": 14,
+    "Result": 27
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Mamemon",
+    "Material": 13,
+    "Result": 26
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Etemon",
+    "Material": 13,
+    "Result": 25
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Ankylomon",
+    "Material": 12,
+    "Result": 24
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Starmon",
+    "Material": 12,
+    "Result": 23
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Thundermon",
+    "Material": 11,
+    "Result": 22
+  },
+  {
+    "Color": "Yellow",
+    "Name": "PlatinumSukamon",
+    "Material": 11,
+    "Result": 21
+  },
+  {
+    "Color": "Yellow",
+    "Name": "ShellNumemon",
+    "Material": 10,
+    "Result": 20
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Nanimon",
+    "Material": 10,
+    "Result": 19
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Numemon",
+    "Material": 9,
+    "Result": 18
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Sukamon",
+    "Material": 9,
+    "Result": 17
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Rockmon",
+    "Material": 8,
+    "Result": 16
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Geremon",
+    "Material": 8,
+    "Result": 15
+  },
+  {
+    "Color": "Yellow",
+    "Name": "NiseDrimogemon",
+    "Material": 7,
+    "Result": 14
+  },
+  {
+    "Color": "Yellow",
+    "Name": "ShimaUnimon",
+    "Material": 7,
+    "Result": 13
+  },
+  {
+    "Color": "Yellow",
+    "Name": "MudFrigimon",
+    "Material": 6,
+    "Result": 12
+  },
+  {
+    "Color": "Yellow",
+    "Name": "SandYanmamon",
+    "Material": 6,
+    "Result": 11
+  },
+  {
+    "Color": "Yellow",
+    "Name": "L-ToyAgumon",
+    "Material": 5,
+    "Result": 10
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Hagurumon",
+    "Material": 4,
+    "Result": 9
+  },
+  {
+    "Color": "Yellow",
+    "Name": "ToyAgumon",
+    "Material": 4,
+    "Result": 8
+  },
+  {
+    "Color": "Yellow",
+    "Name": "ClearAgumon",
+    "Material": 3,
+    "Result": 7
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Vi-Elecmon",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Yellow",
+    "Name": "Psychemon",
+    "Material": 2,
+    "Result": 5
+  },
+  {
+    "Color": "Yellow",
+    "Name": "ModokiBetamon",
+    "Material": 2,
+    "Result": 4
+  },
+  {
+    "Color": "Option",
+    "Name": "Golden Banana",
+    "Material": 18,
+    "Result": 35
+  },
+  {
+    "Color": "Option",
+    "Name": "Devil's chip",
+    "Material": 18,
+    "Result": 34
+  },
+  {
+    "Color": "Option",
+    "Name": "Whistle",
+    "Material": 18,
+    "Result": 33
+  },
+  {
+    "Color": "Option",
+    "Name": "Giga Hand",
+    "Material": 17,
+    "Result": 32
+  },
+  {
+    "Color": "Option",
+    "Name": "Metallic banana",
+    "Material": 17,
+    "Result": 30
+  },
+  {
+    "Color": "Option",
+    "Name": "Shining mane",
+    "Material": 17,
+    "Result": 30
+  },
+  {
+    "Color": "Option",
+    "Name": "Mega rec. Floppy",
+    "Material": 16,
+    "Result": 29
+  },
+  {
+    "Color": "Option",
+    "Name": "Mega attack chip",
+    "Material": 16,
+    "Result": 28
+  },
+  {
+    "Color": "Option",
+    "Name": "Dark lord cape",
+    "Material": 16,
+    "Result": 27
+  },
+  {
+    "Color": "Option",
+    "Name": "Fake Sevens",
+    "Material": 15,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Net Worm",
+    "Material": 15,
+    "Result": 25
+  },
+  {
+    "Color": "Option",
+    "Name": "Missile Pod",
+    "Material": 15,
+    "Result": 24
+  },
+  {
+    "Color": "Option",
+    "Name": "Shogun's Order",
+    "Material": 14,
+    "Result": 23
+  },
+  {
+    "Color": "Option",
+    "Name": "Beetle Diamond",
+    "Material": 14,
+    "Result": 22
+  },
+  {
+    "Color": "Option",
+    "Name": "Dark bone",
+    "Material": 14,
+    "Result": 21
+  },
+  {
+    "Color": "Option",
+    "Name": "Red digivice",
+    "Material": 13,
+    "Result": 20
+  },
+  {
+    "Color": "Option",
+    "Name": "Blue digivice",
+    "Material": 13,
+    "Result": 20
+  },
+  {
+    "Color": "Option",
+    "Name": "Green digivice",
+    "Material": 13,
+    "Result": 20
+  },
+  {
+    "Color": "Option",
+    "Name": "Black digivice",
+    "Material": 13,
+    "Result": 20
+  },
+  {
+    "Color": "Option",
+    "Name": "Yellow digivice",
+    "Material": 13,
+    "Result": 20
+  },
+  {
+    "Color": "Option",
+    "Name": "Pink digivice",
+    "Material": 13,
+    "Result": 20
+  },
+  {
+    "Color": "Option",
+    "Name": "Another dimension",
+    "Material": 12,
+    "Result": 19
+  },
+  {
+    "Color": "Option",
+    "Name": "Uninstall",
+    "Material": 12,
+    "Result": 18
+  },
+  {
+    "Color": "Option",
+    "Name": "Evil program",
+    "Material": 12,
+    "Result": 17
+  },
+  {
+    "Color": "Option",
+    "Name": "Coliseum",
+    "Material": 12,
+    "Result": 16
+  },
+  {
+    "Color": "Option",
+    "Name": "Fire altar",
+    "Material": 11,
+    "Result": 15
+  },
+  {
+    "Color": "Option",
+    "Name": "Ice alter",
+    "Material": 11,
+    "Result": 15
+  },
+  {
+    "Color": "Option",
+    "Name": "Nature alter",
+    "Material": 11,
+    "Result": 15
+  },
+  {
+    "Color": "Option",
+    "Name": "Darkness alter",
+    "Material": 11,
+    "Result": 15
+  },
+  {
+    "Color": "Option",
+    "Name": "Rare alter",
+    "Material": 11,
+    "Result": 15
+  },
+  {
+    "Color": "Option",
+    "Name": "Sup. rec. floppy",
+    "Material": 10,
+    "Result": 14
+  },
+  {
+    "Color": "Option",
+    "Name": "Mega def. disk circle",
+    "Material": 10,
+    "Result": 13
+  },
+  {
+    "Color": "Option",
+    "Name": "Mega def. disk triangle",
+    "Material": 10,
+    "Result": 13
+  },
+  {
+    "Color": "Option",
+    "Name": "Mega def. disk X",
+    "Material": 10,
+    "Result": 13
+  },
+  {
+    "Color": "Option",
+    "Name": "Heap of junk",
+    "Material": 10,
+    "Result": 12
+  },
+  {
+    "Color": "Option",
+    "Name": "Beam gun",
+    "Material": 9,
+    "Result": 12
+  },
+  {
+    "Color": "Option",
+    "Name": "Chain saw",
+    "Material": 9,
+    "Result": 12
+  },
+  {
+    "Color": "Option",
+    "Name": "Metal parts",
+    "Material": 9,
+    "Result": 12
+  },
+  {
+    "Color": "Option",
+    "Name": "Metal armor",
+    "Material": 9,
+    "Result": 12
+  },
+  {
+    "Color": "Option",
+    "Name": "Mega hand",
+    "Material": 9,
+    "Result": 12
+  },
+  {
+    "Color": "Option",
+    "Name": "Level Balancer",
+    "Material": 8,
+    "Result": 11
+  },
+  {
+    "Color": "Option",
+    "Name": "Level manager",
+    "Material": 8,
+    "Result": 11
+  },
+  {
+    "Color": "Option",
+    "Name": "Level booster",
+    "Material": 8,
+    "Result": 11
+  },
+  {
+    "Color": "Option",
+    "Name": "Armor clash",
+    "Material": 8,
+    "Result": 11
+  },
+  {
+    "Color": "Option",
+    "Name": "Silver Ball",
+    "Material": 8,
+    "Result": 11
+  },
+  {
+    "Color": "Option",
+    "Name": "Coral Charm",
+    "Material": 7,
+    "Result": 10
+  },
+  {
+    "Color": "Option",
+    "Name": "Patch of love",
+    "Material": 7,
+    "Result": 10
+  },
+  {
+    "Color": "Option",
+    "Name": "Mystery egg",
+    "Material": 7,
+    "Result": 10
+  },
+  {
+    "Color": "Option",
+    "Name": "Miracle ruby",
+    "Material": 7,
+    "Result": 10
+  },
+  {
+    "Color": "Option",
+    "Name": "Cyber parts",
+    "Material": 6,
+    "Result": 10
+  },
+  {
+    "Color": "Option",
+    "Name": "Liquid crystal",
+    "Material": 6,
+    "Result": 10
+  },
+  {
+    "Color": "Option",
+    "Name": "Deluxe mushroom",
+    "Material": 6,
+    "Result": 9
+  },
+  {
+    "Color": "Option",
+    "Name": "Lucky mushroom",
+    "Material": 6,
+    "Result": 9
+  },
+  {
+    "Color": "Option",
+    "Name": "Premium steak",
+    "Material": 6,
+    "Result": 9
+  },
+  {
+    "Color": "Option",
+    "Name": "Short lance",
+    "Material": 6,
+    "Result": 9
+  },
+  {
+    "Color": "Option",
+    "Name": "Med. rec. Floppy",
+    "Material": 5,
+    "Result": 8
+  },
+  {
+    "Color": "Option",
+    "Name": "Digimon analyzer",
+    "Material": 5,
+    "Result": 8
+  },
+  {
+    "Color": "Option",
+    "Name": "Training manual",
+    "Material": 5,
+    "Result": 8
+  },
+  {
+    "Color": "Option",
+    "Name": "Circle hitter",
+    "Material": 5,
+    "Result": 8
+  },
+  {
+    "Color": "Option",
+    "Name": "Triangle hitter",
+    "Material": 5,
+    "Result": 8
+  },
+  {
+    "Color": "Option",
+    "Name": "Cross hitter",
+    "Material": 5,
+    "Result": 8
+  },
+  {
+    "Color": "Option",
+    "Name": "Sukas Curse",
+    "Material": 4,
+    "Result": 7
+  },
+  {
+    "Color": "Option",
+    "Name": "Cherrymons mist",
+    "Material": 17,
+    "Result": 32
+  },
+  {
+    "Color": "Option",
+    "Name": "Hacking",
+    "Material": 13,
+    "Result": 20
+  },
+  {
+    "Color": "Option",
+    "Name": "Digimon grave",
+    "Material": 4,
+    "Result": 7
+  },
+  {
+    "Color": "Option",
+    "Name": "Data copy",
+    "Material": 4,
+    "Result": 7
+  },
+  {
+    "Color": "Option",
+    "Name": "Partner Finder",
+    "Material": 4,
+    "Result": 7
+  },
+  {
+    "Color": "Option",
+    "Name": "Fire spot",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Option",
+    "Name": "Ice crystal",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Option",
+    "Name": "Earth charm",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Option",
+    "Name": "Black gear",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Option",
+    "Name": "Stuffed animal",
+    "Material": 3,
+    "Result": 6
+  },
+  {
+    "Color": "Option",
+    "Name": "Disrupt ray",
+    "Material": 2,
+    "Result": 5
+  },
+  {
+    "Color": "Option",
+    "Name": "Attack chip",
+    "Material": 2,
+    "Result": 4
+  },
+  {
+    "Color": "Option",
+    "Name": "High speed disk",
+    "Material": 8,
+    "Result": 14
+  },
+  {
+    "Color": "Option",
+    "Name": "Recovery floppy",
+    "Material": 2,
+    "Result": 4
+  },
+  {
+    "Color": "Option",
+    "Name": "Attack disk circle",
+    "Material": 1,
+    "Result": 3
+  },
+  {
+    "Color": "Option",
+    "Name": "Attack disk triangle",
+    "Material": 1,
+    "Result": 3
+  },
+  {
+    "Color": "Option",
+    "Name": "Attack disk X",
+    "Material": 1,
+    "Result": 3
+  },
+  {
+    "Color": "Option",
+    "Name": "Defense disk circle",
+    "Material": 1,
+    "Result": 2
+  },
+  {
+    "Color": "Option",
+    "Name": "Defense disk triangle",
+    "Material": 1,
+    "Result": 2
+  },
+  {
+    "Color": "Option",
+    "Name": "Defense disk X",
+    "Material": 1,
+    "Result": 2
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Garnet",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Amethyst",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Aquamarine",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Diamond",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Emerald",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Pearl",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Ruby",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Sardnyx",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Saphire",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Opal",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Topaz",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-Turquoise",
+    "Material": 18,
+    "Result": 0
+  },
+  {
+    "Color": "Option",
+    "Name": "ArmorCrush Digivolve",
+    "Material": 14,
+    "Result": 21
+  },
+  {
+    "Color": "Option",
+    "Name": "Special digivolve",
+    "Material": 12,
+    "Result": 16
+  },
+  {
+    "Color": "Option",
+    "Name": "Mutant digivolve",
+    "Material": 10,
+    "Result": 16
+  },
+  {
+    "Color": "Option",
+    "Name": "Warp digivolve",
+    "Material": 8,
+    "Result": 14
+  },
+  {
+    "Color": "Option",
+    "Name": "De-Armor Digivolve",
+    "Material": 4,
+    "Result": 14
+  },
+  {
+    "Color": "Option",
+    "Name": "Speed-digivolve",
+    "Material": 6,
+    "Result": 14
+  },
+  {
+    "Color": "Option",
+    "Name": "Digi-devolve",
+    "Material": 2,
+    "Result": 5
+  }
+]

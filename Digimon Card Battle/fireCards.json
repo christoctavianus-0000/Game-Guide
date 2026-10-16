@@ -19,7 +19,9 @@
     "support": "Add number of DP Cards in DP Slot x100 to own Attack Power.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/000_Imperialdramon.jpg"
+    "localIcon": "assets/cards/000_Imperialdramon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "001",
@@ -41,7 +43,9 @@
     "support": "Changes own Specialty to Fire. Boost own Attack Power +100.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/001_Omnimon_I.jpg"
+    "localIcon": "assets/cards/001_Omnimon_I.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "002",
@@ -61,7 +65,9 @@
     "support": "Add number of Cards in Hand x100 to own Attack Power.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/002_WarGreymon.jpg"
+    "localIcon": "assets/cards/002_WarGreymon.jpg",
+    "materialValue": 18,
+    "resultValue": 35
   },
   {
     "no": "003",
@@ -81,7 +87,9 @@
     "support": "Digimon KO'd in battle revives with 500 HP. Battle is still lost.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/003_Phoenixmon.jpg"
+    "localIcon": "assets/cards/003_Phoenixmon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "004",
@@ -103,7 +111,9 @@
     "support": "If own Specialty is Fire, boost own Attack Power +300.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/004_Paildramon.jpg"
+    "localIcon": "assets/cards/004_Paildramon.jpg",
+    "materialValue": 17,
+    "resultValue": 33
   },
   {
     "no": "005",
@@ -123,7 +133,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/005_Gigadramon.jpg"
+    "localIcon": "assets/cards/005_Gigadramon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "006",
@@ -145,7 +157,9 @@
     "support": "Boost own Attack Power +300.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/006_RealMetalGreymon.jpg"
+    "localIcon": "assets/cards/006_RealMetalGreymon.jpg",
+    "materialValue": 16,
+    "resultValue": 31
   },
   {
     "no": "007",
@@ -167,7 +181,9 @@
       "circle"
     ],
     "category": "Fire",
-    "localIcon": "assets/cards/007_Garudamon.jpg"
+    "localIcon": "assets/cards/007_Garudamon.jpg",
+    "materialValue": 15,
+    "resultValue": 30
   },
   {
     "no": "008",
@@ -187,7 +203,9 @@
     "support": "If own Specialty is Fire, own Attack Power is doubled.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/008_MasterTyrannomon.jpg"
+    "localIcon": "assets/cards/008_MasterTyrannomon.jpg",
+    "materialValue": 15,
+    "resultValue": 29
   },
   {
     "no": "009",
@@ -209,7 +227,9 @@
     "support": "If own Level is U, boost own Attack Power +500.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/009_MetalGreymon.jpg"
+    "localIcon": "assets/cards/009_MetalGreymon.jpg",
+    "materialValue": 14,
+    "resultValue": 28
   },
   {
     "no": "010",
@@ -231,7 +251,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/010_Vermilimon.jpg"
+    "localIcon": "assets/cards/010_Vermilimon.jpg",
+    "materialValue": 14,
+    "resultValue": 26
   },
   {
     "no": "011",
@@ -255,7 +277,9 @@
       "circle"
     ],
     "category": "Fire",
-    "localIcon": "assets/cards/011_Meteormon.jpg"
+    "localIcon": "assets/cards/011_Meteormon.jpg",
+    "materialValue": 14,
+    "resultValue": 27
   },
   {
     "no": "012",
@@ -277,7 +301,9 @@
     "support": "If own Level is A, boost own Attack Power +300.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/012_ExVeemon.jpg"
+    "localIcon": "assets/cards/012_ExVeemon.jpg",
+    "materialValue": 13,
+    "resultValue": 25
   },
   {
     "no": "013",
@@ -299,7 +325,9 @@
       "triangle"
     ],
     "category": "Fire",
-    "localIcon": "assets/cards/013_Aquilamon.jpg"
+    "localIcon": "assets/cards/013_Aquilamon.jpg",
+    "materialValue": 12,
+    "resultValue": 24
   },
   {
     "no": "014",
@@ -321,7 +349,9 @@
     "support": "If own Level is C, boost own Attack Power +300.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/014_Greymon.jpg"
+    "localIcon": "assets/cards/014_Greymon.jpg",
+    "materialValue": 12,
+    "resultValue": 23
   },
   {
     "no": "015",
@@ -343,7 +373,9 @@
     "support": "Change own Specialty to Fire. Boost own Attack Power +200.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/015_Apemon.jpg"
+    "localIcon": "assets/cards/015_Apemon.jpg",
+    "materialValue": 11,
+    "resultValue": 22
   },
   {
     "no": "016",
@@ -363,7 +395,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/016_Tyrannomon.jpg"
+    "localIcon": "assets/cards/016_Tyrannomon.jpg",
+    "materialValue": 11,
+    "resultValue": 21
   },
   {
     "no": "017",
@@ -385,7 +419,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/017_Monochromon.jpg"
+    "localIcon": "assets/cards/017_Monochromon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "018",
@@ -405,7 +441,9 @@
     "support": "If opponent's Specialty is Ice, own Attack Power is tripled.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/018_Meramon.jpg"
+    "localIcon": "assets/cards/018_Meramon.jpg",
+    "materialValue": 10,
+    "resultValue": 19
   },
   {
     "no": "019",
@@ -428,7 +466,9 @@
       "circle"
     ],
     "category": "Fire",
-    "localIcon": "assets/cards/019_Centarumon.jpg"
+    "localIcon": "assets/cards/019_Centarumon.jpg",
+    "materialValue": 9,
+    "resultValue": 18
   },
   {
     "no": "020",
@@ -448,7 +488,9 @@
     "support": "Attack first.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/020_Birdramon.jpg"
+    "localIcon": "assets/cards/020_Birdramon.jpg",
+    "materialValue": 9,
+    "resultValue": 17
   },
   {
     "no": "021",
@@ -468,7 +510,9 @@
     "support": "Own HP become 10. Boost own Attack Power +500.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/021_Tankmon.jpg"
+    "localIcon": "assets/cards/021_Tankmon.jpg",
+    "materialValue": 8,
+    "resultValue": 16
   },
   {
     "no": "022",
@@ -488,7 +532,9 @@
     "support": "Discard all own DP Cards in DP Slot, boost own Attack Power +300.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/022_RedVegiemon.jpg"
+    "localIcon": "assets/cards/022_RedVegiemon.jpg",
+    "materialValue": 8,
+    "resultValue": 15
   },
   {
     "no": "023",
@@ -512,7 +558,9 @@
       "circle"
     ],
     "category": "Fire",
-    "localIcon": "assets/cards/023_Piddomon.jpg"
+    "localIcon": "assets/cards/023_Piddomon.jpg",
+    "materialValue": 7,
+    "resultValue": 14
   },
   {
     "no": "024",
@@ -534,7 +582,9 @@
     "support": "Boost own Attack Power +200.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/024_Akatorimon.jpg"
+    "localIcon": "assets/cards/024_Akatorimon.jpg",
+    "materialValue": 7,
+    "resultValue": 13
   },
   {
     "no": "025",
@@ -554,7 +604,9 @@
     "support": "If both Levels are C, boost own Attack Power +400.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/025_BomberNanimon.jpg"
+    "localIcon": "assets/cards/025_BomberNanimon.jpg",
+    "materialValue": 6,
+    "resultValue": 12
   },
   {
     "no": "026",
@@ -574,7 +626,9 @@
     "support": "Change own Specialty to Fire.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/026_Flarerizamon.jpg"
+    "localIcon": "assets/cards/026_Flarerizamon.jpg",
+    "materialValue": 6,
+    "resultValue": 11
   },
   {
     "no": "027",
@@ -598,7 +652,9 @@
       "circle"
     ],
     "category": "Fire",
-    "localIcon": "assets/cards/027_Agumon.jpg"
+    "localIcon": "assets/cards/027_Agumon.jpg",
+    "materialValue": 5,
+    "resultValue": 10
   },
   {
     "no": "028",
@@ -618,7 +674,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/028_Solarmon.jpg"
+    "localIcon": "assets/cards/028_Solarmon.jpg",
+    "materialValue": 4,
+    "resultValue": 9
   },
   {
     "no": "029",
@@ -638,7 +696,9 @@
     "support": "Boost own Attack Power +200.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/029_Biyomon.jpg"
+    "localIcon": "assets/cards/029_Biyomon.jpg",
+    "materialValue": 4,
+    "resultValue": 8
   },
   {
     "no": "030",
@@ -662,7 +722,9 @@
       "triangle"
     ],
     "category": "Fire",
-    "localIcon": "assets/cards/030_Muchomon.jpg"
+    "localIcon": "assets/cards/030_Muchomon.jpg",
+    "materialValue": 3,
+    "resultValue": 7
   },
   {
     "no": "031",
@@ -686,7 +748,9 @@
       "x"
     ],
     "category": "Fire",
-    "localIcon": "assets/cards/031_Candlemon.jpg"
+    "localIcon": "assets/cards/031_Candlemon.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "032",
@@ -706,7 +770,9 @@
     "support": "If opponent's Specialty is Ice, own Attack Power is doubled.",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/032_D-Otamamon.jpg"
+    "localIcon": "assets/cards/032_D-Otamamon.jpg",
+    "materialValue": 2,
+    "resultValue": 5
   },
   {
     "no": "033",
@@ -726,6 +792,8 @@
     "support": "None",
     "supportIcons": [],
     "category": "Fire",
-    "localIcon": "assets/cards/033_Goburimon.jpg"
+    "localIcon": "assets/cards/033_Goburimon.jpg",
+    "materialValue": 2,
+    "resultValue": 4
   }
 ]

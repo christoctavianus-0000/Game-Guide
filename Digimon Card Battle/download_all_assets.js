@@ -16,6 +16,16 @@ const files = [
   'optionCards.json'
 ];
 
+// Load fusion Material/Result values from JSON export
+let fusionMap = {};
+const fusionPath = path.join(baseDir, 'fusion_values.json');
+if (fs.existsSync(fusionPath)) {
+  const fusionData = JSON.parse(fs.readFileSync(fusionPath, 'utf8'));
+  fusionData.forEach(row => {
+    if (row.Name) fusionMap[row.Name.trim().toLowerCase()] = { material: row.Material, result: row.Result };
+  });
+}
+
 let allCards = [];
 const configLines = [];
 
@@ -25,6 +35,10 @@ for (const file of files) {
 
   const cards = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   for (const card of cards) {
+    const key = (card.name || '').trim().toLowerCase();
+    const fusion = fusionMap[key] || {};
+    card.materialValue = fusion.material !== undefined ? fusion.material : '?';
+    card.resultValue = fusion.result !== undefined ? fusion.result : '?';
     allCards.push(card);
     if (!card.cardIcon) continue;
 
@@ -59,6 +73,3 @@ fs.writeFileSync(jsPath, 'const CARD_DATABASE = ' + JSON.stringify(allCards, nul
 
 const combinedJsonPath = path.join(baseDir, 'allCards.json');
 fs.writeFileSync(combinedJsonPath, JSON.stringify(allCards, null, 2), 'utf8');
-
-const downloadedCount = fs.readdirSync(assetsDir).length;
-console.log(`Finished! Total local card icons ready in assets/cards: ${downloadedCount}`);

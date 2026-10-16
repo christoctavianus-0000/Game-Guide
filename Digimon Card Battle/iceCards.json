@@ -19,7 +19,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/034_Vikemon.jpg"
+    "localIcon": "assets/cards/034_Vikemon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "035",
@@ -41,7 +43,9 @@
     "support": "Change own Specialty to Ice. Recover own HP by +100.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/035_Omnimon_II.jpg"
+    "localIcon": "assets/cards/035_Omnimon_II.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "036",
@@ -61,7 +65,9 @@
     "support": "If own Specialty is Ice, opponent's Support Effect is voided.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/036_MetalSeadramon.jpg"
+    "localIcon": "assets/cards/036_MetalSeadramon.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "037",
@@ -81,7 +87,9 @@
     "support": "If own Cards in Hand 3 or more, opponent's Attack Power becomes 0.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/037_MetalGarurumon.jpg"
+    "localIcon": "assets/cards/037_MetalGarurumon.jpg",
+    "materialValue": 17,
+    "resultValue": 35
   },
   {
     "no": "038",
@@ -103,7 +111,9 @@
     "support": "Recover own HP by +200.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/038_MarineAngemon.jpg"
+    "localIcon": "assets/cards/038_MarineAngemon.jpg",
+    "materialValue": 17,
+    "resultValue": 34
   },
   {
     "no": "039",
@@ -125,7 +135,9 @@
     "support": "Add number of DP Cards in DP Slot x100 to own HP.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/039_WereGarurumon.jpg"
+    "localIcon": "assets/cards/039_WereGarurumon.jpg",
+    "materialValue": 16,
+    "resultValue": 33
   },
   {
     "no": "040",
@@ -147,7 +159,9 @@
     "support": "If own Specialty is Ice, opponent's Attack Power is halved.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/040_Zudomon.jpg"
+    "localIcon": "assets/cards/040_Zudomon.jpg",
+    "materialValue": 16,
+    "resultValue": 32
   },
   {
     "no": "041",
@@ -171,7 +185,9 @@
       "triangle"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/041_Panjyamon.jpg"
+    "localIcon": "assets/cards/041_Panjyamon.jpg",
+    "materialValue": 15,
+    "resultValue": 31
   },
   {
     "no": "042",
@@ -195,7 +211,9 @@
       "circle"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/042_MegaSeadramon.jpg"
+    "localIcon": "assets/cards/042_MegaSeadramon.jpg",
+    "materialValue": 15,
+    "resultValue": 30
   },
   {
     "no": "043",
@@ -215,7 +233,9 @@
     "support": "Opponent's Support Effect is voided.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/043_WaruSeadramon.jpg"
+    "localIcon": "assets/cards/043_WaruSeadramon.jpg",
+    "materialValue": 14,
+    "resultValue": 29
   },
   {
     "no": "044",
@@ -239,7 +259,9 @@
       "circle"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/044_Brachiomon.jpg"
+    "localIcon": "assets/cards/044_Brachiomon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "045",
@@ -263,7 +285,9 @@
       "x"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/045_BlueMeramon.jpg"
+    "localIcon": "assets/cards/045_BlueMeramon.jpg",
+    "materialValue": 13,
+    "resultValue": 27
   },
   {
     "no": "046",
@@ -287,7 +311,9 @@
       "circle"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/046_Garurumon.jpg"
+    "localIcon": "assets/cards/046_Garurumon.jpg",
+    "materialValue": 13,
+    "resultValue": 26
   },
   {
     "no": "047",
@@ -307,7 +333,9 @@
     "support": "If opponent's Specialty is Fire, own Attack Power is tripled.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/047_Ikkakumon.jpg"
+    "localIcon": "assets/cards/047_Ikkakumon.jpg",
+    "materialValue": 12,
+    "resultValue": 25
   },
   {
     "no": "048",
@@ -331,7 +359,9 @@
       "circle"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/048_Dolphmon.jpg"
+    "localIcon": "assets/cards/048_Dolphmon.jpg",
+    "materialValue": 12,
+    "resultValue": 24
   },
   {
     "no": "049",
@@ -353,7 +383,9 @@
     "support": "Own HP become 700.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/049_Whamon.jpg"
+    "localIcon": "assets/cards/049_Whamon.jpg",
+    "materialValue": 11,
+    "resultValue": 23
   },
   {
     "no": "050",
@@ -375,7 +407,9 @@
     "support": "Opponent's Attack Power is halved.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/050_Seadramon.jpg"
+    "localIcon": "assets/cards/050_Seadramon.jpg",
+    "materialValue": 11,
+    "resultValue": 22
   },
   {
     "no": "051",
@@ -397,7 +431,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/051_Gesomon.jpg"
+    "localIcon": "assets/cards/051_Gesomon.jpg",
+    "materialValue": 10,
+    "resultValue": 21
   },
   {
     "no": "052",
@@ -417,7 +453,9 @@
     "support": "Recover own HP by +200.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/052_Frigimon.jpg"
+    "localIcon": "assets/cards/052_Frigimon.jpg",
+    "materialValue": 10,
+    "resultValue": 20
   },
   {
     "no": "053",
@@ -439,7 +477,9 @@
     "support": "Change opponent's Specialty to Ice.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/053_Gekomon.jpg"
+    "localIcon": "assets/cards/053_Gekomon.jpg",
+    "materialValue": 9,
+    "resultValue": 19
   },
   {
     "no": "054",
@@ -463,7 +503,9 @@
       "circle"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/054_Coelamon.jpg"
+    "localIcon": "assets/cards/054_Coelamon.jpg",
+    "materialValue": 9,
+    "resultValue": 18
   },
   {
     "no": "055",
@@ -483,7 +525,9 @@
     "support": "Recover own HP by +200.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/055_Mojyamon.jpg"
+    "localIcon": "assets/cards/055_Mojyamon.jpg",
+    "materialValue": 8,
+    "resultValue": 17
   },
   {
     "no": "056",
@@ -508,7 +552,9 @@
       "x"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/056_Shellmon.jpg"
+    "localIcon": "assets/cards/056_Shellmon.jpg",
+    "materialValue": 8,
+    "resultValue": 16
   },
   {
     "no": "057",
@@ -528,7 +574,9 @@
     "support": "Change own Specialty to Ice.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/057_Sorcerimon.jpg"
+    "localIcon": "assets/cards/057_Sorcerimon.jpg",
+    "materialValue": 7,
+    "resultValue": 15
   },
   {
     "no": "058",
@@ -548,7 +596,9 @@
     "support": "If opponent's Specialty is fire, own Attack Power is tripled.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/058_IceDevimon.jpg"
+    "localIcon": "assets/cards/058_IceDevimon.jpg",
+    "materialValue": 7,
+    "resultValue": 14
   },
   {
     "no": "059",
@@ -570,7 +620,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/059_Hyogamon.jpg"
+    "localIcon": "assets/cards/059_Hyogamon.jpg",
+    "materialValue": 6,
+    "resultValue": 13
   },
   {
     "no": "060",
@@ -592,7 +644,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/060_Icemon.jpg"
+    "localIcon": "assets/cards/060_Icemon.jpg",
+    "materialValue": 6,
+    "resultValue": 12
   },
   {
     "no": "061",
@@ -616,7 +670,9 @@
       "triangle"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/061_Gomamon.jpg"
+    "localIcon": "assets/cards/061_Gomamon.jpg",
+    "materialValue": 5,
+    "resultValue": 11
   },
   {
     "no": "062",
@@ -638,7 +694,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/062_Gabumon.jpg"
+    "localIcon": "assets/cards/062_Gabumon.jpg",
+    "materialValue": 5,
+    "resultValue": 10
   },
   {
     "no": "063",
@@ -660,7 +718,9 @@
     "support": "If own HP are less then 200, reduce opponent's Attack Power to 0.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/063_Betamon.jpg"
+    "localIcon": "assets/cards/063_Betamon.jpg",
+    "materialValue": 4,
+    "resultValue": 9
   },
   {
     "no": "064",
@@ -682,7 +742,9 @@
     "support": "If opponent's Specialty is Fire, reduce opponent's Attack Power to 0.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/064_Penguinmon.jpg"
+    "localIcon": "assets/cards/064_Penguinmon.jpg",
+    "materialValue": 4,
+    "resultValue": 8
   },
   {
     "no": "065",
@@ -702,7 +764,9 @@
     "support": "If opponent's Specialty is Fire, own Attack Power is doubled.",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/065_Gizamon.jpg"
+    "localIcon": "assets/cards/065_Gizamon.jpg",
+    "materialValue": 3,
+    "resultValue": 7
   },
   {
     "no": "066",
@@ -726,7 +790,9 @@
       "circle"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/066_Otamamon.jpg"
+    "localIcon": "assets/cards/066_Otamamon.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "067",
@@ -750,7 +816,9 @@
       "x"
     ],
     "category": "Ice",
-    "localIcon": "assets/cards/067_SnowAgumon.jpg"
+    "localIcon": "assets/cards/067_SnowAgumon.jpg",
+    "materialValue": 2,
+    "resultValue": 5
   },
   {
     "no": "068",
@@ -770,6 +838,8 @@
     "support": "None",
     "supportIcons": [],
     "category": "Ice",
-    "localIcon": "assets/cards/068_SnowGoburimon.jpg"
+    "localIcon": "assets/cards/068_SnowGoburimon.jpg",
+    "materialValue": 2,
+    "resultValue": 4
   }
 ]

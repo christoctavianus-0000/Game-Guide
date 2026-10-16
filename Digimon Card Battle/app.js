@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'level': return (card.level || '').toLowerCase();
       case 'specialty': return (card.specialty || '').toLowerCase();
       case 'support': return (card.support || '').toLowerCase();
+      case 'material': return parseNum(card.materialValue);
+      case 'result': return parseNum(card.resultValue);
       default: return '';
     }
   }
@@ -138,14 +140,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const matchName = card.name.toLowerCase().includes(query);
         const matchNo = card.no.toLowerCase().includes(query);
         const matchSupport = (card.support || '').toLowerCase().includes(query);
-        if (!matchName && !matchNo && !matchSupport) return false;
-      }
+              const matchMat = String(card.materialValue ?? '').includes(query);
+              const matchRes = String(card.resultValue ?? '').includes(query);
+              if (!matchName && !matchNo && !matchSupport && !matchMat && !matchRes) return false;
+            }
       return true;
     }));
     updateSortIndicators();
 
     if (filtered.length === 0) {
-      tableBody.innerHTML = `<tr><td colspan="12" style="text-align: center; padding: 3rem; color: var(--text-muted);">No cards found matching your criteria.</td></tr>`;
+          tableBody.innerHTML = `<tr><td colspan="14" style="text-align: center; padding: 3rem; color: var(--text-muted);">No cards found matching your criteria.</td></tr>`;
       return;
     }
 
@@ -170,7 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <td>${triangleCell}</td>
           <td>${xCell}</td>
           <td class="support-text">${formatEffectText(card.support)}</td>
-        </tr>
+              <td style="text-align: center;">${card.materialValue ?? '?'}</td>
+              <td style="text-align: center;">${card.resultValue ?? '?'}</td>
+            </tr>
       `;
     }).join('');
   }

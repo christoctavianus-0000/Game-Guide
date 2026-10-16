@@ -17,7 +17,9 @@
     "support": "Discard 1 of opponent's Cards in DP Slot. Draw 1 Card.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/139_Puppetmon.jpg"
+    "localIcon": "assets/cards/139_Puppetmon.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "140",
@@ -37,7 +39,9 @@
     "support": "If opponent's Specialty is Rare, lower opponent's Attack Power to 0.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/140_SuperStarmon.jpg"
+    "localIcon": "assets/cards/140_SuperStarmon.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "141",
@@ -61,7 +65,9 @@
       "circle"
     ],
     "category": "Rare",
-    "localIcon": "assets/cards/141_MetalEtemon.jpg"
+    "localIcon": "assets/cards/141_MetalEtemon.jpg",
+    "materialValue": 17,
+    "resultValue": 0
   },
   {
     "no": "142",
@@ -83,7 +89,9 @@
       "x"
     ],
     "category": "Rare",
-    "localIcon": "assets/cards/142_Shakkoumon.jpg"
+    "localIcon": "assets/cards/142_Shakkoumon.jpg",
+    "materialValue": 17,
+    "resultValue": 33
   },
   {
     "no": "143",
@@ -105,7 +113,9 @@
     "support": "If opponent's Specialty is Darkness, lower opponent's Attack Power to 0.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/143_Jijimon.jpg"
+    "localIcon": "assets/cards/143_Jijimon.jpg",
+    "materialValue": 16,
+    "resultValue": 32
   },
   {
     "no": "144",
@@ -127,7 +137,9 @@
     "support": "Swap own Specialty with opponent's Specialty.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/144_Digitamamon.jpg"
+    "localIcon": "assets/cards/144_Digitamamon.jpg",
+    "materialValue": 16,
+    "resultValue": 31
   },
   {
     "no": "145",
@@ -147,7 +159,9 @@
     "support": "Opponent's Specialty becomes the same as own Specialty.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/145_Vademon.jpg"
+    "localIcon": "assets/cards/145_Vademon.jpg",
+    "materialValue": 15,
+    "resultValue": 30
   },
   {
     "no": "146",
@@ -169,7 +183,9 @@
       "x"
     ],
     "category": "Rare",
-    "localIcon": "assets/cards/146_Giromon.jpg"
+    "localIcon": "assets/cards/146_Giromon.jpg",
+    "materialValue": 15,
+    "resultValue": 29
   },
   {
     "no": "147",
@@ -189,7 +205,9 @@
     "support": "Recover own HP by +200. Boost own Attack Power by +100.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/147_Monzaemon.jpg"
+    "localIcon": "assets/cards/147_Monzaemon.jpg",
+    "materialValue": 14,
+    "resultValue": 28
   },
   {
     "no": "148",
@@ -209,7 +227,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/148_MetalMamemon.jpg"
+    "localIcon": "assets/cards/148_MetalMamemon.jpg",
+    "materialValue": 14,
+    "resultValue": 27
   },
   {
     "no": "149",
@@ -231,7 +251,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/149_Mamemon.jpg"
+    "localIcon": "assets/cards/149_Mamemon.jpg",
+    "materialValue": 13,
+    "resultValue": 26
   },
   {
     "no": "150",
@@ -253,7 +275,9 @@
       "x"
     ],
     "category": "Rare",
-    "localIcon": "assets/cards/150_Etemon.jpg"
+    "localIcon": "assets/cards/150_Etemon.jpg",
+    "materialValue": 13,
+    "resultValue": 25
   },
   {
     "no": "151",
@@ -275,7 +299,9 @@
     "support": "If opponent has more than 2 Cards in DP Slot, his Attack Power is 0.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/151_Ankylomon.jpg"
+    "localIcon": "assets/cards/151_Ankylomon.jpg",
+    "materialValue": 12,
+    "resultValue": 24
   },
   {
     "no": "152",
@@ -295,7 +321,9 @@
     "support": "If opponent's Specialty is Darkness, opponent's Support Effect is voided.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/152_Starmon.jpg"
+    "localIcon": "assets/cards/152_Starmon.jpg",
+    "materialValue": 12,
+    "resultValue": 23
   },
   {
     "no": "153",
@@ -319,7 +347,9 @@
       "x"
     ],
     "category": "Rare",
-    "localIcon": "assets/cards/153_Thundermon.jpg"
+    "localIcon": "assets/cards/153_Thundermon.jpg",
+    "materialValue": 11,
+    "resultValue": 22
   },
   {
     "no": "154",
@@ -341,7 +371,9 @@
     "support": "Move the top Card from Offline Pile to Online Deck.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/154_PlatinumSukamon.jpg"
+    "localIcon": "assets/cards/154_PlatinumSukamon.jpg",
+    "materialValue": 11,
+    "resultValue": 21
   },
   {
     "no": "155",
@@ -363,7 +395,9 @@
     "support": "Discard opponent's top DP Card shown in DP Slot.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/155_ShellNumemon.jpg"
+    "localIcon": "assets/cards/155_ShellNumemon.jpg",
+    "materialValue": 10,
+    "resultValue": 20
   },
   {
     "no": "156",
@@ -385,7 +419,9 @@
     "support": "Return all Cards in own Hand to Online Deck and Shuffle.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/156_Nanimon.jpg"
+    "localIcon": "assets/cards/156_Nanimon.jpg",
+    "materialValue": 10,
+    "resultValue": 19
   },
   {
     "no": "157",
@@ -407,7 +443,9 @@
     "support": "Discard opponent's 2 top DP Cards in his DP Slot.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/157_Numemon.jpg"
+    "localIcon": "assets/cards/157_Numemon.jpg",
+    "materialValue": 9,
+    "resultValue": 18
   },
   {
     "no": "158",
@@ -427,7 +465,9 @@
     "support": "Discard 1 Card from opponent's Hand at random.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/158_Sukamon.jpg"
+    "localIcon": "assets/cards/158_Sukamon.jpg",
+    "materialValue": 9,
+    "resultValue": 17
   },
   {
     "no": "159",
@@ -447,7 +487,9 @@
     "support": "Discard 3 Cards from opponent's Online Deck.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/159_Rockmon.jpg"
+    "localIcon": "assets/cards/159_Rockmon.jpg",
+    "materialValue": 8,
+    "resultValue": 16
   },
   {
     "no": "160",
@@ -467,7 +509,9 @@
     "support": "Discard all Cards in DP Slot. Foe discards same number of DP Cards.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/160_Geremon.jpg"
+    "localIcon": "assets/cards/160_Geremon.jpg",
+    "materialValue": 8,
+    "resultValue": 15
   },
   {
     "no": "161",
@@ -489,7 +533,9 @@
       "triangle"
     ],
     "category": "Rare",
-    "localIcon": "assets/cards/161_NiseDrimogemon.jpg"
+    "localIcon": "assets/cards/161_NiseDrimogemon.jpg",
+    "materialValue": 7,
+    "resultValue": 14
   },
   {
     "no": "162",
@@ -511,7 +557,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/162_ShimaUnimon.jpg"
+    "localIcon": "assets/cards/162_ShimaUnimon.jpg",
+    "materialValue": 7,
+    "resultValue": 13
   },
   {
     "no": "163",
@@ -531,7 +579,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/163_MudFrigimon.jpg"
+    "localIcon": "assets/cards/163_MudFrigimon.jpg",
+    "materialValue": 6,
+    "resultValue": 12
   },
   {
     "no": "164",
@@ -553,7 +603,9 @@
       "circle"
     ],
     "category": "Rare",
-    "localIcon": "assets/cards/164_SandYanmamon.jpg"
+    "localIcon": "assets/cards/164_SandYanmamon.jpg",
+    "materialValue": 6,
+    "resultValue": 11
   },
   {
     "no": "165",
@@ -573,7 +625,9 @@
     "support": "If 1 or less Cards left in own Hand, opponent's Attack Power goes to 0.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/165_L-ToyAgumon.jpg"
+    "localIcon": "assets/cards/165_L-ToyAgumon.jpg",
+    "materialValue": 5,
+    "resultValue": 10
   },
   {
     "no": "166",
@@ -593,7 +647,9 @@
     "support": "Discard all Cards in DP Slot. Recover HP, number of discards x100.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/166_Hagurumon.jpg"
+    "localIcon": "assets/cards/166_Hagurumon.jpg",
+    "materialValue": 4,
+    "resultValue": 9
   },
   {
     "no": "167",
@@ -615,7 +671,9 @@
     "support": "Discard 1 Card at random from own Hand. HP of both Players are 200.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/167_ToyAgumon.jpg"
+    "localIcon": "assets/cards/167_ToyAgumon.jpg",
+    "materialValue": 4,
+    "resultValue": 8
   },
   {
     "no": "168",
@@ -635,7 +693,9 @@
     "support": "Opponent's Support Effect is voided.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/168_ClearAgumon.jpg"
+    "localIcon": "assets/cards/168_ClearAgumon.jpg",
+    "materialValue": 3,
+    "resultValue": 7
   },
   {
     "no": "169",
@@ -655,7 +715,9 @@
     "support": "None",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/169_Vi-Elecmon.jpg"
+    "localIcon": "assets/cards/169_Vi-Elecmon.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "170",
@@ -677,7 +739,9 @@
     "support": "Own HP become same as opponent's.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/170_Psychemon.jpg"
+    "localIcon": "assets/cards/170_Psychemon.jpg",
+    "materialValue": 2,
+    "resultValue": 5
   },
   {
     "no": "171",
@@ -699,6 +763,8 @@
     "support": "Opponent's HP become same as own. Own Attack Power becomes 0.",
     "supportIcons": [],
     "category": "Rare",
-    "localIcon": "assets/cards/171_ModokiBetamon.jpg"
+    "localIcon": "assets/cards/171_ModokiBetamon.jpg",
+    "materialValue": 2,
+    "resultValue": 4
   }
 ]

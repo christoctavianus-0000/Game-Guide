@@ -18,7 +18,9 @@
     "effect": "Own HP are halved. Counterattack. Attack second.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/191_Golden_Banana.jpg"
+    "localIcon": "assets/cards/191_Golden_Banana.jpg",
+    "materialValue": 18,
+    "resultValue": 35
   },
   {
     "no": "192",
@@ -39,7 +41,9 @@
     "effect": "Discard 1 Card from own Hand. Boost both players' Attack Power +600.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/192_Devil_s_Chip.jpg"
+    "localIcon": "assets/cards/192_Devil_s_Chip.jpg",
+    "materialValue": 18,
+    "resultValue": 34
   },
   {
     "no": "193",
@@ -60,7 +64,9 @@
     "effect": "If own Level is below opponent's, opponent's Attack Power becomes 0.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/193_Whistle.jpg"
+    "localIcon": "assets/cards/193_Whistle.jpg",
+    "materialValue": 18,
+    "resultValue": 33
   },
   {
     "no": "194",
@@ -81,7 +87,9 @@
     "effect": "Discard 7 Cards from Online Deck. Own Attack Power is same as own HP.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/194_Giga_Hand.jpg"
+    "localIcon": "assets/cards/194_Giga_Hand.jpg",
+    "materialValue": 17,
+    "resultValue": 32
   },
   {
     "no": "195",
@@ -102,7 +110,9 @@
     "effect": "Own HP are halved. Opponent's Attack Power becomes 0.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/195_Metallic_Banana.jpg"
+    "localIcon": "assets/cards/195_Metallic_Banana.jpg",
+    "materialValue": 17,
+    "resultValue": 30
   },
   {
     "no": "196",
@@ -123,7 +133,9 @@
     "effect": "If opponent's HP are more than 1000, opponent's HP are halved.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/196_Shining_Mane.jpg"
+    "localIcon": "assets/cards/196_Shining_Mane.jpg",
+    "materialValue": 17,
+    "resultValue": 30
   },
   {
     "no": "197",
@@ -144,7 +156,9 @@
     "effect": "Discard 7 Cards from own Online Deck. Recover own HP by +1000.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/197_Mega_Rec__Floppy.jpg"
+    "localIcon": "assets/cards/197_Mega_Rec__Floppy.jpg",
+    "materialValue": 16,
+    "resultValue": 29
   },
   {
     "no": "198",
@@ -165,7 +179,9 @@
     "effect": "Discard 7 Cards from own Online Deck. Boost own Attack Power +500.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/198_Mega_Attack_Chip.jpg"
+    "localIcon": "assets/cards/198_Mega_Attack_Chip.jpg",
+    "materialValue": 16,
+    "resultValue": 28
   },
   {
     "no": "199",
@@ -186,7 +202,9 @@
     "effect": "If opponent's HP is less than own, boost own Attack Power +400.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/199_Dark_Lord_s_Cape.jpg"
+    "localIcon": "assets/cards/199_Dark_Lord_s_Cape.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "200",
@@ -207,7 +225,9 @@
     "effect": "None",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/200_Fake_Sevens.jpg"
+    "localIcon": "assets/cards/200_Fake_Sevens.jpg",
+    "materialValue": 15,
+    "resultValue": 0
   },
   {
     "no": "201",
@@ -228,7 +248,9 @@
     "effect": "If both players use same Attack, discard all Cards in foe's Hand.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/201_Net_Worm.jpg"
+    "localIcon": "assets/cards/201_Net_Worm.jpg",
+    "materialValue": 15,
+    "resultValue": 25
   },
   {
     "no": "202",
@@ -249,7 +271,9 @@
     "effect": "Discard all Cards in own Hand. Own Attack Power is doubled.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/202_Missile_Pod.jpg"
+    "localIcon": "assets/cards/202_Missile_Pod.jpg",
+    "materialValue": 15,
+    "resultValue": 24
   },
   {
     "no": "203",
@@ -270,7 +294,9 @@
     "effect": "Both players' Attack Power becomes 0.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/203_Shogun_s_Order.jpg"
+    "localIcon": "assets/cards/203_Shogun_s_Order.jpg",
+    "materialValue": 14,
+    "resultValue": 23
   },
   {
     "no": "204",
@@ -291,7 +317,9 @@
     "effect": "Attack first. Boost own Attack Power +100.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/204_Beetle_Diamond.jpg"
+    "localIcon": "assets/cards/204_Beetle_Diamond.jpg",
+    "materialValue": 14,
+    "resultValue": 22
   },
   {
     "no": "205",
@@ -312,7 +340,9 @@
     "effect": "Own attack becomes \"Eat-up HP.\"",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/205_Dark_Bone.jpg"
+    "localIcon": "assets/cards/205_Dark_Bone.jpg",
+    "materialValue": 14,
+    "resultValue": 21
   },
   {
     "no": "206",
@@ -333,7 +363,9 @@
     "effect": "If own Specialty is Fire, boost own Attack Power +100, recover HP +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/206_Red_Digivice.jpg"
+    "localIcon": "assets/cards/206_Red_Digivice.jpg",
+    "materialValue": 13,
+    "resultValue": 20
   },
   {
     "no": "207",
@@ -354,7 +386,9 @@
     "effect": "If own Specialty is Ice, boost own Attack Power +100, recover HP +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/207_Blue_Digivice.jpg"
+    "localIcon": "assets/cards/207_Blue_Digivice.jpg",
+    "materialValue": 13,
+    "resultValue": 20
   },
   {
     "no": "208",
@@ -375,7 +409,9 @@
     "effect": "If own Specialty is Nature, boost own Attack Power +100, recover HP +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/208_Green_Digivice.jpg"
+    "localIcon": "assets/cards/208_Green_Digivice.jpg",
+    "materialValue": 13,
+    "resultValue": 20
   },
   {
     "no": "209",
@@ -396,7 +432,9 @@
     "effect": "If own Specialty is Darkness, boost own Attack Power +100, recover HP +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/209_Black_Digivice.jpg"
+    "localIcon": "assets/cards/209_Black_Digivice.jpg",
+    "materialValue": 13,
+    "resultValue": 20
   },
   {
     "no": "210",
@@ -417,7 +455,9 @@
     "effect": "If own Specialty is Rare, boost own Attack Power +100, recover HP +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/210_Yellow_Digivice.jpg"
+    "localIcon": "assets/cards/210_Yellow_Digivice.jpg",
+    "materialValue": 13,
+    "resultValue": 20
   },
   {
     "no": "211",
@@ -438,7 +478,9 @@
     "effect": "If Specialties are same, boost own Attack Power +200, recover HP +400.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/211_Pink_Digivice.jpg"
+    "localIcon": "assets/cards/211_Pink_Digivice.jpg",
+    "materialValue": 13,
+    "resultValue": 20
   },
   {
     "no": "212",
@@ -459,7 +501,9 @@
     "effect": "Discard 7 Cards from both players' Online Decks.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/212_Another_Dimension.jpg"
+    "localIcon": "assets/cards/212_Another_Dimension.jpg",
+    "materialValue": 12,
+    "resultValue": 19
   },
   {
     "no": "213",
@@ -480,7 +524,9 @@
     "effect": "If both Attacks are same, discard 7 Cards from foe's Online Deck.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/213_UnInstall.jpg"
+    "localIcon": "assets/cards/213_UnInstall.jpg",
+    "materialValue": 12,
+    "resultValue": 18
   },
   {
     "no": "214",
@@ -501,7 +547,9 @@
     "effect": "Discard 1 Card in own DP Slot. Discard all foe's Cards in DP Slot.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/214_Evil_Program.jpg"
+    "localIcon": "assets/cards/214_Evil_Program.jpg",
+    "materialValue": 12,
+    "resultValue": 17
   },
   {
     "no": "215",
@@ -525,7 +573,9 @@
       "circle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/215_Coliseum.jpg"
+    "localIcon": "assets/cards/215_Coliseum.jpg",
+    "materialValue": 12,
+    "resultValue": 16
   },
   {
     "no": "216",
@@ -546,7 +596,9 @@
     "effect": "Changes opponent's Specialty to Fire. Draw 1 Card from own Online Deck.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/216_Fire_Altar.jpg"
+    "localIcon": "assets/cards/216_Fire_Altar.jpg",
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "217",
@@ -567,7 +619,9 @@
     "effect": "Changes opponent's Specialty to Ice. Draw 1 Card from own Online Deck.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/217_Ice_Altar.jpg"
+    "localIcon": "assets/cards/217_Ice_Altar.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "218",
@@ -588,7 +642,9 @@
     "effect": "Changes opponent's Specialty to Nature. Draw 1 Card from own Online Deck.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/218_Nature_Altar.jpg"
+    "localIcon": "assets/cards/218_Nature_Altar.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "219",
@@ -609,7 +665,9 @@
     "effect": "Changes opponent's Specialty to Darkness. Draw 1 Card from own Online Deck.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/219_Darkness_Altar.jpg"
+    "localIcon": "assets/cards/219_Darkness_Altar.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "220",
@@ -630,7 +688,9 @@
     "effect": "Changes opponent's Specialty to Rare. Draw 1 Card from own Online Deck.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/220_Rare_Altar.jpg"
+    "localIcon": "assets/cards/220_Rare_Altar.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "221",
@@ -651,11 +711,13 @@
     "effect": "If own HP are less than foe's HP, recover own HP by +700.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/221_Sup__Rec__Floppy.jpg"
+    "localIcon": "assets/cards/221_Sup__Rec__Floppy.jpg",
+    "materialValue": 10,
+    "resultValue": 14
   },
   {
     "no": "222",
-    "name": "Mega Def. Disk ○",
+    "name": "Mega Def. Disk \u00e2\u2014\u2039",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -674,11 +736,13 @@
       "circle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/222_Mega_Def__Disk__.jpg"
+    "localIcon": "assets/cards/222_Mega_Def__Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "223",
-    "name": "Mega Def. Disk △",
+    "name": "Mega Def. Disk \u00e2\u2013\u00b3",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -697,11 +761,13 @@
       "triangle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/223_Mega_Def__Disk__.jpg"
+    "localIcon": "assets/cards/223_Mega_Def__Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "224",
-    "name": "Mega Def. Disk ×",
+    "name": "Mega Def. Disk \u00c3\u2014",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -720,7 +786,9 @@
       "x"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/224_Mega_Def__Disk__.jpg"
+    "localIcon": "assets/cards/224_Mega_Def__Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "225",
@@ -741,7 +809,9 @@
     "effect": "Opponent discards 2 Cards from his Online Deck and 1 Card from Hand.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/225_Heap_of_Junk.jpg"
+    "localIcon": "assets/cards/225_Heap_of_Junk.jpg",
+    "materialValue": 10,
+    "resultValue": 12
   },
   {
     "no": "226",
@@ -762,7 +832,9 @@
     "effect": "Own Attack Power becomes 0. Opponent's HP are halved.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/226_Beam_Gun.jpg"
+    "localIcon": "assets/cards/226_Beam_Gun.jpg",
+    "materialValue": 9,
+    "resultValue": 12
   },
   {
     "no": "227",
@@ -783,7 +855,9 @@
     "effect": "Make own HP 10. Own Attack Power is tripled.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/227_Chain_Saw.jpg"
+    "localIcon": "assets/cards/227_Chain_Saw.jpg",
+    "materialValue": 9,
+    "resultValue": 12
   },
   {
     "no": "228",
@@ -804,7 +878,9 @@
     "effect": "Discard own Hand. Multiply own Attack Power by number of discarded Cards.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/228_Metal_Parts.jpg"
+    "localIcon": "assets/cards/228_Metal_Parts.jpg",
+    "materialValue": 9,
+    "resultValue": 12
   },
   {
     "no": "229",
@@ -825,7 +901,9 @@
     "effect": "Discard own DP Slot Cards. Multiply own Attack Power by number of discards.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/229_Metal_Armor.jpg"
+    "localIcon": "assets/cards/229_Metal_Armor.jpg",
+    "materialValue": 9,
+    "resultValue": 12
   },
   {
     "no": "230",
@@ -846,7 +924,9 @@
     "effect": "Own Attack Power matches own HP, then own HP are halved.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/230_Mega_Hand.jpg"
+    "localIcon": "assets/cards/230_Mega_Hand.jpg",
+    "materialValue": 9,
+    "resultValue": 12
   },
   {
     "no": "231",
@@ -867,7 +947,9 @@
     "effect": "If own Level is R, boost own Attack Power +400.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/231_Level_Balancer.jpg"
+    "localIcon": "assets/cards/231_Level_Balancer.jpg",
+    "materialValue": 8,
+    "resultValue": 11
   },
   {
     "no": "232",
@@ -888,7 +970,9 @@
     "effect": "If own Level is C, boost own Attack Power +400.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/232_Level_Manager.jpg"
+    "localIcon": "assets/cards/232_Level_Manager.jpg",
+    "materialValue": 8,
+    "resultValue": 11
   },
   {
     "no": "233",
@@ -909,7 +993,9 @@
     "effect": "If own Level is U, boost own Attack Power +400.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/233_Level_Booster.jpg"
+    "localIcon": "assets/cards/233_Level_Booster.jpg",
+    "materialValue": 8,
+    "resultValue": 11
   },
   {
     "no": "234",
@@ -930,7 +1016,9 @@
     "effect": "If opponent is Level A, his Atk Pwr becomes 0 and own Atk Pwr is doubled.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/234_Armor_Clash.jpg"
+    "localIcon": "assets/cards/234_Armor_Clash.jpg",
+    "materialValue": 8,
+    "resultValue": 11
   },
   {
     "no": "235",
@@ -951,7 +1039,9 @@
     "effect": "If opponent is Level U, his Atk Pwr becomes 0 and own Atk Pwr is doubled.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/235_Silver_Ball.jpg"
+    "localIcon": "assets/cards/235_Silver_Ball.jpg",
+    "materialValue": 8,
+    "resultValue": 11
   },
   {
     "no": "236",
@@ -972,7 +1062,9 @@
     "effect": "If foe's Specialty is Fire or Ice, his Attack Power goes to 0.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/236_Coral_Charm.jpg"
+    "localIcon": "assets/cards/236_Coral_Charm.jpg",
+    "materialValue": 7,
+    "resultValue": 10
   },
   {
     "no": "237",
@@ -993,7 +1085,9 @@
     "effect": "If foe's Specialty is Nature or Darkness, his Attack Power goes to 0.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/237_Patch_of_Love.jpg"
+    "localIcon": "assets/cards/237_Patch_of_Love.jpg",
+    "materialValue": 7,
+    "resultValue": 10
   },
   {
     "no": "238",
@@ -1014,7 +1108,9 @@
     "effect": "Changes both players' Specialties to Rare.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/238_Mystery_Egg.jpg"
+    "localIcon": "assets/cards/238_Mystery_Egg.jpg",
+    "materialValue": 7,
+    "resultValue": 10
   },
   {
     "no": "239",
@@ -1035,7 +1131,9 @@
     "effect": "KO'd Digimon revives with 1000. Battle is still lost.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/239_Miracle_Ruby.jpg"
+    "localIcon": "assets/cards/239_Miracle_Ruby.jpg",
+    "materialValue": 7,
+    "resultValue": 10
   },
   {
     "no": "240",
@@ -1056,7 +1154,9 @@
     "effect": "If both Attacks are same, own Attack Power is tripled.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/240_Cyber_Parts.jpg"
+    "localIcon": "assets/cards/240_Cyber_Parts.jpg",
+    "materialValue": 6,
+    "resultValue": 10
   },
   {
     "no": "241",
@@ -1077,7 +1177,9 @@
     "effect": "If both players use same attack, opponent's Attack Power becomes 0.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/241_Liquid_Crystal.jpg"
+    "localIcon": "assets/cards/241_Liquid_Crystal.jpg",
+    "materialValue": 6,
+    "resultValue": 10
   },
   {
     "no": "242",
@@ -1098,7 +1200,9 @@
     "effect": "If both players use same Attack, recover own HP +700.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/242_Deluxe_Mushroom.jpg"
+    "localIcon": "assets/cards/242_Deluxe_Mushroom.jpg",
+    "materialValue": 6,
+    "resultValue": 9
   },
   {
     "no": "243",
@@ -1119,7 +1223,9 @@
     "effect": "If both Attacks are different, recover own HP by +500.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/243_Lucky_Mushroom.jpg"
+    "localIcon": "assets/cards/243_Lucky_Mushroom.jpg",
+    "materialValue": 6,
+    "resultValue": 9
   },
   {
     "no": "244",
@@ -1140,7 +1246,9 @@
     "effect": "Recover own HP by +500. Recover foe's HP by +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/244_Premium_Steak.jpg"
+    "localIcon": "assets/cards/244_Premium_Steak.jpg",
+    "materialValue": 6,
+    "resultValue": 9
   },
   {
     "no": "245",
@@ -1161,7 +1269,9 @@
     "effect": "If both attacks are different, own Attack Power is doubled.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/245_Short_Lance.jpg"
+    "localIcon": "assets/cards/245_Short_Lance.jpg",
+    "materialValue": 6,
+    "resultValue": 9
   },
   {
     "no": "246",
@@ -1182,7 +1292,9 @@
     "effect": "Own Attack Power is halved. Recover own HP by +500.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/246_Med__Rec__Floppy.jpg"
+    "localIcon": "assets/cards/246_Med__Rec__Floppy.jpg",
+    "materialValue": 5,
+    "resultValue": 8
   },
   {
     "no": "247",
@@ -1203,7 +1315,9 @@
     "effect": "Move top 3 Cards from Offline Pile to Online Deck and shuffle.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/247_Digimon_Analyzer.jpg"
+    "localIcon": "assets/cards/247_Digimon_Analyzer.jpg",
+    "materialValue": 5,
+    "resultValue": 8
   },
   {
     "no": "248",
@@ -1224,7 +1338,9 @@
     "effect": "Draw until there are 4 Cards in own Hand. Recover own HP by +100.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/248_Training_Manual.jpg"
+    "localIcon": "assets/cards/248_Training_Manual.jpg",
+    "materialValue": 5,
+    "resultValue": 8
   },
   {
     "no": "249",
@@ -1247,7 +1363,9 @@
       "circle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/249_Circle_Hitter.jpg"
+    "localIcon": "assets/cards/249_Circle_Hitter.jpg",
+    "materialValue": 5,
+    "resultValue": 8
   },
   {
     "no": "250",
@@ -1270,7 +1388,9 @@
       "triangle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/250_Triangle_Hitter.jpg"
+    "localIcon": "assets/cards/250_Triangle_Hitter.jpg",
+    "materialValue": 5,
+    "resultValue": 8
   },
   {
     "no": "251",
@@ -1293,7 +1413,9 @@
       "x"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/251_Cross_Hitter.jpg"
+    "localIcon": "assets/cards/251_Cross_Hitter.jpg",
+    "materialValue": 5,
+    "resultValue": 8
   },
   {
     "no": "252",
@@ -1314,7 +1436,9 @@
     "effect": "Opponent discards 2 Cards at random from his Hand.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/252_Suka_s_Curse.jpg"
+    "localIcon": "assets/cards/252_Suka_s_Curse.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "253",
@@ -1335,7 +1459,9 @@
     "effect": "Opponent's Support and Option Effects are voided.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/253_Cherrymon_s_Mist.jpg"
+    "localIcon": "assets/cards/253_Cherrymon_s_Mist.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "254",
@@ -1356,7 +1482,9 @@
     "effect": "If own Level is lower, switch HP with opponent.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/254_Hacking.jpg"
+    "localIcon": "assets/cards/254_Hacking.jpg",
+    "materialValue": 13,
+    "resultValue": 20
   },
   {
     "no": "255",
@@ -1377,7 +1505,9 @@
     "effect": "Opponent discards 4 top Cards from Online Deck.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/255_Digimon_Grave.jpg"
+    "localIcon": "assets/cards/255_Digimon_Grave.jpg",
+    "materialValue": 4,
+    "resultValue": 7
   },
   {
     "no": "256",
@@ -1398,7 +1528,9 @@
     "effect": "Own Attack Power, HP, and Specialty become same as the opponent's.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/256_Data_Copy.jpg"
+    "localIcon": "assets/cards/256_Data_Copy.jpg",
+    "materialValue": 4,
+    "resultValue": 7
   },
   {
     "no": "257",
@@ -1419,7 +1551,9 @@
     "effect": "Pick Partner Card from own Online Deck at random and put in own Hand.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/257_Partner_Finder.jpg"
+    "localIcon": "assets/cards/257_Partner_Finder.jpg",
+    "materialValue": 4,
+    "resultValue": 7
   },
   {
     "no": "258",
@@ -1440,7 +1574,9 @@
     "effect": "Change own Specialty to Fire. Boost own Attack Power +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/258_Fire_Spot.jpg"
+    "localIcon": "assets/cards/258_Fire_Spot.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "259",
@@ -1461,7 +1597,9 @@
     "effect": "Change own Specialty to Ice. Recover own HP by +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/259_Ice_Crystal.jpg"
+    "localIcon": "assets/cards/259_Ice_Crystal.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "260",
@@ -1482,7 +1620,9 @@
     "effect": "Change own Specialty to Nature. Attack first.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/260_Earth_Charm.jpg"
+    "localIcon": "assets/cards/260_Earth_Charm.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "261",
@@ -1503,7 +1643,9 @@
     "effect": "Change own Specialty to Darkness. Both players' HP are halved.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/261_Black_Gear.jpg"
+    "localIcon": "assets/cards/261_Black_Gear.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "262",
@@ -1524,7 +1666,9 @@
     "effect": "Change own Specialty to Rare. Opponent discards 1 Card at random.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/262_Stuffed_Animal.jpg"
+    "localIcon": "assets/cards/262_Stuffed_Animal.jpg",
+    "materialValue": 3,
+    "resultValue": 6
   },
   {
     "no": "263",
@@ -1552,7 +1696,9 @@
       "circle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/263_Disrupt_Ray.jpg"
+    "localIcon": "assets/cards/263_Disrupt_Ray.jpg",
+    "materialValue": 2,
+    "resultValue": 5
   },
   {
     "no": "264",
@@ -1573,7 +1719,9 @@
     "effect": "Boost own Attack Power +300.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/264_Attack_Chip.jpg"
+    "localIcon": "assets/cards/264_Attack_Chip.jpg",
+    "materialValue": 2,
+    "resultValue": 4
   },
   {
     "no": "265",
@@ -1594,7 +1742,9 @@
     "effect": "Randomly discard 1 Card from own Hand. Opponent's Attack Power is 0.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/265_High_Speed_Disk.jpg"
+    "localIcon": "assets/cards/265_High_Speed_Disk.jpg",
+    "materialValue": 8,
+    "resultValue": 14
   },
   {
     "no": "266",
@@ -1615,11 +1765,13 @@
     "effect": "Recover own HP by +300.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/266_Recovery_Floppy.jpg"
+    "localIcon": "assets/cards/266_Recovery_Floppy.jpg",
+    "materialValue": 2,
+    "resultValue": 4
   },
   {
     "no": "267",
-    "name": "Attack Disk ○",
+    "name": "Attack Disk \u00e2\u2014\u2039",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -1638,11 +1790,13 @@
       "circle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/267_Attack_Disk__.jpg"
+    "localIcon": "assets/cards/267_Attack_Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "268",
-    "name": "Attack Disk △",
+    "name": "Attack Disk \u00e2\u2013\u00b3",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -1661,11 +1815,13 @@
       "triangle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/268_Attack_Disk__.jpg"
+    "localIcon": "assets/cards/268_Attack_Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "269",
-    "name": "Attack Disk ×",
+    "name": "Attack Disk \u00c3\u2014",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -1684,11 +1840,13 @@
       "x"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/269_Attack_Disk__.jpg"
+    "localIcon": "assets/cards/269_Attack_Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "270",
-    "name": "Defense Disk ○",
+    "name": "Defense Disk \u00e2\u2014\u2039",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -1707,11 +1865,13 @@
       "circle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/270_Defense_Disk__.jpg"
+    "localIcon": "assets/cards/270_Defense_Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "271",
-    "name": "Defense Disk △",
+    "name": "Defense Disk \u00e2\u2013\u00b3",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -1730,11 +1890,13 @@
       "triangle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/271_Defense_Disk__.jpg"
+    "localIcon": "assets/cards/271_Defense_Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "272",
-    "name": "Defense Disk ×",
+    "name": "Defense Disk \u00c3\u2014",
     "cardIcon": "",
     "level": "Option",
     "specialty": "Option",
@@ -1753,7 +1915,9 @@
       "x"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/272_Defense_Disk__.jpg"
+    "localIcon": "assets/cards/272_Defense_Disk__.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "273",
@@ -1774,7 +1938,9 @@
     "effect": "Boost own Attack Power +100.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/273_Digi-Garnet.jpg"
+    "localIcon": "assets/cards/273_Digi-Garnet.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "274",
@@ -1795,7 +1961,9 @@
     "effect": "Recover own HP by +100.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/274_Digi-Amethyst.jpg"
+    "localIcon": "assets/cards/274_Digi-Amethyst.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "275",
@@ -1816,7 +1984,9 @@
     "effect": "KO'd Digimon revives with 100 HP. Battle is still lost.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/275_Digi-Aquamarine.jpg"
+    "localIcon": "assets/cards/275_Digi-Aquamarine.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "276",
@@ -1837,7 +2007,9 @@
     "effect": "Draw 2 Cards from Online Deck.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/276_Digi-Diamond.jpg"
+    "localIcon": "assets/cards/276_Digi-Diamond.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "277",
@@ -1858,7 +2030,9 @@
     "effect": "Change own Specialty to Nature.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/277_Digi-Emerald.jpg"
+    "localIcon": "assets/cards/277_Digi-Emerald.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "278",
@@ -1879,7 +2053,9 @@
     "effect": "Changes own Specialty to Rare.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/278_Digi-Pearl.jpg"
+    "localIcon": "assets/cards/278_Digi-Pearl.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "279",
@@ -1900,7 +2076,9 @@
     "effect": "Changes own Specialty to Fire.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/279_Digi-Ruby.jpg"
+    "localIcon": "assets/cards/279_Digi-Ruby.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "280",
@@ -1921,7 +2099,9 @@
     "effect": "Change own Specialty to Darkness.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/280_Digi-Sardnyx.jpg"
+    "localIcon": "assets/cards/280_Digi-Sardnyx.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "281",
@@ -1942,7 +2122,9 @@
     "effect": "Change own Specialty to Ice.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/281_Digi-Sapphire.jpg"
+    "localIcon": "assets/cards/281_Digi-Sapphire.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "282",
@@ -1965,7 +2147,9 @@
       "circle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/282_Digi-Opal.jpg"
+    "localIcon": "assets/cards/282_Digi-Opal.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "283",
@@ -1988,7 +2172,9 @@
       "triangle"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/283_Digi-Topaz.jpg"
+    "localIcon": "assets/cards/283_Digi-Topaz.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "284",
@@ -2011,7 +2197,9 @@
       "x"
     ],
     "category": "Option",
-    "localIcon": "assets/cards/284_Digi-Turquoise.jpg"
+    "localIcon": "assets/cards/284_Digi-Turquoise.jpg",
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "285",
@@ -2032,7 +2220,9 @@
     "effect": "Own Attack Power is tripled.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/285_Wild_Sevens.jpg"
+    "localIcon": "assets/cards/285_Wild_Sevens.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "286",
@@ -2053,7 +2243,9 @@
     "effect": "Recover own HP by +1000.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/286_Holy_Sevens.jpg"
+    "localIcon": "assets/cards/286_Holy_Sevens.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "287",
@@ -2074,7 +2266,9 @@
     "effect": "If opponent's HP are lower then own, opponent's HP become 10.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/287_Dark_Sevens.jpg"
+    "localIcon": "assets/cards/287_Dark_Sevens.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "288",
@@ -2095,7 +2289,9 @@
     "effect": "Own Attack Power is boosted by the number of own HP.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/288_Grand_Sevens.jpg"
+    "localIcon": "assets/cards/288_Grand_Sevens.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "289",
@@ -2116,7 +2312,9 @@
     "effect": "Opponent's Support and Option Effects are voided. His Attack Power is 0.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/289_Mystic_Sevens.jpg"
+    "localIcon": "assets/cards/289_Mystic_Sevens.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "290",
@@ -2137,7 +2335,9 @@
     "effect": "Attack first. Own attack becomes \"Eat-up HP.\" Boost Attack Power +200.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/290_Speed_Sevens.jpg"
+    "localIcon": "assets/cards/290_Speed_Sevens.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "291",
@@ -2158,7 +2358,9 @@
     "effect": "Move top 10 Cards from Offline Pile to Online Deck, then shuffle.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/291_Reverse_Sevens.jpg"
+    "localIcon": "assets/cards/291_Reverse_Sevens.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "292",
@@ -2179,7 +2381,9 @@
     "effect": "Opponent discards his Hand and all Cards in his DP Slot.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/292_Rosemon_s_Lure.jpg"
+    "localIcon": "assets/cards/292_Rosemon_s_Lure.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "293",
@@ -2200,7 +2404,9 @@
     "effect": "Can digivolve regardless of own Specialty, Level, or Digivolve Pts.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/293_Download_Digivolve.jpg"
+    "localIcon": "assets/cards/293_Download_Digivolve.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "294",
@@ -2221,7 +2427,9 @@
     "effect": "Digivolve a Level A Digimon to C or U. (DP are needed.)",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/294_ArmorCrush_Digivolve.jpg"
+    "localIcon": "assets/cards/294_ArmorCrush_Digivolve.jpg",
+    "materialValue": 14,
+    "resultValue": 21
   },
   {
     "no": "295",
@@ -2242,7 +2450,9 @@
     "effect": "Can digivolve regardless of own Specialty by adding DP +20.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/295_Special_Digivolve.jpg"
+    "localIcon": "assets/cards/295_Special_Digivolve.jpg",
+    "materialValue": 12,
+    "resultValue": 16
   },
   {
     "no": "296",
@@ -2263,7 +2473,9 @@
     "effect": "Can digivolve Digimon at same Level. (Need DP) (Ignore Specialty)",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/296_Mutant_Digivolve.jpg"
+    "localIcon": "assets/cards/296_Mutant_Digivolve.jpg",
+    "materialValue": 10,
+    "resultValue": 16
   },
   {
     "no": "297",
@@ -2284,7 +2496,9 @@
     "effect": "Can digivolve from R to U. (DP are needed.)",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/297_Warp_Digivolve.jpg"
+    "localIcon": "assets/cards/297_Warp_Digivolve.jpg",
+    "materialValue": 8,
+    "resultValue": 14
   },
   {
     "no": "298",
@@ -2305,7 +2519,9 @@
     "effect": "Downgrade a Level A Digimon to Level R.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/298_De-Armor_Digivolve.jpg"
+    "localIcon": "assets/cards/298_De-Armor_Digivolve.jpg",
+    "materialValue": 4,
+    "resultValue": 14
   },
   {
     "no": "299",
@@ -2326,7 +2542,9 @@
     "effect": "Can disregard DP in digivolving. (Not possible in Abnormal states)",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/299_Speed_Digivolve.jpg"
+    "localIcon": "assets/cards/299_Speed_Digivolve.jpg",
+    "materialValue": "?",
+    "resultValue": "?"
   },
   {
     "no": "300",
@@ -2347,6 +2565,8 @@
     "effect": "DownGrade own digivolution by 1 Level. HP double when successful.",
     "effectIcons": [],
     "category": "Option",
-    "localIcon": "assets/cards/300_Digi-devolve.jpg"
+    "localIcon": "assets/cards/300_Digi-devolve.jpg",
+    "materialValue": 2,
+    "resultValue": 5
   }
 ]
