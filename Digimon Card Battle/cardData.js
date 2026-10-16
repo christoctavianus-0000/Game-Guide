@@ -1,4 +1,4 @@
-const CARD_DATABASE = [
+window.CARD_DATABASE = [
   {
     "no": "000",
     "name": "Imperialdramon",

@@ -1,0 +1,1231 @@
+{
+  "fusion_table": {
+    "Red+Red": "Option",
+    "Red+Blue": "Green",
+    "Red+Green": "Black",
+    "Red+Black": "Yellow",
+    "Red+Yellow": "Blue",
+    "Red+Option": "Red",
+    "Blue+Red": "Green",
+    "Blue+Blue": "Option",
+    "Blue+Green": "Yellow",
+    "Blue+Black": "Red",
+    "Blue+Yellow": "Green",
+    "Blue+Option": "Blue",
+    "Green+Red": "Black",
+    "Green+Blue": "Yellow",
+    "Green+Green": "Option",
+    "Green+Black": "Blue",
+    "Green+Yellow": "Black",
+    "Green+Option": "Green",
+    "Black+Red": "Yellow",
+    "Black+Blue": "Red",
+    "Black+Green": "Blue",
+    "Black+Black": "Option",
+    "Black+Yellow": "Red",
+    "Black+Option": "Black",
+    "Yellow+Red": "Blue",
+    "Yellow+Blue": "Green",
+    "Yellow+Green": "Black",
+    "Yellow+Black": "Red",
+    "Yellow+Yellow": "Option",
+    "Yellow+Option": "Yellow",
+    "Option+Red": "Red",
+    "Option+Blue": "Blue",
+    "Option+Green": "Green",
+    "Option+Black": "Black",
+    "Option+Yellow": "Yellow",
+    "Option+Option": "Option"
+  },
+  "fusion_values": {
+    "imperialdramon": {
+      "material": "?",
+      "result": "?"
+    },
+    "omnimon i": {
+      "material": 18,
+      "result": 0
+    },
+    "wargreymon": {
+      "material": 18,
+      "result": 35
+    },
+    "pheonixmon": {
+      "material": 17,
+      "result": 34
+    },
+    "paildramon": {
+      "material": 17,
+      "result": 33
+    },
+    "gigidramon": {
+      "material": 16,
+      "result": 32
+    },
+    "realmetalgreymon": {
+      "material": 16,
+      "result": 31
+    },
+    "garudamon": {
+      "material": 15,
+      "result": 30
+    },
+    "mastertyrannomon": {
+      "material": 15,
+      "result": 29
+    },
+    "metalgreymon": {
+      "material": 14,
+      "result": 28
+    },
+    "meteormon": {
+      "material": 14,
+      "result": 27
+    },
+    "vermilimon": {
+      "material": 14,
+      "result": 26
+    },
+    "exveemon": {
+      "material": 13,
+      "result": 25
+    },
+    "aquilamon": {
+      "material": 12,
+      "result": 24
+    },
+    "greymon": {
+      "material": 12,
+      "result": 23
+    },
+    "apemon": {
+      "material": 11,
+      "result": 22
+    },
+    "tyrannomon": {
+      "material": 11,
+      "result": 21
+    },
+    "monocromon": {
+      "material": 10,
+      "result": 20
+    },
+    "meramon": {
+      "material": 10,
+      "result": 19
+    },
+    "centarumon": {
+      "material": 9,
+      "result": 18
+    },
+    "birdramon": {
+      "material": 9,
+      "result": 17
+    },
+    "tankmon": {
+      "material": 8,
+      "result": 16
+    },
+    "redvegiemon": {
+      "material": 8,
+      "result": 15
+    },
+    "piddomon": {
+      "material": 7,
+      "result": 14
+    },
+    "akatorimon": {
+      "material": 7,
+      "result": 13
+    },
+    "bombernanimon": {
+      "material": 6,
+      "result": 12
+    },
+    "flarerizamon": {
+      "material": 6,
+      "result": 11
+    },
+    "agumon": {
+      "material": 5,
+      "result": 10
+    },
+    "solarmon": {
+      "material": 4,
+      "result": 9
+    },
+    "biyomon": {
+      "material": 4,
+      "result": 8
+    },
+    "muchomon": {
+      "material": 3,
+      "result": 7
+    },
+    "candlemon": {
+      "material": 3,
+      "result": 6
+    },
+    "d-otamamon": {
+      "material": 2,
+      "result": 5
+    },
+    "goburimon": {
+      "material": 2,
+      "result": 4
+    },
+    "vikemon": {
+      "material": "?",
+      "result": "?"
+    },
+    "omnimon ii": {
+      "material": "?",
+      "result": "?"
+    },
+    "metalseadramon": {
+      "material": 18,
+      "result": 0
+    },
+    "metalgarurumon": {
+      "material": 17,
+      "result": 35
+    },
+    "marineangemon": {
+      "material": 17,
+      "result": 34
+    },
+    "weregarurumon": {
+      "material": 16,
+      "result": 33
+    },
+    "zudomon": {
+      "material": 16,
+      "result": 32
+    },
+    "panjyamon": {
+      "material": 15,
+      "result": 31
+    },
+    "megaseadramon": {
+      "material": 15,
+      "result": 30
+    },
+    "waruseadramon": {
+      "material": 14,
+      "result": 29
+    },
+    "braciomon": {
+      "material": 14,
+      "result": 28
+    },
+    "bluemeramon": {
+      "material": 13,
+      "result": 27
+    },
+    "garurumon": {
+      "material": 13,
+      "result": 26
+    },
+    "ikkakumon": {
+      "material": 12,
+      "result": 25
+    },
+    "dolphmon": {
+      "material": 12,
+      "result": 24
+    },
+    "whamon": {
+      "material": 11,
+      "result": 23
+    },
+    "seadramon": {
+      "material": 11,
+      "result": 22
+    },
+    "gesomon": {
+      "material": 10,
+      "result": 21
+    },
+    "frigimon": {
+      "material": 10,
+      "result": 20
+    },
+    "gekomon": {
+      "material": 9,
+      "result": 19
+    },
+    "coelamon": {
+      "material": 9,
+      "result": 18
+    },
+    "mojyamon": {
+      "material": 8,
+      "result": 17
+    },
+    "shellmon": {
+      "material": 8,
+      "result": 16
+    },
+    "sorcerimon": {
+      "material": 7,
+      "result": 15
+    },
+    "icedevimon": {
+      "material": 7,
+      "result": 14
+    },
+    "hyogamon": {
+      "material": 6,
+      "result": 13
+    },
+    "icemon": {
+      "material": 6,
+      "result": 12
+    },
+    "gomamon": {
+      "material": 5,
+      "result": 11
+    },
+    "gabumon": {
+      "material": 5,
+      "result": 10
+    },
+    "betamon": {
+      "material": 4,
+      "result": 9
+    },
+    "penguinmon": {
+      "material": 4,
+      "result": 8
+    },
+    "gizamon": {
+      "material": 3,
+      "result": 7
+    },
+    "otamamon": {
+      "material": 3,
+      "result": 6
+    },
+    "snowagumon": {
+      "material": 2,
+      "result": 5
+    },
+    "snowgoburimon": {
+      "material": 2,
+      "result": 4
+    },
+    "valkyrimon": {
+      "material": "?",
+      "result": "?"
+    },
+    "seraphimon": {
+      "material": "?",
+      "result": "?"
+    },
+    "magnadramon": {
+      "material": "?",
+      "result": "?"
+    },
+    "aeroveedramon": {
+      "material": 17,
+      "result": 0
+    },
+    "rosemon": {
+      "material": "?",
+      "result": "?"
+    },
+    "herculeskabuterimon": {
+      "material": 17,
+      "result": 32
+    },
+    "magnaangemon": {
+      "material": 16,
+      "result": 31
+    },
+    "sylphymon": {
+      "material": 16,
+      "result": 30
+    },
+    "angewomon": {
+      "material": 15,
+      "result": 29
+    },
+    "lillymon": {
+      "material": 15,
+      "result": 28
+    },
+    "megakabuterimon": {
+      "material": 14,
+      "result": 27
+    },
+    "piximon": {
+      "material": 14,
+      "result": 26
+    },
+    "veedramon": {
+      "material": 13,
+      "result": 25
+    },
+    "angemon": {
+      "material": 13,
+      "result": 24
+    },
+    "r-gatomon": {
+      "material": 12,
+      "result": 23
+    },
+    "togemon": {
+      "material": 11,
+      "result": 22
+    },
+    "leomon": {
+      "material": 11,
+      "result": 21
+    },
+    "kabuterimon": {
+      "material": 11,
+      "result": 20
+    },
+    "airdramon": {
+      "material": 10,
+      "result": 19
+    },
+    "unimon": {
+      "material": 10,
+      "result": 18
+    },
+    "ninjamon": {
+      "material": 9,
+      "result": 17
+    },
+    "kuwagamon": {
+      "material": 9,
+      "result": 16
+    },
+    "drimogemon": {
+      "material": 8,
+      "result": 15
+    },
+    "vegiemon": {
+      "material": 8,
+      "result": 14
+    },
+    "kokatorimon": {
+      "material": 7,
+      "result": 13
+    },
+    "yanmamon": {
+      "material": 7,
+      "result": 12
+    },
+    "j-mojyamon": {
+      "material": 6,
+      "result": 11
+    },
+    "morishellmon": {
+      "material": 6,
+      "result": 10
+    },
+    "tentomon": {
+      "material": 5,
+      "result": 9
+    },
+    "palmon": {
+      "material": 4,
+      "result": 8
+    },
+    "salamon": {
+      "material": 4,
+      "result": 7
+    },
+    "elecmon": {
+      "material": 3,
+      "result": 6
+    },
+    "gotsumon": {
+      "material": 3,
+      "result": 5
+    },
+    "kunemon": {
+      "material": 2,
+      "result": 4
+    },
+    "apokarimon": {
+      "material": "?",
+      "result": "?"
+    },
+    "grankuwagamon": {
+      "material": "?",
+      "result": "?"
+    },
+    "diaboromon": {
+      "material": "?",
+      "result": "?"
+    },
+    "venommyotismon": {
+      "material": 17,
+      "result": "?"
+    },
+    "piedmon": {
+      "material": 18,
+      "result": 35
+    },
+    "machinedramon": {
+      "material": 17,
+      "result": 34
+    },
+    "infermon": {
+      "material": 17,
+      "result": 33
+    },
+    "ladydevimon": {
+      "material": 16,
+      "result": 32
+    },
+    "myotismon": {
+      "material": 16,
+      "result": 31
+    },
+    "megadramon": {
+      "material": 15,
+      "result": 30
+    },
+    "skullgreymon": {
+      "material": 15,
+      "result": 29
+    },
+    "phantomon": {
+      "material": 14,
+      "result": 28
+    },
+    "warumonzaemon": {
+      "material": 19,
+      "result": 27
+    },
+    "andromon": {
+      "material": 13,
+      "result": 26
+    },
+    "stingmon": {
+      "material": 13,
+      "result": 25
+    },
+    "wizardmon": {
+      "material": 12,
+      "result": 24
+    },
+    "devidramon": {
+      "material": 12,
+      "result": 23
+    },
+    "devimon": {
+      "material": 11,
+      "result": 22
+    },
+    "tuskmon": {
+      "material": 11,
+      "result": 21
+    },
+    "orgemon": {
+      "material": 10,
+      "result": 20
+    },
+    "bakemon": {
+      "material": 10,
+      "result": 19
+    },
+    "guardromon": {
+      "material": 9,
+      "result": 18
+    },
+    "tekkamon": {
+      "material": 9,
+      "result": 17
+    },
+    "gururumon": {
+      "material": 8,
+      "result": 16
+    },
+    "soulmon": {
+      "material": 8,
+      "result": 15
+    },
+    "fugamon": {
+      "material": 7,
+      "result": 14
+    },
+    "saberdramon": {
+      "material": 7,
+      "result": 13
+    },
+    "darkrizamon": {
+      "material": 6,
+      "result": 12
+    },
+    "zassomon": {
+      "material": 6,
+      "result": 11
+    },
+    "demidevimon": {
+      "material": 5,
+      "result": 10
+    },
+    "bkgatomon": {
+      "material": 4,
+      "result": 9
+    },
+    "kokuwamon": {
+      "material": 4,
+      "result": 8
+    },
+    "tsukaimon": {
+      "material": 3,
+      "result": 7
+    },
+    "dokunemon": {
+      "material": 3,
+      "result": 6
+    },
+    "aruraumon": {
+      "material": 2,
+      "result": 5
+    },
+    "sharmamon": {
+      "material": 2,
+      "result": 4
+    },
+    "puppetmon": {
+      "material": "?",
+      "result": "?"
+    },
+    "superstarmon": {
+      "material": 18,
+      "result": 0
+    },
+    "metaletemon": {
+      "material": 17,
+      "result": 0
+    },
+    "shakkoumon": {
+      "material": 17,
+      "result": 33
+    },
+    "jijimon": {
+      "material": 16,
+      "result": 32
+    },
+    "digitamamon": {
+      "material": 16,
+      "result": 31
+    },
+    "vademon": {
+      "material": 15,
+      "result": 30
+    },
+    "giromon": {
+      "material": 15,
+      "result": 29
+    },
+    "monzaemon": {
+      "material": 14,
+      "result": 28
+    },
+    "metalmamemon": {
+      "material": 14,
+      "result": 27
+    },
+    "mamemon": {
+      "material": 13,
+      "result": 26
+    },
+    "etemon": {
+      "material": 13,
+      "result": 25
+    },
+    "ankylomon": {
+      "material": 12,
+      "result": 24
+    },
+    "starmon": {
+      "material": 12,
+      "result": 23
+    },
+    "thundermon": {
+      "material": 11,
+      "result": 22
+    },
+    "platinumsukamon": {
+      "material": 11,
+      "result": 21
+    },
+    "shellnumemon": {
+      "material": 10,
+      "result": 20
+    },
+    "nanimon": {
+      "material": 10,
+      "result": 19
+    },
+    "numemon": {
+      "material": 9,
+      "result": 18
+    },
+    "sukamon": {
+      "material": 9,
+      "result": 17
+    },
+    "rockmon": {
+      "material": 8,
+      "result": 16
+    },
+    "geremon": {
+      "material": 8,
+      "result": 15
+    },
+    "nisedrimogemon": {
+      "material": 7,
+      "result": 14
+    },
+    "shimaunimon": {
+      "material": 7,
+      "result": 13
+    },
+    "mudfrigimon": {
+      "material": 6,
+      "result": 12
+    },
+    "sandyanmamon": {
+      "material": 6,
+      "result": 11
+    },
+    "l-toyagumon": {
+      "material": 5,
+      "result": 10
+    },
+    "hagurumon": {
+      "material": 4,
+      "result": 9
+    },
+    "toyagumon": {
+      "material": 4,
+      "result": 8
+    },
+    "clearagumon": {
+      "material": 3,
+      "result": 7
+    },
+    "vi-elecmon": {
+      "material": 3,
+      "result": 6
+    },
+    "psychemon": {
+      "material": 2,
+      "result": 5
+    },
+    "modokibetamon": {
+      "material": 2,
+      "result": 4
+    },
+    "golden banana": {
+      "material": 18,
+      "result": 35
+    },
+    "devil's chip": {
+      "material": 18,
+      "result": 34
+    },
+    "whistle": {
+      "material": 18,
+      "result": 33
+    },
+    "giga hand": {
+      "material": 17,
+      "result": 32
+    },
+    "metallic banana": {
+      "material": 17,
+      "result": 30
+    },
+    "shining mane": {
+      "material": 17,
+      "result": 30
+    },
+    "mega rec. floppy": {
+      "material": 16,
+      "result": 29
+    },
+    "mega attack chip": {
+      "material": 16,
+      "result": 28
+    },
+    "dark lord cape": {
+      "material": 16,
+      "result": 27
+    },
+    "fake sevens": {
+      "material": 15,
+      "result": 0
+    },
+    "net worm": {
+      "material": 15,
+      "result": 25
+    },
+    "missile pod": {
+      "material": 15,
+      "result": 24
+    },
+    "shogun's order": {
+      "material": 14,
+      "result": 23
+    },
+    "beetle diamond": {
+      "material": 14,
+      "result": 22
+    },
+    "dark bone": {
+      "material": 14,
+      "result": 21
+    },
+    "red digivice": {
+      "material": 13,
+      "result": 20
+    },
+    "blue digivice": {
+      "material": 13,
+      "result": 20
+    },
+    "green digivice": {
+      "material": 13,
+      "result": 20
+    },
+    "black digivice": {
+      "material": 13,
+      "result": 20
+    },
+    "yellow digivice": {
+      "material": 13,
+      "result": 20
+    },
+    "pink digivice": {
+      "material": 13,
+      "result": 20
+    },
+    "another dimension": {
+      "material": 12,
+      "result": 19
+    },
+    "uninstall": {
+      "material": 12,
+      "result": 18
+    },
+    "evil program": {
+      "material": 12,
+      "result": 17
+    },
+    "coliseum": {
+      "material": 12,
+      "result": 16
+    },
+    "fire altar": {
+      "material": 11,
+      "result": 15
+    },
+    "ice alter": {
+      "material": 11,
+      "result": 15
+    },
+    "nature alter": {
+      "material": 11,
+      "result": 15
+    },
+    "darkness alter": {
+      "material": 11,
+      "result": 15
+    },
+    "rare alter": {
+      "material": 11,
+      "result": 15
+    },
+    "sup. rec. floppy": {
+      "material": 10,
+      "result": 14
+    },
+    "mega def. disk circle": {
+      "material": 10,
+      "result": 13
+    },
+    "mega def. disk triangle": {
+      "material": 10,
+      "result": 13
+    },
+    "mega def. disk x": {
+      "material": 10,
+      "result": 13
+    },
+    "heap of junk": {
+      "material": 10,
+      "result": 12
+    },
+    "beam gun": {
+      "material": 9,
+      "result": 12
+    },
+    "chain saw": {
+      "material": 9,
+      "result": 12
+    },
+    "metal parts": {
+      "material": 9,
+      "result": 12
+    },
+    "metal armor": {
+      "material": 9,
+      "result": 12
+    },
+    "mega hand": {
+      "material": 9,
+      "result": 12
+    },
+    "level balancer": {
+      "material": 8,
+      "result": 11
+    },
+    "level manager": {
+      "material": 8,
+      "result": 11
+    },
+    "level booster": {
+      "material": 8,
+      "result": 11
+    },
+    "armor clash": {
+      "material": 8,
+      "result": 11
+    },
+    "silver ball": {
+      "material": 8,
+      "result": 11
+    },
+    "coral charm": {
+      "material": 7,
+      "result": 10
+    },
+    "patch of love": {
+      "material": 7,
+      "result": 10
+    },
+    "mystery egg": {
+      "material": 7,
+      "result": 10
+    },
+    "miracle ruby": {
+      "material": 7,
+      "result": 10
+    },
+    "cyber parts": {
+      "material": 6,
+      "result": 10
+    },
+    "liquid crystal": {
+      "material": 6,
+      "result": 10
+    },
+    "deluxe mushroom": {
+      "material": 6,
+      "result": 9
+    },
+    "lucky mushroom": {
+      "material": 6,
+      "result": 9
+    },
+    "premium steak": {
+      "material": 6,
+      "result": 9
+    },
+    "short lance": {
+      "material": 6,
+      "result": 9
+    },
+    "med. rec. floppy": {
+      "material": 5,
+      "result": 8
+    },
+    "digimon analyzer": {
+      "material": 5,
+      "result": 8
+    },
+    "training manual": {
+      "material": 5,
+      "result": 8
+    },
+    "circle hitter": {
+      "material": 5,
+      "result": 8
+    },
+    "triangle hitter": {
+      "material": 5,
+      "result": 8
+    },
+    "cross hitter": {
+      "material": 5,
+      "result": 8
+    },
+    "sukas curse": {
+      "material": 4,
+      "result": 7
+    },
+    "cherrymons mist": {
+      "material": 17,
+      "result": 32
+    },
+    "hacking": {
+      "material": 13,
+      "result": 20
+    },
+    "digimon grave": {
+      "material": 4,
+      "result": 7
+    },
+    "data copy": {
+      "material": 4,
+      "result": 7
+    },
+    "partner finder": {
+      "material": 4,
+      "result": 7
+    },
+    "fire spot": {
+      "material": 3,
+      "result": 6
+    },
+    "ice crystal": {
+      "material": 3,
+      "result": 6
+    },
+    "earth charm": {
+      "material": 3,
+      "result": 6
+    },
+    "black gear": {
+      "material": 3,
+      "result": 6
+    },
+    "stuffed animal": {
+      "material": 3,
+      "result": 6
+    },
+    "disrupt ray": {
+      "material": 2,
+      "result": 5
+    },
+    "attack chip": {
+      "material": 2,
+      "result": 4
+    },
+    "high speed disk": {
+      "material": 8,
+      "result": 14
+    },
+    "recovery floppy": {
+      "material": 2,
+      "result": 4
+    },
+    "attack disk circle": {
+      "material": 1,
+      "result": 3
+    },
+    "attack disk triangle": {
+      "material": 1,
+      "result": 3
+    },
+    "attack disk x": {
+      "material": 1,
+      "result": 3
+    },
+    "defense disk circle": {
+      "material": 1,
+      "result": 2
+    },
+    "defense disk triangle": {
+      "material": 1,
+      "result": 2
+    },
+    "defense disk x": {
+      "material": 1,
+      "result": 2
+    },
+    "digi-garnet": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-amethyst": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-aquamarine": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-diamond": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-emerald": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-pearl": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-ruby": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-sardnyx": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-saphire": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-opal": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-topaz": {
+      "material": 18,
+      "result": 0
+    },
+    "digi-turquoise": {
+      "material": 18,
+      "result": 0
+    },
+    "armorcrush digivolve": {
+      "material": 14,
+      "result": 21
+    },
+    "special digivolve": {
+      "material": 12,
+      "result": 16
+    },
+    "mutant digivolve": {
+      "material": 10,
+      "result": 16
+    },
+    "warp digivolve": {
+      "material": 8,
+      "result": 14
+    },
+    "de-armor digivolve": {
+      "material": 4,
+      "result": 14
+    },
+    "speed-digivolve": {
+      "material": 6,
+      "result": 14
+    },
+    "digi-devolve": {
+      "material": 2,
+      "result": 5
+    }
+  },
+  "special_fusions": [
+    {
+      "card1": "Omnimon I",
+      "card2": "Paildramon",
+      "result": "Imperialdramon"
+    },
+    {
+      "card1": "Garudamon",
+      "card2": "Silphymon",
+      "result": "Valkyrimon"
+    },
+    {
+      "card1": "Zudomon",
+      "card2": "Shakkoumon",
+      "result": "Vikemon"
+    },
+    {
+      "card1": "Angemon",
+      "card2": "Ankylomon",
+      "result": "Shakkoumon"
+    },
+    {
+      "card1": "Aquilamon",
+      "card2": "R-Gatomon",
+      "result": "Silphymon"
+    },
+    {
+      "card1": "Exveemon",
+      "card2": "Stingmon",
+      "result": "Paildramon"
+    },
+    {
+      "card1": "HerculesKabuterimon",
+      "card2": "Megadramon",
+      "result": "GranKuwagamon"
+    },
+    {
+      "card1": "Infermon",
+      "card2": "Digitamamon",
+      "result": "Diaboromon"
+    },
+    {
+      "card1": "MegaSeadramon",
+      "card2": "WaruSeadramon",
+      "result": "MetalSeadramon"
+    },
+    {
+      "card1": "MagnaAngemon",
+      "card2": "Angewomon",
+      "result": "Magnadramon"
+    },
+    {
+      "card1": "MagnaAngemon",
+      "card2": "Jijimon",
+      "result": "Seraphimon"
+    },
+    {
+      "card1": "Veedramon",
+      "card2": "Phoenixmon",
+      "result": "AeroVeedramon"
+    },
+    {
+      "card1": "Lillymon",
+      "card2": "Myotismon",
+      "result": "Rosemon"
+    },
+    {
+      "card1": "Myotismon",
+      "card2": "LadyDevimon",
+      "result": "VenomMyotismon"
+    },
+    {
+      "card1": "Vademon",
+      "card2": "MarineAngemon",
+      "result": "SuperStarmon"
+    },
+    {
+      "card1": "Etemon",
+      "card2": "Andromon",
+      "result": "MetalEtemon"
+    },
+    {
+      "card1": "Monzaemon",
+      "card2": "Warumonzaemon",
+      "result": "Puppetmon"
+    },
+    {
+      "card1": "WarGreymon",
+      "card2": "MetalGarurumon",
+      "result": "Omnimon I"
+    },
+    {
+      "card1": "RealMetalGreymon",
+      "card2": "WereGarurumon",
+      "result": "Omnimon II"
+    }
+  ]
+}

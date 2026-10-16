@@ -38,8 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'level': return (card.level || '').toLowerCase();
       case 'specialty': return (card.specialty || '').toLowerCase();
       case 'support': return (card.support || '').toLowerCase();
-      case 'material': return parseNum(card.materialValue);
-      case 'result': return parseNum(card.resultValue);
       default: return '';
     }
   }
@@ -140,16 +138,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const matchName = card.name.toLowerCase().includes(query);
         const matchNo = card.no.toLowerCase().includes(query);
         const matchSupport = (card.support || '').toLowerCase().includes(query);
-              const matchMat = String(card.materialValue ?? '').includes(query);
-              const matchRes = String(card.resultValue ?? '').includes(query);
-              if (!matchName && !matchNo && !matchSupport && !matchMat && !matchRes) return false;
-            }
+        if (!matchName && !matchNo && !matchSupport) return false;
+      }
       return true;
     }));
     updateSortIndicators();
 
     if (filtered.length === 0) {
-          tableBody.innerHTML = `<tr><td colspan="14" style="text-align: center; padding: 3rem; color: var(--text-muted);">No cards found matching your criteria.</td></tr>`;
+          tableBody.innerHTML = `<tr><td colspan="12" style="text-align: center; padding: 3rem; color: var(--text-muted);">No cards found matching your criteria.</td></tr>`;
       return;
     }
 
@@ -164,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <tr>
           <td style="font-family: var(--font-display); font-weight: 600;">#${card.no}</td>
           <td>${cardIconHtml(card)}</td>
-          <td style="font-weight: 600; color: var(--text-primary);">${card.name}</td>
+          <td><a class="card-name-link" href="fusion.html?card=${encodeURIComponent(card.name)}" title="See fusion combinations for ${escapeHtml(card.name)}">${escapeHtml(card.name)}</a></td>
           <td><span class="level-badge">${card.level || '-'}</span></td>
           <td><span class="spec-tag ${specClass}">${card.specialty || '-'}</span></td>
           <td>${card.hp || '-'}</td>
@@ -174,9 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <td>${triangleCell}</td>
           <td>${xCell}</td>
           <td class="support-text">${formatEffectText(card.support)}</td>
-              <td style="text-align: center;">${card.materialValue ?? '?'}</td>
-              <td style="text-align: center;">${card.resultValue ?? '?'}</td>
-            </tr>
+        </tr>
       `;
     }).join('');
   }

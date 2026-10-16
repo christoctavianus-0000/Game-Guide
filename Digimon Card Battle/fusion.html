@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon Card Battle // Fusion Codex</title>
+  <meta name="description" content="Fusion calculator — find all card combinations that produce your target Digimon." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fusion.css" />
+  <script>
+    (function(){
+      var K='digimon_codex_theme',V={dark:1,light:1},t=null;
+      try{t=localStorage.getItem(K)}catch(e){}
+      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
+      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
+      else document.documentElement.removeAttribute('data-theme');
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+      <!-- Floating Side Nav -->
+      <nav class="side-nav" aria-label="Codex navigation">
+        <a href="index.html" class="side-nav-link" title="Card Codex">
+          <span class="side-nav-icon">🀄</span>
+          <span>Card Codex</span>
+        </a>
+        <a href="fusion.html" class="side-nav-link active" title="Fusion Codex">
+          <span class="side-nav-icon">⚗️</span>
+          <span>Fusion Codex</span>
+        </a>
+      </nav>
+
+      <!-- Header -->
+    <header class="top-header">
+      <div class="header-container">
+        <div class="brand-area">
+          <div class="brand-crest">
+            <span class="crest-icon">allele</span>
+          </div>
+          <div>
+            <div class="brand-kicker">DIGIMON CARD BATTLE</div>
+            <h1 class="brand-title">Fusion Codex</h1>
+          </div>
+        </div>
+        <div class="header-actions">
+          <a href="index.html" class="theme-toggle-btn" style="text-decoration: none;">← Card Codex</a>
+          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-label">Dark</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="fusion-page">
+      <!-- Mode Tabs -->
+      <div class="fusion-mode-tabs" role="tablist" aria-label="Fusion Calculator Modes">
+        <button type="button" class="fusion-tab-btn active" role="tab" id="tab-btn-target" aria-selected="true" aria-controls="tab-target-panel" data-tab="target">
+          <span class="tab-icon">🎯</span>
+          <span>Find Recipe (By Result)</span>
+        </button>
+        <button type="button" class="fusion-tab-btn" role="tab" id="tab-btn-materials" aria-selected="false" aria-controls="tab-materials-panel" data-tab="materials">
+          <span class="tab-icon">🧪</span>
+          <span>Fuse 2 Cards (By Materials)</span>
+        </button>
+      </div>
+
+      <!-- Tab 1: Find Recipe for a Target Card -->
+      <div id="tab-target-panel" class="fusion-tab-panel active" role="tabpanel" aria-labelledby="tab-btn-target">
+        <!-- Search -->
+        <div class="fusion-search">
+          <h2>Find Fusion Combinations</h2>
+          <p>Search for any card to discover all possible pairs that can fuse into it.</p>
+          <div class="search-box">
+            <input type="text" id="fusionSearch" placeholder="Search card name (e.g. Angemon, WarGreymon, Omnimon)..." aria-label="Search card for fusion" list="cardListTarget" autocomplete="off" />
+            <datalist id="cardListTarget"></datalist>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div id="fusionResult">
+          <div class="empty-state">
+            <div class="icon">allele</div>
+            <h3>Search for a card to begin</h3>
+            <p>Enter a card name above to see all fusion combinations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Predict Result of 2 Selected Material Cards -->
+      <div id="tab-materials-panel" class="fusion-tab-panel" role="tabpanel" aria-labelledby="tab-btn-materials" hidden>
+        <div class="fusion-search">
+          <h2>Combine 2 Material Cards</h2>
+          <p>Select or search any two cards to predict what Digimon they will produce upon fusion.</p>
+          
+          <div class="materials-picker-grid">
+            <div class="material-picker-box">
+              <label for="mat1Search">Material Card 1</label>
+
+              <div class="search-box">
+                <input type="text" id="mat1Search" placeholder="Type Card 1 name..." list="cardList1" autocomplete="off" />
+                <datalist id="cardList1"></datalist>
+              </div>
+
+              <div id="mat1CardPreview" class="mat-card-preview empty">
+                <div class="preview-placeholder">Select Material 1</div>
+              </div>
+            </div>
+
+            <div class="fuse-plus-sign">+</div>
+
+            <div class="material-picker-box">
+              <label for="mat2Search">Material Card 2</label>
+
+              <div class="search-box">
+                <input type="text" id="mat2Search" placeholder="Type Card 2 name..." list="cardList2" autocomplete="off" />
+                <datalist id="cardList2"></datalist>
+              </div>
+
+              <div id="mat2CardPreview" class="mat-card-preview empty">
+                <div class="preview-placeholder">Select Material 2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="materialResultContainer">
+          <div class="empty-state">
+            <div class="icon">🧪</div>
+            <h3>Select two cards above</h3>
+            <p>Pick Material Card 1 and Material Card 2 to view the fusion result.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="cardData.js"></script>
+  <script src="fusion_data.js"></script>
+  <script src="themeToggle.js"></script>
+  <script src="fusion.js"></script>
+</body>
+</html>

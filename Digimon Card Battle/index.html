@@ -26,7 +26,19 @@
 </head>
 <body>
   <div class="site-wrapper">
-    <!-- Header & Hero -->
+      <!-- Floating Side Nav -->
+      <nav class="side-nav" aria-label="Codex navigation">
+        <a href="index.html" class="side-nav-link active" title="Card Codex">
+          <span class="side-nav-icon">🀄</span>
+          <span>Card Codex</span>
+        </a>
+        <a href="fusion.html" class="side-nav-link" title="Fusion Codex">
+          <span class="side-nav-icon">⚗️</span>
+          <span>Fusion Codex</span>
+        </a>
+      </nav>
+
+      <!-- Header & Hero -->
     <header class="top-header">
       <div class="header-container">
         <div class="brand-area">
@@ -113,8 +125,6 @@
               <th class="triangle-col sortable" data-sort="triangle"><button class="th-sort" data-sort-btn="triangle" type="button"><img src="assets/ui/triangle.gif" alt="[triangle icon] attack" class="attack-type-icon" /> Attack <span class="sort-ind" aria-hidden="true"></span></button></th>
               <th class="x-col sortable" data-sort="x"><button class="th-sort" data-sort-btn="x" type="button"><img src="assets/ui/x.gif" alt="[x icon] attack" class="attack-type-icon" /> Attack <span class="sort-ind" aria-hidden="true"></span></button></th>
               <th class="support-col sortable" data-sort="support"><button class="th-sort" data-sort-btn="support" type="button">Support Effect <span class="sort-ind" aria-hidden="true"></span></button></th>
-              <th class="mat-col sortable" data-sort="material"><button class="th-sort" data-sort-btn="material" type="button">Material Value <span class="sort-ind" aria-hidden="true"></span></button></th>
-              <th class="res-col sortable" data-sort="result"><button class="th-sort" data-sort-btn="result" type="button">Result Value <span class="sort-ind" aria-hidden="true"></span></button></th>
             </tr>
           </thead>
           <tbody id="cardTableBody">
