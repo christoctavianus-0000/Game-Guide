@@ -58,10 +58,11 @@ Both pages share `styles.css` (design tokens plus the shared `.site-nav` bar). `
 | `equipmentData.json` | Same generated equipment records in JSON form. |
 | `Octopath traveler 0 database .xlsx` | Primary source workbook. `SkillData`, `Weapon`, and `Armor` are the sheets parsed for the current pages. |
 | `parse_skill_data.ps1` | Skill dataset extractor. Reads the XLSX XML directly; no Excel or third-party PowerShell module is required. |
-| `parse_equipment_data.py` | Equipment dataset extractor. Pandas-based; reads the `Weapon` and `Armor` sheets with headers on row 4. |
+| `parse_equipment_data.py` | Equipment dataset extractor (`openpyxl`-based). Reads the `Weapon` and `Armor` sheets with headers on row 4 and backfills missing `SOURCE` cells from `Treasure`, `Sidequests`, `Townspeople`, and `Bestiary`. |
+| `parse_enemy_data.py` | Enemy dataset extractor (`openpyxl`-based). Reads `Bestiary` section headers (`Regular`, `Bosses`, `Rare`, `Sidequest`, `Arena`, `Elite`) and enriches Arena monsters from `Monster Arena`. |
 | `package.json` | Dev-only tooling: `typecheck` and `test` scripts. No runtime dependencies. |
-| `tsconfig.json` | TypeScript `--noEmit` config covering `app.js`, `equipmentApp.js`, and `types/`. |
-| `types/codex-types.d.ts` | Record shapes (`SkillRecord`, `EquipmentRecord`), subtype chips, and per-page element-id maps. |
+| `tsconfig.json` | TypeScript `--noEmit` config covering all 6 codex apps and `types/`. |
+| `types/codex-types.d.ts` | Record shapes (`SkillRecord`, `EquipmentRecord`, `CharacterRecord`, `EnemyRecord`, `NpcRecord`, `ShopItemRecord`), subtype chips, and per-page element-id maps. |
 | `tests/` | `node --test` suite with a minimal DOM stub; see "Verification". |
 | `explore_database.py` | Optional Pandas utility that lists workbook sheets and previews a sheet. It currently previews `Character` when run directly. |
 | `assets/icons/` | Skill-category and subtype icons referenced by the generated records, plus custom fantasy RPG vector UI icons in `assets/icons/ui/` (`octopath-crest.svg`, `nav-*.svg`, `cat-*.svg`). |
@@ -72,10 +73,10 @@ The workbook has 2,787 `SkillData` implementation rows. The generated browser da
 
 | Category | Count |
 | --- | ---: |
-| Physical | 278 |
-| Elemental | 125 |
-| Support | 194 |
-| Passive | 163 |
+| Physical | 284 |
+| Elemental | 127 |
+| Support | 223 |
+| Passive | 126 |
 
 Each record has this shape:
 
@@ -177,13 +178,13 @@ ATK and DEF tiers are defined in `equipmentApp.js` as `ATTACK_TIERS` / `DEFENSE_
 `parse_skill_data.ps1` reads the `SkillData` worksheet and:
 
 1. resolves XLSX shared strings and headers;
-2. cleans game markup from `Skill Detail`;
-3. maps weapon and magic icon codes to the Physical/Elemental subtype labels;
-4. heuristically classifies the remaining skills as Support or Passive from SP and description text;
-5. maps target codes (with description-text fallback);
-6. collects four boost ratios, four hit counts, up to four ailments, and turn values;
-7. merges weapon-selection/all-weapon wrapper rows with the corresponding generated combat values; 
-8. retains the first authored row for each skill name, removing internal availability, weapon-replacement, and effect-variant duplicates; and
+2. cleans game markup from `Skill Detail` while detecting `<skl_exec_count>` execution-count scaling tags;
+3. uses the workbook's authoritative `Category` (`2` = Passive, `1` = Active) and `SkillIconID` (`92610`-`92620`) together with weapon and magic icon codes to classify skills into Physical, Elemental, Support, and Passive;
+4. merges split `Avails` rows sharing the canonical skill ID so multi-row skills retain their true damage `SkillRatios.1..4` and enemy target types instead of Row 0 status-trigger defaults;
+5. derives multi-hit counts (`hits`) from `Min_HitCount 1..4`, repeated `Now HP` damage rows, and `<skl_exec_count>` `BoostSkills` references;
+6. collects all `Ailment 1..16` slots across all `Avails` rows of the canonical skill ID;
+7. merges weapon-selection/all-weapon wrapper rows with the corresponding generated combat values;
+8. retains the first authored row for each skill name in workbook order, removing internal availability, weapon-replacement, and effect-variant duplicates; and
 9. overwrites both generated data files in UTF-8.
 
 The consolidation follows the presentation used by the [Octopath Traveler 0 Guide & Wiki skill list](https://octopathtraveler0.com/skills), which shows a player-facing skill once even where the workbook contains many internal rows. Do not use the raw workbook row count as the UI total.
@@ -194,18 +195,19 @@ To regenerate after editing the workbook or parser, run from this directory:
 .\parse_skill_data.ps1
 ```
 
-Review the category totals and a few records after regeneration. The Support/Passive categories and some target labels are intentionally heuristic, so workbook/content changes can alter classifications.
+Review the category totals and a few records after regeneration.
 
 ## Equipment extraction rules
 
-`parse_equipment_data.py` reads the workbook's `Weapon` and `Armor` worksheets with `header=3` (rows 1-3 are workbook notes) and:
+`parse_equipment_data.py` reads the workbook's `Weapon` and `Armor` worksheets with `openpyxl` (headers on row 4; rows 1-3 are workbook notes) and:
 
 1. keeps only rows that have both an item name and a `TYPE`;
 2. normalizes the ten stat columns (`HP`, `SP`, `PATK`, `PDEF`, `MATK`, `MDEF`, `SPD`, `CRT`, `ACC`, `EVA`) into a lowercase `stats` object, defaulting missing values to 0;
 3. maps weapon types to the shared `assets/icons/...` paths (armor and accessories get an empty `icon`);
 4. derives a display `cost` plus a numeric `costValue` (the lowest amount found in the price text) so price sorting is stable;
-5. prefixes record ids with `weapon-` / `armor-` and sets `recordType: "equipment"`; and
-6. writes `equipmentData.json` and `equipmentData.js` in UTF-8.
+5. backfills items whose `SOURCE` cell is blank in `Weapon` / `Armor` by cross-referencing the `Treasure`, `Sidequests`, `Townspeople`, and `Bestiary` sheets with clear tags (`[Treasure]`, `[Sidequest]`, `[NPC]`, `[Steal]`);
+6. prefixes record ids with `weapon-` / `armor-` and sets `recordType: "equipment"`; and
+7. writes `equipmentData.json` and `equipmentData.js` in UTF-8.
 
 To regenerate after editing the workbook:
 
@@ -213,7 +215,7 @@ To regenerate after editing the workbook:
 python parse_equipment_data.py
 ```
 
-The script requires `pandas` plus an Excel engine for the workbook. Row-derived ids skip blank rows, so ids are not contiguous (for example `weapon-91` can be followed by `weapon-93`); treat ids as opaque strings, which is also how bookmarks are stored.
+Row-derived ids skip blank rows, so ids are not contiguous (for example `weapon-91` can be followed by `weapon-93`); treat ids as opaque strings, which is also how bookmarks are stored.
 
 ## Editing guidance
 
@@ -230,7 +232,7 @@ The script requires `pandas` plus an Excel engine for the workbook. Row-derived 
 Automated checks (run with `npm run typecheck`, `npm test`, or both via `npm run check`):
 
 - `npm run typecheck` runs TypeScript 5.6 in `--noEmit` mode across all 6 applications (`app.js`, `equipmentApp.js`, `characterApp.js`, `enemyApp.js`, `npcApp.js`, and `shopApp.js`), typed against `types/codex-types.d.ts`. A regenerated dataset or renamed element ID that breaks the contract fails here.
-- `npm test` runs every `tests/*.test.js` file: skill, equipment, character, enemy, shop, and NPC behavior, hostile-payload escaping, and UI SVG asset verification (54 tests).
+- `npm test` runs every `tests/*.test.js` file: skill, equipment, character, enemy, shop, and NPC behavior, hostile-payload escaping, and UI SVG asset verification (59 tests).
 
 None of this affects the shipped pages: TypeScript is never compiled and emits nothing, and `tests/` is never loaded by a browser. Emitted output stays dependency-free.
 

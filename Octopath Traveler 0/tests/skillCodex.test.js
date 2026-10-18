@@ -305,4 +305,34 @@ test('all Octopath RPG UI vector icons exist in assets/icons/ui', () => {
     const iconPath = path.join(ROOT, 'assets', 'icons', 'ui', icon);
     assert.ok(fs.existsSync(iconPath), `Expected RPG UI icon to exist: ${icon}`);
   }
-});
+});
+
+test('Excel-verified skill categories, split-row ratios, multi-hits, and ailments are preserved', () => {
+  const byName = new Map(skills.map(s => [s.name, s]));
+
+  // Category = 2 passive skills with support icons must be classified as Passive
+  assert.equal(byName.get('Extended Enfeeblement')?.category, 'Passive');
+  assert.equal(byName.get('Mystic Breath')?.category, 'Passive');
+
+  // Category = 1 active skills with SP = 0 must not be misclassified as Passive
+  assert.equal(byName.get('War Cry')?.category, 'Support');
+  assert.equal(byName.get('Brand\'s Blade')?.category, 'Physical');
+
+  // Split-row skills must merge their damage row ratios and enemy targets
+  const helmcleaver = byName.get('Helmcleaver');
+  assert.deepEqual(helmcleaver?.ratios, [100, 210, 320, 430]);
+  assert.equal(helmcleaver?.target, 'Single Foe');
+
+  const vanguard = byName.get('Vanguard Steel');
+  assert.deepEqual(vanguard?.ratios, [100, 195, 290, 385]);
+
+  // Multi-hit skills derived from Now HP rows and <skl_exec_count> BoostSkills
+  assert.deepEqual(byName.get('Twofold Slash')?.hits, [2, 2, 2, 2]);
+  assert.deepEqual(byName.get('Phantom Strike')?.hits, [2, 2, 3, 4]);
+  assert.deepEqual(byName.get('Divine Light')?.hits, [1, 2, 3, 4]);
+
+  // Ailment slots 1..16 must all be captured
+  assert.equal(byName.get('Stroke of Genius')?.ailments.length, 8);
+  assert.equal(byName.get('Greater Distribution')?.ailments.length, 8);
+});
+

@@ -104,10 +104,12 @@ $subtypeIcons = @{
 function CleanDetailText {
     param([string]$text)
     if (-not $text) { return '' }
-    $t = $text -replace '<skl_turn_count>\s*turn\(s\)\.?', 'turn(s).'
-    $t = $t -replace '<skl_turn_count>', 'turn(s)'
+    $t = $text -replace '<skl_turn_count2?>\s*turn\(s\)\.?', 'turn(s).'
+    $t = $t -replace '<skl_turn_count2?>', 'turn(s)'
     $t = $t -replace '<skl_boostcol>([^<]*)</skl_boostcol>', '$1'
     $t = $t -replace '<[^>]+>', ''
+    $t = $t -replace ',\s*\.', '.'
+    $t = $t -replace '\.\.', '.'
     $t = $t -replace '\s+', ' '
     return $t.Trim()
 }
@@ -137,6 +139,7 @@ function GetTargetLabel {
         '226' { return 'Front/Back Row' }
         default {
             if ($detail -match 'all foes') { return 'All Foes' }
+            if ($detail -match 'random foes') { return 'Random Foes' }
             if ($detail -match 'a foe|target enemy') { return 'Single Foe' }
             if ($detail -match 'all allies') { return 'All Allies' }
             if ($detail -match 'an ally') { return 'Single Ally' }
@@ -176,64 +179,79 @@ for ($ri = 1; $ri -lt $rows.Count; $ri++) {
     $sp = 0
     if ($spRaw -and [int]::TryParse($spRaw, [ref]$sp)) { } else { $sp = 0 }
 
-    $skillType = ($rowMap['SkillType'] -as [string]).Trim()
+    $catNum = (($rowMap['Category'] -as [string]) -replace '\.0$', '').Trim()
+    $iconId = (($rowMap['SkillIconID'] -as [string]) -replace '\.0$', '').Trim()
+    $skillType = (($rowMap['SkillType'] -as [string]) + '').Trim()
     $weaponTypeNum = (($rowMap['WeaponIconType'] -as [string]) -replace '\.0$', '').Trim()
     $magicTypeNum = (($rowMap['MagicIconType'] -as [string]) -replace '\.0$', '').Trim()
     $targetNum = (($rowMap['TargetType'] -as [string]) -replace '\.0$', '').Trim()
     $targetLabel = GetTargetLabel -targetNum $targetNum -detail $detail
-    $isWeaponSelect = (($rowMap['IsWeaponSelect'] -as [string]).Trim() -in @('1', 'True', 'true'))
+    $isWeaponSelect = (($rowMap['IsWeaponSelect'] -as [string]).Trim() -in @('1', '1.0', 'True', 'true'))
     $isAllWeaponsAttack = $detail -match '\bwith all weapons\b'
+    $modStatus = (($rowMap['ModifyStatus_Text'] -as [string]) + '').Trim()
+    $val1Raw = (($rowMap['Values.1'] -as [string]) + '').Trim()
+    $val1 = 0.0
+    if ($val1Raw) { [double]::TryParse($val1Raw, [ref]$val1) | Out-Null }
+    $isHpDamageAvail = ($modStatus -eq 'Now HP' -and $val1 -lt 0)
 
-    # Determine High-Level Category
+    # Determine High-Level Category using authoritative workbook Category (2=Passive, 1=Active) and SkillIconID
     $category = ''
     $subType = ''
     $iconImg = ''
 
-    # Weapon-selection and all-weapon skills have a wrapper row with no weapon
-    # icon/type. Keep that authored row as the canonical entry and classify it
-    # from its gameplay behavior rather than treating it as support/passive.
-    if ($isWeaponSelect -or $isAllWeaponsAttack) {
+    if ($catNum -eq '2') {
+        $category = 'Passive'
+        $subType = 'Passive Trait'
+        $targetLabel = 'Passive'
+    } elseif ($isWeaponSelect -or $isAllWeaponsAttack) {
         $category = 'Physical'
         $subType = if ($isAllWeaponsAttack) { 'All Weapons' } else { 'Weapon Select' }
-    } elseif ($skillType -eq 'Phys' -or ($weaponTypeNum -and $weaponTypeNum -ne '0')) {
-        $category = 'Physical'
-        $subType = if ($weaponLabels.ContainsKey($weaponTypeNum)) { $weaponLabels[$weaponTypeNum] } else { 'Physical' }
-        if ($subtypeIcons.ContainsKey($subType)) {
-            $iconImg = $subtypeIcons[$subType]
+    } elseif ($skillType -eq 'Phys' -or ($weaponTypeNum -and $weaponTypeNum -ne '0') -or ($iconId -in @('92610', '92616'))) {
+        if ($skillType -ne 'Phys' -and (-not $weaponTypeNum -or $weaponTypeNum -eq '0') -and $detail -notmatch '(?i)\bdeal\b.*\bdamage\b' -and $detail -ne '???') {
+            $category = 'Support'
+            $subType = 'Utility'
+        } else {
+            $category = 'Physical'
+            if ($weaponLabels.ContainsKey($weaponTypeNum)) {
+                $subType = $weaponLabels[$weaponTypeNum]
+            } elseif ($isAllWeaponsAttack -or $detail -match '(?i)sword.*dagger|sword.*polearm|dagger.*axe') {
+                $subType = 'All Weapons'
+            } elseif ($detail -match '(?i)\bsword\b') {
+                $subType = 'Sword'
+            } else {
+                $subType = 'Weapon Select'
+            }
+            if ($subtypeIcons.ContainsKey($subType)) {
+                $iconImg = $subtypeIcons[$subType]
+            }
         }
-    } elseif ($skillType -eq 'Elem' -or ($magicTypeNum -and $magicTypeNum -ne '0')) {
+    } elseif ($skillType -eq 'Elem' -or ($magicTypeNum -and $magicTypeNum -ne '0') -or ($iconId -in @('92611', '92617'))) {
         $category = 'Elemental'
-        $subType = if ($magicLabels.ContainsKey($magicTypeNum)) { $magicLabels[$magicTypeNum] } else { 'Elemental' }
+        $subType = if ($magicLabels.ContainsKey($magicTypeNum)) { $magicLabels[$magicTypeNum] } else { 'Spirit' }
         if ($subtypeIcons.ContainsKey($subType)) {
             $iconImg = $subtypeIcons[$subType]
         }
     } else {
-        # Check if Passive vs Support
-        $isPassiveTrait = ($sp -eq 0) -and ($detail -match '^(When|At the start|At the end|Grant an effect that allows you to recover with|Status effects are not removed|After the equipped character)|equipped character|automatically')
-        if ($isPassiveTrait) {
-            $category = 'Passive'
-            $subType = 'Passive Trait'
-            $targetLabel = 'Passive'
-        } elseif ($sp -gt 0 -or $detail -match 'restore|heal|revive|raise|grant|cure|extend|nullify|provoke|shield') {
-            $category = 'Support'
-            if ($detail -match 'restore|heal|revive|cure') { $subType = 'Recovery' }
-            elseif ($detail -match 'raise|grant|boost|shield|nullify') { $subType = 'Buff' }
-            elseif ($detail -match 'lower|reduce|inflict|provoke') { $subType = 'Debuff' }
-            else { $subType = 'Utility' }
+        $category = 'Support'
+        if ($iconId -in @('92612', '92618') -or $detail -match '(?i)restore|heal|revive|cure') {
+            $subType = 'Recovery'
+        } elseif ($iconId -in @('92613', '92619') -and $detail -notmatch '(?i)^lower|^reduce.*foe') {
+            $subType = 'Buff'
+        } elseif ($iconId -in @('92614', '92620') -or $detail -match '(?i)lower|reduce|inflict|provoke') {
+            if ($detail -match '(?i)^discover\b') { $subType = 'Utility' }
+            else { $subType = 'Debuff' }
+        } elseif ($detail -match '(?i)raise|grant|boost|shield|nullify|fill ultimate') {
+            $subType = 'Buff'
         } else {
-            $category = 'Passive'
-            $subType = 'Passive Trait'
-            $targetLabel = 'Passive'
+            $subType = 'Utility'
         }
     }
 
-    $catCounts[$category]++
-
-    # Collect Ailments
+    # Collect Ailments (1..16)
     $ailments = @()
-    for ($a = 1; $a -le 4; $a++) {
+    for ($a = 1; $a -le 16; $a++) {
         $aName = ($rowMap["Ailment $a"] -as [string])
-        if ($aName -and $aName.Trim().Length -gt 0) {
+        if ($aName -and $aName.Trim().Length -gt 0 -and $aName.Trim() -ne 'No data.') {
             $aVal = ($rowMap["Ailment Value $a"] -as [string]) -replace '\.0$', ''
             $aEff = ($rowMap["Ailment Efficacy $a"] -as [string]) -replace '\.0$', ''
             $ailments += [PSCustomObject]@{
@@ -264,6 +282,7 @@ for ($ri = 1; $ri -lt $rows.Count; $ri++) {
         id = $id
         name = $skillName
         detail = $detail
+        rawDetail = ($detailRaw + '')
         category = $category
         subType = $subType
         icon = $iconImg
@@ -273,35 +292,150 @@ for ($ri = 1; $ri -lt $rows.Count; $ri++) {
         ratios = $ratios
         hits = $hitCounts
         ailments = $ailments
+        isHpDamageAvail = $isHpDamageAvail
     }
 }
 
-# The workbook deliberately contains implementation rows for weapon choices,
-# availability states, and boost/effect variants. The public skill list and
-# wiki present each player-facing skill once, so retain the first authored row
-# for every display name. Workbook order places that wrapper/canonical row
-# before its generated variants.
-$canonicalSkills = [ordered]@{}
-foreach ($skill in $skills) {
-    if (-not $canonicalSkills.Contains($skill.name)) {
-        # Weapon-selection wrappers provide the readable player-facing
-        # description, while their generated weapon rows hold the actual
-        # target and boost values. Merge those complementary fields here.
-        if ($skill.subType -in @('Weapon Select', 'All Weapons')) {
-            $combatVariant = $skills | Where-Object {
-                $_.name -eq $skill.name -and
-                $_.category -eq 'Physical' -and
-                (($_.ratios[1] -ne 100) -or ($_.ratios[2] -ne 100) -or ($_.ratios[3] -ne 100) -or ($_.hits | Where-Object { $_ -gt 0 }))
-            } | Select-Object -First 1
+# Group all parsed rows by skill name so we can merge split Avails rows that
+# share the canonical skill ID, as well as weapon-selection combat variants.
+$rowsByName = [ordered]@{}
+foreach ($s in $skills) {
+    if (-not $rowsByName.Contains($s.name)) {
+        $rowsByName[$s.name] = New-Object System.Collections.Generic.List[object]
+    }
+    $rowsByName[$s.name].Add($s)
+}
 
-            if ($combatVariant) {
-                $skill.target = $combatVariant.target
-                $skill.ratios = $combatVariant.ratios
-                $skill.hits = $combatVariant.hits
+$canonicalSkills = [ordered]@{}
+foreach ($skillName in $rowsByName.Keys) {
+    $allRows = $rowsByName[$skillName]
+    $primary = $allRows[0]
+    $sameIdRows = @($allRows | Where-Object { $_.id -eq $primary.id })
+
+    # 1. Merge Ailments across all Avails rows of the canonical ID
+    $mergedAilments = @()
+    $seenAilments = @{}
+    foreach ($r in $sameIdRows) {
+        foreach ($ail in $r.ailments) {
+            if (-not $seenAilments.ContainsKey($ail.name)) {
+                $seenAilments[$ail.name] = $true
+                $mergedAilments += $ail
             }
         }
+    }
+    $primary.ailments = $mergedAilments
 
-        $canonicalSkills[$skill.name] = $skill
+    # 2. Merge Boost Ratios if Row 0 is a status/debuff Avails row with [100,100,100,100]
+    $isDefaultRatios = ($primary.ratios[0] -eq 100 -and $primary.ratios[1] -eq 100 -and $primary.ratios[2] -eq 100 -and $primary.ratios[3] -eq 100)
+    if ($isDefaultRatios) {
+        $ratioRow = $sameIdRows | Where-Object {
+            ($_.ratios[0] -ne 100 -or $_.ratios[1] -ne 100 -or $_.ratios[2] -ne 100 -or $_.ratios[3] -ne 100) -and
+            ($_.ratios | Where-Object { $_ -gt 0 })
+        } | Select-Object -First 1
+        if ($ratioRow) {
+            $primary.ratios = $ratioRow.ratios
+            if ($primary.target -eq 'Self' -and $ratioRow.target -ne 'Self') {
+                $primary.target = $ratioRow.target
+            }
+        }
+    }
+
+    # 3. Fix Target when Row 0 had TargetType=14 (Self) on an enemy-targeting skill
+    if ($primary.target -eq 'Self') {
+        $otherTargetRow = $sameIdRows | Where-Object { $_.target -ne 'Self' -and $_.target -ne 'Passive' } | Select-Object -First 1
+        if ($otherTargetRow -and $primary.detail -match '(?i)\b(foe|foes|ally|allies)\b') {
+            $primary.target = $otherTargetRow.target
+        } elseif ($primary.detail -match '(?i)all foes') {
+            $primary.target = 'All Foes'
+        } elseif ($primary.detail -match '(?i)random foes') {
+            $primary.target = 'Random Foes'
+        } elseif ($primary.detail -match '(?i)\ba foe\b') {
+            $primary.target = 'Single Foe'
+        }
+    }
+
+    # 4. Merge Turns if Row 0 has '0,0,0,0' and another row of same ID has non-zero turns
+    if (-not $primary.turns -or $primary.turns -eq '0,0,0,0') {
+        $turnRow = $sameIdRows | Where-Object { $_.turns -and $_.turns -ne '0,0,0,0' } | Select-Object -First 1
+        if ($turnRow) {
+            $primary.turns = $turnRow.turns
+        }
+    }
+
+    # 5. Merge or derive Hit Counts
+    $hasHits = [bool]($primary.hits | Where-Object { $_ -gt 0 })
+    if (-not $hasHits) {
+        $hitRow = $sameIdRows | Where-Object { $_.hits | Where-Object { $_ -gt 0 } } | Select-Object -First 1
+        if ($hitRow) {
+            $primary.hits = $hitRow.hits
+            $hasHits = $true
+        }
+    }
+
+    # Weapon-selection / All-Weapons wrapper rows hold the description on Row 0
+    # and the combat values on their generated weapon rows.
+    if ($primary.subType -in @('Weapon Select', 'All Weapons')) {
+        $combatVariant = $allRows | Where-Object {
+            $_.category -eq 'Physical' -and
+            (($_.ratios[1] -ne 100) -or ($_.ratios[2] -ne 100) -or ($_.ratios[3] -ne 100) -or ($_.hits | Where-Object { $_ -gt 0 }) -or $_.isHpDamageAvail)
+        } | Select-Object -First 1
+
+        if ($combatVariant) {
+            if ($primary.target -in @('Self', 'Special Target')) {
+                $primary.target = $combatVariant.target
+            }
+            if ($primary.ratios[0] -eq 100 -and $primary.ratios[1] -eq 100 -and $primary.ratios[2] -eq 100 -and $primary.ratios[3] -eq 100) {
+                $primary.ratios = $combatVariant.ratios
+            }
+            if (-not $hasHits -and ($combatVariant.hits | Where-Object { $_ -gt 0 })) {
+                $primary.hits = $combatVariant.hits
+                $hasHits = $true
+            }
+        }
+    }
+
+    # Derive hit counts from <skl_exec_count> BoostSkills or Now HP Avails rows
+    if (-not $hasHits -and $primary.rawDetail -match '<skl_exec_count>') {
+        $uniqueIds = @($allRows | ForEach-Object { $_.id } | Select-Object -Unique)
+        if ($uniqueIds.Count -ge 4) {
+            $boostHits = @()
+            foreach ($uid in $uniqueIds[0..3]) {
+                $cnt = @($allRows | Where-Object { $_.id -eq $uid -and $_.isHpDamageAvail }).Count
+                $boostHits += $cnt
+            }
+            if ($boostHits | Where-Object { $_ -gt 0 }) {
+                $primary.hits = $boostHits
+                $hasHits = $true
+            }
+        }
+    }
+
+    if (-not $hasHits) {
+        $hpAvailCount = @($sameIdRows | Where-Object { $_.isHpDamageAvail }).Count
+        if ($hpAvailCount -eq 0 -and $allRows.Count -gt $sameIdRows.Count) {
+            $firstHpRow = $allRows | Where-Object { $_.isHpDamageAvail } | Select-Object -First 1
+            if ($firstHpRow) {
+                $hpAvailCount = @($allRows | Where-Object { $_.id -eq $firstHpRow.id -and $_.isHpDamageAvail }).Count
+            }
+        }
+        if ($hpAvailCount -gt 0) {
+            $primary.hits = @($hpAvailCount, $hpAvailCount, $hpAvailCount, $hpAvailCount)
+        }
+    }
+
+    $canonicalSkills[$skillName] = [PSCustomObject]@{
+        id = $primary.id
+        name = $primary.name
+        detail = $primary.detail
+        category = $primary.category
+        subType = $primary.subType
+        icon = $primary.icon
+        sp = $primary.sp
+        target = $primary.target
+        turns = $primary.turns
+        ratios = $primary.ratios
+        hits = $primary.hits
+        ailments = $primary.ailments
     }
 }
 $skills = @($canonicalSkills.Values)

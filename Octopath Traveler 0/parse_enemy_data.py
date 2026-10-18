@@ -69,80 +69,85 @@ def normalize_weaknesses(row):
     return weaknesses
 
 
-_SIDEQUEST_AREAS = (
-    "an encounter with", "a long-lost love", "alpaca roundup",
-    "an assistant like no other", "an indestructible flame",
-    "great expectations", "heidne and the", "in search of what remains",
-    "one's true worth", "the big 'un", "the blade of the weak",
-    "the eight sacred treasures", "the missing brother",
-    "treasure event battle", "unnatural tremors",
-    "what remains of the black scarlet",
-)
-
-_BOSS_AREAS = (
-    "master of", "bestower of", "superboss",
-    "gate of finis", "finale", "kindlers", "unlocking the true",
-    "the heavens",
-)
-
-_BOSS_NAMES = (
-    "guardian", "dragon", "lord", "demon", "tyrant", "fiend",
-    "emperor", "empress", "scholarking", "birdking", "lizardking",
-    "ratking", "frogking", "yak", "archmage", "warmaster",
-    "runelord", "starseer",
-)
+def clean_id(value, fallback_name: str, seen_ids: dict[str, int]) -> str:
+    raw = clean_text(value)
+    if raw:
+        raw = re.sub(r"\.0$", "", raw)
+    if not raw or raw.lower() == "xxx":
+        raw = re.sub(r"[^a-z0-9]+", "-", fallback_name.lower()).strip("-") or "enemy"
+    count = seen_ids.get(raw, 0) + 1
+    seen_ids[raw] = count
+    return raw if count == 1 else f"{raw}-{count}"
 
 
-def infer_enemy_type(name: str, area: str = "", sub_area: str = "") -> str:
-    nl = name.lower()
-    al = area.lower()
-    sl = sub_area.lower()
+def load_arena_rewards(workbook) -> tuple[dict[str, str], dict[str, str]]:
+    """Read Overworld Capture Rewards and Arena Win Rewards from the Monster Arena sheet."""
+    capture_rewards: dict[str, str] = {}
+    arena_win_rewards: dict[str, str] = {}
+    if "Monster Arena" not in workbook.sheetnames:
+        return capture_rewards, arena_win_rewards
 
-    # 1. Rare — Cait & Octopuff variants (high EXP/JP, flee quickly)
-    if any(k in nl for k in ("cait", "octopuff")):
-        return "Rare"
+    ws = workbook["Monster Arena"]
+    mode = ""
+    for r in ws.iter_rows(values_only=True):
+        if not r:
+            continue
+        col4 = clean_text(r[4]) if len(r) > 4 else ""
+        if col4 == "Overworld (Capture)":
+            mode = "capture"
+            continue
+        if col4 == "Arena":
+            mode = "arena"
+            continue
+        if col4 == "StrengthIndex":
+            continue
 
-    # 2. Arena — Monster Arena encounters
-    if al == "arena" or "arena" in sl:
-        return "Arena"
+        reward = clean_text(r[12]) if len(r) > 12 else ""
+        qty = to_int(r[13]) if len(r) > 13 else 0
+        if not reward:
+            continue
+        reward_str = f"{reward} x{qty}" if qty > 1 else reward
 
-    # 3. Sidequest — Traveler quests & Treasure Event Battles
-    if any(al.startswith(p) for p in _SIDEQUEST_AREAS):
-        return "Sidequest"
+        for col_idx in (5, 6, 7):
+            if len(r) > col_idx and r[col_idx]:
+                ename = clean_text(r[col_idx]).lower()
+                if ename:
+                    if mode == "capture":
+                        capture_rewards[ename] = reward_str
+                    elif mode == "arena":
+                        arena_win_rewards[ename] = reward_str
 
-    # 4. Elite — Enhanced overworld spawns (Menacing, Mighty, Ancient, Greater, etc.)
-    if any(k in nl for k in ("menacing", "mighty", "ancient", "greater", "elite")):
-        return "Elite"
-
-    # 5. Boss — Story chapters, named boss enemies
-    if any(k in al for k in _BOSS_AREAS):
-        return "Boss"
-    if any(k in nl for k in _BOSS_NAMES):
-        return "Boss"
-    if any(k in nl for k in ("king", "queen", "general", "boss")):
-        return "Boss"
-    if "fallen" in nl:
-        return "Boss"
-
-    # 6. Regular — standard overworld / dungeon field encounters
-    return "Regular"
+    return capture_rewards, arena_win_rewards
 
 
-def parse_bestiary(ws):
+def parse_bestiary(ws, capture_rewards: dict[str, str] | None = None, arena_win_rewards: dict[str, str] | None = None):
     rows = list(ws.iter_rows(values_only=True))
     if not rows:
         return []
 
     header = rows[0]
-    label_map = {clean_text(cell): idx for idx, cell in enumerate(header)}
     records = []
+    seen_ids: dict[str, int] = {}
+    current_section = "Regular"
 
     for raw in rows[1:]:
         row = {header[idx]: raw[idx] for idx in range(min(len(header), len(raw)))}
         name = clean_text(row.get("Name"))
         area = clean_text(row.get("Area"))
         sub_area = clean_text(row.get("Sub Area"))
-        if not name or not area:
+
+        # Track authoritative worksheet section headers
+        if not name:
+            if area == "Bosses":
+                current_section = "Boss"
+            elif area in ("Rare", "Sidequest", "Arena", "Elite"):
+                current_section = area
+            elif sub_area == "XXX" and current_section == "Sidequest" and area.startswith("Bestower"):
+                # Rows 388-392 are Sunken Ship sidequest enemies, followed by Row 393 Bestower of All 4
+                current_section = "Regular"
+            continue
+
+        if not area:
             continue
 
         weaknesses = normalize_weaknesses(row)
@@ -153,34 +158,50 @@ def parse_bestiary(ws):
             if skill_name:
                 skills.append({"name": skill_name, "type": type_name or "Unknown"})
 
-        records.append(
-            {
-                "id": clean_text(row.get("ID")) or re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-") or "enemy",
-                "name": name,
-                "area": area,
-                "subArea": sub_area,
-                "type": infer_enemy_type(name, area, sub_area),
-                "shields": to_int(row.get("Shields")),
-                "weaknesses": weaknesses,
-                "weakness": weaknesses[0] if weaknesses else "None",
-                "level": to_int(row.get("Level")),
-                "hp": to_int(row.get("HP")),
-                "patk": to_int(row.get("P. Atk.")),
-                "pdef": to_int(row.get("P. Def.")),
-                "matk": to_int(row.get("M. Atk.")),
-                "mdef": to_int(row.get("M. Def.")),
-                "speed": to_int(row.get("SPD")),
-                "crit": to_int(row.get("CRT")),
-                "accuracy": to_int(row.get("ACC")),
-                "evasion": to_int(row.get("EVA")),
-                "exp": to_int(row.get("EXP")),
-                "jp": to_int(row.get("JP")),
-                "steal": clean_text(row.get("Steal")),
-                "drop": clean_text(row.get("Drop")),
-                "immunities": clean_text(row.get("Status Immunities")),
-                "skills": skills,
-            }
-        )
+        enemy_id = clean_id(row.get("ID"), name, seen_ids)
+        record = {
+            "id": enemy_id,
+            "name": name,
+            "area": area,
+            "subArea": sub_area,
+            "type": current_section,
+            "shields": to_int(row.get("Shields")),
+            "weaknesses": weaknesses,
+            "weakness": weaknesses[0] if weaknesses else "None",
+            "level": to_int(row.get("Level")),
+            "hp": to_int(row.get("HP")),
+            "patk": to_int(row.get("P. Atk.")),
+            "pdef": to_int(row.get("P. Def.")),
+            "matk": to_int(row.get("M. Atk.")),
+            "mdef": to_int(row.get("M. Def.")),
+            "speed": to_int(row.get("SPD")),
+            "crit": to_int(row.get("CRT")),
+            "critDef": to_int(row.get("CRTDef")),
+            "accuracy": to_int(row.get("ACC")),
+            "evasion": to_int(row.get("EVA")),
+            "exp": to_int(row.get("EXP")),
+            "jp": to_int(row.get("JP")),
+            "leaves": to_int(row.get("L")),
+            "steal": clean_text(row.get("Steal")),
+            "drop": clean_text(row.get("Drop")),
+            "immunities": clean_text(row.get("Status Immunities")),
+            "skills": skills,
+        }
+
+        if current_section == "Arena":
+            key_lower = name.lower()
+            if area == "Arena":
+                win_rew = (arena_win_rewards or {}).get(key_lower, "")
+                if not win_rew and key_lower == "immortal flame":
+                    win_rew = (arena_win_rewards or {}).get("sultravi", "")
+                if win_rew:
+                    record["arenaReward"] = f"Arena Win: {win_rew}"
+            else:
+                cap_rew = (capture_rewards or {}).get(key_lower, "")
+                if cap_rew:
+                    record["arenaReward"] = f"Capture: {cap_rew}"
+
+        records.append(record)
 
     return records
 
@@ -231,8 +252,9 @@ def correct_boss_areas(enemies: list[dict]) -> int:
 
 def main() -> None:
     workbook = load_workbook(WORKBOOK, read_only=True, data_only=True)
+    capture_rewards, arena_win_rewards = load_arena_rewards(workbook)
     ws = workbook["Bestiary"]
-    enemies = parse_bestiary(ws)
+    enemies = parse_bestiary(ws, capture_rewards, arena_win_rewards)
 
     fixed = correct_boss_areas(enemies)
     if fixed:
@@ -246,3 +268,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

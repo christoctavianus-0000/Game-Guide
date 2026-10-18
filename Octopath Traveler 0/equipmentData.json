@@ -163,7 +163,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Wishvale - Lutus",
     "cost": "",
     "costValue": null
   },
@@ -667,7 +667,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Atlasdam Palace - Deeply Loyal Guard",
     "cost": "",
     "costValue": null
   },
@@ -979,7 +979,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Wishvale - Eltrix",
     "cost": "",
     "costValue": null
   },
@@ -1099,7 +1099,7 @@
       "eva": 0
     },
     "effect": "Equip effect: Restore 1 BP every turn.",
-    "source": "",
+    "source": "[Sidequest] An Indestructible Flame (Agapea)",
     "cost": "",
     "costValue": null
   },
@@ -1483,7 +1483,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[Sidequest] The Big 'Un (Clearbrook Traverse)",
     "cost": "",
     "costValue": null
   },
@@ -1507,7 +1507,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Cathedral of Tytos - Merchant on Good Terms with the Church",
     "cost": "",
     "costValue": null
   },
@@ -1603,7 +1603,7 @@
       "eva": 0
     },
     "effect": "Attack effect: Small chance to reduce target's Evasion.",
-    "source": "",
+    "source": "[NPC] Sunken Ship - G'roha Soldier with No Fight Left",
     "cost": "",
     "costValue": null
   },
@@ -3283,7 +3283,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[Treasure] Knights Ardante Garrison (Flatlands), [NPC] Grandport: Estate Entrance - Hardheaded Guard",
     "cost": "",
     "costValue": null
   },
@@ -3715,7 +3715,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Cathedral of Tytos: Entrance - Head of the Artisan's Guild",
     "cost": "",
     "costValue": null
   },
@@ -3883,7 +3883,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[Treasure] Shipwreck Island (Coastlands) - Guarded: Menacing Ice Remnant Mk.II",
     "cost": "",
     "costValue": null
   },
@@ -4315,7 +4315,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[Treasure] Snowshard Grotto (Frostlands) - Guarded: Menacing Frostwing Serpent",
     "cost": "",
     "costValue": null
   },
@@ -5347,7 +5347,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[Treasure] Auguste's Villa: Entrance (Woodlands)",
     "cost": "",
     "costValue": null
   },
@@ -6523,7 +6523,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[Treasure] Path to Waterpool Caves (Riverlands)",
     "cost": "",
     "costValue": null
   },
@@ -6739,7 +6739,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Arena - Arena Dancer",
     "cost": "",
     "costValue": null
   },
@@ -6787,7 +6787,7 @@
       "eva": 0
     },
     "effect": "Attack effect: Small chance to blind target.",
-    "source": "",
+    "source": "[NPC] Sunshade - Former Working Dancer",
     "cost": "",
     "costValue": null
   },
@@ -6883,7 +6883,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Grandport Markets - Lovelorn Dancer",
     "cost": "",
     "costValue": null
   },
@@ -6931,7 +6931,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Wishvale - Laurana",
     "cost": "",
     "costValue": null
   },
@@ -7843,7 +7843,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Royal Academy of Atlasdam - Long-Standing Divine Scholar",
     "cost": "",
     "costValue": null
   },
@@ -8587,7 +8587,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Wishvale - Lutus",
     "cost": "",
     "costValue": null
   },
@@ -9451,7 +9451,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Amphitheatre: Entrance - Listless Former Actress",
     "cost": "",
     "costValue": null
   },
@@ -10675,7 +10675,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[Treasure] Cerulean Caverns (Woodlands), [Treasure] Amphitheatre: Rehearsal Room (Flatlands)",
     "cost": "",
     "costValue": null
   },
@@ -10795,7 +10795,7 @@
       "eva": 0
     },
     "effect": "Equip effect: Restore 3 SP after performing an action.",
-    "source": "",
+    "source": "[NPC] Cragspear - Birdian Researcher (Inquire)",
     "cost": "",
     "costValue": null
   },
@@ -11467,7 +11467,7 @@
       "eva": 0
     },
     "effect": "Equip effect: Prevent instant death.",
-    "source": "",
+    "source": "[NPC] Donescu - Military Scholar (Inquire)",
     "cost": "",
     "costValue": null
   },
@@ -11587,7 +11587,7 @@
       "eva": 0
     },
     "effect": "Equip effect: Prevent sleep and comatose.",
-    "source": "",
+    "source": "[Treasure] Cathedral of Tytos: Entrance (Frostlands), [NPC] Grandport Bazaar - Award-Winning Farmer",
     "cost": "",
     "costValue": null
   },
@@ -11779,7 +11779,7 @@
       "eva": 0
     },
     "effect": "Equip effect: Reduce fire damage.",
-    "source": "",
+    "source": "[Treasure] Gray Grotto (Cliftlands), [NPC] Cragspear - Distantly Related Noble (Inquire)",
     "cost": "",
     "costValue": null
   },
@@ -12643,7 +12643,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[Treasure] Donescu (Riverlands), [NPC] Cathedral of Tytos: Entrance - Instructor Rhiom, [NPC] Hell: Hornburg - Hornburgian Guard",
     "cost": "",
     "costValue": null
   },
@@ -12763,7 +12763,7 @@
       "eva": 0
     },
     "effect": "",
-    "source": "",
+    "source": "[NPC] Wishvale - Esperre, [NPC] Grandport Markets - Diarist, [NPC] Hell: Valore - Main Boulevard - Enraged Prostitute, [Steal] Cursed Master Auguste (Fame's Dominion)",
     "cost": "",
     "costValue": null
   },

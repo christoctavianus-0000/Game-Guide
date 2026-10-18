@@ -2,6 +2,23 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Excel Database Re-Verification (Skills, Equipment, Enemies)
+
+- **Skill Codex Re-Verification (`parse_skill_data.ps1`, `skillData.json`, `skillData.js`, `app.js`)**:
+  - **Authoritative Category & Icon Classification**: Replaced SP=0 text heuristics with the workbook's `Category` (`2` = Passive, `1` = Active) and `SkillIconID` (`92610`-`92620`) columns, fixing 15 Passive skills (`Category = 2`) that were misclassified as Support and 52 Active/Ultimate/Helper skills (`Category = 1` with `SP = 0`) that were misclassified as Passive. Updated category totals across all 760 unique skills: **Physical 284, Support 223, Elemental 127, Passive 126**.
+  - **Split `Avails` Row Merging**: Skills with multiple internal `Avails` rows sharing the same canonical `ID` (such as `Helmcleaver`, `Swiftstrike`, `Vanguard Steel`, `Arm-Crippling Thrust`, `HP Thief`, `Song of Levin`, `Ulti-meow`) now merge their `Now HP` damage row's `SkillRatios.1..4` and enemy `TargetType` instead of stopping at Row 0's `TargetType=14` (`Self`) and `[100, 100, 100, 100]` status-trigger defaults.
+  - **Multi-Hit Count Derivation**: When `Min_HitCount 1..4` is blank (`0`), hit counts (`hits`) are derived from the number of `Now HP` damage rows and `<skl_exec_count>` `BoostSkills` references (fixing 390 skills, including boost-scaling hit counts like `Phantom Strike` `[2, 2, 3, 4]` and `Divine Light` `[1, 2, 3, 4]`).
+  - **16-Slot Ailment Collection**: Expanded ailment extraction from `Ailment 1..4` to `Ailment 1..16` across all `Avails` rows of the same skill ID (fixing 8-buff skills like `Stroke of Genius` and `Greater Distribution` plus 80+ multi-effect skills).
+  - **Elemental Subtype Chip Fix**: Aligned the `Non-Elemental` subtype chip ID in `app.js` with `subType: "Spirit"` so clicking `Non-Elemental` filters the 11 non-elemental magic skills.
+- **Equipment Codex Re-Verification (`parse_equipment_data.py`, `equipmentData.json`, `equipmentData.js`)**:
+  - Migrated `parse_equipment_data.py` from `pandas` to `openpyxl` so it runs cleanly alongside the other workbook parsers.
+  - Cross-referenced the 31 equipment items that had blank `SOURCE` cells in `Weapon` / `Armor` against the `Treasure`, `Sidequests`, `Townspeople`, and `Bestiary` sheets, backfilling 27 items with tagged acquisition sources (`[Treasure]`, `[Sidequest]`, `[NPC]`, `[Steal]`) and raising source coverage to 606/610 items.
+- **Enemy Codex Re-Verification (`parse_enemy_data.py`, `enemyData.json`, `enemyData.js`, `enemyApp.js`, `types/codex-types.d.ts`)**:
+  - **Authoritative Bestiary Section Headers**: Replaced name-guessing heuristics (`infer_enemy_type`) with the `Bestiary` worksheet's explicit section headers (`Regular: 380`, `Boss: 215`, `Sidequest: 81`, `Elite: 60`, `Arena: 17`, `Rare: 7`), fixing 227 misclassified enemies (including 99 story bosses, 78 sidequest bosses, and 44 elite enemies).
+  - **Clean IDs & Duplicate Disambiguation**: Stripped `.0` float suffixes from all 760 enemy IDs and disambiguated the duplicate `Light Revenant` ID (`98844` vs `98844-2`).
+  - **Combat Stats & Rewards**: Exported `leaves` (`L` column) and `critDef` (`CRTDef` column) from `Bestiary`. Replaced the non-existent `SP` stat column in `ENEMY_STAT_META` (`enemyApp.js`) with `CRT DEF` (`critDef`), and updated the modal header to display `EXP / JP / Leaves`.
+  - **Monster Arena Integration**: Cross-referenced the `Monster Arena` worksheet so all 17 `Arena` enemies display their `Capture: ...` or `Arena Win: ...` reward (`arenaReward`) in the Enemy Codex detail modal.
+
 ## Unreleased — Compact Job Category Tabs & Complete Character Sprite Suite
 
 - **Character Job Category Navigation Redesign (`character.html`, `styles.css`)**:

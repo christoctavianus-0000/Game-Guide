@@ -46,10 +46,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -210,10 +210,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -266,10 +266,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -310,7 +310,7 @@
         "name":  "Wondrous Veil",
         "detail":  "Grant an effect that allows an ally to recover with 25% of their max. HP upon being incapacitated (one time only).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  30,
         "target":  "Single Ally",
@@ -434,10 +434,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -481,19 +481,19 @@
         "subType":  "Sword",
         "icon":  "assets/icons/icon_sword.png",
         "sp":  8,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -520,10 +520,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -546,10 +546,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -572,10 +572,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -598,10 +598,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -624,10 +624,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -650,10 +650,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -676,10 +676,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -702,10 +702,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -754,10 +754,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -771,19 +771,19 @@
         "subType":  "Sword",
         "icon":  "assets/icons/icon_sword.png",
         "sp":  36,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "2,2,2,2",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       80,
+                       168,
+                       256,
+                       344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -810,10 +810,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -827,19 +827,19 @@
         "subType":  "Sword",
         "icon":  "assets/icons/icon_sword.png",
         "sp":  16,
-        "target":  "Self",
+        "target":  "Random Foes",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       195,
+                       290,
+                       385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -862,10 +862,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -888,10 +888,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -914,10 +914,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -940,10 +940,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -966,10 +966,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     3,
+                     4
                  ],
         "ailments":  [
 
@@ -992,10 +992,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -1022,10 +1022,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -1052,10 +1052,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1078,10 +1078,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1104,10 +1104,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1130,10 +1130,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1156,10 +1156,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1182,10 +1182,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1208,10 +1208,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -1225,19 +1225,19 @@
         "subType":  "Polearm",
         "icon":  "assets/icons/icon_polearm.png",
         "sp":  9,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       195,
+                       290,
+                       385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
                          {
@@ -1255,19 +1255,19 @@
         "subType":  "Polearm",
         "icon":  "assets/icons/icon_polearm.png",
         "sp":  22,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       195,
+                       290,
+                       385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
                          {
@@ -1289,15 +1289,15 @@
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       190,
+                       280,
+                       370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -1320,10 +1320,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1346,10 +1346,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1372,10 +1372,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -1424,10 +1424,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -1476,10 +1476,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1502,10 +1502,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1528,10 +1528,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1545,13 +1545,13 @@
         "subType":  "Dagger",
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  33,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
                      1,
@@ -1575,19 +1575,19 @@
         "subType":  "Dagger",
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  9,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       195,
+                       290,
+                       385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -1601,19 +1601,19 @@
         "subType":  "Dagger",
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  9,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       195,
+                       290,
+                       385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -1636,10 +1636,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -1662,10 +1662,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -1679,19 +1679,19 @@
         "subType":  "Dagger",
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  29,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       185,
+                       270,
+                       355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -1714,10 +1714,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -1740,10 +1740,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1766,10 +1766,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1792,10 +1792,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -1818,10 +1818,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -1844,10 +1844,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -1861,19 +1861,19 @@
         "subType":  "Dagger",
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  48,
-        "target":  "Self",
+        "target":  "Random Foes",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1896,10 +1896,10 @@
                        340
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     5,
+                     5,
+                     5,
+                     5
                  ],
         "ailments":  [
 
@@ -1922,10 +1922,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1948,10 +1948,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1974,10 +1974,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -1991,13 +1991,13 @@
         "subType":  "Axe",
         "icon":  "assets/icons/icon_axe.png",
         "sp":  18,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
                      1,
@@ -2030,10 +2030,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2051,15 +2051,15 @@
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2077,15 +2077,15 @@
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2108,10 +2108,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2134,10 +2134,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2160,10 +2160,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2186,10 +2186,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2212,10 +2212,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2238,10 +2238,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2264,10 +2264,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -2290,10 +2290,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2316,10 +2316,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2342,10 +2342,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2368,10 +2368,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2394,10 +2394,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2420,10 +2420,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2446,10 +2446,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2472,10 +2472,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2498,10 +2498,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2524,10 +2524,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2550,10 +2550,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -2576,10 +2576,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -2668,6 +2668,11 @@
                              "name":  "Speed Up",
                              "value":  "1",
                              "efficacy":  "25"
+                         },
+                         {
+                             "name":  "Evasion Up",
+                             "value":  "1",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -2736,7 +2741,7 @@
         "name":  "Share SP",
         "detail":  "Grant 50% of caster\u0027s remaining SP to an ally.",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  10,
         "target":  "Single Ally",
@@ -2810,6 +2815,11 @@
                              "name":  "Provoked",
                              "value":  "50",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Accuracy Down",
+                             "value":  "15",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -3137,11 +3147,11 @@
         "id":  "900120",
         "name":  "Invigorating Attack",
         "detail":  "Restore HP equal to 10% of damage dealt when using Attack.",
-        "category":  "Support",
-        "subType":  "Recovery",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -3163,11 +3173,11 @@
         "id":  "900121",
         "name":  "Healing Item Expertise",
         "detail":  "Increase the effects of healing items during battle.",
-        "category":  "Support",
-        "subType":  "Recovery",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -3189,11 +3199,11 @@
         "id":  "900122",
         "name":  "Conserve Magic",
         "detail":  "Restore SP when spell is not used during turn after spell is used.",
-        "category":  "Support",
-        "subType":  "Recovery",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -3219,11 +3229,11 @@
         "id":  "900123",
         "name":  "Evil Ward",
         "detail":  "Raise the party\u0027s success rate when attempting to flee. (The effect is not cumulative.)",
-        "category":  "Support",
-        "subType":  "Buff",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -3245,11 +3255,11 @@
         "id":  "900124",
         "name":  "Augmented Break",
         "detail":  "Raise the potency of attacks against broken foes.",
-        "category":  "Support",
-        "subType":  "Buff",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -3275,11 +3285,11 @@
         "id":  "900125",
         "name":  "Price of Power",
         "detail":  "Consume twice the SP when casting specific spells, but raise the potency.",
-        "category":  "Support",
-        "subType":  "Buff",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -3294,7 +3304,11 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "SP Burner",
+                             "value":  "100",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -3374,10 +3388,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -3387,11 +3401,11 @@
         "id":  "900411",
         "name":  "Aeber\u0027s Artifice",
         "detail":  "Lower Phys. Atk./Phys. Def./Elem. Atk./Elem. Def. of a foe for turn(s)., and steal an item.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "1,1,1,1",
         "ratios":  [
                        100,
@@ -3406,7 +3420,26 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Atk. Down",
+                             "value":  "14",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Down",
+                             "value":  "14",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Def. Down",
+                             "value":  "14",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Down",
+                             "value":  "14",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
@@ -3452,10 +3485,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -3478,10 +3511,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -3521,19 +3554,19 @@
         "subType":  "Dark",
         "icon":  "assets/icons/icon_dark.png",
         "sp":  8,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -3560,10 +3593,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -3586,10 +3619,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -3612,10 +3645,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -3638,10 +3671,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -3664,10 +3697,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -3690,10 +3723,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -3707,7 +3740,7 @@
         "subType":  "Weapon Select",
         "icon":  "",
         "sp":  34,
-        "target":  "All Foes",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        80,
@@ -3716,10 +3749,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -3733,13 +3766,13 @@
         "subType":  "Ice",
         "icon":  "assets/icons/icon_ice.png",
         "sp":  8,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
                      1,
@@ -3764,7 +3797,7 @@
         "icon":  "assets/icons/icon_lightning.png",
         "sp":  8,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,2,2,2",
         "ratios":  [
                        100,
                        210,
@@ -3772,13 +3805,17 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Paralysis",
+                             "value":  "75",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -3798,10 +3835,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -3824,10 +3861,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -3850,10 +3887,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -3890,7 +3927,7 @@
         "name":  "Ethereal Healing",
         "detail":  "Grant HP regeneration to the entire front row or entire back row for turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  30,
         "target":  "Front/Back Row",
@@ -3942,6 +3979,11 @@
                              "name":  "Phys. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Crit. Up",
+                             "value":  "1",
+                             "efficacy":  "30"
                          }
                      ]
     },
@@ -3972,6 +4014,11 @@
                              "name":  "Phys. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Accuracy Up",
+                             "value":  "1",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -4070,7 +4117,7 @@
         "name":  "Song of Battle",
         "detail":  "Make foes more likely to attack paired ally in the back row and raise their Phys. Def. for turn(s)., then move to back row.",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  6,
         "target":  "Paired Ally",
@@ -4089,11 +4136,6 @@
                  ],
         "ailments":  [
                          {
-                             "name":  "No data.",
-                             "value":  "50",
-                             "efficacy":  ""
-                         },
-                         {
                              "name":  "Phys. Def. Up",
                              "value":  "1",
                              "efficacy":  "20"
@@ -4108,7 +4150,7 @@
         "subType":  "Debuff",
         "icon":  "",
         "sp":  9,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
@@ -4127,6 +4169,16 @@
                              "name":  "First in Line",
                              "value":  "",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Accuracy Down",
+                             "value":  "15",
+                             "efficacy":  "15"
+                         },
+                         {
+                             "name":  "Evasion Down",
+                             "value":  "15",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -4138,7 +4190,7 @@
         "subType":  "Debuff",
         "icon":  "",
         "sp":  30,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
@@ -4157,6 +4209,16 @@
                              "name":  "First in Line",
                              "value":  "",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Speed Down",
+                             "value":  "15",
+                             "efficacy":  "25"
+                         },
+                         {
+                             "name":  "Evasion Down",
+                             "value":  "15",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -4165,7 +4227,7 @@
         "name":  "Provoke",
         "detail":  "Attempt to draw the attention of all foes for turn(s).",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  6,
         "target":  "All Foes",
@@ -4195,7 +4257,7 @@
         "name":  "Negotiation",
         "detail":  "Target foe provides additional EXP and leaves at the end of battle.",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  10,
         "target":  "Single Foe",
@@ -4225,7 +4287,7 @@
         "name":  "Moonlit Repose",
         "detail":  "Grant SP regeneration to an ally for turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  8,
         "target":  "Single Ally",
@@ -4284,19 +4346,19 @@
         "subType":  "Bow",
         "icon":  "assets/icons/icon_bow.png",
         "sp":  35,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -4319,10 +4381,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -4371,10 +4433,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -4392,15 +4454,15 @@
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       190,
+                       280,
+                       370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -4423,10 +4485,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -4449,10 +4511,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -4515,7 +4577,7 @@
         "name":  "Heal All",
         "detail":  "Grant HP regeneration to the entire front row or entire back row for turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  15,
         "target":  "Front/Back Row",
@@ -4545,7 +4607,7 @@
         "name":  "Rehabilitate",
         "detail":  "Grant an ally immunity to status ailments for turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  15,
         "target":  "Single Ally",
@@ -4691,7 +4753,7 @@
         "name":  "Donate BP",
         "detail":  "Grant BP to an ally.",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  5,
         "target":  "Single Ally",
@@ -4716,11 +4778,11 @@
         "id":  "900593",
         "name":  "Borrow BP",
         "detail":  "Borrow insufficient BP for Boost from paired back ally. Neither will restore BP next turn.",
-        "category":  "Support",
-        "subType":  "Recovery",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -5101,10 +5163,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     6,
+                     6,
+                     6,
+                     6
                  ],
         "ailments":  [
 
@@ -5137,6 +5199,11 @@
                              "name":  "Phys. Atk. Up",
                              "value":  "2",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Evade Phys. Atk.",
+                             "value":  "",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -5167,6 +5234,11 @@
                              "name":  "Provoked",
                              "value":  "100",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Evade Phys. Atk.",
+                             "value":  "",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -5179,7 +5251,7 @@
         "icon":  "",
         "sp":  0,
         "target":  "All Allies",
-        "turns":  "0,0,0,0",
+        "turns":  "2,4,6,6",
         "ratios":  [
                        100,
                        100,
@@ -5193,18 +5265,22 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Rehabilitate",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
         "id":  "900730",
         "name":  "Alephan\u0027s Wisdom",
         "detail":  "Reduce skill cost to 0 SP for all allies for turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Allies",
         "turns":  "2,3,4,4",
         "ratios":  [
                        100,
@@ -5251,6 +5327,11 @@
         "ailments":  [
                          {
                              "name":  "Phys. Atk. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Down",
                              "value":  "15",
                              "efficacy":  "20"
                          }
@@ -5329,10 +5410,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
                          {
@@ -5347,7 +5428,7 @@
         "name":  "Gift of the Aqeeq",
         "detail":  "Lower Phys. Atk./Phys. Def. of all foes for turn(s)., and raise Phys. Atk./Phys. Def. of all allies for turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
         "target":  "All Foes",
@@ -5374,6 +5455,16 @@
                              "name":  "Phys. Def. Down",
                              "value":  "14",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Atk. Up",
+                             "value":  "2",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Def. Up",
+                             "value":  "2",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -5382,7 +5473,7 @@
         "name":  "Scales of Justice",
         "detail":  "Lower Phys. Def./Elem. Def. of all foes for turn(s)., and raise Phys. Atk./Elem. Atk. of all allies for turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
         "target":  "All Foes",
@@ -5409,6 +5500,16 @@
                              "name":  "Elem. Def. Down",
                              "value":  "14",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Atk. Up",
+                             "value":  "2",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Up",
+                             "value":  "2",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -5417,7 +5518,7 @@
         "name":  "Maiden\u0027s Miracle",
         "detail":  "Grant an effect that allows the entire front row or entire back row to recover with 50% of their max. HP upon being incapacitated.",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  0,
         "target":  "Front/Back Row",
@@ -5459,10 +5560,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -5476,19 +5577,19 @@
         "subType":  "Lightning",
         "icon":  "assets/icons/icon_lightning.png",
         "sp":  0,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "2,3,4,4",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       600,
+                       750,
+                       900,
+                       900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -5515,10 +5616,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -5528,11 +5629,11 @@
         "id":  "901131",
         "name":  "Call for Help",
         "detail":  "Deal sword/dagger/axe/light damage to random foes 1 time(s) each.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Physical",
+        "subType":  "All Weapons",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Random Foes",
         "turns":  "0,0,0,0",
         "ratios":  [
                        600,
@@ -5541,10 +5642,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -5580,11 +5681,11 @@
         "id":  "901137",
         "name":  "Grand Trinity",
         "detail":  "Deal fire/ice/lightning damage to all foes 2 time(s) each.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
-        "icon":  "",
+        "category":  "Elemental",
+        "subType":  "Arcane",
+        "icon":  "assets/icons/icon_arcane.svg",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "0,0,0,0",
         "ratios":  [
                        600,
@@ -5593,10 +5694,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     6,
+                     6,
+                     6,
+                     6
                  ],
         "ailments":  [
 
@@ -5611,7 +5712,7 @@
         "icon":  "assets/icons/icon_dark.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "3,3,3,3",
         "ratios":  [
                        600,
                        750,
@@ -5619,13 +5720,17 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Second Wind",
+                             "value":  "10",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -5703,11 +5808,11 @@
         "id":  "901149",
         "name":  "Sword of the Sacred Flame",
         "detail":  "Deal sword/light damage to a foe 1 time(s) each.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
-        "icon":  "",
+        "category":  "Physical",
+        "subType":  "Sword",
+        "icon":  "assets/icons/icon_sword.png",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        600,
@@ -5716,10 +5821,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -5752,6 +5857,11 @@
                              "name":  "BP Recovery Up",
                              "value":  "1",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Second Wind",
+                             "value":  "10",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -5772,10 +5882,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     5,
+                     5,
+                     5,
+                     5
                  ],
         "ailments":  [
 
@@ -5785,12 +5895,12 @@
         "id":  "901158",
         "name":  "Fluid Stance",
         "detail":  "Deal damage with equipped weapon 2 time(s) when evading or parrying attacks for turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
-        "turns":  "0,0,0,0",
+        "target":  "Single Foe",
+        "turns":  "2,3,4,4",
         "ratios":  [
                        100,
                        100,
@@ -5804,7 +5914,11 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Elude and Retaliate",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -5824,13 +5938,17 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Diminished Shield",
+                             "value":  "15",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -5842,7 +5960,7 @@
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "1,1,1,1",
         "ratios":  [
                        600,
                        750,
@@ -5850,10 +5968,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -5864,7 +5982,7 @@
         "name":  "Prism Mist",
         "detail":  "Grant a random positive status effect to all allies.",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  0,
         "target":  "Single Foe",
@@ -5889,12 +6007,12 @@
         "id":  "901162",
         "name":  "Shield of Hope",
         "detail":  "Reduce damage taken by all alies for turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
-        "turns":  "0,0,0,0",
+        "target":  "Single Foe",
+        "turns":  "2,3,4,4",
         "ratios":  [
                        100,
                        100,
@@ -5908,18 +6026,22 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Reduce Damage",
+                             "value":  "-60",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
         "id":  "901163",
         "name":  "Soulstone\u0027s Might",
         "detail":  "Deal fire/ice/lightning/wind/light/dark damage to all foes 1 time(s) each.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
-        "icon":  "",
+        "category":  "Elemental",
+        "subType":  "Arcane",
+        "icon":  "assets/icons/icon_arcane.svg",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "0,0,0,0",
         "ratios":  [
                        600,
@@ -5928,10 +6050,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     6,
+                     6,
+                     6,
+                     6
                  ],
         "ailments":  [
 
@@ -5941,11 +6063,11 @@
         "id":  "901165",
         "name":  "Hunter\u0027s Drive",
         "detail":  "Deal sword damage to all foes, polearm damage to a foe, and bow damage to all foes.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Physical",
+        "subType":  "All Weapons",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "0,0,0,0",
         "ratios":  [
                        600,
@@ -5954,10 +6076,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -5967,11 +6089,11 @@
         "id":  "901166",
         "name":  "For the Family",
         "detail":  "Summon the Bargello family and deal dagger/axe/wind/staff damage to a foe 1 time(s) each.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Physical",
+        "subType":  "All Weapons",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        600,
@@ -5980,10 +6102,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -5994,11 +6116,11 @@
         "name":  "Hawk of Orsterra",
         "detail":  "Discover weak points of all foes, and raise weak point damage for turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Utility",
         "icon":  "",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,3,4,4",
         "ratios":  [
                        100,
                        100,
@@ -6012,7 +6134,11 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Weak Point Dmg. Up",
+                             "value":  "100",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -6047,6 +6173,16 @@
                              "name":  "Phys. Def. Up",
                              "value":  "2",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Cover",
+                             "value":  "100",
+                             "efficacy":  ""
+                         },
+                         {
+                             "name":  "Hang Tough",
+                             "value":  "1",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -6067,10 +6203,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     5,
+                     5,
+                     5,
+                     5
                  ],
         "ailments":  [
 
@@ -6093,10 +6229,10 @@
                        900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -6110,19 +6246,19 @@
         "subType":  "Spirit",
         "icon":  "assets/icons/icon_spirit.svg",
         "sp":  0,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "0,0,0,0",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       600,
+                       750,
+                       900,
+                       900
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -6133,7 +6269,7 @@
         "name":  "Dohter\u0027s Charity",
         "detail":  "Extend the reach of an ally\u0027s items to affect all for turn(s).",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
         "target":  "Single Ally",
@@ -6163,7 +6299,7 @@
         "name":  "Sealticge\u0027s Seduction",
         "detail":  "Extend the reach of an ally\u0027s specific skills to affect all for turn(s). Dance skill.",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
         "target":  "Single Ally",
@@ -6374,11 +6510,11 @@
         "id":  "901195",
         "name":  "Fierce Rush",
         "detail":  "Raise the potency of multiple-hit attacks against broken foes.",
-        "category":  "Support",
-        "subType":  "Buff",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -6639,6 +6775,11 @@
                              "name":  "Vim and Vigor",
                              "value":  "5",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Second Wind",
+                             "value":  "5",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -6724,10 +6865,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -7026,10 +7167,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -7060,6 +7201,21 @@
         "ailments":  [
                          {
                              "name":  "Phys. Atk. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Up",
                              "value":  "1",
                              "efficacy":  "20"
                          }
@@ -7108,10 +7264,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -7122,7 +7278,7 @@
         "name":  "Divine Flame",
         "detail":  "Exploit weaknesses with physical attacks regardless of weak points for turn(s).",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  16,
         "target":  "Self",
@@ -7164,10 +7320,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7190,10 +7346,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7216,13 +7372,17 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Instant Death",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -7242,10 +7402,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7268,10 +7428,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7294,10 +7454,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -7311,13 +7471,13 @@
         "subType":  "Bow",
         "icon":  "assets/icons/icon_bow.png",
         "sp":  8,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
                      1,
@@ -7350,10 +7510,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7376,10 +7536,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7393,19 +7553,19 @@
         "subType":  "Bow",
         "icon":  "assets/icons/icon_bow.png",
         "sp":  8,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -7432,13 +7592,17 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Dead Aim",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -7458,10 +7622,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -7476,7 +7640,7 @@
         "icon":  "assets/icons/icon_bow.png",
         "sp":  16,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "1,1,1,1",
         "ratios":  [
                        100,
                        195,
@@ -7484,13 +7648,17 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Swift Strikes",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -7501,7 +7669,7 @@
         "subType":  "Bow",
         "icon":  "assets/icons/icon_bow.png",
         "sp":  32,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "1,1,1,1",
         "ratios":  [
                        100,
@@ -7510,10 +7678,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
                          {
@@ -7540,10 +7708,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7587,18 +7755,22 @@
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Instant Death",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -7618,10 +7790,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7644,10 +7816,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -7661,13 +7833,13 @@
         "subType":  "Fan",
         "icon":  "assets/icons/icon_fan.png",
         "sp":  34,
-        "target":  "Self",
+        "target":  "Random Foes",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       185,
+                       270,
+                       355
                    ],
         "hits":  [
                      1,
@@ -7691,19 +7863,19 @@
         "subType":  "Tome",
         "icon":  "assets/icons/icon_tome.png",
         "sp":  8,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -7730,10 +7902,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7756,10 +7928,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -7782,10 +7954,10 @@
                        296
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -7808,10 +7980,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7825,7 +7997,7 @@
         "subType":  "Weapon Select",
         "icon":  "",
         "sp":  60,
-        "target":  "All Foes",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        80,
@@ -7834,10 +8006,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7860,10 +8032,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7886,10 +8058,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7912,10 +8084,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -7938,10 +8110,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -7964,10 +8136,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -7990,10 +8162,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8016,10 +8188,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8042,10 +8214,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -8068,10 +8240,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8094,10 +8266,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8120,10 +8292,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8146,10 +8318,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8172,10 +8344,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -8198,10 +8370,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     2,
+                     3,
+                     4
                  ],
         "ailments":  [
 
@@ -8224,10 +8396,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8250,10 +8422,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8276,10 +8448,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8302,10 +8474,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8328,10 +8500,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8354,10 +8526,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -8390,6 +8562,11 @@
                              "name":  "Vim and Vigor",
                              "value":  "120",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Second Wind",
+                             "value":  "10",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -8404,10 +8581,10 @@
         "target":  "Self",
         "turns":  "0,0,0,0",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       200,
+                       280,
+                       340,
+                       400
                    ],
         "hits":  [
                      0,
@@ -8453,13 +8630,13 @@
         "subType":  "Recovery",
         "icon":  "",
         "sp":  12,
-        "target":  "Self",
+        "target":  "Single Ally",
         "turns":  "0,0,0,0",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       200,
+                       280,
+                       340,
+                       400
                    ],
         "hits":  [
                      0,
@@ -8502,7 +8679,7 @@
         "name":  "Dance of Repose",
         "detail":  "Grant HP regeneration to an ally for turn(s). Dance skill.",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  6,
         "target":  "Single Ally",
@@ -8532,7 +8709,7 @@
         "name":  "Dance of Respite",
         "detail":  "Grant HP regeneration to the entire front row or entire back row for turn(s). Dance skill.",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  33,
         "target":  "Front/Back Row",
@@ -8644,6 +8821,11 @@
                              "name":  "Phys. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -8674,6 +8856,11 @@
                              "name":  "Phys. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -8686,7 +8873,7 @@
         "icon":  "",
         "sp":  24,
         "target":  "Front/Back Row",
-        "turns":  "0,0,0,0",
+        "turns":  "2,4,6,8",
         "ratios":  [
                        100,
                        100,
@@ -8700,7 +8887,16 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Atk. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Speed Up",
+                             "value":  "1",
+                             "efficacy":  "25"
+                         }
                      ]
     },
     {
@@ -8730,6 +8926,11 @@
                              "name":  "Elem. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Evasion Up",
+                             "value":  "1",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -8850,6 +9051,11 @@
                              "name":  "Phys. Def. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -8952,7 +9158,7 @@
         "icon":  "",
         "sp":  10,
         "target":  "Self",
-        "turns":  "0,0,0,0",
+        "turns":  "2,4,6,8",
         "ratios":  [
                        100,
                        100,
@@ -8970,6 +9176,11 @@
                              "name":  "Evade Phys. Atk.",
                              "value":  "",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Speed Up",
+                             "value":  "1",
+                             "efficacy":  "25"
                          }
                      ]
     },
@@ -9030,6 +9241,11 @@
                              "name":  "Crit. Up",
                              "value":  "1",
                              "efficacy":  "30"
+                         },
+                         {
+                             "name":  "Accuracy Up",
+                             "value":  "1",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -9075,6 +9291,26 @@
                              "name":  "Elem. Def. Up",
                              "value":  "2",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Speed Up",
+                             "value":  "2",
+                             "efficacy":  "25"
+                         },
+                         {
+                             "name":  "Crit. Up",
+                             "value":  "2",
+                             "efficacy":  "30"
+                         },
+                         {
+                             "name":  "Accuracy Up",
+                             "value":  "2",
+                             "efficacy":  "15"
+                         },
+                         {
+                             "name":  "Evasion Up",
+                             "value":  "2",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -9087,7 +9323,7 @@
         "icon":  "",
         "sp":  12,
         "target":  "Self",
-        "turns":  "0,0,0,0",
+        "turns":  "3,5,7,9",
         "ratios":  [
                        200,
                        280,
@@ -9101,7 +9337,11 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
@@ -9109,7 +9349,7 @@
         "name":  "Holy Flame",
         "detail":  "Exploit fire weakness with physical attacks for turn(s).",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  8,
         "target":  "Self",
@@ -9281,6 +9521,11 @@
                              "name":  "Phys. Def. Down",
                              "value":  "15",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -9293,7 +9538,7 @@
         "icon":  "",
         "sp":  24,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,4,6,8",
         "ratios":  [
                        100,
                        100,
@@ -9307,7 +9552,16 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
@@ -9439,7 +9693,7 @@
         "icon":  "",
         "sp":  9,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,4,6,8",
         "ratios":  [
                        100,
                        100,
@@ -9447,13 +9701,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Sleep",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -9491,7 +9749,7 @@
         "name":  "Ensnare",
         "detail":  "Cause a foe to act last for turn(s).",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  9,
         "target":  "Single Foe",
@@ -9558,6 +9816,26 @@
                              "name":  "Elem. Def. Up",
                              "value":  "",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Speed Up",
+                             "value":  "",
+                             "efficacy":  "25"
+                         },
+                         {
+                             "name":  "Crit. Up",
+                             "value":  "",
+                             "efficacy":  "30"
+                         },
+                         {
+                             "name":  "Accuracy Up",
+                             "value":  "",
+                             "efficacy":  "15"
+                         },
+                         {
+                             "name":  "Evasion Up",
+                             "value":  "",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -9566,7 +9844,7 @@
         "name":  "Weak to Poison",
         "detail":  "Make a foe weak to poison for turn(s).",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  4,
         "target":  "Single Foe",
@@ -9595,11 +9873,11 @@
         "id":  "901507",
         "name":  "Summon Linde",
         "detail":  "Summon Linde, and deal sword damage to all foes or polearm damage to a foe.",
-        "category":  "Support",
-        "subType":  "Utility",
+        "category":  "Physical",
+        "subType":  "All Weapons",
         "icon":  "",
         "sp":  16,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -9608,10 +9886,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -9660,10 +9938,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -9686,10 +9964,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -9712,10 +9990,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -9729,19 +10007,19 @@
         "subType":  "Staff",
         "icon":  "assets/icons/icon_staff.png",
         "sp":  30,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -9794,10 +10072,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -9820,10 +10098,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -9837,13 +10115,13 @@
         "subType":  "Fan",
         "icon":  "assets/icons/icon_fan.png",
         "sp":  14,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
                      1,
@@ -9876,10 +10154,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -9902,10 +10180,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -9928,10 +10206,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -9954,10 +10232,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -9980,10 +10258,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10032,10 +10310,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10058,10 +10336,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -10084,10 +10362,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -10110,10 +10388,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -10127,13 +10405,13 @@
         "subType":  "Unarmed",
         "icon":  "assets/icons/icon_unarmed.svg",
         "sp":  7,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
                      1,
@@ -10157,19 +10435,19 @@
         "subType":  "Unarmed",
         "icon":  "assets/icons/icon_unarmed.svg",
         "sp":  12,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -10187,13 +10465,13 @@
         "subType":  "Unarmed",
         "icon":  "assets/icons/icon_unarmed.svg",
         "sp":  16,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
                      1,
@@ -10226,10 +10504,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10243,13 +10521,13 @@
         "subType":  "Unarmed",
         "icon":  "assets/icons/icon_unarmed.svg",
         "sp":  15,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "2,2,2,2",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       80,
+                       168,
+                       256,
+                       344
                    ],
         "hits":  [
                      1,
@@ -10282,10 +10560,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10308,10 +10586,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10326,7 +10604,7 @@
         "icon":  "assets/icons/icon_unarmed.svg",
         "sp":  27,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,2,2,2",
         "ratios":  [
                        80,
                        168,
@@ -10334,13 +10612,17 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Blindness",
+                             "value":  "50",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -10351,19 +10633,19 @@
         "subType":  "Unarmed",
         "icon":  "assets/icons/icon_unarmed.svg",
         "sp":  30,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "2,2,2,2",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       80,
+                       168,
+                       256,
+                       344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -10416,10 +10698,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10442,10 +10724,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -10459,7 +10741,7 @@
         "subType":  "Weapon Select",
         "icon":  "",
         "sp":  45,
-        "target":  "Random Foes",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -10520,10 +10802,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10546,10 +10828,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10572,10 +10854,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10598,10 +10880,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10624,10 +10906,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10641,19 +10923,19 @@
         "subType":  "Fire",
         "icon":  "assets/icons/icon_fire.png",
         "sp":  39,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "2,2,2,2",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       80,
+                       156,
+                       232,
+                       308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
                          {
@@ -10680,10 +10962,10 @@
                        296
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -10706,10 +10988,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -10732,10 +11014,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -10758,10 +11040,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10776,7 +11058,7 @@
         "icon":  "assets/icons/icon_ice.png",
         "sp":  22,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,2,2,2",
         "ratios":  [
                        100,
                        195,
@@ -10784,13 +11066,17 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Sleep",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -10810,10 +11096,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10836,10 +11122,10 @@
                        296
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -10862,10 +11148,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -10888,10 +11174,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -10914,10 +11200,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -10940,10 +11226,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -10958,7 +11244,7 @@
         "icon":  "assets/icons/icon_lightning.png",
         "sp":  19,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,2,2,2",
         "ratios":  [
                        100,
                        195,
@@ -10966,13 +11252,17 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Paralysis",
+                             "value":  "75",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -10992,10 +11282,10 @@
                        296
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11018,10 +11308,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11044,10 +11334,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -11070,10 +11360,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -11096,10 +11386,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11122,10 +11412,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -11148,10 +11438,10 @@
                        296
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11174,10 +11464,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11200,10 +11490,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -11226,10 +11516,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -11252,10 +11542,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11278,10 +11568,10 @@
                        296
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11304,10 +11594,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -11330,10 +11620,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -11350,19 +11640,23 @@
         "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       80,
+                       168,
+                       256,
+                       344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Poor Aim",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -11382,10 +11676,10 @@
                        296
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11408,10 +11702,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -11434,10 +11728,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -11460,10 +11754,10 @@
                        355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -11486,10 +11780,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -11503,23 +11797,28 @@
         "subType":  "Spirit",
         "icon":  "assets/icons/icon_spirit.svg",
         "sp":  28,
-        "target":  "Self",
+        "target":  "Single Foe",
         "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       210,
+                       320,
+                       430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
                              "name":  "Elem. Atk. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Down",
                              "value":  "15",
                              "efficacy":  "20"
                          }
@@ -11542,10 +11841,10 @@
                        344
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -11568,10 +11867,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -11582,7 +11881,7 @@
         "name":  "Resurrect",
         "detail":  "Grant an effect that allows the entire front row or entire back row to recover with 25% of their max. HP upon being incapacitated (one time only).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  250,
         "target":  "Front/Back Row",
@@ -11612,7 +11911,7 @@
         "name":  "Prayer for Rain",
         "detail":  "Grant SP regeneration to the entire front row or entire back row for turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  20,
         "target":  "Front/Back Row",
@@ -11646,7 +11945,7 @@
         "icon":  "",
         "sp":  38,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,4,6,8",
         "ratios":  [
                        100,
                        100,
@@ -11660,7 +11959,26 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Speed Up",
+                             "value":  "1",
+                             "efficacy":  "25"
+                         },
+                         {
+                             "name":  "Evasion Up",
+                             "value":  "1",
+                             "efficacy":  "15"
+                         }
                      ]
     },
     {
@@ -11668,7 +11986,7 @@
         "name":  "Song of Blessings",
         "detail":  "Extend duration of positive status effects for all allies by turn(s), and reduce negative status effects by turn(s).",
         "category":  "Support",
-        "subType":  "Debuff",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  32,
         "target":  "Single Foe",
@@ -11716,6 +12034,11 @@
                              "name":  "Phys. Atk. Down",
                              "value":  "15",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -11746,6 +12069,11 @@
                              "name":  "Phys. Def. Down",
                              "value":  "15",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -11758,7 +12086,7 @@
         "icon":  "",
         "sp":  9,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "3,5,7,9",
         "ratios":  [
                        100,
                        100,
@@ -11766,13 +12094,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Blindness",
+                             "value":  "50",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -11843,7 +12175,11 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Boost Gauge",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -11851,7 +12187,7 @@
         "name":  "Bodyguard",
         "detail":  "Take damage from single-target attacks meant for a near-death ally for turn(s).",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  6,
         "target":  "Self",
@@ -11881,10 +12217,10 @@
         "name":  "Ultimate Stance",
         "detail":  "Extend the reach of your Attack to all foes for turn(s).",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  10,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "3,4,5,6",
         "ratios":  [
                        100,
@@ -12156,11 +12492,11 @@
         "id":  "901825",
         "name":  "Sheer Focus",
         "detail":  "Focus specific spells on a single target, but raise the potency.",
-        "category":  "Support",
-        "subType":  "Buff",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -12350,11 +12686,11 @@
         "id":  "901836",
         "name":  "Iron Will",
         "detail":  "50% chance to nullify an attribute-reducing effect.",
-        "category":  "Support",
-        "subType":  "Buff",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -12488,7 +12824,7 @@
         "subType":  "Polearm",
         "icon":  "assets/icons/icon_polearm.png",
         "sp":  14,
-        "target":  "Self",
+        "target":  "All Foes",
         "turns":  "3,4,5,6",
         "ratios":  [
                        100,
@@ -12497,10 +12833,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
                          {
@@ -12551,10 +12887,10 @@
         "target":  "Front/Back Row",
         "turns":  "0,0,0,0",
         "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
+                       140,
+                       196,
+                       238,
+                       280
                    ],
         "hits":  [
                      0,
@@ -12871,10 +13207,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -12923,10 +13259,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -12988,11 +13324,11 @@
         "id":  "902399",
         "name":  "Recover SP",
         "detail":  "Restore SP equal to 1% of damage dealt when using Attack.",
-        "category":  "Support",
-        "subType":  "Recovery",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -13027,10 +13363,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -13101,7 +13437,7 @@
         "name":  "Abating Orb",
         "detail":  "Remove 1 attribute-raising effect from a foe.",
         "category":  "Support",
-        "subType":  "Utility",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  8,
         "target":  "Single Foe",
@@ -13472,11 +13808,11 @@
         "id":  "902431",
         "name":  "Immeasurable Power",
         "detail":  "Consume twice the SP with physical skills, but raise the potency.",
-        "category":  "Support",
-        "subType":  "Buff",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -13491,18 +13827,22 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "SP Burner",
+                             "value":  "100",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
         "id":  "902432",
         "name":  "Spirit of the Stage",
         "detail":  "Augment effects of dance and song skills, raise potency of recovery effects, and extend duration of augmenting and enfeebling effects by 1 turn.",
-        "category":  "Support",
-        "subType":  "Buff",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -13623,10 +13963,10 @@
                        308
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -13649,10 +13989,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -13675,10 +14015,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -13692,7 +14032,7 @@
         "subType":  "Weapon Select",
         "icon":  "",
         "sp":  12,
-        "target":  "Random Foes",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -13701,10 +14041,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -13727,10 +14067,10 @@
                        430
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -13753,10 +14093,10 @@
                        385
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -13813,6 +14153,11 @@
         "ailments":  [
                          {
                              "name":  "Phys. Atk. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Def. Down",
                              "value":  "15",
                              "efficacy":  "20"
                          }
@@ -13882,11 +14227,11 @@
         "id":  "902924",
         "name":  "Leadership",
         "detail":  "Increase tiers of command augmenting effects by 1, and extend their duration by 1 turn.",
-        "category":  "Support",
-        "subType":  "Utility",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -13917,21 +14262,40 @@
         "icon":  "assets/icons/icon_dark.png",
         "sp":  13,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,2,2,2",
         "ratios":  [
                        100,
-                       100,
-                       100,
-                       100
+                       185,
+                       270,
+                       355
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Def. Down",
+                             "value":  "14",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Down",
+                             "value":  "14",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Accurst Flame\u0027s Guard",
+                             "value":  "50",
+                             "efficacy":  ""
+                         },
+                         {
+                             "name":  "Cursed Flame",
+                             "value":  "10",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -13951,10 +14315,10 @@
                        370
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -13994,11 +14358,11 @@
         "id":  "904081",
         "name":  "Celebration of the Arts",
         "detail":  "Extend the duration of song and dance effects by 1 turn.",
-        "category":  "Support",
-        "subType":  "Utility",
+        "category":  "Passive",
+        "subType":  "Passive Trait",
         "icon":  "",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Passive",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -14050,11 +14414,11 @@
         "id":  "904127",
         "name":  "Indestructible Flame",
         "detail":  "???",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Physical",
+        "subType":  "Weapon Select",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -14089,10 +14453,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14159,7 +14523,7 @@
         "name":  "Refreshment",
         "detail":  "Grant HP regeneration to an ally for 3 turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  0,
         "target":  "Single Ally",
@@ -14201,10 +14565,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14227,10 +14591,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14279,10 +14643,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14305,10 +14669,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -14331,10 +14695,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -14417,10 +14781,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14430,11 +14794,11 @@
         "id":  "904447",
         "name":  "Sleeping Dust",
         "detail":  "Gain a chance to inflict sleep on a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -14460,11 +14824,11 @@
         "id":  "904448",
         "name":  "Spirit Corrosive",
         "detail":  "Lower Elem. Def. of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -14490,11 +14854,11 @@
         "id":  "904449",
         "name":  "Fetter",
         "detail":  "Lower Speed of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -14550,11 +14914,11 @@
         "id":  "904451",
         "name":  "Uncritical Eye",
         "detail":  "Lower Crit. of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -14619,10 +14983,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14645,10 +15009,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -14671,10 +15035,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14697,10 +15061,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14710,11 +15074,11 @@
         "id":  "904457",
         "name":  "Poison Dust",
         "detail":  "Gain a chance to inflict poison on a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -14770,11 +15134,11 @@
         "id":  "904460",
         "name":  "Sanguine Dust",
         "detail":  "Gain a chance to inflict bleeding on a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -14800,11 +15164,11 @@
         "id":  "904461",
         "name":  "Mindrot",
         "detail":  "Lower Elem. Atk. of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -14843,10 +15207,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14869,10 +15233,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -14895,10 +15259,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -14908,11 +15272,11 @@
         "id":  "904465",
         "name":  "Please Observe Silence",
         "detail":  "Lower Evasion of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -14977,10 +15341,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15033,10 +15397,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15072,11 +15436,11 @@
         "id":  "904471",
         "name":  "Numbing Dust",
         "detail":  "Gain a chance to inflict paralysis on a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -15115,10 +15479,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15141,10 +15505,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -15167,10 +15531,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15193,10 +15557,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15219,10 +15583,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15232,11 +15596,11 @@
         "id":  "904478",
         "name":  "Inescapable Mire",
         "detail":  "Lower Evasion of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -15262,11 +15626,11 @@
         "id":  "904479",
         "name":  "Mass Mindrot",
         "detail":  "Lower Elem. Atk. of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -15305,10 +15669,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -15331,10 +15695,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15357,10 +15721,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15443,10 +15807,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -15499,10 +15863,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15525,10 +15889,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -15551,10 +15915,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -15577,10 +15941,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -15603,10 +15967,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15616,11 +15980,11 @@
         "id":  "904495",
         "name":  "Numbing Twinkle",
         "detail":  "Gain a chance to inflict paralysis on all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -15659,10 +16023,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15685,10 +16049,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -15703,7 +16067,7 @@
         "icon":  "assets/icons/icon_sword.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -15711,13 +16075,22 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Speed Down",
+                             "value":  "15",
+                             "efficacy":  "25"
+                         },
+                         {
+                             "name":  "Evasion Down",
+                             "value":  "15",
+                             "efficacy":  "15"
+                         }
                      ]
     },
     {
@@ -15729,7 +16102,7 @@
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -15737,13 +16110,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Poison",
+                             "value":  "5",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -15763,10 +16140,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15789,10 +16166,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15815,10 +16192,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15841,10 +16218,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -15867,10 +16244,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -15893,10 +16270,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15911,7 +16288,7 @@
         "icon":  "assets/icons/icon_sword.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -15919,13 +16296,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Poison",
+                             "value":  "5",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -15945,10 +16326,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -15971,10 +16352,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -15997,10 +16378,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -16070,11 +16451,11 @@
         "id":  "904512",
         "name":  "Mass Poison Dust",
         "detail":  "Gain a chance to inflict poison on all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -16113,10 +16494,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -16139,10 +16520,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -16173,6 +16554,11 @@
         "ailments":  [
                          {
                              "name":  "Phys. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Up",
                              "value":  "1",
                              "efficacy":  "20"
                          }
@@ -16217,7 +16603,7 @@
         "icon":  "assets/icons/icon_axe.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -16225,13 +16611,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Bleeding",
+                             "value":  "10",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -16261,6 +16651,16 @@
                              "name":  "Phys. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Crit. Up",
+                             "value":  "1",
+                             "efficacy":  "30"
                          }
                      ]
     },
@@ -16281,10 +16681,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -16307,10 +16707,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -16333,10 +16733,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -16351,7 +16751,7 @@
         "icon":  "assets/icons/icon_sword.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -16359,13 +16759,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Elem. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
@@ -16385,10 +16789,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -16411,10 +16815,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -16424,11 +16828,11 @@
         "id":  "904528",
         "name":  "Quadrille",
         "detail":  "Slightly fill ultimate technique gauge of an ally.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Ally",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -16463,10 +16867,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -16489,10 +16893,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -16515,10 +16919,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -16541,10 +16945,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -16593,10 +16997,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -16606,11 +17010,11 @@
         "id":  "904535",
         "name":  "A Father\u0027s Tears",
         "detail":  "Lower Crit./Accuracy of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -16629,6 +17033,11 @@
                              "name":  "Crit. Down",
                              "value":  "15",
                              "efficacy":  "30"
+                         },
+                         {
+                             "name":  "Accuracy Down",
+                             "value":  "15",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -16637,7 +17046,7 @@
         "name":  "Overbearing Love",
         "detail":  "Grant great HP regeneration to an ally for 5 turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  0,
         "target":  "Single Ally",
@@ -16679,10 +17088,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -16735,10 +17144,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -16761,10 +17170,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -16774,11 +17183,11 @@
         "id":  "904541",
         "name":  "Noisome Breath",
         "detail":  "Gain a chance to inflict poison/blindness on all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -16796,6 +17205,11 @@
                          {
                              "name":  "Poison",
                              "value":  "5",
+                             "efficacy":  ""
+                         },
+                         {
+                             "name":  "Blindness",
+                             "value":  "50",
                              "efficacy":  ""
                          }
                      ]
@@ -16817,10 +17231,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -16830,11 +17244,11 @@
         "id":  "904543",
         "name":  "Ice Expertise",
         "detail":  "Lower Ice Resistance of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -16895,7 +17309,7 @@
         "icon":  "assets/icons/icon_lightning.png",
         "sp":  0,
         "target":  "Random Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -16903,13 +17317,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Paralysis",
+                             "value":  "75",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -16929,10 +17347,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -16955,10 +17373,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -16994,11 +17412,11 @@
         "id":  "904549",
         "name":  "Preaching Peace",
         "detail":  "Lower Crit. of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -17063,10 +17481,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -17099,6 +17517,11 @@
                              "name":  "Elem. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -17111,7 +17534,7 @@
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -17119,13 +17542,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Bleeding",
+                             "value":  "10",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -17145,10 +17572,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -17171,10 +17598,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -17293,7 +17720,7 @@
         "icon":  "assets/icons/icon_axe.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -17301,13 +17728,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Atk. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
@@ -17319,7 +17750,7 @@
         "icon":  "assets/icons/icon_fan.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -17327,13 +17758,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Sleep",
+                             "value":  "",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -17353,10 +17788,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -17371,7 +17806,7 @@
         "icon":  "assets/icons/icon_sword.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -17379,13 +17814,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
@@ -17435,10 +17874,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -17461,10 +17900,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -17487,10 +17926,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -17505,7 +17944,7 @@
         "icon":  "assets/icons/icon_polearm.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        150,
                        100,
@@ -17513,13 +17952,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Crit. Up",
+                             "value":  "1",
+                             "efficacy":  "30"
+                         }
                      ]
     },
     {
@@ -17531,7 +17974,7 @@
         "icon":  "assets/icons/icon_bow.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -17539,13 +17982,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Speed Down",
+                             "value":  "15",
+                             "efficacy":  "25"
+                         }
                      ]
     },
     {
@@ -17582,11 +18029,11 @@
         "id":  "904573",
         "name":  "You Heard It from Me",
         "detail":  "Discover 3 weak point(s) of all foes.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Utility",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -17651,10 +18098,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -17677,10 +18124,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -17695,7 +18142,7 @@
         "icon":  "assets/icons/icon_lightning.png",
         "sp":  0,
         "target":  "Random Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "3,0,0,0",
         "ratios":  [
                        200,
                        100,
@@ -17703,13 +18150,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Paralysis",
+                             "value":  "75",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -17729,10 +18180,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -17755,10 +18206,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -17768,12 +18219,47 @@
         "id":  "904582",
         "name":  "Questionable Powder",
         "detail":  "Gain a chance to inflict poison/paralysis on a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
+        "ratios":  [
+                       100,
+                       100,
+                       100,
+                       100
+                   ],
+        "hits":  [
+                     1,
+                     0,
+                     0,
+                     0
+                 ],
+        "ailments":  [
+                         {
+                             "name":  "Poison",
+                             "value":  "5",
+                             "efficacy":  ""
+                         },
+                         {
+                             "name":  "Paralysis",
+                             "value":  "75",
+                             "efficacy":  ""
+                         }
+                     ]
+    },
+    {
+        "id":  "904583",
+        "name":  "Poison Cleave",
+        "detail":  "Deal axe damage to a foe, and gain a chance to inflict poison for 2 turn(s).",
+        "category":  "Physical",
+        "subType":  "Axe",
+        "icon":  "assets/icons/icon_axe.png",
+        "sp":  0,
+        "target":  "Single Foe",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -17795,32 +18281,6 @@
                      ]
     },
     {
-        "id":  "904583",
-        "name":  "Poison Cleave",
-        "detail":  "Deal axe damage to a foe, and gain a chance to inflict poison for 2 turn(s).",
-        "category":  "Physical",
-        "subType":  "Axe",
-        "icon":  "assets/icons/icon_axe.png",
-        "sp":  0,
-        "target":  "Single Foe",
-        "turns":  "0,0,0,0",
-        "ratios":  [
-                       100,
-                       100,
-                       100,
-                       100
-                   ],
-        "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
-                 ],
-        "ailments":  [
-
-                     ]
-    },
-    {
         "id":  "904584",
         "name":  "Ice Soulstone (M)",
         "detail":  "Deal great ice damage to all foes.",
@@ -17837,10 +18297,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -17873,6 +18333,16 @@
                              "name":  "Accuracy Up",
                              "value":  "1",
                              "efficacy":  "15"
+                         },
+                         {
+                             "name":  "Evasion Up",
+                             "value":  "1",
+                             "efficacy":  "15"
+                         },
+                         {
+                             "name":  "Speed Up",
+                             "value":  "1",
+                             "efficacy":  "25"
                          }
                      ]
     },
@@ -17885,7 +18355,7 @@
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -17893,13 +18363,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Poison",
+                             "value":  "5",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -17945,10 +18419,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -17963,7 +18437,7 @@
         "icon":  "assets/icons/icon_fan.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -17971,24 +18445,28 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Evasion Down",
+                             "value":  "15",
+                             "efficacy":  "15"
+                         }
                      ]
     },
     {
         "id":  "904591",
         "name":  "Anti-Attack",
         "detail":  "Lower Phys. Atk./Elem. Atk. of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -18007,6 +18485,11 @@
                              "name":  "Phys. Atk. Down",
                              "value":  "15",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -18019,7 +18502,7 @@
         "icon":  "assets/icons/icon_polearm.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -18027,13 +18510,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Evasion Down",
+                             "value":  "15",
+                             "efficacy":  "15"
+                         }
                      ]
     },
     {
@@ -18053,10 +18540,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -18079,10 +18566,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -18105,10 +18592,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -18118,11 +18605,11 @@
         "id":  "904597",
         "name":  "Matron\u0027s Wisdom",
         "detail":  "Lower Speed of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -18149,7 +18636,7 @@
         "name":  "Warm Fur",
         "detail":  "Grant HP regeneration to the entire front row or entire back row, and raise Ice Resistance for 3 turn(s).",
         "category":  "Support",
-        "subType":  "Buff",
+        "subType":  "Recovery",
         "icon":  "",
         "sp":  0,
         "target":  "Front/Back Row",
@@ -18171,6 +18658,11 @@
                              "name":  "Vim and Vigor",
                              "value":  "80",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Ice Res. Up",
+                             "value":  "15",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -18178,11 +18670,11 @@
         "id":  "904599",
         "name":  "Light Expertise",
         "detail":  "Lower Light Resistance of all foes for 3 turn(s)",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -18221,10 +18713,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -18247,10 +18739,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -18283,6 +18775,16 @@
                              "name":  "Speed Up",
                              "value":  "1",
                              "efficacy":  "25"
+                         },
+                         {
+                             "name":  "Evasion Up",
+                             "value":  "1",
+                             "efficacy":  "15"
+                         },
+                         {
+                             "name":  "Ice Res. Up",
+                             "value":  "15",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -18295,7 +18797,7 @@
         "icon":  "",
         "sp":  0,
         "target":  "Single Ally",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        150,
                        100,
@@ -18309,7 +18811,11 @@
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Vim and Vigor",
+                             "value":  "100",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -18347,7 +18853,7 @@
         "icon":  "assets/icons/icon_tome.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -18355,13 +18861,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Dark Res. Down",
+                             "value":  "1",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -18381,10 +18891,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -18407,10 +18917,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -18455,7 +18965,7 @@
         "icon":  "assets/icons/icon_sword.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -18463,24 +18973,28 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
         "id":  "904610",
         "name":  "Black Corrosion",
         "detail":  "Gain a chance to lower Blindness/Dark Resistance of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -18489,7 +19003,7 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
@@ -18499,6 +19013,11 @@
                              "name":  "Dark Res. Down",
                              "value":  "1",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Blindness",
+                             "value":  "50",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -18506,11 +19025,11 @@
         "id":  "904611",
         "name":  "Mercy for the Lost",
         "detail":  "Lower Crit. of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -18541,7 +19060,7 @@
         "icon":  "assets/icons/icon_fire.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -18549,13 +19068,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Phys. Atk. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
@@ -18567,7 +19090,7 @@
         "icon":  "assets/icons/icon_fan.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -18575,13 +19098,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Crit. Down",
+                             "value":  "15",
+                             "efficacy":  "30"
+                         }
                      ]
     },
     {
@@ -18618,11 +19145,11 @@
         "id":  "904615",
         "name":  "Fire Expertise",
         "detail":  "Lower Fire Resistance of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -18671,6 +19198,11 @@
                              "name":  "Speed Up",
                              "value":  "1",
                              "efficacy":  "25"
+                         },
+                         {
+                             "name":  "Wind Res. Up",
+                             "value":  "15",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -18683,7 +19215,7 @@
         "icon":  "assets/icons/icon_dagger.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -18691,13 +19223,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Dagger Res. Down",
+                             "value":  "1",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -18717,10 +19253,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -18743,10 +19279,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -18761,7 +19297,7 @@
         "icon":  "assets/icons/icon_sword.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        150,
                        100,
@@ -18769,13 +19305,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Bleeding",
+                             "value":  "10",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -18795,10 +19335,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -18831,6 +19371,16 @@
                              "name":  "Phys. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Fire Res. Up",
+                             "value":  "15",
+                             "efficacy":  ""
+                         },
+                         {
+                             "name":  "Accuracy Down",
+                             "value":  "15",
+                             "efficacy":  "15"
                          }
                      ]
     },
@@ -18843,7 +19393,7 @@
         "icon":  "assets/icons/icon_fan.png",
         "sp":  0,
         "target":  "Random Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -18851,13 +19401,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Fan Res. Down",
+                             "value":  "1",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -18877,10 +19431,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -18895,7 +19449,7 @@
         "icon":  "assets/icons/icon_polearm.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -18903,24 +19457,28 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Polearm Res. Down",
+                             "value":  "1",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
         "id":  "904626",
         "name":  "Poison",
         "detail":  "Gain a chance to inflict poison on a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -18959,10 +19517,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -18972,11 +19530,11 @@
         "id":  "904629",
         "name":  "Lightning Expertise",
         "detail":  "Lower Lightning Resistance of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -19025,6 +19583,11 @@
                              "name":  "Phys. Def. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -19032,11 +19595,11 @@
         "id":  "904631",
         "name":  "Mass Sleeping Dust",
         "detail":  "Gain a chance to inflict sleep on all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -19075,10 +19638,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -19088,11 +19651,11 @@
         "id":  "904633",
         "name":  "Old Man\u0027s Words",
         "detail":  "Fill ultimate technique gauge of an ally.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Ally",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -19127,10 +19690,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -19153,10 +19716,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -19179,10 +19742,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -19213,6 +19776,11 @@
         "ailments":  [
                          {
                              "name":  "Accuracy Up",
+                             "value":  "1",
+                             "efficacy":  "15"
+                         },
+                         {
+                             "name":  "Evasion Up",
                              "value":  "1",
                              "efficacy":  "15"
                          }
@@ -19287,10 +19855,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -19300,11 +19868,11 @@
         "id":  "904641",
         "name":  "Mass Physical Degradation",
         "detail":  "Lower Phys. Atk./Phys. Def. of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -19321,6 +19889,11 @@
         "ailments":  [
                          {
                              "name":  "Phys. Atk. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Def. Down",
                              "value":  "15",
                              "efficacy":  "20"
                          }
@@ -19351,6 +19924,11 @@
         "ailments":  [
                          {
                              "name":  "Phys. Atk. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
                          }
@@ -19391,7 +19969,7 @@
         "icon":  "assets/icons/icon_fan.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -19399,24 +19977,28 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Elem. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         }
                      ]
     },
     {
         "id":  "904647",
         "name":  "Mass Inhibit Offense",
         "detail":  "Lower Phys. Atk./Elem. Atk. of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -19433,6 +20015,11 @@
         "ailments":  [
                          {
                              "name":  "Phys. Atk. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Atk. Down",
                              "value":  "15",
                              "efficacy":  "20"
                          }
@@ -19455,10 +20042,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -19481,10 +20068,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -19507,10 +20094,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -19533,10 +20120,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -19559,10 +20146,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -19572,11 +20159,11 @@
         "id":  "904654",
         "name":  "Extort",
         "detail":  "Lower Phys. Def./Elem. Def. of a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -19593,6 +20180,11 @@
         "ailments":  [
                          {
                              "name":  "Phys. Def. Down",
+                             "value":  "15",
+                             "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Down",
                              "value":  "15",
                              "efficacy":  "20"
                          }
@@ -19625,6 +20217,11 @@
                              "name":  "Phys. Atk. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Phys. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -19637,7 +20234,7 @@
         "icon":  "assets/icons/icon_polearm.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -19645,13 +20242,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Speed Down",
+                             "value":  "15",
+                             "efficacy":  "25"
+                         }
                      ]
     },
     {
@@ -19719,7 +20320,7 @@
         "icon":  "assets/icons/icon_fire.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        150,
                        100,
@@ -19727,13 +20328,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Speed Down",
+                             "value":  "15",
+                             "efficacy":  "25"
+                         }
                      ]
     },
     {
@@ -19753,10 +20358,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -19779,10 +20384,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -19805,10 +20410,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -19844,11 +20449,11 @@
         "id":  "904666",
         "name":  "Mass Numbing Dust",
         "detail":  "Gain a chance to inflict paralysis on all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -19917,10 +20522,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -19943,10 +20548,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -19979,6 +20584,11 @@
                              "name":  "Phys. Def. Up",
                              "value":  "1",
                              "efficacy":  "20"
+                         },
+                         {
+                             "name":  "Elem. Def. Up",
+                             "value":  "1",
+                             "efficacy":  "20"
                          }
                      ]
     },
@@ -19999,10 +20609,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -20035,6 +20645,11 @@
                              "name":  "Light Res. Up",
                              "value":  "15",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Dark Res. Up",
+                             "value":  "15",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -20055,10 +20670,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -20081,10 +20696,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -20099,7 +20714,7 @@
         "icon":  "assets/icons/icon_axe.png",
         "sp":  0,
         "target":  "Random Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        150,
                        100,
@@ -20107,13 +20722,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Paralysis",
+                             "value":  "75",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -20125,7 +20744,7 @@
         "icon":  "assets/icons/icon_staff.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -20133,13 +20752,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Poison",
+                             "value":  "5",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -20159,10 +20782,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -20177,7 +20800,7 @@
         "icon":  "assets/icons/icon_sword.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        150,
                        100,
@@ -20185,13 +20808,17 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Accuracy Down",
+                             "value":  "15",
+                             "efficacy":  "15"
+                         }
                      ]
     },
     {
@@ -20211,10 +20838,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -20229,7 +20856,7 @@
         "icon":  "assets/icons/icon_polearm.png",
         "sp":  0,
         "target":  "Single Foe",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -20237,13 +20864,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Bleeding",
+                             "value":  "10",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -20254,7 +20885,7 @@
         "subType":  "Unarmed",
         "icon":  "assets/icons/icon_unarmed.svg",
         "sp":  0,
-        "target":  "Self",
+        "target":  "Random Foes",
         "turns":  "2,0,0,0",
         "ratios":  [
                        100,
@@ -20280,11 +20911,11 @@
         "id":  "904683",
         "name":  "Deadly Wine",
         "detail":  "Gain a chance to inflict poison/bleeding on a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Foe",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -20303,6 +20934,11 @@
                              "name":  "Poison",
                              "value":  "5",
                              "efficacy":  ""
+                         },
+                         {
+                             "name":  "Bleeding",
+                             "value":  "10",
+                             "efficacy":  ""
                          }
                      ]
     },
@@ -20310,11 +20946,11 @@
         "id":  "904685",
         "name":  "Mass Fetter",
         "detail":  "Lower Speed of all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -20353,10 +20989,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -20379,10 +21015,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -20392,11 +21028,11 @@
         "id":  "904688",
         "name":  "Stand Still!",
         "detail":  "Lower Evasion of all foes for 6 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "6,0,0,0",
         "ratios":  [
                        100,
@@ -20435,10 +21071,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -20461,10 +21097,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -20474,11 +21110,11 @@
         "id":  "904691",
         "name":  "Foul Breath",
         "detail":  "Gain a chance to inflict toxin/blindness on all foes for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "All Foes",
         "turns":  "3,0,0,0",
         "ratios":  [
                        100,
@@ -20496,6 +21132,11 @@
                          {
                              "name":  "Toxin",
                              "value":  "10",
+                             "efficacy":  ""
+                         },
+                         {
+                             "name":  "Blindness",
+                             "value":  "50",
                              "efficacy":  ""
                          }
                      ]
@@ -20517,10 +21158,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     1,
+                     1,
+                     1,
+                     1
                  ],
         "ailments":  [
 
@@ -20543,10 +21184,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     3,
+                     3,
+                     3,
+                     3
                  ],
         "ailments":  [
 
@@ -20569,10 +21210,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     4,
+                     4,
+                     4,
+                     4
                  ],
         "ailments":  [
 
@@ -20595,10 +21236,10 @@
                        100
                    ],
         "hits":  [
-                     0,
-                     0,
-                     0,
-                     0
+                     2,
+                     2,
+                     2,
+                     2
                  ],
         "ailments":  [
 
@@ -20613,7 +21254,7 @@
         "icon":  "assets/icons/icon_bow.png",
         "sp":  0,
         "target":  "All Foes",
-        "turns":  "0,0,0,0",
+        "turns":  "2,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -20621,13 +21262,17 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Blindness",
+                             "value":  "50",
+                             "efficacy":  ""
+                         }
                      ]
     },
     {
@@ -20686,11 +21331,11 @@
         "id":  "904701",
         "name":  "Maiden\u0027s Guidance",
         "detail":  "Fill ultimate technique gauge of the entire front row or the entire back row.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Front/Back Row",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -20742,11 +21387,11 @@
         "id":  "904704",
         "name":  "A Helping Paw",
         "detail":  "Fill ultimate technique gauge of an ally.",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Buff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
+        "target":  "Single Ally",
         "turns":  "0,0,0,0",
         "ratios":  [
                        100,
@@ -20768,12 +21413,12 @@
         "id":  "904705",
         "name":  "Concoct: Anesthetic Bloodbane",
         "detail":  "Gain a chance to inflict paralysis/bleeding on a foe for 3 turn(s).",
-        "category":  "Passive",
-        "subType":  "Passive Trait",
+        "category":  "Support",
+        "subType":  "Debuff",
         "icon":  "",
         "sp":  0,
-        "target":  "Passive",
-        "turns":  "0,0,0,0",
+        "target":  "Single Foe",
+        "turns":  "3,0,0,0",
         "ratios":  [
                        100,
                        100,
@@ -20781,13 +21426,22 @@
                        100
                    ],
         "hits":  [
-                     0,
+                     1,
                      0,
                      0,
                      0
                  ],
         "ailments":  [
-
+                         {
+                             "name":  "Paralysis",
+                             "value":  "75",
+                             "efficacy":  ""
+                         },
+                         {
+                             "name":  "Bleeding",
+                             "value":  "10",
+                             "efficacy":  ""
+                         }
                      ]
     }
 ];

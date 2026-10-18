@@ -65,7 +65,7 @@
       { id: 'Wind', label: 'Wind', icon: 'assets/icons/icon_wind.png' },
       { id: 'Light', label: 'Light', icon: 'assets/icons/icon_light.png' },
       { id: 'Dark', label: 'Dark', icon: 'assets/icons/icon_dark.png' },
-      { id: 'Non-Elemental', label: 'Non-Elemental', icon: 'assets/icons/icon_spirit.svg' }
+      { id: 'Spirit', label: 'Non-Elemental', icon: 'assets/icons/icon_spirit.svg' }
     ],
     Support: [
       { id: 'all', label: 'All Support', icon: '' },

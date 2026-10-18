@@ -15,11 +15,16 @@ This repository contains two independent static web apps:
    - **Digimon Card Battle**: Cyber-digital / Digivice HUD aesthetic with custom vector SVG icons in `Digimon Card Battle/assets/ui/`.
    - **Octopath Traveler 0**: HD-2D Fantasy RPG Tome aesthetic (Cinzel serif display headers, warm obsidian/brass dark mode, illuminated parchment light mode) with custom vector SVG icons in `Octopath Traveler 0/assets/icons/ui/`.
 7. **Character sprites & portraits**: All 35 playable characters in `Octopath Traveler 0/assets/characters/` provide both a vertical portrait (`_portrait.png`) and an official CotC combat sprite (`_sprite.png`). The modal enables Portrait/Sprite toggling with crisp pixelated rendering (`.char-modal-image[data-mode="sprite"]`).
+8. **Excel database invariants**:
+   - Skills are categorized using the workbook's authoritative `Category` (`2` = Passive, `1` = Active) and `SkillIconID` (`92610`–`92620`), not SP text heuristics. Multi-row skills merge their damage row ratios/targets, derive hits from `Now HP` and `<skl_exec_count>`, and collect all 16 ailment slots.
+   - Equipment sources are backfilled from `Treasure`, `Sidequests`, `Townspeople`, and `Bestiary` sheets.
+   - Enemy types follow `Bestiary` section headers (`Regular`, `Boss`, `Sidequest`, `Elite`, `Arena`, `Rare`), with cleaned IDs, `leaves`, `critDef`, and `Monster Arena` rewards.
 
 ## Verification
-Run full repository checks from the root with `npm.cmd run check` (64 total tests passing).
+Run full repository checks from the root with `npm.cmd run check` (67 total tests passing: 8 Digimon, 59 Octopath).
 Individual suites can be run with:
 - `npm.cmd test --prefix "Digimon Card Battle"` (8 tests)
-- `npm.cmd test --prefix "Octopath Traveler 0"` (56 tests)
-- `npm.cmd run typecheck --prefix "Octopath Traveler 0"` (6 apps checked)
+- `npm.cmd test --prefix "Octopath Traveler 0"` (59 tests)
+- `npm.cmd run typecheck --prefix "Octopath Traveler 0"` (6 apps checked, 0 errors)
+
 

@@ -213,3 +213,15 @@ test('reset clears stat threshold and paging', () => {
   assert.equal(page.text('resultsCount'), 'Showing 610 items');
   assert.equal(page.text('pageCurrent'), 'Page 1 of 13');
 });
+
+test('equipment items with blank Weapon/Armor SOURCE cells are backfilled from Treasure, Sidequests, Townspeople, and Bestiary', () => {
+  const byName = new Map(equipment.map(item => [item.name, item]));
+
+  assert.ok(byName.get('Sacred Blade Fisteralda')?.source.includes('[Sidequest]'), 'Sacred Blade Fisteralda backfilled from Sidequests');
+  assert.ok(byName.get('Master Harpoon')?.source.includes('[Sidequest]'), 'Master Harpoon backfilled from Sidequests');
+  assert.ok(byName.get('Iron Blade')?.source.includes('[NPC]'), 'Iron Blade backfilled from Townspeople');
+  assert.ok(byName.get('War Axe')?.source.includes('[Treasure]'), 'War Axe backfilled from Treasure');
+
+  const populatedCount = equipment.filter(item => item.source && item.source.trim().length > 0).length;
+  assert.ok(populatedCount >= 606, `Expected at least 606 items with acquisition sources, got ${populatedCount}`);
+});

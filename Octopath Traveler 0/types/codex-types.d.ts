@@ -273,12 +273,15 @@ interface EnemyRecord {
   mdef?: number;
   speed?: number;
   crit?: number;
+  critDef?: number;
   accuracy?: number;
   evasion?: number;
   exp?: number;
   jp?: number;
+  leaves?: number;
   steal: string;
   drop: string;
+  arenaReward?: string;
   immunities: string;
   skills: EnemySkill[];
   [key: string]: any;

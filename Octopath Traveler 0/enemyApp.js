@@ -19,16 +19,16 @@
   ];
 
   const ENEMY_STAT_META = [
-    { key: 'hp',       label: 'HP',   icon: 'assets/icons/icon_hp.png' },
-    { key: 'sp',       label: 'SP',   icon: 'assets/icons/icon_sp.png' },
-    { key: 'patk',     label: 'PATK', icon: 'assets/icons/icon_patk.png' },
-    { key: 'pdef',     label: 'PDEF', icon: 'assets/icons/icon_pdef.png' },
-    { key: 'matk',     label: 'MATK', icon: 'assets/icons/icon_matk.png' },
-    { key: 'mdef',     label: 'MDEF', icon: 'assets/icons/icon_mdef.png' },
-    { key: 'speed',    label: 'SPD',  icon: 'assets/icons/icon_spd.png' },
-    { key: 'crit',     label: 'CRT',  icon: 'assets/icons/icon_crt.png' },
-    { key: 'accuracy', label: 'ACC',  icon: 'assets/icons/icon_acc.png' },
-    { key: 'evasion',  label: 'EVA',  icon: 'assets/icons/icon_eva.png' }
+    { key: 'hp',       label: 'HP',      icon: 'assets/icons/icon_hp.png' },
+    { key: 'patk',     label: 'PATK',    icon: 'assets/icons/icon_patk.png' },
+    { key: 'pdef',     label: 'PDEF',    icon: 'assets/icons/icon_pdef.png' },
+    { key: 'matk',     label: 'MATK',    icon: 'assets/icons/icon_matk.png' },
+    { key: 'mdef',     label: 'MDEF',    icon: 'assets/icons/icon_mdef.png' },
+    { key: 'speed',    label: 'SPD',     icon: 'assets/icons/icon_spd.png' },
+    { key: 'crit',     label: 'CRT',     icon: 'assets/icons/icon_crt.png' },
+    { key: 'critDef',  label: 'CRT DEF', icon: 'assets/icons/icon_pdef.png' },
+    { key: 'accuracy', label: 'ACC',     icon: 'assets/icons/icon_acc.png' },
+    { key: 'evasion',  label: 'EVA',     icon: 'assets/icons/icon_eva.png' }
   ];
 
   function renderStatTable(enemy) {
@@ -228,6 +228,10 @@
             <span class="field-label">Shield:</span>
             <span class="field-value">${Number(enemy.shields) || 0}</span>
           </div>
+          <div class="enemy-modal-field">
+            <span class="field-label">EXP / JP / Leaves:</span>
+            <span class="field-value">${(Number(enemy.exp) || 0).toLocaleString()} EXP · ${(Number(enemy.jp) || 0).toLocaleString()} JP · ${(Number(enemy.leaves) || 0).toLocaleString()} L</span>
+          </div>
           <div class="enemy-modal-field full-width">
             <span class="field-label">Stats:</span>
             ${renderStatTable(enemy)}
@@ -244,6 +248,11 @@
             <span class="field-label">Drop:</span>
             <span class="field-value">${escapeHtml(enemy.drop || '—')}</span>
           </div>
+          ${enemy.arenaReward ? `
+          <div class="enemy-modal-field full-width">
+            <span class="field-label">Monster Arena Reward:</span>
+            <span class="field-value">${escapeHtml(enemy.arenaReward)}</span>
+          </div>` : ''}
           <div class="enemy-modal-field full-width">
             <span class="field-label">Status Immunities:</span>
             <span class="field-value">${escapeHtml(enemy.immunities || '—')}</span>
@@ -287,7 +296,7 @@
       if (state.type !== 'all' && enemy.type !== state.type) return false;
 
       if (query) {
-        const haystack = [enemy.name, enemy.area, enemy.subArea, enemy.type, weaknessValues.join(' '), skillText, enemy.steal, enemy.drop].join(' ').toLowerCase();
+        const haystack = [enemy.name, enemy.area, enemy.subArea, enemy.type, weaknessValues.join(' '), skillText, enemy.steal, enemy.drop, enemy.arenaReward || ''].join(' ').toLowerCase();
         if (!haystack.includes(query)) return false;
       }
 

@@ -63,4 +63,30 @@ test('enemyData entries expose the battle fields used by the modal', () => {
   assert.ok(Array.isArray(sample.weaknesses), 'weaknesses are available to the modal');
   assert.ok(Number.isFinite(sample.shields), 'shield count is available to the modal');
   assert.ok(Number.isFinite(sample.level), 'enemy level is available to the modal');
+  assert.ok(Number.isFinite(sample.critDef), 'critDef (CRTDef) is available to the modal');
+  assert.ok(Number.isFinite(sample.leaves), 'leaves (L) is available to the modal');
 });
+
+test('Bestiary section headers, clean IDs, and Monster Arena rewards are preserved', () => {
+  const page = openEnemyCodex();
+  const data = page.context.enemyData;
+
+  // No trailing .0 IDs and all IDs are unique
+  const ids = data.map(e => e.id);
+  assert.equal(ids.some(id => id.endsWith('.0')), false, 'no enemy ID ends with .0');
+  assert.equal(new Set(ids).size, data.length, 'all enemy IDs are unique');
+
+  // Authoritative Bestiary section counts
+  assert.equal(Number(page.text('enemyCatCountRegular')), 380);
+  assert.equal(Number(page.text('enemyCatCountBoss')), 215);
+  assert.equal(Number(page.text('enemyCatCountSidequest')), 81);
+  assert.equal(Number(page.text('enemyCatCountElite')), 60);
+  assert.equal(Number(page.text('enemyCatCountArena')), 17);
+  assert.equal(Number(page.text('enemyCatCountRare')), 7);
+
+  // Arena enemies include capture and arena win rewards
+  const arenaEnemies = data.filter(e => e.type === 'Arena');
+  assert.equal(arenaEnemies.length, 17);
+  assert.equal(arenaEnemies.every(e => typeof e.arenaReward === 'string' && e.arenaReward.length > 0), true);
+});
+
