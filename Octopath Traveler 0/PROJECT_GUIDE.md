@@ -163,6 +163,15 @@ Notes and known limits:
 
 ATK and DEF tiers are defined in `equipmentApp.js` as `ATTACK_TIERS` / `DEFENSE_TIERS` (300+, 200-299, 100-199, 50-99, 1-49, and a "no attack/defense power" bucket) and were chosen from the actual value spread in the dataset.
 
+## Character UI & Assets
+
+`characterApp.js` powers `character.html` and renders 35 characters and 8 base job records from `characterData.js`:
+
+- **Job Navigation**: `#characterJobTabs` provides a centered, compact two-tier wrapping tab bar with `.job-tabs-break` separating standard traveler jobs (All, Warrior, Dancer, Merchant, Scholar, Cleric, Thief, Hunter, Apothecary) and CotC special/royal jobs (Architect, Cait Scholar, Captain, Empress, Flamebringer, King, Knight Ardante, Lord, Queen, Wise King). No horizontal scrolling is required on desktop or mobile.
+- **Weapon Filter**: dynamic weapon chips dynamically scoped to the selected job or all weapons.
+- **Character Modal**: presents character title, weapons, unlock conditions, skill links, and a Portrait vs Sprite toggle panel.
+- **Asset Coverage**: 100% of the 35 characters have both a vertical portrait (`_portrait.png`) and an official CotC combat sprite (`_sprite.png`) in `assets/characters/`. Sprites render with `image-rendering: pixelated` in the modal for crisp display.
+
 ## Data extraction rules
 
 `parse_skill_data.ps1` reads the `SkillData` worksheet and:

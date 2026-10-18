@@ -2,6 +2,32 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Compact Job Category Tabs & Complete Character Sprite Suite
+
+- **Character Job Category Navigation Redesign (`character.html`, `styles.css`)**:
+  - Redesigned `#characterJobTabs` to use a compact, centered two-tier flex-wrap system with clean chip sizing (`height: 28px; padding: 4px 9px; font-size: 11.5px; gap: 4px 6px;`).
+  - Added `.job-tabs-break` dividing line separating the 8 standard traveler jobs (All, Warrior, Dancer, Merchant, Scholar, Cleric, Thief, Hunter, Apothecary) on Row 1 and the 10 special/royal jobs (Architect, Cait Scholar, Captain, Empress, Flamebringer, King, Knight Ardante, Lord, Queen, Wise King) on Row 2.
+  - Users no longer need to horizontally scroll across thousands of pixels to filter by `Lord`, `Queen`, or `Wise King`.
+  - Added responsive media query (`@media (max-width: 768px)`) allowing fluid compact chip wrapping on smaller tablet/mobile viewports.
+- **Character Sprites & Vertical Portraits Suite (`assets/characters/`, `characterApp.js`)**:
+  - Downloaded official Champions of the Continent (CotC) battle sprites and high-resolution vertical portraits for all 8 original travelers and Queen Alaune from the Octopath Traveler Wiki:
+    - **Olberic**: replaced 22x34 overworld icon with official 74x160 portrait (`olberic_portrait.png`) and added 66x102 battle sprite (`olberic_sprite.png`).
+    - **Tressa**: replaced 936x546 wallpaper with official 74x160 portrait (`tressa_portrait.png`) and added 69x99 battle sprite (`tressa_sprite.png`).
+    - **Alfyn**: replaced 936x546 wallpaper with official 74x160 portrait (`alfyn_portrait.png`) and added 51x102 battle sprite (`alfyn_sprite.png`).
+    - **Cyrus**: added official 74x160 portrait (`cyrus_portrait.png`) and 75x102 battle sprite (`cyrus_sprite.png`).
+    - **Ophilia**: added official 74x160 portrait (`ophilia_portrait.png`) and 66x132 battle sprite (`ophilia_sprite.png`).
+    - **Primrose**: added official 74x160 portrait (`primrose_portrait.png`) and 57x99 battle sprite (`primrose_sprite.png`).
+    - **Therion**: added official 74x160 portrait (`therion_portrait.png`) and 63x99 battle sprite (`therion_sprite.png`).
+    - **H'aanit**: added official 74x160 portrait (`haanit_portrait.png`) and 66x99 battle sprite (`haanit_sprite.png`).
+    - **Alaune**: added official 63x102 portrait (`alaune_portrait.png`) and 78x99 battle sprite (`alaune_sprite.png`).
+  - All 35 characters in the game now have valid portraits and battle sprites.
+  - Character detail modal image toggle now enables Portrait / Sprite switching for every traveler.
+  - Added `data-mode` attribute tracking and `.char-modal-image[data-mode="sprite"] { image-rendering: pixelated; image-rendering: crisp-edges; }` for razor-sharp pixel art display.
+- **Test Suite Expansion (`tests/characterCodex.test.js`)**:
+  - Added automated test verifying all 35 characters have valid portraits and sprites on disk with non-trivial byte sizes.
+  - Added test validating compact category tab structure and special job availability (Lord, Queen, Wise King).
+  - Total Octopath suite: **56/56 tests passing** (project total: 64/64 tests passing).
+
 ## Unreleased — HD-2D Fantasy RPG Tome Theme & Custom SVG Icon System
 
 - **Octopath Traveler Wiki / HD-2D Fantasy RPG Theme (`styles.css`)**:

@@ -94,3 +94,39 @@ test('character page opens the matching modal from a hash link', async () => {
   assert.equal(page.el('characterModalName').textContent, 'Phenn');
   assert.ok(page.html('characterSkillList').includes('Shield of Hope'));
 });
+
+test('all characters have valid sprites on disk including Olberic, Tressa, and Alaune', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const page = openCharacterCodex();
+  const characters = page.context.characterData.characters;
+
+  const charactersDir = path.resolve(__dirname, '..', 'assets', 'characters');
+
+  for (const char of characters) {
+    const slug = char.id.toLowerCase().trim().replace(/-/g, '');
+    const spritePath = path.join(charactersDir, `${slug}_sprite.png`);
+    const portraitPath = path.join(charactersDir, `${slug}_portrait.png`);
+
+    assert.ok(fs.existsSync(spritePath), `sprite exists for ${char.name} (${char.id}) at ${spritePath}`);
+    assert.ok(fs.existsSync(portraitPath), `portrait exists for ${char.name} (${char.id}) at ${portraitPath}`);
+
+    const spriteStats = fs.statSync(spritePath);
+    assert.ok(spriteStats.size > 200, `sprite file for ${char.name} has non-trivial size (${spriteStats.size} bytes)`);
+
+    const portraitStats = fs.statSync(portraitPath);
+    assert.ok(portraitStats.size > 200, `portrait file for ${char.name} has non-trivial size (${portraitStats.size} bytes)`);
+  }
+});
+
+test('character job tabs include compact special jobs such as Lord, Queen, and Wise King', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const html = fs.readFileSync(path.resolve(__dirname, '..', 'character.html'), 'utf8');
+
+  assert.ok(html.includes('data-category="Lord"'), 'Lord category tab is present');
+  assert.ok(html.includes('data-category="Queen"'), 'Queen category tab is present');
+  assert.ok(html.includes('data-category="Wise King"'), 'Wise King category tab is present');
+  assert.ok(html.includes('class="job-tabs-break"'), 'job tabs break line is present for compact two-tier wrapping');
+});
+

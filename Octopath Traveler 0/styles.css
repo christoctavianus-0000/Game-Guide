@@ -1915,6 +1915,12 @@ body::before {
   cursor: pointer;
 }
 
+.char-modal-image[data-mode="sprite"] {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  max-height: 240px;
+}
+
 .char-modal-image-fallback {
   width: 100%;
   min-height: 160px;
@@ -2859,29 +2865,118 @@ body::before {
   margin-top: 4px;
 }
 
-/* Character Job Tabs (Compact) */
+/* Character Job Tabs (Compact, Two-Tier & Responsive - No Horizontal Scroll) */
 #characterJobTabs {
   max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px 6px;
+  padding: 6px 10px;
+  overflow-x: visible;
+  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-canvas) 100%);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 0 rgba(254, 243, 199, 0.05), 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#characterJobTabs .job-tabs-break {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 #characterJobTabs .cat-tab {
+  flex: 0 0 auto;
   min-width: auto;
-  padding: 10px 12px;
-  font-size: 13px;
+  padding: 4px 9px;
+  font-size: 11.5px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 6px;
+  gap: 5px;
+  height: 28px;
+  line-height: 1;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: all var(--transition-fast);
+}
+
+#characterJobTabs .cat-tab:hover {
+  background: var(--bg-surface-hover);
+  color: var(--text-primary);
+  border-color: var(--border-gold);
+  transform: translateY(-1px);
+}
+
+#characterJobTabs .cat-tab.active {
+  background: linear-gradient(180deg, rgba(229, 184, 105, 0.25) 0%, rgba(229, 184, 105, 0.1) 100%);
+  color: var(--text-gold-bright);
+  border-color: var(--border-gold);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(254, 243, 199, 0.25);
+}
+
+#characterJobTabs .cat-tab .cat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+#characterJobTabs .cat-tab img.job-tab-icon,
+#characterJobTabs .cat-tab img.cat-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
 }
 
 #characterJobTabs .cat-tab .cat-name {
   display: inline;
-}
-
-#characterJobTabs .cat-tab img.job-tab-icon {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
+  font-size: 11.5px;
 }
 
 #characterJobTabs .cat-tab:first-child {
-  min-width: 50px;
+  min-width: 44px;
+}
+
+/* Distinct subtle styling for special/royal jobs */
+#characterJobTabs .cat-tab.cat-tab-special {
+  border-color: rgba(229, 184, 105, 0.22);
+}
+
+#characterJobTabs .cat-tab.cat-tab-special:hover {
+  border-color: var(--border-gold);
+}
+
+@media (max-width: 768px) {
+  #characterJobTabs {
+    gap: 4px;
+    padding: 5px;
+  }
+  #characterJobTabs .job-tabs-break {
+    display: none;
+  }
+  #characterJobTabs .cat-tab {
+    padding: 3px 7px;
+    font-size: 10.5px;
+    height: 26px;
+    gap: 4px;
+  }
+  #characterJobTabs .cat-tab img.job-tab-icon,
+  #characterJobTabs .cat-tab img.cat-icon {
+    width: 13px;
+    height: 13px;
+  }
+  #characterJobTabs .cat-tab .cat-name {
+    font-size: 10.5px;
+  }
 }
 
 /* ==========================================================================

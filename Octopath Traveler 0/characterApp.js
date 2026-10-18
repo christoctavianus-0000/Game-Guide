@@ -416,6 +416,7 @@
         const src = mode === 'portrait' ? getPortraitPath(entry.id) : getSpritePath(entry.id);
         elements.modalImage.src = src;
         elements.modalImage.alt = `${escapeHtml(entry.name)} ${mode}`;
+        elements.modalImage.setAttribute('data-mode', mode);
 
         // Toggle buttons
         elements.modalImageToggle.style.display = (hasPortrait && hasSprite) ? 'flex' : 'none';
@@ -446,7 +447,11 @@
       elements.modalPortraitBtn.onclick = function() {
         state.modalImageMode = 'portrait';
         const src = getPortraitPath(entry.id);
-        if (src) { elements.modalImage.src = src; elements.modalImage.alt = `${escapeHtml(entry.name)} portrait`; }
+        if (src) {
+          elements.modalImage.src = src;
+          elements.modalImage.alt = `${escapeHtml(entry.name)} portrait`;
+          elements.modalImage.setAttribute('data-mode', 'portrait');
+        }
         elements.modalPortraitBtn.classList.add('active');
         elements.modalSpriteBtn.classList.remove('active');
       };
@@ -455,7 +460,11 @@
       elements.modalSpriteBtn.onclick = function() {
         state.modalImageMode = 'sprite';
         const src = getSpritePath(entry.id);
-        if (src) { elements.modalImage.src = src; elements.modalImage.alt = `${escapeHtml(entry.name)} sprite`; }
+        if (src) {
+          elements.modalImage.src = src;
+          elements.modalImage.alt = `${escapeHtml(entry.name)} sprite`;
+          elements.modalImage.setAttribute('data-mode', 'sprite');
+        }
         elements.modalSpriteBtn.classList.add('active');
         elements.modalPortraitBtn.classList.remove('active');
       };
@@ -467,7 +476,11 @@
           const newMode = state.modalImageMode === 'portrait' ? 'sprite' : 'portrait';
           state.modalImageMode = newMode;
           const src = newMode === 'portrait' ? getPortraitPath(entry.id) : getSpritePath(entry.id);
-          if (src) { elements.modalImage.src = src; elements.modalImage.alt = `${escapeHtml(entry.name)} ${newMode}`; }
+          if (src) {
+            elements.modalImage.src = src;
+            elements.modalImage.alt = `${escapeHtml(entry.name)} ${newMode}`;
+            elements.modalImage.setAttribute('data-mode', newMode);
+          }
           elements.modalPortraitBtn.classList.toggle('active', newMode === 'portrait');
           elements.modalSpriteBtn.classList.toggle('active', newMode === 'sprite');
         }
