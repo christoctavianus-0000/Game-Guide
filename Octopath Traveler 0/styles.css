@@ -3919,6 +3919,175 @@ body::before {
   background: var(--bg-surface-card);
 }
 
+@media (max-width: 900px) {
+  .site-nav {
+    position: relative;
+  }
+
+  .site-nav-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .site-nav-links {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav-link {
+    flex: 0 0 auto;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .brand-area {
+    min-width: 0;
+  }
+
+  .brand-title {
+    font-size: clamp(16px, 5vw, 19px);
+    overflow-wrap: anywhere;
+  }
+
+  .metrics-bar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .metric-pill {
+    min-width: 0;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-content {
+    padding: 14px;
+  }
+
+  .sticky-filter-wrap {
+    top: 0;
+  }
+
+  .category-nav-section {
+    margin-bottom: 10px;
+  }
+
+  .category-tabs {
+    gap: 6px;
+    scroll-padding-inline: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cat-tab {
+    flex: 0 0 auto;
+    min-width: 0;
+    min-height: 44px;
+    padding: 8px 10px;
+  }
+
+  .cat-tab .cat-name {
+    font-size: 12px;
+  }
+
+  .filter-panel {
+    padding: 12px;
+    margin-bottom: 14px;
+  }
+
+  .filter-group {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .filter-select,
+  .secondary-filter-row button,
+  .search-input-wrap input {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .secondary-filter-row {
+    gap: 10px;
+  }
+
+  .filter-status {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .skills-grid {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .skill-table {
+    min-width: 680px;
+  }
+
+  .modal-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal-window {
+    width: 100%;
+    max-width: none;
+    max-height: 92dvh;
+    border-radius: 14px 14px 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .modal-close-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-footer {
+    flex-wrap: wrap;
+  }
+
+  .modal-footer button {
+    min-height: 44px;
+  }
+
+  .equip-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .enemy-table-shell,
+  .equip-table-wrap,
+  .npc-chunk-table-wrap,
+  .npc-helper-table-wrap {
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-footer {
+    padding: 18px 14px;
+  }
+}
+
 [data-theme="light"] .brand-crest {
   animation: none;
 }
@@ -3951,5 +4120,3 @@ body::before {
   align-items: flex-end;
   gap: 8px;
 }
-
-

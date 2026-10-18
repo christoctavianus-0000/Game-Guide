@@ -582,6 +582,23 @@
   font-family: var(--font-display);
 }
 
+@media (max-width: 760px) {
+  .fusion-page { padding: 1rem 1rem 6rem; }
+  .materials-picker-grid { gap: 0.75rem; }
+  .mat-card-preview { padding: 0.75rem; min-width: 0; }
+  .mat-preview-info { min-width: 0; }
+  .mat-preview-name { overflow-wrap: anywhere; }
+  .combo-controls { gap: 0.4rem; }
+  .sort-btn { min-height: 40px; padding-inline: 0.65rem; }
+  .combo-filter-box { width: 100%; }
+  .combo-filter-box input { width: 100%; }
+  .result-card .result-values { gap: 0.75rem; flex-wrap: wrap; }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  .fusion-page { padding: 1.5rem 1.5rem 6rem; }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .combinations-grid {

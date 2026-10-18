@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const tableBody = document.getElementById('cardTableBody');
   const searchInput = document.getElementById('cardSearch');
   const levelFilter = document.getElementById('levelFilter');
+  const cardSort = document.getElementById('cardSort');
+  const sortDirection = document.getElementById('sortDirection');
   const categoryTabs = document.querySelectorAll('.tab-btn');
 
   let currentCategory = 'all';
@@ -55,6 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateSortIndicators() {
+    cardSort.value = sortKey;
+    sortDirection.textContent = sortDir === 1 ? 'Ascending' : 'Descending';
+    sortDirection.setAttribute('aria-label', `Change sort direction (currently ${sortDir === 1 ? 'ascending' : 'descending'})`);
+
     document.querySelectorAll('.th-sort').forEach(btn => {
       const key = btn.getAttribute('data-sort-btn');
       const ind = btn.querySelector('.sort-ind');
@@ -158,18 +164,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
       return `
         <tr>
-          <td style="font-family: var(--font-display); font-weight: 600;">#${card.no}</td>
-          <td>${cardIconHtml(card)}</td>
-          <td><a class="card-name-link" href="fusion.html?card=${encodeURIComponent(card.name)}" title="See fusion combinations for ${escapeHtml(card.name)}">${escapeHtml(card.name)}</a></td>
-          <td><span class="level-badge">${card.level || '-'}</span></td>
-          <td><span class="spec-tag ${specClass}">${card.specialty || '-'}</span></td>
-          <td>${card.hp || '-'}</td>
-          <td>${card.dp || '-'}</td>
-          <td>${card.plusP || '-'}</td>
-          <td>${circleCell}</td>
-          <td>${triangleCell}</td>
-          <td>${xCell}</td>
-          <td class="support-text">${formatEffectText(card.support)}</td>
+          <td data-label="Card">#${card.no}</td>
+          <td data-label="Icon">${cardIconHtml(card)}</td>
+          <td data-label="Name"><a class="card-name-link" href="fusion.html?card=${encodeURIComponent(card.name)}" title="See fusion combinations for ${escapeHtml(card.name)}">${escapeHtml(card.name)}</a></td>
+          <td data-label="Level"><span class="level-badge">${card.level || '-'}</span></td>
+          <td data-label="Specialty"><span class="spec-tag ${specClass}">${card.specialty || '-'}</span></td>
+          <td data-label="HP">${card.hp || '-'}</td>
+          <td data-label="DP">${card.dp || '-'}</td>
+          <td data-label="+P">${card.plusP || '-'}</td>
+          <td data-label="Circle attack">${circleCell}</td>
+          <td data-label="Triangle attack">${triangleCell}</td>
+          <td data-label="X attack">${xCell}</td>
+          <td data-label="Support effect" class="support-text">${formatEffectText(card.support)}</td>
         </tr>
       `;
     }).join('');
@@ -194,6 +200,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Level filter
   levelFilter.addEventListener('change', (e) => {
     currentLevel = e.target.value;
+    renderTable();
+  });
+
+  cardSort.addEventListener('change', () => {
+    sortKey = cardSort.value;
+    sortDir = 1;
+    renderTable();
+  });
+
+  sortDirection.addEventListener('click', () => {
+    sortDir = -sortDir;
     renderTable();
   });
 
