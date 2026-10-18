@@ -232,7 +232,7 @@ Row-derived ids skip blank rows, so ids are not contiguous (for example `weapon-
 Automated checks (run with `npm run typecheck`, `npm test`, or both via `npm run check`):
 
 - `npm run typecheck` runs TypeScript 5.6 in `--noEmit` mode across all 6 applications (`app.js`, `equipmentApp.js`, `characterApp.js`, `enemyApp.js`, `npcApp.js`, and `shopApp.js`), typed against `types/codex-types.d.ts`. A regenerated dataset or renamed element ID that breaks the contract fails here.
-- `npm test` runs every `tests/*.test.js` file: skill, equipment, character, enemy, shop, and NPC behavior, hostile-payload escaping, and UI SVG asset verification (59 tests).
+- `npm test` runs every `tests/*.test.js` file: skill, equipment, character, enemy, shop, and NPC behavior, hostile-payload escaping, UI SVG asset verification, and theme toggle responsiveness (62 tests).
 
 None of this affects the shipped pages: TypeScript is never compiled and emits nothing, and `tests/` is never loaded by a browser. Emitted output stays dependency-free.
 

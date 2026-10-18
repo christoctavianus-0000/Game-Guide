@@ -10,16 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script>
-    (function(){
-      var K='octo0_theme',V={dark:1,light:1},t=null;
-      try{t=localStorage.getItem(K)}catch(e){}
-      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
-      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
-      if(t==='light')document.documentElement.setAttribute('data-theme','light');
-      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
-      else document.documentElement.removeAttribute('data-theme');
-    })();
+    (function(){try{var t=localStorage.getItem('game_guide_theme')||localStorage.getItem('octo0_theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');else if(t==='dark')document.documentElement.removeAttribute('data-theme');}catch(e){}})();
   </script>
+  <script src="themeToggle.js"></script>
 </head>
 
 <body>
@@ -205,7 +198,6 @@
 
   <script src="npcData.js"></script>
   <script src="npcApp.js"></script>
-  <script src="themeToggle.js"></script>
 </body>
 </html>
 

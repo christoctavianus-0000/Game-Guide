@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    (function(){try{var t=localStorage.getItem('game_guide_theme')||localStorage.getItem('octo0_theme')||localStorage.getItem('digimon_codex_theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');else if(t==='dark')document.documentElement.removeAttribute('data-theme');}catch(e){}})();
+  </script>
+  <script src="themeToggle.js"></script>
   <style>
     :root {
       color-scheme: dark;
@@ -31,6 +35,50 @@
       font-family: var(--font-body);
       font-synthesis: none;
       text-rendering: optimizeLegibility;
+    }
+
+    [data-theme="light"] {
+      color-scheme: light;
+      --bg-abyss: #eef2f7;
+      --bg-surface: #ffffff;
+      --bg-card: #f8fafc;
+      --bg-card-hover: #ffffff;
+      --paper: #1e293b;
+      --muted: #475569;
+      --subtle: #64748b;
+      --line: rgba(15, 23, 42, 0.12);
+      --line-strong: rgba(15, 23, 42, 0.24);
+      --blue: #0284c7;
+      --blue-glow: rgba(2, 132, 199, 0.12);
+      --gold: #b45309;
+      --gold-glow: rgba(180, 83, 9, 0.12);
+    }
+
+    .theme-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--bg-surface);
+      color: var(--gold);
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle-btn:hover {
+      border-color: var(--gold);
+      background: var(--bg-card-hover);
+      box-shadow: 0 0 12px var(--gold-glow);
+    }
+
+    .theme-toggle-btn:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 2px;
     }
 
     * { box-sizing: border-box; }
@@ -382,9 +430,12 @@
         </span>
         <span class="masthead-title">Game Guide // Codex Library</span>
       </div>
-      <div class="masthead-status">
-        <span class="status-dot" aria-hidden="true"></span>
-        <span>Living Archive • Expanding Collection</span>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <button class="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">🌙</button>
+        <div class="masthead-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Living Archive • Expanding Collection</span>
+        </div>
       </div>
     </header>
 

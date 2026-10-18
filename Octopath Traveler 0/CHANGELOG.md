@@ -2,6 +2,20 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Theme Toggle Reliability & Cross-Page Synchronization
+
+- **Immediate Click Responsiveness via Document Event Delegation (`themeToggle.js`)**:
+  - Replaced per-element `.addEventListener('click')` inside scripts loaded at the bottom of `<body>` with early, global event delegation on `document`: `document.addEventListener('click', function(e) { ... })`.
+  - Moved `<script src="themeToggle.js"></script>` into `<head>` across all pages (`index.html`, `equipment.html`, `character.html`, `enemy.html`, `shop.html`, `npc.html`), so the click handler is registered before massive data scripts (`skillData.js`, `enemyData.js`, `npcData.js`) are even parsed. Clicks on the theme button when changing into a page are now handled immediately with 0ms delay.
+- **Deterministic Toggle Logic**:
+  - Eliminated desynchronization where toggling was computed from storage (`getTheme() === 'dark'`). It now reads the live DOM state (`document.documentElement.getAttribute('data-theme') === 'light'`), guaranteeing that clicking the toggle always flips the current visible mode without requiring multiple clicks.
+- **Cross-Codex & Multi-Tier Storage Persistence**:
+  - Added primary shared key `game_guide_theme` alongside local keys (`octo0_theme`, `digimon_codex_theme`) across `localStorage`, fixed cookie regex `(?:^|;\\s*)`, and `window.name`. Theme choices now persist seamlessly when navigating between Octopath, Digimon, and the root library hub.
+- **Full Lifecycle Support**:
+  - Added `pageshow` listener for bfcache (browser back/forward navigation) and `storage` event synchronization across browser tabs.
+- **Automated Regression Suite (`tests/themeToggle.test.js`)**:
+  - Added tests validating default dark mode, document click delegation, and cross-page navigation persistence (Octopath suite now **62/62 tests passing**).
+
 ## Unreleased — Excel Database Re-Verification (Skills, Equipment, Enemies)
 
 - **Skill Codex Re-Verification (`parse_skill_data.ps1`, `skillData.json`, `skillData.js`, `app.js`)**:

@@ -19,12 +19,16 @@ This repository contains two independent static web apps:
    - Skills are categorized using the workbook's authoritative `Category` (`2` = Passive, `1` = Active) and `SkillIconID` (`92610`–`92620`), not SP text heuristics. Multi-row skills merge their damage row ratios/targets, derive hits from `Now HP` and `<skl_exec_count>`, and collect all 16 ailment slots.
    - Equipment sources are backfilled from `Treasure`, `Sidequests`, `Townspeople`, and `Bestiary` sheets.
    - Enemy types follow `Bestiary` section headers (`Regular`, `Boss`, `Sidequest`, `Elite`, `Arena`, `Rare`), with cleaned IDs, `leaves`, `critDef`, and `Monster Arena` rewards.
+9. **Global theme synchronization & click delegation**:
+   - Theme toggle scripts (`themeToggle.js`) load in `<head>` after the stylesheet to apply pre-paint themes without FOUC and bind a global `document.addEventListener('click', ...)` event delegation handler immediately.
+   - Theme choices persist across four tiers: `game_guide_theme` (cross-guide key), local game key (`octo0_theme` / `digimon_codex_theme`), regex-corrected cookie `(?:^|;\\s*)`, and `window.name` (Firefox `file://` fallback).
+   - Toggles compute the next theme deterministically from the live `document.documentElement.getAttribute('data-theme') === 'light'` state rather than cached storage.
 
 ## Verification
-Run full repository checks from the root with `npm.cmd run check` (67 total tests passing: 8 Digimon, 59 Octopath).
+Run full repository checks from the root with `npm.cmd run check` (73 total tests passing: 11 Digimon, 62 Octopath).
 Individual suites can be run with:
-- `npm.cmd test --prefix "Digimon Card Battle"` (8 tests)
-- `npm.cmd test --prefix "Octopath Traveler 0"` (59 tests)
+- `npm.cmd test --prefix "Digimon Card Battle"` (11 tests)
+- `npm.cmd test --prefix "Octopath Traveler 0"` (62 tests)
 - `npm.cmd run typecheck --prefix "Octopath Traveler 0"` (6 apps checked, 0 errors)
 
 

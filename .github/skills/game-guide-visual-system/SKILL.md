@@ -21,6 +21,12 @@ Use this skill when designing, updating, or auditing the visual language, themes
   - Maintain visible `:focus-visible` rings, `aria-selected` / `aria-current="page"` state attributes, and full `@media (prefers-reduced-motion: reduce)` support.
 - **Test & DOM Contract Safety**:
   - Never alter element IDs, `data-category` values, or the attribute order of `<button class="cat-tab..." data-category="...">` in Octopath HTML files (required by `Octopath Traveler 0/tests/helpers/dom-stub.js`).
+- **Theme Toggle Architecture & Cross-Codex Synchronization**:
+  - **Pre-paint execution**: Inline snippet in `<head>` immediately resolves the active theme and sets `data-theme="light"` or `data-theme="dark"` on `<html>` before rendering, preventing theme flashes (FOUC).
+  - **Early head script & document delegation**: `<script src="themeToggle.js"></script>` is loaded in `<head>`. Click handling uses global event delegation on `document` (`document.addEventListener('click', ...)`) rather than waiting for `DOMContentLoaded`, ensuring instant toggle responsiveness even while multi-megabyte data files (`skillData.js`, `enemyData.js`, `allCards.js`) are still loading.
+  - **DOM-driven toggle state**: Next theme is evaluated from `document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light'` rather than stale storage values.
+  - **Multi-tier storage & sync**: Theme preference is saved to and synchronized from primary key `game_guide_theme` alongside local backwards-compatible keys (`octo0_theme`, `digimon_codex_theme`), safe cookie fallback with regex `(?:^|;\\s*)`, and `window.name` fallback for `file://` contexts.
+  - **Lifecycle resilience**: Listens to `pageshow` (for bfcache back/forward navigation) and `storage` (for cross-tab synchronization).
 - **Character Sprites & Vertical Portraits Suite**:
   - All 35 playable characters in `Octopath Traveler 0/assets/characters/` must provide both a vertical portrait (`<slug>_portrait.png`, e.g., 74×160 or 54×96) and an official CotC combat sprite (`<slug>_sprite.png`, e.g., 66×102 or 72×96).
   - Detail modals provide a Portrait vs. Sprite toggle (`.char-modal-image-toggle`).

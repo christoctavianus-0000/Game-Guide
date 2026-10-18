@@ -13,16 +13,9 @@
   
   <link rel="stylesheet" href="styles.css" />
   <script>
-    (function(){
-      var K='digimon_codex_theme',V={dark:1,light:1},t=null;
-      try{t=localStorage.getItem(K)}catch(e){}
-      if(!t||!V[t]){try{var m=document.cookie.match('(?:^|;\s*)'+K+'=([^;]*)');t=m?decodeURIComponent(m[1]):null}catch(e){}}
-      if(!t||!V[t]){try{var w=window.name;t=(w&&V[w])?w:null}catch(e){}}
-      if(t==='light')document.documentElement.setAttribute('data-theme','light');
-      else if(t==='dark')document.documentElement.setAttribute('data-theme','dark');
-      else document.documentElement.removeAttribute('data-theme');
-    })();
+    (function(){try{var t=localStorage.getItem('game_guide_theme')||localStorage.getItem('digimon_codex_theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');else if(t==='dark')document.documentElement.removeAttribute('data-theme');}catch(e){}})();
   </script>
+  <script src="themeToggle.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -167,7 +160,6 @@
 
   <!-- CARD DATABASE LOADED BY JS -->
   <script src="cardData.js"></script>
-  <script src="themeToggle.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

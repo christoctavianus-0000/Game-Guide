@@ -1,14 +1,90 @@
+/**
+ * Theme Toggle — persisted across storage tiers, synchronized across pages.
+ * Supports execution in <head> or at bottom of <body>.
+ */
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'digimon_codex_theme';
+  if (window.__digimonThemeToggleLoaded) return;
+  window.__digimonThemeToggleLoaded = true;
 
-  function getStoredTheme() {
+  var SHARED_KEY = 'game_guide_theme';
+  var LOCAL_KEY = 'digimon_codex_theme';
+  var VALID = { dark: 1, light: 1 };
+
+  function readCookie(key) {
     try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored === 'light' || stored === 'dark') return stored;
-    } catch (_) {}
+      var m = document.cookie.match(new RegExp('(?:^|;\\s*)' + key + '=([^;]*)'));
+      return m ? decodeURIComponent(m[1]) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeCookie(key, val) {
+    try {
+      document.cookie = key + '=' + encodeURIComponent(val) + ';path=/;max-age=31536000;SameSite=Lax';
+    } catch (e) {}
+  }
+
+  function readWindowName() {
+    try {
+      var wn = window.name;
+      return (wn && VALID[wn]) ? wn : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeWindowName(val) {
+    try {
+      window.name = val;
+    } catch (e) {}
+  }
+
+  function getTheme() {
+    var t = null;
+    try {
+      t = localStorage.getItem(SHARED_KEY);
+      if (t && VALID[t]) return t;
+      t = localStorage.getItem(LOCAL_KEY);
+      if (t && VALID[t]) return t;
+    } catch (e) {}
+
+    t = readCookie(SHARED_KEY);
+    if (t && VALID[t]) return t;
+    t = readCookie(LOCAL_KEY);
+    if (t && VALID[t]) return t;
+
+    t = readWindowName();
+    if (t && VALID[t]) return t;
+
     return 'dark';
+  }
+
+  function saveTheme(val) {
+    try {
+      localStorage.setItem(SHARED_KEY, val);
+      localStorage.setItem(LOCAL_KEY, val);
+    } catch (e) {}
+    writeCookie(SHARED_KEY, val);
+    writeCookie(LOCAL_KEY, val);
+    writeWindowName(val);
+  }
+
+  function updateButtons(theme) {
+    var isLight = theme === 'light';
+    var btns = document.querySelectorAll('.theme-toggle-btn, #theme-toggle-btn');
+    for (var i = 0; i < btns.length; i++) {
+      var btn = btns[i];
+      btn.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+      btn.setAttribute('title', isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode');
+      btn.setAttribute('aria-label', isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode');
+      var icon = btn.querySelector('.theme-icon');
+      if (icon) icon.textContent = isLight ? '🌙' : '☀️';
+      var label = btn.querySelector('.theme-label');
+      if (label) label.textContent = isLight ? 'Dark' : 'Light';
+    }
   }
 
   function applyTheme(theme) {
@@ -17,38 +93,55 @@
     } else {
       document.documentElement.removeAttribute('data-theme');
     }
-    updateToggleButton(theme);
-  }
-
-  function updateToggleButton(theme) {
-    const btn = document.getElementById('theme-toggle-btn');
-    if (!btn) return;
-    const isLight = theme === 'light';
-    btn.setAttribute('aria-pressed', isLight ? 'true' : 'false');
-    btn.setAttribute('title', isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode');
-    const icon = btn.querySelector('.theme-icon');
-    if (icon) icon.textContent = isLight ? '🌙' : '☀️';
-    const label = btn.querySelector('.theme-label');
-    if (label) label.textContent = isLight ? 'Dark' : 'Light';
+    updateButtons(theme);
   }
 
   function toggleTheme() {
-    const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
-    const next = current === 'light' ? 'dark' : 'light';
-    try {
-      localStorage.setItem(STORAGE_KEY, next);
-    } catch (_) {}
+    var isCurrentLight = document.documentElement.getAttribute('data-theme') === 'light';
+    var next = isCurrentLight ? 'dark' : 'light';
+    saveTheme(next);
     applyTheme(next);
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const btn = document.getElementById('theme-toggle-btn');
-    if (btn) {
-      btn.addEventListener('click', toggleTheme);
-      const initial = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : getStoredTheme();
-      updateToggleButton(initial);
+  // 1. Apply theme immediately upon script evaluation
+  applyTheme(getTheme());
+
+  // 2. Delegate click on document so ANY .theme-toggle-btn works immediately,
+  // without relying on DOMContentLoaded or element querying order.
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    var btn = target && target.closest ? target.closest('.theme-toggle-btn, #theme-toggle-btn') : null;
+    if (!btn) return;
+    e.preventDefault();
+    toggleTheme();
+  });
+
+  // 3. Update button visuals as soon as DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      updateButtons(getTheme());
+    });
+  } else {
+    updateButtons(getTheme());
+  }
+
+  // 4. Re-apply on bfcache restore (browser back/forward navigation)
+  window.addEventListener('pageshow', function () {
+    applyTheme(getTheme());
+  });
+
+  // 5. Cross-tab sync via storage event
+  window.addEventListener('storage', function (e) {
+    if ((e.key === SHARED_KEY || e.key === LOCAL_KEY) && e.newValue && VALID[e.newValue]) {
+      applyTheme(e.newValue);
     }
   });
 
-  applyTheme(getStoredTheme());
+  // Expose for testing/debugging
+  window.__themeToggle = {
+    getTheme: getTheme,
+    saveTheme: saveTheme,
+    applyTheme: applyTheme,
+    toggleTheme: toggleTheme
+  };
 })();
