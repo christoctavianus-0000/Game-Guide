@@ -14,12 +14,17 @@ Use this skill when designing, updating, or auditing the visual language, themes
   - Smaller viewports (`< 1100px`): sticky/compact top navigation bar with horizontally scrollable section links.
   - Desktop viewports (`>= 1100px`): fixed vertical left rail (`.site-rail`) with custom vector crests and section icons.
   - Every page must include a keyboard-accessible `.project-home-link` (`← Project home`) at the upper-left linking to `../index.html`, plus a `.skip-link` (`Skip to main content`).
-- **Centered Category Tabs**:
+- **Centered & Compact Category Tabs**:
   - Category tab strips (`.category-tabs`) and button labels (`.cat-tab`) are centered on desktop (`justify-content: center`), while switching to `justify-content: flex-start` inside mobile media queries (`@media (max-width: 600px)` / `640px`) so horizontal overflow never clips the leading tab.
+  - **Octopath Character Codex Job Tabs (`#characterJobTabs`)**: Uses a compact, two-tier centered flex-wrap bar with `.job-tabs-break` (`flex-basis: 100%; height: 0;`) separating the 8 standard traveler jobs (Row 1: All + Warrior, Dancer, Merchant, Scholar, Cleric, Thief, Hunter, Apothecary) from the 10 CotC special/royal jobs (Row 2: Architect, Cait Scholar, Captain, Empress, Flamebringer, King, Knight Ardante, Lord, Queen, Wise King). This completely eliminates horizontal scrolling on desktop/laptop while keeping `Lord`, `Queen`, and `Wise King` immediately accessible.
 - **Accessibility & Motion**:
   - Maintain visible `:focus-visible` rings, `aria-selected` / `aria-current="page"` state attributes, and full `@media (prefers-reduced-motion: reduce)` support.
 - **Test & DOM Contract Safety**:
   - Never alter element IDs, `data-category` values, or the attribute order of `<button class="cat-tab..." data-category="...">` in Octopath HTML files (required by `Octopath Traveler 0/tests/helpers/dom-stub.js`).
+- **Character Sprites & Vertical Portraits Suite**:
+  - All 35 playable characters in `Octopath Traveler 0/assets/characters/` must provide both a vertical portrait (`<slug>_portrait.png`, e.g., 74×160 or 54×96) and an official CotC combat sprite (`<slug>_sprite.png`, e.g., 66×102 or 72×96).
+  - Detail modals provide a Portrait vs. Sprite toggle (`.char-modal-image-toggle`).
+  - When rendering pixel art sprites in the modal, apply `image-rendering: pixelated; image-rendering: crisp-edges;` to `.char-modal-image[data-mode="sprite"]` to prevent blurring on high-DPI displays.
 
 ---
 
