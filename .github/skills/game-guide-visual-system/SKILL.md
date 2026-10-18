@@ -79,5 +79,6 @@ When creating or updating UI icons, crests, or category emblems, follow these SV
 - [ ] Check every affected page in both **Dark** and **Light** themes and at desktop (`>= 1100px`) and mobile (`<= 600px`) widths.
 - [ ] Confirm `<button class="cat-tab..." data-category="...">` attribute ordering is preserved on all Octopath HTML pages.
 - [ ] Verify each app page's `← Project home` link resolves to `../index.html` and the root launcher cards display each world's custom crest SVG.
+- [ ] Verify `themeToggle.js` is loaded in `<head>`, click delegation is active immediately, and themeToggle unit tests pass.
 - [ ] Run `npm.cmd run check` from the repository root and confirm all Digimon tests, Octopath tests, and TypeScript checks pass with 0 errors.
 - [ ] Record durable design and icon updates in `PROJECT_GUIDE.md` and `CHANGELOG.md`.

@@ -63,8 +63,10 @@ Both pages share `styles.css` (design tokens plus the shared `.site-nav` bar). `
 | `package.json` | Dev-only tooling: `typecheck` and `test` scripts. No runtime dependencies. |
 | `tsconfig.json` | TypeScript `--noEmit` config covering all 6 codex apps and `types/`. |
 | `types/codex-types.d.ts` | Record shapes (`SkillRecord`, `EquipmentRecord`, `CharacterRecord`, `EnemyRecord`, `NpcRecord`, `ShopItemRecord`), subtype chips, and per-page element-id maps. |
-| `tests/` | `node --test` suite with a minimal DOM stub; see "Verification". |
+| `themeToggle.js` | Shared light/dark theme toggle with early `<head>` loading, document event delegation, multi-tier storage (`game_guide_theme`, `octo0_theme`), cookie, and `window.name` fallback. |
+| `tests/` | `node --test` suite with a minimal DOM stub; see "Verification" (62 tests). |
 | `explore_database.py` | Optional Pandas utility that lists workbook sheets and previews a sheet. It currently previews `Character` when run directly. |
+| `assets/characters/` | Character portraits (`<slug>_portrait.png`) and combat sprites (`<slug>_sprite.png`) for all 35 playable travelers. |
 | `assets/icons/` | Skill-category and subtype icons referenced by the generated records, plus custom fantasy RPG vector UI icons in `assets/icons/ui/` (`octopath-crest.svg`, `nav-*.svg`, `cat-*.svg`). |
 
 ## Current dataset

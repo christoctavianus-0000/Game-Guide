@@ -44,11 +44,12 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 | `download_all_assets.js` | Builds `cardData.js` and `allCards.json` from the category files; optionally downloads missing card art. |
 | `requirements.txt` | Python-only dependencies for the HTML and workbook extraction scripts. |
 | `<specialty>Cards.json` | Per-category source records (`fireCards.json`, `iceCards.json`, ...). |
-| `themeToggle.js` | Shared light/dark toggle, persisted in `localStorage` with a cookie fallback. |
+| `themeToggle.js` | Shared light/dark toggle with early `<head>` loading, document event delegation, multi-tier storage (`game_guide_theme`, `digimon_codex_theme`), cookie, and `window.name` fallback. |
 | `assets/cards/` | Card art named `<no>_<Name>.jpg`, referenced by `localCardIcon`. |
 | `assets/ui/` | Custom vector SVG UI icons: attack type icons (`circle.svg`, `triangle.svg`, `x.svg`), brand (`digivice.svg`), nav (`nav-cards.svg`, `nav-fusion.svg`), and specialty badges (`spec-*.svg`). |
-| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, and non-numeric value handling. |
-| `tests/data_integrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, `CARD_DATABASE`, and SVG icon asset existence (8 tests). |
+| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, and non-numeric value handling (5 tests). |
+| `tests/dataIntegrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, `CARD_DATABASE`, and SVG icon asset existence (3 tests). |
+| `tests/themeToggle.test.js` | Unit test suite verifying theme initialization, document click delegation, and cross-page persistence (3 tests). |
 
 ## Current dataset
 
@@ -102,7 +103,7 @@ The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_
 - Add UI behavior to `app.js` or `fusion.js`; keep data generation in the Python scripts.
 - Escape any dataset string interpolated into `innerHTML`; both page scripts define `escapeHtml`.
 - Reuse the shared table and badge classes in `styles.css` before adding new ones, and keep page-specific rules in `fusion.css`.
-- Keep both Digimon pages on the shared Game Guide visual system: neutral charcoal surfaces, compact Inter typography, Rajdhani for data labels, and the same responsive top navigation / desktop rail as Octopath. Preserve specialty colors where they communicate card categories; avoid blue/neon chrome.
+- Keep both Digimon pages on the Cyber-Digital / Digivice HUD visual system: deep Digital World navy-slate surfaces (`#070b14` to `#142038`), glowing cyan-blue HUD grid lines and accents (`#38bdf8`, `#f59e0b`), hex-grid background overlay, custom vector SVG icons (`assets/ui/`), compact Inter typography, and Rajdhani for data labels. Preserves the 5 specialty colors and option badges.
 - Keep a “Project home” link at the upper-left of both pages, linking to `../index.html`; shared navigation styling keeps it visible and keyboard-accessible on desktop and mobile.
 - When changing shared navigation or theme tokens, check both `index.html` and `fusion.html` in dark and light themes, at desktop and phone widths.
 - Do not commit downloaded card art changes without checking `download_all_assets.js` first.
@@ -110,7 +111,7 @@ The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_
 ## Verification
 
 - Run `npm run check` at the repository root to validate both apps and check the generated Digimon data files stay in sync.
-- `npm test` (or `node --test tests/*.test.js`) runs all 8 Digimon unit tests: data integrity (category files, allCards.json, CARD_DATABASE), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, and non-numeric value safeguards.
+- `npm test` (or `node --test tests/*.test.js`) runs all 11 Digimon unit tests: data integrity (category files, `allCards.json`, `CARD_DATABASE`), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, non-numeric value safeguards, and theme toggle responsiveness/cross-page persistence.
 - `node --check app.js` and `node --check fusion.js` catch syntax errors.
 - Load both pages in a browser and confirm the console has no errors.
 - Spot-check fusion math: `Angemon` lists 200 combinations, `WarGreymon` lists 34, and `Agumon` + `Gabumon` (material 5 + 5 = 10, Red + Blue = Green) produces `MoriShellmon`.

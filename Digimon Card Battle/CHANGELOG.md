@@ -2,6 +2,19 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - Theme Toggle Reliability & Cross-Page Synchronization
+
+- **Immediate Click Responsiveness via Document Event Delegation (`themeToggle.js`)**:
+  - Replaced `DOMContentLoaded`-bound element click listeners with early global event delegation on `document`: `document.addEventListener('click', function(e) { ... })`.
+  - Moved `<script src="themeToggle.js"></script>` into `<head>` on both `index.html` and `fusion.html`, eliminating dropped clicks during script parsing and fast page transitions.
+- **Deterministic Toggle State**:
+  - Evaluates next state directly from the DOM (`document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light'`) rather than potentially desynced storage values.
+- **Cross-Guide Storage Persistence & Lifecycle Sync**:
+  - Synchronizes preference to primary key `game_guide_theme` alongside local key `digimon_codex_theme`, fixed cookie regex `(?:^|;\\s*)`, and `window.name` fallback.
+  - Added `pageshow` listener for bfcache (browser back/forward navigation) and `storage` event listener for multi-tab synchronization.
+- **Automated Regression Suite (`tests/themeToggle.test.js`)**:
+  - Added 3 unit tests verifying initial dark theme, document click delegation, and simulated page load persistence (Digimon test suite now **11/11 passing**).
+
 ## Unreleased - Cyber-Digital UI Redesign & Custom Vector SVG Icons
 
 - **Digimon Wiki / Digivice Cyber-Digital Theme (`styles.css`, `fusion.css`)**:
