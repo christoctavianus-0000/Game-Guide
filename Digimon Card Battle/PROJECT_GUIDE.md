@@ -101,6 +101,7 @@ The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_
 - Escape any dataset string interpolated into `innerHTML`; both page scripts define `escapeHtml`.
 - Reuse the shared table and badge classes in `styles.css` before adding new ones, and keep page-specific rules in `fusion.css`.
 - Keep both Digimon pages on the shared Game Guide visual system: neutral charcoal surfaces, compact Inter typography, Rajdhani for data labels, and the same responsive top navigation / desktop rail as Octopath. Preserve specialty colors where they communicate card categories; avoid blue/neon chrome.
+- Keep a “Project home” link at the upper-left of both pages, linking to `../index.html`; shared navigation styling keeps it visible and keyboard-accessible on desktop and mobile.
 - When changing shared navigation or theme tokens, check both `index.html` and `fusion.html` in dark and light themes, at desktop and phone widths.
 - Do not commit downloaded card art changes without checking `download_all_assets.js` first.
 

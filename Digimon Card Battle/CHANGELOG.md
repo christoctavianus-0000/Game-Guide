@@ -4,6 +4,7 @@ This file records implementation decisions that future prompts and contributors 
 
 ## Unreleased - Fusion Codex page
 
+- Added an upper-left “Project home” link to the root Game Guide landing page on all Digimon and Octopath pages, with responsive shared styling.
 - New page `fusion.html` + `fusion.js` + `fusion.css`: two-mode fusion calculator built from `FUSION_RULES.md` and the `Fusion.xlsx` workbook.
   - **Tab 1 "Find Recipe (By Result)"**: search a target card by exact name, then list every pair that produces it. Standard pairs come from `materialValue(A) + materialValue(B) == target.resultValue` plus a color check through the fusion matrix; special pairs come from `special_fusions`. Results from both sources are deduped.
   - **Tab 2 "Fuse 2 Cards (By Materials)"**: pick Material 1 and Material 2, then list every card whose `resultValue` equals the material sum and whose color matches the matrix result, plus any special fusion that matches the exact pair.

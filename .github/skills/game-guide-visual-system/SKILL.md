@@ -14,6 +14,7 @@ Use this skill when changing the visual design, shared navigation, typography, t
 - Use the neutral charcoal palette in dark mode and the existing soft neutral palette in light mode. Avoid blue/neon chrome.
 - Keep common surface and control treatments consistent, including subtle borders, modest corner radii, and visible keyboard focus.
 - Match the codex navigation behavior: a compact top navigation at smaller widths and a fixed vertical rail on desktop.
+- Include a clearly visible “Project home” link at the upper-left of every app page, linking to the repository-root `../index.html`. Keep it in the shared navigation and accessible by keyboard.
 - Respect reduced-motion preferences and preserve usable touch targets on phones.
 
 ## Preserve game identity
@@ -26,5 +27,6 @@ Use this skill when changing the visual design, shared navigation, typography, t
 
 - Check every affected page in both dark and light themes and at desktop and phone widths.
 - Ensure current navigation items are identified accessibly and each page has a keyboard-accessible skip link.
+- Verify each app page's project-home link resolves to the repository-root landing page.
 - Run `npm run check` from the repository root.
 - Record durable design decisions in the relevant app's `PROJECT_GUIDE.md` and `CHANGELOG.md`.
