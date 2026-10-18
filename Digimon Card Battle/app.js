@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function attackIconHtml(token) {
     const label = ATTACK_ICON_LABELS[token] || token;
-    return `<img src="assets/ui/${token}.gif" alt="${label}" title="${label}" class="attack-type-icon" />`;
+    return `<img src="assets/ui/${token}.svg" alt="${label}" title="${label}" class="attack-type-icon" />`;
   }
 
   function escapeHtml(value) {

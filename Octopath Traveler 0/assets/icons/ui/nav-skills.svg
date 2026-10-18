@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <defs>
+    <linearGradient id="sk-blade" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="55%" stop-color="#e5b869"/>
+      <stop offset="100%" stop-color="#b47b2a"/>
+    </linearGradient>
+  </defs>
+  <!-- Crossed Swords -->
+  <path d="M4 20L19 5M15.5 4.5L19.5 4.5L19.5 8.5M6.5 14.5L9.5 17.5" stroke="url(#sk-blade)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 20L5 5M8.5 4.5L4.5 4.5L4.5 8.5M17.5 14.5L14.5 17.5" stroke="url(#sk-blade)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Center Sacred Spark -->
+  <path d="M12 8.5L13 11L15.5 12L13 13L12 15.5L11 13L8.5 12L11 11L12 8.5Z" fill="#7dd3fc" stroke="#fef3c7" stroke-width="0.6"/>
+</svg>

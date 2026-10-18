@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <defs>
+    <linearGradient id="np-gold" x1="4" y1="3" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="50%" stop-color="#e5b869"/>
+      <stop offset="100%" stop-color="#b47b2a"/>
+    </linearGradient>
+  </defs>
+  <!-- Townsperson Cloak & Quill/Scroll -->
+  <circle cx="12" cy="7.5" r="3.5" fill="#1e1711" stroke="url(#np-gold)" stroke-width="1.7"/>
+  <path d="M5 19.5C5 15.6 8.1 13 12 13C15.9 13 19 15.6 19 19.5" fill="#1e1711" stroke="url(#np-gold)" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M12 13L10 17.5L12 19.5L14 17.5L12 13Z" fill="#e5b869" fill-opacity="0.35" stroke="#fef3c7" stroke-width="1"/>
+</svg>

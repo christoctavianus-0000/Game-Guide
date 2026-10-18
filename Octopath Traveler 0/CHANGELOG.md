@@ -2,6 +2,17 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — HD-2D Fantasy RPG Tome Theme & Custom SVG Icon System
+
+- **Octopath Traveler Wiki / HD-2D Fantasy RPG Theme (`styles.css`)**:
+  - Updated `:root` (Dark mode) to warm obsidian tavern-leather surfaces (`#0c0907` to `#231b14`), antique brass and burnished gold filigree borders (`rgba(229, 184, 105, 0.14)` to `0.52`), warm parchment text (`#f6f0e4`), and gold-leaf highlights (`#e5b869`, `#fef3c7`).
+  - Updated `[data-theme="light"]` (Light mode) to illuminated vellum and parchment surfaces (`#e7dbc7` to `#fdfaf3`) with burnished bronze borders and deep manuscript ink typography (`#241a10`).
+  - Loaded the `Cinzel` serif display font across all 6 HTML pages (`index.html`, `equipment.html`, `character.html`, `enemy.html`, `shop.html`, `npc.html`) for ornate RPG headers, titles, and category tabs, paired with `Inter` body text and `Rajdhani` tabular numbers.
+  - Centered `.category-tabs` on desktop (`justify-content: center`) while keeping `justify-content: flex-start` on mobile (`<= 600px`) for horizontal scrolling.
+- **Custom Fantasy RPG Vector SVG Icon Suite (`assets/icons/ui/`)**:
+  - Created 15 custom vector SVG icons (`octopath-crest.svg`, `nav-skills.svg`, `nav-equipment.svg`, `nav-characters.svg`, `nav-enemies.svg`, `nav-shops.svg`, `nav-npcs.svg`, `cat-all.svg`, `cat-physical.svg`, `cat-elemental.svg`, `cat-support.svg`, `cat-boss.svg`, `cat-quest.svg`, `cat-fame.svg`, `cat-wealth.svg`) and applied them across all 6 Octopath pages plus the root `index.html` launcher card.
+  - Added asset verification test in `tests/skillCodex.test.js` (**54/54 tests pass**).
+
 ## Unreleased — Enemy escaping, typecheck expansion to all apps, storage safety & pipeline resilience
 
 - **Enemy Codex Escaping**: Added `escapeHtml(value)` in `enemyApp.js` and applied it across `renderEnemyRow`, `openEnemyModal`, and `renderChunks`. Wrapped area, subArea, enemy name, type, steal, drop, immunities, and skill metadata before inserting into `innerHTML`.

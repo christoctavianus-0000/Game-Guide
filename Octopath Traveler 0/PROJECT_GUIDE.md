@@ -64,7 +64,7 @@ Both pages share `styles.css` (design tokens plus the shared `.site-nav` bar). `
 | `types/codex-types.d.ts` | Record shapes (`SkillRecord`, `EquipmentRecord`), subtype chips, and per-page element-id maps. |
 | `tests/` | `node --test` suite with a minimal DOM stub; see "Verification". |
 | `explore_database.py` | Optional Pandas utility that lists workbook sheets and previews a sheet. It currently previews `Character` when run directly. |
-| `assets/icons/` | Skill-category and subtype icons referenced by the generated records and UI configuration. |
+| `assets/icons/` | Skill-category and subtype icons referenced by the generated records, plus custom fantasy RPG vector UI icons in `assets/icons/ui/` (`octopath-crest.svg`, `nav-*.svg`, `cat-*.svg`). |
 
 ## Current dataset
 
@@ -221,7 +221,7 @@ The script requires `pandas` plus an Excel engine for the workbook. Row-derived 
 Automated checks (run with `npm run typecheck`, `npm test`, or both via `npm run check`):
 
 - `npm run typecheck` runs TypeScript 5.6 in `--noEmit` mode across all 6 applications (`app.js`, `equipmentApp.js`, `characterApp.js`, `enemyApp.js`, `npcApp.js`, and `shopApp.js`), typed against `types/codex-types.d.ts`. A regenerated dataset or renamed element ID that breaks the contract fails here.
-- `npm test` runs every `tests/*.test.js` file: skill, equipment, character, enemy, shop, and NPC behavior plus hostile-payload escaping (53 tests).
+- `npm test` runs every `tests/*.test.js` file: skill, equipment, character, enemy, shop, and NPC behavior, hostile-payload escaping, and UI SVG asset verification (54 tests).
 
 None of this affects the shipped pages: TypeScript is never compiled and emits nothing, and `tests/` is never loaded by a browser. Emitted output stays dependency-free.
 

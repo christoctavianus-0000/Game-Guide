@@ -56,3 +56,28 @@ test('fusion browser data matches its JSON inspection copy', () => {
 
   assert.deepEqual(normalize(browserData), jsonData);
 });
+
+test('all Digimon UI vector icons exist in assets/ui', () => {
+  const uiIcons = [
+    'circle.svg',
+    'triangle.svg',
+    'x.svg',
+    'digivice.svg',
+    'nav-cards.svg',
+    'nav-fusion.svg',
+    'spec-all.svg',
+    'spec-fire.svg',
+    'spec-ice.svg',
+    'spec-nature.svg',
+    'spec-darkness.svg',
+    'spec-rare.svg',
+    'spec-partner.svg',
+    'spec-option.svg'
+  ];
+
+  uiIcons.forEach(icon => {
+    const iconPath = path.join(ROOT, 'assets', 'ui', icon);
+    assert.ok(fs.existsSync(iconPath), `assets/ui/${icon} exists`);
+  });
+});
+

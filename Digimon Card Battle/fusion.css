@@ -1,43 +1,58 @@
 /* ==========================================================================
-   DIGIMON CARD BATTLE // FUSION CODEX — Fusion Result Lookup
+   DIGIMON CARD BATTLE // FUSION CODEX — Digital Synthesis Matrix Interface
    ========================================================================== */
 
 /* Fusion Tabs & Mode switching */
 .fusion-mode-tabs {
   display: flex;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 0.65rem;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.75rem;
+  padding: 6px;
+  border: 1px solid var(--border-card);
+  border-radius: 12px;
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-card);
   overflow-x: auto;
 }
 
 .fusion-tab-btn {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: transparent;
+  border: 1px solid transparent;
   color: var(--text-secondary);
-  padding: 0.75rem 1.25rem;
-  border-radius: 7px;
-  font-family: var(--font-display);
-  font-size: 0.9rem;
-  font-weight: 600;
+  padding: 0.75rem 1.35rem;
+  border-radius: 8px;
+  font-family: var(--font-tech);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  flex: 1 0 auto;
+  gap: 0.55rem;
   transition: var(--transition-fast);
 }
 
+.fusion-tab-btn .tab-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .fusion-tab-btn:hover {
-  border-color: var(--border-neon);
+  border-color: var(--border-subtle);
   color: var(--text-primary);
   background: var(--bg-surface-hover);
 }
 
 .fusion-tab-btn.active {
-  background: var(--bg-surface-elevated);
-  border-color: var(--border-subtle);
+  background: linear-gradient(180deg, var(--bg-surface-elevated) 0%, var(--bg-abyss) 100%);
+  border-color: var(--border-neon);
   color: var(--text-primary);
+  box-shadow: 0 0 14px var(--border-neon-glow), inset 0 1px 0 rgba(125, 211, 252, 0.25);
 }
 
 .fusion-tab-panel {
@@ -60,36 +75,38 @@
 .material-picker-box {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .material-picker-box label {
-  font-family: var(--font-display);
-  font-weight: 600;
+  font-family: var(--font-tech);
+  font-weight: 700;
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: var(--text-accent);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .fuse-plus-sign {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--text-accent);
   text-align: center;
   padding-top: 1.5rem;
+  text-shadow: 0 0 12px var(--border-neon-glow);
 }
 
 .mat-card-preview {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
+  background: var(--bg-abyss);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
   padding: 1rem;
   min-height: 110px;
   display: flex;
   align-items: center;
   gap: 1rem;
+  box-shadow: inset 0 1px 0 rgba(125, 211, 252, 0.06);
 }
 
 .mat-card-preview.empty {
@@ -102,22 +119,24 @@
 .mat-preview-img {
   width: 60px;
   height: 60px;
-  border-radius: 4px;
+  border-radius: 6px;
   object-fit: cover;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-card);
   flex: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .mat-preview-info {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.35rem;
 }
 
 .mat-preview-name {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--text-primary);
 }
 
@@ -125,7 +144,7 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--text-secondary);
 }
 
@@ -150,7 +169,7 @@
 .result-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.75rem;
+  gap: 0.85rem;
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border-subtle);
@@ -159,46 +178,36 @@
 .stat-row {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.2rem;
+  background: var(--bg-abyss);
+  border: 1px solid var(--border-subtle);
+  border-radius: 7px;
+  padding: 0.55rem 0.75rem;
 }
 
 .stat-label {
-  font-size: 0.7rem;
+  font-family: var(--font-tech);
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   color: var(--text-muted);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .stat-val {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.02rem;
   color: var(--text-primary);
-  font-weight: 500;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
 }
 
 .stat-val.support-text {
   font-family: var(--font-body);
   font-size: 0.85rem;
-  line-height: 1.4;
+  line-height: 1.45;
   white-space: pre-wrap;
 }
-
-.spec-tag {
-  display: inline-block;
-  padding: 0.15rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.spec-tag.spec-fire { background: var(--spec-fire); color: #fff; }
-.spec-tag.spec-ice { background: var(--spec-ice); color: #fff; }
-.spec-tag.spec-nature { background: var(--spec-nature); color: #fff; }
-.spec-tag.spec-darkness { background: var(--spec-darkness); color: #fff; }
-.spec-tag.spec-rare { background: var(--spec-rare); color: #000; }
-.spec-tag.spec-option { background: var(--spec-option); color: #fff; }
 
 /* Combo Controls */
 .combo-controls {
@@ -220,9 +229,10 @@
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  font-family: var(--font-body);
-  font-size: 0.8rem;
+  border-radius: 5px;
+  font-family: var(--font-tech);
+  font-weight: 600;
+  font-size: 0.82rem;
   cursor: pointer;
   transition: var(--transition-fast);
 }
@@ -236,23 +246,23 @@
   background: var(--text-accent);
   border-color: var(--text-accent);
   color: var(--bg-abyss);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Combo Card Enhancements */
 .combo-card .combo-name {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-primary);
 }
 
 .combo-card .combo-mat {
-  font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-family: var(--font-tech);
+  font-size: 0.72rem;
   color: var(--text-accent);
   background: var(--bg-abyss);
   padding: 0.1rem 0.4rem;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .combo-footer {
@@ -268,26 +278,35 @@
 .combo-sum {
   font-family: var(--font-display);
   color: var(--text-accent);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .type-badge {
-  padding: 0.15rem 0.5rem;
-  border-radius: 3px;
-  font-size: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.16rem 0.55rem;
+  border-radius: 5px;
+  font-family: var(--font-tech);
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
 }
 
 .type-badge.special {
-  background: var(--spec-rare);
-  color: #000;
+  background: linear-gradient(135deg, #facc15, #ca8a04);
+  color: #090d16;
+  border: 1px solid rgba(250, 204, 21, 0.5);
 }
 
 .type-badge.standard {
-  background: var(--spec-option);
-  color: #fff;
+  background: rgba(56, 189, 248, 0.14);
+  color: var(--text-accent);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+[data-theme="light"] .type-badge.standard {
+  background: rgba(2, 132, 199, 0.12);
+  border-color: rgba(2, 132, 199, 0.3);
 }
 
 /* Attack type icons inline */
@@ -298,9 +317,9 @@
 }
 
 .attack-type-icon {
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
+  width: 1.05em;
+  height: 1.05em;
+  vertical-align: -2px;
   margin: 0 0.15em;
 }
 
@@ -308,23 +327,27 @@
 .fusion-search {
   background: var(--bg-surface);
   border: 1px solid var(--border-card);
-  border-radius: 10px;
-  padding: 1.5rem;
+  border-radius: 12px;
+  padding: 1.65rem;
   margin-bottom: 1.5rem;
   text-align: left;
+  box-shadow: var(--shadow-card);
 }
 
 .fusion-search h2 {
   font-family: var(--font-display);
-  font-size: 1.35rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
   color: var(--text-primary);
 }
 
 .fusion-search p {
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.92rem;
 }
 
 .search-box {
@@ -337,9 +360,9 @@
   width: 100%;
   background: var(--bg-abyss);
   border: 1px solid var(--border-card);
-  padding: 1rem 1.25rem;
+  padding: 0.9rem 1.15rem;
   color: var(--text-primary);
-  border-radius: 8px;
+  border-radius: 9px;
   font-family: var(--font-body);
   font-size: 1rem;
   transition: var(--transition-fast);
@@ -355,38 +378,42 @@
 .result-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-card);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 2rem;
   display: flex;
   gap: 1.5rem;
-  align-items: center;
+  align-items: flex-start;
+  box-shadow: var(--shadow-card);
 }
 
 .result-card .result-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 4px;
+  width: 84px;
+  height: 84px;
+  border-radius: 8px;
   object-fit: cover;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-card);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   flex-shrink: 0;
 }
 
 .result-card .result-info {
   flex: 1;
+  min-width: 0;
 }
 
 .result-card .result-name {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: 1.75rem;
   font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--text-primary);
 }
 
 .result-card .result-meta {
   display: flex;
-  gap: 0.75rem;
-  margin-top: 0.5rem;
+  gap: 0.6rem;
+  margin-top: 0.45rem;
   flex-wrap: wrap;
 }
 
@@ -419,28 +446,45 @@
 
 .combinations-section h3 {
   margin-bottom: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.combinations-section h3 .count {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  background: rgba(56, 189, 248, 0.14);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: var(--text-accent);
 }
 
 .combo-filter-box input {
   background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--border-card);
+  padding: 0.55rem 0.9rem;
   color: var(--text-primary);
-  border-radius: 4px;
+  border-radius: 7px;
   font-size: 0.85rem;
-  width: 240px;
+  width: 260px;
   transition: var(--transition-fast);
 }
 
 .combo-filter-box input:focus {
   border-color: var(--border-neon);
+  box-shadow: 0 0 0 3px var(--border-neon-glow);
   outline: none;
 }
 
 .combinations-table-wrap {
   background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
+  border: 1px solid var(--border-card);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
   overflow-x: auto;
   max-height: none;
   overflow-y: visible;
@@ -448,14 +492,14 @@
 
 .fusion-combos-table {
   width: 100%;
-  min-width: 0; /* override .card-table's 1400px min-width that forced horizontal scroll */
+  min-width: 0;
   border-collapse: collapse;
   table-layout: auto;
 }
 
 .fusion-combos-table th,
 .fusion-combos-table td {
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.8rem;
   text-align: left;
   border-bottom: 1px solid var(--border-subtle);
   font-size: 0.85rem;
@@ -463,8 +507,10 @@
 
 .fusion-combos-table th {
   background: var(--bg-abyss);
-  font-family: var(--font-display);
-  font-weight: 600;
+  font-family: var(--font-tech);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--text-secondary);
   cursor: pointer;
   user-select: none;
@@ -493,28 +539,30 @@
 .fusion-combos-table .combo-cell {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .fusion-combos-table .combo-cell img {
-  width: 24px;
-  height: 24px;
-  border-radius: 3px;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
   object-fit: cover;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-card);
   flex: none;
 }
 
 .fusion-combos-table .combo-name {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
 .fusion-combos-table .mat-cell {
-  font-family: var(--font-display);
+  font-family: var(--font-tech);
   color: var(--text-secondary);
-  font-weight: 500;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
   line-height: 1.2;
 }
 
@@ -525,7 +573,7 @@
 
 .fusion-combos-table .type-badge {
   font-size: 0.7rem;
-  padding: 0.1rem 0.45rem;
+  padding: 0.12rem 0.48rem;
   white-space: nowrap;
 }
 
@@ -560,20 +608,34 @@
 /* Empty State */
 .empty-state {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 3.5rem 2rem;
   color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-card);
+  border-radius: 12px;
 }
 
 .empty-state .icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  opacity: 0.5;
+  font-size: 2.5rem;
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state-svg {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 0 10px var(--border-neon-glow));
 }
 
 .empty-state h3 {
   font-family: var(--font-display);
-  margin-bottom: 0.5rem;
-  color: var(--text-secondary);
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+  color: var(--text-primary);
 }
 
 /* Loading */
@@ -586,6 +648,7 @@
 
 @media (max-width: 760px) {
   .fusion-page { padding: 14px; }
+  .fusion-mode-tabs { justify-content: flex-start; }
   .materials-picker-grid { gap: 0.75rem; }
   .mat-card-preview { padding: 0.75rem; min-width: 0; }
   .mat-preview-info { min-width: 0; }
@@ -608,11 +671,15 @@
   }
   .result-card {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
+  .result-card .result-meta {
+    justify-content: center;
+  }
   .result-card .result-icon {
-    width: 60px;
-    height: 60px;
+    width: 68px;
+    height: 68px;
   }
   .result-card .result-values {
     justify-content: center;

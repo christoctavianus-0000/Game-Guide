@@ -1,33 +1,72 @@
 ---
 name: game-guide-visual-system
-description: Maintain a coherent visual language across the Game Guide static codex apps while preserving each game's own identity.
+description: Maintain a coherent architectural foundation across the Game Guide static codex apps while crafting authentic, world-specific visual identities and custom SVG icon systems for each game (Digimon Wiki Cyber-Digital vs. Octopath Wiki HD-2D Fantasy RPG).
 ---
 
-# Game Guide visual system
+# Game Guide Visual System & SVG Icon Skill
 
-Use this skill when changing the visual design, shared navigation, typography, themes, or responsive layouts of the Digimon Card Battle and Octopath Traveler 0 codexes.
+Use this skill when designing, updating, or auditing the visual language, themes, typography, custom vector SVG icons, shared navigation, or responsive layouts of the **Digimon Card Battle** and **Octopath Traveler 0** codexes.
 
-## Shared foundation
+## 1. Shared Architectural Foundation
 
-- Keep the interface restrained and information-led: compact headers, clear controls, quiet surfaces, readable tables, and consistent spacing.
-- Use the established Inter / Rajdhani pairing: Inter for body and display text, Rajdhani for compact data labels and controls.
-- Use the neutral charcoal palette in dark mode and the existing soft neutral palette in light mode. Avoid blue/neon chrome.
-- Keep common surface and control treatments consistent, including subtle borders, modest corner radii, and visible keyboard focus.
-- Category tab bars and tab button labels are centered (`justify-content: center`), while retaining `justify-content: flex-start` on mobile to guarantee smooth horizontal scrolling without left-edge clipping.
-- Match the codex navigation behavior: a compact top navigation at smaller widths and a fixed vertical rail on desktop.
-- Include a clearly visible “Project home” link at the upper-left of every app page, linking to the repository-root `../index.html`. Keep it in the shared navigation and accessible by keyboard.
-- Respect reduced-motion preferences and preserve usable touch targets on phones.
+- **Information-led ergonomics**: Keep headers compact, controls scannable, tables high-contrast with `font-variant-numeric: tabular-nums`, and spacing disciplined.
+- **Navigation chrome**:
+  - Smaller viewports (`< 1100px`): sticky/compact top navigation bar with horizontally scrollable section links.
+  - Desktop viewports (`>= 1100px`): fixed vertical left rail (`.site-rail`) with custom vector crests and section icons.
+  - Every page must include a keyboard-accessible `.project-home-link` (`← Project home`) at the upper-left linking to `../index.html`, plus a `.skip-link` (`Skip to main content`).
+- **Centered Category Tabs**:
+  - Category tab strips (`.category-tabs`) and button labels (`.cat-tab`) are centered on desktop (`justify-content: center`), while switching to `justify-content: flex-start` inside mobile media queries (`@media (max-width: 600px)` / `640px`) so horizontal overflow never clips the leading tab.
+- **Accessibility & Motion**:
+  - Maintain visible `:focus-visible` rings, `aria-selected` / `aria-current="page"` state attributes, and full `@media (prefers-reduced-motion: reduce)` support.
+- **Test & DOM Contract Safety**:
+  - Never alter element IDs, `data-category` values, or the attribute order of `<button class="cat-tab..." data-category="...">` in Octopath HTML files (required by `Octopath Traveler 0/tests/helpers/dom-stub.js`).
 
-## Preserve game identity
+---
 
-- Do not make the two apps identical. Preserve meaningful game-specific content, terminology, artwork, and category colors.
-- Digimon specialty colors are category information and should remain distinct, while its surrounding interface stays neutral.
-- Keep app-specific layouts where they serve the content, such as Digimon's dense card table and fusion picker.
+## 2. World-Specific Visual Identities
 
-## Before finishing a design change
+Do **not** flatten the two codexes into generic grayscale templates. Each codex embodies its own game universe and community wiki aesthetic while sharing the same structural ergonomics:
 
-- Check every affected page in both dark and light themes and at desktop and phone widths.
-- Ensure current navigation items are identified accessibly and each page has a keyboard-accessible skip link.
-- Verify each app page's project-home link resolves to the repository-root landing page.
-- Run `npm run check` from the repository root.
-- Record durable design decisions in the relevant app's `PROJECT_GUIDE.md` and `CHANGELOG.md`.
+### A. Digimon Card Battle — Cyber-Digital / Digivice HUD (`Digimon Card Battle/`)
+- **Inspiration**: Digimon Wiki & Digivice LCD/holographic terminal HUD.
+- **Dark Theme (`:root`)**: Deep Digital World navy-slate (`#070b14` to `#142038`), glowing cyan-blue HUD grid lines (`rgba(56, 189, 248, 0.16)`), subtle CRT/hex-grid background overlay, and crisp digital cyan/amber accents (`#38bdf8`, `#f59e0b`).
+- **Light Theme (`[data-theme="light"]`)**: Clean Digimon Wiki daylight lab-blue (`#eef4fb` to `#ffffff`) with crisp azure borders (`rgba(2, 132, 199, 0.22)`).
+- **Typography**: `Rajdhani` (tech headers, badges, counters) + `Inter` (body copy).
+- **Specialty Badges**: Preserve the 5 elemental specialty colors (`Fire`, `Ice`, `Nature`, `Darkness`, `Rare`) plus `Option` across tabs, cards, and table rows.
+
+### B. Octopath Traveler 0 — HD-2D Fantasy RPG Tome (`Octopath Traveler 0/`)
+- **Inspiration**: Octopath Traveler Wiki & Orsterra illuminated chronicles.
+- **Dark Theme (`:root`)**: Warm obsidian tavern-leather and dark mahogany surfaces (`#0c0907` to `#231b14`), antique brass and burnished gold filigree borders (`rgba(229, 184, 105, 0.24)` to `0.52`), warm parchment text (`#f6f0e4`), and gold-leaf highlights (`#e5b869`, `#fef3c7`).
+- **Light Theme (`[data-theme="light"]`)**: Warm illuminated vellum/parchment (`#e7dbc7` to `#fdfaf3`), sepia/bronze borders (`rgba(138, 92, 34, 0.24)`), and deep manuscript ink typography (`#241a10`).
+- **Typography**: `Cinzel` (ornate serif display headers, brand titles, and category tabs) + `Inter` (readable body prose) + `Rajdhani` (tabular combat numbers, SP, potency, and stat chips).
+- **Category Accents**: Distinct RPG category accents for `Physical` (burnished amber), `Elemental` (arcane azure), `Support` (emerald), and `Passive` (amethyst).
+
+---
+
+## 3. Custom SVG Icon System Guidelines
+
+When creating or updating UI icons, crests, or category emblems, follow these SVG engineering standards:
+
+1. **No OS-dependent Emoji in Primary Chrome**:
+   - Replace generic emoji in brand crests, navigation bars, desktop rails, category tabs, and empty states with custom-crafted vector SVGs:
+     - Digimon UI icons live in `Digimon Card Battle/assets/ui/`.
+     - Octopath UI icons live in `Octopath Traveler 0/assets/icons/ui/`.
+2. **24×24 ViewBox & Pixel-Grid Alignment**:
+   - Author icons on a standard `viewBox="0 0 24 24"` canvas with crisp geometry, `stroke-linecap="round"`, `stroke-linejoin="round"`, and high silhouette readability at `15px–28px`.
+3. **Thematic Detailing**:
+   - **Digimon SVGs**: Use geometricchamfers, circuit nodes, LCD segments, and glowing cyan/gold/emerald gradients (`digivice.svg`, `card-db.svg`, `fusion.svg`, `specialty-*.svg`).
+   - **Octopath SVGs**: Use metallic gold/brass/silver linear gradients, gemstone facets, 8-pointed compass roses, heraldic shields, and medieval RPG silhouettes (`octopath-crest.svg`, `nav-*.svg`, `cat-*.svg`).
+4. **Accessible Markup**:
+   - Decorative icons placed next to text labels must use `alt=""` (or `aria-hidden="true"` on their wrapper) so screen readers announce only the label text without double-reading filenames.
+5. **Automated Asset Verification**:
+   - Every custom SVG icon added to `assets/ui/` or `assets/icons/ui/` should be covered by an existence assertion in the test suite (`tests/dataIntegrity.test.js` or `tests/skillCodex.test.js`).
+
+---
+
+## 4. Pre-Completion Verification Checklist
+
+- [ ] Check every affected page in both **Dark** and **Light** themes and at desktop (`>= 1100px`) and mobile (`<= 600px`) widths.
+- [ ] Confirm `<button class="cat-tab..." data-category="...">` attribute ordering is preserved on all Octopath HTML pages.
+- [ ] Verify each app page's `← Project home` link resolves to `../index.html` and the root launcher cards display each world's custom crest SVG.
+- [ ] Run `npm.cmd run check` from the repository root and confirm all Digimon tests, Octopath tests, and TypeScript checks pass with 0 errors.
+- [ ] Record durable design and icon updates in `PROJECT_GUIDE.md` and `CHANGELOG.md`.

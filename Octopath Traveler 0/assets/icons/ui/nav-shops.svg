@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <defs>
+    <linearGradient id="sh-gold" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="50%" stop-color="#e5b869"/>
+      <stop offset="100%" stop-color="#b47b2a"/>
+    </linearGradient>
+  </defs>
+  <!-- Merchant Scales & Leaf Coin -->
+  <path d="M12 3V19M8 21H16" stroke="url(#sh-gold)" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M5 7H19" stroke="url(#sh-gold)" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M6 7L3.8 12.5H8.2L6 7Z" fill="#1e1711" stroke="#e5b869" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M18 7L15.8 12.5H20.2L18 7Z" fill="#1e1711" stroke="#e5b869" stroke-width="1.4" stroke-linejoin="round"/>
+  <circle cx="12" cy="6.5" r="2" fill="#fef3c7" stroke="#b47b2a" stroke-width="1"/>
+</svg>

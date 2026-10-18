@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <defs>
+    <linearGradient id="en-gold" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="50%" stop-color="#e5b869"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <!-- Horned Bestiary Crest -->
+  <path d="M4 5C4 9 6.5 11.5 8 12.5L6.5 18L12 21L17.5 18L16 12.5C17.5 11.5 20 9 20 5L16.5 8.5L12 6.5L7.5 8.5L4 5Z" fill="#1e1414" stroke="url(#en-gold)" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M9 13L11 14.2M15 13L13 14.2" stroke="#f87171" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M12 16.5V19" stroke="#e5b869" stroke-width="1.3" stroke-linecap="round"/>
+</svg>

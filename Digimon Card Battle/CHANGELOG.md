@@ -2,6 +2,18 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - Cyber-Digital UI Redesign & Custom Vector SVG Icons
+
+- **Digimon Wiki / Digivice Cyber-Digital Theme (`styles.css`, `fusion.css`)**:
+  - Restyled both `index.html` and `fusion.html` with an authentic Digimon Wiki / Digivice LCD terminal aesthetic.
+  - Dark mode (`:root`): Deep Digital World navy-slate surfaces (`#070b14` to `#142038`), glowing cyan-blue HUD borders (`rgba(56, 189, 248, 0.16)` to `0.45`), subtle digital hex-grid background overlay, and crisp digital cyan/amber accents (`#38bdf8`, `#f59e0b`).
+  - Light mode (`[data-theme="light"]`): Clean Digimon Wiki daylight lab-blue (`#eef4fb` to `#ffffff`) with azure borders (`rgba(2, 132, 199, 0.22)`).
+  - Centered category tabs on desktop (`justify-content: center`), preserving `justify-content: flex-start` under mobile media queries for horizontal scrolling.
+- **Custom Vector SVG Icon Suite (`assets/ui/`)**:
+  - Created 14 custom vector SVGs: `digivice.svg`, `nav-cards.svg`, `nav-fusion.svg`, `circle.svg`, `triangle.svg`, `x.svg`, and 8 specialty badges (`spec-all.svg`, `spec-fire.svg`, `spec-ice.svg`, `spec-nature.svg`, `spec-darkness.svg`, `spec-rare.svg`, `spec-option.svg`, `spec-partner.svg`).
+  - Replaced raster attack icons (`.gif`) and generic emoji in navigation, headers, desktop rails, specialty tabs, and attack tokens.
+  - Added unit test in `tests/dataIntegrity.test.js` verifying all UI vector icons exist (total 8/8 tests pass).
+
 ## Unreleased - Codex sanitization, accessibility, alignment & test suite
 
 - **HTML Escaping Hardening**: Sanitized dynamic card names in `alt="${escapeHtml(card.name)}"`, combo names, preview metadata, and filter input value attributes in `fusion.js` and `app.js`. Updated `renderIconTokens(text)` to call `escapeHtml(text)` prior to regex token replacement.

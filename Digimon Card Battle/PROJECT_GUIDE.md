@@ -46,9 +46,9 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 | `<specialty>Cards.json` | Per-category source records (`fireCards.json`, `iceCards.json`, ...). |
 | `themeToggle.js` | Shared light/dark toggle, persisted in `localStorage` with a cookie fallback. |
 | `assets/cards/` | Card art named `<no>_<Name>.jpg`, referenced by `localCardIcon`. |
-| `assets/ui/` | Attack type icons (`circle.gif`, `triangle.gif`, `x.gif`) used in headers and effect text. |
+| `assets/ui/` | Custom vector SVG UI icons: attack type icons (`circle.svg`, `triangle.svg`, `x.svg`), brand (`digivice.svg`), nav (`nav-cards.svg`, `nav-fusion.svg`), and specialty badges (`spec-*.svg`). |
 | `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, and non-numeric value handling. |
-| `tests/data_integrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, and `CARD_DATABASE`. |
+| `tests/data_integrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, `CARD_DATABASE`, and SVG icon asset existence (8 tests). |
 
 ## Current dataset
 
@@ -110,7 +110,7 @@ The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_
 ## Verification
 
 - Run `npm run check` at the repository root to validate both apps and check the generated Digimon data files stay in sync.
-- `npm test` (or `node --test tests/*.test.js`) runs all 7 Digimon unit tests: data integrity (category files, allCards.json, CARD_DATABASE), JSON mirror sync, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, and non-numeric value safeguards.
+- `npm test` (or `node --test tests/*.test.js`) runs all 8 Digimon unit tests: data integrity (category files, allCards.json, CARD_DATABASE), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, and non-numeric value safeguards.
 - `node --check app.js` and `node --check fusion.js` catch syntax errors.
 - Load both pages in a browser and confirm the console has no errors.
 - Spot-check fusion math: `Angemon` lists 200 combinations, `WarGreymon` lists 34, and `Agumon` + `Gabumon` (material 5 + 5 = 10, Red + Blue = Green) produces `MoriShellmon`.

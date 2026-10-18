@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <defs>
+    <linearGradient id="dv-frame" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="dv-core" x1="8" y1="8" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer cyber octagon -->
+  <polygon points="10,2 22,2 30,10 30,22 22,30 10,30 2,22 2,10" fill="#081226" stroke="url(#dv-frame)" stroke-width="1.8"/>
+  <!-- Corner tech nodes -->
+  <line x1="16" y1="2" x2="16" y2="6" stroke="#38bdf8" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="16" y1="26" x2="16" y2="30" stroke="#38bdf8" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="2" y1="16" x2="6" y2="16" stroke="#38bdf8" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="26" y1="16" x2="30" y2="16" stroke="#38bdf8" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Digivice screen frame -->
+  <rect x="8.5" y="8.5" width="15" height="15" rx="3" fill="#0d2240" stroke="url(#dv-core)" stroke-width="1.5"/>
+  <!-- Digital Crest Star -->
+  <path d="M16 10.5L17.4 14.6L21.5 16L17.4 17.4L16 21.5L14.6 17.4L10.5 16L14.6 14.6L16 10.5Z" fill="#7dd3fc"/>
+</svg>

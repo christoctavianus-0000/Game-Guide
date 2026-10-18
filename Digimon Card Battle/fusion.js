@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     function attackIconHtml(token) {
       const label = ATTACK_ICON_LABELS[token] || token;
-      return `<img src="assets/ui/${token}.gif" alt="${label}" title="${label}" class="attack-type-icon" />`;
+      return `<img src="assets/ui/${token}.svg" alt="${label}" title="${label}" class="attack-type-icon" />`;
     }
     function renderIconTokens(text) {
       return escapeHtml(text || '')
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!card) {
       resultContainer.innerHTML = `
         <div class="empty-state">
-          <div class="icon">⚠️</div>
+          <div class="icon"><img src="assets/ui/digivice.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
           <h3>Card not found</h3>
           <p>Try searching for another card name.</p>
         </div>
@@ -349,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       resultContainer.innerHTML = `
         <div class="empty-state">
-          <div class="icon">🔍</div>
+          <div class="icon"><img src="assets/ui/digivice.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
           <h3>No exact match</h3>
           <p>Type the full name of the card you want to fuse.</p>
         </div>
@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       resultContainer.innerHTML = `
         <div class="empty-state">
-          <div class="icon">🔍</div>
+          <div class="icon"><img src="assets/ui/digivice.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
           <h3>No exact match</h3>
           <p>No card named “${linkedCard.replace(/[<>]/g, '')}” found.</p>
         </div>
@@ -507,7 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!c1 || !c2) {
       materialResultContainer.innerHTML = `
         <div class="empty-state">
-          <div class="icon">🧪</div>
+          <div class="icon"><img src="assets/ui/nav-fusion.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
           <h3>Select two cards above</h3>
           <p>Pick Material Card 1 and Material Card 2 to view the fusion result.</p>
         </div>
@@ -527,7 +527,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (results.length === 0) {
       materialResultContainer.innerHTML = `
         <div class="empty-state">
-          <div class="icon">⚠️</div>
+          <div class="icon"><img src="assets/ui/digivice.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
           <h3>No fusion result</h3>
           <p>${escapeHtml(c1.name)} (${isNaN(m1) ? '?' : m1}) + ${escapeHtml(c2.name)} (${isNaN(m2) ? '?' : m2}) = ${sumDisplay} with color ${color1}+${color2} → ${resultColor || '?'}. No card matches.</p>
         </div>

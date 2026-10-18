@@ -282,3 +282,27 @@ test('skill modal renders both character and mastery sources when both exist', a
   assert.ok(src.includes('source-category-group'), 'has mastery category groups');
   assert.ok(src.includes('Gold Chest, Stillwater'), 'has mastery source text');
 });
+
+test('all Octopath RPG UI vector icons exist in assets/icons/ui', () => {
+  const expectedIcons = [
+    'octopath-crest.svg',
+    'nav-skills.svg',
+    'nav-equipment.svg',
+    'nav-characters.svg',
+    'nav-enemies.svg',
+    'nav-shops.svg',
+    'nav-npcs.svg',
+    'cat-all.svg',
+    'cat-physical.svg',
+    'cat-elemental.svg',
+    'cat-support.svg',
+    'cat-boss.svg',
+    'cat-quest.svg',
+    'cat-fame.svg',
+    'cat-wealth.svg'
+  ];
+  for (const icon of expectedIcons) {
+    const iconPath = path.join(ROOT, 'assets', 'icons', 'ui', icon);
+    assert.ok(fs.existsSync(iconPath), `Expected RPG UI icon to exist: ${icon}`);
+  }
+});
