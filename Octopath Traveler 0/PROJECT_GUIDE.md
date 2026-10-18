@@ -2,10 +2,14 @@
 
 ## Purpose
 
-This repository is a dependency-free pair of static **Octopath Traveler 0 codex pages**, sharing one stylesheet and a top navigation bar:
+This directory is a dependency-free set of static **Octopath Traveler 0 codex pages**, sharing one stylesheet and a top navigation bar:
 
 - **`index.html` — Skill Codex**: browse skill data extracted from the game workbook, filter and sort it, inspect boost/effect details in a modal, and keep browser-local bookmarks.
 - **`equipment.html` — Equipment Codex**: browse weapons, armor, and accessories, group them by type / ATK tier / defense tier / source / effect family, filter by any stat threshold, and compare them in a sortable table.
+- **`character.html` — Character / Jobs Codex**: browse playable characters and jobs, their skills, and linked source information.
+- **`enemy.html` — Enemy Codex**: filter enemies by region, encounter type, and weakness, and inspect their battle data.
+- **`shop.html` — Shop Codex**: browse shop inventories by location.
+- **`npc.html` — NPC Codex**: browse townspeople, their actions, items, and battle data.
 
 There is no build step, backend, or runtime dependency: the pages run as static files in a browser. The repo does carry dev-only tooling (`package.json`, `tsconfig.json`, `tests/`) for type-checking and regression testing; see "Verification" below.
 
@@ -25,6 +29,10 @@ Octopath traveler 0 database .xlsx  (source workbook)
                                   |
 index.html     -> skillData.js     -> app.js          -> filters, cards, modal
 equipment.html -> equipmentData.js -> equipmentApp.js -> grouping, grid/table, modal
+character.html -> characterData.js -> characterApp.js -> character and job details
+enemy.html      -> enemyData.js     -> enemyApp.js     -> filters, chunks, battle details
+shop.html       -> shopData.js      -> shopApp.js      -> location inventory
+npc.html        -> npcData.js       -> npcApp.js       -> area groups and NPC details
                          \
                           -> styles.css
 ```
@@ -40,9 +48,13 @@ Both pages share `styles.css` (design tokens plus the shared `.site-nav` bar). `
 | `styles.css` | Complete responsive HD-2D-inspired visual system. Main sections: header, category tabs, filter bar, cards, modal, footer, responsive rules. |
 | `skillData.js` | Browser-ready generated data: declares global `const skillData = [...]`. Do not rename without changing `index.html`. |
 | `skillData.json` | Same generated records in JSON form, useful for scripts or inspection. |
-| `equipment.html` | Equipment Codex shell: shared nav, floating codex rail, header metrics, category tabs, group-by / stat / sort / view controls, card grid, sortable table, detail modal. |
+| `equipment.html` | Equipment Codex shell: shared nav, floating codex rail, header metrics, category tabs, stat / sort / view controls, card grid, sortable table, detail modal. |
 | `equipmentApp.js` | All equipment state, grouping, stat-threshold filtering, sorting, card/table rendering, event delegation, modal, and local bookmarks. |
 | `equipmentData.js` | Browser-ready generated equipment data: declares global `const equipmentData = [...]`. Loaded by `equipment.html`. |
+| `character.html` / `characterApp.js` / `characterData.js` | Character and job page, rendering logic, and browser-ready dataset. |
+| `enemy.html` / `enemyApp.js` / `enemyData.js` | Enemy bestiary page, filtering and detail logic, and browser-ready dataset. |
+| `shop.html` / `shopApp.js` / `shopData.js` | Shop inventory page, location filters, and browser-ready dataset. |
+| `npc.html` / `npcApp.js` / `npcData.js` | NPC page, area groups, and browser-ready dataset. |
 | `equipmentData.json` | Same generated equipment records in JSON form. |
 | `Octopath traveler 0 database .xlsx` | Primary source workbook. `SkillData`, `Weapon`, and `Armor` are the sheets parsed for the current pages. |
 | `parse_skill_data.ps1` | Skill dataset extractor. Reads the XLSX XML directly; no Excel or third-party PowerShell module is required. |
@@ -142,7 +154,6 @@ Notes and known limits:
 
 - Category tabs (All Equipment / Weapons / Armor / Accessories) and category-specific subtype chips (weapon types; armor slots). Accessories are treated as their own group rather than as armor.
 - Debounced (150 ms) search across name, type, kind, effect text, source, price, and stat labels/values (for example `patk 120`).
-- A **Group By** selector (None / Type / ATK tier / DEF tier / Source / Effect family) that re-sections the grid or table with headers showing the group label and item count. Groups follow the active sort order.
 - A **Stat + Minimum** filter: pick any of the ten stats and a threshold, or leave the stat on "Any Stat" to require any single stat to meet the threshold.
 - Sorting by name, type, attack power (`max(patk, matk)`), defense (`max(pdef, mdef)`), each individual stat, or price. Sorting is available both from the Sort By select and by clicking a table column header (clicking again toggles direction). Unpriced items always sort last.
 - A grid/table view toggle. The table view shows PATK, MATK, PDEF, MDEF, SPD, CRT, ACC, EVA, price, and source as dense sortable columns.
@@ -210,7 +221,7 @@ The script requires `pandas` plus an Excel engine for the workbook. Row-derived 
 Automated checks (run with `npm run typecheck`, `npm test`, or both via `npm run check`):
 
 - `npm run typecheck` runs TypeScript 5.6 in `--noEmit` mode over `app.js` and `equipmentApp.js`, typed against `types/codex-types.d.ts`. A regenerated dataset that renames or drops a field fails here.
-- `npm test` runs the `node --test` suite in `tests/`: skill codex rendering/filter/sort/modal/bookmarks, equipment codex rendering/grouping/stat filters/table sorting/modals/bookmarks, and hostile-payload escaping for both pages.
+- `npm test` runs every `tests/*.test.js` file: skill, equipment, character, enemy, shop, and NPC behavior plus hostile-payload escaping.
 
 None of this affects the shipped pages: TypeScript is never compiled and emits nothing, and `tests/` is never loaded by a browser. Emitted output stays dependency-free.
 
@@ -227,11 +238,10 @@ After a change, open the page and verify:
 For `equipment.html`, also verify:
 
 1. the header metrics read All Equipment 610, Weapons 348, Armor 126, Accessories 136;
-2. every Group By mode (type, ATK tier, DEF tier, source, effect family) renders headers with correct per-group counts;
-3. a Stat + Minimum combination filters to the expected rows (for example PATK 300+ yields 36 items);
-4. the grid/table toggle preserves the active filters and sort, and clicking a table header toggles direction and updates the Sort By select;
-5. clicking a row or card opens the modal with only the item's nonzero stats, and Escape closes it; and
-6. equipment bookmarks stay independent from skill bookmarks.
+2. a Stat + Minimum combination filters to the expected rows (for example PATK 300+ yields 36 items);
+3. the grid/table toggle preserves the active filters and sort, and clicking a table header toggles direction and updates the Sort By select;
+4. clicking a row or card opens the modal with only the item's nonzero stats, and Escape closes it; and
+5. equipment bookmarks stay independent from skill bookmarks.
 
 For data changes, also check that every skill record still has four `ratios` and four `hits` entries, that every equipment record has all ten `stats` keys, and that both generated `.js` files match their `.json` twins. The current exports meet all of those checks and have no blank names.
 

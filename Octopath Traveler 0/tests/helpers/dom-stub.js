@@ -130,7 +130,7 @@ function loadCodex(options) {
   }
 
   // Control values the apps read on init
-  const initialValues = { groupByFilter: 'none', statFilter: 'all', minStatFilter: '0', sortFilter: 'name-asc', spFilter: 'all', targetFilter: 'all' };
+  const initialValues = { statFilter: 'all', minStatFilter: '0', sortFilter: 'name-asc', spFilter: 'all', targetFilter: 'all' };
   Object.entries(initialValues).forEach(([id, value]) => {
     if (registry[id]) registry[id].value = value;
   });
@@ -186,6 +186,9 @@ function loadCodex(options) {
     const sourceText = fs.readFileSync(path.join(ROOT, script), 'utf8');
     if (sourceText.includes('const characterData') || sourceText.includes('var characterData')) {
       context.characterData = vm.runInContext('characterData', context);
+    }
+    if (sourceText.includes('const enemyData') || sourceText.includes('var enemyData')) {
+      context.enemyData = vm.runInContext('enemyData', context);
     }
     if (sourceText.includes('const skillData') || sourceText.includes('var skillData')) {
       context.skillData = vm.runInContext('skillData', context);

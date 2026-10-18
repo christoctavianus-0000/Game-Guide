@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="Browse the Game Guide codexes for Digimon Digital Card Battle and Octopath Traveler 0.">
+  <title>Game Guide | Codex Library</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #101820;
+      --paper: #f1eee5;
+      --muted: #a8b4b5;
+      --line: rgba(241, 238, 229, 0.18);
+      --blue: #83d9f2;
+      --gold: #e6bd72;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    a { color: inherit; }
+
+    .page {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      padding: clamp(1.25rem, 5vw, 4rem);
+    }
+
+    .masthead {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .seal {
+      display: grid;
+      width: 2.4rem;
+      height: 2.4rem;
+      place-items: center;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 1.25rem;
+    }
+
+    main { padding: clamp(3rem, 10vh, 6.5rem) 0 3rem; }
+
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 10vw, 6.5rem);
+      font-weight: 400;
+      letter-spacing: -0.055em;
+      line-height: 0.95;
+    }
+
+    .intro {
+      max-width: 38rem;
+      margin: 1.5rem 0 3rem;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.65;
+    }
+
+    .library {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .collection {
+      position: relative;
+      display: flex;
+      min-height: 18rem;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: clamp(1.25rem, 4vw, 2.5rem);
+      text-decoration: none;
+      transition: background-color 160ms ease;
+    }
+
+    .collection + .collection { border-left: 1px solid var(--line); }
+    .collection:hover { background: rgba(255, 255, 255, 0.045); }
+    .collection:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+
+    .collection-mark {
+      display: grid;
+      width: 3.25rem;
+      height: 3.25rem;
+      margin-bottom: auto;
+      place-items: center;
+      border: 1px solid currentColor;
+      font-size: 1.5rem;
+    }
+
+    .digimon .collection-mark, .digimon .collection-title { color: var(--blue); }
+    .octopath .collection-mark, .octopath .collection-title { color: var(--gold); }
+
+    .collection-title {
+      margin: 2rem 0 0.4rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.5rem, 4vw, 2.15rem);
+      font-weight: 400;
+    }
+
+    .collection-copy { max-width: 26rem; margin: 0; color: var(--muted); line-height: 1.55; }
+    .collection-action { margin-top: 1.5rem; font-size: 0.95rem; }
+
+    footer {
+      padding-top: 1.25rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 620px) {
+      .library { grid-template-columns: 1fr; }
+      .collection { min-height: 16rem; }
+      .collection + .collection { border-top: 1px solid var(--line); border-left: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <span class="seal" aria-hidden="true">✦</span>
+      <span>Game Guide / Codex Library</span>
+    </header>
+
+    <main>
+      <h1>Two worlds.<br>One field guide.</h1>
+      <p class="intro">Choose a codex to look up cards, skills, characters, equipment, enemies, shops, and people from the worlds you’re exploring.</p>
+
+      <nav class="library" aria-label="Game codexes">
+        <a class="collection digimon" href="Digimon%20Card%20Battle/index.html">
+          <span class="collection-mark" aria-hidden="true">🀄</span>
+          <h2 class="collection-title">Digimon Card Battle</h2>
+          <p class="collection-copy">Browse the card library or find the materials behind a fusion.</p>
+          <span class="collection-action">Open the Digimon codex</span>
+        </a>
+        <a class="collection octopath" href="Octopath%20Traveler%200/index.html">
+          <span class="collection-mark" aria-hidden="true">✦</span>
+          <h2 class="collection-title">Octopath Traveler 0</h2>
+          <p class="collection-copy">Explore skills, characters, equipment, enemies, shops, and NPCs.</p>
+          <span class="collection-action">Open the Octopath codex</span>
+        </a>
+      </nav>
+    </main>
+
+    <footer>Independent reference tools, built for the road ahead.</footer>
+  </div>
+</body>
+</html>

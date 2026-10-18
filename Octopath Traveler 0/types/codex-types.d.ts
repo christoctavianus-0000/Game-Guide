@@ -144,7 +144,6 @@ interface EquipmentCodexElements {
   equipSearchInput: InteractiveElement | null;
   clearSearchBtn: InteractiveElement | null;
   subtypeChipsWrap: HTMLElement | null;
-  groupByFilter: InteractiveElement | null;
   statFilter: InteractiveElement | null;
   minStatFilter: InteractiveElement | null;
   sortFilter: InteractiveElement | null;
@@ -182,6 +181,7 @@ interface EquipmentCodexElements {
 /** Ambient globals injected by the generated data files. */
 declare const skillData: SkillRecord[];
 declare const equipmentData: EquipmentRecord[];
+declare const shopData: { allItems: Array<{ name?: string; location?: string }> } | undefined;
 
 /** Skill source index keyed by skill name, injected by character.html. */
 interface SkillSourceEntry {

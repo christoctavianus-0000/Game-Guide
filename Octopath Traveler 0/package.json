@@ -2,10 +2,10 @@
   "name": "octopath-0-codex",
   "version": "1.0.0",
   "private": true,
-  "description": "Dependency-free static codexes for Octopath Traveler 0: skill, weapon, and armor databases.",
+  "description": "Dependency-free static codexes for Octopath Traveler 0.",
   "scripts": {
     "typecheck": "npx -y -p typescript@5.6.3 tsc --noEmit",
-    "test": "node --test tests/skillCodex.test.js tests/equipmentCodex.test.js tests/enemyCodex.test.js tests/escaping.test.js",
+    "test": "node --test tests/*.test.js",
     "check": "npm run typecheck && npm test"
   }
 }

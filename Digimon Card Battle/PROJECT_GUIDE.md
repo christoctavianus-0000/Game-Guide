@@ -38,7 +38,7 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 | `fusion_data.json` | Same fusion data in JSON form, useful for scripts or inspection. |
 | `Digimon Card Battle - Fusion.xlsx` | Workbook holding the fusion value sheet used to populate `materialValue` / `resultValue`. |
 | `FUSION_RULES.md` | Human-readable rules extracted from the workbook: color matrix, material values, special fusions. |
-| `merge_fusion.py` | Merges workbook fusion values into the category JSON files. |
+| `../merge_fusion.py` | Merges workbook fusion values into the category JSON files. This shared utility remains at repository root. |
 | `parse_all_cards.py` | Extracts card fields from the saved card HTML into the category JSON files. |
 | `download_all_assets.js` | Downloads card art referenced by the category JSON files into `assets/cards/`. |
 | `<specialty>Cards.json` | Per-category source records (`fireCards.json`, `iceCards.json`, ...). |

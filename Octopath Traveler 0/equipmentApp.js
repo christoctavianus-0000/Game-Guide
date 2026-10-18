@@ -582,7 +582,8 @@
       elements.equipTableWrap.style.display = 'block';
       renderTable(pageItems, filtered);
       // Stagger animation for table rows
-      elements.equipTableBody.querySelectorAll('tr').forEach((tr, i) => {
+      /** @type {NodeListOf<HTMLElement>} */
+      (elements.equipTableBody.querySelectorAll('tr')).forEach((tr, i) => {
         tr.classList.add('row-enter');
         tr.style.animationDelay = `${i * 25}ms`;
       });
@@ -591,7 +592,8 @@
       elements.equipGrid.style.display = '';
       renderGrid(pageItems, filtered);
       // Stagger animation for grid cards
-      elements.equipGrid.querySelectorAll('.skill-card').forEach((card, i) => {
+      /** @type {NodeListOf<HTMLElement>} */
+      (elements.equipGrid.querySelectorAll('.skill-card')).forEach((card, i) => {
         card.classList.add('card-enter');
         card.style.animationDelay = `${i * 35}ms`;
       });
@@ -909,6 +911,7 @@
         return;
       }
       if (event.key === 'Tab' && elements.detailModal.classList.contains('active')) {
+        /** @type {NodeListOf<HTMLElement>} */
         var focusable = elements.detailModal.querySelectorAll(
           'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
         );
@@ -971,4 +974,3 @@
     init();
   }
 })();
-
