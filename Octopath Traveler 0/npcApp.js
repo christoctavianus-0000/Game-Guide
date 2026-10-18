@@ -59,6 +59,7 @@
     chunkSort: {}
   };
 
+  /** @type {NpcCodexElements} */
   var el = {
     metricTotal: document.getElementById('npcMetricTotal'),
     metricAreas: document.getElementById('npcMetricAreas'),
@@ -170,19 +171,19 @@
   }
 
   function renderMetrics() {
-    if (el.metricTotal) el.metricTotal.textContent = dataset.length;
+    if (el.metricTotal) el.metricTotal.textContent = String(dataset.length);
     if (el.metricAreas) {
       var areas = {};
       dataset.forEach(function (n) { areas[n.area] = 1; });
-      el.metricAreas.textContent = Object.keys(areas).length;
+      el.metricAreas.textContent = String(Object.keys(areas).length);
     }
     TYPES.forEach(function (type) {
       var count = dataset.filter(function (n) { return n.type === type; }).length;
       var cnt = document.getElementById('npcCatCount' + type);
-      if (cnt) cnt.textContent = count;
+      if (cnt) cnt.textContent = String(count);
     });
     var all = document.getElementById('npcCatCountAll');
-    if (all) all.textContent = dataset.length;
+    if (all) all.textContent = String(dataset.length);
   }
 
   function populateAreaDropdown() {
@@ -640,7 +641,8 @@
     // Row clicks + keyboard
     if (el.chunksGrid) {
       el.chunksGrid.addEventListener('click', function (e) {
-        var row = e.target.closest ? e.target.closest('.npc-row') : null;
+        var targetEl = /** @type {HTMLElement} */ (e.target);
+        var row = targetEl && targetEl.closest ? targetEl.closest('.npc-row') : null;
         if (!row) return;
         var id = row.getAttribute('data-npc-id');
         var npc = findNpcById(id);
@@ -648,7 +650,8 @@
       });
       el.chunksGrid.addEventListener('keydown', function (e) {
         if (e.key !== 'Enter' && e.key !== ' ') return;
-        var row = e.target.closest ? e.target.closest('.npc-row') : null;
+        var targetEl = /** @type {HTMLElement} */ (e.target);
+        var row = targetEl && targetEl.closest ? targetEl.closest('.npc-row') : null;
         if (!row) return;
         e.preventDefault();
         var npc = findNpcById(row.getAttribute('data-npc-id'));

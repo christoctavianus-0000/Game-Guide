@@ -12,10 +12,18 @@ The skill parser uses PowerShell and requires the XLSX workbook.
 from __future__ import annotations
 
 import importlib
+import shutil
 import subprocess
 import sys
 import time
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 
 ROOT = Path(__file__).resolve().parent
 WORKBOOK = ROOT / "Octopath traveler 0 database .xlsx"
@@ -47,16 +55,26 @@ def run_python_parser(label: str, module_name: str) -> bool:
         return False
 
 
+def find_powershell_executable() -> str | None:
+    """Find pwsh (PowerShell Core) or powershell (Windows PowerShell) on PATH."""
+    return shutil.which("pwsh") or shutil.which("powershell")
+
+
 def run_skill_parser() -> bool:
-    """Run the PowerShell skill data parser via pwsh."""
+    """Run the PowerShell skill data parser via pwsh or powershell."""
     if not SKILL_PS1.exists():
         print(f"  ✗ skillData — {SKILL_PS1.name} not found")
+        return False
+
+    ps_bin = find_powershell_executable()
+    if not ps_bin:
+        print("  ✗ skillData — neither pwsh nor powershell found on PATH")
         return False
 
     start = time.time()
     try:
         result = subprocess.run(
-            ["pwsh", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(SKILL_PS1)],
+            [ps_bin, "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(SKILL_PS1)],
             cwd=str(ROOT),
             capture_output=True,
             text=True,
@@ -70,13 +88,13 @@ def run_skill_parser() -> bool:
             print(f"  ✓ skillData ({elapsed:.1f}s)")
             return True
         else:
-            print(f"  ✗ skillData — pwsh exited with code {result.returncode}")
+            print(f"  ✗ skillData — {Path(ps_bin).stem} exited with code {result.returncode}")
             if result.stderr:
                 for line in result.stderr.strip().splitlines()[:5]:
                     print(f"    {line}")
             return False
     except FileNotFoundError:
-        print("  ✗ skillData — pwsh (PowerShell) not found on PATH")
+        print(f"  ✗ skillData — {ps_bin} not found on PATH")
         return False
     except subprocess.TimeoutExpired:
         print("  ✗ skillData — timed out after 120s")

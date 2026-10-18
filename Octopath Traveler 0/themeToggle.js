@@ -12,7 +12,7 @@
   /* ---- helpers ---- */
   function readCookie() {
     try {
-      var m = document.cookie.match('(?:^|;\s*)' + STORAGE_KEY + '=([^;]*)');
+      var m = document.cookie.match('(?:^|;\\s*)' + STORAGE_KEY + '=([^;]*)');
       return m ? decodeURIComponent(m[1]) : null;
     } catch (e) { return null; }
   }

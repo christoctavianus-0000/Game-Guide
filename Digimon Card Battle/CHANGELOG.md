@@ -2,6 +2,14 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - Codex sanitization, accessibility, alignment & test suite
+
+- **HTML Escaping Hardening**: Sanitized dynamic card names in `alt="${escapeHtml(card.name)}"`, combo names, preview metadata, and filter input value attributes in `fusion.js` and `app.js`. Updated `renderIconTokens(text)` to call `escapeHtml(text)` prior to regex token replacement.
+- **Fusion Arithmetic & Debouncing**: Fixed arithmetic display bug in `fusion.js`: when either material value is `"?"` or `NaN`, the sum evaluates to `'—'` rather than `0 + ? = 0`. Added 150ms debounce to search input in `app.js` to avoid redundant filtering on rapid keystrokes.
+- **Accessibility**: Added explicit `aria-label="Material Card 1"` and `aria-label="Material Card 2"` to material search inputs in `fusion.html`.
+- **Category Tab Centering**: Centered category tabs ("All Cards", "Fire", "Ice", etc.) in `styles.css` using `justify-content: center` on `.category-tabs` and `.tab-btn`, retaining `justify-content: flex-start` under `@media (max-width: 768px)` for smooth horizontal scrolling on mobile.
+- **Fusion Test Suite**: Created `tests/fusion.test.js` with 5 unit tests covering special fusions, order independence, standard matrix logic, and `"?"` material handling. Total Digimon unit tests: 7/7 passing. Added `npm test` script to `package.json`.
+
 ## Unreleased - Fusion Codex page
 
 - Added an upper-left “Project home” link to the root Game Guide landing page on all Digimon and Octopath pages, with responsive shared styling.

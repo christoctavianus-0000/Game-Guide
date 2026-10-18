@@ -6,6 +6,7 @@
   "scripts": {
     "check:digimon": "npm --prefix \"Digimon Card Battle\" run check",
     "check:octopath": "npm --prefix \"Octopath Traveler 0\" run check",
-    "check": "npm run check:digimon && npm run check:octopath"
+    "check": "npm run check:digimon && npm run check:octopath",
+    "test": "npm test --prefix \"Digimon Card Battle\" && npm test --prefix \"Octopath Traveler 0\""
   }
 }

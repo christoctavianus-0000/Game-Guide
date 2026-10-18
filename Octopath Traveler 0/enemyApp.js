@@ -60,6 +60,7 @@
     ? window.enemyData
     : (typeof enemyData !== 'undefined' && Array.isArray(enemyData) ? enemyData : []);
 
+  /** @type {EnemyCodexElements} */
   const elements = {
     enemyMetricTotal: document.getElementById('enemyMetricTotal'),
     enemyMetricAreas: document.getElementById('enemyMetricAreas'),
@@ -89,6 +90,15 @@
 
   function cleanText(value) {
     return String(value == null ? '' : value).replace(/\s+/g, ' ').trim();
+  }
+
+  function escapeHtml(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
   }
 
   function normalizeWeaknesses(raw) {
@@ -188,19 +198,19 @@
     const weaknesses = normalizeWeaknesses(enemy.weaknesses);
     const weaknessGrid = renderWeaknessGrid(weaknesses);
     const skillList = (enemy.skills || []).map(skill => 
-      `<li>${cleanText(skill.name || '')} <span class="skill-type">(${cleanText(skill.type || '')})</span></li>`
+      `<li>${escapeHtml(skill.name || '')} <span class="skill-type">(${escapeHtml(skill.type || '')})</span></li>`
     ).join('');
 
     const modalHTML = `
       <div class="modal-header">
-        <h2 class="modal-title" id="enemyModalTitle">${cleanText(enemy.name)}</h2>
+        <h2 class="modal-title" id="enemyModalTitle">${escapeHtml(enemy.name)}</h2>
         <button class="modal-close-btn" id="enemyModalClose">×</button>
       </div>
       <div class="modal-body">
         <div class="enemy-modal-grid">
           <div class="enemy-modal-field">
             <span class="field-label">Type:</span>
-            <span class="enemy-type-badge" data-type="${cleanText(enemy.type || 'Regular')}">${cleanText(enemy.type || 'Regular')}</span>
+            <span class="enemy-type-badge" data-type="${escapeHtml(enemy.type || 'Regular')}">${escapeHtml(enemy.type || 'Regular')}</span>
           </div>
           <div class="enemy-modal-field">
             <span class="field-label">Level:</span>
@@ -208,11 +218,11 @@
           </div>
           <div class="enemy-modal-field">
             <span class="field-label">Area:</span>
-            <span class="field-value">${cleanText(enemy.area)}</span>
+            <span class="field-value">${escapeHtml(enemy.area)}</span>
           </div>
           <div class="enemy-modal-field">
             <span class="field-label">Sub Area:</span>
-            <span class="field-value">${cleanText(enemy.subArea)}</span>
+            <span class="field-value">${escapeHtml(enemy.subArea)}</span>
           </div>
           <div class="enemy-modal-field">
             <span class="field-label">Shield:</span>
@@ -228,15 +238,15 @@
           </div>
           <div class="enemy-modal-field">
             <span class="field-label">Steal:</span>
-            <span class="field-value">${enemy.steal || '—'}</span>
+            <span class="field-value">${escapeHtml(enemy.steal || '—')}</span>
           </div>
           <div class="enemy-modal-field">
             <span class="field-label">Drop:</span>
-            <span class="field-value">${enemy.drop || '—'}</span>
+            <span class="field-value">${escapeHtml(enemy.drop || '—')}</span>
           </div>
           <div class="enemy-modal-field full-width">
             <span class="field-label">Status Immunities:</span>
-            <span class="field-value">${enemy.immunities || '—'}</span>
+            <span class="field-value">${escapeHtml(enemy.immunities || '—')}</span>
           </div>
           <div class="enemy-modal-field full-width">
             <span class="field-label">Skills:</span>
@@ -397,31 +407,31 @@
     const weaknesses = normalizeWeaknesses(enemy.weaknesses);
     const weaknessGrid = renderWeaknessGrid(weaknesses);
     return `
-      <tr class="enemy-row" data-enemy-id="${enemy.id}">
-        <td class="enemy-name-cell"><button class="enemy-name-btn" data-enemy-id="${enemy.id}">${cleanText(enemy.name)}</button></td>
-        <td>${cleanText(enemy.subArea)}</td>
-        <td><span class="enemy-type-badge" data-type="${cleanText(enemy.type || 'Regular')}">${cleanText(enemy.type || 'Regular')}</span></td>
+      <tr class="enemy-row" data-enemy-id="${escapeHtml(enemy.id)}">
+        <td class="enemy-name-cell"><button class="enemy-name-btn" data-enemy-id="${escapeHtml(enemy.id)}">${escapeHtml(enemy.name)}</button></td>
+        <td>${escapeHtml(enemy.subArea)}</td>
+        <td><span class="enemy-type-badge" data-type="${escapeHtml(enemy.type || 'Regular')}">${escapeHtml(enemy.type || 'Regular')}</span></td>
         <td class="num font-num enemy-shield-val">${Number(enemy.shields) || 0}</td>
         <td class="enemy-weakness-cell">
           <div class="enemy-weakness-grid">${weaknessGrid}</div>
         </td>
         <td class="num font-num">${Number(enemy.level) || 0}</td>
-        <td>${enemy.steal || '—'}</td>
-        <td>${enemy.drop || '—'}</td>
+        <td>${escapeHtml(enemy.steal || '—')}</td>
+        <td>${escapeHtml(enemy.drop || '—')}</td>
       </tr>
     `;
   }
 
   function renderChunkTable(members, chunkKey) {
     let html = '<table class="enemy-table"><thead><tr>' +
-      '<th class="sortable" data-sort-key="name" data-chunk="' + chunkKey + '">Name</th>' +
-      '<th class="sortable" data-sort-key="subArea" data-chunk="' + chunkKey + '">Sub Area</th>' +
-      '<th class="sortable" data-sort-key="type" data-chunk="' + chunkKey + '">Type</th>' +
-      '<th class="sortable num" data-sort-key="shields" data-chunk="' + chunkKey + '">Shield</th>' +
-      '<th class="sortable weakness-header" data-sort-key="weakness" data-chunk="' + chunkKey + '">Weaknesses</th>' +
-      '<th class="sortable num" data-sort-key="level" data-chunk="' + chunkKey + '">Lvl</th>' +
-      '<th class="sortable" data-sort-key="steal" data-chunk="' + chunkKey + '">Steal</th>' +
-      '<th class="sortable" data-sort-key="drop" data-chunk="' + chunkKey + '">Drop</th>' +
+      '<th class="sortable" data-sort-key="name" data-chunk="' + escapeHtml(chunkKey) + '">Name</th>' +
+      '<th class="sortable" data-sort-key="subArea" data-chunk="' + escapeHtml(chunkKey) + '">Sub Area</th>' +
+      '<th class="sortable" data-sort-key="type" data-chunk="' + escapeHtml(chunkKey) + '">Type</th>' +
+      '<th class="sortable num" data-sort-key="shields" data-chunk="' + escapeHtml(chunkKey) + '">Shield</th>' +
+      '<th class="sortable weakness-header" data-sort-key="weakness" data-chunk="' + escapeHtml(chunkKey) + '">Weaknesses</th>' +
+      '<th class="sortable num" data-sort-key="level" data-chunk="' + escapeHtml(chunkKey) + '">Lvl</th>' +
+      '<th class="sortable" data-sort-key="steal" data-chunk="' + escapeHtml(chunkKey) + '">Steal</th>' +
+      '<th class="sortable" data-sort-key="drop" data-chunk="' + escapeHtml(chunkKey) + '">Drop</th>' +
       '</tr></thead><tbody>';
     members.forEach(e => { html += renderEnemyRow(e); });
     html += '</tbody></table>';
@@ -512,16 +522,15 @@
   }
 
   function bindEnemyRowEvents() {
-    document.querySelectorAll('.enemy-name-btn').forEach(btn => {
-      btn.removeEventListener('click', handleEnemyRowClick);
-      btn.addEventListener('click', handleEnemyRowClick);
-    });
+    // Delegated at enemyChunksGrid level
   }
 
   function handleEnemyRowClick(e) {
+    const btn = (e.target && e.target.closest) ? e.target.closest('.enemy-name-btn') : (this && this.getAttribute ? this : null);
+    if (!btn || !btn.getAttribute) return;
     e.preventDefault();
-    const enemyId = this.getAttribute('data-enemy-id');
-    const enemy = dataset.find(e => String(e.id) === String(enemyId));
+    const enemyId = btn.getAttribute('data-enemy-id');
+    const enemy = dataset.find(item => String(item.id) === String(enemyId));
     if (enemy) openEnemyModal(enemy);
   }
 
@@ -531,7 +540,7 @@
     const total = items.length;
 
     if (elements.enemyResultsCount) {
-      elements.enemyResultsCount.textContent = 'Showing ' + total.toLocaleString() + ' enemi' + (total === 1 ? '' : 'es');
+      elements.enemyResultsCount.textContent = 'Showing ' + total.toLocaleString() + ' ' + (total === 1 ? 'enemy' : 'enemies');
     }
 
     if (total === 0) {
@@ -547,11 +556,11 @@
     Object.keys(groups).forEach(area => {
       const members = groups[area];
       const collapsed = !!state.collapsedAreas[area];
-      html += '<div class="shop-chunk' + (collapsed ? ' collapsed' : '') + '" data-area="' + area.replace(/"/g, '&quot;') + '">';
+      html += '<div class="shop-chunk' + (collapsed ? ' collapsed' : '') + '" data-area="' + escapeHtml(area) + '">';
       html += '<div class="shop-chunk-header" role="button" tabindex="0" aria-expanded="' + (!collapsed) + '">';
       html += '<div class="shop-chunk-header-left">';
-      html += '<span class="shop-chunk-name">' + cleanText(area) + '</span>';
-      html += '<span class="shop-chunk-count">' + members.length + ' enemi' + (members.length === 1 ? '' : 'es') + '</span>';
+      html += '<span class="shop-chunk-name">' + escapeHtml(area) + '</span>';
+      html += '<span class="shop-chunk-count">' + members.length + ' ' + (members.length === 1 ? 'enemy' : 'enemies') + '</span>';
       html += '</div>';
       html += '<span class="shop-chunk-chevron">' + (collapsed ? '▸' : '▾') + '</span>';
       html += '</div>';
@@ -631,7 +640,7 @@
 
     if (elements.enemyTypeTabs) {
       elements.enemyTypeTabs.addEventListener('click', (event) => {
-        const tab = event.target.closest('.cat-tab');
+        const tab = /** @type {HTMLElement} */ (event.target).closest('.cat-tab');
         if (!tab) return;
         
         document.querySelectorAll('#enemyTypeTabs .cat-tab').forEach(t => {
@@ -731,6 +740,10 @@
       });
     }
 
+    if (elements.enemyChunksGrid) {
+      elements.enemyChunksGrid.addEventListener('click', handleEnemyRowClick);
+    }
+
     if (elements.enemyModalClose) {
       elements.enemyModalClose.addEventListener('click', closeEnemyModal);
     }
@@ -745,9 +758,9 @@
         return;
       }
       if (e.key === 'Tab' && elements.enemyModal.classList.contains('active')) {
-        const focusable = elements.enemyModal.querySelectorAll(
+        const focusable = /** @type {NodeListOf<HTMLElement>} */ (elements.enemyModal.querySelectorAll(
           'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
-        );
+        ));
         if (focusable.length === 0) return;
         const first = focusable[0];
         const last = focusable[focusable.length - 1];

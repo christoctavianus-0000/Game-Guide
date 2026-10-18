@@ -186,6 +186,7 @@ main {
 /* Tabs */
 .category-tabs {
   display: flex;
+  justify-content: center;
   gap: 4px;
   margin-bottom: 1.5rem;
   padding: 4px;
@@ -197,6 +198,7 @@ main {
 .tab-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   flex: 1 0 auto;
   min-height: 40px;
@@ -211,6 +213,7 @@ main {
   transition: var(--transition-fast);
   white-space: nowrap;
   border-radius: 7px;
+  text-align: center;
 }
 .tab-btn:hover { background: var(--bg-surface); color: var(--text-primary); }
 .tab-btn.active {
@@ -487,6 +490,7 @@ main {
   .header-actions { width: 100%; }
   main { padding: 14px; }
   .category-tabs {
+    justify-content: flex-start;
     gap: 6px;
     scroll-padding-inline: 8px;
     -webkit-overflow-scrolling: touch;

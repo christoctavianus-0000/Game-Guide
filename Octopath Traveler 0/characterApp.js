@@ -81,6 +81,7 @@
     modalImageMode: 'portrait'
   };
 
+  /** @type {CharacterCodexElements} */
   const elements = {
     metricCharacterCount: document.getElementById('metricCharacterCount'),
     metricJobCount: document.getElementById('metricJobCount'),
@@ -572,7 +573,7 @@
 
     if (elements.jobTabs) {
       elements.jobTabs.addEventListener('click', (event) => {
-        const tab = event.target.closest('.cat-tab');
+        const tab = /** @type {HTMLElement} */ (event.target).closest('.cat-tab');
         if (!tab) return;
 
         document.querySelectorAll('#characterJobTabs .cat-tab').forEach(t => {
@@ -590,7 +591,7 @@
 
     if (elements.weaponFilter) {
       elements.weaponFilter.addEventListener('click', (e) => {
-        const btn = e.target.closest('.weapon-filter-btn');
+        const btn = /** @type {HTMLElement} */ (e.target).closest('.weapon-filter-btn');
         if (!btn) return;
         state.weaponFilter = btn.getAttribute('data-weapon') || 'all';
         renderFilterControls();
@@ -648,9 +649,9 @@
           return;
         }
         if (event.key === 'Tab' && elements.modal && elements.modal.classList.contains('active')) {
-          const focusable = elements.modal.querySelectorAll(
+          const focusable = /** @type {NodeListOf<HTMLElement>} */ (elements.modal.querySelectorAll(
             'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
-          );
+          ));
           if (focusable.length === 0) return;
           const first = focusable[0];
           const last = focusable[focusable.length - 1];

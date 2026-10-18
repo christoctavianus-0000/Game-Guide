@@ -10,5 +10,13 @@
     "moduleResolution": "bundler",
     "types": []
   },
-  "include": ["app.js", "equipmentApp.js", "types/**/*.d.ts"]
+  "include": [
+    "app.js",
+    "equipmentApp.js",
+    "characterApp.js",
+    "enemyApp.js",
+    "npcApp.js",
+    "shopApp.js",
+    "types/**/*.d.ts"
+  ]
 }

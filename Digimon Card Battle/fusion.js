@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return `<img src="assets/ui/${token}.gif" alt="${label}" title="${label}" class="attack-type-icon" />`;
     }
     function renderIconTokens(text) {
-      return String(text || '')
+      return escapeHtml(text || '')
         .replace(/\[\[(circle|triangle|x)\]\]/g, (m, t) => ` <span class="attack-fx-inline">${attackIconHtml(t)}</span> `)
         .replace(/\s+/g, ' ')
         .trim();
@@ -141,12 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let html = `
       <div class="result-card">
-        <img src="${card.localIcon}" alt="${card.name}" class="result-icon" onerror="this.style.display='none'" />
+        <img src="${card.localIcon}" alt="${escapeHtml(card.name)}" class="result-icon" onerror="this.style.display='none'" />
         <div class="result-info">
-          <div class="result-name">${card.name}</div>
+          <div class="result-name">${escapeHtml(card.name)}</div>
           <div class="result-meta">
-            <span class="level-badge">${card.level}</span>
-            <span class="spec-tag ${specClass}">${card.specialty}</span>
+            <span class="level-badge">${escapeHtml(card.level || '-')}</span>
+            <span class="spec-tag ${specClass}">${escapeHtml(card.specialty || '-')}</span>
           </div>
           ${renderCardStats(card)}
         </div>
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="combinations-header-row">
           <h3>Possible Combinations <span class="count">${combos.length}</span></h3>
           <div class="combo-filter-box">
-            <input type="text" id="comboFilter" placeholder="Filter by Material Card 1 or 2..." aria-label="Filter combinations by material card name" value="${currentFilter || ''}" />
+            <input type="text" id="comboFilter" placeholder="Filter by Material Card 1 or 2..." aria-label="Filter combinations by material card name" value="${escapeHtml(currentFilter || '')}" />
           </div>
         </div>
         <div class="combinations-table-wrap">
@@ -236,14 +236,15 @@ document.addEventListener('DOMContentLoaded', () => {
     grid.innerHTML = sorted.map(combo => {
       const mv1 = parseInt(combo.card1.materialValue);
       const mv2 = parseInt(combo.card2.materialValue);
-      const sum = (isNaN(mv1) ? 0 : mv1) + (isNaN(mv2) ? 0 : mv2);
+      const hasBothValues = !isNaN(mv1) && !isNaN(mv2);
+      const sum = hasBothValues ? (mv1 + mv2) : '—';
       const typeBadge = combo.type === 'special'
         ? '<span class="type-badge special">Special</span>'
         : '<span class="type-badge standard">Standard</span>';
       const cell = (c, mv) => `
             <div class="combo-cell">
-              <img src="${c.localIcon}" alt="" onerror="this.style.display='none'" />
-              <span class="combo-name">${c.name}</span>
+              <img src="${c.localIcon}" alt="${escapeHtml(c.name)}" onerror="this.style.display='none'" />
+              <span class="combo-name">${escapeHtml(c.name)}</span>
             </div>
           `;
       return `
@@ -427,13 +428,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const specClass = `spec-${(card.specialty || 'option').toLowerCase()}`;
     container.classList.remove('empty');
     container.innerHTML = `
-      <img src="${card.localIcon}" alt="${card.name}" class="mat-preview-img" onerror="this.style.display='none'" />
+      <img src="${card.localIcon}" alt="${escapeHtml(card.name)}" class="mat-preview-img" onerror="this.style.display='none'" />
       <div class="mat-preview-info">
-        <div class="mat-preview-name">${card.name}</div>
+        <div class="mat-preview-name">${escapeHtml(card.name)}</div>
         <div class="mat-preview-meta">
-          <span class="level-badge">${card.level || '-'}</span>
-          <span class="spec-tag ${specClass}">${card.specialty || '-'}</span>
-          <span>Mat: <strong>${card.materialValue ?? '?'}</strong></span>
+          <span class="level-badge">${escapeHtml(card.level || '-')}</span>
+          <span class="spec-tag ${specClass}">${escapeHtml(card.specialty || '-')}</span>
+          <span>Mat: <strong>${escapeHtml(card.materialValue ?? '?')}</strong></span>
         </div>
       </div>
     `;
@@ -445,7 +446,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const m1 = parseInt(c1.materialValue);
     const m2 = parseInt(c2.materialValue);
-    const sum = (isNaN(m1) ? 0 : m1) + (isNaN(m2) ? 0 : m2);
+    const hasBothValues = !isNaN(m1) && !isNaN(m2);
+    const sum = hasBothValues ? (m1 + m2) : null;
 
     const color1 = SPEC_TO_COLOR[c1.specialty];
     const color2 = SPEC_TO_COLOR[c2.specialty];
@@ -459,12 +461,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const n2 = c2.name.toLowerCase();
       if ((a === n1 && b === n2) || (a === n2 && b === n1)) {
         const res = getCardByName(sf.result);
-        if (res) results.push({ card: res, type: 'special', sum });
+        if (res) results.push({ card: res, type: 'special', sum: hasBothValues ? sum : '—' });
       }
     });
 
     // 2. Standard Fusions (sum + color match)
-    if (!isNaN(m1) && !isNaN(m2) && resultColor) {
+    if (hasBothValues && resultColor) {
       CARD_DATABASE.forEach(target => {
         const tv = parseInt(target.resultValue);
         if (!isNaN(tv) && tv === sum && SPEC_TO_COLOR[target.specialty] === resultColor) {
@@ -516,7 +518,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const results = findResultsFromMaterials(c1, c2);
     const m1 = parseInt(c1.materialValue);
     const m2 = parseInt(c2.materialValue);
-    const sum = (isNaN(m1) ? 0 : m1) + (isNaN(m2) ? 0 : m2);
+    const hasBothValues = !isNaN(m1) && !isNaN(m2);
+    const sumDisplay = hasBothValues ? String(m1 + m2) : '—';
     const color1 = SPEC_TO_COLOR[c1.specialty];
     const color2 = SPEC_TO_COLOR[c2.specialty];
     const resultColor = FUSION_DATA.fusion_table[`${color1}+${color2}`] || FUSION_DATA.fusion_table[`${color2}+${color1}`];
@@ -526,7 +529,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="empty-state">
           <div class="icon">⚠️</div>
           <h3>No fusion result</h3>
-          <p>${c1.name} (${isNaN(m1) ? '?' : m1}) + ${c2.name} (${isNaN(m2) ? '?' : m2}) = ${sum} with color ${color1}+${color2} → ${resultColor || '?'}. No card matches.</p>
+          <p>${escapeHtml(c1.name)} (${isNaN(m1) ? '?' : m1}) + ${escapeHtml(c2.name)} (${isNaN(m2) ? '?' : m2}) = ${sumDisplay} with color ${color1}+${color2} → ${resultColor || '?'}. No card matches.</p>
         </div>
       `;
       return;
@@ -537,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="combinations-header-row">
           <h3>Fusion Result <span class="count">${results.length}</span></h3>
           <div class="combo-filter-box">
-            <span style="font-size: 0.85rem; color: var(--text-secondary);">${c1.name} (${isNaN(m1) ? '?' : m1}) + ${c2.name} (${isNaN(m2) ? '?' : m2}) = ${sum} → ${resultColor}</span>
+            <span style="font-size: 0.85rem; color: var(--text-secondary);">${escapeHtml(c1.name)} (${isNaN(m1) ? '?' : m1}) + ${escapeHtml(c2.name)} (${isNaN(m2) ? '?' : m2}) = ${sumDisplay} → ${resultColor || '?'}</span>
           </div>
         </div>
         <div class="combinations-table-wrap">
@@ -561,13 +564,13 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr class="combo-row clickable-result" data-result="${escapeHtml(r.card.name)}" title="Click to view this card's fusion recipe in Tab 1">
                     <td>
                       <div class="combo-cell">
-                        <img src="${r.card.localIcon}" alt="" onerror="this.style.display='none'" />
-                        <span class="combo-name">${r.card.name}</span>
+                        <img src="${r.card.localIcon}" alt="${escapeHtml(r.card.name)}" onerror="this.style.display='none'" />
+                        <span class="combo-name">${escapeHtml(r.card.name)}</span>
                       </div>
                     </td>
-                    <td><span class="level-badge">${r.card.level || '-'}</span></td>
-                    <td><span class="spec-tag ${specClass}">${r.card.specialty || '-'}</span></td>
-                    <td class="mat-cell sum-cell">${r.card.resultValue ?? '?'}</td>
+                    <td><span class="level-badge">${escapeHtml(r.card.level || '-')}</span></td>
+                    <td><span class="spec-tag ${specClass}">${escapeHtml(r.card.specialty || '-')}</span></td>
+                    <td class="mat-cell sum-cell">${escapeHtml(r.card.resultValue ?? '?')}</td>
                     <td>${badge}</td>
                   </tr>
                 `;
@@ -590,6 +593,15 @@ document.addEventListener('DOMContentLoaded', () => {
     mat2Input.addEventListener('input', renderMaterialResults);
     mat1Input.addEventListener('change', renderMaterialResults);
     mat2Input.addEventListener('change', renderMaterialResults);
+  }
+
+  if (typeof window !== 'undefined') {
+    window.DigimonFusion = {
+      findCombinations,
+      findResultsFromMaterials,
+      SPEC_TO_COLOR,
+      getCardByName
+    };
   }
 });
 

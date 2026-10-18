@@ -42,6 +42,21 @@ const HOSTILE_EQUIPMENT = {
   costValue: 5
 };
 
+const HOSTILE_ENEMY = {
+  id: 'e1"><script>alert(8)</script>',
+  name: '<img src=x onerror=alert(9)>',
+  area: '<b>Ruins</b>',
+  subArea: '<i>Depths</i>',
+  type: 'Regular',
+  level: '50',
+  shields: '4',
+  weaknesses: ['Sword', 'Fire'],
+  steal: '<x>Steal</x>',
+  drop: '<y>Drop</y>',
+  immunities: '<z>Poison</z>',
+  skills: [{ name: '<skill>Slash</skill>', type: '<b>Phys</b>' }]
+};
+
 /** Escape a payload exactly the way the apps are required to. */
 function escapeHtml(value) {
   return String(value)
@@ -139,4 +154,33 @@ test('the equipment modal escapes hostile dataset values', () => {
   // Fields written through textContent keep their original characters safely
   assert.equal(page.text('modalItemName'), HOSTILE_EQUIPMENT.name);
   assert.equal(page.text('modalEffectText'), HOSTILE_EQUIPMENT.effect);
+});
+
+test('enemy chunk table and modal escape hostile dataset values', () => {
+  const page = loadCodex({ html: 'enemy.html', scripts: ['enemyApp.js'], globals: { enemyData: [HOSTILE_ENEMY] } });
+
+  const chunkHtml = page.html('enemyChunksGrid');
+  assertEscaped(chunkHtml, 'enemy chunk table', [
+    HOSTILE_ENEMY.name,
+    HOSTILE_ENEMY.subArea,
+    HOSTILE_ENEMY.area,
+    HOSTILE_ENEMY.steal,
+    HOSTILE_ENEMY.drop
+  ]);
+
+  page.fire('enemyChunksGrid', 'click', {
+    target: page.targetStub('.enemy-name-btn', { 'data-enemy-id': HOSTILE_ENEMY.id })
+  });
+
+  const modalHtml = page.html('enemyModalContent');
+  assertEscaped(modalHtml, 'enemy modal', [
+    HOSTILE_ENEMY.name,
+    HOSTILE_ENEMY.area,
+    HOSTILE_ENEMY.subArea,
+    HOSTILE_ENEMY.steal,
+    HOSTILE_ENEMY.drop,
+    HOSTILE_ENEMY.immunities,
+    HOSTILE_ENEMY.skills[0].name,
+    HOSTILE_ENEMY.skills[0].type
+  ]);
 });

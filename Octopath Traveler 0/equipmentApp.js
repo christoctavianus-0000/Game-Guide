@@ -52,6 +52,20 @@
 
   const EFFECT_FAMILIES = ['Attack Effect', 'Equip Effect', 'Special', 'No Effect'];
 
+  function loadStoredFavorites() {
+    try {
+      return new Set(JSON.parse(localStorage.getItem('octo0_equip_favs') || '[]'));
+    } catch (_) {
+      return new Set();
+    }
+  }
+
+  function saveStoredFavorites(favSet) {
+    try {
+      localStorage.setItem('octo0_equip_favs', JSON.stringify(Array.from(favSet)));
+    } catch (_) {}
+  }
+
   // Application State
   const state = {
     activeCategory: 'All',
@@ -65,7 +79,7 @@
     currentPage: 1,
     pageSize: 48,
     showFavoritesOnly: false,
-    favorites: /** @type {Set<string>} */ (new Set(JSON.parse(localStorage.getItem('octo0_equip_favs') || '[]'))),
+    favorites: /** @type {Set<string>} */ (loadStoredFavorites()),
     selectedItem: null
   };
 
@@ -707,7 +721,7 @@
       state.favorites.add(id);
     }
 
-    localStorage.setItem('octo0_equip_favs', JSON.stringify(Array.from(state.favorites)));
+    saveStoredFavorites(state.favorites);
     updateFavCount();
     updateModalFavButton();
     render();

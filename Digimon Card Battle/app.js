@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function cardIconHtml(card) {
     if (card.localIcon) {
-      return `<img src="${card.localIcon}" alt="${card.name}" class="card-icon-img" loading="lazy" onerror="this.outerHTML='<span class=\\'no-art\\'>No art</span>'" />`;
+      return `<img src="${card.localIcon}" alt="${escapeHtml(card.name)}" class="card-icon-img" loading="lazy" onerror="this.outerHTML='<span class=\\'no-art\\'>No art</span>'" />`;
     }
     return `<span class="no-art">No art</span>`;
   }
@@ -191,10 +191,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  let searchDebounceTimer = null;
   // Search input
   searchInput.addEventListener('input', (e) => {
-    currentSearch = e.target.value.trim();
-    renderTable();
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(() => {
+      currentSearch = e.target.value.trim();
+      renderTable();
+    }, 150);
   });
 
   // Level filter

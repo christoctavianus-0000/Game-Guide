@@ -24,10 +24,13 @@ From the repository root, run:
 npm run check
 ```
 
-This checks Digimon JavaScript syntax and generated-data consistency, then runs Octopath’s TypeScript check and complete Node test suite. The static apps do not need a build or install step.
+This runs:
+1. **Digimon Card Battle**: `node --check` syntax validation and 7 unit tests (including fusion engine verification).
+2. **Octopath Traveler 0**: `tsc --noEmit` typecheck across all 6 applications and 53 unit/regression tests.
 
-To run only the Octopath tests:
+To run tests independently:
 
 ```sh
-npm run test --prefix "Octopath Traveler 0"
+npm test --prefix "Digimon Card Battle"
+npm test --prefix "Octopath Traveler 0"
 ```

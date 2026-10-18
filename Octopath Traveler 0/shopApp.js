@@ -18,6 +18,7 @@
     collapsedLocations: {}
   };
 
+  /** @type {ShopCodexElements} */
   var elements = {
     metricItemCount: document.getElementById('metricItemCount'),
     metricLocationCount: document.getElementById('metricLocationCount'),
@@ -30,6 +31,7 @@
     emptyState: document.getElementById('shopEmptyState'),
     resetBtn: document.getElementById('shopResetBtn'),
     emptyResetBtn: document.querySelector('.shop-reset-empty-btn'),
+    paginationFooter: document.getElementById('shopPaginationFooter'),
 
     modal: document.getElementById('detailModal'),
     modalTitle: document.getElementById('detailModalTitle'),
@@ -112,8 +114,8 @@
 
   function renderMetrics() {
     var items = getAllItems();
-    if (elements.metricItemCount) elements.metricItemCount.textContent = items.length;
-    if (elements.metricLocationCount) elements.metricLocationCount.textContent = getLocations().length;
+    if (elements.metricItemCount) elements.metricItemCount.textContent = String(items.length);
+    if (elements.metricLocationCount) elements.metricLocationCount.textContent = String(getLocations().length);
   }
 
   function populateDropdowns() {
@@ -200,9 +202,10 @@
         header.querySelector('.shop-chunk-chevron').textContent = state.collapsedLocations[loc] ? '▸' : '▾';
       });
       header.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          header.click();
+        var keyEvent = /** @type {KeyboardEvent} */ (e);
+        if (keyEvent.key === 'Enter' || keyEvent.key === ' ') {
+          keyEvent.preventDefault();
+          /** @type {HTMLElement} */ (header).click();
         }
       });
     });
@@ -290,8 +293,9 @@
     // Click on item row opens modal (only if not a link click)
     if (elements.chunksGrid) {
       elements.chunksGrid.addEventListener('click', function (event) {
-        if (event.target.closest('a')) return;
-        var row = event.target.closest('.shop-chunk-item-row');
+        var targetEl = /** @type {HTMLElement} */ (event.target);
+        if (targetEl.closest('a')) return;
+        var row = targetEl.closest('.shop-chunk-item-row');
         if (!row) return;
         var nameEl = row.querySelector('.shop-chunk-item-name');
         if (!nameEl) return;

@@ -2,6 +2,24 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Enemy escaping, typecheck expansion to all apps, storage safety & pipeline resilience
+
+- **Enemy Codex Escaping**: Added `escapeHtml(value)` in `enemyApp.js` and applied it across `renderEnemyRow`, `openEnemyModal`, and `renderChunks`. Wrapped area, subArea, enemy name, type, steal, drop, immunities, and skill metadata before inserting into `innerHTML`.
+- **Enemy Row Click Event Delegation**: Migrated row click handlers from per-element listeners on `.enemy-name-btn` to event delegation on `elements.enemyChunksGrid` using `e.target.closest('.enemy-name-btn')`, improving rendering speed and preventing memory leaks.
+- **Pluralization Fix**: Corrected pluralization logic in `enemyApp.js`: `' enemi' + (total === 1 ? '' : 'es')` -> `(total === 1 ? 'enemy' : 'enemies')`.
+- **Defensive Storage Safety**: Added `loadStoredFavorites` and `saveStoredFavorites` helpers in `app.js` and `equipmentApp.js` with `try...catch` guards around `localStorage` to prevent crashes in private/restricted browser modes.
+- **Theme Toggle Regex Bug**: Fixed unescaped backslash in cookie regex string literal in `themeToggle.js` (`'(?:^|;\\s*)'`).
+- **TypeScript Expansion Across All 6 Apps**:
+  - Expanded `types/codex-types.d.ts` with `CharacterRecord`, `CharacterJobRecord`, `CharacterCodexElements`, `EnemyRecord`, `EnemySkill`, `EnemyCodexElements`, `NpcRecord`, `NpcCodexElements`, `ShopItemRecord`, and `ShopCodexElements`.
+  - Added global declarations for `characterData`, `enemyData`, `npcData`, `shopData`, and extended `interface Window`.
+  - Updated `tsconfig.json` to include all 6 applications: `app.js`, `equipmentApp.js`, `characterApp.js`, `enemyApp.js`, `npcApp.js`, and `shopApp.js`.
+  - `npm run typecheck` passes with **0 errors**.
+- **Data Pipeline Resilience (`update_data.py`)**:
+  - Added `find_powershell_executable()` checking for `pwsh` first, with automatic fallback to Windows PowerShell (`powershell.exe`) on Windows.
+  - Reconfigured `sys.stdout` and `sys.stderr` to UTF-8 with character replacement to prevent `UnicodeEncodeError` crashes on Windows when printing checkmarks (`✓`).
+- **Untrusted-Data Test Suite**:
+  - Added hostile enemy record test to `tests/escaping.test.js`. Full Octopath suite: **53/53 tests pass**.
+
 ## Unreleased — Project restructure
 
 - Moved entire project into `Octopath Traveler 0/` subfolder under `Game Guide/` to support multi-game structure.

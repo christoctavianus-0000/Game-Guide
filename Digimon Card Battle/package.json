@@ -4,6 +4,7 @@
   "private": true,
   "description": "Static Digimon Digital Card Battle codex and fusion calculator.",
   "scripts": {
+    "test": "node --test tests/*.test.js",
     "check": "node --check app.js && node --check fusion.js && node --check themeToggle.js && node --check download_all_assets.js && node --test tests/*.test.js"
   }
 }
