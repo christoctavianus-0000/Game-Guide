@@ -24,7 +24,7 @@ From the repository root, run:
 npm run check
 ```
 
-This checks JavaScript syntax in the Digimon app, then runs Octopath’s TypeScript check and complete Node test suite. The static apps do not need a build or install step.
+This checks Digimon JavaScript syntax and generated-data consistency, then runs Octopath’s TypeScript check and complete Node test suite. The static apps do not need a build or install step.
 
 To run only the Octopath tests:
 

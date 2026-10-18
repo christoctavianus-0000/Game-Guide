@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static game reference apps for Digimon Card Battle and Octopath Traveler 0.",
   "scripts": {
-    "check:digimon": "node --check \"Digimon Card Battle/app.js\" && node --check \"Digimon Card Battle/fusion.js\" && node --check \"Digimon Card Battle/themeToggle.js\"",
+    "check:digimon": "npm --prefix \"Digimon Card Battle\" run check",
     "check:octopath": "npm --prefix \"Octopath Traveler 0\" run check",
     "check": "npm run check:digimon && npm run check:octopath"
   }

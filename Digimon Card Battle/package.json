@@ -1,0 +1,9 @@
+{
+  "name": "digimon-card-battle-codex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Digimon Digital Card Battle codex and fusion calculator.",
+  "scripts": {
+    "check": "node --check app.js && node --check fusion.js && node --check themeToggle.js && node --check download_all_assets.js && node --test tests/*.test.js"
+  }
+}

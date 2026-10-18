@@ -5,10 +5,11 @@
 /* Fusion Tabs & Mode switching */
 .fusion-mode-tabs {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  overflow-x: auto;
 }
 
 .fusion-tab-btn {
@@ -16,9 +17,9 @@
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   padding: 0.75rem 1.25rem;
-  border-radius: 6px;
+  border-radius: 7px;
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
@@ -34,9 +35,9 @@
 }
 
 .fusion-tab-btn.active {
-  background: var(--text-accent);
-  border-color: var(--text-accent);
-  color: var(--bg-abyss);
+  background: var(--bg-surface-elevated);
+  border-color: var(--border-subtle);
+  color: var(--text-primary);
 }
 
 .fusion-tab-panel {
@@ -139,8 +140,9 @@
 
 /* Page Layout */
 .fusion-page {
-  padding: 2rem 2rem 2rem 6rem;
-  max-width: 1400px;
+  width: 100%;
+  padding: 24px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -306,15 +308,15 @@
 .fusion-search {
   background: var(--bg-surface);
   border: 1px solid var(--border-card);
-  border-radius: 8px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .fusion-search h2 {
   font-family: var(--font-display);
-  font-size: 1.8rem;
+  font-size: 1.35rem;
   margin-bottom: 0.5rem;
   color: var(--text-primary);
 }
@@ -326,8 +328,8 @@
 }
 
 .search-box {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 560px;
+  margin: 0;
   position: relative;
 }
 
@@ -337,7 +339,7 @@
   border: 1px solid var(--border-card);
   padding: 1rem 1.25rem;
   color: var(--text-primary);
-  border-radius: 4px;
+  border-radius: 8px;
   font-family: var(--font-body);
   font-size: 1rem;
   transition: var(--transition-fast);
@@ -346,7 +348,7 @@
 .search-box input:focus {
   outline: none;
   border-color: var(--border-neon);
-  box-shadow: 0 0 0 2px var(--border-neon-glow);
+  box-shadow: 0 0 0 3px var(--border-neon-glow);
 }
 
 /* Result Card */
@@ -583,7 +585,7 @@
 }
 
 @media (max-width: 760px) {
-  .fusion-page { padding: 1rem 1rem 6rem; }
+  .fusion-page { padding: 14px; }
   .materials-picker-grid { gap: 0.75rem; }
   .mat-card-preview { padding: 0.75rem; min-width: 0; }
   .mat-preview-info { min-width: 0; }
@@ -596,7 +598,7 @@
 }
 
 @media (min-width: 761px) and (max-width: 1099px) {
-  .fusion-page { padding: 1.5rem 1.5rem 6rem; }
+  .fusion-page { padding: 20px 16px; }
 }
 
 /* Responsive */

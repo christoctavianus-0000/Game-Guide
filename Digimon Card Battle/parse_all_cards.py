@@ -1,10 +1,18 @@
 import os
 import re
 import json
+import argparse
+import tempfile
 from bs4 import BeautifulSoup
 
-temp_dir = os.environ.get('TEMP', '')
-base_dir = r'd:\My AI Project\Game Guide\Digimon Card Battle'
+base_dir = os.path.dirname(os.path.abspath(__file__))
+parser = argparse.ArgumentParser(description='Parse saved Digimon card HTML files into category JSON.')
+parser.add_argument(
+    '--input-dir',
+    default=os.environ.get('TEMP') or tempfile.gettempdir(),
+    help='Directory containing ddcb_<category>.html files (default: TEMP or the system temp directory).'
+)
+temp_dir = parser.parse_args().input_dir
 
 categories = [
     ('fire', 'Fire', 'fireCards.json'),

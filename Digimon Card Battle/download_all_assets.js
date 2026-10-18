@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { execSync } = require('child_process');
+const { spawnSync } = require('child_process');
 const path = require('path');
 
 const baseDir = path.resolve(__dirname);
@@ -16,29 +16,18 @@ const files = [
   'optionCards.json'
 ];
 
-// Load fusion Material/Result values from JSON export
-let fusionMap = {};
-const fusionPath = path.join(baseDir, 'fusion_values.json');
-if (fs.existsSync(fusionPath)) {
-  const fusionData = JSON.parse(fs.readFileSync(fusionPath, 'utf8'));
-  fusionData.forEach(row => {
-    if (row.Name) fusionMap[row.Name.trim().toLowerCase()] = { material: row.Material, result: row.Result };
-  });
-}
-
 let allCards = [];
 const configLines = [];
+const downloadMissingImages = process.argv.includes('--download-missing-images');
 
 for (const file of files) {
   const filePath = path.join(baseDir, file);
-  if (!fs.existsSync(filePath)) continue;
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Required card source is missing: ${filePath}`);
+  }
 
   const cards = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   for (const card of cards) {
-    const key = (card.name || '').trim().toLowerCase();
-    const fusion = fusionMap[key] || {};
-    card.materialValue = fusion.material !== undefined ? fusion.material : '?';
-    card.resultValue = fusion.result !== undefined ? fusion.result : '?';
     allCards.push(card);
     if (!card.cardIcon) continue;
 
@@ -53,23 +42,29 @@ for (const file of files) {
 }
 
 console.log(`Total cards across database: ${allCards.length}`);
-console.log(`Images needing download: ${configLines.length / 2}`);
+console.log(`Images missing locally: ${configLines.length / 2}`);
 
-if (configLines.length > 0) {
-  const curlFile = path.join(baseDir, 'curl_all_list.txt');
-  fs.writeFileSync(curlFile, configLines.join('\n'), 'utf8');
-
-  console.log('Downloading missing images in parallel chunk...');
-  try {
-    execSync(`curl.exe -K "${curlFile}" -s --parallel --parallel-max 12 --retry 3`);
-  } catch (err) {
-    console.error('Download completed with warnings/retry handled:', err.message);
+if (downloadMissingImages && configLines.length > 0) {
+  console.log('Downloading missing images...');
+  const curl = process.platform === 'win32' ? 'curl.exe' : 'curl';
+  const result = spawnSync(curl, ['-K', '-', '-s', '--parallel', '--parallel-max', '12', '--retry', '3'], {
+    input: configLines.join('\n'),
+    encoding: 'utf8',
+    stdio: ['pipe', 'inherit', 'inherit']
+  });
+  if (result.error) {
+    throw result.error;
   }
+  if (result.status !== 0) {
+    throw new Error(`curl exited with status ${result.status}`);
+  }
+} else if (!downloadMissingImages && configLines.length > 0) {
+  console.log('Run with --download-missing-images to fetch missing artwork.');
 }
 
 // Write combined database files
 const jsPath = path.join(baseDir, 'cardData.js');
-fs.writeFileSync(jsPath, 'const CARD_DATABASE = ' + JSON.stringify(allCards, null, 2) + ';\n', 'utf8');
+fs.writeFileSync(jsPath, 'window.CARD_DATABASE = ' + JSON.stringify(allCards, null, 2) + ';\n', 'utf8');
 
 const combinedJsonPath = path.join(baseDir, 'allCards.json');
 fs.writeFileSync(combinedJsonPath, JSON.stringify(allCards, null, 2), 'utf8');

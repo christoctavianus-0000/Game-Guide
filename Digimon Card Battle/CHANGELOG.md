@@ -12,12 +12,13 @@ This file records implementation decisions that future prompts and contributors 
 - Cross-navigation between tabs: clicking a Tab 1 combination row switches to Tab 2 with both materials filled; clicking a Tab 2 result card switches to Tab 1 with that card searched. Row clicks are delegated data attributes (`data-c1`, `data-c2`, `data-result`) so re-renders stay safe.
 - Deep link `fusion.html?card=<name>` from the Card Codex auto-fills the search and renders the combination list.
 - The fusion combination table intentionally has no internal scroll container (`max-height: none`, `overflow-y: visible`) so long result lists scroll with the page instead of inside the card.
-- `fusion_data.js` and `fusion_data.json` are generated twins holding `{ fusion_table, special_fusions }`; the page loads the `.js` global `FUSION_DATA`, the JSON exists for scripts and inspection. Regenerate with `merge_fusion.py` (values) after any workbook change.
+- `fusion_data.js` and `fusion_data.json` are generated twins holding `{ fusion_table, special_fusions }`; the page loads the `.js` global `FUSION_DATA`, the JSON exists for scripts and inspection. `merge_fusion.py` reads the workbook and merges card material/result values into the category JSON files.
 
 ## Unreleased - Card Codex changes for fusion
 
-- `index.html` / `app.js` / `styles.css`: added a fixed left codex side nav shared by both pages, compacted the card table (no horizontal scroll, tighter padding and icon sizes), and removed the Material Value and Result Value columns from the codex table (they remain visible on the Fusion Codex result card).
+- `index.html` / `fusion.html` / `styles.css` / `fusion.css`: aligned the Digimon pages with Octopath's neutral charcoal palette, compact typography, surface treatments, and responsive top-nav / desktop-rail layout. Digimon specialty colors remain distinct; added skip links and reduced-motion support.
+- `index.html` / `app.js` / `styles.css`: added shared codex navigation, compacted the card table (no horizontal scroll, tighter padding and icon sizes), and removed the Material Value and Result Value columns from the codex table (they remain visible on the Fusion Codex result card).
 - Attack column headers show the circle / triangle / X icon plus "Attack", and every icon carries a `[circle icon] attack` style alt and title for screen readers.
 - Card names are now `fusion.html?card=<name>` links, so clicking a name in the codex opens that card's fusion recipes.
 - Support Effect text participates in the codex search and sort like the other columns.
-- `cardData.js` gained `materialValue` and `resultValue` per card, merged from the workbook by `merge_fusion.py`.
+- `cardData.js` is rebuilt from the category JSON files by `download_all_assets.js`; `materialValue` and `resultValue` are merged into those category files by `merge_fusion.py`.

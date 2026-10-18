@@ -27,7 +27,7 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 
 | Path | Role |
 | --- | --- |
-| `index.html` | Card Codex shell: shared left side nav, header, sortable card table, search, theme toggle. |
+| `index.html` | Card Codex shell: shared codex navigation, compact header, sortable card table, search, theme toggle. |
 | `app.js` | Card Codex state: filtering, sorting, table rendering, empty states, icon-token markup. |
 | `styles.css` | Shared visual system for both pages: nav, header, tables, badges, responsive rules. |
 | `fusion.html` | Fusion Codex shell: mode tabs, Tab 1 target search, Tab 2 material picker and previews. |
@@ -36,11 +36,13 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 | `cardData.js` | Browser-ready generated data: declares global `CARD_DATABASE` (301 cards). Loaded by both pages. |
 | `fusion_data.js` | Browser-ready generated data: declares global `FUSION_DATA`. Loaded by `fusion.html` only. |
 | `fusion_data.json` | Same fusion data in JSON form, useful for scripts or inspection. |
+| `fusion_values.json` | Workbook-derived material/result values exported by `merge_fusion.py`. |
 | `Digimon Card Battle - Fusion.xlsx` | Workbook holding the fusion value sheet used to populate `materialValue` / `resultValue`. |
 | `FUSION_RULES.md` | Human-readable rules extracted from the workbook: color matrix, material values, special fusions. |
-| `../merge_fusion.py` | Merges workbook fusion values into the category JSON files. This shared utility remains at repository root. |
+| `merge_fusion.py` | Reads the fusion workbook and merges material/result values into the category JSON files. |
 | `parse_all_cards.py` | Extracts card fields from the saved card HTML into the category JSON files. |
-| `download_all_assets.js` | Downloads card art referenced by the category JSON files into `assets/cards/`. |
+| `download_all_assets.js` | Builds `cardData.js` and `allCards.json` from the category files; optionally downloads missing card art. |
+| `requirements.txt` | Python-only dependencies for the HTML and workbook extraction scripts. |
 | `<specialty>Cards.json` | Per-category source records (`fireCards.json`, `iceCards.json`, ...). |
 | `themeToggle.js` | Shared light/dark toggle, persisted in `localStorage` with a cookie fallback. |
 | `assets/cards/` | Card art named `<no>_<Name>.jpg`, referenced by `localCardIcon`. |
@@ -79,18 +81,32 @@ Every card carries `materialValue` and `resultValue`. 64 cards have no fusion va
 ## Data extraction rules
 
 - Card fields come from saved card HTML parsed by `parse_all_cards.py`; icon files map through `ICON_MAP` to the `circle` / `triangle` / `x` tokens.
-- Fusion values come from the workbook's fusion value sheet; `merge_fusion.py` matches rows to cards by lowercased name.
+- Fusion values come from the workbook's fusion value sheet; `merge_fusion.py` matches rows to cards by lowercased name and writes those values into the category JSON files.
 - Keep generated `*Data.js` and `*Data.json` files in sync when the source workbook changes; never hand-edit a generated file without updating the source.
+
+To rebuild the browser card database after updating the saved card HTML or workbook:
+
+```sh
+python -m pip install -r requirements.txt
+python parse_all_cards.py --input-dir /path/to/saved-card-html
+python merge_fusion.py
+node download_all_assets.js
+```
+
+The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_darkness.html`, `ddcb_rare.html`, `ddcb_partner.html`, and `ddcb_option.html` in the input directory. `--input-dir` defaults to the system temporary directory (or `TEMP` when set). The final Node script combines the category JSON files into `cardData.js` and `allCards.json`; it does not fetch artwork unless invoked with `--download-missing-images`.
 
 ## Editing guidance
 
 - Add UI behavior to `app.js` or `fusion.js`; keep data generation in the Python scripts.
 - Escape any dataset string interpolated into `innerHTML`; both page scripts define `escapeHtml`.
 - Reuse the shared table and badge classes in `styles.css` before adding new ones, and keep page-specific rules in `fusion.css`.
+- Keep both Digimon pages on the shared Game Guide visual system: neutral charcoal surfaces, compact Inter typography, Rajdhani for data labels, and the same responsive top navigation / desktop rail as Octopath. Preserve specialty colors where they communicate card categories; avoid blue/neon chrome.
+- When changing shared navigation or theme tokens, check both `index.html` and `fusion.html` in dark and light themes, at desktop and phone widths.
 - Do not commit downloaded card art changes without checking `download_all_assets.js` first.
 
 ## Verification
 
+- Run `npm run check` at the repository root to validate both apps and check the generated Digimon data files stay in sync.
 - `node --check app.js` and `node --check fusion.js` catch syntax errors.
 - Load both pages in a browser and confirm the console has no errors.
 - Spot-check fusion math: `Angemon` lists 200 combinations, `WarGreymon` lists 34, and `Agumon` + `Gabumon` (material 5 + 5 = 10, Red + Blue = Green) produces `MoriShellmon`.

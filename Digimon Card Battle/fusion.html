@@ -26,25 +26,38 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="site-wrapper">
-      <!-- Floating Side Nav -->
-      <nav class="side-nav" aria-label="Codex navigation">
-        <a href="index.html" class="side-nav-link" title="Card Codex">
-          <span class="side-nav-icon">🀄</span>
-          <span>Card Codex</span>
-        </a>
-        <a href="fusion.html" class="side-nav-link active" title="Fusion Codex">
-          <span class="side-nav-icon">⚗️</span>
-          <span>Fusion Codex</span>
-        </a>
+      <nav class="site-nav" aria-label="Codex sections">
+        <div class="site-nav-inner">
+          <span class="site-nav-brand"><span class="nav-crest">✦</span> DIGIMON CARD BATTLE CODEX</span>
+          <div class="site-nav-links">
+            <a class="site-nav-link" href="index.html">🃏 Card Codex</a>
+            <a class="site-nav-link active" href="fusion.html" aria-current="page">⚗️ Fusion Codex</a>
+          </div>
+        </div>
       </nav>
+      <aside class="site-rail" aria-label="Codex selector">
+        <div class="site-rail-inner">
+          <div class="site-rail-links">
+            <a class="site-rail-link" href="index.html">
+              <span class="site-rail-icon" aria-hidden="true">🃏</span>
+              <span class="site-rail-text">Cards</span>
+            </a>
+            <a class="site-rail-link active" href="fusion.html" aria-current="page">
+              <span class="site-rail-icon" aria-hidden="true">⚗️</span>
+              <span class="site-rail-text">Fusion</span>
+            </a>
+          </div>
+        </div>
+      </aside>
 
       <!-- Header -->
     <header class="top-header">
       <div class="header-container">
         <div class="brand-area">
           <div class="brand-crest">
-            <span class="crest-icon">allele</span>
+            <span class="crest-icon">✦</span>
           </div>
           <div>
             <div class="brand-kicker">DIGIMON CARD BATTLE</div>
@@ -52,17 +65,15 @@
           </div>
         </div>
         <div class="header-actions">
-          <a href="index.html" class="theme-toggle-btn" style="text-decoration: none;">← Card Codex</a>
           <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">
             <span class="theme-icon">🌙</span>
-            <span class="theme-label">Dark</span>
           </button>
         </div>
       </div>
     </header>
 
     <!-- Main Content -->
-    <main class="fusion-page">
+    <main class="fusion-page" id="main-content">
       <!-- Mode Tabs -->
       <div class="fusion-mode-tabs" role="tablist" aria-label="Fusion Calculator Modes">
         <button type="button" class="fusion-tab-btn active" role="tab" id="tab-btn-target" aria-selected="true" aria-controls="tab-target-panel" data-tab="target">
