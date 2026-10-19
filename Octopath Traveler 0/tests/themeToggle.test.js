@@ -117,3 +117,22 @@ test('Octopath themeToggle: persists theme across simulated page navigation', ()
   assert.equal(page2.themeBtn.textContent, '🌙');
   assert.equal(page2.store.get('game_guide_theme'), 'dark');
 });
+
+test('Octopath & Root pages: include responsive viewport meta and mobile + desktop-on-mobile CSS rules', () => {
+  const htmlFiles = ['index.html', 'equipment.html', 'character.html', 'enemy.html', 'shop.html', 'npc.html'];
+  for (const file of htmlFiles) {
+    const html = fs.readFileSync(path.join(ROOT, file), 'utf8');
+    assert.match(html, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?"/i, `${file} missing viewport meta`);
+  }
+
+  const rootHtml = fs.readFileSync(path.join(ROOT, '..', 'index.html'), 'utf8');
+  assert.match(rootHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?"/i);
+  assert.match(rootHtml, /@media\s*\(pointer:\s*coarse\)/);
+
+  const stylesCss = fs.readFileSync(path.join(ROOT, 'styles.css'), 'utf8');
+  assert.match(stylesCss, /@media\s*\(max-width:\s*600px\)/);
+  assert.match(stylesCss, /@media\s*\(min-width:\s*901px\)\s*and\s*\(max-width:\s*1180px\)/);
+  assert.match(stylesCss, /@media\s*\(pointer:\s*coarse\)/);
+  assert.match(stylesCss, /touch-action:\s*manipulation/);
+});
+

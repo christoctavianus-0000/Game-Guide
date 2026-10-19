@@ -136,3 +136,21 @@ test('Digimon themeToggle: persists theme across simulated page navigation', () 
   assert.equal(page2.themeBtn.getAttribute('aria-pressed'), 'false');
   assert.equal(page2.store.get('game_guide_theme'), 'dark');
 });
+
+test('Digimon pages: include responsive viewport meta and mobile + desktop-on-mobile CSS rules', () => {
+  const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+  const fusionHtml = fs.readFileSync(path.join(ROOT, 'fusion.html'), 'utf8');
+  const stylesCss = fs.readFileSync(path.join(ROOT, 'styles.css'), 'utf8');
+  const fusionCss = fs.readFileSync(path.join(ROOT, 'fusion.css'), 'utf8');
+
+  assert.match(indexHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?"/i);
+  assert.match(fusionHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?"/i);
+
+  // Mobile (<760px), Desktop-on-Mobile (761px-1180px), and Coarse Pointer support
+  assert.match(stylesCss, /@media\s*\(max-width:\s*760px\)/);
+  assert.match(stylesCss, /@media\s*\(min-width:\s*761px\)\s*and\s*\(max-width:\s*1180px\)/);
+  assert.match(stylesCss, /@media\s*\(pointer:\s*coarse\)/);
+  assert.match(stylesCss, /touch-action:\s*manipulation/);
+  assert.match(fusionCss, /@media\s*\(pointer:\s*coarse\)/);
+});
+

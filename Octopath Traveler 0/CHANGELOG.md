@@ -2,6 +2,21 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Mobile & "Request Desktop Site on Mobile" Responsive Architecture
+
+- **Unsticky Filter Panel on Mobile & Touch Devices (`styles.css`)**:
+  - Reset `.sticky-filter-wrap` to `position: relative; top: auto;` under `@media (max-width: 1099px), (max-height: 760px), (pointer: coarse)` so the multi-row filter bar and 2-row character job tabs never obscure 50–70% of the vertical screen while scrolling on phones, landscape viewports, or mobile browsers in "Request Desktop Site" mode.
+- **Horizontal Touch Scrolling on All Wide Tables**:
+  - Updated `.enemy-table-shell` (previously `overflow: hidden` above `600px`), `.equip-table-wrap`, `.npc-chunk-table-wrap`, `.npc-helper-table-wrap`, `.enemy-modal-stats-wrap`, and `.boost-table-wrap` to use `overflow-x: auto; -webkit-overflow-scrolling: touch` across all breakpoints, ensuring `~980px` desktop-on-mobile viewports never clip wide tables.
+- **Coarse Pointer Touch Ergonomics (`@media (pointer: coarse)`)**:
+  - Enforced `min-height: 44px` on navigation links, pagination buttons, theme toggles, modal close buttons, and primary/secondary actions, plus `touch-action: manipulation` across all interactive controls.
+  - Enforced `font-size: 16px` and `min-height: 44px` on `.search-input-wrap input` and `.filter-select` across all 6 codex pages to prevent iOS Safari auto-zoom in both mobile and desktop-site modes.
+  - On `1100px–1280px` viewports with `(pointer: coarse)`, hid the fixed `.site-rail` (`padding-left: 0`) and kept `.site-nav-links` visible in the top header.
+  - Styled `.detail-modal` on `shop.html` as a fixed, centered modal overlay with scrollable `.modal-body` (`max-height: 70dvh`).
+- **Root Hub & Automated Verification (`../index.html`, `tests/themeToggle.test.js`)**:
+  - Added safe-area padding, `overflow-x: hidden`, and `@media (pointer: coarse)` 44px touch targets to the root `index.html` hub.
+  - Added automated test verifying viewport meta tags across all 6 Octopath HTML files + root `index.html` and responsive CSS rules (**63/63 Octopath tests passing**, **78/78 total repo tests passing**).
+
 ## Unreleased — Theme Toggle Reliability & Cross-Page Synchronization
 
 - **Immediate Click Responsiveness via Document Event Delegation (`themeToggle.js`)**:

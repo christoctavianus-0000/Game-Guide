@@ -1307,7 +1307,9 @@ body::before {
   background: var(--bg-surface-card);
   border: 1px solid var(--border-subtle);
   border-radius: 10px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .enemy-table {
@@ -4351,3 +4353,218 @@ body::before {
   align-items: flex-end;
   gap: 8px;
 }
+
+/* ==========================================================================
+   MOBILE & "REQUEST DESKTOP SITE" ON MOBILE (980px–1180px & pointer: coarse)
+   ========================================================================== */
+body {
+  overflow-x: hidden;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cat-tab,
+.subtype-chip,
+.view-toggle-btn,
+.page-btn,
+.ghost-pill-btn,
+.reset-link-btn,
+.primary-btn,
+.secondary-btn,
+.site-nav-link,
+.site-rail-link,
+.project-home-link,
+.theme-toggle-btn,
+.modal-close-btn,
+.weapon-filter-btn,
+.weakness-icon,
+.shop-chunk-header,
+.enemy-name-btn,
+.card-fav-btn,
+.table-fav-btn,
+.table-inspect-btn,
+.char-modal-img-btn {
+  touch-action: manipulation;
+}
+
+.equip-table-wrap,
+.enemy-table-shell,
+.npc-chunk-table-wrap,
+.npc-helper-table-wrap,
+.enemy-modal-stats-wrap,
+.boost-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent sticky filter bar from covering half the viewport on mobile, short screens, or touch devices in Desktop Mode */
+@media (max-width: 1099px), (max-height: 760px), (pointer: coarse) {
+  .sticky-filter-wrap {
+    position: relative;
+    top: auto;
+    z-index: 10;
+  }
+}
+
+/* Medium / Mobile "Request Desktop Site" (901px–1180px) layout adjustments */
+@media (min-width: 901px) and (max-width: 1180px) {
+  .header-container {
+    padding: 16px 20px;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .main-content {
+    padding: 20px 16px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+  }
+  .shop-chunk-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+/* Tablet / intermediate screens (601px–900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+  }
+  #characterGrid.skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  .main-content {
+    padding: 18px 16px;
+  }
+  .category-tabs:not(#characterJobTabs) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Coarse pointer (phones & tablets in either standard Mobile or "Request Desktop Site" mode) */
+@media (pointer: coarse) {
+  .site-nav {
+    position: relative;
+  }
+  .site-nav-link,
+  .project-home-link,
+  .theme-toggle-btn,
+  .ghost-pill-btn,
+  .page-btn,
+  .reset-link-btn,
+  .view-toggle-btn,
+  .primary-btn,
+  .secondary-btn {
+    min-height: 44px;
+  }
+  .theme-toggle-btn,
+  .view-toggle-btn,
+  .modal-close-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .cat-tab {
+    min-height: 42px;
+  }
+  #characterJobTabs .cat-tab {
+    min-height: 34px;
+    padding: 5px 10px;
+  }
+  .subtype-chip {
+    min-height: 36px;
+    padding: 6px 12px;
+  }
+  .weapon-filter-btn {
+    min-width: 38px;
+    min-height: 38px;
+  }
+  .weakness-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .search-input-wrap input,
+  .filter-select {
+    min-height: 44px;
+    font-size: 16px; /* Prevents iOS Safari auto-zoom even when Request Desktop Website is enabled */
+  }
+  .clear-search-btn {
+    width: 34px;
+    height: 34px;
+  }
+  .modal-window {
+    max-height: 90dvh;
+  }
+  .modal-body,
+  .enemy-modal-body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* If a mobile device in Desktop Mode reports >= 1100px width, keep top nav visible and avoid fixed side-rail crowding */
+@media (min-width: 1100px) and (max-width: 1280px) and (pointer: coarse) {
+  .site-wrapper {
+    padding-left: 0;
+  }
+  .site-rail {
+    display: none;
+  }
+  .site-nav-links {
+    display: flex;
+  }
+  .site-nav-inner {
+    justify-content: space-between;
+    text-align: left;
+  }
+  .project-home-link {
+    position: static;
+    transform: none;
+  }
+}
+
+/* Shop detailModal (when rendered without .modal-overlay wrapper) */
+.detail-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  overscroll-behavior: contain;
+}
+
+.detail-modal > .modal-header,
+.detail-modal > .modal-body,
+.detail-modal > .modal-footer {
+  width: min(640px, 100%);
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border-card);
+  border-right: 1px solid var(--border-card);
+}
+
+.detail-modal > .modal-header {
+  border-top: 1px solid var(--border-card);
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-modal > .modal-body {
+  max-height: 70dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.detail-modal > .modal-footer {
+  border-bottom: 1px solid var(--border-card);
+  border-radius: 0 0 12px 12px;
+}
+

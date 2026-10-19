@@ -662,6 +662,27 @@
 
 @media (min-width: 761px) and (max-width: 1099px) {
   .fusion-page { padding: 20px 16px; }
+  .materials-picker-grid { gap: 0.75rem; }
+  .mat-card-preview { padding: 0.75rem; min-width: 0; }
+}
+
+@media (pointer: coarse) {
+  .sort-btn {
+    min-height: 40px;
+    padding: 0.45rem 0.75rem;
+  }
+  .fusion-combos-table th,
+  .fusion-combos-table td {
+    padding: 0.65rem 0.75rem;
+  }
+  .fusion-combos-table tr.clickable-combo,
+  .fusion-combos-table tr.clickable-result {
+    touch-action: manipulation;
+  }
+  .combinations-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 /* Responsive */

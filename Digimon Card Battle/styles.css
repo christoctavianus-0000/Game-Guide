@@ -815,3 +815,109 @@ main {
   .mobile-sort-controls select { grid-column: 1; }
   .mobile-sort-controls button { grid-column: 2; }
 }
+
+/* ==========================================================================
+   MOBILE & "REQUEST DESKTOP SITE" ON MOBILE (761px–1150px & pointer: coarse)
+   ========================================================================== */
+body {
+  overflow-x: hidden;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tab-btn,
+.th-sort,
+.site-nav-link,
+.site-rail-link,
+.project-home-link,
+.theme-toggle-btn,
+.fusion-tab-btn,
+.sort-btn {
+  touch-action: manipulation;
+}
+
+/* Medium / Mobile "Request Desktop Site" (980px–1150px) table fit */
+@media (min-width: 761px) and (max-width: 1180px) {
+  .card-table-section {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .card-table th,
+  .card-table td {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.78rem;
+  }
+  .support-text {
+    max-width: 175px;
+    font-size: 0.74rem;
+  }
+  .header-container {
+    padding: 16px 18px;
+    gap: 14px;
+  }
+  main {
+    padding: 18px 16px;
+  }
+}
+
+/* Coarse pointer (phones/tablets in either Mobile or "Request Desktop Site" mode) */
+@media (pointer: coarse) {
+  .site-nav {
+    position: relative;
+  }
+  .tab-btn,
+  .site-nav-link,
+  .project-home-link,
+  .theme-toggle-btn,
+  .fusion-tab-btn {
+    min-height: 44px;
+  }
+  .theme-toggle-btn {
+    min-width: 44px;
+  }
+  .th-sort {
+    min-height: 40px;
+    padding-block: 4px;
+  }
+  #cardSearch,
+  #levelFilter,
+  #cardSort,
+  #sortDirection,
+  .search-box input,
+  .combo-filter-box input {
+    min-height: 44px;
+    font-size: 16px; /* Prevents iOS Safari auto-zoom even in Desktop Site mode */
+  }
+  .category-tabs {
+    -webkit-overflow-scrolling: touch;
+  }
+  .card-table-section,
+  .combinations-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* If a mobile device in Desktop Mode triggers >= 1100px width, keep top nav accessible and avoid side-rail crowding on narrow/coarse screens */
+@media (min-width: 1100px) and (max-width: 1280px) and (pointer: coarse) {
+  .site-wrapper {
+    padding-left: 0;
+  }
+  .site-rail {
+    display: none;
+  }
+  .site-nav-links {
+    display: flex;
+  }
+  .site-nav-inner {
+    justify-content: space-between;
+    text-align: left;
+  }
+  .project-home-link {
+    position: static;
+    transform: none;
+  }
+}
+

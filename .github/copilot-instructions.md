@@ -28,12 +28,17 @@ This repository contains two independent static web apps:
     - **Special fusions (19 recipes)**: Predetermined card pairs (e.g. `Omnimon I + Paildramon => Imperialdramon`, `Garudamon + Silphymon => Valkyrimon`) that override standard math rules and execute in both directions.
     - **Material & Result values**: Standard fusions require `materialValue(A) + materialValue(B) === target.resultValue` and matching matrix color. 273 cards have authoritative GameFAQs/workbook values; 28 cards are non-fusable (`?` for partner/armor cards, Sevens, and Rosemon's Lure/Download Digivolve); 18 cards have `Result = 0` (special results and gems).
     - **Name aliases & search resolution**: Canonical database names map to GameFAQs spelling variants via `NAME_ALIASES` in `merge_fusion.py` and `SEARCH_ALIASES` in `fusion.js` (e.g. `Omnimon 1`, `Sylphymon`, `H-Kabuterimon`, `Diablomon`, `Orgemon`, `Monocromon`, `Braciomon`, `Gigidramon`, `WaruMonzaemon`, and disk cards 222-224, 267-272).
+11. **Mobile & "Request Desktop Site on Mobile" Responsive Architecture**:
+    - **Standard mobile (`320px–768px`)**: Stacked card grids, single-column mastheads/headers, bottom-sheet modals (`max-height: 92dvh`, `env(safe-area-inset-bottom)`), and horizontal touch scrolling on wide tables.
+    - **Mobile "Request Desktop Site" (`761px–1180px` & `@media (pointer: coarse)`)**: Mobile browsers in Desktop mode render a `~980px` viewport on a coarse touch screen. Both codexes compact table padding in the `761px–1180px` range, keep `.enemy-table-shell`, `.equip-table-wrap`, `.card-table-section`, and `.combinations-table-wrap` horizontally touch-scrollable (`overflow-x: auto; -webkit-overflow-scrolling: touch`), unstick `.sticky-filter-wrap` (`position: relative`) so multi-row filters never obscure half the viewport, and keep the top navigation bar visible on `1100px–1280px` coarse-pointer devices instead of crowding content with the fixed desktop `.site-rail`.
+    - **Coarse pointer ergonomics (`@media (pointer: coarse)`)**: All interactive buttons, tabs, and links enforce `40px–44px` minimum tap targets with `touch-action: manipulation`, and all search inputs/selects enforce `font-size: 16px` to prevent iOS Safari auto-zoom in both mobile and desktop-site modes.
 
 ## Verification
-Run full repository checks from the root with `npm.cmd run check` (76 total tests passing: 14 Digimon, 62 Octopath).
+Run full repository checks from the root with `npm.cmd run check` (78 total tests passing: 15 Digimon, 63 Octopath).
 Individual suites can be run with:
-- `npm.cmd test --prefix "Digimon Card Battle"` (14 tests)
-- `npm.cmd test --prefix "Octopath Traveler 0"` (62 tests)
+- `npm.cmd test --prefix "Digimon Card Battle"` (15 tests)
+- `npm.cmd test --prefix "Octopath Traveler 0"` (63 tests)
 - `npm.cmd run typecheck --prefix "Octopath Traveler 0"` (6 apps checked, 0 errors)
+
 
 

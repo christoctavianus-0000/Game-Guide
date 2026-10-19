@@ -31,6 +31,11 @@ Use this skill when designing, updating, or auditing the visual language, themes
   - All 35 playable characters in `Octopath Traveler 0/assets/characters/` must provide both a vertical portrait (`<slug>_portrait.png`, e.g., 74×160 or 54×96) and an official CotC combat sprite (`<slug>_sprite.png`, e.g., 66×102 or 72×96).
   - Detail modals provide a Portrait vs. Sprite toggle (`.char-modal-image-toggle`).
   - When rendering pixel art sprites in the modal, apply `image-rendering: pixelated; image-rendering: crisp-edges;` to `.char-modal-image[data-mode="sprite"]` to prevent blurring on high-DPI displays.
+- **Mobile & "Request Desktop Site on Mobile" (`980px` + `pointer: coarse`) Ergonomics**:
+  - **Safe-area & overflow guards**: `body` includes `overflow-x: hidden`, `env(safe-area-inset-*)` padding, and `-webkit-tap-highlight-color: transparent`.
+  - **Coarse pointer touch targets (`@media (pointer: coarse)`)**: Enforce `min-height: 44px` on buttons, nav links, and tabs, `touch-action: manipulation` on all interactive controls, and `font-size: 16px` on all `<input>` and `<select>` elements so iOS Safari never auto-zooms even when "Request Desktop Website" is active.
+  - **Unsticky filters on mobile/touch**: In Octopath, `.sticky-filter-wrap` resets to `position: relative` under `@media (max-width: 1099px), (max-height: 760px), (pointer: coarse)` so tall filter panels never obscure half the viewport while scrolling.
+  - **Desktop-on-mobile (`761px–1180px`) table & rail fit**: Wide tables (`.card-table-section`, `.combinations-table-wrap`, `.enemy-table-shell`, `.equip-table-wrap`, `.npc-chunk-table-wrap`) use compact cell padding and `overflow-x: auto; -webkit-overflow-scrolling: touch`. On `1100px–1280px` with `(pointer: coarse)`, hide the fixed `.site-rail` (`padding-left: 0`) and keep `.site-nav-links` visible in the top bar.
 
 ---
 

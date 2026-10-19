@@ -49,7 +49,7 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 | `assets/ui/` | Custom vector SVG UI icons: attack type icons (`circle.svg`, `triangle.svg`, `x.svg`), brand (`digivice.svg`), nav (`nav-cards.svg`, `nav-fusion.svg`), and specialty badges (`spec-*.svg`). |
 | `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, GameFAQs Phoenixmon/special fusions verification, search aliases, and non-numeric value handling (8 tests). |
 | `tests/dataIntegrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, `CARD_DATABASE`, and SVG icon asset existence (3 tests). |
-| `tests/themeToggle.test.js` | Unit test suite verifying theme initialization, document click delegation, and cross-page persistence (3 tests). |
+| `tests/themeToggle.test.js` | Unit test suite verifying theme initialization, document click delegation, cross-page persistence, and mobile + desktop-on-mobile responsive CSS rules (4 tests). |
 
 ## Current dataset
 

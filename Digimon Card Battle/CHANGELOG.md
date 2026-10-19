@@ -2,6 +2,17 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - Mobile & "Request Desktop Site on Mobile" Responsive Architecture
+
+- **Mobile "Request Desktop Site" (`761px–1180px`) Table & Layout Fit (`styles.css`, `fusion.css`)**:
+  - Compacted cell padding and typography for the 12-column `.card-table` between `761px` and `1180px` and enabled `overflow-x: auto; -webkit-overflow-scrolling: touch` on `.card-table-section` and `.combinations-table-wrap` so `~980px` desktop-on-mobile viewports render cleanly without horizontal page overflow.
+  - On `1100px–1280px` viewports with `@media (pointer: coarse)`, kept the top `.site-nav-links` visible and hid the fixed `.site-rail` (`padding-left: 0`) so touch devices in desktop mode retain full horizontal content width.
+- **Coarse Pointer Touch Ergonomics (`@media (pointer: coarse)`)**:
+  - Enforced `min-height: 44px` on `.tab-btn`, `.site-nav-link`, `.project-home-link`, `.theme-toggle-btn`, and `.fusion-tab-btn`, plus `touch-action: manipulation` across all interactive controls.
+  - Set `font-size: 16px` and `min-height: 44px` on `#cardSearch`, `#levelFilter`, `#cardSort`, `.search-box input`, and `.combo-filter-box input` to prevent iOS Safari auto-zoom in both mobile and "Request Desktop Website" modes.
+- **Automated Verification (`tests/themeToggle.test.js`)**:
+  - Added unit test verifying viewport meta tags and responsive CSS breakpoints across `index.html`, `fusion.html`, `styles.css`, and `fusion.css` (**15/15 Digimon tests passing**).
+
 ## Unreleased - GameFAQs Fusion Verification & Data Synchronization
 
 - **GameFAQs Basic & Special Fusion Verification (`basic-fusion`, `special-fusion`)**:
