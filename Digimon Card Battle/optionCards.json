@@ -203,8 +203,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/199_Dark_Lord_s_Cape.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 16,
+    "resultValue": 27
   },
   {
     "no": "200",
@@ -620,8 +620,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/217_Ice_Altar.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "218",
@@ -643,8 +643,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/218_Nature_Altar.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "219",
@@ -666,8 +666,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/219_Darkness_Altar.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "220",
@@ -689,8 +689,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/220_Rare_Altar.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "221",
@@ -737,8 +737,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/222_Mega_Def__Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 13
   },
   {
     "no": "223",
@@ -762,8 +762,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/223_Mega_Def__Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 13
   },
   {
     "no": "224",
@@ -787,8 +787,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/224_Mega_Def__Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 13
   },
   {
     "no": "225",
@@ -1437,8 +1437,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/252_Suka_s_Curse.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 4,
+    "resultValue": 7
   },
   {
     "no": "253",
@@ -1460,8 +1460,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/253_Cherrymon_s_Mist.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 17,
+    "resultValue": 32
   },
   {
     "no": "254",
@@ -1791,8 +1791,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/267_Attack_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 3
   },
   {
     "no": "268",
@@ -1816,8 +1816,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/268_Attack_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 3
   },
   {
     "no": "269",
@@ -1841,8 +1841,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/269_Attack_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 3
   },
   {
     "no": "270",
@@ -1866,8 +1866,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/270_Defense_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 2
   },
   {
     "no": "271",
@@ -1891,8 +1891,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/271_Defense_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 2
   },
   {
     "no": "272",
@@ -1916,8 +1916,8 @@
     ],
     "category": "Option",
     "localIcon": "assets/cards/272_Defense_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 2
   },
   {
     "no": "273",
@@ -2123,8 +2123,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/281_Digi-Sapphire.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "282",
@@ -2543,8 +2543,8 @@
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/299_Speed_Digivolve.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 6,
+    "resultValue": 14
   },
   {
     "no": "300",

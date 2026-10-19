@@ -23,11 +23,16 @@ This repository contains two independent static web apps:
    - Theme toggle scripts (`themeToggle.js`) load in `<head>` after the stylesheet to apply pre-paint themes without FOUC and bind a global `document.addEventListener('click', ...)` event delegation handler immediately.
    - Theme choices persist across four tiers: `game_guide_theme` (cross-guide key), local game key (`octo0_theme` / `digimon_codex_theme`), regex-corrected cookie `(?:^|;\\s*)`, and `window.name` (Firefox `file://` fallback).
    - Toggles compute the next theme deterministically from the live `document.documentElement.getAttribute('data-theme') === 'light'` state rather than cached storage.
+10. **Digimon fusion mechanics & GameFAQs data invariants**:
+    - **Color matrix (36 pairs)**: Determines result specialty from material colors (Red = Fire, Blue = Ice, Green = Nature, Black = Darkness, Yellow = Rare, Option = Option).
+    - **Special fusions (19 recipes)**: Predetermined card pairs (e.g. `Omnimon I + Paildramon => Imperialdramon`, `Garudamon + Silphymon => Valkyrimon`) that override standard math rules and execute in both directions.
+    - **Material & Result values**: Standard fusions require `materialValue(A) + materialValue(B) === target.resultValue` and matching matrix color. 273 cards have authoritative GameFAQs/workbook values; 28 cards are non-fusable (`?` for partner/armor cards, Sevens, and Rosemon's Lure/Download Digivolve); 18 cards have `Result = 0` (special results and gems).
+    - **Name aliases & search resolution**: Canonical database names map to GameFAQs spelling variants via `NAME_ALIASES` in `merge_fusion.py` and `SEARCH_ALIASES` in `fusion.js` (e.g. `Omnimon 1`, `Sylphymon`, `H-Kabuterimon`, `Diablomon`, `Orgemon`, `Monocromon`, `Braciomon`, `Gigidramon`, `WaruMonzaemon`, and disk cards 222-224, 267-272).
 
 ## Verification
-Run full repository checks from the root with `npm.cmd run check` (73 total tests passing: 11 Digimon, 62 Octopath).
+Run full repository checks from the root with `npm.cmd run check` (76 total tests passing: 14 Digimon, 62 Octopath).
 Individual suites can be run with:
-- `npm.cmd test --prefix "Digimon Card Battle"` (11 tests)
+- `npm.cmd test --prefix "Digimon Card Battle"` (14 tests)
 - `npm.cmd test --prefix "Octopath Traveler 0"` (62 tests)
 - `npm.cmd run typecheck --prefix "Octopath Traveler 0"` (6 apps checked, 0 errors)
 

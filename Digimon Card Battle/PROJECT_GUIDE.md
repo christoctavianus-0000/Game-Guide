@@ -47,7 +47,7 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 | `themeToggle.js` | Shared light/dark toggle with early `<head>` loading, document event delegation, multi-tier storage (`game_guide_theme`, `digimon_codex_theme`), cookie, and `window.name` fallback. |
 | `assets/cards/` | Card art named `<no>_<Name>.jpg`, referenced by `localCardIcon`. |
 | `assets/ui/` | Custom vector SVG UI icons: attack type icons (`circle.svg`, `triangle.svg`, `x.svg`), brand (`digivice.svg`), nav (`nav-cards.svg`, `nav-fusion.svg`), and specialty badges (`spec-*.svg`). |
-| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, and non-numeric value handling (5 tests). |
+| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, GameFAQs Phoenixmon/special fusions verification, search aliases, and non-numeric value handling (8 tests). |
 | `tests/dataIntegrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, `CARD_DATABASE`, and SVG icon asset existence (3 tests). |
 | `tests/themeToggle.test.js` | Unit test suite verifying theme initialization, document click delegation, and cross-page persistence (3 tests). |
 
@@ -64,7 +64,7 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 | Rare | 36 |
 | Option | 110 |
 
-Every card carries `materialValue` and `resultValue`. 64 cards have no fusion value in the workbook (story-only partners and many option cards) and are stored as `?`; 17 cards have `resultValue` `0` because they exist only as special-fusion results. The calculator treats both as "no standard fusion" rather than as zero, so they never appear as a wrong result. `FUSION_DATA` holds a 6x6 `fusion_table` and 19 `special_fusions` entries.
+Every card carries `materialValue` and `resultValue`. 28 cards have no fusion value in the workbook and GameFAQs guide (19 story partner and armor cards, 7 Sevens cards, Rosemon's Lure, and Download Digivolve) and are stored as `?`; 18 cards have `resultValue` `0` because they exist only as special-fusion results or non-fusable gems. The calculator treats both as "no standard fusion" rather than as zero, so they never appear as a wrong result. `FUSION_DATA` holds a 6x6 `fusion_table` and 19 `special_fusions` entries.
 
 ## Card Codex behavior
 
@@ -111,7 +111,7 @@ The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_
 ## Verification
 
 - Run `npm run check` at the repository root to validate both apps and check the generated Digimon data files stay in sync.
-- `npm test` (or `node --test tests/*.test.js`) runs all 11 Digimon unit tests: data integrity (category files, `allCards.json`, `CARD_DATABASE`), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, non-numeric value safeguards, and theme toggle responsiveness/cross-page persistence.
+- `npm test` (or `node --test tests/*.test.js`) runs all 14 Digimon unit tests: data integrity (category files, `allCards.json`, `CARD_DATABASE`), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, non-numeric value safeguards, GameFAQs guide verification (Phoenixmon & special fusions), search aliases, and theme toggle responsiveness/cross-page persistence.
 - `node --check app.js` and `node --check fusion.js` catch syntax errors.
 - Load both pages in a browser and confirm the console has no errors.
 - Spot-check fusion math: `Angemon` lists 200 combinations, `WarGreymon` lists 34, and `Agumon` + `Gabumon` (material 5 + 5 = 10, Red + Blue = Green) produces `MoriShellmon`.

@@ -180,8 +180,8 @@
     "supportIcons": [],
     "category": "Nature",
     "localIcon": "assets/cards/076_Silphymon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 16,
+    "resultValue": 30
   },
   {
     "no": "077",

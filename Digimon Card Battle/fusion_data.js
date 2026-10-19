@@ -50,7 +50,7 @@ window.FUSION_DATA = {
       "material": 18,
       "result": 35
     },
-    "pheonixmon": {
+    "phoenixmon": {
       "material": 17,
       "result": 34
     },
@@ -58,7 +58,7 @@ window.FUSION_DATA = {
       "material": 17,
       "result": 33
     },
-    "gigidramon": {
+    "gigadramon": {
       "material": 16,
       "result": 32
     },
@@ -78,13 +78,13 @@ window.FUSION_DATA = {
       "material": 14,
       "result": 28
     },
-    "meteormon": {
-      "material": 14,
-      "result": 27
-    },
     "vermilimon": {
       "material": 14,
       "result": 26
+    },
+    "meteormon": {
+      "material": 14,
+      "result": 27
     },
     "exveemon": {
       "material": 13,
@@ -106,7 +106,7 @@ window.FUSION_DATA = {
       "material": 11,
       "result": 21
     },
-    "monocromon": {
+    "monochromon": {
       "material": 10,
       "result": 20
     },
@@ -214,7 +214,7 @@ window.FUSION_DATA = {
       "material": 14,
       "result": 29
     },
-    "braciomon": {
+    "brachiomon": {
       "material": 14,
       "result": 28
     },
@@ -342,7 +342,7 @@ window.FUSION_DATA = {
       "material": 16,
       "result": 31
     },
-    "sylphymon": {
+    "silphymon": {
       "material": 16,
       "result": 30
     },
@@ -526,7 +526,7 @@ window.FUSION_DATA = {
       "material": 11,
       "result": 21
     },
-    "orgemon": {
+    "ogremon": {
       "material": 10,
       "result": 20
     },
@@ -726,6 +726,82 @@ window.FUSION_DATA = {
       "material": 2,
       "result": 4
     },
+    "flamedramon": {
+      "material": "?",
+      "result": "?"
+    },
+    "magnamon": {
+      "material": "?",
+      "result": "?"
+    },
+    "baronmon": {
+      "material": "?",
+      "result": "?"
+    },
+    "veemon": {
+      "material": "?",
+      "result": "?"
+    },
+    "submarimon": {
+      "material": "?",
+      "result": "?"
+    },
+    "quetzalmon": {
+      "material": "?",
+      "result": "?"
+    },
+    "tylomon": {
+      "material": "?",
+      "result": "?"
+    },
+    "halsemon": {
+      "material": "?",
+      "result": "?"
+    },
+    "pegasusmon": {
+      "material": "?",
+      "result": "?"
+    },
+    "nefertimon": {
+      "material": "?",
+      "result": "?"
+    },
+    "hawkmon": {
+      "material": "?",
+      "result": "?"
+    },
+    "patamon": {
+      "material": "?",
+      "result": "?"
+    },
+    "gatomon": {
+      "material": "?",
+      "result": "?"
+    },
+    "raidramon": {
+      "material": "?",
+      "result": "?"
+    },
+    "shadramon": {
+      "material": "?",
+      "result": "?"
+    },
+    "wormmon": {
+      "material": "?",
+      "result": "?"
+    },
+    "shurimon": {
+      "material": "?",
+      "result": "?"
+    },
+    "digmon": {
+      "material": "?",
+      "result": "?"
+    },
+    "armadillomon": {
+      "material": "?",
+      "result": "?"
+    },
     "golden banana": {
       "material": 18,
       "result": 35
@@ -758,7 +834,7 @@ window.FUSION_DATA = {
       "material": 16,
       "result": 28
     },
-    "dark lord cape": {
+    "dark lord's cape": {
       "material": 16,
       "result": 27
     },
@@ -830,19 +906,19 @@ window.FUSION_DATA = {
       "material": 11,
       "result": 15
     },
-    "ice alter": {
+    "ice altar": {
       "material": 11,
       "result": 15
     },
-    "nature alter": {
+    "nature altar": {
       "material": 11,
       "result": 15
     },
-    "darkness alter": {
+    "darkness altar": {
       "material": 11,
       "result": 15
     },
-    "rare alter": {
+    "rare altar": {
       "material": 11,
       "result": 15
     },
@@ -850,15 +926,15 @@ window.FUSION_DATA = {
       "material": 10,
       "result": 14
     },
-    "mega def. disk circle": {
+    "mega def. disk â—‹": {
       "material": 10,
       "result": 13
     },
-    "mega def. disk triangle": {
+    "mega def. disk â–³": {
       "material": 10,
       "result": 13
     },
-    "mega def. disk x": {
+    "mega def. disk ã—": {
       "material": 10,
       "result": 13
     },
@@ -970,11 +1046,11 @@ window.FUSION_DATA = {
       "material": 5,
       "result": 8
     },
-    "sukas curse": {
+    "suka's curse": {
       "material": 4,
       "result": 7
     },
-    "cherrymons mist": {
+    "cherrymon's mist": {
       "material": 17,
       "result": 32
     },
@@ -1030,27 +1106,27 @@ window.FUSION_DATA = {
       "material": 2,
       "result": 4
     },
-    "attack disk circle": {
+    "attack disk â—‹": {
       "material": 1,
       "result": 3
     },
-    "attack disk triangle": {
+    "attack disk â–³": {
       "material": 1,
       "result": 3
     },
-    "attack disk x": {
+    "attack disk ã—": {
       "material": 1,
       "result": 3
     },
-    "defense disk circle": {
+    "defense disk â—‹": {
       "material": 1,
       "result": 2
     },
-    "defense disk triangle": {
+    "defense disk â–³": {
       "material": 1,
       "result": 2
     },
-    "defense disk x": {
+    "defense disk ã—": {
       "material": 1,
       "result": 2
     },
@@ -1086,7 +1162,7 @@ window.FUSION_DATA = {
       "material": 18,
       "result": 0
     },
-    "digi-saphire": {
+    "digi-sapphire": {
       "material": 18,
       "result": 0
     },
@@ -1101,6 +1177,42 @@ window.FUSION_DATA = {
     "digi-turquoise": {
       "material": 18,
       "result": 0
+    },
+    "wild sevens": {
+      "material": "?",
+      "result": "?"
+    },
+    "holy sevens": {
+      "material": "?",
+      "result": "?"
+    },
+    "dark sevens": {
+      "material": "?",
+      "result": "?"
+    },
+    "grand sevens": {
+      "material": "?",
+      "result": "?"
+    },
+    "mystic sevens": {
+      "material": "?",
+      "result": "?"
+    },
+    "speed sevens": {
+      "material": "?",
+      "result": "?"
+    },
+    "reverse sevens": {
+      "material": "?",
+      "result": "?"
+    },
+    "rosemon's lure": {
+      "material": "?",
+      "result": "?"
+    },
+    "download digivolve": {
+      "material": "?",
+      "result": "?"
     },
     "armorcrush digivolve": {
       "material": 14,
@@ -1122,7 +1234,7 @@ window.FUSION_DATA = {
       "material": 4,
       "result": 14
     },
-    "speed-digivolve": {
+    "speed digivolve": {
       "material": 6,
       "result": 14
     },

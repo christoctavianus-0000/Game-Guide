@@ -2,6 +2,21 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - GameFAQs Fusion Verification & Data Synchronization
+
+- **GameFAQs Basic & Special Fusion Verification (`basic-fusion`, `special-fusion`)**:
+  - Re-verified all fusion calculations against Ephraim225's authoritative GameFAQs guides.
+  - **Color Matrix (36 pairs)**: Confirmed 100% exact match across all 6 specialties.
+  - **Special Fusions (19 recipes)**: Confirmed 100% exact match across all recipes in both forward and reverse orders. Added all 19 recipes to `FUSION_RULES.md`.
+  - **Material & Result Values (273 cards)**: Resolved 24 missing card mappings caused by typographical differences in the FAQ/workbook (e.g. `Pheonixmon` -> `Phoenixmon` [Mat 17, Res 34], `Silphymon`, `Monochromon`, `Brachiomon`, `Ogremon`, `Dark Lord's Cape`, `Ice Altar`, `Nature Altar`, `Darkness Altar`, `Rare Altar`, 9 Attack/Defense Disks, `Digi-Sapphire`, etc.).
+  - Exactly 273/273 cards from the GameFAQs guide now map to our database with 100% precision.
+  - Exactly 28 cards (19 story partner/armor digimon, 7 Sevens cards, Rosemon's Lure, Download Digivolve) retain `?` as documented non-fusable cards.
+  - Exactly 18 cards have Result Value 0 (special fusion results and gems).
+- **Search Alias Resolution (`fusion.js`)**:
+  - Added `SEARCH_ALIASES` to `getCardByName()` so searching guide variant names (`Omnimon 1`, `Omnimon 2`, `Sylphymon`, `H-Kabuterimon`, `Diablomon`, `Orgemon`, `Monocromon`, `Braciomon`, `Gigidramon`, `WaruMonzaemon`) automatically resolves to their canonical cards.
+- **Test Suite Expansion (`tests/fusion.test.js`)**:
+  - Expanded Digimon test suite to **14 tests** (covering all 19 special fusions in both directions, the GameFAQs Phoenixmon Result 34 example, search aliases, and non-fusable safeguards).
+
 ## Unreleased - Theme Toggle Reliability & Cross-Page Synchronization
 
 - **Immediate Click Responsiveness via Document Event Delegation (`themeToggle.js`)**:

@@ -22,8 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
     'Option': 'Option'
   };
 
+  const SEARCH_ALIASES = {
+    'omnimon 1': 'Omnimon I',
+    'omnimon 2': 'Omnimon II',
+    'sylphymon': 'Silphymon',
+    'h-kabuterimon': 'HerculesKabuterimon',
+    'diablomon': 'Diaboromon',
+    'orgemon': 'Ogremon',
+    'monocromon': 'Monochromon',
+    'braciomon': 'Brachiomon',
+    'gigidramon': 'Gigadramon',
+    'warumonzaemon': 'WaruMonzaemon'
+  };
+
   function getCardByName(name) {
-    return CARD_DATABASE.find(c => c.name.toLowerCase() === name.toLowerCase());
+    if (!name) return null;
+    const lower = name.trim().toLowerCase();
+    const resolvedName = SEARCH_ALIASES[lower] || lower;
+    return CARD_DATABASE.find(c => c.name.toLowerCase() === resolvedName.toLowerCase());
   }
 
   function escapeHtml(value) {

@@ -260,8 +260,8 @@
     ],
     "category": "Ice",
     "localIcon": "assets/cards/044_Brachiomon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 14,
+    "resultValue": 28
   },
   {
     "no": "045",

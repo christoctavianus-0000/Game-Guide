@@ -88,8 +88,8 @@
     "supportIcons": [],
     "category": "Fire",
     "localIcon": "assets/cards/003_Phoenixmon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 17,
+    "resultValue": 34
   },
   {
     "no": "004",
@@ -134,8 +134,8 @@
     "supportIcons": [],
     "category": "Fire",
     "localIcon": "assets/cards/005_Gigadramon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 16,
+    "resultValue": 32
   },
   {
     "no": "006",
@@ -420,8 +420,8 @@
     "supportIcons": [],
     "category": "Fire",
     "localIcon": "assets/cards/017_Monochromon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 20
   },
   {
     "no": "018",

@@ -31,14 +31,31 @@ Determines the output color/specialty of a fusion based on the colors of the two
 ### Sheet 3: Special Fusions
 - Exceptions and specific card combinations that break standard rules (Material/Result values or color matrix).
 
-| Card 1 | Card 2 | Result |
-|--------|--------|--------|
-| Omnimon I | Paildramon | Imperialdramon |
-| Garudamon | Sylphymon | Valkyrimon |
-| Zudomon | Shakkoumon | Vikemon |
-| Angemon | Ankylomon | Shakkoumon |
-| Aquilamon | R-Gatomon | Sylphymon |
-| Exveemon | Stingmon | Paildramon |
-| H-Kabuterimon | Megadramon | GranKuwagamon |
-| Infermon | Digitamamon | Diablomon |
-| MegaSeadramon | WaruSeadramon | MetalSeadramon |
+| Card 1 | Card 2 | Result | In-Game Database Names |
+|--------|--------|--------|------------------------|
+| Omnimon 1 | Paildramon | Imperialdramon | Omnimon I + Paildramon => Imperialdramon |
+| Garudamon | Sylphymon | Valkyrimon | Garudamon + Silphymon => Valkyrimon |
+| Zudomon | Shakkoumon | Vikemon | Zudomon + Shakkoumon => Vikemon |
+| Angemon | Ankylomon | Shakkoumon | Angemon + Ankylomon => Shakkoumon |
+| Aquilamon | R-Gatomon | Sylphymon | Aquilamon + R-Gatomon => Silphymon |
+| Exveemon | Stingmon | Paildramon | ExVeemon + Stingmon => Paildramon |
+| H-Kabuterimon | Megadramon | GranKuwagamon | HerculesKabuterimon + Megadramon => GranKuwagamon |
+| Infermon | Digitamamon | Diablomon | Infermon + Digitamamon => Diaboromon |
+| MegaSeadramon | WaruSeadramon | MetalSeadramon | MegaSeadramon + WaruSeadramon => MetalSeadramon |
+| MagnaAngemon | Angewomon | Magnadramon | MagnaAngemon + Angewomon => Magnadramon |
+| MagnaAngemon | Jijimon | Seraphimon | MagnaAngemon + Jijimon => Seraphimon |
+| Veedramon | Phoenixmon | AeroVeedramon | Veedramon + Phoenixmon => AeroVeedramon |
+| Lillymon | Myotismon | Rosemon | Lillymon + Myotismon => Rosemon |
+| Myotismon | LadyDevimon | VenomMyotismon | Myotismon + LadyDevimon => VenomMyotismon |
+| Vademon | MarineAngemon | SuperStarmon | Vademon + MarineAngemon => SuperStarmon |
+| Etemon | Andromon | MetalEtemon | Etemon + Andromon => MetalEtemon |
+| Monzaemon | Warumonzaemon | Puppetmon | Monzaemon + WaruMonzaemon => Puppetmon |
+| WarGreymon | MetalGarurumon | Omnimon 1 | WarGreymon + MetalGarurumon => Omnimon I |
+| RealMetalGreymon | WereGarurumon | Omnimon 2 | RealMetalGreymon + WereGarurumon => Omnimon II |
+
+### Non-Fusable & Exception Cards (`Material = ?, Result = ?`)
+- **Partner & Armor Digimon (19 cards)**: Cannot be fused or used as fusion materials in standard fusion (Flamedramon, Magnamon, Baronmon, Veemon, Submarimon, Quetzalmon, Tylomon, Halsemon, Pegasusmon, Nefertimon, Hawkmon, Patamon, Gatomon, Raidramon, Shadramon, Wormmon, Shurimon, Digmon, Armadillomon).
+- **The "Sevens" Cards (7 cards)**: Cannot be fused (Wild Sevens, Holy Sevens, Dark Sevens, Grand Sevens, Mystic Sevens, Speed Sevens, Reverse Sevens).
+- **Special Option Cards (2 cards)**: Rosemon's Lure and Download Digivolve.
+- **Special-Only Result Cards**: Cards like Imperialdramon, Vikemon, Valkyrimon, Seraphimon, Magnadramon, Rosemon, Apokarimon, GranKuwagamon, Diaboromon, Puppetmon, and Omnimon II have `Material = ?, Result = ?` because they cannot be made through standard arithmetic fusion.
+- **18 Cards with `Result = 0`**: Special fusion results that can be used as fusion materials (`Omnimon I`, `MetalSeadramon`, `AeroVeedramon`, `SuperStarmon`, `MetalEtemon`, `Fake Sevens`, and 12 `Digi-*` gems including `Digi-Sapphire`).

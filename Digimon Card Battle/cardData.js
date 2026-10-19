@@ -88,8 +88,8 @@ window.CARD_DATABASE = [
     "supportIcons": [],
     "category": "Fire",
     "localIcon": "assets/cards/003_Phoenixmon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 17,
+    "resultValue": 34
   },
   {
     "no": "004",
@@ -134,8 +134,8 @@ window.CARD_DATABASE = [
     "supportIcons": [],
     "category": "Fire",
     "localIcon": "assets/cards/005_Gigadramon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 16,
+    "resultValue": 32
   },
   {
     "no": "006",
@@ -420,8 +420,8 @@ window.CARD_DATABASE = [
     "supportIcons": [],
     "category": "Fire",
     "localIcon": "assets/cards/017_Monochromon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 20
   },
   {
     "no": "018",
@@ -1057,8 +1057,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Ice",
     "localIcon": "assets/cards/044_Brachiomon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 14,
+    "resultValue": 28
   },
   {
     "no": "045",
@@ -1820,8 +1820,8 @@ window.CARD_DATABASE = [
     "supportIcons": [],
     "category": "Nature",
     "localIcon": "assets/cards/076_Silphymon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 16,
+    "resultValue": 30
   },
   {
     "no": "077",
@@ -2862,8 +2862,8 @@ window.CARD_DATABASE = [
     "supportIcons": [],
     "category": "Darkness",
     "localIcon": "assets/cards/122_Ogremon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 20
   },
   {
     "no": "123",
@@ -4657,8 +4657,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/199_Dark_Lord_s_Cape.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 16,
+    "resultValue": 27
   },
   {
     "no": "200",
@@ -5074,8 +5074,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/217_Ice_Altar.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "218",
@@ -5097,8 +5097,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/218_Nature_Altar.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "219",
@@ -5120,8 +5120,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/219_Darkness_Altar.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "220",
@@ -5143,8 +5143,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/220_Rare_Altar.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 11,
+    "resultValue": 15
   },
   {
     "no": "221",
@@ -5191,8 +5191,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/222_Mega_Def__Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 13
   },
   {
     "no": "223",
@@ -5216,8 +5216,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/223_Mega_Def__Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 13
   },
   {
     "no": "224",
@@ -5241,8 +5241,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/224_Mega_Def__Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 13
   },
   {
     "no": "225",
@@ -5891,8 +5891,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/252_Suka_s_Curse.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 4,
+    "resultValue": 7
   },
   {
     "no": "253",
@@ -5914,8 +5914,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/253_Cherrymon_s_Mist.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 17,
+    "resultValue": 32
   },
   {
     "no": "254",
@@ -6245,8 +6245,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/267_Attack_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 3
   },
   {
     "no": "268",
@@ -6270,8 +6270,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/268_Attack_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 3
   },
   {
     "no": "269",
@@ -6295,8 +6295,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/269_Attack_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 3
   },
   {
     "no": "270",
@@ -6320,8 +6320,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/270_Defense_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 2
   },
   {
     "no": "271",
@@ -6345,8 +6345,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/271_Defense_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 2
   },
   {
     "no": "272",
@@ -6370,8 +6370,8 @@ window.CARD_DATABASE = [
     ],
     "category": "Option",
     "localIcon": "assets/cards/272_Defense_Disk__.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 1,
+    "resultValue": 2
   },
   {
     "no": "273",
@@ -6577,8 +6577,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/281_Digi-Sapphire.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 18,
+    "resultValue": 0
   },
   {
     "no": "282",
@@ -6997,8 +6997,8 @@ window.CARD_DATABASE = [
     "effectIcons": [],
     "category": "Option",
     "localIcon": "assets/cards/299_Speed_Digivolve.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 6,
+    "resultValue": 14
   },
   {
     "no": "300",

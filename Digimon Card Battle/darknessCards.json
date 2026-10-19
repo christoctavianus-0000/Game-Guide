@@ -442,8 +442,8 @@
     "supportIcons": [],
     "category": "Darkness",
     "localIcon": "assets/cards/122_Ogremon.jpg",
-    "materialValue": "?",
-    "resultValue": "?"
+    "materialValue": 10,
+    "resultValue": 20
   },
   {
     "no": "123",

@@ -31,13 +31,53 @@ files = [
     'rareCards.json', 'partnerCards.json', 'optionCards.json'
 ]
 
+# Map canonical in-game card names to spelling variants in the GameFAQs guide / workbook
+NAME_ALIASES = {
+    'phoenixmon': 'pheonixmon',
+    'gigadramon': 'gigidramon',
+    'monochromon': 'monocromon',
+    'brachiomon': 'braciomon',
+    'silphymon': 'sylphymon',
+    'ogremon': 'orgemon',
+    "dark lord's cape": 'dark lord cape',
+    'ice altar': 'ice alter',
+    'nature altar': 'nature alter',
+    'darkness altar': 'darkness alter',
+    'rare altar': 'rare alter',
+    'mega def. disk ○': 'mega def. disk circle',
+    'mega def. disk △': 'mega def. disk triangle',
+    'mega def. disk ×': 'mega def. disk x',
+    "suka's curse": 'sukas curse',
+    "cherrymon's mist": 'cherrymons mist',
+    'digi-sapphire': 'digi-saphire',
+    'speed digivolve': 'speed-digivolve',
+}
+
+# Map disk cards by card number to avoid character encoding mismatches
+CARD_NO_ALIASES = {
+    '222': 'mega def. disk circle',
+    '223': 'mega def. disk triangle',
+    '224': 'mega def. disk x',
+    '267': 'attack disk circle',
+    '268': 'attack disk triangle',
+    '269': 'attack disk x',
+    '270': 'defense disk circle',
+    '271': 'defense disk triangle',
+    '272': 'defense disk x',
+}
+
 for fname in files:
     path = os.path.join(BASE, fname)
     with open(path, 'r', encoding='utf-8') as f:
         cards = json.load(f)
     updated = 0
     for card in cards:
-        key = card.get('name', '').strip().lower()
+        c_no = card.get('no')
+        raw_key = card.get('name', '').strip().lower()
+        if c_no in CARD_NO_ALIASES:
+            key = CARD_NO_ALIASES[c_no]
+        else:
+            key = NAME_ALIASES.get(raw_key, raw_key)
         if key in fusion:
             mat, res = fusion[key]
             card['materialValue'] = mat
