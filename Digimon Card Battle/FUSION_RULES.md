@@ -64,3 +64,10 @@ Determines the output color/specialty of a fusion based on the colors of the two
 
 The game never gives a card used as material. If the only card at the summed Result Value (in the matrix color) is one of the materials, the next higher Result Value in that color is produced (e.g. Leomon + Mutant Digivolve => Togemon).
 
+## Special Fusion Directory (Fusion Codex Tab 3)
+
+The Fusion Codex (`fusion.html`) provides a dedicated 3rd tab listing all 19 special fusions:
+- **Left-to-Right Equation Layout**: `Material 1 + Material 2 = Result Card (Level, Specialty, Action)`.
+- **Search & Filter**: Real-time filtering by result card, material cards, or specialty.
+- **Cross-Tab Links**: Result card links to Tab 1; material cards / "Fuse ➔" link to Tab 2.
+- **Direct Link**: `fusion.html?tab=special`.

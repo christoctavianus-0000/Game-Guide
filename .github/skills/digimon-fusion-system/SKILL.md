@@ -40,7 +40,10 @@ A standard combination between Material Card A and Material Card B produces Targ
 
 *(Note: When multiple option or Digimon cards share the same Result Value and Color, the in-game shop selects one at random. The Fusion Codex correctly lists all valid matches).*
 
-### C. Special Fusions (19 recipes)
+### C. No-Self-Material Fusion Rule
+The game never returns a card that was used as a material. If the only card at the summed Result Value (in the matrix color) is one of the materials, the result bumps to the next higher Result Value in that color (`Leomon + Mutant Digivolve` => `Togemon`, 1 higher than Leomon). Implemented in `resolveStandardFusion()` in `fusion.js` and shared by both `findResultsFromMaterials` and `findCombinations` (which runs a forward simulation so reverse lookups list bumped recipes and never list a target as its own material).
+
+### D. Special Fusions (19 recipes)
 Special fusions completely override standard math and color rules. They are exact, order-independent pairs:
 1. `Omnimon I + Paildramon => Imperialdramon`
 2. `Garudamon + Silphymon => Valkyrimon`
@@ -64,7 +67,20 @@ Special fusions completely override standard math and color rules. They are exac
 
 ---
 
-## 2. Dataset Invariants (301 Cards)
+## 2. Fusion Codex UI Architecture & Mode Tabs
+
+The Fusion Codex (`fusion.html`, `fusion.js`, `fusion.css`) provides 3 operational modes:
+1. **Tab 1 ("Find Recipe (By Result)")**: Search any card to list all valid material pairs that fuse into it (both standard math and special fusions).
+2. **Tab 2 ("Fuse 2 Cards (By Materials)")**: Select two material cards to calculate and preview the resulting Digimon card (with forward standard simulation and special overrides).
+3. **Tab 3 ("Special Fusion")**: Complete directory listing of all 19 predetermined special fusion recipes.
+   - **Formula Layout**: Displays materials on the left and the resulting card on the right: `Material 1` `+` `Material 2` `=` `Result Card` `Level` `Specialty` `Action (Fuse ➔)`.
+   - **Real-Time Filter**: Filter by result name, material name, or specialty (`#specialSearch`).
+   - **Cross-Tab Linking**: Clicking result jumps to Tab 1 to see all recipes; clicking materials or "Fuse ➔" jumps to Tab 2 to test fusion.
+   - **Deep Linking**: `fusion.html?tab=special` activates Tab 3 on page load.
+
+---
+
+## 3. Dataset Invariants (301 Cards)
 
 - **273 Authoritative Cards**: Exactly match the 273 rows of GameFAQs Table 1 and `Digimon Card Battle - Fusion.xlsx`.
 - **28 Non-Fusable Exception Cards (`materialValue: '?'`, `resultValue: '?'`)**:
@@ -76,7 +92,7 @@ Special fusions completely override standard math and color rules. They are exac
 
 ---
 
-## 3. Name Normalization & Aliases
+## 4. Name Normalization & Aliases
 
 When parsing source files or processing user search queries, always resolve spelling differences between GameFAQs and official in-game card names:
 
@@ -108,15 +124,10 @@ When parsing source files or processing user search queries, always resolve spel
 
 ---
 
-## 4. Verification Checklist
+## 5. Verification Checklist
 
 When updating fusion data or algorithms:
 - [ ] Run `python merge_fusion.py` and verify all 7 category files match expected counts (fire 34/34, ice 35/35, nature 34/34, darkness 36/36, rare 33/33, option 101/110, partner 0/19).
 - [ ] Run `node download_all_assets.js` to synchronize `allCards.json` and `cardData.js`.
-- [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (14/14).
-- [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 76/76 tests passing.
-
-## No-self-material rule
-
-The game never returns a material card. If the summed Result Value matches only a material, bump to the next higher Result Value in the same color (Leomon + Mutant Digivolve => Togemon). Logic lives in `resolveStandardFusion()` (fusion.js); both fusion tabs use it.
-
+- [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (20/20).
+- [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 83/83 tests passing.
