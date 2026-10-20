@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/'/g, '&#39;');
   }
 
-
   let resultPoolCache = null;
   function getResultPool(color) {
     if (!resultPoolCache) {
@@ -95,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function findCombinations(targetCard) {
     const combos = [];
     const targetName = targetCard.name.toLowerCase();
-    const targetColor = SPEC_TO_COLOR[targetCard.specialty];
     const targetResultVal = parseInt(targetCard.resultValue);
 
     // 1. Special Fusions
@@ -335,7 +333,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function attachSortListeners() {
     const headers = document.querySelectorAll('.fusion-combos-table th.sortable');
-    // currentSort already declared in outer scope
 
     function updateIndicators() {
       headers.forEach(h => {
@@ -446,6 +443,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Handle direct tab deep links: fusion.html?tab=special or ?tab=materials
+  const tabParam = params.get('tab');
+  if (tabParam === 'special') {
+    const specialTabBtn = document.getElementById('tab-btn-special');
+    if (specialTabBtn) specialTabBtn.click();
+  } else if (tabParam === 'materials') {
+    const matTabBtn = document.getElementById('tab-btn-materials');
+    if (matTabBtn) matTabBtn.click();
+  }
 
   // --- Tab 2: Predict Result from 2 Materials ---
   const mat1Input = document.getElementById('mat1Search');
@@ -635,13 +642,150 @@ document.addEventListener('DOMContentLoaded', () => {
     mat2Input.addEventListener('change', renderMaterialResults);
   }
 
+  // --- Tab 3: Special Fusion List ---
+  const specialSearch = document.getElementById('specialSearch');
+  const specialFusionContainer = document.getElementById('specialFusionContainer');
+
+  function getAllSpecialFusions() {
+    return (FUSION_DATA.special_fusions || []).map(sf => ({
+      card1: sf.card1,
+      card2: sf.card2,
+      result: sf.result,
+      resultCard: getCardByName(sf.result),
+      c1: getCardByName(sf.card1),
+      c2: getCardByName(sf.card2)
+    }));
+  }
+
+  function renderSpecialFusions(filterQuery = '') {
+    if (!specialFusionContainer) return;
+    const q = (filterQuery || '').trim().toLowerCase();
+    const list = FUSION_DATA.special_fusions || [];
+
+    const filtered = list.filter(recipe => {
+      if (!q) return true;
+      const resCard = getCardByName(recipe.result);
+      const c1 = getCardByName(recipe.card1);
+      const c2 = getCardByName(recipe.card2);
+      return recipe.result.toLowerCase().includes(q) ||
+        recipe.card1.toLowerCase().includes(q) ||
+        recipe.card2.toLowerCase().includes(q) ||
+        (resCard?.specialty && resCard.specialty.toLowerCase().includes(q)) ||
+        (c1?.specialty && c1.specialty.toLowerCase().includes(q)) ||
+        (c2?.specialty && c2.specialty.toLowerCase().includes(q));
+    });
+
+    if (filtered.length === 0) {
+      specialFusionContainer.innerHTML = `
+        <div class="empty-state">
+          <div class="icon"><img src="assets/ui/digivice.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
+          <h3>No special fusions found</h3>
+          <p>No recipe matching "${escapeHtml(filterQuery)}" was found.</p>
+        </div>
+      `;
+      return;
+    }
+
+    const html = `
+      <div class="combinations-section">
+        <div class="combinations-header-row">
+          <h3>All Special Fusions <span class="count">${filtered.length}</span></h3>
+        </div>
+        <div class="combinations-table-wrap">
+          <table class="card-table fusion-combos-table special-fusions-table">
+            <thead>
+              <tr>
+                <th>Result Card</th>
+                <th>Level</th>
+                <th>Specialty</th>
+                <th>Material 1</th>
+                <th class="plus-cell">+</th>
+                <th>Material 2</th>
+                <th style="text-align: center;">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${filtered.map(recipe => {
+                const resCard = getCardByName(recipe.result);
+                const c1 = getCardByName(recipe.card1);
+                const c2 = getCardByName(recipe.card2);
+                const resSpec = resCard ? resCard.specialty : 'Rare';
+                const resLevel = resCard ? resCard.level : '-';
+                const specClass = `spec-${(resSpec || 'option').toLowerCase()}`;
+
+                const resIcon = resCard?.localIcon || 'assets/icons/no-image.png';
+                const c1Icon = c1?.localIcon || 'assets/icons/no-image.png';
+                const c2Icon = c2?.localIcon || 'assets/icons/no-image.png';
+
+                return `
+                  <tr class="combo-row">
+                    <td>
+                      <div class="combo-cell clickable-result" data-result="${escapeHtml(recipe.result)}" style="cursor: pointer;" title="Click to view all recipes for ${escapeHtml(recipe.result)} in Tab 1">
+                        <img src="${resIcon}" alt="${escapeHtml(recipe.result)}" onerror="this.style.display='none'" />
+                        <span class="combo-name">${escapeHtml(recipe.result)}</span>
+                      </div>
+                    </td>
+                    <td><span class="level-badge">${escapeHtml(resLevel)}</span></td>
+                    <td><span class="spec-tag ${specClass}">${escapeHtml(resSpec)}</span></td>
+                    <td>
+                      <div class="combo-cell clickable-mat" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" style="cursor: pointer;" title="Click to test fusion in Materials tab">
+                        <img src="${c1Icon}" alt="${escapeHtml(recipe.card1)}" onerror="this.style.display='none'" />
+                        <span class="combo-name">${escapeHtml(recipe.card1)}</span>
+                      </div>
+                    </td>
+                    <td class="plus-cell">+</td>
+                    <td>
+                      <div class="combo-cell clickable-mat" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" style="cursor: pointer;" title="Click to test fusion in Materials tab">
+                        <img src="${c2Icon}" alt="${escapeHtml(recipe.card2)}" onerror="this.style.display='none'" />
+                        <span class="combo-name">${escapeHtml(recipe.card2)}</span>
+                      </div>
+                    </td>
+                    <td style="text-align: center;">
+                      <button type="button" class="action-btn fuse-btn" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" title="Fuse ${escapeHtml(recipe.card1)} + ${escapeHtml(recipe.card2)} in Materials tab">
+                        Fuse ➔
+                      </button>
+                    </td>
+                  </tr>
+                `;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+
+    specialFusionContainer.innerHTML = html;
+
+    specialFusionContainer.querySelectorAll('.clickable-result').forEach(el => {
+      el.addEventListener('click', () => {
+        switchToTargetTab(el.dataset.result);
+      });
+    });
+
+    specialFusionContainer.querySelectorAll('.clickable-mat, .fuse-btn').forEach(el => {
+      el.addEventListener('click', () => {
+        switchToMaterialsTab(el.dataset.c1, el.dataset.c2);
+      });
+    });
+  }
+
+  if (specialSearch) {
+    specialSearch.addEventListener('input', (e) => {
+      renderSpecialFusions(e.target.value);
+    });
+  }
+
+  // Initial render of special fusions
+  renderSpecialFusions();
+
   if (typeof window !== 'undefined') {
     window.DigimonFusion = {
       findCombinations,
       findResultsFromMaterials,
+      getAllSpecialFusions,
+      renderSpecialFusions,
       SPEC_TO_COLOR,
       getCardByName
     };
   }
 });
-

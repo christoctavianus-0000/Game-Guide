@@ -2,6 +2,17 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - Special Fusion Directory Tab
+
+- Added a 3rd tab to `fusion.html` titled **"Special Fusion"** (`#tab-btn-special`, `#tab-special-panel`) that displays the complete list of all 19 predetermined special fusion recipes in Digimon Digital Card Battle.
+- **Search & Filter**: Includes real-time filter input (`#specialSearch`) to quickly filter combinations by result name, material card names, or specialties.
+- **Cross-Tab Interactivity**:
+  - Clicking on a result card navigates to Tab 1 ("Find Recipe") with recipes automatically populated.
+  - Clicking either material card or the dedicated "Fuse ➔" button switches to Tab 2 ("Fuse 2 Cards") with both materials selected and the predicted fusion calculated immediately.
+- **Deep Linking**: Supports `?tab=special` to open the Special Fusion tab directly on load.
+- **Responsive & Touch Accessibility**: Mobile coarse pointer support (`@media (pointer: coarse)`) with touch-friendly tap targets (`min-height: 40px`, `touch-action: manipulation`).
+- **Test Suite Expansion**: Added unit tests in `tests/fusion.test.js` validating markup, `getAllSpecialFusions()` resolution of all 19 pairs, and real-time filtering (Digimon test suite now **20/20 passing**, total repository suite **83/83 passing**).
+
 ## Unreleased - No-Self-Material Fusion Rule
 
 - The game never gives a card that was used as a material. When the only card at the summed Result Value (in the matrix color) is one of the materials, the result bumps to the next higher Result Value in that color (`Leomon + Mutant Digivolve` => `Togemon`, 1 higher than Leomon).

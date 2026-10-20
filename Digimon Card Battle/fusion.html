@@ -78,6 +78,10 @@
           <span class="tab-icon" aria-hidden="true"><img src="assets/ui/nav-fusion.svg" alt="" width="18" height="18" /></span>
           <span>Fuse 2 Cards (By Materials)</span>
         </button>
+        <button type="button" class="fusion-tab-btn" role="tab" id="tab-btn-special" aria-selected="false" aria-controls="tab-special-panel" data-tab="special">
+          <span class="tab-icon" aria-hidden="true"><img src="assets/ui/spec-rare.svg" alt="" width="18" height="18" /></span>
+          <span>Special Fusion</span>
+        </button>
       </div>
 
       <!-- Tab 1: Find Recipe for a Target Card -->
@@ -145,6 +149,21 @@
             <h3>Select two cards above</h3>
             <p>Pick Material Card 1 and Material Card 2 to view the fusion result.</p>
           </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Special Fusion List -->
+      <div id="tab-special-panel" class="fusion-tab-panel" role="tabpanel" aria-labelledby="tab-btn-special" hidden>
+        <div class="fusion-search">
+          <h2>Special Fusions</h2>
+          <p>All 19 predetermined special fusion recipes. These legendary combinations override standard math and color matrix rules.</p>
+          <div class="search-box">
+            <input type="text" id="specialSearch" placeholder="Filter special fusions by result or material name..." aria-label="Filter special fusions" autocomplete="off" />
+          </div>
+        </div>
+
+        <div id="specialFusionContainer">
+          <!-- Populated by fusion.js -->
         </div>
       </div>
     </main>

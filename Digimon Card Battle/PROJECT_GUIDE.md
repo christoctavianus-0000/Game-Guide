@@ -32,9 +32,9 @@ Rules combine to decide whether a pair of cards produces a target.
 | `index.html` | Card Codex shell: shared codex navigation, compact header, sortable card table, search, theme toggle. |
 | `app.js` | Card Codex state: filtering, sorting, table rendering, empty states, icon-token markup. |
 | `styles.css` | Shared visual system for both pages: nav, header, tables, badges, responsive rules. |
-| `fusion.html` | Fusion Codex shell: mode tabs, Tab 1 target search, Tab 2 material picker and previews. |
-| `fusion.js` | All fusion logic: combination search, material prediction, sorting, filtering, tab switching, deep links, autocomplete. |
-| `fusion.css` | Fusion-only styles: tab strip, picker grid, result card stats, compact combination table. |
+| `fusion.html` | Fusion Codex shell: mode tabs, Tab 1 target search, Tab 2 material picker and previews, Tab 3 special fusions directory. |
+| `fusion.js` | All fusion logic: combination search, material prediction, special fusions directory, sorting, filtering, tab switching, deep links, autocomplete. |
+| `fusion.css` | Fusion-only styles: tab strip, picker grid, result card stats, compact combination table, special fusions table. |
 | `cardData.js` | Browser-ready generated data: declares global `CARD_DATABASE` (301 cards). Loaded by both pages. |
 | `fusion_data.js` | Browser-ready generated data: declares global `FUSION_DATA`. Loaded by `fusion.html` only. |
 | `fusion_data.json` | Same fusion data in JSON form, useful for scripts or inspection. |
@@ -49,7 +49,7 @@ Rules combine to decide whether a pair of cards produces a target.
 | `themeToggle.js` | Shared light/dark toggle with early `<head>` loading, document event delegation, multi-tier storage (`game_guide_theme`, `digimon_codex_theme`), cookie, and `window.name` fallback. |
 | `assets/cards/` | Card art named `<no>_<Name>.jpg`, referenced by `localCardIcon`. |
 | `assets/ui/` | Custom vector SVG UI icons: attack type icons (`circle.svg`, `triangle.svg`, `x.svg`), brand (`digivice.svg`), nav (`nav-cards.svg`, `nav-fusion.svg`), and specialty badges (`spec-*.svg`). |
-| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, GameFAQs Phoenixmon/special fusions verification, search aliases, and non-numeric value handling (10 tests). |
+| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, GameFAQs Phoenixmon/special fusions verification, search aliases, non-numeric value handling, and Special Fusion tab directory (13 tests). |
 | `tests/dataIntegrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, `CARD_DATABASE`, and SVG icon asset existence (3 tests). |
 | `tests/themeToggle.test.js` | Unit test suite verifying theme initialization, document click delegation, cross-page persistence, and mobile + desktop-on-mobile responsive CSS rules (4 tests). |
 
@@ -80,7 +80,8 @@ Every card carries `materialValue` and `resultValue`. 28 cards have no fusion va
 
 - **Tab 1, Find Recipe (By Result).** Type a card name to list every pair that fuses into it. Suggestions come from a `<datalist>` of all card names. Rows sort by any column (default Material 1 ascending) and filter by either material name. The list is not height-restricted, so long results scroll with the page.
 - **Tab 2, Fuse 2 Cards (By Materials).** Choose Material 1 and Material 2 to see each card they can produce, with the computed sum and result color shown.
-- Cross-navigation: a Tab 1 row opens Tab 2 with both materials filled; a Tab 2 result card opens Tab 1 with that card searched.
+- **Tab 3, Special Fusion.** Browse all 19 predetermined special fusion recipes with real-time text filtering (`#specialSearch`) by result, material, or specialty. Clicking a result navigates to Tab 1 with recipes loaded; clicking materials or the "Fuse ➔" button switches to Tab 2 to predict the fusion result immediately.
+- Cross-navigation: a Tab 1 row opens Tab 2 with both materials filled; a Tab 2 result card opens Tab 1 with that card searched; Tab 3 result cards open Tab 1 and Tab 3 materials open Tab 2.
 - The result card repeats the full stat block: level, specialty, HP, DP, +P, each attack, support effect, material value, and result value.
 
 ## Data extraction rules
@@ -113,8 +114,8 @@ The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_
 ## Verification
 
 - Run `npm run check` at the repository root to validate both apps and check the generated Digimon data files stay in sync.
-- `npm test` (or `node --test tests/*.test.js`) runs all 14 Digimon unit tests: data integrity (category files, `allCards.json`, `CARD_DATABASE`), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, non-numeric value safeguards, GameFAQs guide verification (Phoenixmon & special fusions), search aliases, and theme toggle responsiveness/cross-page persistence.
+- `npm test` (or `node --test tests/*.test.js`) runs all 20 Digimon unit tests: data integrity (category files, `allCards.json`, `CARD_DATABASE`), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, non-numeric value safeguards, GameFAQs guide verification (Phoenixmon & special fusions), search aliases, theme toggle responsiveness/cross-page persistence, and Special Fusion tab directory/filtering.
 - `node --check app.js` and `node --check fusion.js` catch syntax errors.
 - Load both pages in a browser and confirm the console has no errors.
 - Spot-check fusion math: `Angemon` lists 200 combinations, `WarGreymon` lists 34, and `Agumon` + `Gabumon` (material 5 + 5 = 10, Red + Blue = Green) produces `MoriShellmon`.
-- Confirm deep links work: clicking a name in the Card Codex opens the matching Fusion Codex result.
+- Confirm deep links work: clicking a name in the Card Codex opens the matching Fusion Codex result; `fusion.html?tab=special` opens the Special Fusion tab directly.

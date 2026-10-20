@@ -605,6 +605,53 @@
   text-decoration: underline;
 }
 
+/* Special Fusion & Interactive Cells */
+.fusion-combos-table .clickable-result {
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.fusion-combos-table .clickable-result:hover .combo-name {
+  color: var(--text-accent);
+  text-decoration: underline;
+}
+
+.fusion-combos-table .clickable-mat {
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 2px 4px;
+  transition: var(--transition-fast);
+}
+
+.fusion-combos-table .clickable-mat:hover {
+  background: var(--bg-surface-hover);
+}
+
+.fusion-combos-table .clickable-mat:hover .combo-name {
+  color: var(--text-accent);
+  text-decoration: underline;
+}
+
+.action-btn.fuse-btn {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--text-accent);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.action-btn.fuse-btn:hover {
+  background: var(--border-neon);
+  color: #0b1120;
+  box-shadow: 0 0 10px var(--border-neon-glow);
+}
+
 /* Empty State */
 .empty-state {
   text-align: center;
@@ -671,12 +718,21 @@
     min-height: 40px;
     padding: 0.45rem 0.75rem;
   }
+  .action-btn.fuse-btn {
+    min-height: 40px;
+    padding: 0.45rem 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+  }
   .fusion-combos-table th,
   .fusion-combos-table td {
     padding: 0.65rem 0.75rem;
   }
   .fusion-combos-table tr.clickable-combo,
-  .fusion-combos-table tr.clickable-result {
+  .fusion-combos-table tr.clickable-result,
+  .fusion-combos-table .clickable-mat {
     touch-action: manipulation;
   }
   .combinations-table-wrap {

@@ -8,13 +8,15 @@ const vm = require('node:vm');
 
 const ROOT = path.resolve(__dirname, '..');
 
-function loadFusionModule() {
+function loadFusionModule(outContext = {}) {
   const cardDataSrc = fs.readFileSync(path.join(ROOT, 'cardData.js'), 'utf8');
   const fusionDataSrc = fs.readFileSync(path.join(ROOT, 'fusion_data.js'), 'utf8');
   const fusionSrc = fs.readFileSync(path.join(ROOT, 'fusion.js'), 'utf8');
 
+  const elements = {};
   // Minimal DOM stub for DOMContentLoaded initialization
-  const mockElement = () => ({
+  const mockElement = (id = '') => ({
+    id,
     value: '',
     textContent: '',
     innerHTML: '',
@@ -41,7 +43,10 @@ function loadFusionModule() {
       addEventListener(type, fn) {
         if (type === 'DOMContentLoaded') domListeners.push(fn);
       },
-      getElementById() { return mockElement(); },
+      getElementById(id) {
+        if (!elements[id]) elements[id] = mockElement(id);
+        return elements[id];
+      },
       querySelectorAll() { return []; },
       querySelector() { return null; }
     },
@@ -57,6 +62,9 @@ function loadFusionModule() {
   // Trigger DOMContentLoaded
   domListeners.forEach(fn => fn());
 
+  outContext.elements = elements;
+  outContext.context = context;
+
   return context.window.DigimonFusion;
 }
 
@@ -65,6 +73,8 @@ test('Digimon fusion engine initializes correctly', () => {
   assert.ok(fusion, 'DigimonFusion is exposed on window');
   assert.equal(typeof fusion.findCombinations, 'function');
   assert.equal(typeof fusion.findResultsFromMaterials, 'function');
+  assert.equal(typeof fusion.getAllSpecialFusions, 'function');
+  assert.equal(typeof fusion.renderSpecialFusions, 'function');
 });
 
 test('Special fusions: produces exact special results in either order', () => {
@@ -228,4 +238,56 @@ test('No fusion result is ever one of its own materials', () => {
       assert.notEqual(c.card2.name, card.name);
     });
   });
+});
+
+test('Special Fusion tab: fusion.html markup includes tab button, panel, search input, and container', () => {
+  const html = fs.readFileSync(path.join(ROOT, 'fusion.html'), 'utf8');
+  assert.ok(html.includes('id="tab-btn-special"'), 'Tab button exists in markup');
+  assert.ok(html.includes('data-tab="special"'), 'Tab button has data-tab="special"');
+  assert.ok(html.includes('aria-controls="tab-special-panel"'), 'Tab button controls tab-special-panel');
+  assert.ok(html.includes('id="tab-special-panel"'), 'Special fusion panel exists');
+  assert.ok(html.includes('id="specialSearch"'), 'Special fusion search input exists');
+  assert.ok(html.includes('id="specialFusionContainer"'), 'Special fusion container exists');
+});
+
+test('Special Fusion tab: getAllSpecialFusions returns all 19 recipes with resolved cards', () => {
+  const fusion = loadFusionModule();
+  const allSpecial = fusion.getAllSpecialFusions();
+
+  assert.equal(allSpecial.length, 19, 'Contains all 19 special fusion combinations');
+  allSpecial.forEach(item => {
+    assert.ok(item.card1, 'Has material 1 name');
+    assert.ok(item.card2, 'Has material 2 name');
+    assert.ok(item.result, 'Has result name');
+    assert.ok(item.resultCard, `Result card resolved for ${item.result}`);
+    assert.ok(item.c1, `Material 1 resolved for ${item.card1}`);
+    assert.ok(item.c2, `Material 2 resolved for ${item.card2}`);
+  });
+});
+
+test('Special Fusion tab: renderSpecialFusions renders 19 entries and filters correctly', () => {
+  const out = {};
+  const fusion = loadFusionModule(out);
+  const container = out.elements.specialFusionContainer;
+
+  assert.ok(container, 'Container element exists in DOM');
+  assert.ok(container.innerHTML.includes('special-fusions-table'), 'Initial render populated table');
+  assert.ok(container.innerHTML.includes('Omnimon I'), 'Initial render includes Omnimon I');
+  assert.ok(container.innerHTML.includes('Imperialdramon'), 'Initial render includes Imperialdramon');
+
+  // Filter for Rosemon
+  fusion.renderSpecialFusions('Rosemon');
+  assert.ok(container.innerHTML.includes('Rosemon'), 'Filtered includes Rosemon');
+  assert.ok(!container.innerHTML.includes('Imperialdramon'), 'Filtered excludes Imperialdramon');
+
+  // Filter for Omnimon (appears as result in Omnimon I / II and as material in Imperialdramon)
+  fusion.renderSpecialFusions('Omnimon');
+  assert.ok(container.innerHTML.includes('Omnimon I'), 'Filtered includes Omnimon I');
+  assert.ok(container.innerHTML.includes('Omnimon II'), 'Filtered includes Omnimon II');
+  assert.ok(container.innerHTML.includes('Imperialdramon'), 'Filtered includes Imperialdramon because Omnimon I is a material');
+
+  // Filter for nonexistent card
+  fusion.renderSpecialFusions('XYZNonExistentCard999');
+  assert.ok(container.innerHTML.includes('empty-state'), 'Empty state shown when no match');
+  assert.ok(container.innerHTML.includes('No special fusions found'), 'Empty state message displayed');
 });
