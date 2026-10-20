@@ -106,7 +106,7 @@ The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_
 - Escape any dataset string interpolated into `innerHTML`; both page scripts define `escapeHtml`.
 - Reuse the shared table and badge classes in `styles.css` before adding new ones, and keep page-specific rules in `fusion.css`.
 - Keep both Digimon pages on the Cyber-Digital / Digivice HUD visual system: deep Digital World navy-slate surfaces (`#070b14` to `#142038`), glowing cyan-blue HUD grid lines and accents (`#38bdf8`, `#f59e0b`), hex-grid background overlay, custom vector SVG icons (`assets/ui/`), compact Inter typography, and Rajdhani for data labels. Preserves the 5 specialty colors and option badges.
-- Keep a “Project home” link at the upper-left of both pages, linking to `../index.html`; shared navigation styling keeps it visible and keyboard-accessible on desktop and mobile.
+- Keep a “World Index” link at the upper-left of both pages, linking to `../index.html`; shared navigation styling keeps it visible and keyboard-accessible on desktop and mobile.
 - When changing shared navigation or theme tokens, check both `index.html` and `fusion.html` in dark and light themes, at desktop and phone widths.
 - Do not commit downloaded card art changes without checking `download_all_assets.js` first.
 
