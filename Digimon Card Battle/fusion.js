@@ -695,12 +695,13 @@ document.addEventListener('DOMContentLoaded', () => {
           <table class="card-table fusion-combos-table special-fusions-table">
             <thead>
               <tr>
-                <th>Result Card</th>
-                <th>Level</th>
-                <th>Specialty</th>
                 <th>Material 1</th>
                 <th class="plus-cell">+</th>
                 <th>Material 2</th>
+                <th class="plus-cell">=</th>
+                <th>Result Card</th>
+                <th>Level</th>
+                <th>Specialty</th>
                 <th style="text-align: center;">Action</th>
               </tr>
             </thead>
@@ -720,14 +721,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return `
                   <tr class="combo-row">
                     <td>
-                      <div class="combo-cell clickable-result" data-result="${escapeHtml(recipe.result)}" style="cursor: pointer;" title="Click to view all recipes for ${escapeHtml(recipe.result)} in Tab 1">
-                        <img src="${resIcon}" alt="${escapeHtml(recipe.result)}" onerror="this.style.display='none'" />
-                        <span class="combo-name">${escapeHtml(recipe.result)}</span>
-                      </div>
-                    </td>
-                    <td><span class="level-badge">${escapeHtml(resLevel)}</span></td>
-                    <td><span class="spec-tag ${specClass}">${escapeHtml(resSpec)}</span></td>
-                    <td>
                       <div class="combo-cell clickable-mat" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" style="cursor: pointer;" title="Click to test fusion in Materials tab">
                         <img src="${c1Icon}" alt="${escapeHtml(recipe.card1)}" onerror="this.style.display='none'" />
                         <span class="combo-name">${escapeHtml(recipe.card1)}</span>
@@ -740,6 +733,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="combo-name">${escapeHtml(recipe.card2)}</span>
                       </div>
                     </td>
+                    <td class="plus-cell">=</td>
+                    <td>
+                      <div class="combo-cell clickable-result" data-result="${escapeHtml(recipe.result)}" style="cursor: pointer;" title="Click to view all recipes for ${escapeHtml(recipe.result)} in Tab 1">
+                        <img src="${resIcon}" alt="${escapeHtml(recipe.result)}" onerror="this.style.display='none'" />
+                        <span class="combo-name">${escapeHtml(recipe.result)}</span>
+                      </div>
+                    </td>
+                    <td><span class="level-badge">${escapeHtml(resLevel)}</span></td>
+                    <td><span class="spec-tag ${specClass}">${escapeHtml(resSpec)}</span></td>
                     <td style="text-align: center;">
                       <button type="button" class="action-btn fuse-btn" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" title="Fuse ${escapeHtml(recipe.card1)} + ${escapeHtml(recipe.card2)} in Materials tab">
                         Fuse ➔

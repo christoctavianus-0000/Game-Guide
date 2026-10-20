@@ -275,6 +275,11 @@ test('Special Fusion tab: renderSpecialFusions renders 19 entries and filters co
   assert.ok(container.innerHTML.includes('Omnimon I'), 'Initial render includes Omnimon I');
   assert.ok(container.innerHTML.includes('Imperialdramon'), 'Initial render includes Imperialdramon');
 
+  // Verify that Material columns appear to the left of the Result Card column
+  const matIndex = container.innerHTML.indexOf('Material 1');
+  const resIndex = container.innerHTML.indexOf('Result Card');
+  assert.ok(matIndex !== -1 && resIndex !== -1 && matIndex < resIndex, 'Material columns appear to the left of Result Card');
+
   // Filter for Rosemon
   fusion.renderSpecialFusions('Rosemon');
   assert.ok(container.innerHTML.includes('Rosemon'), 'Filtered includes Rosemon');
