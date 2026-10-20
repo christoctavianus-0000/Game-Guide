@@ -59,3 +59,8 @@ Determines the output color/specialty of a fusion based on the colors of the two
 - **Special Option Cards (2 cards)**: Rosemon's Lure and Download Digivolve.
 - **Special-Only Result Cards**: Cards like Imperialdramon, Vikemon, Valkyrimon, Seraphimon, Magnadramon, Rosemon, Apokarimon, GranKuwagamon, Diaboromon, Puppetmon, and Omnimon II have `Material = ?, Result = ?` because they cannot be made through standard arithmetic fusion.
 - **18 Cards with `Result = 0`**: Special fusion results that can be used as fusion materials (`Omnimon I`, `MetalSeadramon`, `AeroVeedramon`, `SuperStarmon`, `MetalEtemon`, `Fake Sevens`, and 12 `Digi-*` gems including `Digi-Sapphire`).
+
+## No-self-material rule
+
+The game never gives a card used as material. If the only card at the summed Result Value (in the matrix color) is one of the materials, the next higher Result Value in that color is produced (e.g. Leomon + Mutant Digivolve => Togemon).
+

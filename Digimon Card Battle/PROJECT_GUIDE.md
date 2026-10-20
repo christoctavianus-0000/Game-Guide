@@ -16,10 +16,12 @@ Fusion logic lives in `fusion.js` and reads only those two globals, so the data 
 
 ## Fusion model
 
-Two independent rules combine to decide whether a pair of cards produces a target.
+Rules combine to decide whether a pair of cards produces a target.
 
 1. **Color matrix.** Each specialty maps to a color: Fire to Red, Ice to Blue, Nature to Green, Darkness to Black, Rare to Yellow, Option to Option. `fusion_table["<color1>+<color2>"]` gives the resulting color, and the lookup falls back to the reversed key so argument order never matters.
 2. **Material values.** Every card has a hidden `materialValue` and `resultValue`. A standard fusion needs `materialValue(A) + materialValue(B) === target.resultValue` and a matrix result color equal to the target's color.
+
+3. **Never a material.** The game never returns a card used as material. If the only card at the summed value (in the matrix color) is one of the materials, the next higher Result Value in that color is produced instead (`Leomon + Mutant Digivolve` => `Togemon`). Implemented in `resolveStandardFusion()`.
 
 `special_fusions` overrides both rules for specific named pairs (Omnimon I + Paildramon to Imperialdramon, and 18 others). Special and standard matches are merged and deduped by unordered card pair.
 
@@ -47,7 +49,7 @@ Two independent rules combine to decide whether a pair of cards produces a targe
 | `themeToggle.js` | Shared light/dark toggle with early `<head>` loading, document event delegation, multi-tier storage (`game_guide_theme`, `digimon_codex_theme`), cookie, and `window.name` fallback. |
 | `assets/cards/` | Card art named `<no>_<Name>.jpg`, referenced by `localCardIcon`. |
 | `assets/ui/` | Custom vector SVG UI icons: attack type icons (`circle.svg`, `triangle.svg`, `x.svg`), brand (`digivice.svg`), nav (`nav-cards.svg`, `nav-fusion.svg`), and specialty badges (`spec-*.svg`). |
-| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, GameFAQs Phoenixmon/special fusions verification, search aliases, and non-numeric value handling (8 tests). |
+| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, GameFAQs Phoenixmon/special fusions verification, search aliases, and non-numeric value handling (10 tests). |
 | `tests/dataIntegrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, `CARD_DATABASE`, and SVG icon asset existence (3 tests). |
 | `tests/themeToggle.test.js` | Unit test suite verifying theme initialization, document click delegation, cross-page persistence, and mobile + desktop-on-mobile responsive CSS rules (4 tests). |
 

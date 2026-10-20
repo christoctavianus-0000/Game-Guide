@@ -52,6 +52,46 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  let resultPoolCache = null;
+  function getResultPool(color) {
+    if (!resultPoolCache) {
+      resultPoolCache = {};
+      CARD_DATABASE.forEach(card => {
+        const rv = parseInt(card.resultValue);
+        const c = SPEC_TO_COLOR[card.specialty];
+        if (!isNaN(rv) && rv > 0 && c) (resultPoolCache[c] = resultPoolCache[c] || []).push({ card, rv });
+      });
+    }
+    return resultPoolCache[color] || [];
+  }
+
+  /**
+   * Standard fusion resolution. The game never returns a card used as material:
+   * if the only card at the summed Result Value (in the matrix color) is one of
+   * the materials, the next higher Result Value in that color is produced instead
+   * (e.g. Leomon + Mutant Digivolve => Togemon).
+   */
+  function resolveStandardFusion(c1, c2) {
+    const m1 = parseInt(c1.materialValue);
+    const m2 = parseInt(c2.materialValue);
+    if (isNaN(m1) || isNaN(m2)) return [];
+    const color1 = SPEC_TO_COLOR[c1.specialty];
+    const color2 = SPEC_TO_COLOR[c2.specialty];
+    const resultColor = FUSION_DATA.fusion_table[`${color1}+${color2}`] || FUSION_DATA.fusion_table[`${color2}+${color1}`];
+    if (!resultColor) return [];
+    const sum = m1 + m2;
+    const pool = getResultPool(resultColor);
+    const atSum = pool.filter(p => p.rv === sum);
+    if (atSum.length === 0) return [];
+    const isMaterial = card => card.name === c1.name || card.name === c2.name;
+    const allowed = atSum.filter(p => !isMaterial(p.card));
+    if (allowed.length > 0) return allowed.map(p => p.card);
+    const higher = pool.filter(p => p.rv > sum && !isMaterial(p.card));
+    if (higher.length === 0) return [];
+    const nextValue = Math.min(...higher.map(p => p.rv));
+    return higher.filter(p => p.rv === nextValue).map(p => p.card);
+  }
+
   function findCombinations(targetCard) {
     const combos = [];
     const targetName = targetCard.name.toLowerCase();
@@ -69,37 +109,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // 2. Standard Fusions (Material A + Material B = Result Target)
+    // 2. Standard Fusions: resolved forward so the "never returns a material" rule applies
     if (!isNaN(targetResultVal) && targetResultVal > 0) {
       for (let i = 0; i < CARD_DATABASE.length; i++) {
         for (let j = i; j < CARD_DATABASE.length; j++) {
           const c1 = CARD_DATABASE[i];
           const c2 = CARD_DATABASE[j];
-
           const m1 = parseInt(c1.materialValue);
           const m2 = parseInt(c2.materialValue);
-
-          if (!isNaN(m1) && !isNaN(m2) && (m1 + m2 === targetResultVal)) {
-            // Check color matrix
-            const color1 = SPEC_TO_COLOR[c1.specialty];
-            const color2 = SPEC_TO_COLOR[c2.specialty];
-            const resultColor = FUSION_DATA.fusion_table[`${color1}+${color2}`] || FUSION_DATA.fusion_table[`${color2}+${color1}`];
-
-            if (resultColor === targetColor) {
-              // Avoid duplicates if already added by special fusion
-              const exists = combos.some(c =>
-                (c.card1.name === c1.name && c.card2.name === c2.name) ||
-                (c.card1.name === c2.name && c.card2.name === c1.name)
-              );
-              if (!exists) {
-                combos.push({ card1: c1, card2: c2, type: 'standard', sum: targetResultVal });
-              }
-            }
+          if (isNaN(m1) || isNaN(m2) || m1 + m2 > targetResultVal) continue;
+          if (!resolveStandardFusion(c1, c2).some(r => r.name === targetCard.name)) continue;
+          const exists = combos.some(c =>
+            (c.card1.name === c1.name && c.card2.name === c2.name) ||
+            (c.card1.name === c2.name && c.card2.name === c1.name)
+          );
+          if (!exists) {
+            combos.push({ card1: c1, card2: c2, type: 'standard', sum: m1 + m2 });
           }
         }
       }
     }
-
     return combos;
   }
 
@@ -481,17 +510,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // 2. Standard Fusions (sum + color match)
-    if (hasBothValues && resultColor) {
-      CARD_DATABASE.forEach(target => {
-        const tv = parseInt(target.resultValue);
-        if (!isNaN(tv) && tv === sum && SPEC_TO_COLOR[target.specialty] === resultColor) {
-          const exists = results.some(r => r.card.name === target.name);
-          if (!exists) results.push({ card: target, type: 'standard', sum });
-        }
-      });
-    }
-
+    // 2. Standard Fusions (sum + color match, never returning a material card)
+    resolveStandardFusion(c1, c2).forEach(target => {
+      if (!results.some(r => r.card.name === target.name)) {
+        results.push({ card: target, type: 'standard', sum });
+      }
+    });
     return results;
   }
 

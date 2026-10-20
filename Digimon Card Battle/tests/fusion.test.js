@@ -111,7 +111,9 @@ test('Standard fusions: sum and color matrix match result value and specialty', 
   combos.filter(c => c.type === 'standard').forEach(combo => {
     const m1 = parseInt(combo.card1.materialValue);
     const m2 = parseInt(combo.card2.materialValue);
-    assert.equal(m1 + m2, parseInt(agumon.resultValue), `Sum of ${combo.card1.name} + ${combo.card2.name} equals Agumon resultValue`);
+    assert.ok(m1 + m2 <= parseInt(agumon.resultValue), `Sum of ${combo.card1.name} + ${combo.card2.name} does not exceed Agumon resultValue`);
+    assert.notEqual(combo.card1.name, agumon.name, 'Target is never its own material');
+    assert.notEqual(combo.card2.name, agumon.name, 'Target is never its own material');
   });
 });
 
@@ -164,7 +166,7 @@ test('GameFAQs Basic Fusion Phoenixmon example: Result 34 correctly produces val
   combos.filter(c => c.type === 'standard').forEach(combo => {
     const m1 = parseInt(combo.card1.materialValue);
     const m2 = parseInt(combo.card2.materialValue);
-    assert.equal(m1 + m2, 34, `Material sum of ${combo.card1.name} + ${combo.card2.name} is 34`);
+    assert.ok(m1 + m2 <= 34 && m1 + m2 >= 30, `Material sum of ${combo.card1.name} + ${combo.card2.name} is 34 (or slightly lower when bumped past a material card)`);
   });
 });
 
@@ -194,5 +196,36 @@ test('Cards with non-numeric or missing materialValue do not produce standard fu
       const standardResults = results.filter(r => r.type === 'standard');
       assert.equal(standardResults.length, 0, `No standard results when ${name} is used as material`);
     }
+  });
+});
+
+test('Never returns a material card: Leomon + Mutant Digivolve yields Togemon', () => {
+  const fusion = loadFusionModule();
+  const leomon = fusion.getCardByName('Leomon');
+  const mutant = fusion.getCardByName('Mutant Digivolve');
+  const togemon = fusion.getCardByName('Togemon');
+
+  assert.equal(parseInt(togemon.resultValue), parseInt(leomon.resultValue) + 1, 'Togemon is 1 Result Value above Leomon');
+
+  const results = fusion.findResultsFromMaterials(leomon, mutant);
+  const names = results.map(r => r.card.name);
+  assert.ok(!names.includes('Leomon'), 'Leomon is never produced from itself');
+  assert.ok(names.includes('Togemon'), 'Togemon is produced instead');
+
+  const togemonCombos = fusion.findCombinations(togemon);
+  assert.ok(togemonCombos.some(c => [c.card1.name, c.card2.name].sort().join('|') === ['Leomon', 'Mutant Digivolve'].sort().join('|')), 'Reverse lookup lists Leomon + Mutant Digivolve for Togemon');
+
+  const leomonCombos = fusion.findCombinations(leomon);
+  assert.ok(leomonCombos.every(c => c.card1.name !== 'Leomon' && c.card2.name !== 'Leomon'), 'Leomon recipes never use Leomon');
+});
+
+test('No fusion result is ever one of its own materials', () => {
+  const fusion = loadFusionModule();
+  const cards = ['Agumon', 'Leomon', 'Angemon', 'WarGreymon'].map(n => fusion.getCardByName(n));
+  cards.forEach(card => {
+    fusion.findCombinations(card).forEach(c => {
+      assert.notEqual(c.card1.name, card.name);
+      assert.notEqual(c.card2.name, card.name);
+    });
   });
 });

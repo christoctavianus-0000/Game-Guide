@@ -2,6 +2,12 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - No-Self-Material Fusion Rule
+
+- The game never gives a card that was used as a material. When the only card at the summed Result Value (in the matrix color) is one of the materials, the result bumps to the next higher Result Value in that color (`Leomon + Mutant Digivolve` => `Togemon`, 1 higher than Leomon).
+- Added `resolveStandardFusion()` in `fusion.js` shared by Tab 2 (`findResultsFromMaterials`) and Tab 1 (`findCombinations`, now a forward simulation so reverse lookups list bumped recipes and never list a target as its own material).
+- Tests: added Leomon/Mutant Digivolve/Togemon and no-self-material tests; Phoenixmon/Agumon sum assertions now allow bumped sums (17 Digimon tests).
+
 ## Unreleased - Mobile & "Request Desktop Site on Mobile" Responsive Architecture
 
 - **Mobile "Request Desktop Site" (`761px–1180px`) Table & Layout Fit (`styles.css`, `fusion.css`)**:

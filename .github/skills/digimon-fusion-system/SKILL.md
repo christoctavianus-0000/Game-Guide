@@ -115,3 +115,8 @@ When updating fusion data or algorithms:
 - [ ] Run `node download_all_assets.js` to synchronize `allCards.json` and `cardData.js`.
 - [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (14/14).
 - [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 76/76 tests passing.
+
+## No-self-material rule
+
+The game never returns a material card. If the summed Result Value matches only a material, bump to the next higher Result Value in the same color (Leomon + Mutant Digivolve => Togemon). Logic lives in `resolveStandardFusion()` (fusion.js); both fusion tabs use it.
+

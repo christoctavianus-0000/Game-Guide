@@ -32,11 +32,13 @@ This repository contains two independent static web apps:
     - **Standard mobile (`320px–768px`)**: Stacked card grids, single-column mastheads/headers, bottom-sheet modals (`max-height: 92dvh`, `env(safe-area-inset-bottom)`), and horizontal touch scrolling on wide tables.
     - **Mobile "Request Desktop Site" (`761px–1180px` & `@media (pointer: coarse)`)**: Mobile browsers in Desktop mode render a `~980px` viewport on a coarse touch screen. Both codexes compact table padding in the `761px–1180px` range, keep `.enemy-table-shell`, `.equip-table-wrap`, `.card-table-section`, and `.combinations-table-wrap` horizontally touch-scrollable (`overflow-x: auto; -webkit-overflow-scrolling: touch`), unstick `.sticky-filter-wrap` (`position: relative`) so multi-row filters never obscure half the viewport, and keep the top navigation bar visible on `1100px–1280px` coarse-pointer devices instead of crowding content with the fixed desktop `.site-rail`.
     - **Coarse pointer ergonomics (`@media (pointer: coarse)`)**: All interactive buttons, tabs, and links enforce `40px–44px` minimum tap targets with `touch-action: manipulation`, and all search inputs/selects enforce `font-size: 16px` to prevent iOS Safari auto-zoom in both mobile and desktop-site modes.
+
+12. **No-self-material fusion rule**: The game never returns a card used as a material. If the only card at the summed Result Value (matrix color) is one of the two materials, the result bumps to the next higher Result Value in that color (e.g. `Leomon + Mutant Digivolve => Togemon`, Togemon = Leomon + 1). Implemented once in `resolveStandardFusion()` in `fusion.js` and used by both `findResultsFromMaterials` and `findCombinations` (reverse lookup is a forward simulation). Special fusions are unaffected.
 
 ## Verification
-Run full repository checks from the root with `npm.cmd run check` (78 total tests passing: 15 Digimon, 63 Octopath).
+Run full repository checks from the root with `npm.cmd run check` (80 total tests passing: 17 Digimon, 63 Octopath).
 Individual suites can be run with:
-- `npm.cmd test --prefix "Digimon Card Battle"` (15 tests)
+- `npm.cmd test --prefix "Digimon Card Battle"` (17 tests)
 - `npm.cmd test --prefix "Octopath Traveler 0"` (63 tests)
 - `npm.cmd run typecheck --prefix "Octopath Traveler 0"` (6 apps checked, 0 errors)
 

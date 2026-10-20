@@ -25,7 +25,7 @@ npm run check
 ```
 
 This runs:
-1. **Digimon Card Battle**: `node --check` syntax validation and 15 unit tests (including fusion engine, GameFAQs guide verification, UI SVG icon verification, theme synchronization, and mobile/desktop-on-mobile responsiveness).
+1. **Digimon Card Battle**: `node --check` syntax validation and 17 unit tests (including fusion engine, GameFAQs guide verification, UI SVG icon verification, theme synchronization, and mobile/desktop-on-mobile responsiveness).
 2. **Octopath Traveler 0**: `tsc --noEmit` typecheck across all 6 applications and 63 unit/regression tests (including full character sprite coverage, compact job navigation, Excel database invariants, theme synchronization, and mobile/desktop-on-mobile responsiveness).
 
 To run tests independently:
