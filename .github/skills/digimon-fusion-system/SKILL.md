@@ -74,7 +74,8 @@ The Fusion Codex (`fusion.html`, `fusion.js`, `fusion.css`) provides 3 operation
 2. **Tab 2 ("Fuse 2 Cards (By Materials)")**: Select two material cards to calculate and preview the resulting Digimon card (with forward standard simulation and special overrides).
 3. **Tab 3 ("Special Fusion")**: Complete directory listing of all 19 predetermined special fusion recipes.
    - **Formula Layout**: Displays materials on the left and the resulting card on the right: `Material 1` `+` `Material 2` `=` `Result Card` `Level` `Specialty` `Action (Fuse ➔)`.
-   - **Real-Time Filter**: Filter by result name, material name, or specialty (`#specialSearch`).
+   - **Interactive Column Sorting**: Clickable headers for `Material 1`, `Material 2`, `Result Card`, `Level`, and `Specialty` toggle ascending (`▲`) and descending (`▼`) order; non-sortable columns (`+`, `=`, `Action`) maintain `cursor: default`.
+   - **Real-Time Filter**: Filter by result name, material name, or specialty (`#specialSearch`), seamlessly preserved across column sorting.
    - **Cross-Tab Linking**: Clicking result jumps to Tab 1 to see all recipes; clicking materials or "Fuse ➔" jumps to Tab 2 to test fusion.
    - **Deep Linking**: `fusion.html?tab=special` activates Tab 3 on page load.
 
@@ -129,5 +130,5 @@ When parsing source files or processing user search queries, always resolve spel
 When updating fusion data or algorithms:
 - [ ] Run `python merge_fusion.py` and verify all 7 category files match expected counts (fire 34/34, ice 35/35, nature 34/34, darkness 36/36, rare 33/33, option 101/110, partner 0/19).
 - [ ] Run `node download_all_assets.js` to synchronize `allCards.json` and `cardData.js`.
-- [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (20/20).
-- [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 83/83 tests passing.
+- [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (25/25).
+- [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 88/88 tests passing.

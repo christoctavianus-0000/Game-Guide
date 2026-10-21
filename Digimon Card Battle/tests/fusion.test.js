@@ -14,21 +14,48 @@ function loadFusionModule(outContext = {}) {
   const fusionSrc = fs.readFileSync(path.join(ROOT, 'fusion.js'), 'utf8');
 
   const elements = {};
-  // Minimal DOM stub for DOMContentLoaded initialization
-  const mockElement = (id = '') => ({
-    id,
-    value: '',
-    textContent: '',
-    innerHTML: '',
-    classList: { add() {}, remove() {}, toggle() {} },
-    setAttribute() {},
-    removeAttribute() {},
-    getAttribute() { return null; },
-    addEventListener() {},
-    querySelectorAll() { return []; },
-    querySelector() { return null; },
-    dataset: {}
+  let specialThs = [];
+  const createMockTh = (key) => ({
+    dataset: { sort: key },
+    listeners: {},
+    addEventListener(evt, fn) {
+      if (!this.listeners[evt]) this.listeners[evt] = [];
+      this.listeners[evt].push(fn);
+    },
+    click() {
+      (this.listeners['click'] || []).forEach(fn => fn());
+    }
   });
+
+  // Minimal DOM stub for DOMContentLoaded initialization
+  const mockElement = (id = '') => {
+    let inner = '';
+    return {
+      id,
+      value: '',
+      textContent: '',
+      get innerHTML() { return inner; },
+      set innerHTML(val) {
+        inner = val;
+        if (id === 'specialFusionContainer') {
+          specialThs = ['mat1', 'mat2', 'result', 'level', 'specialty'].map(createMockTh);
+        }
+      },
+      classList: { add() {}, remove() {}, toggle() {} },
+      setAttribute() {},
+      removeAttribute() {},
+      getAttribute() { return null; },
+      addEventListener() {},
+      querySelectorAll(sel) {
+        if (id === 'specialFusionContainer' && sel.includes('th.sortable')) {
+          return specialThs;
+        }
+        return [];
+      },
+      querySelector() { return null; },
+      dataset: {}
+    };
+  };
 
   const domListeners = [];
   const context = {
@@ -64,6 +91,7 @@ function loadFusionModule(outContext = {}) {
 
   outContext.elements = elements;
   outContext.context = context;
+  outContext.getSpecialThs = () => specialThs;
 
   return context.window.DigimonFusion;
 }
@@ -75,6 +103,8 @@ test('Digimon fusion engine initializes correctly', () => {
   assert.equal(typeof fusion.findResultsFromMaterials, 'function');
   assert.equal(typeof fusion.getAllSpecialFusions, 'function');
   assert.equal(typeof fusion.renderSpecialFusions, 'function');
+  assert.equal(typeof fusion.getSpecialSort, 'function');
+  assert.equal(typeof fusion.setSpecialSort, 'function');
 });
 
 test('Special fusions: produces exact special results in either order', () => {
@@ -295,4 +325,163 @@ test('Special Fusion tab: renderSpecialFusions renders 19 entries and filters co
   fusion.renderSpecialFusions('XYZNonExistentCard999');
   assert.ok(container.innerHTML.includes('empty-state'), 'Empty state shown when no match');
   assert.ok(container.innerHTML.includes('No special fusions found'), 'Empty state message displayed');
+});
+
+test('Special Fusion tab: table markup defines sortable headers with data-sort and non-sortable symbol cells', () => {
+  const out = {};
+  loadFusionModule(out);
+  const container = out.elements.specialFusionContainer;
+
+  assert.ok(container.innerHTML.includes('data-sort="mat1"'), 'Material 1 header has data-sort="mat1"');
+  assert.ok(container.innerHTML.includes('data-sort="mat2"'), 'Material 2 header has data-sort="mat2"');
+  assert.ok(container.innerHTML.includes('data-sort="result"'), 'Result Card header has data-sort="result"');
+  assert.ok(container.innerHTML.includes('data-sort="level"'), 'Level header has data-sort="level"');
+  assert.ok(container.innerHTML.includes('data-sort="specialty"'), 'Specialty header has data-sort="specialty"');
+
+  // Verify non-sortable columns do not have data-sort
+  assert.ok(container.innerHTML.includes('<th class="plus-cell">+</th>'), 'Plus cell is not sortable');
+  assert.ok(container.innerHTML.includes('<th class="plus-cell">=</th>'), 'Equals cell is not sortable');
+  assert.ok(container.innerHTML.includes('<th style="text-align: center;">Action</th>'), 'Action header is not sortable');
+});
+
+test('Special Fusion tab: sorting by result card ascending and descending alters order and updates aria-sort / indicator', () => {
+  const out = {};
+  const fusion = loadFusionModule(out);
+  const container = out.elements.specialFusionContainer;
+
+  function getRenderedResults(html) {
+    return [...html.matchAll(/class="combo-cell clickable-result"[^>]*data-result="([^"]+)"/g)].map(m => m[1]);
+  }
+
+  // Initial state has no sort key
+  assert.equal(fusion.getSpecialSort().key, '');
+  assert.equal(fusion.getSpecialSort().dir, 'asc');
+
+  // Sort by Result ascending
+  fusion.setSpecialSort('result', 'asc');
+  assert.equal(fusion.getSpecialSort().key, 'result');
+  assert.equal(fusion.getSpecialSort().dir, 'asc');
+  assert.ok(container.innerHTML.includes('data-sort="result" aria-sort="ascending"'), 'Header has aria-sort="ascending"');
+  assert.ok(container.innerHTML.includes('Result Card <span class="sort-ind">▲</span>'), 'Header shows ▲ indicator');
+
+  let results = getRenderedResults(container.innerHTML);
+  assert.equal(results.length, 19);
+  assert.equal(results[0], 'AeroVeedramon', 'First result ascending is AeroVeedramon');
+  assert.equal(results[18], 'Vikemon', 'Last result ascending is Vikemon');
+
+  // Sort by Result descending
+  fusion.setSpecialSort('result', 'desc');
+  assert.equal(fusion.getSpecialSort().key, 'result');
+  assert.equal(fusion.getSpecialSort().dir, 'desc');
+  assert.ok(container.innerHTML.includes('data-sort="result" aria-sort="descending"'), 'Header has aria-sort="descending"');
+  assert.ok(container.innerHTML.includes('Result Card <span class="sort-ind">▼</span>'), 'Header shows ▼ indicator');
+
+  results = getRenderedResults(container.innerHTML);
+  assert.equal(results.length, 19);
+  assert.equal(results[0], 'Vikemon', 'First result descending is Vikemon');
+  assert.equal(results[18], 'AeroVeedramon', 'Last result descending is AeroVeedramon');
+});
+
+test('Special Fusion tab: sorting by material 1 and material 2 orders recipes alphabetically', () => {
+  const out = {};
+  const fusion = loadFusionModule(out);
+  const container = out.elements.specialFusionContainer;
+
+  function getRenderedPairs(html) {
+    const rows = html.split('<tr class="combo-row">').slice(1);
+    return rows.map(r => {
+      const c1Match = r.match(/data-c1="([^"]+)"/);
+      const c2Match = r.match(/data-c2="([^"]+)"/);
+      return { c1: c1Match ? c1Match[1] : '', c2: c2Match ? c2Match[1] : '' };
+    });
+  }
+
+  // Sort by mat1 asc
+  fusion.setSpecialSort('mat1', 'asc');
+  let pairs = getRenderedPairs(container.innerHTML);
+  assert.equal(pairs[0].c1, 'Angemon', 'First material 1 ascending is Angemon');
+  assert.equal(pairs[18].c1, 'Zudomon', 'Last material 1 ascending is Zudomon');
+
+  // Sort by mat1 desc
+  fusion.setSpecialSort('mat1', 'desc');
+  pairs = getRenderedPairs(container.innerHTML);
+  assert.equal(pairs[0].c1, 'Zudomon', 'First material 1 descending is Zudomon');
+  assert.equal(pairs[18].c1, 'Angemon', 'Last material 1 descending is Angemon');
+
+  // Sort by mat2 asc
+  fusion.setSpecialSort('mat2', 'asc');
+  pairs = getRenderedPairs(container.innerHTML);
+  assert.equal(pairs[0].c2, 'Andromon', 'First material 2 ascending is Andromon');
+  assert.equal(pairs[18].c2, 'WereGarurumon', 'Last material 2 ascending is WereGarurumon');
+});
+
+test('Special Fusion tab: sorting by specialty groups by elemental affinity', () => {
+  const out = {};
+  const fusion = loadFusionModule(out);
+  const container = out.elements.specialFusionContainer;
+
+  function getRenderedResults(html) {
+    return [...html.matchAll(/class="combo-cell clickable-result"[^>]*data-result="([^"]+)"/g)].map(m => m[1]);
+  }
+
+  // Sort specialty asc: Darkness < Fire < Ice < Nature < Rare
+  fusion.setSpecialSort('specialty', 'asc');
+  let results = getRenderedResults(container.innerHTML);
+  const firstCard = fusion.getCardByName(results[0]);
+  const lastCard = fusion.getCardByName(results[18]);
+  assert.equal(firstCard.specialty, 'Darkness', 'First card specialty is Darkness');
+  assert.equal(lastCard.specialty, 'Rare', 'Last card specialty is Rare');
+
+  // Sort specialty desc: Rare > Nature > Ice > Fire > Darkness
+  fusion.setSpecialSort('specialty', 'desc');
+  results = getRenderedResults(container.innerHTML);
+  const firstDescCard = fusion.getCardByName(results[0]);
+  const lastDescCard = fusion.getCardByName(results[18]);
+  assert.equal(firstDescCard.specialty, 'Rare', 'First card specialty descending is Rare');
+  assert.equal(lastDescCard.specialty, 'Darkness', 'Last card specialty descending is Darkness');
+});
+
+test('Special Fusion tab: interactive header clicks toggle ascending/descending and preserve active filter', () => {
+  const out = {};
+  const fusion = loadFusionModule(out);
+  const container = out.elements.specialFusionContainer;
+
+  function getRenderedResults(html) {
+    return [...html.matchAll(/class="combo-cell clickable-result"[^>]*data-result="([^"]+)"/g)].map(m => m[1]);
+  }
+
+  const ths = out.getSpecialThs();
+  const resTh = ths.find(th => th.dataset.sort === 'result');
+  assert.ok(resTh, 'Result sort header exists');
+
+  // Click Result -> Sort asc
+  resTh.click();
+  assert.equal(fusion.getSpecialSort().key, 'result');
+  assert.equal(fusion.getSpecialSort().dir, 'asc');
+
+  // Click Result again -> Sort desc
+  resTh.click();
+  assert.equal(fusion.getSpecialSort().key, 'result');
+  assert.equal(fusion.getSpecialSort().dir, 'desc');
+
+  // Apply filter for Nature: 8 results match (6 Nature results + 2 where a material is Nature)
+  fusion.renderSpecialFusions('Nature');
+  let filteredResults = getRenderedResults(container.innerHTML);
+  assert.equal(filteredResults.length, 8, 'Filter matches 8 special fusions involving Nature');
+  assert.equal(filteredResults[0], 'Valkyrimon', 'Highest alphabetical card is first in descending order');
+  assert.equal(filteredResults[7], 'AeroVeedramon', 'Lowest alphabetical card is last in descending order');
+
+  // Click mat1 header while filter is still active
+  const mat1Th = ths.find(th => th.dataset.sort === 'mat1');
+  assert.ok(mat1Th, 'Material 1 sort header exists');
+  mat1Th.click();
+  assert.equal(fusion.getSpecialSort().key, 'mat1');
+  assert.equal(fusion.getSpecialSort().dir, 'asc');
+
+  // Filter still active, ordered by mat1 asc:
+  // Angemon (Shakkoumon) -> Aquilamon (Silphymon) -> Garudamon (Valkyrimon) -> HerculesKabuterimon (GranKuwagamon) -> Lillymon (Rosemon) -> MagnaAngemon (Magnadramon) -> MagnaAngemon (Seraphimon) -> Veedramon (AeroVeedramon)
+  filteredResults = getRenderedResults(container.innerHTML);
+  assert.equal(filteredResults.length, 8, 'Filter remains active after sorting by Material 1');
+  assert.equal(filteredResults[0], 'Shakkoumon', 'Shakkoumon (Angemon) is first by Material 1');
+  assert.equal(filteredResults[7], 'AeroVeedramon', 'AeroVeedramon (Veedramon) is last by Material 1');
 });

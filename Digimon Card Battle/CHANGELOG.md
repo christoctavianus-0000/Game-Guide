@@ -2,6 +2,19 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - Sortable Special Fusion Table
+
+- **Interactive Column Sorting in Special Fusion Directory (`fusion.js`, `fusion.css`)**:
+  - Made the columns in Tab 3 ("Special Fusion") interactive and sortable: `Material 1` (`data-sort="mat1"`), `Material 2` (`data-sort="mat2"`), `Result Card` (`data-sort="result"`), `Level` (`data-sort="level"`), and `Specialty` (`data-sort="specialty"`).
+  - Clicking any sortable header toggles between ascending (`▲`, `aria-sort="ascending"`) and descending (`▼`, `aria-sort="descending"`); non-sortable columns (`+`, `=`, `Action`) remain unclickable with `cursor: default`.
+  - Full keyboard accessibility with `tabindex="0"`, `role="columnheader"`, and Enter/Space keyboard event listeners.
+  - Sorting seamlessly preserves active filter queries from `#specialSearch`.
+  - Added `compareSpecialFusions()` supporting alphabetical tie-breaking, level rank comparison, and specialty sorting.
+  - Exposed `getSpecialSort()` and `setSpecialSort()` on `window.DigimonFusion` for testing and programmatic sorting.
+  - Scoped Tab 1's sort listener strictly to `#tab-target-panel .fusion-combos-table th.sortable` to prevent cross-wiring across tabs.
+- **Unit Test Suite Expansion (`tests/fusion.test.js`)**:
+  - Added unit tests asserting table header attributes, ascending/descending order on `result`, `mat1`, `mat2`, `specialty`, sort indicators, and interactive header clicks with filter preservation (**25/25 Digimon tests passing**, repository total **88/88 tests passing**).
+
 ## Unreleased - Special Fusion Directory Tab
 
 - Added a 3rd tab to `fusion.html` titled **"Special Fusion"** (`#tab-btn-special`, `#tab-special-panel`) that displays the complete list of all 19 predetermined special fusion recipes in Digimon Digital Card Battle.

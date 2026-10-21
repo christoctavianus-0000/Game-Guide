@@ -512,14 +512,23 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  cursor: pointer;
   user-select: none;
   white-space: nowrap;
 }
 
-.fusion-combos-table th:hover {
+.fusion-combos-table th.sortable {
+  cursor: pointer;
+}
+
+.fusion-combos-table th.sortable:hover,
+.fusion-combos-table th.sortable:focus-visible {
   color: var(--text-primary);
   background: var(--bg-surface-hover);
+  outline: none;
+}
+
+.fusion-combos-table th:not(.sortable) {
+  cursor: default;
 }
 
 .fusion-combos-table th .sort-ind {

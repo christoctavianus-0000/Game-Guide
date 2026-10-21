@@ -49,7 +49,7 @@ Rules combine to decide whether a pair of cards produces a target.
 | `themeToggle.js` | Shared light/dark toggle with early `<head>` loading, document event delegation, multi-tier storage (`game_guide_theme`, `digimon_codex_theme`), cookie, and `window.name` fallback. |
 | `assets/cards/` | Card art named `<no>_<Name>.jpg`, referenced by `localCardIcon`. |
 | `assets/ui/` | Custom vector SVG UI icons: attack type icons (`circle.svg`, `triangle.svg`, `x.svg`), brand (`digivice.svg`), nav (`nav-cards.svg`, `nav-fusion.svg`), and specialty badges (`spec-*.svg`). |
-| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, GameFAQs Phoenixmon/special fusions verification, search aliases, non-numeric value handling, and Special Fusion tab directory (13 tests). |
+| `tests/fusion.test.js` | Unit test suite verifying special fusions, standard matrix calculations, value summations, GameFAQs Phoenixmon/special fusions verification, search aliases, non-numeric value handling, Special Fusion tab directory, and sortable columns (18 tests). |
 | `tests/dataIntegrity.test.js` | Data integrity tests verifying synchronization between category files, `allCards.json`, `CARD_DATABASE`, and SVG icon asset existence (3 tests). |
 | `tests/themeToggle.test.js` | Unit test suite verifying theme initialization, document click delegation, cross-page persistence, and mobile + desktop-on-mobile responsive CSS rules (4 tests). |
 
@@ -80,7 +80,7 @@ Every card carries `materialValue` and `resultValue`. 28 cards have no fusion va
 
 - **Tab 1, Find Recipe (By Result).** Type a card name to list every pair that fuses into it. Suggestions come from a `<datalist>` of all card names. Rows sort by any column (default Material 1 ascending) and filter by either material name. The list is not height-restricted, so long results scroll with the page.
 - **Tab 2, Fuse 2 Cards (By Materials).** Choose Material 1 and Material 2 to see each card they can produce, with the computed sum and result color shown.
-- **Tab 3, Special Fusion.** Browse all 19 predetermined special fusion recipes with real-time text filtering (`#specialSearch`) by result, material, or specialty. Clicking a result navigates to Tab 1 with recipes loaded; clicking materials or the "Fuse ➔" button switches to Tab 2 to predict the fusion result immediately.
+- **Tab 3, Special Fusion.** Browse all 19 predetermined special fusion recipes with real-time text filtering (`#specialSearch`) by result, material, or specialty, and interactive sortable columns (Material 1, Material 2, Result Card, Level, Specialty) with direction toggle indicators. Clicking a result navigates to Tab 1 with recipes loaded; clicking materials or the "Fuse ➔" button switches to Tab 2 to predict the fusion result immediately.
 - Cross-navigation: a Tab 1 row opens Tab 2 with both materials filled; a Tab 2 result card opens Tab 1 with that card searched; Tab 3 result cards open Tab 1 and Tab 3 materials open Tab 2.
 - The result card repeats the full stat block: level, specialty, HP, DP, +P, each attack, support effect, material value, and result value.
 
@@ -114,7 +114,7 @@ The parser expects `ddcb_fire.html`, `ddcb_ice.html`, `ddcb_nature.html`, `ddcb_
 ## Verification
 
 - Run `npm run check` at the repository root to validate both apps and check the generated Digimon data files stay in sync.
-- `npm test` (or `node --test tests/*.test.js`) runs all 20 Digimon unit tests: data integrity (category files, `allCards.json`, `CARD_DATABASE`), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, non-numeric value safeguards, GameFAQs guide verification (Phoenixmon & special fusions), search aliases, theme toggle responsiveness/cross-page persistence, and Special Fusion tab directory/filtering.
+- `npm test` (or `node --test tests/*.test.js`) runs all 25 Digimon unit tests: data integrity (category files, `allCards.json`, `CARD_DATABASE`), JSON mirror sync, UI vector SVG existence, fusion engine initialization, special fusion recipes, order independence, standard matrix and sum calculations, non-numeric value safeguards, GameFAQs guide verification (Phoenixmon & special fusions), search aliases, theme toggle responsiveness/cross-page persistence, Special Fusion tab directory/filtering, and interactive column sorting.
 - `node --check app.js` and `node --check fusion.js` catch syntax errors.
 - Load both pages in a browser and confirm the console has no errors.
 - Spot-check fusion math: `Angemon` lists 200 combinations, `WarGreymon` lists 34, and `Agumon` + `Gabumon` (material 5 + 5 = 10, Red + Blue = Green) produces `MoriShellmon`.

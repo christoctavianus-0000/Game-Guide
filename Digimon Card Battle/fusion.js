@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function attachSortListeners() {
-    const headers = document.querySelectorAll('.fusion-combos-table th.sortable');
+    const headers = document.querySelectorAll('#tab-target-panel .fusion-combos-table th.sortable');
 
     function updateIndicators() {
       headers.forEach(h => {
@@ -340,8 +340,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!ind) return;
         if (h.dataset.sort === currentSort.key) {
           ind.textContent = currentSort.dir === 'asc' ? '▲' : '▼';
+          h.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
         } else {
           ind.textContent = '';
+          h.removeAttribute('aria-sort');
         }
       });
     }
@@ -646,6 +648,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const specialSearch = document.getElementById('specialSearch');
   const specialFusionContainer = document.getElementById('specialFusionContainer');
 
+  let specialSort = { key: '', dir: 'asc' };
+  let currentSpecialFilter = '';
+
   function getAllSpecialFusions() {
     return (FUSION_DATA.special_fusions || []).map(sf => ({
       card1: sf.card1,
@@ -657,9 +662,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
-  function renderSpecialFusions(filterQuery = '') {
+  function compareSpecialFusions(a, b, key, dir) {
+    let cmp = 0;
+    const resA = getCardByName(a.result);
+    const resB = getCardByName(b.result);
+    if (key === 'mat1') {
+      cmp = a.card1.localeCompare(b.card1);
+      if (cmp === 0) cmp = a.result.localeCompare(b.result);
+    } else if (key === 'mat2') {
+      cmp = a.card2.localeCompare(b.card2);
+      if (cmp === 0) cmp = a.result.localeCompare(b.result);
+    } else if (key === 'result') {
+      cmp = a.result.localeCompare(b.result);
+      if (cmp === 0) cmp = a.card1.localeCompare(b.card1);
+    } else if (key === 'level') {
+      const la = resA?.level || '';
+      const lb = resB?.level || '';
+      cmp = la.localeCompare(lb);
+      if (cmp === 0) cmp = a.result.localeCompare(b.result);
+    } else if (key === 'specialty') {
+      const sa = resA?.specialty || 'Rare';
+      const sb = resB?.specialty || 'Rare';
+      cmp = sa.localeCompare(sb);
+      if (cmp === 0) cmp = a.result.localeCompare(b.result);
+    }
+    return cmp * dir;
+  }
+
+  function renderSpecialFusions(filterQuery) {
     if (!specialFusionContainer) return;
-    const q = (filterQuery || '').trim().toLowerCase();
+    if (filterQuery !== undefined) {
+      currentSpecialFilter = filterQuery;
+    } else if (specialSearch && specialSearch.value) {
+      currentSpecialFilter = specialSearch.value;
+    }
+    const q = (currentSpecialFilter || '').trim().toLowerCase();
     const list = FUSION_DATA.special_fusions || [];
 
     const filtered = list.filter(recipe => {
@@ -680,33 +717,45 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="empty-state">
           <div class="icon"><img src="assets/ui/digivice.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
           <h3>No special fusions found</h3>
-          <p>No recipe matching "${escapeHtml(filterQuery)}" was found.</p>
+          <p>No recipe matching "${escapeHtml(currentSpecialFilter)}" was found.</p>
         </div>
       `;
       return;
     }
 
+    const dir = specialSort.dir === 'desc' ? -1 : 1;
+    const sorted = specialSort.key
+      ? filtered.slice().sort((a, b) => compareSpecialFusions(a, b, specialSort.key, dir))
+      : filtered;
+
+    const getSortTh = (key, label) => {
+      const isActive = specialSort.key === key;
+      const ariaSort = isActive ? (specialSort.dir === 'asc' ? 'aria-sort="ascending"' : 'aria-sort="descending"') : '';
+      const ind = isActive ? (specialSort.dir === 'asc' ? '▲' : '▼') : '';
+      return `<th class="sortable" data-sort="${key}" ${ariaSort} tabindex="0" role="columnheader" aria-label="${label}, sortable">${label} <span class="sort-ind">${ind}</span></th>`;
+    };
+
     const html = `
       <div class="combinations-section">
         <div class="combinations-header-row">
-          <h3>All Special Fusions <span class="count">${filtered.length}</span></h3>
+          <h3>All Special Fusions <span class="count">${sorted.length}</span></h3>
         </div>
         <div class="combinations-table-wrap">
           <table class="card-table fusion-combos-table special-fusions-table">
             <thead>
               <tr>
-                <th>Material 1</th>
+                ${getSortTh('mat1', 'Material 1')}
                 <th class="plus-cell">+</th>
-                <th>Material 2</th>
+                ${getSortTh('mat2', 'Material 2')}
                 <th class="plus-cell">=</th>
-                <th>Result Card</th>
-                <th>Level</th>
-                <th>Specialty</th>
+                ${getSortTh('result', 'Result Card')}
+                ${getSortTh('level', 'Level')}
+                ${getSortTh('specialty', 'Specialty')}
                 <th style="text-align: center;">Action</th>
               </tr>
             </thead>
             <tbody>
-              ${filtered.map(recipe => {
+              ${sorted.map(recipe => {
                 const resCard = getCardByName(recipe.result);
                 const c1 = getCardByName(recipe.card1);
                 const c2 = getCardByName(recipe.card2);
@@ -769,6 +818,27 @@ document.addEventListener('DOMContentLoaded', () => {
         switchToMaterialsTab(el.dataset.c1, el.dataset.c2);
       });
     });
+
+    specialFusionContainer.querySelectorAll('.special-fusions-table th.sortable').forEach(th => {
+      const onSort = () => {
+        const key = th.dataset.sort;
+        if (!key) return;
+        if (specialSort.key === key) {
+          specialSort.dir = specialSort.dir === 'asc' ? 'desc' : 'asc';
+        } else {
+          specialSort = { key, dir: 'asc' };
+        }
+        renderSpecialFusions(currentSpecialFilter);
+      };
+
+      th.addEventListener('click', onSort);
+      th.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onSort();
+        }
+      });
+    });
   }
 
   if (specialSearch) {
@@ -786,6 +856,12 @@ document.addEventListener('DOMContentLoaded', () => {
       findResultsFromMaterials,
       getAllSpecialFusions,
       renderSpecialFusions,
+      getSpecialSort: () => ({ ...specialSort }),
+      setSpecialSort: (key, dir = 'asc') => {
+        specialSort = { key, dir };
+        renderSpecialFusions(currentSpecialFilter);
+      },
+      compareSpecialFusions,
       SPEC_TO_COLOR,
       getCardByName
     };
