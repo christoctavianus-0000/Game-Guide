@@ -157,9 +157,23 @@
         <div class="fusion-search">
           <h2>Special Fusions</h2>
           <p>All 19 predetermined special fusion recipes. These legendary combinations override standard math and color matrix rules.</p>
-          <div class="search-box">
-            <input type="text" id="specialSearch" placeholder="Filter special fusions by result or material name..." aria-label="Filter special fusions" autocomplete="off" />
+          <div class="special-search-grid">
+            <div class="special-search-field">
+              <label for="specialMatSearch" class="search-field-label">Search by Material Card</label>
+              <div class="search-box">
+                <input type="text" id="specialMatSearch" placeholder="Type material card name (e.g. WarGreymon, Kabuterimon)..." aria-label="Search special fusions by material card" list="cardListSpecialMat" autocomplete="off" />
+                <datalist id="cardListSpecialMat"></datalist>
+              </div>
+            </div>
+            <div class="special-search-field">
+              <label for="specialResultSearch" class="search-field-label">Search by Resulting Card</label>
+              <div class="search-box">
+                <input type="text" id="specialResultSearch" placeholder="Type result card name (e.g. Omnimon, Rosemon)..." aria-label="Search special fusions by resulting card" list="cardListSpecialResult" autocomplete="off" />
+                <datalist id="cardListSpecialResult"></datalist>
+              </div>
+            </div>
           </div>
+          <input type="hidden" id="specialSearch" />
         </div>
 
         <div id="specialFusionContainer">

@@ -224,9 +224,11 @@ document.addEventListener('DOMContentLoaded', () => {
             <thead>
               <tr>
                 <th class="sortable" data-sort="name1">Card 1 <span class="sort-ind"></span></th>
+                <th class="sortable" data-sort="spec1">Specialty 1 <span class="sort-ind"></span></th>
                 <th class="sortable mat-col" data-sort="mat1">Material 1 <span class="sort-ind"></span></th>
                 <th class="plus-cell">+</th>
                 <th class="sortable" data-sort="name2">Card 2 <span class="sort-ind"></span></th>
+                <th class="sortable" data-sort="spec2">Specialty 2 <span class="sort-ind"></span></th>
                 <th class="sortable mat-col" data-sort="mat2">Material 2 <span class="sort-ind"></span></th>
                 <th class="sortable mat-col" data-sort="sum">Material Sum <span class="sort-ind"></span></th>
                 <th class="sortable" data-sort="type">Type <span class="sort-ind"></span></th>
@@ -241,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resultContainer.innerHTML = html;
 
     if (combos.length === 0) {
-      document.getElementById('combosGrid').innerHTML = `<tr><td colspan="7" style="text-align: center; padding: 2rem; color: var(--text-muted);">No combinations found for this card.</td></tr>`;
+      document.getElementById('combosGrid').innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 2rem; color: var(--text-muted);">No combinations found for this card.</td></tr>`;
     } else {
       renderCombos(currentCombos, currentSort.key, currentSort.dir, currentFilter);
     }
@@ -255,7 +257,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!q) return combos;
     return combos.filter(c =>
       c.card1.name.toLowerCase().includes(q) ||
-      c.card2.name.toLowerCase().includes(q)
+      c.card2.name.toLowerCase().includes(q) ||
+      (c.card1.specialty && c.card1.specialty.toLowerCase().includes(q)) ||
+      (c.card2.specialty && c.card2.specialty.toLowerCase().includes(q))
     );
   }
 
@@ -272,6 +276,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const va = parseInt(a.card2.materialValue);
         const vb = parseInt(b.card2.materialValue);
         cmp = (isNaN(va) ? 999 : va) - (isNaN(vb) ? 999 : vb);
+      } else if (sortKey === 'spec1') {
+        const sa = a.card1.specialty || 'Option';
+        const sb = b.card1.specialty || 'Option';
+        cmp = sa.localeCompare(sb);
+        if (cmp === 0) cmp = a.card1.name.localeCompare(b.card1.name);
+      } else if (sortKey === 'spec2') {
+        const sa = a.card2.specialty || 'Option';
+        const sb = b.card2.specialty || 'Option';
+        cmp = sa.localeCompare(sb);
+        if (cmp === 0) cmp = a.card2.name.localeCompare(b.card2.name);
       } else if (sortKey === 'sum') {
         const sa = parseInt(a.card1.materialValue) + parseInt(a.card2.materialValue);
         const sb = parseInt(b.card1.materialValue) + parseInt(b.card2.materialValue);
@@ -290,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('combosGrid');
     if (!grid) return;
     if (sorted.length === 0) {
-      grid.innerHTML = `<tr><td colspan="7" style="text-align: center; padding: 2rem; color: var(--text-muted);">No combinations match this filter.</td></tr>`;
+      grid.innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 2rem; color: var(--text-muted);">No combinations match this filter.</td></tr>`;
       return;
     }
     grid.innerHTML = sorted.map(combo => {
@@ -301,6 +315,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const typeBadge = combo.type === 'special'
         ? '<span class="type-badge special">Special</span>'
         : '<span class="type-badge standard">Standard</span>';
+      const c1SpecClass = `spec-${(combo.card1.specialty || 'option').toLowerCase()}`;
+      const c2SpecClass = `spec-${(combo.card2.specialty || 'option').toLowerCase()}`;
       const cell = (c, mv) => `
             <div class="combo-cell">
               <img src="${c.localIcon}" alt="${escapeHtml(c.name)}" onerror="this.style.display='none'" />
@@ -310,9 +326,11 @@ document.addEventListener('DOMContentLoaded', () => {
       return `
         <tr class="combo-row clickable-combo" data-c1="${escapeHtml(combo.card1.name)}" data-c2="${escapeHtml(combo.card2.name)}" title="Click to view this fusion in the Materials tab">
           <td>${cell(combo.card1, mv1)}</td>
+          <td><span class="spec-tag ${c1SpecClass}">${escapeHtml(combo.card1.specialty || '-')}</span></td>
           <td class="mat-cell">${isNaN(mv1) ? '—' : mv1}</td>
           <td class="plus-cell">+</td>
           <td>${cell(combo.card2, mv2)}</td>
+          <td><span class="spec-tag ${c2SpecClass}">${escapeHtml(combo.card2.specialty || '-')}</span></td>
           <td class="mat-cell">${isNaN(mv2) ? '—' : mv2}</td>
           <td class="mat-cell sum-cell">${sum}</td>
           <td>${typeBadge}</td>
@@ -663,10 +681,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Tab 3: Special Fusion List ---
   const specialSearch = document.getElementById('specialSearch');
+  const specialMatSearch = document.getElementById('specialMatSearch');
+  const specialResultSearch = document.getElementById('specialResultSearch');
+  const cardListSpecialMat = document.getElementById('cardListSpecialMat');
+  const cardListSpecialResult = document.getElementById('cardListSpecialResult');
   const specialFusionContainer = document.getElementById('specialFusionContainer');
 
   let specialSort = { key: '', dir: 'asc' };
-  let currentSpecialFilter = '';
+  let currentSpecialFilter = { material: '', result: '', general: '' };
+
+  const specialList = FUSION_DATA.special_fusions || [];
+  const uniqueMatNames = [...new Set(specialList.flatMap(sf => [sf.card1, sf.card2]))].sort((a, b) => a.localeCompare(b));
+  const uniqueResultNames = [...new Set(specialList.map(sf => sf.result))].sort((a, b) => a.localeCompare(b));
+
+  if (cardListSpecialMat) {
+    cardListSpecialMat.innerHTML = uniqueMatNames.map(name => `<option value="${escapeHtml(name)}"></option>`).join('');
+  }
+  if (cardListSpecialResult) {
+    cardListSpecialResult.innerHTML = uniqueResultNames.map(name => `<option value="${escapeHtml(name)}"></option>`).join('');
+  }
 
   function getAllSpecialFusions() {
     return (FUSION_DATA.special_fusions || []).map(sf => ({
@@ -683,11 +716,28 @@ document.addEventListener('DOMContentLoaded', () => {
     let cmp = 0;
     const resA = getCardByName(a.result);
     const resB = getCardByName(b.result);
+    const c1A = a.c1 || getCardByName(a.card1);
+    const c1B = b.c1 || getCardByName(b.card1);
+    const c2A = a.c2 || getCardByName(a.card2);
+    const c2B = b.c2 || getCardByName(b.card2);
+
     if (key === 'mat1') {
       cmp = a.card1.localeCompare(b.card1);
       if (cmp === 0) cmp = a.result.localeCompare(b.result);
+    } else if (key === 'spec1') {
+      const s1a = c1A?.specialty || 'Option';
+      const s1b = c1B?.specialty || 'Option';
+      cmp = s1a.localeCompare(s1b);
+      if (cmp === 0) cmp = a.card1.localeCompare(b.card1);
+      if (cmp === 0) cmp = a.result.localeCompare(b.result);
     } else if (key === 'mat2') {
       cmp = a.card2.localeCompare(b.card2);
+      if (cmp === 0) cmp = a.result.localeCompare(b.result);
+    } else if (key === 'spec2') {
+      const s2a = c2A?.specialty || 'Option';
+      const s2b = c2B?.specialty || 'Option';
+      cmp = s2a.localeCompare(s2b);
+      if (cmp === 0) cmp = a.card2.localeCompare(b.card2);
       if (cmp === 0) cmp = a.result.localeCompare(b.result);
     } else if (key === 'result') {
       cmp = a.result.localeCompare(b.result);
@@ -706,35 +756,75 @@ document.addEventListener('DOMContentLoaded', () => {
     return cmp * dir;
   }
 
-  function renderSpecialFusions(filterQuery) {
+  function renderSpecialFusions(filterArg) {
     if (!specialFusionContainer) return;
-    if (filterQuery !== undefined) {
-      currentSpecialFilter = filterQuery;
-    } else if (specialSearch && specialSearch.value) {
-      currentSpecialFilter = specialSearch.value;
+
+    if (typeof filterArg === 'string') {
+      currentSpecialFilter = { material: '', result: '', general: filterArg };
+    } else if (filterArg && typeof filterArg === 'object') {
+      currentSpecialFilter = {
+        material: filterArg.material || '',
+        result: filterArg.result || '',
+        general: filterArg.general || ''
+      };
+    } else if (filterArg === undefined) {
+      const matVal = specialMatSearch ? specialMatSearch.value.trim() : '';
+      const resVal = specialResultSearch ? specialResultSearch.value.trim() : '';
+      const genVal = specialSearch ? specialSearch.value.trim() : '';
+      currentSpecialFilter = { material: matVal, result: resVal, general: genVal };
     }
-    const q = (currentSpecialFilter || '').trim().toLowerCase();
+
+    const matQ = (currentSpecialFilter.material || '').toLowerCase();
+    const resQ = (currentSpecialFilter.result || '').toLowerCase();
+    const genQ = (currentSpecialFilter.general || '').toLowerCase();
+
     const list = FUSION_DATA.special_fusions || [];
 
     const filtered = list.filter(recipe => {
-      if (!q) return true;
       const resCard = getCardByName(recipe.result);
       const c1 = getCardByName(recipe.card1);
       const c2 = getCardByName(recipe.card2);
-      return recipe.result.toLowerCase().includes(q) ||
-        recipe.card1.toLowerCase().includes(q) ||
-        recipe.card2.toLowerCase().includes(q) ||
-        (resCard?.specialty && resCard.specialty.toLowerCase().includes(q)) ||
-        (c1?.specialty && c1.specialty.toLowerCase().includes(q)) ||
-        (c2?.specialty && c2.specialty.toLowerCase().includes(q));
+
+      if (matQ) {
+        const matMatch = recipe.card1.toLowerCase().includes(matQ) ||
+          recipe.card2.toLowerCase().includes(matQ) ||
+          (c1?.specialty && c1.specialty.toLowerCase().includes(matQ)) ||
+          (c2?.specialty && c2.specialty.toLowerCase().includes(matQ));
+        if (!matMatch) return false;
+      }
+
+      if (resQ) {
+        const resMatch = recipe.result.toLowerCase().includes(resQ) ||
+          (resCard?.specialty && resCard.specialty.toLowerCase().includes(resQ)) ||
+          (resCard?.level && resCard.level.toLowerCase().includes(resQ));
+        if (!resMatch) return false;
+      }
+
+      if (genQ) {
+        const genMatch = recipe.result.toLowerCase().includes(genQ) ||
+          recipe.card1.toLowerCase().includes(genQ) ||
+          recipe.card2.toLowerCase().includes(genQ) ||
+          (resCard?.specialty && resCard.specialty.toLowerCase().includes(genQ)) ||
+          (c1?.specialty && c1.specialty.toLowerCase().includes(genQ)) ||
+          (c2?.specialty && c2.specialty.toLowerCase().includes(genQ));
+        if (!genMatch) return false;
+      }
+
+      return true;
     });
 
     if (filtered.length === 0) {
+      const queryDesc = [
+        currentSpecialFilter.material ? `material "${escapeHtml(currentSpecialFilter.material)}"` : '',
+        currentSpecialFilter.result ? `result "${escapeHtml(currentSpecialFilter.result)}"` : '',
+        currentSpecialFilter.general ? `"${escapeHtml(currentSpecialFilter.general)}"` : ''
+      ].filter(Boolean).join(' and ');
+
       specialFusionContainer.innerHTML = `
         <div class="empty-state">
           <div class="icon"><img src="assets/ui/digivice.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
           <h3>No special fusions found</h3>
-          <p>No recipe matching "${escapeHtml(currentSpecialFilter)}" was found.</p>
+          <p>No recipe matching ${queryDesc || 'your search'} was found.</p>
         </div>
       `;
       return;
@@ -762,8 +852,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <thead>
               <tr>
                 ${getSortTh('mat1', 'Material 1')}
+                ${getSortTh('spec1', 'Specialty 1')}
                 <th class="plus-cell">+</th>
                 ${getSortTh('mat2', 'Material 2')}
+                ${getSortTh('spec2', 'Specialty 2')}
                 <th class="plus-cell">=</th>
                 ${getSortTh('result', 'Result Card')}
                 ${getSortTh('level', 'Level')}
@@ -778,7 +870,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const c2 = getCardByName(recipe.card2);
                 const resSpec = resCard ? resCard.specialty : 'Rare';
                 const resLevel = resCard ? resCard.level : '-';
+                const c1Spec = c1 ? c1.specialty : 'Option';
+                const c2Spec = c2 ? c2.specialty : 'Option';
                 const specClass = `spec-${(resSpec || 'option').toLowerCase()}`;
+                const c1SpecClass = `spec-${(c1Spec || 'option').toLowerCase()}`;
+                const c2SpecClass = `spec-${(c2Spec || 'option').toLowerCase()}`;
 
                 const resIcon = resCard?.localIcon || 'assets/icons/no-image.png';
                 const c1Icon = c1?.localIcon || 'assets/icons/no-image.png';
@@ -792,6 +888,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="combo-name">${escapeHtml(recipe.card1)}</span>
                       </div>
                     </td>
+                    <td><span class="spec-tag ${c1SpecClass}">${escapeHtml(c1Spec)}</span></td>
                     <td class="plus-cell">+</td>
                     <td>
                       <div class="combo-cell clickable-mat" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" style="cursor: pointer;" title="Click to test fusion in Materials tab">
@@ -799,6 +896,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="combo-name">${escapeHtml(recipe.card2)}</span>
                       </div>
                     </td>
+                    <td><span class="spec-tag ${c2SpecClass}">${escapeHtml(c2Spec)}</span></td>
                     <td class="plus-cell">=</td>
                     <td>
                       <div class="combo-cell clickable-result" data-result="${escapeHtml(recipe.result)}" style="cursor: pointer;" title="Click to view all recipes for ${escapeHtml(recipe.result)} in Tab 1">
@@ -858,6 +956,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  if (specialMatSearch) {
+    specialMatSearch.addEventListener('input', () => renderSpecialFusions());
+  }
+  if (specialResultSearch) {
+    specialResultSearch.addEventListener('input', () => renderSpecialFusions());
+  }
   if (specialSearch) {
     specialSearch.addEventListener('input', (e) => {
       renderSpecialFusions(e.target.value);
@@ -880,7 +984,8 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       compareSpecialFusions,
       SPEC_TO_COLOR,
-      getCardByName
+      getCardByName,
+      renderResult
     };
   }
 });

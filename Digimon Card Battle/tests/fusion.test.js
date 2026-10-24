@@ -30,22 +30,27 @@ function loadFusionModule(outContext = {}) {
   // Minimal DOM stub for DOMContentLoaded initialization
   const mockElement = (id = '') => {
     let inner = '';
+    const listeners = {};
     return {
       id,
       value: '',
       textContent: '',
+      listeners,
       get innerHTML() { return inner; },
       set innerHTML(val) {
         inner = val;
         if (id === 'specialFusionContainer') {
-          specialThs = ['mat1', 'mat2', 'result', 'level', 'specialty'].map(createMockTh);
+          specialThs = ['mat1', 'spec1', 'mat2', 'spec2', 'result', 'level', 'specialty'].map(createMockTh);
         }
       },
       classList: { add() {}, remove() {}, toggle() {} },
       setAttribute() {},
       removeAttribute() {},
       getAttribute() { return null; },
-      addEventListener() {},
+      addEventListener(evt, fn) {
+        if (!listeners[evt]) listeners[evt] = [];
+        listeners[evt].push(fn);
+      },
       querySelectorAll(sel) {
         if (id === 'specialFusionContainer' && sel.includes('th.sortable')) {
           return specialThs;
@@ -307,13 +312,17 @@ test('No fusion result is ever one of its own materials', () => {
   });
 });
 
-test('Special Fusion tab: fusion.html markup includes tab button, panel, search input, and container', () => {
+test('Special Fusion tab: fusion.html markup includes tab button, panel, search inputs, datalists, and container', () => {
   const html = fs.readFileSync(path.join(ROOT, 'fusion.html'), 'utf8');
   assert.ok(html.includes('id="tab-btn-special"'), 'Tab button exists in markup');
   assert.ok(html.includes('data-tab="special"'), 'Tab button has data-tab="special"');
   assert.ok(html.includes('aria-controls="tab-special-panel"'), 'Tab button controls tab-special-panel');
   assert.ok(html.includes('id="tab-special-panel"'), 'Special fusion panel exists');
-  assert.ok(html.includes('id="specialSearch"'), 'Special fusion search input exists');
+  assert.ok(html.includes('id="specialMatSearch"'), 'Search by material input exists');
+  assert.ok(html.includes('id="specialResultSearch"'), 'Search by result input exists');
+  assert.ok(html.includes('id="cardListSpecialMat"'), 'Special material datalist exists');
+  assert.ok(html.includes('id="cardListSpecialResult"'), 'Special result datalist exists');
+  assert.ok(html.includes('id="specialSearch"'), 'Hidden/legacy special fusion search input exists');
   assert.ok(html.includes('id="specialFusionContainer"'), 'Special fusion container exists');
 });
 
@@ -370,7 +379,9 @@ test('Special Fusion tab: table markup defines sortable headers with data-sort a
   const container = out.elements.specialFusionContainer;
 
   assert.ok(container.innerHTML.includes('data-sort="mat1"'), 'Material 1 header has data-sort="mat1"');
+  assert.ok(container.innerHTML.includes('data-sort="spec1"'), 'Specialty 1 header has data-sort="spec1"');
   assert.ok(container.innerHTML.includes('data-sort="mat2"'), 'Material 2 header has data-sort="mat2"');
+  assert.ok(container.innerHTML.includes('data-sort="spec2"'), 'Specialty 2 header has data-sort="spec2"');
   assert.ok(container.innerHTML.includes('data-sort="result"'), 'Result Card header has data-sort="result"');
   assert.ok(container.innerHTML.includes('data-sort="level"'), 'Level header has data-sort="level"');
   assert.ok(container.innerHTML.includes('data-sort="specialty"'), 'Specialty header has data-sort="specialty"');
@@ -521,4 +532,100 @@ test('Special Fusion tab: interactive header clicks toggle ascending/descending 
   assert.equal(filteredResults.length, 8, 'Filter remains active after sorting by Material 1');
   assert.equal(filteredResults[0], 'Shakkoumon', 'Shakkoumon (Angemon) is first by Material 1');
   assert.equal(filteredResults[7], 'AeroVeedramon', 'AeroVeedramon (Veedramon) is last by Material 1');
+});
+
+test('Special Fusion tab: sorting by specialty 1 and specialty 2 orders recipes by material affinity', () => {
+  const out = {};
+  const fusion = loadFusionModule(out);
+  const container = out.elements.specialFusionContainer;
+
+  function getRenderedRows(html) {
+    const rows = html.split('<tr class="combo-row">').slice(1);
+    return rows.map(r => {
+      const c1Match = r.match(/data-c1="([^"]+)"/);
+      const c2Match = r.match(/data-c2="([^"]+)"/);
+      const resMatch = r.match(/data-result="([^"]+)"/);
+      return {
+        c1: c1Match ? c1Match[1] : '',
+        c2: c2Match ? c2Match[1] : '',
+        res: resMatch ? resMatch[1] : ''
+      };
+    });
+  }
+
+  // Sort by spec1 ascending: Darkness < Fire < Ice < Nature < Rare
+  fusion.setSpecialSort('spec1', 'asc');
+  assert.equal(fusion.getSpecialSort().key, 'spec1');
+  assert.equal(fusion.getSpecialSort().dir, 'asc');
+  let rows = getRenderedRows(container.innerHTML);
+  const firstC1 = fusion.getCardByName(rows[0].c1);
+  const lastC1 = fusion.getCardByName(rows[rows.length - 1].c1);
+  assert.equal(firstC1.specialty, 'Darkness', 'First card 1 specialty ascending is Darkness');
+  assert.equal(lastC1.specialty, 'Rare', 'Last card 1 specialty ascending is Rare');
+
+  // Sort by spec2 ascending
+  fusion.setSpecialSort('spec2', 'asc');
+  assert.equal(fusion.getSpecialSort().key, 'spec2');
+  assert.equal(fusion.getSpecialSort().dir, 'asc');
+  rows = getRenderedRows(container.innerHTML);
+  const firstC2 = fusion.getCardByName(rows[0].c2);
+  const lastC2 = fusion.getCardByName(rows[rows.length - 1].c2);
+  assert.equal(firstC2.specialty, 'Darkness', 'First card 2 specialty ascending is Darkness');
+  assert.equal(lastC2.specialty, 'Rare', 'Last card 2 specialty ascending is Rare');
+});
+
+test('Special Fusion tab: search by material and search by result filter recipes correctly', () => {
+  const out = {};
+  const fusion = loadFusionModule(out);
+  const container = out.elements.specialFusionContainer;
+
+  function getRenderedResults(html) {
+    return [...html.matchAll(/class="combo-cell clickable-result"[^>]*data-result="([^"]+)"/g)].map(m => m[1]);
+  }
+
+  // Filter by Material "WarGreymon"
+  fusion.renderSpecialFusions({ material: 'WarGreymon' });
+  let results = getRenderedResults(container.innerHTML);
+  assert.equal(results.length, 1);
+  assert.equal(results[0], 'Omnimon I');
+
+  // Filter by Material "MetalGarurumon" (c2 in Omnimon I)
+  fusion.renderSpecialFusions({ material: 'MetalGarurumon' });
+  results = getRenderedResults(container.innerHTML);
+  assert.equal(results.length, 1);
+  assert.equal(results[0], 'Omnimon I');
+
+  // Filter by Result "Omnimon"
+  fusion.renderSpecialFusions({ result: 'Omnimon' });
+  results = getRenderedResults(container.innerHTML);
+  assert.equal(results.length, 2);
+  assert.ok(results.includes('Omnimon I'));
+  assert.ok(results.includes('Omnimon II'));
+
+  // Filter by Material "Kabuterimon" AND Result "GranKuwagamon"
+  fusion.renderSpecialFusions({ material: 'Kabuterimon', result: 'GranKuwagamon' });
+  results = getRenderedResults(container.innerHTML);
+  assert.equal(results.length, 1);
+  assert.equal(results[0], 'GranKuwagamon');
+
+  // Filter by Material "Kabuterimon" AND Result "Omnimon" -> No match
+  fusion.renderSpecialFusions({ material: 'Kabuterimon', result: 'Omnimon' });
+  assert.ok(container.innerHTML.includes('No special fusions found'));
+});
+
+test('Tab 1 combinations table: includes sortable specialty columns and renders specialty tags', () => {
+  const out = {};
+  const fusion = loadFusionModule(out);
+  const phoenixmon = fusion.getCardByName('Phoenixmon');
+  assert.ok(phoenixmon);
+
+  fusion.renderResult(phoenixmon);
+  const resultHtml = out.elements.fusionResult.innerHTML;
+  assert.ok(resultHtml.includes('data-sort="spec1"'), 'Header has data-sort="spec1"');
+  assert.ok(resultHtml.includes('data-sort="spec2"'), 'Header has data-sort="spec2"');
+  assert.ok(resultHtml.includes('Specialty 1'), 'Header displays Specialty 1');
+  assert.ok(resultHtml.includes('Specialty 2'), 'Header displays Specialty 2');
+
+  const gridHtml = out.elements.combosGrid.innerHTML;
+  assert.ok(gridHtml.includes('class="spec-tag spec-'), 'Combinations rows render spec-tag badges');
 });

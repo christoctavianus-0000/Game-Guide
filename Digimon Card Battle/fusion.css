@@ -374,6 +374,33 @@
   box-shadow: 0 0 0 3px var(--border-neon-glow);
 }
 
+/* Special Fusion Search Grid */
+.special-search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.special-search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.special-search-field .search-box {
+  max-width: 100%;
+}
+
+.search-field-label {
+  font-family: var(--font-tech);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 /* Result Card */
 .result-card {
   background: var(--bg-surface);

@@ -76,11 +76,13 @@ Special fusions completely override standard math and color rules. They are exac
 
 The Fusion Codex (`fusion.html`, `fusion.js`, `fusion.css`) provides 3 operational modes:
 1. **Tab 1 ("Find Recipe (By Result)")**: Search any card to list all valid material pairs that fuse into it (both standard math and special fusions).
+   - **Table Columns**: `Card 1`, `Specialty 1`, `Material 1`, `+`, `Card 2`, `Specialty 2`, `Material 2`, `Material Sum`, `Type`.
+   - **Interactive Column Sorting**: Clickable headers for all columns (including `Specialty 1` and `Specialty 2`) toggle ascending (`▲`) and descending (`▼`) order with directional indicators and `aria-sort`.
 2. **Tab 2 ("Fuse 2 Cards (By Materials)")**: Select two material cards to calculate and preview the resulting Digimon card (with forward standard simulation and special overrides).
 3. **Tab 3 ("Special Fusion")**: Complete directory listing of all 19 predetermined special fusion recipes.
-   - **Formula Layout**: Displays materials on the left and the resulting card on the right: `Material 1` `+` `Material 2` `=` `Result Card` `Level` `Specialty` `Action (Fuse ➔)`.
-   - **Interactive Column Sorting**: Clickable headers for `Material 1`, `Material 2`, `Result Card`, `Level`, and `Specialty` toggle ascending (`▲`) and descending (`▼`) order; non-sortable columns (`+`, `=`, `Action`) maintain `cursor: default`.
-   - **Real-Time Filter**: Filter by result name, material name, or specialty (`#specialSearch`), seamlessly preserved across column sorting.
+   - **Formula Layout**: Displays materials on the left and the resulting card on the right: `Material 1`, `Specialty 1`, `+`, `Material 2`, `Specialty 2`, `=`, `Result Card`, `Level`, `Specialty`, `Action (Fuse ➔)`.
+   - **Interactive Column Sorting**: Clickable headers for `Material 1`, `Specialty 1`, `Material 2`, `Specialty 2`, `Result Card`, `Level`, and `Specialty` toggle ascending (`▲`) and descending (`▼`) order; non-sortable columns (`+`, `=`, `Action`) maintain `cursor: default`.
+   - **Dual-Field Search**: Real-time inputs to search by material card name (`#specialMatSearch` with datalist) and by resulting card name (`#specialResultSearch` with datalist), seamlessly preserved across column sorting.
    - **Cross-Tab Linking**: Clicking result jumps to Tab 1 to see all recipes; clicking materials or "Fuse ➔" jumps to Tab 2 to test fusion.
    - **Deep Linking**: `fusion.html?tab=special` activates Tab 3 on page load.
 
@@ -136,5 +138,5 @@ When parsing source files or processing user search queries, always resolve spel
 When updating fusion data or algorithms:
 - [ ] Run `python merge_fusion.py` and verify all 7 category files match expected counts (fire 34/34, ice 35/35, nature 34/34, darkness 36/36, rare 33/33, option 101/110, partner 0/19).
 - [ ] Run `node download_all_assets.js` to synchronize `allCards.json` and `cardData.js`.
-- [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (27/27).
-- [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 90/90 tests passing.
+- [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (30/30).
+- [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 93/93 tests passing.

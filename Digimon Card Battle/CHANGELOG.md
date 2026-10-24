@@ -2,6 +2,32 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - Material Specialty Columns & Dual Search in Special Fusion
+
+- **Material Specialty Columns in Tab 1 Combinations Table (`fusion.html`, `fusion.js`)**:
+  - Added `Specialty 1` (`data-sort="spec1"`) and `Specialty 2` (`data-sort="spec2"`) columns to Tab 1 ("Possible Combinations") table.
+  - Both specialty columns are fully sortable with ascending/descending directional indicators (`▲` / `▼`) and accessible `aria-sort` attributes.
+  - Renders colored specialty badges (`spec-fire`, `spec-ice`, `spec-nature`, `spec-darkness`, `spec-rare`, `spec-option`) for both materials in each recipe row.
+  - Updated empty-state colspan from 7 to 9.
+  - Enhanced combination filter input to match material specialties in addition to card names.
+- **Material Specialty Columns in Tab 3 Special Fusion Directory (`fusion.js`, `fusion.css`)**:
+  - Added `Specialty 1` (`data-sort="spec1"`) and `Specialty 2` (`data-sort="spec2"`) columns to Tab 3 ("Special Fusion") table: `Material 1`, `Specialty 1`, `+`, `Material 2`, `Specialty 2`, `=`, `Result Card`, `Level`, `Specialty`, `Action`.
+  - Added sort handling for `spec1` and `spec2` in `compareSpecialFusions()` with tie-breaking against card name and result name.
+  - Renders colored specialty badges for both material cards.
+- **Dual-Input Search in Special Fusion Tab (`fusion.html`, `fusion.js`, `fusion.css`)**:
+  - Replaced the single search bar with a responsive dual-input grid (`.special-search-grid`):
+    - **Search by Material Card** (`#specialMatSearch`): filters recipes where either Material Card 1 or Material Card 2 matches the query, with autocomplete datalist (`#cardListSpecialMat`).
+    - **Search by Resulting Card** (`#specialResultSearch`): filters recipes where the resulting card matches the query, with autocomplete datalist (`#cardListSpecialResult`).
+    - Maintained `#specialSearch` hidden input and string/object query support in `renderSpecialFusions()` for seamless backward compatibility.
+    - Combined filtering: when both fields are used, both material and result constraints are simultaneously applied.
+- **Unit Test Suite Expansion (`tests/fusion.test.js`)**:
+  - Added unit tests for:
+    - Special Fusion tab dual search inputs and datalists markup.
+    - Special Fusion table sorting by `spec1` and `spec2` ordering recipes by elemental affinity.
+    - Special Fusion dual search filtering by material, by result, and multi-field intersections.
+    - Tab 1 combinations table sortable `spec1` and `spec2` headers and specialty badge rendering.
+  - **30/30 Digimon tests passing**, repository total **93/93 tests passing**, 0 TypeScript errors.
+
 ## Unreleased - Lower Result Value Fallback Rule
 
 - **Missing Result Value Fallback (`fusion.js`)**:
