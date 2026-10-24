@@ -2,6 +2,18 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased - Lower Result Value Fallback Rule
+
+- **Missing Result Value Fallback (`fusion.js`)**:
+  - Implemented the rule that when two cards are fused and no card exists at the exact summed Result Value in the resulting color (such as gaps in Option Result Values at 26 and 31, or sums exceeding the color's maximum Result Value), the fusion engine checks the next closest lower Result Value in that color pool.
+  - Example: Fusing 2 Andromon (Darkness, Material Value 13 each; 13 + 13 = 26 in Option) produces **Net Worm** (Option, Result Value 25), since there is no Option card with Result Value 26.
+  - Example: Fusing 2 WaruMonzaemon (Darkness, Material Value 19 each; 19 + 19 = 38 in Option) falls back to **Golden Banana** (Option, Result Value 35).
+  - Preserved the "never return a material" rule: if all candidates at the target Result Value were used as materials, the result bumps to the next higher non-material Result Value.
+  - Added search aliases `'net scape'` and `'netscape'` to resolve to `'Net Worm'`.
+  - Updated forward simulation in `findCombinations` with color pre-filtering to accurately discover gap and overflow combinations without unnecessary iteration.
+- **Unit Test Suite Expansion (`tests/fusion.test.js`)**:
+  - Added unit tests for 2 Andromon producing Net Worm (sum 26 -> value 25), reverse combination lookup including 2 Andromon for Net Worm, search alias resolution for Net Scape, and 2 WaruMonzaemon (sum 38 -> value 35) (**27/27 Digimon tests passing**, repository total **90/90 tests passing**).
+
 ## Unreleased - Sortable Special Fusion Table
 
 - **Interactive Column Sorting in Special Fusion Directory (`fusion.js`, `fusion.css`)**:

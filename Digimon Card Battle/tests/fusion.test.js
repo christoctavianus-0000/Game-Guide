@@ -221,6 +221,8 @@ test('Search aliases: resolves GameFAQs guide spelling variants to canonical car
   assert.equal(fusion.getCardByName('Monocromon')?.name, 'Monochromon');
   assert.equal(fusion.getCardByName('Braciomon')?.name, 'Brachiomon');
   assert.equal(fusion.getCardByName('Gigidramon')?.name, 'Gigadramon');
+  assert.equal(fusion.getCardByName('Net Scape')?.name, 'Net Worm');
+  assert.equal(fusion.getCardByName('netscape')?.name, 'Net Worm');
 });
 
 test('Cards with non-numeric or missing materialValue do not produce standard fusions', () => {
@@ -257,6 +259,41 @@ test('Never returns a material card: Leomon + Mutant Digivolve yields Togemon', 
 
   const leomonCombos = fusion.findCombinations(leomon);
   assert.ok(leomonCombos.every(c => c.card1.name !== 'Leomon' && c.card2.name !== 'Leomon'), 'Leomon recipes never use Leomon');
+});
+
+test('Fallback to lower result value: fusing 2 Andromon (sum 26) yields Net Worm (value 25)', () => {
+  const fusion = loadFusionModule();
+  const andromon = fusion.getCardByName('Andromon');
+  assert.ok(andromon, 'Andromon exists in database');
+  assert.equal(andromon.materialValue, 13, 'Andromon materialValue is 13');
+  assert.equal(andromon.specialty, 'Darkness', 'Andromon specialty is Darkness');
+
+  // Darkness + Darkness = Option, sum = 26.
+  // There is no Option card with Result Value 26, so it falls back to lower result value: Net Worm (25).
+  const results = fusion.findResultsFromMaterials(andromon, andromon);
+  assert.equal(results.length, 1, 'Produces exactly 1 standard fusion result');
+  assert.equal(results[0].card.name, 'Net Worm', 'Fusing 2 Andromon produces Net Worm (Net Scape)');
+  assert.equal(results[0].card.resultValue, 25, 'Net Worm has Result Value 25');
+  assert.equal(results[0].card.specialty, 'Option', 'Result is Option card');
+  assert.equal(results[0].sum, 26, 'Reported material sum is 26');
+
+  // Reverse lookup: findCombinations for Net Worm includes Andromon + Andromon
+  const netWorm = fusion.getCardByName('Net Worm');
+  const combos = fusion.findCombinations(netWorm);
+  const hasAndromonPair = combos.some(c => c.card1.name === 'Andromon' && c.card2.name === 'Andromon');
+  assert.ok(hasAndromonPair, 'findCombinations(Net Worm) includes Andromon + Andromon');
+});
+
+test('Fallback to lower result value: fusing 2 WaruMonzaemon (sum 38) yields Golden Banana (value 35)', () => {
+  const fusion = loadFusionModule();
+  const warumonzaemon = fusion.getCardByName('WaruMonzaemon');
+  assert.ok(warumonzaemon, 'WaruMonzaemon exists');
+  assert.equal(warumonzaemon.materialValue, 19, 'WaruMonzaemon materialValue is 19');
+
+  // Darkness + Darkness = Option, sum = 38 (exceeds max Option result value 35).
+  // Highest lower result value is Golden Banana (35).
+  const results = fusion.findResultsFromMaterials(warumonzaemon, warumonzaemon);
+  assert.ok(results.some(r => r.card.name === 'Golden Banana' && r.card.resultValue === 35), 'Produces Golden Banana at value 35');
 });
 
 test('No fusion result is ever one of its own materials', () => {

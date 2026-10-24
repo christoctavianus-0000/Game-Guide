@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     'monocromon': 'Monochromon',
     'braciomon': 'Brachiomon',
     'gigidramon': 'Gigadramon',
-    'warumonzaemon': 'WaruMonzaemon'
+    'warumonzaemon': 'WaruMonzaemon',
+    'net scape': 'Net Worm',
+    'netscape': 'Net Worm'
   };
 
   function getCardByName(name) {
@@ -65,10 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Standard fusion resolution. The game never returns a card used as material:
-   * if the only card at the summed Result Value (in the matrix color) is one of
-   * the materials, the next higher Result Value in that color is produced instead
-   * (e.g. Leomon + Mutant Digivolve => Togemon).
+   * Standard fusion resolution rules:
+   * 1. Gap / Missing Result Value: If there is no card at the summed Result Value
+   *    in the matrix color, the closest lower Result Value in that color is produced
+   *    instead (e.g. 2 Andromon: 13+13=26 Option -> Net Worm/Net Scape at Result Value 25).
+   * 2. Never a Material: The game never returns a card used as material. If the only
+   *    card at the target Result Value is one of the materials, the next higher Result
+   *    Value in that color is produced instead (e.g. Leomon + Mutant Digivolve => Togemon).
    */
   function resolveStandardFusion(c1, c2) {
     const m1 = parseInt(c1.materialValue);
@@ -80,12 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!resultColor) return [];
     const sum = m1 + m2;
     const pool = getResultPool(resultColor);
-    const atSum = pool.filter(p => p.rv === sum);
-    if (atSum.length === 0) return [];
+    let targetPool = pool.filter(p => p.rv === sum);
+    // If no result value found at sum, check the lower result value
+    if (targetPool.length === 0) {
+      const lower = pool.filter(p => p.rv < sum);
+      if (lower.length === 0) return [];
+      const maxLower = Math.max(...lower.map(p => p.rv));
+      targetPool = lower.filter(p => p.rv === maxLower);
+    }
     const isMaterial = card => card.name === c1.name || card.name === c2.name;
-    const allowed = atSum.filter(p => !isMaterial(p.card));
+    const allowed = targetPool.filter(p => !isMaterial(p.card));
     if (allowed.length > 0) return allowed.map(p => p.card);
-    const higher = pool.filter(p => p.rv > sum && !isMaterial(p.card));
+    // Never returns a material card: bump to next higher result value
+    const baseRv = targetPool[0].rv;
+    const higher = pool.filter(p => p.rv > baseRv && !isMaterial(p.card));
     if (higher.length === 0) return [];
     const nextValue = Math.min(...higher.map(p => p.rv));
     return higher.filter(p => p.rv === nextValue).map(p => p.card);
@@ -115,7 +128,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const c2 = CARD_DATABASE[j];
           const m1 = parseInt(c1.materialValue);
           const m2 = parseInt(c2.materialValue);
-          if (isNaN(m1) || isNaN(m2) || m1 + m2 > targetResultVal) continue;
+          if (isNaN(m1) || isNaN(m2)) continue;
+          const col1 = SPEC_TO_COLOR[c1.specialty];
+          const col2 = SPEC_TO_COLOR[c2.specialty];
+          const resCol = FUSION_DATA.fusion_table[`${col1}+${col2}`] || FUSION_DATA.fusion_table[`${col2}+${col1}`];
+          if (resCol !== SPEC_TO_COLOR[targetCard.specialty]) continue;
           if (!resolveStandardFusion(c1, c2).some(r => r.name === targetCard.name)) continue;
           const exists = combos.some(c =>
             (c.card1.name === c1.name && c.card2.name === c2.name) ||

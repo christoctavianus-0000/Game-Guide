@@ -62,7 +62,13 @@ Determines the output color/specialty of a fusion based on the colors of the two
 
 ## No-self-material rule
 
-The game never gives a card used as material. If the only card at the summed Result Value (in the matrix color) is one of the materials, the next higher Result Value in that color is produced (e.g. Leomon + Mutant Digivolve => Togemon).
+The game never gives a card used as material. If the only card at the target Result Value (in the matrix color) is one of the materials, the next higher Result Value in that color is produced (e.g. Leomon + Mutant Digivolve => Togemon).
+
+## Missing Result Value / Gap Fallback Rule
+
+If there is no card with the exact summed Result Value in the resulting color (e.g. Option gaps at Result Values 26 and 31, or sums exceeding the color's maximum Result Value), the game checks the next closest lower Result Value in that color pool.
+- Example: Fusing 2 Andromon (Darkness, Material Value 13 each) produces an Option card with sum 26. Since there is no Option card with Result Value 26, the fusion yields **Net Worm** (Net Scape, Result Value 25).
+- Example: Fusing 2 WaruMonzaemon (Darkness, Material Value 19 each) produces sum 38. The highest available Option Result Value is **Golden Banana** (Result Value 35).
 
 ## Special Fusion Directory (Fusion Codex Tab 3)
 

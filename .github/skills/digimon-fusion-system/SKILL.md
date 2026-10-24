@@ -43,7 +43,12 @@ A standard combination between Material Card A and Material Card B produces Targ
 ### C. No-Self-Material Fusion Rule
 The game never returns a card that was used as a material. If the only card at the summed Result Value (in the matrix color) is one of the materials, the result bumps to the next higher Result Value in that color (`Leomon + Mutant Digivolve` => `Togemon`, 1 higher than Leomon). Implemented in `resolveStandardFusion()` in `fusion.js` and shared by both `findResultsFromMaterials` and `findCombinations` (which runs a forward simulation so reverse lookups list bumped recipes and never list a target as its own material).
 
-### D. Special Fusions (19 recipes)
+### D. Missing Result Value / Gap Fallback Rule
+If there is no card at the summed Result Value in the resulting matrix color (such as Option card gaps at Result Values 26 and 31, or sums exceeding the color's maximum Result Value), the game engine checks the next closest lower Result Value in that color pool.
+- Example: Fusing 2 Andromon (Darkness, Material Value 13 each) gives sum 26 in Option. Since there is no Option card with Result Value 26, the fusion yields **Net Worm** (Net Scape, Result Value 25).
+- Example: Fusing 2 WaruMonzaemon (Darkness, Material Value 19 each) gives sum 38 in Option. The highest available Option Result Value is **Golden Banana** (Result Value 35).
+
+### E. Special Fusions (19 recipes)
 Special fusions completely override standard math and color rules. They are exact, order-independent pairs:
 1. `Omnimon I + Paildramon => Imperialdramon`
 2. `Garudamon + Silphymon => Valkyrimon`
@@ -122,6 +127,7 @@ When parsing source files or processing user search queries, always resolve spel
 - `Braciomon` → `Brachiomon`
 - `Gigidramon` → `Gigadramon`
 - `WaruMonzaemon` / `Warumonzaemon`
+- `Net Scape` / `netscape` → `Net Worm`
 
 ---
 
@@ -130,5 +136,5 @@ When parsing source files or processing user search queries, always resolve spel
 When updating fusion data or algorithms:
 - [ ] Run `python merge_fusion.py` and verify all 7 category files match expected counts (fire 34/34, ice 35/35, nature 34/34, darkness 36/36, rare 33/33, option 101/110, partner 0/19).
 - [ ] Run `node download_all_assets.js` to synchronize `allCards.json` and `cardData.js`.
-- [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (25/25).
-- [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 88/88 tests passing.
+- [ ] Run `npm.cmd test --prefix "Digimon Card Battle"` and verify all unit tests pass (27/27).
+- [ ] Run `npm.cmd run check` from repository root and verify 0 TypeScript errors and 90/90 tests passing.
