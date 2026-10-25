@@ -191,6 +191,12 @@
   function init() {
     window.BD2.initModal();
     populateJobSelect();
+
+    const statTotal = document.getElementById('stat-total');
+    if (statTotal && window.abilityData) {
+      statTotal.textContent = String(window.abilityData.length);
+    }
+
     filterAndSortAbilities();
 
     // Search input

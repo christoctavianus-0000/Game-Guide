@@ -1,6 +1,6 @@
 # Bravely Default II — Codex Data Integrity Report
 
-**Generated:** 2026-10-25 22:08:55
+**Generated:** 2026-10-25 22:26:05
 **Pipeline Status:** Synchronized & Validated (`*Data.json` ↔ `*Data.js`)
 
 ---
@@ -10,19 +10,19 @@
 | Dataset | File | Records | Completeness |
 | :--- | :--- | :---: | :---: |
 | **Jobs** | `jobData.json` / `jobData.js` | 24 | 100% (All 24 asterisk jobs) |
-| **Abilities** | `abilityData.json` / `abilityData.js` | 157 | 100% (Command & Support abilities) |
+| **Abilities** | `abilityData.json` / `abilityData.js` | 360 | 100% (Command & Support abilities) |
 | **Equipment** | `equipmentData.json` / `equipmentData.js` | 309 | High (Weapons, Armor, Accessories) |
 | **Bestiary** | `enemyData.json` / `enemyData.js` | 292 | High (Regular, Asterisk Bosses, Rare World Bosses) |
 | **Side Quests** | `questData.json` / `questData.js` | 69 | 100% (All 69 subquests) |
 | **Shops** | `shopData.json` / `shopData.js` | 7 | 100% (All 7 settlement shops) |
 | **B 'n' D Cards** | `bndCardData.json` / `bndCardData.js` | 105 | 100% (All 105 minigame cards) |
-| **Total Game Records** | — | **963** | **Ready for Production** |
+| **Total Game Records** | — | **1166** | **Ready for Production** |
 
 ---
 
 ## 2. Cross-Reference Verification
 
-- **Abilities → Jobs**: 157 / 157 linked cleanly (0 unresolved).
+- **Abilities → Jobs**: 360 / 360 linked cleanly (0 unresolved).
 - **Shop Inventory Cross-Reference**:
   - Equipment items recognized: 537
   - Consumables / Potions / Tents recognized: 48

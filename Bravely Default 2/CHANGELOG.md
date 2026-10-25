@@ -2,6 +2,18 @@
 
 All notable changes to the Bravely Default II Codex module are documented here.
 
+## [1.1.0] - 2026-10-25
+
+### Added & Enhanced
+- **Official Community Databook Integration (`Tables61` Google Sheet)**:
+  - Downloaded authoritative Google Sheet tabs for Prologue, Chapter 1, Chapter 2, Chapter 3, and Chapter 4+ jobs (`source/sheet_tabs/`).
+  - Implemented automated downloader `source/download_sheet_tabs.py` and completely rewrote `parse_abilities.py`.
+- **Complete Active Command & Passive Support Abilities Across All 24 Jobs**:
+  - Expanded dataset from 157 abilities to **360 complete abilities** (15 progression levels per job across all 24 Asterisk jobs).
+  - Every single job now features its full suite of Command skills and 1–6 Passive Support abilities (84 passives, 276 command skills total).
+  - Accurate support slot costs (`1 Slot`, `2 Slots`) and battle costs (`MP`, `BP`, `HP`, `Free`).
+  - Added deterministic unit test in `tests/cross_reference.test.js` validating that all 24 jobs possess both Command and Passive Support abilities.
+
 ## [1.0.0] - 2026-10-25
 
 ### Initial Release

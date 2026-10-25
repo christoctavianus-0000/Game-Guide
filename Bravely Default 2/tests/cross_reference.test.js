@@ -37,7 +37,7 @@ describe('Cross-Reference Integrity', () => {
     const jobNames = new Set(jobs.map((j) => j.name.toLowerCase()));
     const jobIds = new Set(jobs.map((j) => j.id.toLowerCase()));
 
-    assert.ok(abilities.length >= 150, 'Must have at least 150 abilities');
+    assert.ok(abilities.length >= 300, 'Must have at least 300 abilities');
     for (const a of abilities) {
       assert.ok(a.id, 'Ability missing id');
       assert.ok(a.name, 'Ability missing name');
@@ -47,6 +47,24 @@ describe('Cross-Reference Integrity', () => {
         jobNames.has(jLower) || jobIds.has(jLower),
         `Ability "${a.name}" refers to unknown job: "${a.job}"`
       );
+    }
+  });
+
+  test('Every one of the 24 asterisk jobs has both Command and Passive Support abilities', () => {
+    assert.equal(jobs.length, 24);
+    assert.equal(abilities.length, 360, 'Complete dataset must have 360 abilities (15 levels * 24 jobs)');
+
+    for (const j of jobs) {
+      const jobAbilities = abilities.filter(
+        (a) => a.job.toLowerCase() === j.name.toLowerCase() || a.job.toLowerCase() === j.id.toLowerCase()
+      );
+      assert.equal(jobAbilities.length, 15, `Job ${j.name} must have 15 abilities (Lv 1-15)`);
+
+      const passives = jobAbilities.filter((a) => a.type === 'Support' || a.isPassive === true);
+      const commands = jobAbilities.filter((a) => a.type === 'Command' || a.isPassive === false);
+
+      assert.ok(passives.length >= 1, `Job ${j.name} must have at least 1 passive support ability`);
+      assert.ok(commands.length >= 1, `Job ${j.name} must have at least 1 command ability`);
     }
   });
 

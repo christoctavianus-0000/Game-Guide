@@ -1,0 +1,96 @@
+Ability,Level,Cost,,Description (in game),Phys/Sup/Mag,Target,Modifier,Action Cost (cooldown duration),Type,Notes
+Freelancer,,Freelancer,,,,,,,,
+Stand Ground,Sp1,N/A,,Roughly 50% chance of surviving with one HP when taking enough damage to be knocked out. This ability will not be triggered if the user has one HP.,Passive,N/A,N/A,N/A,N/A,Affected by luck
+Late Bloomer,Sp2,N/A,,Boosts all stats based on the number of jobs mastered.,Passive,N/A,See notes,N/A,N/A,"Each mastered job (lv 12+) gives: 100 HP, 10 MP, 15 P.Atk, 15 P.Def, 15 M.Atk, 15 M.Def, 4 Res. Power, 2 Speed, 3 Aim, 2 Evasion, 1 Crit. Bonus applies after all stat multipliers including weight penalties."
+All-Out Assault,SpA,N/A,,Strike a single enemy with a powerful physical attack.,Physical,One Foe,9-12,400,None,"Condition: Use attack x12. P.Atk +20%, M.Atk +20%."
+Examine,1,0,,"Reveal an enemy's HP, weaknesses and family.",Support,One Foe,N/A,200,N/A,Info permanently revealed for that enemy
+Treat,2,20,MP,Restore 20% of a target's HP and 10% of their MP.,Support,Single,N/A,212,N/A,
+Divining Rod,3,1,SP,Displays the number of unopened treasure chests nearby.,Passive,N/A,N/A,N/A,N/A,"Displayed in bottom corner. On overworld, shows your current map's chests (Holograd+Halcyonia, Savalon+Wiswald, Reimdhal, Musa)"
+Forage,4,0,,Search for items. The items found will depend on the user's job level.,Support,Self,N/A,200,N/A,https://game8.co/games/BravelyDefault2/archives/321751 seems to be a decent list of all forage materials.
+Dungeon Master,5,1,SP,Nullifies all terrain-inflicted damage.,Passive,N/A,N/A,N/A,N/A,Affects damage in Miasma Woods and Magma Mountain
+Lucky Charm,6,15,MP,Increase a target's luck for five turns.,Support,Single,15%,212,N/A,Grants +15% luck to target
+Self-Healing,7,1,SP,"Cures poison, blindness and silence when battle ends.",Passive,N/A,N/A,N/A,N/A,
+Purge,8,20,MP,"Remove berserk, confusion, dread, charm and doom from a target.",Support,Single,N/A,225,N/A,
+JP Up,9,1,SP,JP earned is increased by a multiple of 1.2.,Passive,N/A,20%,N/A,N/A,Stacks additively with other JP increasing sources (e.g. Growth Eggs). Affect JP Orbs.
+Square One,10,28,MP,Remove various status effects from a target.,Support,Single,N/A,225,N/A,"Removes buffs, debuffs, Daub and Elemental Impariment. Does not affect other status ailments. May affect other things. Identical to Pictomancer's Purify as far as I can tell."
+Body Slam,11,1,BP,"Deals physical damage to a target based on the user's encumberance, and delay the target's turn.",Physical,Single,3,250,None,Adds (weight x 3.5) to Attack in damage formula (approximately +25 damage per 1 weight added). Increases target action cooldown by 100.
+JP Up and Up,12,2,SP,JP earned is increased by a multiple of 1.5 (increases to 1.7 when combined with JP Up).,Passive,N/A,50%,N/A,N/A,Stacks additively with other JP increasing sources (e.g. Growth Eggs). Affect JP Orbs.
+Wish Upon a Star,13,42,MP,Increase all allies' luck for five turns. Even more effective at night.,Support,All Allies,30% (Night) / 10% (Day),225,N/A,Grants +10% luck to all targets in day and +30% at night.
+Limit Breaker,14,1,SP,Doubles the potential effects of all stat boosts received.,Passive,N/A,N/A,N/A,N/A,Doubles the cap of stat buffs for this character only.
+Mimic,15,0,,"Repeat the most recent action peformed by the user or an ally without expending HP, MP, BP, pg or items.",Support,Self,N/A,250,N/A,"Counts as an ability on its own before triggering whatever is being mimic'd, which can trigger counter."
+Black Mage,,Black Mage,,,,,,,,
+Regenerative Default,Sp1,N/A,,Defaulting restores a little MP. The amount restored depends on the user's level.,Passive,N/A,N/A,N/A,N/A,MP restored equal to users level.
+High-Velocity Spells,Sp2,N/A,,Prevents all attack spells from being nullified or absorbed. Will not bypass damage-halving or reflect effects.,Passive,N/A,N/A,N/A,N/A,
+Iceberg Blast,SpA,N/A,,Strike all enemies with a powerful water-imbued magical attack.,Magic,All Foes,8-13,400,Water,Condition: Use Black Magic x13. M.Def +30%
+Fire,1,15,MP,Perform a fire magic attack on a target/all targets.,Magic,Single/All,2.2,250,Fire,
+Blizzard,2,15,MP,Perform a water magic attack on a target/all targets.,Magic,Single/All,2.2,250,Water,
+Thunder,3,15,MP,Perform a lightning magic attack on a target/all targets.,Magic,Single/All,2.2,250,Lightning,
+Poison,4,18,MP,Attempt to poison a target.,Support,Single,N/A,250,N/A,
+Lunar-Powered,5,1,SP,"During the night, offensive magic, evasion and luck are increased, and 4% of MP is restored each turn.",Passive,N/A,10% / 4%,N/A,N/A,10% M.Atk and Evasion (rounded up) and 10% increased luck. 4% MP per turn.
+Fira,6,38,MP,Perform a powerful fire magic attack on a target/all targets.,Magic,Single/All,4.5,275,Fire,
+Blizzara,7,38,MP,Perform a powerful water magic attack on a target/all targets.,Magic,Single/All,4.5,275,Water,
+Thundara,8,38,MP,Perform a powerful lightning magic attack on a target/all targets.,Magic,Single/All,4.5,275,Lightning,
+Aspir Attack,9,1,SP,"Restores an amount of MP based on damage inflicted with the ""Attack"" command.",Passive,N/A,3.40%,N/A,N/A,Restores 3.4% of damage dealt as MP
+Firaga,10,66,MP,Perform an extremely powerful fire magic attack on a target/all targets.,Magic,Single/All,7,300,Fire,
+Blizzaga,11,66,MP,Perform an extremely powerful water magic attack on a target/all targets.,Magic,Single/All,7,300,Water,
+Thundaga,12,66,MP,Perform an extremely powerful lightning magic attack on a target/all targets.,Magic,Single/All,7,300,Lightning,
+Flare,13,80,MP,Perform an incredibly powerful fire magic attack on a target.,Magic,Single,10,325,Fire,
+Freeze,14,80,MP,Perform an incredibly powerful water magic attack on a target.,Magic,Single,10,325,Water,
+Burst,15,80,MP,Perform an incredibly powerful lightning magic attack on a target.,Magic,Single,10,325,Lightning,
+White Mage,,White Mage,,,,,,,,
+Angelic Ward,Sp1,N/A,,Roughly 30% chance of any damage received being halved.,Passive,N/A,N/A,N/A,N/A,Affected by luck. Additive with other damage reduction sources. Does not apply to attack items or self damage
+Holistic Medicine,Sp2,N/A,,All healing spells benefit all party members.,Passive,N/A,N/A,N/A,N/A,"Allows group casting of Raise, Basuna, Arise, Esuna, Heal, Healra, Healga, Regeneration & Reraise. Of these only Raise's power is reduced due to group cast penalties, all others cast at full power on all targets."
+Sacred Light,SpA,N/A,,Greatly restore all allies' HP and cure all status ailments.,Support,All Allies,26-96,400,None,"Condition: Use White Magic x12. P.Def +15%, M.Def +15%."
+Cure,1,8,MP,Restore a little of a target's/multiple targets' HP.,Support,Single/All,5,225,Light,"Deals light based magic damage to undead enemies, scaling with Res Power vs (presumed) M.Def."
+Protect,2,11,MP,Increase a target's physical defence by 15% for three turns. Stats cannot be increased beyond 200% of their base value.,Support,Single,N/A,210,N/A,
+Shell,3,13,MP,Increase a target's magical defence by 15% for three turns. Stats cannot be increased beyond 200% of their base value.,Support,Single,N/A,210,N/A,
+Raise,4,25,MP,Revive a knocked-out target and restore a few HP.,Support,Single,7.5,250,N/A,Attempts to inflicts Death on undead enemies.
+Solar-Powered,5,1,SP,"During the daytime, restorative power, aim and luck are increased, and 4% of MP is restored each turn.",Passive,N/A,10% / 4%,N/A,N/A,10% Res. Power and Aim (rounded up) and 10% increased luck. 4% MP per turn.
+Cura,6,28,MP,Restore some of a target's/multiple targets' HP.,Support,Single/All,10 (9 vs Undead),250,Light,"Deals light based magic damage to undead enemies, scaling with Res Power vs (presumed) M.Def."
+Benediction,7,15%,HP,Increase the user's restorative power by 30% for three turns. Stats cannot be increased beyond 200% of their base value.,Support,Self,30%,300,N/A,
+Basuna,8,22,MP,"Cure a target of poison, blindness, silence, sleep, paralysis, contagion, freezing and daubing.",Support,Single,N/A,250,N/A,
+Drain Attack,9,1,SP,Restores an amount of HP based on damage inflicted with the 'Attack' command.,Passive,N/A,20%,N/A,N/A,Restores 20% of damage dealt as HP.
+Arise,10,95,MP,Revive a knocked-out target with full HP.,Support,Single,N/A,287,N/A,Attempts to inflicts Death on undead enemies.
+Better than Ever,11,1,SP,"When the user is healed beyond max. HP, their max. HP is temporarily increased by the remainder.",Passive,N/A,N/A,N/A,N/A,Functions when user is at or below normal max HP. Any healing will heal above their normal max (HP cannot exceed 9999 without Maximise HP)
+Curaga,12,60,MP,Restore a lot of a target's/multiple targets' HP.,Support,Single/All,16 (17 vs Undead),275,Light,"Deals light based magic damage to undead enemies, scaling with Res Power vs (presumed) M.Def."
+Esuna,13,45,MP,"Cure most of a target's status ailments (works on all ailments cured by Basuna plus dread, berserk, confusion, charm, slow, stop, doom and resistance reductions).",Support,Single,N/A,275,N/A,
+Above and Beyond,14,2,SP,"When a target is healed beyond max. HP, their max. HP is temporarily increased by the remainder.",Passive,N/A,N/A,N/A,N/A,Functions when target is at or below normal max HP. Any healing will heal above their normal max (HP cannot exceed 9999 without Maximise HP)
+Raise All,15,110,MP,Revive multiple knocked-out targets with full HP.,Support,All Allies/Foes,N/A,325,N/A,Attempts to inflicts Death on undead enemies.
+Vanguard,,Vanguard,,,,,,,,
+Shield-Bearer,Sp1,N/A,,"Equipping a shield does not negatively affect speed, aim or evasion.",Passive,N/A,N/A,N/A,N/A,
+Attention Seeker,Sp2,N/A,,Physical attack power and critical chance are boosted based on the user's chance of being targeted.,Passive,N/A,See notes,N/A,N/A,Multiplies P.Atk by (1 + CobT/200) and Crit chance by (1 + CobT/1000). In battle buffs to CobT (e.g. from Aggravate and Infuriate) are counted towards this multiplier.
+Fault Line,SpA,N/A,,Strike a single enemy with a powerful earth-imbued physical attack.,Physical,One Foe,10.5-13.5,400,Earth,Condition: Use Heroics x13. P.Def +30%.
+Cross Cut,1,18,MP,Perform two physical attacks on a target in quick succession.,Physical,Single,1.6 + 1.7,262,Weapon,
+Shield Bash,2,10%,HP,Use equipped shield to perform an earth-imbued physical attack on a target and slightly delay their next turn.,Physical,Single,1.1,330,Earth,Requires a shield equipped. Increases target action cooldown by 40
+Defang,3,12,MP,Perform a physical attack on a target and decrease their physical attack by 7% for five turns. Stats cannot be reduced below 65% of their base value.,Physical,Single,1.3,225,Weapon,
+Skull Bash,4,12,MP,Perform a weak physical attack on a target and decrease their magical attack by 7% for five turns. Stats cannot be reduced below 65% of their base value.,Physical,Single,1.3,225,Weapon,"Despite the difference in description, Skull Bash and Defang do the same damage."
+Pain into Gain,5,1,SP,Taking damage in battle while not Defaulting has a roughly 30% chance of increasing physical attack power by 1-3%.,Passive,N/A,1-3%,N/A,N/A,"Affected by Luck. Buff lasts for the entire battle, even if user is KO'd."
+Aggravate,6,0,,Increase the user's likelihood of being targeted by 25% for three turns. Stats cannot be increased beyond 200% of their base value.,Support,Self,25%,200,N/A,
+Sword of Stone,7,26,MP,Perform a powerful earth-imbued physical attack on a target.,Physical,Single,3.35,265,Weapon & Earth,
+Shield Stun,8,25%,HP,Use equipped shield to perform a quick physical attack on a target and significantly delay their next turn.,Physical,Single,0.5,410,None,Requires a shield equipped. Increases target action cooldown by 80.
+Defensive Offence,9,1,SP,Performing an attack with a weapon equipped will cause all damage to the user to be reduced to 70% until their next turn.,Passive,N/A,0.7,N/A,N/A,"Affects all sources of damage. Multiplies with other defence multipliers (e.g. Bard abilities, Thrust and Parry) and Defaulting (through e.g. Auto Guard or Shieldmaster skills)"
+Enrage,10,24,MP,Guarantee that an enemy's next two actions will be aimed at the user.,Support,One Foe,N/A,300,N/A,
+The Gift of Courage,11,1,BP,Give one of the user's own BP to a target.,Support,One Other,N/A,225,N/A,"Target gains 1 BP, user doesn't lose anything extra beyond the move's cost. Not affected by Across the Board"
+Neo Cross Slash,12,54,MP,Perform two powerful physical attacks on a target in quick succession.,Physical,Single,3.3 + 3.5,350,Weapon,
+Infuriate,13,40,MP,Increase the user's likelihood of being targeted by 50% for three turns. Stats cannot be increased beyond 200% of their base value.,Support,Self,50%,275,N/A,
+Quake Blade,14,70,MP,Perform an extremely powerful earth-imbued physical attack on a target.,Physical,Single,7.5,312,Weapon & Earth,
+Ultimatum,15,1,BP,"Perform an extremely powerful physical attack on all targets, after which the user is less likely to be targeted until their next turn comes around.",Physical,All Foes,10,375,Weapon,"Reduces users ""Hate"" (a hidden variable that builds up as you take actions) by 10,000. TBC exactly how much effect that has."
+Monk,,Monk,,,,,,,,
+Concentration,Sp1,N/A,,"Causes critical chance to increase every time Invigorate, Inner Alchemy or Mindfulness is used. The effect lasts for the duration of the current battle.",Passive,N/A,1%,N/A,N/A,1% increased crit each time the relevant abilities are used. Crit chance multiplies your displayed critical rate.
+Single-Minded,Sp2,N/A,,"Prevents berserk, confusion and charming. Using Martial Arts abilities or Default causes the next turn to come around more quickly.",Passive,N/A,N/A,N/A,N/A,"Reduces action cost of Default and Martial Arts by 40, after applying any modifiers due to weight penalty"
+Eternal Inferno,SpA,N/A,,Strike a single enemy with a powerful fire-imbued physical attack.,Physical,One Foe,10-14,400,Fire,"Condition: Use Martial Arts x13. Res. Power +15%, Crit +15%."
+Strong Strike,1,18%,HP,"Perform a physical attack on a target that deals heavy damage, but has a slightly reduced chance of landing.",Physical,Single,4.5,250,None,"In addition to the normal aim/evasion check, has an estimated 60-65% success chance, affected by luck. Attack misses if this roll fails."
+Inner Alchemy,2,20,MP,"Restore 20% of the user's HP and cure poison, blindness and slow.",Support,Self,20%,225,None,
+Bare-Knuckle Brawler,3,1,SP,Boosts user and equipment's physical attack by 80% and aim by 30% when both hands are empty.,Passive,N/A,80% / 30%,N/A,N/A,
+Firebird,4,15%,HP,Perform a fire-imbued physical attack on a target. Target's resistance to fire is reduced for two turns.,Physical,Single,2.5,260,Fire,
+Qigong Wave,5,20%,HP,Perform a physical attack that can penetrate a target's Default defence.,Physical,Single,3,275,None,
+Mindfulness,6,1,BP,"Restore 15% of the user's MP and cure silence, dread and contagion.",Support,Self,15%,270,None,
+Flying Heel Drop,7,30%,HP,Perform a powerful physical attack on a target.,Physical,Single,4.5,330,None,
+Invigorate,8,20,MP,Boost the user's physical attack by 15% for three turns. Stats cannot be increased beyond 200% of their base value.,Support,Self,15%,275,None,
+Tortoise Kick,9,10%,HP,Perform a physical attack on a target and delay their next turn.,Physical,Single,1.4,370,None,Increases target action cooldown by 60.
+Flames of War,10,35%,HP,Perform an extremely powerful fire-imbued physical attack on a target.,Physical,Single,6,330,Fire,
+Pressure Point,11,1,BP,Perform a powerful physical attack on a target that ignores physical defence and Default status.,Physical,Single,3.8,400,None,
+Focal Blast,12,99,MP,Perform an incredibly powerful physical attack on a target which will also reduce a random stat by 20% for four turns. Stats cannot be reduced below 65% of their base value.,Physical,Single,8,350,None,"Stats which can be lowered: P.Atk, P.Def, M.Atk, M.Def, Aim, Eva, Res. Pow, Spd"
+Natural Talent,13,2,SP,"Boosts physical attack and aim by 200% when no weapons, armour or accessories are equipped.",Passive,N/A,200%,N/A,N/A,Stacks additively with Bare-Knuckle Brawler (+280% P.Atk and +230% Aim)
+Phoenix Flight,14,2,BP,"Reduce the user's HP to one, and deal the amount of HP lost as damage to a target twice.",Physical,Single,N/A,400,None,
+Maximise HP,15,1,SP,Doubles maximum HP during battle. This can enable HP to exceed 9999.,Passive,N/A,200%,N/A,N/A,"Doubles max HP up to a cap of 19,998 HP in battle. Out of battle your HP cap does not change, meaning you will always be at 50% HP or lower at the start of battle. Moves whose cost or damage scales based on max HP use the doubled (in battle) value."
