@@ -5,6 +5,11 @@ All notable changes to the Bravely Default II Codex module are documented here.
 ## [1.1.0] - 2026-10-25
 
 ### Added & Enhanced
+- **Official B 'n' D Card Images & Direct Effects Integration (Game8)**:
+  - Downloaded high-resolution official in-game card PNG captures for all 105 B 'n' D cards from Game8 (`assets/cards/*.png`).
+  - Updated card grid in `bnd.html` and `bndApp.js` to display card effects directly inside each card, removing the necessity of opening a modal to view card rules.
+  - Removed erroneous `Power: 1` / `strength` value (B 'n' D cards operate via board placement and territorial rules, not power/attack stats).
+  - Added unit test in `tests/assets_integrity.test.js` validating all 105 card PNGs exist and are non-empty.
 - **Official Community Databook Integration (`Tables61` Google Sheet)**:
   - Downloaded authoritative Google Sheet tabs for Prologue, Chapter 1, Chapter 2, Chapter 3, and Chapter 4+ jobs (`source/sheet_tabs/`).
   - Implemented automated downloader `source/download_sheet_tabs.py` and completely rewrote `parse_abilities.py`.

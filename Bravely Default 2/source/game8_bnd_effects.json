@@ -1,0 +1,632 @@
+{
+  "sahagin": {
+    "raw_name": "Sahagin",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3331004/f556756303829f90b9f289f6db1b20ef.png/show"
+  },
+  "flannacotta": {
+    "raw_name": "Flannacotta",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3330998/c3db671250fc22ee220f21112fa07a6b.png/show"
+  },
+  "lotl": {
+    "raw_name": "Lotl",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337650/4ffe9778b20dd037ca8ddb5d5980713e.png/show"
+  },
+  "gelaflan": {
+    "raw_name": "Gelaflan",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337611/ce8bf06c85f587423c8ae966e0c59f17.png/show"
+  },
+  "dagon": {
+    "raw_name": "Dagon",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337756/0d23d0c1f8d9bb8967a2d8c472e76c1f.png/show"
+  },
+  "rocktortoise": {
+    "raw_name": "Rock Tortoise",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337802/ed4b1590822efc011f02dfc5336a84d0.png/show"
+  },
+  "sibilus": {
+    "raw_name": "Sibilus",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337854/767df2ef3c6d04b709ae982c26d67d40.png/show"
+  },
+  "adamanttortoise": {
+    "raw_name": "Adamant Tortoise",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3338627/d198ec8a38b7f05e594711e5b25ebb58.png/show"
+  },
+  "genbu": {
+    "raw_name": "Genbu",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338847/206aea59ee7dd84967fe353559b3c2a2.png/show"
+  },
+  "grizzly": {
+    "raw_name": "Grizzly",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337648/77f48d65854b8a2a0ab08569a2aaba77.png/show"
+  },
+  "diatryma": {
+    "raw_name": "Diatryma",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337422/e2df1277e04d54421511e4ad853d2ac6.png/show"
+  },
+  "goldenbear": {
+    "raw_name": "Golden Bear",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338209/e025788581dfe3144afdfaa60c8d91ad.png/show"
+  },
+  "yeti": {
+    "raw_name": "Yeti",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337840/c282bfc40ad60388352b4e148846f497.png/show"
+  },
+  "uniconey": {
+    "raw_name": "Uniconey",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338669/cfd339874fa865cebe76b302690c42dd.png/show"
+  },
+  "catoblepas": {
+    "raw_name": "Catoblepas",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338768/91fc26c0a57dcc77744be3316b51a124.png/show"
+  },
+  "wolf": {
+    "raw_name": "Wolf",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337332/c987e48a9ea96ac0adad22348798cf5f.png/show"
+  },
+  "ratbitt": {
+    "raw_name": "Ratbitt",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3330997/f0318034eb8493407f48443190fb8291.png/show"
+  },
+  "ahriman": {
+    "raw_name": "Ahriman",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3331027/5f680cf595ed09054adcd7ab13ac0088.png/show"
+  },
+  "asp": {
+    "raw_name": "Asp",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337801/e84b9c982773e8b4226d3cc49c8279fa.png/show"
+  },
+  "vishno": {
+    "raw_name": "Vishno",
+    "category": "Monster",
+    "effect": "Gains extra squares when strengthened.",
+    "img_url": "https://img.game8.co/3338212/affbbb4feba2ee1129b669a9913ae5ee.png/show"
+  },
+  "baphomet": {
+    "raw_name": "Baphomet",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3338602/26eac165af7377708cddcbbf46193068.png/show"
+  },
+  "abaddon": {
+    "raw_name": "Abaddon",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338769/f29b328e812ec1205724851127ec44bc.png/show"
+  },
+  "asmodeus": {
+    "raw_name": "Asmodeus",
+    "category": "Monster",
+    "effect": "Gains extra squares when weakened.",
+    "img_url": "https://img.game8.co/3338660/e990384ce5ae2bd6bd5011e54b46eb2a.png/show"
+  },
+  "amon": {
+    "raw_name": "Amon",
+    "category": "Monster",
+    "effect": "Gains extra squares when strengthened.",
+    "img_url": "https://img.game8.co/3338879/609b2ad7f4e3cdab9424daf9e96499be.png/show"
+  },
+  "goblin": {
+    "raw_name": "Goblin",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3331003/35a04989bbd494f91312fbe16b883684.png/show"
+  },
+  "goblinchopper": {
+    "raw_name": "Goblin Chopper",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337333/9158ab755df79127a236738a0d8a4edb.png/show"
+  },
+  "goblinarcher": {
+    "raw_name": "Goblin Archer",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337827/b135d7d396f737b1601e5b68fe5b6b38.png/show"
+  },
+  "orc": {
+    "raw_name": "Orc",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3331017/0ec4a1159e661e69ad35d8d25aed4f5a.png/show"
+  },
+  "orcleader": {
+    "raw_name": "Orc Leader",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3338703/faca482cfde1c5536d74efa6ded1c8ac.png/show"
+  },
+  "orcchieftain": {
+    "raw_name": "Orc Chieftain",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3338605/b7cae31344802b124b43bccaf42cf7c8.png/show"
+  },
+  "orclord": {
+    "raw_name": "Orc Lord",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened. Gains extra squares when strengthened.",
+    "img_url": "https://img.game8.co/3338845/ae4b47fe018c5b862b37c87718ec6cb8.png/show"
+  },
+  "vesp": {
+    "raw_name": "Vesp",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3330999/57d55a275205d01900115bf86a7d3308.png/show"
+  },
+  "sandworm": {
+    "raw_name": "Sandworm",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337612/b06ad9f1dbdc1f51152b08fcda91a933.png/show"
+  },
+  "killerant": {
+    "raw_name": "Killer Ant",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337693/7619c7dec67792d012d33bfd691500eb.png/show"
+  },
+  "razorvesp": {
+    "raw_name": "Razor Vesp",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3338498/7c6b740684b6f06a605c3e7dd9f42031.png/show"
+  },
+  "staggermoth": {
+    "raw_name": "Staggermoth",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338709/877529720233d9d7f15f28d96bdbbdc2.png/show"
+  },
+  "jormungandr": {
+    "raw_name": "Jormungandr",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3338661/e8c4735b2485f1981d162004cce8acc2.png/show"
+  },
+  "abyssworm": {
+    "raw_name": "Abyss Worm",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338663/28cb5d07984b65cd65e0450a49f66e74.png/show"
+  },
+  "freshforkling": {
+    "raw_name": "Fresh Forkling",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3331089/76f3ffa379be65be4b9c178a6db72d73.png/show"
+  },
+  "ochu": {
+    "raw_name": "Ochu",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337755/35c6d634cb7e7ae5d42db2f6922b32cb.png/show"
+  },
+  "veronica": {
+    "raw_name": "Veronica",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338408/403fd26ceba1a33e032365220f8b1a99.png/show"
+  },
+  "fungoo": {
+    "raw_name": "Fungoo",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338411/1e30407a8174005efa1283f4c77eb4d7.png/show"
+  },
+  "mantrap": {
+    "raw_name": "Mantrap",
+    "category": "Monster",
+    "effect": "Gains extra squares when strengthened.",
+    "img_url": "https://img.game8.co/3337812/44be18d45e42ba37252065a09466c4b1.png/show"
+  },
+  "devilssnare": {
+    "raw_name": "Devil's Snare",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338695/f3ce4f9448825c3e8bf054377aec0d79.png/show"
+  },
+  "rafflesia": {
+    "raw_name": "Rafflesia",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338848/2200627ee6e9d35d037d5f61c84cc919.png/show"
+  },
+  "aquaelement": {
+    "raw_name": "Aqua Element",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3331000/3d31815e64573c5271d8d7cfa190e90d.png/show"
+  },
+  "sylph": {
+    "raw_name": "Sylph",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3331018/4c3755fcf89eaf5247d62b9dab68d01f.png/show"
+  },
+  "caitsith": {
+    "raw_name": "Cait Sith",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337799/a74c69458b0b658fc2199ec2ddff1cc0.png/show"
+  },
+  "golem": {
+    "raw_name": "Golem",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3337811/9c2eaa13940e76c5c92a9dfc993272b5.png/show"
+  },
+  "kittycait": {
+    "raw_name": "Kitty-Cait",
+    "category": "Monster",
+    "effect": "Gains extra squares when strengthened. Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3337838/abe9c00c99dc39b5021602ebcdcc1043.png/show"
+  },
+  "chaos": {
+    "raw_name": "Chaos",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338702/4ce09d56d9a5624bab122a39cc03b861.png/show"
+  },
+  "kingwikiwiki": {
+    "raw_name": "King Wiki-Wiki",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338881/5c3ba42f42597880021bc98bc62815f1.png/show"
+  },
+  "ghostknight": {
+    "raw_name": "Ghost Knight",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338179/43e9bbd553d21d963ae73b830a9122ef.png/show"
+  },
+  "lostsouls": {
+    "raw_name": "Lost Souls",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3337733/099de5b30089959e38735590f70df0ba.png/show"
+  },
+  "nightmare": {
+    "raw_name": "Nightmare",
+    "category": "Monster",
+    "effect": "Gains extra squares when strengthened.",
+    "img_url": "https://img.game8.co/3338529/f826e6b7a36c294cf03b1274c431e1ad.png/show"
+  },
+  "skeletonsellsword": {
+    "raw_name": "Skeleton Sellsword",
+    "category": "Monster",
+    "effect": "This card has no additional effect.",
+    "img_url": "https://img.game8.co/3338618/d32d709363f53428df0ba66b6ed0c942.png/show"
+  },
+  "goliath": {
+    "raw_name": "Goliath",
+    "category": "Monster",
+    "effect": "Loses extra squares when weakened.",
+    "img_url": "https://img.game8.co/3337848/5fabefdd8b500b302b272f2035e75c04.png/show"
+  },
+  "sleipnir": {
+    "raw_name": "Sleipnir",
+    "category": "Monster",
+    "effect": "Weakening actually strengthens this card.",
+    "img_url": "https://img.game8.co/3338662/388541335f02211a85455e9678710eac.png/show"
+  },
+  "bravebearer": {
+    "raw_name": "Bravebearer",
+    "category": "Job",
+    "effect": "Effect: Brave Once placed, triggered when you have two cards left in your hand. Allows you to place an extra card. One-time effect.",
+    "img_url": "https://img.game8.co/3338863/f396c4e52f8524ba16cd87e956c8a7de.png/show"
+  },
+  "shieldmaster": {
+    "raw_name": "Shieldmaster",
+    "category": "Job",
+    "effect": "Effect: Default Card is returned to your hand at the end of the turn. Effect triggered only when you are playing first, and only once per battle.",
+    "img_url": "https://img.game8.co/3338180/860c492b09144463a2ea8a50cc313bce.png/show"
+  },
+  "gambler": {
+    "raw_name": "Gambler",
+    "category": "Job",
+    "effect": "Effect: Reversal Selects an opponent's square at random and swaps it with this card's base square. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3331002/818b13ce0d8a893014ba1333d933a075.png/show"
+  },
+  "freelancer": {
+    "raw_name": "Freelancer",
+    "category": "Job",
+    "effect": "Effect: The Long Game Cannot be strengthened until card binder is complete, at which point it is permanently strengthened.",
+    "img_url": "https://img.game8.co/3337754/5be3359a8d88547cb828b23fb3f7158c.png/show"
+  },
+  "beastmaster": {
+    "raw_name": "Beastmaster",
+    "category": "Job",
+    "effect": "Effect: Rare Breeds Strengthens all beast and insect cards, regardless of affiliation. Ongoing effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337613/9c44d9ea4f98c2202d3ba80c3becd855.png/show"
+  },
+  "berserker": {
+    "raw_name": "Berserker",
+    "category": "Job",
+    "effect": "Effect: Reinforce Once placed, triggered when opponent occupies more than ten squares. Strengthens your job cards. Extended effect. Gains extra squares when strengthened.",
+    "img_url": "https://img.game8.co/3338497/0518e66ed04062f849b2c0bd85fd1c99.png/show"
+  },
+  "bastion": {
+    "raw_name": "Bastion",
+    "category": "Job",
+    "effect": "Effect: Reinforce Only triggered when opponent occupies thirteen squares. Strengthened when placed, and cannot be strengthened any other way. One-time effect.",
+    "img_url": "https://img.game8.co/3338704/02dbbe1070f396996ac0125f4de3e73e.png/show"
+  },
+  "phantom": {
+    "raw_name": "Phantom",
+    "category": "Job",
+    "effect": "Effect: Undermine All job cards and character cards are weakened, regardless of affiliation. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338846/8971e382d3acfc78923e86dc10926535.png/show"
+  },
+  "vanguard": {
+    "raw_name": "Vanguard",
+    "category": "Job",
+    "effect": "Effect: Fortify Position Strengthens the squares to the left and right of its base square, regardless of affiliation. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337791/31fa5ee08a1499e30d59245b8c34834b.png/show"
+  },
+  "dragoon": {
+    "raw_name": "Dragoon",
+    "category": "Job",
+    "effect": "Effect: Fortify Position When this card is used to flank, all squares that become yours as a result are strenghthened. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338694/62b4a25f36ad28fc3cc9c9ffc5cfcd45.png/show"
+  },
+  "ranger": {
+    "raw_name": "Ranger",
+    "category": "Job",
+    "effect": "Effect: Scorched Earth When this card is used to flank, it poisons the squares either side of its base square, regardless of affiliation. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338410/17e197950a01efa865e28c475772b6e3.png/show"
+  },
+  "spiritmaster": {
+    "raw_name": "Spiritmaster",
+    "category": "Job",
+    "effect": "Effect: Scorched Earth Turns all strengthened opposing squares into poisoned squared. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338213/764a298d539e7723ffdfb3b0755d2863.png/show"
+  },
+  "bard": {
+    "raw_name": "Bard",
+    "category": "Job",
+    "effect": "Effect: Stay Hand Opponent cannot use humanoid, beast or aquatic cards next turn. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337271/21165d260ed2ed7e092e7305d7f91330.png/show"
+  },
+  "pictomancer": {
+    "raw_name": "Pictomancer",
+    "category": "Job",
+    "effect": "Effect: Stay Hand Once placed, prevents any card that occupies two squares in addition to its base square from being played. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337813/af9ab5837d75df745cd2fdc89c348800.png/show"
+  },
+  "oracle": {
+    "raw_name": "Oracle",
+    "category": "Job",
+    "effect": "Effect: Stay Hand Opponent cannot use plant, undead or demond cards next turn. One-time effect. Triggered when placed. Gains extra squares when strengthened.",
+    "img_url": "https://img.game8.co/3338626/2a48040867ef8f330d8fab8df450086f.png/show"
+  },
+  "hellblade": {
+    "raw_name": "Hellblade",
+    "category": "Job",
+    "effect": "Effect: Stay Hand No character cards can be placed, regardless of affiliation. Extended effect. Triggered when placed. Gains extra squares strengthened.",
+    "img_url": "https://img.game8.co/3338844/8aec842a45deb222446bc3c94eb24bb4.png/show"
+  },
+  "whitemage": {
+    "raw_name": "White Mage",
+    "category": "Job",
+    "effect": "Effect: Cleanse Cancels opponent's extended effect at random. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337753/cf5cdcaf360c11adc21b368f89ac54ec.png/show"
+  },
+  "salvemaker": {
+    "raw_name": "Salve-Maker",
+    "category": "Job",
+    "effect": "Effect: Cleanse Cures all squares of poison, regardless of affiliation, and prevents any more squares from being poisoned. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338531/26da1521c8ee30d0f664d24f5608994b.png/show"
+  },
+  "arcanist": {
+    "raw_name": "Arcanist",
+    "category": "Job",
+    "effect": "Effect: Cleanse Neutralises all your opponent's poisoned squares. Cures and strengthens all your poisoned squares. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338409/7e1c365a64eaf28b288d48464b241abe.png/show"
+  },
+  "monk": {
+    "raw_name": "Monk",
+    "category": "Job",
+    "effect": "Effect: Counter Opponent cannot see this card's token. When opponent places a character card, that card's effects are cancelled, and all of its non-base squares become yours. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337732/bf3904e3e1c0f05165c6b8d288e8646b.png/show"
+  },
+  "thief": {
+    "raw_name": "Thief",
+    "category": "Job",
+    "effect": "Effect: Counter Opponent cannot see this card's token. When opponent plays a card with a Stay Hand effect, its effects are cancelled, and the card's base square becomes yours. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338181/bb78dfdc80fdccf121c014215e765129.png/show"
+  },
+  "blackmage": {
+    "raw_name": "Black Mage",
+    "category": "Job",
+    "effect": "Effect: Territorial Gains Every square neutralised during your turn results in you occupying a square above this card's base square. Ignores neutralisations caused by this card's effect. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337274/1c9966ed936f41d626e9f516e61bdc84.png/show"
+  },
+  "swordmaster": {
+    "raw_name": "Swordmaster",
+    "category": "Job",
+    "effect": "Effect: Territorial Gains When this card causes a neutralisation, the squares to the left, right, and above its base square become yours. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338604/91a5536b7f6ceb258a9b243754c437c2.png/show"
+  },
+  "redmage": {
+    "raw_name": "Red Mage",
+    "category": "Job",
+    "effect": "Effect: Brave Once placed, only triggered when you have three cards left in your hand. Allows you to play an extra card—character cards only. One-time effect.",
+    "img_url": "https://img.game8.co/3337696/e90c844b7ce90bc2b3b01f21a46eddea.png/show"
+  },
+  "sirsloan": {
+    "raw_name": "Sir Sloan",
+    "category": "Character",
+    "effect": "Effect: Brave Opponent cannot see this card's token. Triggered when opponent flanks a square. Opponent must then play another card. Extended effect.",
+    "img_url": "https://img.game8.co/3338892/34d97ab8c4c4fc1ba8ff36f89e60bb18.png/show"
+  },
+  "gladys": {
+    "raw_name": "Gladys",
+    "category": "Character",
+    "effect": "Effect: No Man's Land When this card is placed, five opposing squares and two of your squares are selected at random and neutralised, as well as this card's base square. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338210/71d70b12144febdc568e3412e2360bab.png/show"
+  },
+  "shirley": {
+    "raw_name": "Shirley",
+    "category": "Character",
+    "effect": "Effect: Rare Breeds Strengthens all humanoid and spirit cards, regardless of affliation. Permanent effect. Triggered when used.",
+    "img_url": "https://img.game8.co/3331001/021f0f27a45612f0db5aa942801fe227.png/show"
+  },
+  "folie": {
+    "raw_name": "Folie",
+    "category": "Character",
+    "effect": "Effect: Rare Breeds Strenghtens all undead and demon cards, regardless of affiliation. Extended effect. Triggered when placed. Gains extra squares when strengthened.",
+    "img_url": "https://img.game8.co/3338211/e002505341cfb121e0fab998d2951bf1.png/show"
+  },
+  "orpheus": {
+    "raw_name": "Orpheus",
+    "category": "Character",
+    "effect": "Effect: Ill Breeding Weakens all humanoid and beast cards, regardless of affiliation. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3332563/a51498a595631bb2890cb6b8a7c0c40c.png/show"
+  },
+  "anihal": {
+    "raw_name": "Anihal",
+    "category": "Character",
+    "effect": "Effect: III Breeding Weakens aquatic, undead and demon cards, regarless of affliation. Permanent effect. Triggered when used.",
+    "img_url": "https://img.game8.co/3337235/3945659975fb4ffb479bf6402ab7a7d9.png/show"
+  },
+  "lily": {
+    "raw_name": "Lily",
+    "category": "Character",
+    "effect": "Effect: Ill Breeding Weakens plant and insect cards, regardless of affiliation. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337800/9fcd4b2a783213d8ee422ab04a6e41c3.png/show"
+  },
+  "princecastor": {
+    "raw_name": "Prince Castor",
+    "category": "Character",
+    "effect": "Effect: Reinforce Strengthens all plant, aquatic, and character cards, regardless of affiliation. Permanent effect. Triggered when used.",
+    "img_url": "https://img.game8.co/3337719/7b17fb89db7ce46eb8f282b024d64f56.png/show"
+  },
+  "helio": {
+    "raw_name": "Helio",
+    "category": "Character",
+    "effect": "Effect: Reinforce Strengthens all job cards, regardless of affiliation. Permanent effect. Triggered when used.",
+    "img_url": "https://img.game8.co/3338625/ab20d25a7c6d554dde7708e47f105969.png/show"
+  },
+  "lonsdale": {
+    "raw_name": "Lonsdale",
+    "category": "Character",
+    "effect": "Effect: Reinforce Weakens any of your opponent's cards that can occupy three squares in addition to their base squares, and strengthens any of your cards that can occupy two squares in addition to their base squares. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337839/28ebbd9e457a36a2868b58300481ec51.png/show"
+  },
+  "bernard": {
+    "raw_name": "Bernard",
+    "category": "Character",
+    "effect": "Effect: Co-Opt Card Switches the target of the effect of the opponent's next card from yourself to your opponent or vice versa. If the card does not have a targeted effect, its base square becomes yours. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337718/c65e47bf5945a215a9d4e9e4db2a6644.png/show"
+  },
+  "horten": {
+    "raw_name": "Horten",
+    "category": "Character",
+    "effect": "Effect: Fortify Position When this card causes a neutralisation, neutralised squares become yours, and this card's non-base squares are strengthened. One-time effect. Triggered when placed. Both strengthening and weakening reduce the card to occupying its base square only.",
+    "img_url": "https://img.game8.co/3337314/df5e074aee4e25120acbeaaa3e7785d2.png/show"
+  },
+  "selene": {
+    "raw_name": "Selene",
+    "category": "Character",
+    "effect": "Effect: Fortify Position Cures and strengthens all poisoned squares, regardless of affiliation. All future poisonings will strengthen the squares instead. Permanent effect. Triggered when used.",
+    "img_url": "https://img.game8.co/3337649/82440c7a4883a275c1abb3bfdfc1307c.png/show"
+  },
+  "galahad": {
+    "raw_name": "Galahad",
+    "category": "Character",
+    "effect": "Effect: Fortify Position Whenever a square is neutralised, another square is selected at random and strengthened, regardless of affiliation. Permanent effect. Triggered when used.",
+    "img_url": "https://img.game8.co/3338208/b8512b13950ef3f96244c5312d9e0125.png/show"
+  },
+  "ladyemma": {
+    "raw_name": "Lady Emma",
+    "category": "Character",
+    "effect": "Effect: Scorched Earth Poisons one square at random at the end of each player's turn. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337651/59501ecd6d29bf16edfbe884d2f23df0.png/show"
+  },
+  "adam": {
+    "raw_name": "Adam",
+    "category": "Character",
+    "effect": "Effect: Stay Hand For the rest of this battle, cards that can occupy three or more squares in addition to their base squares cannot be placed, regardless of affiliation. Permanent effect. Triggered when used.",
+    "img_url": "https://img.game8.co/3338878/9a708a78ece7a27aa5adef43ce56cce2.png/show"
+  },
+  "glenn": {
+    "raw_name": "Glenn",
+    "category": "Character",
+    "effect": "Effect: Cleanse Cancels all Stay Hand effects, regardless of who they affect, and prevents any more Stay Hand effects from being triggered. Permanent effect. Triggered when used.",
+    "img_url": "https://img.game8.co/3338770/2c710927051e660d9d38b8e4609402f5.png/show"
+  },
+  "domenic": {
+    "raw_name": "Domenic",
+    "category": "Character",
+    "effect": "Effect: Cleanse Once placed, triggers when the total number of occupied squares reaches thirteen. Cancels all opponent's extended effects, along with all permanent effects. One-time effect.",
+    "img_url": "https://img.game8.co/3338880/dd89ab5562fcf31ca2e504e0eea6b533.png/show"
+  },
+  "marla": {
+    "raw_name": "Marla",
+    "category": "Character",
+    "effect": "Effect: Cleanse The Counter effect is not triggered by placing this card. One of your opponent's Counter effects is selected at random and cancelled. One-time effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337841/db9ad28005848be237d264b53f449e02.png/show"
+  },
+  "dag": {
+    "raw_name": "Dag",
+    "category": "Character",
+    "effect": "Effect: Counter Opponent can see this card. Triggered when one of your squares is flanked. Causes the flanking to affect this card's base square instead. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3337717/aa9d51b5ac1dfe33bf8b14079c1b35cf.png/show"
+  },
+  "roddy": {
+    "raw_name": "Roddy",
+    "category": "Character",
+    "effect": "Effect: Counter Opponent cannot see this card's token. Monster cards placed by opponent are weakened. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338532/e9dbdd460ac65f292bb39d5220ec2971.png/show"
+  },
+  "vigintio": {
+    "raw_name": "Vigintio",
+    "category": "Character",
+    "effect": "Effect: Counter Opponent cannot see this card's token. When conditions for defeat are met, two cards are added to each player's hand, and the game continues. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338696/834e0ec1ecf3dfd3222ef9e9267d9046.png/show"
+  },
+  "martha": {
+    "raw_name": "Martha",
+    "category": "Character",
+    "effect": "Effect: Territorial Gains At the end of opponent's turn, a neutral square is selected at random, and becomes yours. Extended effect. Triggered when placed.",
+    "img_url": "https://img.game8.co/3338530/774575dff3a4b62e78b3bbbedb697b9c.png/show"
+  }
+}

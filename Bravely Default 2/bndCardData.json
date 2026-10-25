@@ -5,10 +5,11 @@
     "name": "Goblin",
     "classification": "Monster",
     "family": "Humanoid",
-    "effect": "Family: Humanoid",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-001",
-    "image": "assets/cards/001_goblin.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-001.jpg"
+    "image": "assets/cards/001-goblin.png",
+    "localFallback": "assets/cards/001-goblin.svg"
   },
   {
     "id": "002-goblin-chopper",
@@ -16,10 +17,11 @@
     "name": "Goblin Chopper",
     "classification": "Monster",
     "family": "Humanoid",
-    "effect": "Family: Humanoid",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-002",
-    "image": "assets/cards/002_goblin-chopper.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-002.jpg"
+    "image": "assets/cards/002-goblin-chopper.png",
+    "localFallback": "assets/cards/002-goblin-chopper.svg"
   },
   {
     "id": "003-goblin-archer",
@@ -27,10 +29,11 @@
     "name": "Goblin Archer",
     "classification": "Monster",
     "family": "Humanoid",
-    "effect": "Family: Humanoid",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-003",
-    "image": "assets/cards/003_goblin-archer.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-003.jpg"
+    "image": "assets/cards/003-goblin-archer.png",
+    "localFallback": "assets/cards/003-goblin-archer.svg"
   },
   {
     "id": "004-orc",
@@ -38,10 +41,11 @@
     "name": "Orc",
     "classification": "Monster",
     "family": "Humanoid",
-    "effect": "Family: Humanoid. Loses extra squares when weakened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-004",
-    "image": "assets/cards/004_orc.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-004.jpg"
+    "image": "assets/cards/004-orc.png",
+    "localFallback": "assets/cards/004-orc.svg"
   },
   {
     "id": "005-orc-leader",
@@ -49,10 +53,11 @@
     "name": "Orc Leader",
     "classification": "Monster",
     "family": "Humanoid",
-    "effect": "Family: Humanoid. Loses extra squares when weakened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-005",
-    "image": "assets/cards/005_orc-leader.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-005.jpg"
+    "image": "assets/cards/005-orc-leader.png",
+    "localFallback": "assets/cards/005-orc-leader.svg"
   },
   {
     "id": "006-orc-chieftain",
@@ -60,10 +65,11 @@
     "name": "Orc Chieftain",
     "classification": "Monster",
     "family": "Humanoid",
-    "effect": "Family: Humanoid. Loses extra squares when weakened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-006",
-    "image": "assets/cards/006_orc-chieftain.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-006.jpg"
+    "image": "assets/cards/006-orc-chieftain.png",
+    "localFallback": "assets/cards/006-orc-chieftain.svg"
   },
   {
     "id": "007-orc-lord",
@@ -71,10 +77,11 @@
     "name": "Orc Lord",
     "classification": "Monster",
     "family": "Humanoid",
-    "effect": "Family: Humanoid. Loses extra squares when weakened. Gains extra squares when strengthened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened. Gains extra squares when strengthened.",
     "spriteAssetId": "Bdii-bnd-small-007",
-    "image": "assets/cards/007_orc-lord.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-007.jpg"
+    "image": "assets/cards/007-orc-lord.png",
+    "localFallback": "assets/cards/007-orc-lord.svg"
   },
   {
     "id": "008-wolf",
@@ -82,10 +89,11 @@
     "name": "Wolf",
     "classification": "Monster",
     "family": "Beast",
-    "effect": "Family: Beast",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-008",
-    "image": "assets/cards/008_wolf.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-008.jpg"
+    "image": "assets/cards/008-wolf.png",
+    "localFallback": "assets/cards/008-wolf.svg"
   },
   {
     "id": "009-ratbitt",
@@ -93,10 +101,11 @@
     "name": "Ratbitt",
     "classification": "Monster",
     "family": "Beast",
-    "effect": "Family: Beast",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-009",
-    "image": "assets/cards/009_ratbitt.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-009.jpg"
+    "image": "assets/cards/009-ratbitt.png",
+    "localFallback": "assets/cards/009-ratbitt.svg"
   },
   {
     "id": "010-grizzly",
@@ -104,10 +113,11 @@
     "name": "Grizzly",
     "classification": "Monster",
     "family": "Beast",
-    "effect": "Family: Beast",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-010",
-    "image": "assets/cards/010_grizzly.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-010.jpg"
+    "image": "assets/cards/010-grizzly.png",
+    "localFallback": "assets/cards/010-grizzly.svg"
   },
   {
     "id": "011-diatryma",
@@ -115,10 +125,11 @@
     "name": "Diatryma",
     "classification": "Monster",
     "family": "Beast",
-    "effect": "Family: Beast",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-011",
-    "image": "assets/cards/011_diatryma.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-011.jpg"
+    "image": "assets/cards/011-diatryma.png",
+    "localFallback": "assets/cards/011-diatryma.svg"
   },
   {
     "id": "012-golden-bear",
@@ -126,10 +137,11 @@
     "name": "Golden Bear",
     "classification": "Monster",
     "family": "Beast",
-    "effect": "Family: Beast",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-012",
-    "image": "assets/cards/012_golden-bear.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-012.jpg"
+    "image": "assets/cards/012-golden-bear.png",
+    "localFallback": "assets/cards/012-golden-bear.svg"
   },
   {
     "id": "013-yeti",
@@ -137,10 +149,11 @@
     "name": "Yeti",
     "classification": "Monster",
     "family": "Beast",
-    "effect": "Family: Beast",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-013",
-    "image": "assets/cards/013_yeti.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-013.jpg"
+    "image": "assets/cards/013-yeti.png",
+    "localFallback": "assets/cards/013-yeti.svg"
   },
   {
     "id": "014-uniconey",
@@ -148,10 +161,11 @@
     "name": "Uniconey",
     "classification": "Monster",
     "family": "Beast",
-    "effect": "Family: Beast",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-014",
-    "image": "assets/cards/014_uniconey.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-014.jpg"
+    "image": "assets/cards/014-uniconey.png",
+    "localFallback": "assets/cards/014-uniconey.svg"
   },
   {
     "id": "015-catoblepas",
@@ -159,10 +173,11 @@
     "name": "Catoblepas",
     "classification": "Monster",
     "family": "Beast",
-    "effect": "Family: Beast",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-015",
-    "image": "assets/cards/015_catoblepas.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-015.jpg"
+    "image": "assets/cards/015-catoblepas.png",
+    "localFallback": "assets/cards/015-catoblepas.svg"
   },
   {
     "id": "016-vesp",
@@ -170,10 +185,11 @@
     "name": "Vesp",
     "classification": "Monster",
     "family": "Insect",
-    "effect": "Family: Insect",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-016",
-    "image": "assets/cards/016_vesp.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-016.jpg"
+    "image": "assets/cards/016-vesp.png",
+    "localFallback": "assets/cards/016-vesp.svg"
   },
   {
     "id": "017-sandworm",
@@ -181,10 +197,11 @@
     "name": "Sandworm",
     "classification": "Monster",
     "family": "Insect",
-    "effect": "Family: Insect",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-017",
-    "image": "assets/cards/017_sandworm.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-017.jpg"
+    "image": "assets/cards/017-sandworm.png",
+    "localFallback": "assets/cards/017-sandworm.svg"
   },
   {
     "id": "018-killer-ant",
@@ -192,10 +209,11 @@
     "name": "Killer Ant",
     "classification": "Monster",
     "family": "Insect",
-    "effect": "Family: Insect",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-018",
-    "image": "assets/cards/018_killer-ant.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-018.jpg"
+    "image": "assets/cards/018-killer-ant.png",
+    "localFallback": "assets/cards/018-killer-ant.svg"
   },
   {
     "id": "019-razor-vesp",
@@ -203,10 +221,11 @@
     "name": "Razor Vesp",
     "classification": "Monster",
     "family": "Insect",
-    "effect": "Family: Insect. Loses extra squares when weakened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-019",
-    "image": "assets/cards/019_razor-vesp.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-019.jpg"
+    "image": "assets/cards/019-razor-vesp.png",
+    "localFallback": "assets/cards/019-razor-vesp.svg"
   },
   {
     "id": "020-staggermoth",
@@ -214,10 +233,11 @@
     "name": "Staggermoth",
     "classification": "Monster",
     "family": "Insect",
-    "effect": "Family: Insect",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-020",
-    "image": "assets/cards/020_staggermoth.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-020.jpg"
+    "image": "assets/cards/020-staggermoth.png",
+    "localFallback": "assets/cards/020-staggermoth.svg"
   },
   {
     "id": "021-j-rmungandr",
@@ -225,10 +245,11 @@
     "name": "Jörmungandr",
     "classification": "Monster",
     "family": "Insect",
+    "tier": 1,
     "effect": "Family: Insect",
     "spriteAssetId": "Bdii-bnd-small-021",
-    "image": "assets/cards/021_j-rmungandr.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-021.jpg"
+    "image": "assets/cards/021-j-rmungandr.png",
+    "localFallback": "assets/cards/021-j-rmungandr.svg"
   },
   {
     "id": "022-abyss-worm",
@@ -236,10 +257,11 @@
     "name": "Abyss Worm",
     "classification": "Monster",
     "family": "Insect",
-    "effect": "Family: Insect",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-022",
-    "image": "assets/cards/022_abyss-worm.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-022.jpg"
+    "image": "assets/cards/022-abyss-worm.png",
+    "localFallback": "assets/cards/022-abyss-worm.svg"
   },
   {
     "id": "023-sahagin",
@@ -247,10 +269,11 @@
     "name": "Sahagin",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-023",
-    "image": "assets/cards/023_sahagin.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-023.jpg"
+    "image": "assets/cards/023-sahagin.png",
+    "localFallback": "assets/cards/023-sahagin.svg"
   },
   {
     "id": "024-flannacotta",
@@ -258,10 +281,11 @@
     "name": "Flannacotta",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-024",
-    "image": "assets/cards/024_flannacotta.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-024.jpg"
+    "image": "assets/cards/024-flannacotta.png",
+    "localFallback": "assets/cards/024-flannacotta.svg"
   },
   {
     "id": "025-lotl",
@@ -269,10 +293,11 @@
     "name": "Lotl",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-025",
-    "image": "assets/cards/025_lotl.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-025.jpg"
+    "image": "assets/cards/025-lotl.png",
+    "localFallback": "assets/cards/025-lotl.svg"
   },
   {
     "id": "026-gelaflan",
@@ -280,10 +305,11 @@
     "name": "Gelaflan",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-026",
-    "image": "assets/cards/026_gelaflan.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-026.jpg"
+    "image": "assets/cards/026-gelaflan.png",
+    "localFallback": "assets/cards/026-gelaflan.svg"
   },
   {
     "id": "027-dagon",
@@ -291,10 +317,11 @@
     "name": "Dagon",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-027",
-    "image": "assets/cards/027_dagon.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-027.jpg"
+    "image": "assets/cards/027-dagon.png",
+    "localFallback": "assets/cards/027-dagon.svg"
   },
   {
     "id": "028-rock-tortoise",
@@ -302,10 +329,11 @@
     "name": "Rock Tortoise",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-028",
-    "image": "assets/cards/028_rock-tortoise.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-028.jpg"
+    "image": "assets/cards/028-rock-tortoise.png",
+    "localFallback": "assets/cards/028-rock-tortoise.svg"
   },
   {
     "id": "029-sibilus",
@@ -313,10 +341,11 @@
     "name": "Sibilus",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-029",
-    "image": "assets/cards/029_sibilus.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-029.jpg"
+    "image": "assets/cards/029-sibilus.png",
+    "localFallback": "assets/cards/029-sibilus.svg"
   },
   {
     "id": "030-adamant-tortoise",
@@ -324,10 +353,11 @@
     "name": "Adamant Tortoise",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic. Loses extra squares when weakened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-030",
-    "image": "assets/cards/030_adamant-tortoise.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-030.jpg"
+    "image": "assets/cards/030-adamant-tortoise.png",
+    "localFallback": "assets/cards/030-adamant-tortoise.svg"
   },
   {
     "id": "031-genbu",
@@ -335,10 +365,11 @@
     "name": "Genbu",
     "classification": "Monster",
     "family": "Aquatic",
-    "effect": "Family: Aquatic",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-031",
-    "image": "assets/cards/031_genbu.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-031.jpg"
+    "image": "assets/cards/031-genbu.png",
+    "localFallback": "assets/cards/031-genbu.svg"
   },
   {
     "id": "032-fresh-forkling",
@@ -346,10 +377,11 @@
     "name": "Fresh Forkling",
     "classification": "Monster",
     "family": "Plant",
-    "effect": "Family: Plant",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-032",
-    "image": "assets/cards/032_fresh-forkling.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-032.jpg"
+    "image": "assets/cards/032-fresh-forkling.png",
+    "localFallback": "assets/cards/032-fresh-forkling.svg"
   },
   {
     "id": "033-ochu",
@@ -357,10 +389,11 @@
     "name": "Ochu",
     "classification": "Monster",
     "family": "Plant",
-    "effect": "Family: Plant",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-033",
-    "image": "assets/cards/033_ochu.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-033.jpg"
+    "image": "assets/cards/033-ochu.png",
+    "localFallback": "assets/cards/033-ochu.svg"
   },
   {
     "id": "034-veronica",
@@ -368,10 +401,11 @@
     "name": "Veronica",
     "classification": "Monster",
     "family": "Plant",
-    "effect": "Family: Plant",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-034",
-    "image": "assets/cards/034_veronica.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-034.jpg"
+    "image": "assets/cards/034-veronica.png",
+    "localFallback": "assets/cards/034-veronica.svg"
   },
   {
     "id": "035-fungoo",
@@ -379,10 +413,11 @@
     "name": "Fungoo",
     "classification": "Monster",
     "family": "Plant",
-    "effect": "Family: Plant",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-035",
-    "image": "assets/cards/035_fungoo.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-035.jpg"
+    "image": "assets/cards/035-fungoo.png",
+    "localFallback": "assets/cards/035-fungoo.svg"
   },
   {
     "id": "036-mantrap",
@@ -390,10 +425,11 @@
     "name": "Mantrap",
     "classification": "Monster",
     "family": "Plant",
-    "effect": "Family: Plant. Gains extra squares when strengthened.",
+    "tier": 2,
+    "effect": "Gains extra squares when strengthened.",
     "spriteAssetId": "Bdii-bnd-small-036",
-    "image": "assets/cards/036_mantrap.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-036.jpg"
+    "image": "assets/cards/036-mantrap.png",
+    "localFallback": "assets/cards/036-mantrap.svg"
   },
   {
     "id": "037-devil-s-snare",
@@ -401,10 +437,11 @@
     "name": "Devil's Snare",
     "classification": "Monster",
     "family": "Plant",
-    "effect": "Family: Plant",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-037",
-    "image": "assets/cards/037_devil-s-snare.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-037.jpg"
+    "image": "assets/cards/037-devil-s-snare.png",
+    "localFallback": "assets/cards/037-devil-s-snare.svg"
   },
   {
     "id": "038-rafflesia",
@@ -412,10 +449,11 @@
     "name": "Rafflesia",
     "classification": "Monster",
     "family": "Plant",
-    "effect": "Family: Plant",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-038",
-    "image": "assets/cards/038_rafflesia.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-038.jpg"
+    "image": "assets/cards/038-rafflesia.png",
+    "localFallback": "assets/cards/038-rafflesia.svg"
   },
   {
     "id": "039-ahriman",
@@ -423,10 +461,11 @@
     "name": "Ahriman",
     "classification": "Monster",
     "family": "Demon",
-    "effect": "Family: Demon",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-039",
-    "image": "assets/cards/039_ahriman.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-039.jpg"
+    "image": "assets/cards/039-ahriman.png",
+    "localFallback": "assets/cards/039-ahriman.svg"
   },
   {
     "id": "040-asp",
@@ -434,10 +473,11 @@
     "name": "Asp",
     "classification": "Monster",
     "family": "Demon",
-    "effect": "Family: Demon",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-040",
-    "image": "assets/cards/040_asp.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-040.jpg"
+    "image": "assets/cards/040-asp.png",
+    "localFallback": "assets/cards/040-asp.svg"
   },
   {
     "id": "041-vishno",
@@ -445,10 +485,11 @@
     "name": "Vishno",
     "classification": "Monster",
     "family": "Demon",
-    "effect": "Family: Demon. Gains extra squares when strengthened.",
+    "tier": 2,
+    "effect": "Gains extra squares when strengthened.",
     "spriteAssetId": "Bdii-bnd-small-041",
-    "image": "assets/cards/041_vishno.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-041.jpg"
+    "image": "assets/cards/041-vishno.png",
+    "localFallback": "assets/cards/041-vishno.svg"
   },
   {
     "id": "042-baphomet",
@@ -456,10 +497,11 @@
     "name": "Baphomet",
     "classification": "Monster",
     "family": "Demon",
-    "effect": "Family: Demon. Loses extra squares when weakened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-042",
-    "image": "assets/cards/042_baphomet.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-042.jpg"
+    "image": "assets/cards/042-baphomet.png",
+    "localFallback": "assets/cards/042-baphomet.svg"
   },
   {
     "id": "043-abaddon",
@@ -467,10 +509,11 @@
     "name": "Abaddon",
     "classification": "Monster",
     "family": "Demon",
-    "effect": "Family: Demon",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-043",
-    "image": "assets/cards/043_abaddon.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-043.jpg"
+    "image": "assets/cards/043-abaddon.png",
+    "localFallback": "assets/cards/043-abaddon.svg"
   },
   {
     "id": "044-asmodeus",
@@ -478,10 +521,11 @@
     "name": "Asmodeus",
     "classification": "Monster",
     "family": "Demon",
-    "effect": "Family: Demon. Weakening actually strengthens this card.",
+    "tier": 2,
+    "effect": "Gains extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-044",
-    "image": "assets/cards/044_asmodeus.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-044.jpg"
+    "image": "assets/cards/044-asmodeus.png",
+    "localFallback": "assets/cards/044-asmodeus.svg"
   },
   {
     "id": "045-amon",
@@ -489,10 +533,11 @@
     "name": "Amon",
     "classification": "Monster",
     "family": "Demon",
-    "effect": "Family: Demon. Gains extra squares when strengthened.",
+    "tier": 2,
+    "effect": "Gains extra squares when strengthened.",
     "spriteAssetId": "Bdii-bnd-small-045",
-    "image": "assets/cards/045_amon.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-045.jpg"
+    "image": "assets/cards/045-amon.png",
+    "localFallback": "assets/cards/045-amon.svg"
   },
   {
     "id": "046-ghost-knight",
@@ -500,10 +545,11 @@
     "name": "Ghost Knight",
     "classification": "Monster",
     "family": "Undead",
-    "effect": "Family: Undead",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-046",
-    "image": "assets/cards/046_ghost-knight.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-046.jpg"
+    "image": "assets/cards/046-ghost-knight.png",
+    "localFallback": "assets/cards/046-ghost-knight.svg"
   },
   {
     "id": "047-lost-souls",
@@ -511,10 +557,11 @@
     "name": "Lost Souls",
     "classification": "Monster",
     "family": "Undead",
-    "effect": "Family: Undead",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-047",
-    "image": "assets/cards/047_lost-souls.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-047.jpg"
+    "image": "assets/cards/047-lost-souls.png",
+    "localFallback": "assets/cards/047-lost-souls.svg"
   },
   {
     "id": "048-nightmare",
@@ -522,10 +569,11 @@
     "name": "Nightmare",
     "classification": "Monster",
     "family": "Undead",
-    "effect": "Family: Undead. Gains extra squares when strengthened.",
+    "tier": 2,
+    "effect": "Gains extra squares when strengthened.",
     "spriteAssetId": "Bdii-bnd-small-048",
-    "image": "assets/cards/048_nightmare.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-048.jpg"
+    "image": "assets/cards/048-nightmare.png",
+    "localFallback": "assets/cards/048-nightmare.svg"
   },
   {
     "id": "049-skeleton-sellsword",
@@ -533,10 +581,11 @@
     "name": "Skeleton Sellsword",
     "classification": "Monster",
     "family": "Undead",
-    "effect": "Family: Undead",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-049",
-    "image": "assets/cards/049_skeleton-sellsword.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-049.jpg"
+    "image": "assets/cards/049-skeleton-sellsword.png",
+    "localFallback": "assets/cards/049-skeleton-sellsword.svg"
   },
   {
     "id": "050-goliath",
@@ -544,10 +593,11 @@
     "name": "Goliath",
     "classification": "Monster",
     "family": "Undead",
-    "effect": "Family: Undead. Loses extra squares when weakened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-050",
-    "image": "assets/cards/050_goliath.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-050.jpg"
+    "image": "assets/cards/050-goliath.png",
+    "localFallback": "assets/cards/050-goliath.svg"
   },
   {
     "id": "051-sleipnir",
@@ -555,10 +605,11 @@
     "name": "Sleipnir",
     "classification": "Monster",
     "family": "Undead",
-    "effect": "Family: Undead. Weakening actually strengthens this card.",
+    "tier": 1,
+    "effect": "Weakening actually strengthens this card.",
     "spriteAssetId": "Bdii-bnd-small-051",
-    "image": "assets/cards/051_sleipnir.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-051.jpg"
+    "image": "assets/cards/051-sleipnir.png",
+    "localFallback": "assets/cards/051-sleipnir.svg"
   },
   {
     "id": "052-aqua-element",
@@ -566,10 +617,11 @@
     "name": "Aqua Element",
     "classification": "Monster",
     "family": "Spirit",
-    "effect": "Family: Spirit",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-052",
-    "image": "assets/cards/052_aqua-element.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-052.jpg"
+    "image": "assets/cards/052-aqua-element.png",
+    "localFallback": "assets/cards/052-aqua-element.svg"
   },
   {
     "id": "053-sylph",
@@ -577,10 +629,11 @@
     "name": "Sylph",
     "classification": "Monster",
     "family": "Spirit",
-    "effect": "Family: Spirit",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-053",
-    "image": "assets/cards/053_sylph.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-053.jpg"
+    "image": "assets/cards/053-sylph.png",
+    "localFallback": "assets/cards/053-sylph.svg"
   },
   {
     "id": "054-cait-sith",
@@ -588,10 +641,11 @@
     "name": "Cait Sith",
     "classification": "Monster",
     "family": "Spirit",
-    "effect": "Family: Spirit",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-054",
-    "image": "assets/cards/054_cait-sith.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-054.jpg"
+    "image": "assets/cards/054-cait-sith.png",
+    "localFallback": "assets/cards/054-cait-sith.svg"
   },
   {
     "id": "055-golem",
@@ -599,10 +653,11 @@
     "name": "Golem",
     "classification": "Monster",
     "family": "Spirit",
-    "effect": "Family: Spirit. Loses extra squares when weakened.",
+    "tier": 2,
+    "effect": "Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-055",
-    "image": "assets/cards/055_golem.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-055.jpg"
+    "image": "assets/cards/055-golem.png",
+    "localFallback": "assets/cards/055-golem.svg"
   },
   {
     "id": "056-kitty-cait",
@@ -610,10 +665,11 @@
     "name": "Kitty-Cait",
     "classification": "Monster",
     "family": "Spirit",
-    "effect": "Family: Spirit. Loses extra squares when weakened. Gains extra squares when strengthened.",
+    "tier": 2,
+    "effect": "Gains extra squares when strengthened. Loses extra squares when weakened.",
     "spriteAssetId": "Bdii-bnd-small-056",
-    "image": "assets/cards/056_kitty-cait.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-056.jpg"
+    "image": "assets/cards/056-kitty-cait.png",
+    "localFallback": "assets/cards/056-kitty-cait.svg"
   },
   {
     "id": "057-chaos",
@@ -621,10 +677,11 @@
     "name": "Chaos",
     "classification": "Monster",
     "family": "Spirit",
-    "effect": "Family: Spirit",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-057",
-    "image": "assets/cards/057_chaos.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-057.jpg"
+    "image": "assets/cards/057-chaos.png",
+    "localFallback": "assets/cards/057-chaos.svg"
   },
   {
     "id": "058-king-wiki-wiki",
@@ -632,10 +689,11 @@
     "name": "King Wiki-Wiki",
     "classification": "Monster",
     "family": "Spirit",
-    "effect": "Family: Spirit",
+    "tier": 1,
+    "effect": "This card has no additional effect.",
     "spriteAssetId": "Bdii-bnd-small-058",
-    "image": "assets/cards/058_king-wiki-wiki.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-058.jpg"
+    "image": "assets/cards/058-king-wiki-wiki.png",
+    "localFallback": "assets/cards/058-king-wiki-wiki.svg"
   },
   {
     "id": "059-beastmaster",
@@ -643,10 +701,11 @@
     "name": "Beastmaster",
     "classification": "Job",
     "family": "Job",
-    "effect": "Rare Breeds: Strengthens all beast and insect cards, regardless of affiliation. Extended effect. Triggered when placed.",
+    "tier": 3,
+    "effect": "Rare Breeds Strengthens all beast and insect cards, regardless of affiliation. Ongoing effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-059",
-    "image": "assets/cards/059_beastmaster.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-059.jpg"
+    "image": "assets/cards/059-beastmaster.png",
+    "localFallback": "assets/cards/059-beastmaster.svg"
   },
   {
     "id": "060-shirley",
@@ -654,10 +713,11 @@
     "name": "Shirley",
     "classification": "Character",
     "family": "Character",
-    "effect": "Rare Breeds: Strengthens all humanoid and spirit cards, regardless of affiliation. Permanent effect. Triggered when used.",
+    "tier": 4,
+    "effect": "Rare Breeds Strengthens all humanoid and spirit cards, regardless of affliation. Permanent effect. Triggered when used.",
     "spriteAssetId": "Bdii-bnd-small-060",
-    "image": "assets/cards/060_shirley.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-060.jpg"
+    "image": "assets/cards/060-shirley.png",
+    "localFallback": "assets/cards/060-shirley.svg"
   },
   {
     "id": "061-folie",
@@ -665,10 +725,11 @@
     "name": "Folie",
     "classification": "Character",
     "family": "Character",
-    "effect": "Rare Breeds: Strengthens all undead and demon cards, regardless of affiliation. Extended effect. Triggered when placed. Gains extra squares when strengthened.",
+    "tier": 4,
+    "effect": "Rare Breeds Strenghtens all undead and demon cards, regardless of affiliation. Extended effect. Triggered when placed. Gains extra squares when strengthened.",
     "spriteAssetId": "Bdii-bnd-small-061",
-    "image": "assets/cards/061_folie.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-061.jpg"
+    "image": "assets/cards/061-folie.png",
+    "localFallback": "assets/cards/061-folie.svg"
   },
   {
     "id": "062-orpheus",
@@ -676,10 +737,11 @@
     "name": "Orpheus",
     "classification": "Character",
     "family": "Character",
-    "effect": "Ill Breeding: Weakens all humanoid and beast cards, regardless of affiliation. Extended effect. Triggered when placed.",
+    "tier": 4,
+    "effect": "Ill Breeding Weakens all humanoid and beast cards, regardless of affiliation. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-062",
-    "image": "assets/cards/062_orpheus.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-062.jpg"
+    "image": "assets/cards/062-orpheus.png",
+    "localFallback": "assets/cards/062-orpheus.svg"
   },
   {
     "id": "063-anihal",
@@ -687,10 +749,11 @@
     "name": "Anihal",
     "classification": "Character",
     "family": "Character",
-    "effect": "Ill Breeding: Weakens aquatic, undead and demon cards, regardless of affiliation. Permanent effect. Triggered when used.",
+    "tier": 4,
+    "effect": "III Breeding Weakens aquatic, undead and demon cards, regarless of affliation. Permanent effect. Triggered when used.",
     "spriteAssetId": "Bdii-bnd-small-063",
-    "image": "assets/cards/063_anihal.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-063.jpg"
+    "image": "assets/cards/063-anihal.png",
+    "localFallback": "assets/cards/063-anihal.svg"
   },
   {
     "id": "064-lily",
@@ -698,10 +761,11 @@
     "name": "Lily",
     "classification": "Character",
     "family": "Character",
-    "effect": "Ill Breeding: Weakens plant and insect cards, regardless of affiliation. Extended effect. Triggered when placed.",
+    "tier": 4,
+    "effect": "Ill Breeding Weakens plant and insect cards, regardless of affiliation. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-064",
-    "image": "assets/cards/064_lily.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-064.jpg"
+    "image": "assets/cards/064-lily.png",
+    "localFallback": "assets/cards/064-lily.svg"
   },
   {
     "id": "065-berserker",
@@ -709,10 +773,11 @@
     "name": "Berserker",
     "classification": "Job",
     "family": "Job",
-    "effect": "Reinforce: Once placed, triggered when opponent occupies more than ten squares. Strengthens your job cards. Extended effect. Gains extra squares when strengthened.",
+    "tier": 3,
+    "effect": "Reinforce Once placed, triggered when opponent occupies more than ten squares. Strengthens your job cards. Extended effect. Gains extra squares when strengthened.",
     "spriteAssetId": "Bdii-bnd-small-065",
-    "image": "assets/cards/065_berserker.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-065.jpg"
+    "image": "assets/cards/065-berserker.png",
+    "localFallback": "assets/cards/065-berserker.svg"
   },
   {
     "id": "066-bastion",
@@ -720,10 +785,11 @@
     "name": "Bastion",
     "classification": "Job",
     "family": "Job",
-    "effect": "Defensive Grid: Fortifies adjacent positions and increases territorial resilience. Extended effect.",
+    "tier": 3,
+    "effect": "Reinforce Only triggered when opponent occupies thirteen squares. Strengthened when placed, and cannot be strengthened any other way. One-time effect.",
     "spriteAssetId": "Bdii-bnd-small-066",
-    "image": "assets/cards/066_bastion.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-066.jpg"
+    "image": "assets/cards/066-bastion.png",
+    "localFallback": "assets/cards/066-bastion.svg"
   },
   {
     "id": "067-prince-castor",
@@ -731,10 +797,11 @@
     "name": "Prince Castor",
     "classification": "Character",
     "family": "Character",
-    "effect": "Royal Mandate: Alters board priority and fortifies allied positions. Permanent effect.",
+    "tier": 4,
+    "effect": "Reinforce Strengthens all plant, aquatic, and character cards, regardless of affiliation. Permanent effect. Triggered when used.",
     "spriteAssetId": "Bdii-bnd-small-067",
-    "image": "assets/cards/067_prince-castor.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-067.jpg"
+    "image": "assets/cards/067-prince-castor.png",
+    "localFallback": "assets/cards/067-prince-castor.svg"
   },
   {
     "id": "068-helio",
@@ -742,10 +809,11 @@
     "name": "Helio",
     "classification": "Character",
     "family": "Character",
-    "effect": "Luminescence: Converts neutral squares adjacent to placement into controlled territory. Extended effect.",
+    "tier": 4,
+    "effect": "Reinforce Strengthens all job cards, regardless of affiliation. Permanent effect. Triggered when used.",
     "spriteAssetId": "Bdii-bnd-small-068",
-    "image": "assets/cards/068_helio.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-068.jpg"
+    "image": "assets/cards/068-helio.png",
+    "localFallback": "assets/cards/068-helio.svg"
   },
   {
     "id": "069-lonsdale",
@@ -753,10 +821,11 @@
     "name": "Lonsdale",
     "classification": "Character",
     "family": "Character",
-    "effect": "Reinforce: Weakens opponent cards that occupy three squares in addition to base square; strengthens allied cards occupying two squares in addition to base square. Extended effect.",
+    "tier": 4,
+    "effect": "Reinforce Weakens any of your opponent's cards that can occupy three squares in addition to their base squares, and strengthens any of your cards that can occupy two squares in addition to their base squares. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-069",
-    "image": "assets/cards/069_lonsdale.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-069.jpg"
+    "image": "assets/cards/069-lonsdale.png",
+    "localFallback": "assets/cards/069-lonsdale.svg"
   },
   {
     "id": "070-phantom",
@@ -764,10 +833,11 @@
     "name": "Phantom",
     "classification": "Job",
     "family": "Job",
-    "effect": "Undermine: All job cards and character cards are weakened, regardless of affiliation. Extended effect. Triggered when placed.",
+    "tier": 3,
+    "effect": "Undermine All job cards and character cards are weakened, regardless of affiliation. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-070",
-    "image": "assets/cards/070_phantom.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-070.jpg"
+    "image": "assets/cards/070-phantom.png",
+    "localFallback": "assets/cards/070-phantom.svg"
   },
   {
     "id": "071-bernard",
@@ -775,10 +845,11 @@
     "name": "Bernard",
     "classification": "Character",
     "family": "Character",
-    "effect": "Co-Opt Card: Switches target of opponent's next card effect between player and opponent. If non-targeted, base square becomes yours. Extended effect.",
+    "tier": 4,
+    "effect": "Co-Opt Card Switches the target of the effect of the opponent's next card from yourself to your opponent or vice versa. If the card does not have a targeted effect, its base square becomes yours. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-071",
-    "image": "assets/cards/071_bernard.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-071.jpg"
+    "image": "assets/cards/071-bernard.png",
+    "localFallback": "assets/cards/071-bernard.svg"
   },
   {
     "id": "072-vanguard",
@@ -786,10 +857,11 @@
     "name": "Vanguard",
     "classification": "Job",
     "family": "Job",
-    "effect": "Fortify Position: Strengthens squares to left and right of base square, regardless of affiliation. One-time effect. Triggered when placed.",
+    "tier": 3,
+    "effect": "Fortify Position Strengthens the squares to the left and right of its base square, regardless of affiliation. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-072",
-    "image": "assets/cards/072_vanguard.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-072.jpg"
+    "image": "assets/cards/072-vanguard.png",
+    "localFallback": "assets/cards/072-vanguard.svg"
   },
   {
     "id": "073-dragoon",
@@ -797,10 +869,11 @@
     "name": "Dragoon",
     "classification": "Job",
     "family": "Job",
-    "effect": "Fortify Position: When card is used to flank, all squares claimed as a result are strengthened. One-time effect. Triggered when placed.",
+    "tier": 3,
+    "effect": "Fortify Position When this card is used to flank, all squares that become yours as a result are strenghthened. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-073",
-    "image": "assets/cards/073_dragoon.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-073.jpg"
+    "image": "assets/cards/073-dragoon.png",
+    "localFallback": "assets/cards/073-dragoon.svg"
   },
   {
     "id": "074-horten",
@@ -808,10 +881,11 @@
     "name": "Horten",
     "classification": "Character",
     "family": "Character",
-    "effect": "Fortify Position: When card causes neutralization, neutralized squares become yours, and non-base squares are strengthened. Both strengthening and weakening reduce card to base square only. One-time effect.",
+    "tier": 4,
+    "effect": "Fortify Position When this card causes a neutralisation, neutralised squares become yours, and this card's non-base squares are strengthened. One-time effect. Triggered when placed. Both strengthening and weakening reduce the card to occupying its base square only.",
     "spriteAssetId": "Bdii-bnd-small-074",
-    "image": "assets/cards/074_horten.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-074.jpg"
+    "image": "assets/cards/074-horten.png",
+    "localFallback": "assets/cards/074-horten.svg"
   },
   {
     "id": "075-selene",
@@ -819,10 +893,11 @@
     "name": "Selene",
     "classification": "Character",
     "family": "Character",
-    "effect": "Fortify Position: Cures and strengthens all poisoned squares, regardless of affiliation. All future poisonings strengthen squares instead. Permanent effect.",
+    "tier": 4,
+    "effect": "Fortify Position Cures and strengthens all poisoned squares, regardless of affiliation. All future poisonings will strengthen the squares instead. Permanent effect. Triggered when used.",
     "spriteAssetId": "Bdii-bnd-small-075",
-    "image": "assets/cards/075_selene.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-075.jpg"
+    "image": "assets/cards/075-selene.png",
+    "localFallback": "assets/cards/075-selene.svg"
   },
   {
     "id": "076-galahad",
@@ -830,10 +905,11 @@
     "name": "Galahad",
     "classification": "Character",
     "family": "Character",
-    "effect": "Fortify Position: Fortifies and secures allied territory whenever neutralization events occur. Extended effect.",
+    "tier": 4,
+    "effect": "Fortify Position Whenever a square is neutralised, another square is selected at random and strengthened, regardless of affiliation. Permanent effect. Triggered when used.",
     "spriteAssetId": "Bdii-bnd-small-076",
-    "image": "assets/cards/076_galahad.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-076.jpg"
+    "image": "assets/cards/076-galahad.png",
+    "localFallback": "assets/cards/076-galahad.svg"
   },
   {
     "id": "077-ranger",
@@ -841,10 +917,11 @@
     "name": "Ranger",
     "classification": "Job",
     "family": "Job",
-    "effect": "Precision Strike: Focuses on precision flanking and high-value target capture. One-time effect.",
+    "tier": 3,
+    "effect": "Scorched Earth When this card is used to flank, it poisons the squares either side of its base square, regardless of affiliation. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-077",
-    "image": "assets/cards/077_ranger.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-077.jpg"
+    "image": "assets/cards/077-ranger.png",
+    "localFallback": "assets/cards/077-ranger.svg"
   },
   {
     "id": "078-spiritmaster",
@@ -852,10 +929,11 @@
     "name": "Spiritmaster",
     "classification": "Job",
     "family": "Job",
-    "effect": "Sanctuary: Protects friendly spirit cards and purges enemy extended effects. Extended effect.",
+    "tier": 3,
+    "effect": "Scorched Earth Turns all strengthened opposing squares into poisoned squared. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-078",
-    "image": "assets/cards/078_spiritmaster.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-078.jpg"
+    "image": "assets/cards/078-spiritmaster.png",
+    "localFallback": "assets/cards/078-spiritmaster.svg"
   },
   {
     "id": "079-lady-emma",
@@ -863,10 +941,11 @@
     "name": "Lady Emma",
     "classification": "Character",
     "family": "Character",
-    "effect": "Wisdom's Blessing: Enhances magic-oriented job and spirit cards across the field. Permanent effect.",
+    "tier": 4,
+    "effect": "Scorched Earth Poisons one square at random at the end of each player's turn. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-079",
-    "image": "assets/cards/079_lady-emma.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-079.jpg"
+    "image": "assets/cards/079-lady-emma.png",
+    "localFallback": "assets/cards/079-lady-emma.svg"
   },
   {
     "id": "080-bard",
@@ -874,10 +953,11 @@
     "name": "Bard",
     "classification": "Job",
     "family": "Job",
-    "effect": "Song of Valor: Buffs adjacent monster card square yields by one tier. Extended effect.",
+    "tier": 3,
+    "effect": "Stay Hand Opponent cannot use humanoid, beast or aquatic cards next turn. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-080",
-    "image": "assets/cards/080_bard.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-080.jpg"
+    "image": "assets/cards/080-bard.png",
+    "localFallback": "assets/cards/080-bard.svg"
   },
   {
     "id": "081-pictomancer",
@@ -885,10 +965,11 @@
     "name": "Pictomancer",
     "classification": "Job",
     "family": "Job",
-    "effect": "Stay Hand: Once placed, prevents any card that occupies two squares in addition to its base square from being played. Extended effect.",
+    "tier": 3,
+    "effect": "Stay Hand Once placed, prevents any card that occupies two squares in addition to its base square from being played. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-081",
-    "image": "assets/cards/081_pictomancer.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-081.jpg"
+    "image": "assets/cards/081-pictomancer.png",
+    "localFallback": "assets/cards/081-pictomancer.svg"
   },
   {
     "id": "082-oracle",
@@ -896,10 +977,11 @@
     "name": "Oracle",
     "classification": "Job",
     "family": "Job",
-    "effect": "Foresight: Alters tile selection outcomes and mitigates random swap effects. Extended effect.",
+    "tier": 3,
+    "effect": "Stay Hand Opponent cannot use plant, undead or demond cards next turn. One-time effect. Triggered when placed. Gains extra squares when strengthened.",
     "spriteAssetId": "Bdii-bnd-small-082",
-    "image": "assets/cards/082_oracle.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-082.jpg"
+    "image": "assets/cards/082-oracle.png",
+    "localFallback": "assets/cards/082-oracle.svg"
   },
   {
     "id": "083-hellblade",
@@ -907,10 +989,11 @@
     "name": "Hellblade",
     "classification": "Job",
     "family": "Job",
-    "effect": "Blood Sacrifice: Sacrifices friendly square to neutralize multiple opposing squares. One-time effect.",
+    "tier": 3,
+    "effect": "Stay Hand No character cards can be placed, regardless of affiliation. Extended effect. Triggered when placed. Gains extra squares strengthened.",
     "spriteAssetId": "Bdii-bnd-small-083",
-    "image": "assets/cards/083_hellblade.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-083.jpg"
+    "image": "assets/cards/083-hellblade.png",
+    "localFallback": "assets/cards/083-hellblade.svg"
   },
   {
     "id": "084-adam",
@@ -918,10 +1001,11 @@
     "name": "Adam",
     "classification": "Character",
     "family": "Character",
-    "effect": "Absolute Authority: Overrides active character buffs, evaluating cards at base values. Permanent effect.",
+    "tier": 4,
+    "effect": "Stay Hand For the rest of this battle, cards that can occupy three or more squares in addition to their base squares cannot be placed, regardless of affiliation. Permanent effect. Triggered when used.",
     "spriteAssetId": "Bdii-bnd-small-084",
-    "image": "assets/cards/084_adam.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-084.jpg"
+    "image": "assets/cards/084-adam.png",
+    "localFallback": "assets/cards/084-adam.svg"
   },
   {
     "id": "085-white-mage",
@@ -929,10 +1013,11 @@
     "name": "White Mage",
     "classification": "Job",
     "family": "Job",
-    "effect": "Benevolence: Cleanses negative weakening status from friendly cards upon placement. One-time effect.",
+    "tier": 3,
+    "effect": "Cleanse Cancels opponent's extended effect at random. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-085",
-    "image": "assets/cards/085_white-mage.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-085.jpg"
+    "image": "assets/cards/085-white-mage.png",
+    "localFallback": "assets/cards/085-white-mage.svg"
   },
   {
     "id": "086-salve-maker",
@@ -940,10 +1025,11 @@
     "name": "Salve-Maker",
     "classification": "Job",
     "family": "Job",
-    "effect": "Compound: Alters active terrain status effects across specified board quadrants. Extended effect.",
+    "tier": 3,
+    "effect": "Cleanse Cures all squares of poison, regardless of affiliation, and prevents any more squares from being poisoned. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-086",
-    "image": "assets/cards/086_salve-maker.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-086.jpg"
+    "image": "assets/cards/086-salve-maker.png",
+    "localFallback": "assets/cards/086-salve-maker.svg"
   },
   {
     "id": "087-arcanist",
@@ -951,10 +1037,11 @@
     "name": "Arcanist",
     "classification": "Job",
     "family": "Job",
-    "effect": "Elemental Annihilation: Neutralizes a designated grid section regardless of tile ownership. One-time effect.",
+    "tier": 3,
+    "effect": "Cleanse Neutralises all your opponent's poisoned squares. Cures and strengthens all your poisoned squares. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-087",
-    "image": "assets/cards/087_arcanist.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-087.jpg"
+    "image": "assets/cards/087-arcanist.png",
+    "localFallback": "assets/cards/087-arcanist.svg"
   },
   {
     "id": "088-glenn",
@@ -962,10 +1049,11 @@
     "name": "Glenn",
     "classification": "Character",
     "family": "Character",
-    "effect": "Nature's Ally: Weakens demon and undead cards while boosting plant and beast units. Permanent effect.",
+    "tier": 4,
+    "effect": "Cleanse Cancels all Stay Hand effects, regardless of who they affect, and prevents any more Stay Hand effects from being triggered. Permanent effect. Triggered when used.",
     "spriteAssetId": "Bdii-bnd-small-088",
-    "image": "assets/cards/088_glenn.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-088.jpg"
+    "image": "assets/cards/088-glenn.png",
+    "localFallback": "assets/cards/088-glenn.svg"
   },
   {
     "id": "089-domenic",
@@ -973,10 +1061,11 @@
     "name": "Domenic",
     "classification": "Character",
     "family": "Character",
-    "effect": "Arcane Shield: Protects corner squares from enemy neutralization or conversion. Permanent effect.",
+    "tier": 4,
+    "effect": "Cleanse Once placed, triggers when the total number of occupied squares reaches thirteen. Cancels all opponent's extended effects, along with all permanent effects. One-time effect.",
     "spriteAssetId": "Bdii-bnd-small-089",
-    "image": "assets/cards/089_domenic.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-089.jpg"
+    "image": "assets/cards/089-domenic.png",
+    "localFallback": "assets/cards/089-domenic.svg"
   },
   {
     "id": "090-marla",
@@ -984,10 +1073,11 @@
     "name": "Marla",
     "classification": "Character",
     "family": "Character",
-    "effect": "Shadow Step: Forces opponent's next card play to execute on an adjacent tile. Extended effect.",
+    "tier": 4,
+    "effect": "Cleanse The Counter effect is not triggered by placing this card. One of your opponent's Counter effects is selected at random and cancelled. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-090",
-    "image": "assets/cards/090_marla.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-090.jpg"
+    "image": "assets/cards/090-marla.png",
+    "localFallback": "assets/cards/090-marla.svg"
   },
   {
     "id": "091-monk",
@@ -995,10 +1085,11 @@
     "name": "Monk",
     "classification": "Job",
     "family": "Job",
-    "effect": "Counter Stance: Instantly neutralizes an opponent's tile upon play of a Character card. Extended effect.",
+    "tier": 3,
+    "effect": "Counter Opponent cannot see this card's token. When opponent places a character card, that card's effects are cancelled, and all of its non-base squares become yours. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-091",
-    "image": "assets/cards/091_monk.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-091.jpg"
+    "image": "assets/cards/091-monk.png",
+    "localFallback": "assets/cards/091-monk.svg"
   },
   {
     "id": "092-thief",
@@ -1006,10 +1097,11 @@
     "name": "Thief",
     "classification": "Job",
     "family": "Job",
-    "effect": "Steal Territory: Converts an adjacent opponent secondary square to player control upon placement. One-time effect.",
+    "tier": 3,
+    "effect": "Counter Opponent cannot see this card's token. When opponent plays a card with a Stay Hand effect, its effects are cancelled, and the card's base square becomes yours. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-092",
-    "image": "assets/cards/092_thief.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-092.jpg"
+    "image": "assets/cards/092-thief.png",
+    "localFallback": "assets/cards/092-thief.svg"
   },
   {
     "id": "093-dag",
@@ -1017,10 +1109,11 @@
     "name": "Dag",
     "classification": "Character",
     "family": "Character",
-    "effect": "Enforcer: Weakens low-rank enemy monster cards across the board. Extended effect.",
+    "tier": 4,
+    "effect": "Counter Opponent can see this card. Triggered when one of your squares is flanked. Causes the flanking to affect this card's base square instead. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-093",
-    "image": "assets/cards/093_dag.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-093.jpg"
+    "image": "assets/cards/093-dag.png",
+    "localFallback": "assets/cards/093-dag.svg"
   },
   {
     "id": "094-roddy",
@@ -1028,10 +1121,11 @@
     "name": "Roddy",
     "classification": "Character",
     "family": "Character",
-    "effect": "Magic Barrier: Shields adjacent job cards from targeted character debuffs. Extended effect.",
+    "tier": 4,
+    "effect": "Counter Opponent cannot see this card's token. Monster cards placed by opponent are weakened. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-094",
-    "image": "assets/cards/094_roddy.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-094.jpg"
+    "image": "assets/cards/094-roddy.png",
+    "localFallback": "assets/cards/094-roddy.svg"
   },
   {
     "id": "095-vigintio",
@@ -1039,10 +1133,11 @@
     "name": "Vigintio",
     "classification": "Character",
     "family": "Character",
-    "effect": "Undead Mastery: Converts neutralized friendly undead units into active field tiles. Permanent effect.",
+    "tier": 4,
+    "effect": "Counter Opponent cannot see this card's token. When conditions for defeat are met, two cards are added to each player's hand, and the game continues. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-095",
-    "image": "assets/cards/095_vigintio.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-095.jpg"
+    "image": "assets/cards/095-vigintio.png",
+    "localFallback": "assets/cards/095-vigintio.svg"
   },
   {
     "id": "096-black-mage",
@@ -1050,10 +1145,11 @@
     "name": "Black Mage",
     "classification": "Job",
     "family": "Job",
-    "effect": "Spellcraft: Ignores neutralisations caused by this card's effect. Extended effect. Triggered when placed.",
+    "tier": 3,
+    "effect": "Territorial Gains Every square neutralised during your turn results in you occupying a square above this card's base square. Ignores neutralisations caused by this card's effect. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-096",
-    "image": "assets/cards/096_black-mage.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-096.jpg"
+    "image": "assets/cards/096-black-mage.png",
+    "localFallback": "assets/cards/096-black-mage.svg"
   },
   {
     "id": "097-swordmaster",
@@ -1061,10 +1157,11 @@
     "name": "Swordmaster",
     "classification": "Job",
     "family": "Job",
-    "effect": "Territorial Gains: When causing neutralization, squares to left, right, and above base square become yours. One-time effect.",
+    "tier": 3,
+    "effect": "Territorial Gains When this card causes a neutralisation, the squares to the left, right, and above its base square become yours. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-097",
-    "image": "assets/cards/097_swordmaster.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-097.jpg"
+    "image": "assets/cards/097-swordmaster.png",
+    "localFallback": "assets/cards/097-swordmaster.svg"
   },
   {
     "id": "098-martha",
@@ -1072,10 +1169,11 @@
     "name": "Martha",
     "classification": "Character",
     "family": "Character",
-    "effect": "Territorial Gains: At end of opponent turn, selects a neutral square at random and converts it to player control. Extended effect.",
+    "tier": 4,
+    "effect": "Territorial Gains At the end of opponent's turn, a neutral square is selected at random, and becomes yours. Extended effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-098",
-    "image": "assets/cards/098_martha.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-098.jpg"
+    "image": "assets/cards/098-martha.png",
+    "localFallback": "assets/cards/098-martha.svg"
   },
   {
     "id": "099-red-mage",
@@ -1083,10 +1181,11 @@
     "name": "Red Mage",
     "classification": "Job",
     "family": "Job",
-    "effect": "Brave: Triggered when holding three cards. Allows playing an extra Character card. One-time effect.",
+    "tier": 3,
+    "effect": "Brave Once placed, only triggered when you have three cards left in your hand. Allows you to play an extra card—character cards only. One-time effect.",
     "spriteAssetId": "Bdii-bnd-small-099",
-    "image": "assets/cards/099_red-mage.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-099.jpg"
+    "image": "assets/cards/099-red-mage.png",
+    "localFallback": "assets/cards/099-red-mage.svg"
   },
   {
     "id": "100-bravebearer",
@@ -1094,10 +1193,11 @@
     "name": "Bravebearer",
     "classification": "Job",
     "family": "Job",
-    "effect": "Brave: Triggered when holding two cards. Allows placing an additional card. One-time effect.",
+    "tier": 3,
+    "effect": "Brave Once placed, triggered when you have two cards left in your hand. Allows you to place an extra card. One-time effect.",
     "spriteAssetId": "Bdii-bnd-small-100",
-    "image": "assets/cards/100_bravebearer.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-100.jpg"
+    "image": "assets/cards/100-bravebearer.png",
+    "localFallback": "assets/cards/100-bravebearer.svg"
   },
   {
     "id": "101-sir-sloan",
@@ -1105,10 +1205,11 @@
     "name": "Sir Sloan",
     "classification": "Character",
     "family": "Character",
-    "effect": "Brave: Opponent cannot see this card's token. Opponent flanking requires playing another card. Extended effect.",
+    "tier": 4,
+    "effect": "Brave Opponent cannot see this card's token. Triggered when opponent flanks a square. Opponent must then play another card. Extended effect.",
     "spriteAssetId": "Bdii-bnd-small-101",
-    "image": "assets/cards/101_sir-sloan.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-101.jpg"
+    "image": "assets/cards/101-sir-sloan.png",
+    "localFallback": "assets/cards/101-sir-sloan.svg"
   },
   {
     "id": "102-shieldmaster",
@@ -1116,10 +1217,11 @@
     "name": "Shieldmaster",
     "classification": "Job",
     "family": "Job",
-    "effect": "Default: Card returns to hand at end of turn. Triggered only when playing first, limited to once per match.",
+    "tier": 3,
+    "effect": "Default Card is returned to your hand at the end of the turn. Effect triggered only when you are playing first, and only once per battle.",
     "spriteAssetId": "Bdii-bnd-small-102",
-    "image": "assets/cards/102_shieldmaster.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-102.jpg"
+    "image": "assets/cards/102-shieldmaster.png",
+    "localFallback": "assets/cards/102-shieldmaster.svg"
   },
   {
     "id": "103-gambler",
@@ -1127,10 +1229,11 @@
     "name": "Gambler",
     "classification": "Job",
     "family": "Job",
-    "effect": "Reversal: Selects a random opponent square and swaps position with base square. One-time effect.",
+    "tier": 3,
+    "effect": "Reversal Selects an opponent's square at random and swaps it with this card's base square. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-103",
-    "image": "assets/cards/103_gambler.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-103.jpg"
+    "image": "assets/cards/103-gambler.png",
+    "localFallback": "assets/cards/103-gambler.svg"
   },
   {
     "id": "104-gladys",
@@ -1138,10 +1241,11 @@
     "name": "Gladys",
     "classification": "Character",
     "family": "Character",
-    "effect": "No Man's Land: Neutralizes five opposing squares, two player squares, and base square at random. One-time effect.",
+    "tier": 5,
+    "effect": "No Man's Land When this card is placed, five opposing squares and two of your squares are selected at random and neutralised, as well as this card's base square. One-time effect. Triggered when placed.",
     "spriteAssetId": "Bdii-bnd-small-104",
-    "image": "assets/cards/104_gladys.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-104.jpg"
+    "image": "assets/cards/104-gladys.png",
+    "localFallback": "assets/cards/104-gladys.svg"
   },
   {
     "id": "105-freelancer",
@@ -1149,9 +1253,10 @@
     "name": "Freelancer",
     "classification": "Job",
     "family": "Job",
-    "effect": "The Long Game: Cannot be strengthened until binder is complete, at which point it is permanently strengthened.",
+    "tier": 3,
+    "effect": "The Long Game Cannot be strengthened until card binder is complete, at which point it is permanently strengthened.",
     "spriteAssetId": "Bdii-bnd-small-105",
-    "image": "assets/cards/105_freelancer.jpg",
-    "localFallback": "assets/cards/Bdii-bnd-small-105.jpg"
+    "image": "assets/cards/105-freelancer.png",
+    "localFallback": "assets/cards/105-freelancer.svg"
   }
 ]

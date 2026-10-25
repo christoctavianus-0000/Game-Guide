@@ -116,11 +116,13 @@ interface ShopEntry {
 interface BndCardEntry {
   id: string;
   name: string;
-  tier: number;
+  index?: string;
+  tier?: number;
   classification: string;
-  rules: string[];
+  family?: string;
+  rules?: string[];
   effect: string;
-  strength: number;
+  image?: string;
 }
 
 interface BD2Utilities {

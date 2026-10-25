@@ -70,4 +70,14 @@ describe('Assets Integrity', () => {
       assert.ok(content.includes('<svg') && content.includes('</svg>'), `${card.id}.svg must contain valid SVG`);
     }
   });
+
+  test('All 105 B n D card PNG images exist in assets/cards/ and are non-empty', () => {
+    const cardsDir = path.join(BASE_DIR, 'assets', 'cards');
+    for (const card of cards) {
+      const p = path.join(cardsDir, `${card.id}.png`);
+      assert.ok(fs.existsSync(p), `Card PNG missing for ${card.name} (${card.id}.png)`);
+      const stat = fs.statSync(p);
+      assert.ok(stat.size > 10000, `Card PNG for ${card.name} is too small: ${stat.size} bytes`);
+    }
+  });
 });

@@ -27,37 +27,44 @@
   function renderModalCard(card) {
     const stars = '★'.repeat(Math.max(1, Math.min(5, card.tier || 1)));
     const rulesList = (card.rules || []).map((r) => `<span class="card-badge" style="color: var(--text-crystal);">${window.BD2.escapeHtml(r)}</span>`).join(' ') || '<span style="color: var(--text-muted);">None</span>';
+    const imgSrc = card.image || `assets/cards/${card.id}.png`;
+    const fallbackSvg = `assets/cards/${card.id}.svg`;
 
     return `
       <header class="modal-header">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <img src="assets/cards/${window.BD2.escapeHtml(card.id)}.svg" alt="" style="width: 80px; height: 110px; border-radius: 6px; box-shadow: 0 0 12px var(--crystal-glow);">
+        <div style="display: flex; align-items: center; gap: 1.25rem;">
+          <img src="${window.BD2.escapeHtml(imgSrc)}" 
+               alt="${window.BD2.escapeHtml(card.name)}" 
+               style="width: 108px; height: 139px; object-fit: contain; border-radius: 8px; box-shadow: 0 0 16px var(--crystal-glow); border: 1px solid var(--border-subtle);"
+               onerror="this.onerror=null;this.src='${window.BD2.escapeHtml(fallbackSvg)}';">
           <div>
             <h2 id="modal-title" class="modal-title">${window.BD2.escapeHtml(card.name)}</h2>
-            <div style="margin-bottom: 0.35rem;">
+            <div style="margin-top: 0.35rem;">
               <span class="card-badge" ${getBadgeClass(card.classification)}>${window.BD2.escapeHtml(card.classification)}</span>
-              <span style="color: var(--asterisk-gold); font-size: 0.95rem; margin-left: 0.4rem;">${window.BD2.escapeHtml(stars)}</span>
+              <span style="color: var(--asterisk-gold); font-size: 0.95rem; margin-left: 0.5rem; letter-spacing: 1px;">${window.BD2.escapeHtml(stars)}</span>
             </div>
-            <p style="font-size: 0.85rem; color: var(--text-muted);">
-              Card Strength: <strong style="color: var(--text-primary); font-family: var(--font-mono);">${window.BD2.escapeHtml(card.strength || 1)}</strong>
-            </p>
+            ${card.family && card.family !== 'Special' && card.family !== card.classification ? `
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">
+              Family: <strong style="color: var(--text-crystal);">${window.BD2.escapeHtml(card.family)}</strong>
+            </p>` : ''}
           </div>
         </div>
       </header>
       <div class="modal-body">
         <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1.25rem;">
+          <div style="font-weight: 600; color: var(--asterisk-gold); margin-bottom: 0.35rem;">Card Effect &amp; Territorial Control</div>
+          <p style="font-size: 0.95rem; color: var(--text-primary); line-height: 1.5; margin: 0;">
+            ${window.BD2.escapeHtml(card.effect || 'This card has no additional effect.')}
+          </p>
+        </div>
+
+        ${card.rules && card.rules.length ? `
+        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1.25rem;">
           <div style="font-weight: 600; color: var(--crystal-sky); margin-bottom: 0.35rem;">Permanent Rules &amp; Triggers</div>
           <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
             ${rulesList}
           </div>
-        </div>
-
-        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1.25rem;">
-          <div style="font-weight: 600; color: var(--asterisk-gold); margin-bottom: 0.35rem;">Card Effect &amp; Territorial Control</div>
-          <p style="font-size: 0.95rem; color: var(--text-primary); line-height: 1.5;">
-            ${window.BD2.escapeHtml(card.effect || 'Occupies grid squares according to card pattern. Flips opponent cards if flanking rules are triggered.')}
-          </p>
-        </div>
+        </div>` : ''}
       </div>
     `;
   }
@@ -65,40 +72,49 @@
   function renderCard(card) {
     const isFav = window.BD2.isFavorite(FAV_KEY, card.id);
     const stars = '★'.repeat(Math.max(1, Math.min(5, card.tier || 1)));
-    const rulesList = (card.rules || []).slice(0, 2).map((r) => `<span class="card-badge" style="font-size: 0.7rem; padding: 0.1rem 0.35rem;">${window.BD2.escapeHtml(r)}</span>`).join(' ');
+    const rulesList = (card.rules || []).slice(0, 2).map((r) => `<span class="card-badge" style="font-size: 0.72rem; padding: 0.1rem 0.4rem; color: var(--text-crystal);">${window.BD2.escapeHtml(r)}</span>`).join(' ');
+    const imgSrc = card.image || `assets/cards/${card.id}.png`;
+    const fallbackSvg = `assets/cards/${card.id}.svg`;
 
     return `
-      <article class="codex-card" id="card-${window.BD2.escapeHtml(card.id)}" data-id="${window.BD2.escapeHtml(card.id)}">
-        <div style="display: flex; gap: 1rem;">
+      <article class="codex-card bnd-card" id="card-${window.BD2.escapeHtml(card.id)}" data-id="${window.BD2.escapeHtml(card.id)}">
+        <div style="display: flex; gap: 0.85rem; margin-bottom: 0.75rem;">
           <div style="flex-shrink: 0;">
-            <img src="assets/cards/${window.BD2.escapeHtml(card.id)}.svg" 
-                 alt="${window.BD2.escapeHtml(card.name)}" 
-                 style="width: 76px; height: 108px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.5);"
-                 loading="lazy">
+            <button type="button" class="card-image-btn" data-id="${window.BD2.escapeHtml(card.id)}" title="Click to view artwork" style="background: none; border: none; padding: 0; cursor: pointer; display: block;">
+              <img src="${window.BD2.escapeHtml(imgSrc)}" 
+                   alt="${window.BD2.escapeHtml(card.name)}" 
+                   style="width: 80px; height: 104px; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.4); border: 1px solid var(--border-subtle); display: block;"
+                   onerror="this.onerror=null;this.src='${window.BD2.escapeHtml(fallbackSvg)}';"
+                   loading="lazy">
+            </button>
           </div>
           <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
-            <header style="margin-bottom: 0.4rem;">
-              <h3 class="card-title" style="font-size: 1.05rem;">${window.BD2.escapeHtml(card.name)}</h3>
-              <div style="display: flex; align-items: center; justify-content: space-between;">
+            <header style="margin-bottom: 0.35rem;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.35rem;">
+                <h3 class="card-title" style="font-size: 1.05rem; line-height: 1.25; margin: 0;">${window.BD2.escapeHtml(card.name)}</h3>
+                <button type="button" class="btn-fav ${isFav ? 'active' : ''}" data-id="${window.BD2.escapeHtml(card.id)}" aria-label="Favorite card" style="width: 28px; height: 28px; font-size: 0.85rem; flex-shrink: 0;">
+                  ★
+                </button>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.35rem;">
                 <span class="card-badge" ${getBadgeClass(card.classification)}>${window.BD2.escapeHtml(card.classification)}</span>
-                <span style="color: var(--asterisk-gold); font-size: 0.8rem;">${window.BD2.escapeHtml(stars)}</span>
+                <span style="color: var(--asterisk-gold); font-size: 0.82rem; letter-spacing: 1px;">${window.BD2.escapeHtml(stars)}</span>
               </div>
             </header>
 
-            <div style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.5rem; flex: 1;">
-              <div style="margin-bottom: 0.35rem;">Power: <strong style="font-family: var(--font-mono); color: var(--text-crystal);">${window.BD2.escapeHtml(card.strength || 1)}</strong></div>
-              <div>${rulesList}</div>
+            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem;">
+              ${card.family && card.family !== 'Special' && card.family !== card.classification ? `<div>Family: <strong style="color: var(--text-crystal);">${window.BD2.escapeHtml(card.family)}</strong></div>` : ''}
+              ${rulesList ? `<div style="margin-top: 0.25rem;">${rulesList}</div>` : ''}
             </div>
-
-            <footer style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: auto;">
-              <button type="button" class="btn-primary card-detail-btn" data-id="${window.BD2.escapeHtml(card.id)}" style="padding: 0.3rem 0.65rem; font-size: 0.78rem;">
-                <span>View</span> &rarr;
-              </button>
-              <button type="button" class="btn-fav ${isFav ? 'active' : ''}" data-id="${window.BD2.escapeHtml(card.id)}" aria-label="Favorite card" style="width: 28px; height: 28px; font-size: 0.85rem;">
-                ★
-              </button>
-            </footer>
           </div>
+        </div>
+
+        <!-- Card Effect displayed directly inside the card (no modal needed) -->
+        <div class="card-effect-box" style="background: var(--bg-surface-elevated); padding: 0.65rem 0.85rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-top: auto; font-size: 0.85rem; line-height: 1.5; color: var(--text-primary);">
+          <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--asterisk-gold); font-weight: 600; margin-bottom: 0.2rem;">
+            Card Effect
+          </div>
+          <div>${window.BD2.escapeHtml(card.effect || 'This card has no additional effect.')}</div>
         </div>
       </article>
     `;
@@ -220,7 +236,7 @@
         return;
       }
 
-      const detailBtn = target.closest('.card-detail-btn');
+      const detailBtn = target.closest('.card-detail-btn, .card-image-btn');
       if (detailBtn) {
         const id = (/** @type {HTMLElement} */ (detailBtn)).dataset.id;
         const card = (window.bndCardData || []).find((c) => c.id === id);
