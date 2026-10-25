@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": ["ES2021", "DOM"],
+    "allowJs": true,
+    "checkJs": true,
+    "strictNullChecks": false,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "types": []
+  },
+  "include": [
+    "app.js",
+    "abilityApp.js",
+    "equipmentApp.js",
+    "enemyApp.js",
+    "questApp.js",
+    "shopApp.js",
+    "bndApp.js",
+    "utils.js",
+    "types/**/*.d.ts"
+  ]
+}

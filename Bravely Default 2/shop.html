@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shops Codex — Bravely Default II Game Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="themeToggle.js"></script>
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;" onfocus="this.style.position='static'; this.style.width='auto'; this.style.height='auto';">Skip to main content</a>
+
+  <!-- Fixed Desktop Rail -->
+  <aside class="site-rail" aria-label="Codex navigation">
+    <div class="site-rail-inner">
+      <a class="site-rail-link" href="../index.html" title="Back to World Index">
+        <img src="assets/icons/ui/bd2-crest.svg" alt="" class="nav-icon" width="24" height="24">
+        <span>World</span>
+      </a>
+      <div class="site-rail-divider"></div>
+      <a class="site-rail-link" href="index.html" title="Jobs">
+        <img src="assets/icons/ui/nav-jobs.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Jobs</span>
+      </a>
+      <a class="site-rail-link" href="ability.html" title="Abilities">
+        <img src="assets/icons/ui/nav-abilities.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Skills</span>
+      </a>
+      <a class="site-rail-link" href="equipment.html" title="Equipment">
+        <img src="assets/icons/ui/nav-equipment.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Gear</span>
+      </a>
+      <a class="site-rail-link" href="enemy.html" title="Bestiary">
+        <img src="assets/icons/ui/nav-bestiary.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Bestiary</span>
+      </a>
+      <a class="site-rail-link" href="quest.html" title="Side Quests">
+        <img src="assets/icons/ui/nav-quests.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Quests</span>
+      </a>
+      <a class="site-rail-link active" href="shop.html" aria-current="page" title="Shops">
+        <img src="assets/icons/ui/nav-shops.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Shops</span>
+      </a>
+      <a class="site-rail-link" href="bnd.html" title="B 'n' D Cards">
+        <img src="assets/icons/ui/nav-bnd.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>B 'n' D</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Top Navigation -->
+  <header class="site-nav">
+    <div class="site-nav-inner">
+      <div class="brand-group">
+        <a href="../index.html" title="Game Guide World Index">
+          <img src="assets/icons/ui/bd2-crest.svg" alt="BD2 Crest" class="brand-crest" width="32" height="32">
+        </a>
+        <h1 class="brand-title">
+          <span>Bravely Default II</span>
+          <span class="brand-subtitle">Shops Codex</span>
+        </h1>
+      </div>
+
+      <nav class="site-nav-links" aria-label="Mobile and Tablet navigation">
+        <a class="nav-link" href="index.html">Jobs</a>
+        <a class="nav-link" href="ability.html">Abilities</a>
+        <a class="nav-link" href="equipment.html">Equipment</a>
+        <a class="nav-link" href="enemy.html">Bestiary</a>
+        <a class="nav-link" href="quest.html">Quests</a>
+        <a class="nav-link active" href="shop.html" aria-current="page">Shops</a>
+        <a class="nav-link" href="bnd.html">B 'n' D</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span> <span class="theme-label">Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-wrapper">
+    <section class="page-hero">
+      <img src="assets/icons/ui/nav-shops.svg" alt="" class="hero-emblem" width="48" height="48">
+      <h2 class="hero-title">Excillant Merchants &amp; Armorers</h2>
+      <p class="hero-lead">Town market inventories across the five nations, item prices in pg, consumables, and direct links to weapons and armor.</p>
+      
+      <div class="stats-bar">
+        <div class="stat-chip">Town Markets: <strong>7 Settlements</strong></div>
+        <div class="stat-chip">Total Stock: <strong id="stat-total">585 Items</strong></div>
+        <div class="stat-chip">Currency: <strong>pg (pq)</strong></div>
+      </div>
+    </section>
+
+    <!-- Filters & Search -->
+    <section class="filter-card" aria-label="Search and filter shops">
+      <div class="filter-grid">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="shop-search" class="search-input" placeholder="Search item in shop..." aria-label="Search shop items">
+        </div>
+
+        <div>
+          <select id="town-select" class="search-input" aria-label="Select town shop">
+            <!-- Injected via shopApp.js -->
+          </select>
+        </div>
+
+        <div class="filter-pills" id="shop-cat-filters" role="group" aria-label="Filter by category">
+          <button type="button" class="filter-pill active" data-cat="all">All Items</button>
+          <button type="button" class="filter-pill" data-cat="Consumable">Consumables</button>
+          <button type="button" class="filter-pill" data-cat="Weapon">Weapons</button>
+          <button type="button" class="filter-pill" data-cat="Armor">Armor</button>
+          <button type="button" class="filter-pill" data-cat="Accessory">Accessories</button>
+        </div>
+      </div>
+
+      <div class="filter-actions">
+        <span>Showing <strong id="results-count">0</strong> items</span>
+        <button type="button" id="clear-filters" class="clear-btn">Reset Filters</button>
+      </div>
+    </section>
+
+    <!-- Town Info Card -->
+    <section id="town-info-card" class="codex-card" style="margin-bottom: 1.5rem;" aria-label="Current town info">
+      <!-- Injected via shopApp.js -->
+    </section>
+
+    <!-- Shop Inventory Table -->
+    <section class="table-wrap" aria-label="Shop inventory table">
+      <table class="codex-table" id="shop-table">
+        <thead>
+          <tr>
+            <th data-sort="name">Item Name <span class="sort-icon">↕</span></th>
+            <th data-sort="category">Category <span class="sort-icon">↕</span></th>
+            <th data-sort="price">Price (pg) <span class="sort-icon">↕</span></th>
+            <th>Description &amp; Stats</th>
+            <th style="width: 100px; text-align: right;">Codex Link</th>
+          </tr>
+        </thead>
+        <tbody id="shop-body">
+          <!-- Injected via shopApp.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Modal Backdrop -->
+  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Data & Logic -->
+  <script src="utils.js"></script>
+  <script src="shopData.js"></script>
+  <script src="shopApp.js"></script>
+</body>
+</html>

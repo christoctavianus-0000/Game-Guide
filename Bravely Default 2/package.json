@@ -1,0 +1,12 @@
+{
+  "name": "bravely-default-2-codex",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Dependency-free static codexes for Bravely Default II.",
+  "scripts": {
+    "typecheck": "npx -y -p typescript@5.6.3 tsc --noEmit",
+    "test": "node --test tests/*.test.js",
+    "check": "npm run typecheck && npm test"
+  }
+}

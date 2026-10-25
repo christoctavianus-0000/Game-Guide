@@ -1,0 +1,25 @@
+job_name,unlock_chapter,unlock_location,asterisk_holder,job_trait,sword,dagger,axe,spear,bow,staff,rod,shield,notes
+Freelancer,Prologue,?,,Stand Ground; Late Bloomer,C,C,C,C,C,C,C,B,Starts with this job
+Black Mage,Prologue,?,Elvis,Regenerative Default; High-Velocity Spells,?,?,?,?,?,?,?,?,First magic job when Elvis joins
+White Mage,Prologue,?,Selene,Angelic Ward; Holistic Medicine,?,?,?,?,?,?,?,?,?
+Vanguard,Prologue,?,Dag,Shield-Bearer; Attention Seeker,A,D,S,B,E,E,?,A,?
+Monk,Prologue,?,Horten,Concentration; Single-Minded,E,?,D,B,E,A,?,E,?
+Bard,Chapter 1,?,Orpheus,Extended Outro; Encore,?,?,?,?,?,?,?,?,?
+Beastmaster,Chapter 1,Underground Reservoir,Anihal,Animal Rescue; Creature Comforts,D,D,C,A,A,C,?,B,?
+Thief,Chapter 1,?,Bernard,Sleight of Hand; Up to No Good,B,A,B,C,B,B,?,E,?
+Gambler,Chapter 1,Savalon,Shirley,All or Nothing; Born Lucky,C,C,C,D,A,B,?,E,Optional job from sidequest
+Berserker,Chapter 1,?,Prince Castor,Pierce Default; Rage and Reason,B,D,S,A,E,E,?,E,?
+Red Mage,Chapter 2,?,Roddy,Nuisance; Chainspell,?,?,?,?,?,?,?,?,?
+Ranger,Chapter 2,?,Lily,Barrage; Apex Predator,E,B,C,C,S,D,?,E,?
+Shieldmaster,Chapter 2,Wiswald Tower,Galahad,Protect Ally; Chivalrous Spirit,C,C,B,B,D,D,?,S,?
+Pictomancer,Chapter 2,Wiswald,Folie,Self-Expression; Extra Coat,D,B,E,B,?,B,?,A,?
+Dragoon,Chapter 3,?,Martha,Momentum; Highwind,A,D,C,S,C,E,?,C,?
+Spiritmaster,Chapter 3,?,Helio,Spirited Defence; There in Spirit,?,?,?,?,?,?,?,?,?
+Swordmaster,Chapter 3,?,Gladys,Redoubled Effort; Double Duty,S,A,C,D,D,D,?,D,?
+Oracle,Chapter 3,?,Domenic,In One's Element; Moonlighting,?,?,?,?,?,?,?,?,?
+Salve-Maker,Chapter 3,Enderno / Dreamland,Glenn,Master Medic; Unencumbered,C,A,A,E,C,C,?,E,Optional job from sidequest
+Arcanist,Chapter 4,?,Vigintio,All-In; Wild Wizardry,?,?,?,?,?,?,?,?,?
+Bastion,Chapter 4,?,Lonsdale,Default Guard; Fortitude,A,E,B,S,D,A,?,S,?
+Phantom,Chapter 4,?,Marla,Achilles Heel; Results Guaranteed,B,S,D,D,A,D,?,E,?
+Hellblade,Chapter 4,?,Adam,Deal with the Devil; Strength in Adversity,?,?,?,?,?,?,?,?,?
+Bravebearer,Post-Game,Sir Sloan's grave,Sir Sloan's ghost,Adrenaline; True Grit,S,?,?,?,?,?,?,?,?

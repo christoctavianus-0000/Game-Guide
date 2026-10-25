@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 170" width="120" height="170">
+  <defs>
+    <linearGradient id="bg-073-dragoon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="border-073-dragoon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <filter id="glow-073-dragoon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Card Background -->
+  <rect x="2" y="2" width="116" height="166" rx="8" fill="url(#bg-073-dragoon)" stroke="url(#border-073-dragoon)" stroke-width="2.5"/>
+  <rect x="6" y="6" width="108" height="158" rx="5" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Classification Header Badge -->
+  <rect x="12" y="10" width="96" height="14" rx="4" fill="#0c4a6e" stroke="#38bdf8" stroke-width="0.6"/>
+  <text x="60" y="20" fill="#38bdf8" text-anchor="middle" font-size="8" font-weight="bold" font-family="system-ui, sans-serif" letter-spacing="1">JOB</text>
+
+  <!-- Stars / Tier -->
+  <text x="60" y="34" fill="#fbbf24" text-anchor="middle" font-size="11" font-family="sans-serif">★</text>
+
+  <!-- Art Emblem Frame -->
+  <circle cx="60" cy="72" r="30" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" filter="url(#glow-073-dragoon)"/>
+  <circle cx="60" cy="72" r="26" fill="none" stroke="#38bdf8" stroke-width="0.5" stroke-dasharray="3,2"/>
+  
+  <!-- Emblem Icon -->
+  <path d="M50 20 L75 50 L50 80 L25 50 Z" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5" />
+
+  <!-- Strength Badge -->
+  <circle cx="95" cy="40" r="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="95" y="44" fill="#f8fafc" text-anchor="middle" font-size="10" font-weight="bold" font-family="monospace">1</text>
+
+  <!-- Name -->
+  <text x="60" y="125" fill="#f8fafc" text-anchor="middle" font-size="10" font-weight="bold" font-family="system-ui, sans-serif">Dragoon</text>
+
+  <!-- Rules -->
+  
+</svg>

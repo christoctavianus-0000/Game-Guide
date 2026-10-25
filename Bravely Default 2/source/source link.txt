@@ -1,0 +1,36 @@
+### **1\. Jobs &amp; Job Skills (** **bravely-default-2-jobs.csv** **&amp;** **bravely-default-2-job-skills.csv** **)**
+
+* **Bravely Default II Jobs List: Specialties, Abilities And Tips - Nintendo Insider**: `https://www.nintendo-insider.com/bravely-default-ii-jobs-list-specialties-abilities-and-tips/` [cite: 71, 92]
+* **Bravely Default 2 jobs: All character jobs and their powers | iMore**: `https://www.imore.com/bravely-default-2-jobs-all-character-jobs-and-their-powers` [cite: 92, 147]
+* **Bravely Default II Job Guide - Hey Poor Player**: `https://www.heypoorplayer.com/2021/03/25/bravely-default-ii-job-guide/` [cite: 92]
+* **Bravely Default II Job Guide - Steam Community**: `https://steamcommunity.com/sharedfiles/filedetails/?id=2594402367` [cite: 92, 147]
+* **Swordmaster (Bravely Default II) - Bravely Default Wiki**: `https://bravelydefault.fandom.com/wiki/Swordmaster_(Bravely_Default_II)` [cite: 147]
+* **Jobs and Abilities - Bravely Default II Guide - IGN**: `https://www.ign.com/wikis/bravely-default-2/Jobs_and_Abilities` [cite: 92]
+* **Specialties - Bravely Default II Guide - IGN**: `https://www.ign.com/wikis/bravely-default-2/Specialties` [cite: 92]
+* **Comprehensive Analysis of the Bravely Default II Job System, Equipment Mechanics, and Ability Synergy Engine** *(Internal Notebook Markdown Source)*
+
+---
+
+### **2\. B 'n' D Cards (** **bravely-default-2-bnd-cards.csv** **)**
+
+* **Card Binder (Names &amp; Locations) - Bravely Default II Walkthrough &amp; Guide - GameFAQs**: `https://gamefaqs.gamespot.com/switch/279452-bravely-default-ii/faqs/79673/card-binder-names-and-locations` [cite: 143]
+* **B 'n' D Cards - Bravely Default Wiki**: `https://bravelydefault.fandom.com/wiki/B_%27n%27_D_Cards` [cite: 143]
+* **B n' D Minigame - Bravely Default II Guide - IGN**: `https://www.ign.com/wikis/bravely-default-2/B_n%27_D_Minigame` [cite: 143]
+* **Don't Miss Bravely Default 2's Excellent Card Game - Kotaku**: `https://kotaku.com/don-t-miss-bravely-default-2-s-excellent-card-game-1846381344` [cite: 143]
+* **B'n'D Card Game Strategy Guide | How to Win - Reddit**: `https://www.reddit.com/r/bravelydefault/comments/mdk0g6/bnd_card_game_strategy_guide_how_to_win_bravely/` [cite: 143]
+* **Tips for getting through B n' D quickly? - Reddit**: `https://www.reddit.com/r/bravelydefault/comments/nbm1o3/tips_for_getting_through_b_n_d_quickly/` [cite: 143]
+* **Is there a list of S rank BnD battlers? - Reddit**: `https://www.reddit.com/r/bravelydefault/comments/m58yjd/is_there_a_list_of_s_rank_bnd_battlers/` [cite: 143]
+* **Systemic Architecture and Comprehensive Registry of the B 'n' D Minigame in Bravely Default II** *(Internal Notebook Markdown Source)*
+
+---
+
+### **3\. Equipment Stats (** **bravely-default-2-equipment-stats.csv** **)**
+
+* **Weapons in Bravely Default II - Bravely Default Wiki**: `https://bravelydefault.fandom.com/wiki/Weapons_in_Bravely_Default_II` [cite: 147]
+* **Armor - Bravely Default II Walkthrough &amp; Guide - GameFAQs**: `https://gamefaqs.gamespot.com/switch/279452-bravely-default-ii/faqs/79128/armor` [cite: 147]
+* **Accessories - Bravely Default II Walkthrough &amp; Guide - GameFAQs**: `https://gamefaqs.gamespot.com/switch/279452-bravely-default-ii/faqs/79128/accessories` [cite: 147]
+* **Accessories in Bravely Default II - Bravely Default Wiki**: `https://bravelydefault.fandom.com/wiki/Accessories_in_Bravely_Default_II` [cite: 147]
+* **Giant's Gloves - Final Fantasy Wiki**: `https://finalfantasy.fandom.com/wiki/Giant%27s_Gloves` [cite: 92]
+* **Equipment - r/bravelydefault Wiki - Reddit**: `https://www.reddit.com/r/bravelydefault/wiki/equip/` [cite: 147]
+* **Halls of Tribulation - Bravely Default Wiki**: `https://bravelydefault.fandom.com/wiki/Halls_of_Tribulation` [cite: 147]
+* **Systemic Mechanics, Itemization Architecture, and Post-Game Equipment Synergies in Bravely Default II** *(Internal Notebook Markdown Source)*

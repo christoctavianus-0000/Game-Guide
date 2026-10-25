@@ -1,0 +1,106 @@
+card_index,card_name,classification,effect_or_family,sprite_asset_id
+001,Goblin,Monster,Family: Humanoid,Bdii-bnd-small-001
+002,Goblin Chopper,Monster,Family: Humanoid,Bdii-bnd-small-002
+003,Goblin Archer,Monster,Family: Humanoid,Bdii-bnd-small-003
+004,Orc,Monster,Family: Humanoid. Loses extra squares when weakened.,Bdii-bnd-small-004
+005,Orc Leader,Monster,Family: Humanoid. Loses extra squares when weakened.,Bdii-bnd-small-005
+006,Orc Chieftain,Monster,Family: Humanoid. Loses extra squares when weakened.,Bdii-bnd-small-006
+007,Orc Lord,Monster,Family: Humanoid. Loses extra squares when weakened. Gains extra squares when strengthened.,Bdii-bnd-small-007
+008,Wolf,Monster,Family: Beast,Bdii-bnd-small-008
+009,Ratbitt,Monster,Family: Beast,Bdii-bnd-small-009
+010,Grizzly,Monster,Family: Beast,Bdii-bnd-small-010
+011,Diatryma,Monster,Family: Beast,Bdii-bnd-small-011
+012,Golden Bear,Monster,Family: Beast,Bdii-bnd-small-012
+013,Yeti,Monster,Family: Beast,Bdii-bnd-small-013
+014,Uniconey,Monster,Family: Beast,Bdii-bnd-small-014
+015,Catoblepas,Monster,Family: Beast,Bdii-bnd-small-015
+016,Vesp,Monster,Family: Insect,Bdii-bnd-small-016
+017,Sandworm,Monster,Family: Insect,Bdii-bnd-small-017
+018,Killer Ant,Monster,Family: Insect,Bdii-bnd-small-018
+019,Razor Vesp,Monster,Family: Insect. Loses extra squares when weakened.,Bdii-bnd-small-019
+020,Staggermoth,Monster,Family: Insect,Bdii-bnd-small-020
+021,Jörmungandr,Monster,Family: Insect,Bdii-bnd-small-021
+022,Abyss Worm,Monster,Family: Insect,Bdii-bnd-small-022
+023,Sahagin,Monster,Family: Aquatic,Bdii-bnd-small-023
+024,Flannacotta,Monster,Family: Aquatic,Bdii-bnd-small-024
+025,Lotl,Monster,Family: Aquatic,Bdii-bnd-small-025
+026,Gelaflan,Monster,Family: Aquatic,Bdii-bnd-small-026
+027,Dagon,Monster,Family: Aquatic,Bdii-bnd-small-027
+028,Rock Tortoise,Monster,Family: Aquatic,Bdii-bnd-small-028
+029,Sibilus,Monster,Family: Aquatic,Bdii-bnd-small-029
+030,Adamant Tortoise,Monster,Family: Aquatic. Loses extra squares when weakened.,Bdii-bnd-small-030
+031,Genbu,Monster,Family: Aquatic,Bdii-bnd-small-031
+032,Fresh Forkling,Monster,Family: Plant,Bdii-bnd-small-032
+033,Ochu,Monster,Family: Plant,Bdii-bnd-small-033
+034,Veronica,Monster,Family: Plant,Bdii-bnd-small-034
+035,Fungoo,Monster,Family: Plant,Bdii-bnd-small-035
+036,Mantrap,Monster,Family: Plant. Gains extra squares when strengthened.,Bdii-bnd-small-036
+037,Devil's Snare,Monster,Family: Plant,Bdii-bnd-small-037
+038,Rafflesia,Monster,Family: Plant,Bdii-bnd-small-038
+039,Ahriman,Monster,Family: Demon,Bdii-bnd-small-039
+040,Asp,Monster,Family: Demon,Bdii-bnd-small-040
+041,Vishno,Monster,Family: Demon. Gains extra squares when strengthened.,Bdii-bnd-small-041
+042,Baphomet,Monster,Family: Demon. Loses extra squares when weakened.,Bdii-bnd-small-042
+043,Abaddon,Monster,Family: Demon,Bdii-bnd-small-043
+044,Asmodeus,Monster,Family: Demon. Weakening actually strengthens this card.,Bdii-bnd-small-044
+045,Amon,Monster,Family: Demon. Gains extra squares when strengthened.,Bdii-bnd-small-045
+046,Ghost Knight,Monster,Family: Undead,Bdii-bnd-small-046
+047,Lost Souls,Monster,Family: Undead,Bdii-bnd-small-047
+048,Nightmare,Monster,Family: Undead. Gains extra squares when strengthened.,Bdii-bnd-small-048
+049,Skeleton Sellsword,Monster,Family: Undead,Bdii-bnd-small-049
+050,Goliath,Monster,Family: Undead. Loses extra squares when weakened.,Bdii-bnd-small-050
+051,Sleipnir,Monster,Family: Undead. Weakening actually strengthens this card.,Bdii-bnd-small-051
+052,Aqua Element,Monster,Family: Spirit,Bdii-bnd-small-052
+053,Sylph,Monster,Family: Spirit,Bdii-bnd-small-053
+054,Cait Sith,Monster,Family: Spirit,Bdii-bnd-small-054
+055,Golem,Monster,Family: Spirit. Loses extra squares when weakened.,Bdii-bnd-small-055
+056,Kitty-Cait,Monster,Family: Spirit. Loses extra squares when weakened. Gains extra squares when strengthened.,Bdii-bnd-small-056
+057,Chaos,Monster,Family: Spirit,Bdii-bnd-small-057
+058,King Wiki-Wiki,Monster,Family: Spirit,Bdii-bnd-small-058
+059,Beastmaster,Job,"Rare Breeds: Strengthens all beast and insect cards, regardless of affiliation. Extended effect. Triggered when placed.",Bdii-bnd-small-059
+060,Shirley,Character,"Rare Breeds: Strengthens all humanoid and spirit cards, regardless of affiliation. Permanent effect. Triggered when used.",Bdii-bnd-small-060
+061,Folie,Character,"Rare Breeds: Strengthens all undead and demon cards, regardless of affiliation. Extended effect. Triggered when placed. Gains extra squares when strengthened.",Bdii-bnd-small-061
+062,Orpheus,Character,"Ill Breeding: Weakens all humanoid and beast cards, regardless of affiliation. Extended effect. Triggered when placed.",Bdii-bnd-small-062
+063,Anihal,Character,"Ill Breeding: Weakens aquatic, undead and demon cards, regardless of affiliation. Permanent effect. Triggered when used.",Bdii-bnd-small-063
+064,Lily,Character,"Ill Breeding: Weakens plant and insect cards, regardless of affiliation. Extended effect. Triggered when placed.",Bdii-bnd-small-064
+065,Berserker,Job,"Reinforce: Once placed, triggered when opponent occupies more than ten squares. Strengthens your job cards. Extended effect. Gains extra squares when strengthened.",Bdii-bnd-small-065
+066,Bastion,Job,Defensive Grid: Fortifies adjacent positions and increases territorial resilience. Extended effect.,Bdii-bnd-small-066
+067,Prince Castor,Character,Royal Mandate: Alters board priority and fortifies allied positions. Permanent effect.,Bdii-bnd-small-067
+068,Helio,Character,Luminescence: Converts neutral squares adjacent to placement into controlled territory. Extended effect.,Bdii-bnd-small-068
+069,Lonsdale,Character,Reinforce: Weakens opponent cards that occupy three squares in addition to base square; strengthens allied cards occupying two squares in addition to base square. Extended effect.,Bdii-bnd-small-069
+070,Phantom,Job,"Undermine: All job cards and character cards are weakened, regardless of affiliation. Extended effect. Triggered when placed.",Bdii-bnd-small-070
+071,Bernard,Character,"Co-Opt Card: Switches target of opponent's next card effect between player and opponent. If non-targeted, base square becomes yours. Extended effect.",Bdii-bnd-small-071
+072,Vanguard,Job,"Fortify Position: Strengthens squares to left and right of base square, regardless of affiliation. One-time effect. Triggered when placed.",Bdii-bnd-small-072
+073,Dragoon,Job,"Fortify Position: When card is used to flank, all squares claimed as a result are strengthened. One-time effect. Triggered when placed.",Bdii-bnd-small-073
+074,Horten,Character,"Fortify Position: When card causes neutralization, neutralized squares become yours, and non-base squares are strengthened. Both strengthening and weakening reduce card to base square only. One-time effect.",Bdii-bnd-small-074
+075,Selene,Character,"Fortify Position: Cures and strengthens all poisoned squares, regardless of affiliation. All future poisonings strengthen squares instead. Permanent effect.",Bdii-bnd-small-075
+076,Galahad,Character,Fortify Position: Fortifies and secures allied territory whenever neutralization events occur. Extended effect.,Bdii-bnd-small-076
+077,Ranger,Job,Precision Strike: Focuses on precision flanking and high-value target capture. One-time effect.,Bdii-bnd-small-077
+078,Spiritmaster,Job,Sanctuary: Protects friendly spirit cards and purges enemy extended effects. Extended effect.,Bdii-bnd-small-078
+079,Lady Emma,Character,Wisdom's Blessing: Enhances magic-oriented job and spirit cards across the field. Permanent effect.,Bdii-bnd-small-079
+080,Bard,Job,Song of Valor: Buffs adjacent monster card square yields by one tier. Extended effect.,Bdii-bnd-small-080
+081,Pictomancer,Job,"Stay Hand: Once placed, prevents any card that occupies two squares in addition to its base square from being played. Extended effect.",Bdii-bnd-small-081
+082,Oracle,Job,Foresight: Alters tile selection outcomes and mitigates random swap effects. Extended effect.,Bdii-bnd-small-082
+083,Hellblade,Job,Blood Sacrifice: Sacrifices friendly square to neutralize multiple opposing squares. One-time effect.,Bdii-bnd-small-083
+084,Adam,Character,"Absolute Authority: Overrides active character buffs, evaluating cards at base values. Permanent effect.",Bdii-bnd-small-084
+085,White Mage,Job,Benevolence: Cleanses negative weakening status from friendly cards upon placement. One-time effect.,Bdii-bnd-small-085
+086,Salve-Maker,Job,Compound: Alters active terrain status effects across specified board quadrants. Extended effect.,Bdii-bnd-small-086
+087,Arcanist,Job,Elemental Annihilation: Neutralizes a designated grid section regardless of tile ownership. One-time effect.,Bdii-bnd-small-087
+088,Glenn,Character,Nature's Ally: Weakens demon and undead cards while boosting plant and beast units. Permanent effect.,Bdii-bnd-small-088
+089,Domenic,Character,Arcane Shield: Protects corner squares from enemy neutralization or conversion. Permanent effect.,Bdii-bnd-small-089
+090,Marla,Character,Shadow Step: Forces opponent's next card play to execute on an adjacent tile. Extended effect.,Bdii-bnd-small-090
+091,Monk,Job,Counter Stance: Instantly neutralizes an opponent's tile upon play of a Character card. Extended effect.,Bdii-bnd-small-091
+092,Thief,Job,Steal Territory: Converts an adjacent opponent secondary square to player control upon placement. One-time effect.,Bdii-bnd-small-092
+093,Dag,Character,Enforcer: Weakens low-rank enemy monster cards across the board. Extended effect.,Bdii-bnd-small-093
+094,Roddy,Character,Magic Barrier: Shields adjacent job cards from targeted character debuffs. Extended effect.,Bdii-bnd-small-094
+095,Vigintio,Character,Undead Mastery: Converts neutralized friendly undead units into active field tiles. Permanent effect.,Bdii-bnd-small-095
+096,Black Mage,Job,Spellcraft: Ignores neutralisations caused by this card's effect. Extended effect. Triggered when placed.,Bdii-bnd-small-096
+097,Swordmaster,Job,"Territorial Gains: When causing neutralization, squares to left, right, and above base square become yours. One-time effect.",Bdii-bnd-small-097
+098,Martha,Character,"Territorial Gains: At end of opponent turn, selects a neutral square at random and converts it to player control. Extended effect.",Bdii-bnd-small-098
+099,Red Mage,Job,Brave: Triggered when holding three cards. Allows playing an extra Character card. One-time effect.,Bdii-bnd-small-099
+100,Bravebearer,Job,Brave: Triggered when holding two cards. Allows placing an additional card. One-time effect.,Bdii-bnd-small-100
+101,Sir Sloan,Character,Brave: Opponent cannot see this card's token. Opponent flanking requires playing another card. Extended effect.,Bdii-bnd-small-101
+102,Shieldmaster,Job,"Default: Card returns to hand at end of turn. Triggered only when playing first, limited to once per match.",Bdii-bnd-small-102
+103,Gambler,Job,Reversal: Selects a random opponent square and swaps position with base square. One-time effect.,Bdii-bnd-small-103
+104,Gladys,Character,"No Man's Land: Neutralizes five opposing squares, two player squares, and base square at random. One-time effect.",Bdii-bnd-small-104
+105,Freelancer,Job,"The Long Game: Cannot be strengthened until binder is complete, at which point it is permanently strengthened.",Bdii-bnd-small-105

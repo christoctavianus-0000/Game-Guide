@@ -2,11 +2,12 @@
   "name": "game-guide",
   "version": "1.0.0",
   "private": true,
-  "description": "Static game reference apps for Digimon Card Battle and Octopath Traveler 0.",
+  "description": "Static game reference apps for Digimon Card Battle, Octopath Traveler 0, and Bravely Default II.",
   "scripts": {
     "check:digimon": "npm --prefix \"Digimon Card Battle\" run check",
     "check:octopath": "npm --prefix \"Octopath Traveler 0\" run check",
-    "check": "npm run check:digimon && npm run check:octopath",
-    "test": "npm test --prefix \"Digimon Card Battle\" && npm test --prefix \"Octopath Traveler 0\""
+    "check:bd2": "npm --prefix \"Bravely Default 2\" run check",
+    "check": "npm run check:digimon && npm run check:octopath && npm run check:bd2",
+    "test": "npm test --prefix \"Digimon Card Battle\" && npm test --prefix \"Octopath Traveler 0\" && npm test --prefix \"Bravely Default 2\""
   }
 }

@@ -46,6 +46,8 @@
     try {
       t = localStorage.getItem(SHARED_KEY);
       if (t && VALID[t]) return t;
+      t = localStorage.getItem('bd2_theme');
+      if (t && VALID[t]) return t;
       t = localStorage.getItem('octo0_theme');
       if (t && VALID[t]) return t;
       t = localStorage.getItem('digimon_codex_theme');
@@ -64,6 +66,7 @@
   function saveTheme(val) {
     try {
       localStorage.setItem(SHARED_KEY, val);
+      localStorage.setItem('bd2_theme', val);
       localStorage.setItem('octo0_theme', val);
       localStorage.setItem('digimon_codex_theme', val);
     } catch (e) {}

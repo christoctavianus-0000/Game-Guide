@@ -1,0 +1,8913 @@
+/**
+ * Bravely Default II — Bestiary Dataset
+ * Generated automatically by parse_enemies.py
+ */
+const enemyData = [
+  {
+    "id": "boss-selene-dag",
+    "name": "Selene & Dag",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Prologue",
+    "location": "Tide Cave (Near Halcyonia)",
+    "level": 8,
+    "hp": "Selene: 1,840 / Dag: 1,568",
+    "weaknesses": [
+      "Sword",
+      "Fire (Dag)",
+      "Dagger",
+      "Dark (Selene)"
+    ],
+    "resistances": [
+      "Water",
+      "Earth"
+    ],
+    "immunities": [
+      "Poison",
+      "Blind",
+      "Silence",
+      "Sleep"
+    ],
+    "drops": [
+      "White Robe",
+      "Bronze Cuirass"
+    ],
+    "steals": [
+      "Mini-Ether",
+      "Broadsword"
+    ],
+    "notes": "Defeat White Mage Selene first to prevent continuous healing on Vanguard Dag."
+  },
+  {
+    "id": "boss-horten",
+    "name": "Horten",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Prologue",
+    "location": "Halcyonia Palace (Throne Room)",
+    "level": 11,
+    "hp": "8,240",
+    "weaknesses": [
+      "Sword",
+      "Bow",
+      "Earth"
+    ],
+    "resistances": [
+      "Fire",
+      "Water"
+    ],
+    "immunities": [
+      "Sleep",
+      "Paralysis",
+      "Dread",
+      "Confusion"
+    ],
+    "drops": [
+      "Iron Knuckles",
+      "Mythril Bangle"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Oak Staff"
+    ],
+    "notes": "Monk Asterisk holder. Uses Strong Strike and Focus. Counters physical strikes when defaulting."
+  },
+  {
+    "id": "boss-orpheus",
+    "name": "Orpheus",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 1",
+    "location": "Savalon - Underground Reservoir",
+    "level": 14,
+    "hp": "10,920",
+    "weaknesses": [
+      "Spear",
+      "Bow",
+      "Water"
+    ],
+    "resistances": [
+      "Wind",
+      "Earth"
+    ],
+    "immunities": [
+      "Silence",
+      "Sleep",
+      "Blind"
+    ],
+    "drops": [
+      "Poet's Chapeau",
+      "Round Shield"
+    ],
+    "steals": [
+      "Feather Cap",
+      "Silver Bow"
+    ],
+    "notes": "Bard Asterisk holder. Accompanied by monsters. Buffs party defense and damage resistance."
+  },
+  {
+    "id": "boss-anihal",
+    "name": "Anihal",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 1",
+    "location": "Savalon - Underground Reservoir",
+    "level": 16,
+    "hp": "13,440",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "Wind",
+      "Water"
+    ],
+    "immunities": [
+      "Charm",
+      "Contagion",
+      "Sleep"
+    ],
+    "drops": [
+      "Gauze Mask",
+      "Beastmaster Bracer"
+    ],
+    "steals": [
+      "Spear",
+      "Oak Bow"
+    ],
+    "notes": "Beastmaster Asterisk holder. Accompanied by Undine and Gilded Golem; uses Off the Chain."
+  },
+  {
+    "id": "boss-bernard",
+    "name": "Bernard",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 1",
+    "location": "Savalon - Water Gathering Site",
+    "level": 18,
+    "hp": "16,560",
+    "weaknesses": [
+      "Axe",
+      "Bow",
+      "Earth",
+      "Light"
+    ],
+    "resistances": [
+      "Wind",
+      "Dark"
+    ],
+    "immunities": [
+      "Blind",
+      "Silence",
+      "Paralysis"
+    ],
+    "drops": [
+      "Thief's Gloves",
+      "Main-Gauche"
+    ],
+    "steals": [
+      "Kukri",
+      "Hi-Potion"
+    ],
+    "notes": "Thief Asterisk holder. Inflicts high single-target burst with Godspeed Strike; steals MP."
+  },
+  {
+    "id": "boss-prince-castor",
+    "name": "Prince Castor",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 1",
+    "location": "Savalon - Underground Reservoir",
+    "level": 20,
+    "hp": "22,400",
+    "weaknesses": [
+      "Dagger",
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "Earth",
+      "Dark"
+    ],
+    "immunities": [
+      "Dread",
+      "Confusion",
+      "Charm"
+    ],
+    "drops": [
+      "War Axe",
+      "Heavy Armor"
+    ],
+    "steals": [
+      "Battle Axe",
+      "Remedy"
+    ],
+    "notes": "Berserker Asterisk holder. Penetrates Default guards with Vent Fury and Crescent Moon."
+  },
+  {
+    "id": "boss-shirley",
+    "name": "Shirley",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 1",
+    "location": "Savalon - Gaming Hall (Sub-Quest 015)",
+    "level": 22,
+    "hp": "24,680",
+    "weaknesses": [
+      "Sword",
+      "Staff",
+      "Lightning",
+      "Wind"
+    ],
+    "resistances": [
+      "Earth",
+      "Light"
+    ],
+    "immunities": [
+      "All standard ailments"
+    ],
+    "drops": [
+      "Dice",
+      "Fortune Bracer"
+    ],
+    "steals": [
+      "Teleport Stone",
+      "Gold Hourglass"
+    ],
+    "notes": "Gambler Asterisk holder. Optional Asterisk boss unlocked after beating her in B 'n' D cards."
+  },
+  {
+    "id": "boss-roddy",
+    "name": "Roddy",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 2",
+    "location": "Wiswald - Treetop Path",
+    "level": 24,
+    "hp": "28,940",
+    "weaknesses": [
+      "Sword",
+      "Spear",
+      "Light",
+      "Dark"
+    ],
+    "resistances": [
+      "Fire",
+      "Water",
+      "Lightning",
+      "Earth"
+    ],
+    "immunities": [
+      "Silence",
+      "Sleep",
+      "Paralysis"
+    ],
+    "drops": [
+      "Red Robe",
+      "Rune Staff"
+    ],
+    "steals": [
+      "Ether",
+      "Wizard's Hat"
+    ],
+    "notes": "Red Mage Asterisk holder. Casts Heal and double-casts offensive elemental spells via Chainspell."
+  },
+  {
+    "id": "boss-lily",
+    "name": "Lily",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 2",
+    "location": "Wiswald - Abandoned Mansion",
+    "level": 26,
+    "hp": "32,480",
+    "weaknesses": [
+      "Sword",
+      "Staff",
+      "Fire",
+      "Lightning"
+    ],
+    "resistances": [
+      "Wind",
+      "Earth"
+    ],
+    "immunities": [
+      "Blind",
+      "Poison",
+      "Sleep"
+    ],
+    "drops": [
+      "Hunter's Bow",
+      "Ranger's Cap"
+    ],
+    "steals": [
+      "Target Bow",
+      "Hi-Potion"
+    ],
+    "notes": "Ranger Asterisk holder. Supported by pet panthers; focuses on high-speed critical shots."
+  },
+  {
+    "id": "boss-galahad",
+    "name": "Galahad",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 2",
+    "location": "Wiswald - Tower of Wisdom",
+    "level": 28,
+    "hp": "38,620",
+    "weaknesses": [
+      "Dagger",
+      "Staff",
+      "Light"
+    ],
+    "resistances": [
+      "Physical elements (All)",
+      "Earth"
+    ],
+    "immunities": [
+      "Blind",
+      "Silence",
+      "Dread",
+      "Paralysis"
+    ],
+    "drops": [
+      "Tower Shield",
+      "Heavy Helm"
+    ],
+    "steals": [
+      "Kite Shield",
+      "Giant's Shield"
+    ],
+    "notes": "Shieldmaster Asterisk holder. Protects his demonic picto-paintings and counters all attacks."
+  },
+  {
+    "id": "boss-folie",
+    "name": "Folie",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 2",
+    "location": "Wiswald - Folie's Atelier",
+    "level": 30,
+    "hp": "44,800",
+    "weaknesses": [
+      "Spear",
+      "Water",
+      "Light"
+    ],
+    "resistances": [
+      "Dark",
+      "Earth"
+    ],
+    "immunities": [
+      "Daub",
+      "Blind",
+      "Poison",
+      "Charm"
+    ],
+    "drops": [
+      "Artist's Palette",
+      "Rainbow Dress"
+    ],
+    "steals": [
+      "Remedy",
+      "Magic Staff"
+    ],
+    "notes": "Pictomancer Asterisk holder. Accompanied by Golem; daubs targets to strip elemental resistances."
+  },
+  {
+    "id": "boss-martha",
+    "name": "Martha",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 3",
+    "location": "Rimedhal - Serpent's Grotto",
+    "level": 34,
+    "hp": "52,900",
+    "weaknesses": [
+      "Dagger",
+      "Bow",
+      "Lightning",
+      "Dark"
+    ],
+    "resistances": [
+      "Wind",
+      "Water",
+      "Spear"
+    ],
+    "immunities": [
+      "Sleep",
+      "Silence",
+      "Contagion"
+    ],
+    "drops": [
+      "Dragon Lance",
+      "Drachen Helm"
+    ],
+    "steals": [
+      "Gungnir",
+      "Hi-Potion"
+    ],
+    "notes": "Dragoon Asterisk holder. Disappears from field using Jump to crash down for devastating damage."
+  },
+  {
+    "id": "boss-helio-gladys",
+    "name": "Helio & Gladys",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 3",
+    "location": "Rimedhal - Frosty Peaks",
+    "level": 36,
+    "hp": "Helio: 38,400 / Gladys: 46,200",
+    "weaknesses": [
+      "Sword/Dark (Helio)",
+      "Axe/Bow/Earth (Gladys)"
+    ],
+    "resistances": [
+      "Light (Helio)",
+      "Physical counter (Gladys)"
+    ],
+    "immunities": [
+      "All standard ailments"
+    ],
+    "drops": [
+      "White Robe",
+      "Defender"
+    ],
+    "steals": [
+      "Holy Lance",
+      "Kiku-Ichimonji"
+    ],
+    "notes": "Spiritmaster Helio summons spirits while Swordmaster Gladys assumes counter stances."
+  },
+  {
+    "id": "boss-domenic",
+    "name": "Domenic",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 3",
+    "location": "Rimedhal - Jaws of the Dragon",
+    "level": 38,
+    "hp": "68,400",
+    "weaknesses": [
+      "Dagger",
+      "Sword",
+      "Dark"
+    ],
+    "resistances": [
+      "Fire",
+      "Water",
+      "Lightning",
+      "Light"
+    ],
+    "immunities": [
+      "Stop",
+      "Slow",
+      "Silence",
+      "Sleep"
+    ],
+    "drops": [
+      "Oracle Robes",
+      "Time Ring"
+    ],
+    "steals": [
+      "Ether",
+      "Rune Blade"
+    ],
+    "notes": "Oracle Asterisk holder. Manipulates action turns using Haste and reflects magic spells."
+  },
+  {
+    "id": "boss-glenn",
+    "name": "Glenn",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 3",
+    "location": "Enderno - Dreamland (Sub-Quest 047)",
+    "level": 40,
+    "hp": "72,100",
+    "weaknesses": [
+      "Spear",
+      "Lightning",
+      "Light"
+    ],
+    "resistances": [
+      "Water",
+      "Dark"
+    ],
+    "immunities": [
+      "Contagion",
+      "Poison",
+      "Blind"
+    ],
+    "drops": [
+      "Alchemist's Coat",
+      "Doctor's Hat"
+    ],
+    "steals": [
+      "Elixir",
+      "Remedy"
+    ],
+    "notes": "Salve-Maker Asterisk holder. Optional boss inside dream world; compounds lethal concotions."
+  },
+  {
+    "id": "boss-lonsdale",
+    "name": "Lonsdale",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 4",
+    "location": "Holograd - Ramparts",
+    "level": 44,
+    "hp": "84,600",
+    "weaknesses": [
+      "Dagger",
+      "Dark"
+    ],
+    "resistances": [
+      "Spear",
+      "Shield",
+      "Light",
+      "Earth"
+    ],
+    "immunities": [
+      "Dread",
+      "Paralysis",
+      "Sleep",
+      "Stop"
+    ],
+    "drops": [
+      "Bastion Plate",
+      "Holy Shield"
+    ],
+    "steals": [
+      "Rune Spear",
+      "Heavy Plate"
+    ],
+    "notes": "Bastion Asterisk holder. Sets up impenetrable Rampart barriers blocking physical attacks."
+  },
+  {
+    "id": "boss-marla",
+    "name": "Marla",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 4",
+    "location": "Holograd - Headquarters",
+    "level": 46,
+    "hp": "88,900",
+    "weaknesses": [
+      "Spear",
+      "Light"
+    ],
+    "resistances": [
+      "Dark",
+      "Evasion +40%"
+    ],
+    "immunities": [
+      "Instant Death",
+      "Doom",
+      "Blind",
+      "Silence"
+    ],
+    "drops": [
+      "Assassin Dagger",
+      "Black Belt"
+    ],
+    "steals": [
+      "Main-Gauche",
+      "Ninja Garb"
+    ],
+    "notes": "Phantom Asterisk holder. High evasion; inflicts contagion and executes dual-wield flurries."
+  },
+  {
+    "id": "boss-vigintio",
+    "name": "Vigintio",
+    "family": "Undead",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 4",
+    "location": "Holograd - Airship",
+    "level": 48,
+    "hp": "94,200",
+    "weaknesses": [
+      "Light",
+      "Staff"
+    ],
+    "resistances": [
+      "Dark (Absorbs)",
+      "Fire",
+      "Water"
+    ],
+    "immunities": [
+      "Instant Death",
+      "Doom",
+      "Poison",
+      "Dread"
+    ],
+    "drops": [
+      "Arcanist Robes",
+      "Necromancer's Staff"
+    ],
+    "steals": [
+      "Demon Staff",
+      "Ether"
+    ],
+    "notes": "Arcanist Asterisk holder. Undead lich casting Doomsday and reaping high damage."
+  },
+  {
+    "id": "boss-adam",
+    "name": "Adam",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 4",
+    "location": "Holograd - Airship Bridge",
+    "level": 52,
+    "hp": "124,000",
+    "weaknesses": [
+      "Axe",
+      "Light"
+    ],
+    "resistances": [
+      "Dark",
+      "Sword",
+      "Fire"
+    ],
+    "immunities": [
+      "All standard ailments"
+    ],
+    "drops": [
+      "Muramasa",
+      "Adam's Circlet"
+    ],
+    "steals": [
+      "Elixir",
+      "Ragnarok"
+    ],
+    "notes": "Hellblade Asterisk holder. Sacrifices HP for devastating Ultima Sword attacks; breaks damage limit."
+  },
+  {
+    "id": "boss-sir-sloan",
+    "name": "Sir Sloan",
+    "family": "Humanoid",
+    "isBoss": true,
+    "isAsteriskHolder": true,
+    "chapter": "Chapter 6 / Post-Game",
+    "location": "Windswept Glade (Sir Sloan's Grave)",
+    "level": 65,
+    "hp": "168,000",
+    "weaknesses": [
+      "Bow",
+      "Staff",
+      "Dark"
+    ],
+    "resistances": [
+      "Sword",
+      "Light"
+    ],
+    "immunities": [
+      "All status ailments"
+    ],
+    "drops": [
+      "Bravebearer Crest",
+      "Excalibur"
+    ],
+    "steals": [
+      "Megalixir",
+      "Hero Bow"
+    ],
+    "notes": "Bravebearer Asterisk holder. Master of time and BP; executes Obliterate and Equalizer."
+  },
+  {
+    "id": "rare-leannan-sith",
+    "name": "Leannan Sith",
+    "family": "Spirit",
+    "isBoss": true,
+    "isAsteriskHolder": false,
+    "chapter": "Prologue+",
+    "location": "Northern Grasslands (North of Halcyonia)",
+    "level": 25,
+    "hp": "32,480",
+    "weaknesses": [
+      "Dagger",
+      "Sword",
+      "Lightning"
+    ],
+    "resistances": [
+      "Earth (Half)",
+      "Dark (Immune)",
+      "Wind (Absorb)"
+    ],
+    "immunities": [
+      "Charm",
+      "Sleep",
+      "Blind"
+    ],
+    "drops": [
+      "Oberon Gem",
+      "Main-Gauche"
+    ],
+    "steals": [
+      "Oberon Gem",
+      "Main-Gauche"
+    ],
+    "notes": "Rare Spirit world boss. Blossoms in moonlight, casting powerful Wind and charm spells."
+  },
+  {
+    "id": "rare-coral-emperor",
+    "name": "Coral Emperor",
+    "family": "Aquatic",
+    "isBoss": true,
+    "isAsteriskHolder": false,
+    "chapter": "Prologue+",
+    "location": "Southern Beach (South of Halcyonia)",
+    "level": 35,
+    "hp": "58,200",
+    "weaknesses": [
+      "Sword",
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "Water (Absorb)",
+      "Fire (Half)"
+    ],
+    "immunities": [
+      "Freeze",
+      "Poison",
+      "Silence"
+    ],
+    "drops": [
+      "Coral Ring",
+      "Trident"
+    ],
+    "steals": [
+      "Trident",
+      "Hi-Potion"
+    ],
+    "notes": "Colossal aquatic world boss possessing immense physical defense and water surges."
+  },
+  {
+    "id": "rare-treant",
+    "name": "Treant",
+    "family": "Plant",
+    "isBoss": true,
+    "isAsteriskHolder": false,
+    "chapter": "Prologue+",
+    "location": "Northeastern Woods (Near Halcyonia)",
+    "level": 30,
+    "hp": "46,300",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "Earth",
+      "Water"
+    ],
+    "immunities": [
+      "Poison",
+      "Blind",
+      "Paralysis"
+    ],
+    "drops": [
+      "Bark Armor",
+      "Ancient Staff"
+    ],
+    "steals": [
+      "Ancient Staff",
+      "Remedy"
+    ],
+    "notes": "Ancient forest guardian wielding sweeping branch physical attacks and pollen debuffs."
+  },
+  {
+    "id": "rare-mushussu",
+    "name": "Mushussu",
+    "family": "Aquatic",
+    "isBoss": true,
+    "isAsteriskHolder": false,
+    "chapter": "Chapter 1+",
+    "location": "Savalon Desert Dunes",
+    "level": 42,
+    "hp": "76,500",
+    "weaknesses": [
+      "Bow",
+      "Water"
+    ],
+    "resistances": [
+      "Fire (Absorb)",
+      "Earth"
+    ],
+    "immunities": [
+      "Burn",
+      "Poison",
+      "Sleep"
+    ],
+    "drops": [
+      "Dragon Horn",
+      "Flame Axe"
+    ],
+    "steals": [
+      "Flame Axe",
+      "Elixir"
+    ],
+    "notes": "A fiery desert serpent burrowing beneath sand dunes to surprise party travelers."
+  },
+  {
+    "id": "rare-nightmare",
+    "name": "Nightmare",
+    "family": "Undead",
+    "isBoss": true,
+    "isAsteriskHolder": false,
+    "chapter": "Chapter 2+",
+    "location": "Wiswald Woods (Near Treetop Path)",
+    "level": 45,
+    "hp": "88,900",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "Dark (Absorb)",
+      "Fire"
+    ],
+    "immunities": [
+      "Dread",
+      "Sleep",
+      "Doom"
+    ],
+    "drops": [
+      "Dark Robe",
+      "Demon Dagger"
+    ],
+    "steals": [
+      "Demon Dagger",
+      "Ether"
+    ],
+    "notes": "Spectral steed roaming deep forests, draining party HP and sowing dread."
+  },
+  {
+    "id": "rare-astaroth",
+    "name": "Astaroth",
+    "family": "Demon",
+    "isBoss": true,
+    "isAsteriskHolder": false,
+    "chapter": "Chapter 3+",
+    "location": "Frosty Peaks (Near Rimedhal)",
+    "level": 55,
+    "hp": "112,400",
+    "weaknesses": [
+      "Spear",
+      "Light"
+    ],
+    "resistances": [
+      "Dark (Absorb)",
+      "Water"
+    ],
+    "immunities": [
+      "All standard ailments"
+    ],
+    "drops": [
+      "Demon Horn",
+      "Gungnir"
+    ],
+    "steals": [
+      "Gungnir",
+      "Megalixir"
+    ],
+    "notes": "Archdemon lurking atop mountain blizzards with catastrophic dark elemental bursts."
+  },
+  {
+    "id": "rare-baal",
+    "name": "Baal",
+    "family": "Demon",
+    "isBoss": true,
+    "isAsteriskHolder": false,
+    "chapter": "Chapter 4+",
+    "location": "Wastelands of Holograd",
+    "level": 60,
+    "hp": "138,000",
+    "weaknesses": [
+      "Sword",
+      "Light",
+      "Lightning"
+    ],
+    "resistances": [
+      "Fire",
+      "Dark"
+    ],
+    "immunities": [
+      "All standard ailments"
+    ],
+    "drops": [
+      "Demon Armor",
+      "Chaos Blade"
+    ],
+    "steals": [
+      "Chaos Blade",
+      "Megalixir"
+    ],
+    "notes": "Fearsome war demon roaming the volcanic plains outside Holograd fortress."
+  },
+  {
+    "id": "mon-goblin",
+    "name": "Goblin",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-goblin-chopper",
+    "name": "Goblin Chopper",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-goblin-archer",
+    "name": "Goblin Archer",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-kobold",
+    "name": "Kobold",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-kobold-chopper",
+    "name": "Kobold Chopper",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-kobold-archer",
+    "name": "Kobold Archer",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-troll",
+    "name": "Troll",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-ogre",
+    "name": "Ogre",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-aka-oni",
+    "name": "Aka-Oni",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-gargantua",
+    "name": "Gargantua",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-orc",
+    "name": "Orc",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-orc-leader",
+    "name": "Orc Leader",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-orc-chieftain",
+    "name": "Orc Chieftain",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-orc-lord",
+    "name": "Orc Lord",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-wizzy",
+    "name": "Wizzy",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-dusk-wizzy",
+    "name": "Dusk Wizzy",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-nocta-wizzy",
+    "name": "Nocta Wizzy",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-midnight-wizzy",
+    "name": "Midnight Wizzy",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-mageling",
+    "name": "Mageling",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-lost-mageling",
+    "name": "Lost Mageling",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-ruined-mageling",
+    "name": "Ruined Mageling",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-desolate-mageling",
+    "name": "Desolate Mageling",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-swordsman",
+    "name": "Swordsman",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-henchman",
+    "name": "Henchman",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-axemaiden",
+    "name": "Axemaiden",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-bowmaiden",
+    "name": "Bowmaiden",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-bandit-a",
+    "name": "Bandit A",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-bandit-b",
+    "name": "Bandit B",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-bandit-c",
+    "name": "Bandit C",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-bandit-d",
+    "name": "Bandit D",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-holy-lance",
+    "name": "Holy Lance",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-holy-mace",
+    "name": "Holy Mace",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-holy-sword",
+    "name": "Holy Sword",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-holy-wand",
+    "name": "Holy Wand",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-imperial-axeman",
+    "name": "Imperial Axeman",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-imperial-twinsword",
+    "name": "Imperial Twinsword",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-imperial-twinwand",
+    "name": "Imperial Twinwand",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-imperial-daggermage",
+    "name": "Imperial Daggermage",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-imperial-greatsword",
+    "name": "Imperial Greatsword",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-imperial-lancemage",
+    "name": "Imperial Lancemage",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-imperial-bowmage",
+    "name": "Imperial Bowmage",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-imperial-greataxe",
+    "name": "Imperial Greataxe",
+    "family": "Humanoid",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant Fields & Ruins",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Earth"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Humanoid Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A humanoid creature found across Excillant."
+  },
+  {
+    "id": "mon-wolf",
+    "name": "Wolf",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-hellhound",
+    "name": "Hellhound",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-white-fang",
+    "name": "White Fang",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-cerberus",
+    "name": "Cerberus",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-minotaur",
+    "name": "Minotaur",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-yeti",
+    "name": "Yeti",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-gyuki",
+    "name": "Gyuki",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-sekhret",
+    "name": "Sekhret",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-grizzly",
+    "name": "Grizzly",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-golden-bear",
+    "name": "Golden Bear",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-polar-bear",
+    "name": "Polar Bear",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-megalodoth",
+    "name": "Megalodoth",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-roc",
+    "name": "Roc",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-diatryma",
+    "name": "Diatryma",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-simurgh",
+    "name": "Simurgh",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-gagana",
+    "name": "Gagana",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-ratbitt",
+    "name": "Ratbitt",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-badbitt",
+    "name": "Badbitt",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-lop-eared-ratbitt",
+    "name": "Lop-Eared Ratbitt",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-lop-eared-badbitt",
+    "name": "Lop-Eared Badbitt",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-uniconey",
+    "name": "Uniconey",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-unicrony",
+    "name": "Unicrony",
+    "family": "Beast",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Savalon Desert & Rimedhal Mountains",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Beast Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A beast creature found across Excillant."
+  },
+  {
+    "id": "mon-flannacotta",
+    "name": "Flannacotta",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-gelaflan",
+    "name": "Gelaflan",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-flanbanero",
+    "name": "Flanbanero",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-fizzy-flantasia",
+    "name": "Fizzy Flantasia",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-peiste",
+    "name": "Peiste",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-sibilus",
+    "name": "Sibilus",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-kukulcan",
+    "name": "Kukulcan",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-stheno",
+    "name": "Stheno",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-rock-tortoise",
+    "name": "Rock Tortoise",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-frost-tortoise",
+    "name": "Frost Tortoise",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-adamant-tortoise",
+    "name": "Adamant Tortoise",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-lava-tortoise",
+    "name": "Lava Tortoise",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-sahagin",
+    "name": "Sahagin",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-sahagin-shaman",
+    "name": "Sahagin Shaman",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-sahagin-shieldbearer",
+    "name": "Sahagin Shieldbearer",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-dagon",
+    "name": "Dagon",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-dagon-shaman",
+    "name": "Dagon Shaman",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-dagon-shieldbearer",
+    "name": "Dagon Shieldbearer",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-lotl",
+    "name": "Lotl",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-toxolotl",
+    "name": "Toxolotl",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-roxolotl",
+    "name": "Roxolotl",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-noxolotl",
+    "name": "Noxolotl",
+    "family": "Aquatic",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Tide Cave & Halcyonia Coast",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Spear",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Aquatic Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A aquatic creature found across Excillant."
+  },
+  {
+    "id": "mon-sandworm",
+    "name": "Sandworm",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-toxic-worm",
+    "name": "Toxic Worm",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-abyss-worm",
+    "name": "Abyss Worm",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-zone-eater",
+    "name": "Zone Eater",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-silkmoth",
+    "name": "Silkmoth",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-staggermoth",
+    "name": "Staggermoth",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-shadowmoth",
+    "name": "Shadowmoth",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-sizzlemoth",
+    "name": "Sizzlemoth",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-killer-ant",
+    "name": "Killer Ant",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-paraponera",
+    "name": "Paraponera",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-bullet-ant",
+    "name": "Bullet Ant",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-cask-paraponera",
+    "name": "Cask Paraponera",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-ench-ant-er",
+    "name": "Ench-ant-er",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-magiponera",
+    "name": "Magiponera",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-moulder",
+    "name": "Moulder",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-spigus",
+    "name": "Spigus",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-arachne",
+    "name": "Arachne",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-wicked-widow",
+    "name": "Wicked Widow",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-vesp",
+    "name": "Vesp",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-razor-vesp",
+    "name": "Razor Vesp",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-vesp-pest",
+    "name": "Vesp Pest",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-pephredo",
+    "name": "Pephredo",
+    "family": "Insect",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Vale of Sighs",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Bow",
+      "Water",
+      "Wind"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Insect Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A insect creature found across Excillant."
+  },
+  {
+    "id": "mon-veronica",
+    "name": "Veronica",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-petunia",
+    "name": "Petunia",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-nemophila",
+    "name": "Nemophila",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-rafflesia",
+    "name": "Rafflesia",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-fungoo",
+    "name": "Fungoo",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-mossy-fungoo",
+    "name": "Mossy Fungoo",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-blue-fungoo",
+    "name": "Blue Fungoo",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-funguar",
+    "name": "Funguar",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-fresh-forkling",
+    "name": "Fresh Forkling",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-fallen-forkling",
+    "name": "Fallen Forkling",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-fresh-foliole",
+    "name": "Fresh Foliole",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-fallen-foliole",
+    "name": "Fallen Foliole",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-fresh-frond",
+    "name": "Fresh Frond",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-fallen-frond",
+    "name": "Fallen Frond",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-ochu",
+    "name": "Ochu",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-mantrap",
+    "name": "Mantrap",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-devil-s-snare",
+    "name": "Devil's Snare",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-triffid",
+    "name": "Triffid",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-woody",
+    "name": "Woody",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-laerad",
+    "name": "Laerad",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-irminsul",
+    "name": "Irminsul",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-coppice",
+    "name": "Coppice",
+    "family": "Plant",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Wiswald Woods & Treetop Path",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Axe",
+      "Fire",
+      "Dark"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Plant Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A plant creature found across Excillant."
+  },
+  {
+    "id": "mon-ghost-knight",
+    "name": "Ghost Knight",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-dead-knight",
+    "name": "Dead Knight",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-kagutsuchi",
+    "name": "Kagutsuchi",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-tejas",
+    "name": "Tejas",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-skeleton-sellsword",
+    "name": "Skeleton Sellsword",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-skeleton-assassin",
+    "name": "Skeleton Assassin",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-skeleton-lancer",
+    "name": "Skeleton Lancer",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-reaper-sellsword",
+    "name": "Reaper Sellsword",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-reaper-assassin",
+    "name": "Reaper Assassin",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-reaper-lancer",
+    "name": "Reaper Lancer",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-lost-souls",
+    "name": "Lost Souls",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-restless-souls",
+    "name": "Restless Souls",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-vengeful-souls",
+    "name": "Vengeful Souls",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-merciless-souls",
+    "name": "Merciless Souls",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-brimstone-stallion",
+    "name": "Brimstone Stallion",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-sagari",
+    "name": "Sagari",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-xanthos",
+    "name": "Xanthos",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-sleipnir",
+    "name": "Sleipnir",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-antiphates",
+    "name": "Antiphates",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-daidarabocchi",
+    "name": "Daidarabocchi",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-goliath",
+    "name": "Goliath",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-grotesque",
+    "name": "Grotesque",
+    "family": "Undead",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Abandoned Mansion & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Staff",
+      "Light",
+      "Fire"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Undead Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A undead creature found across Excillant."
+  },
+  {
+    "id": "mon-baphomet",
+    "name": "Baphomet",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-razanil",
+    "name": "Razanil",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-azazel",
+    "name": "Azazel",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-asmodeus",
+    "name": "Asmodeus",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-bronzegoyle",
+    "name": "Bronzegoyle",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-bronzelion",
+    "name": "Bronzelion",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-goldgoyle",
+    "name": "Goldgoyle",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-goldelion",
+    "name": "Goldelion",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-lapisgoyle",
+    "name": "Lapisgoyle",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-lapislion",
+    "name": "Lapislion",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-ahriman",
+    "name": "Ahriman",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-evil-eye",
+    "name": "Evil Eye",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-plague",
+    "name": "Plague",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-angra-mainyu",
+    "name": "Angra Mainyu",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-asp",
+    "name": "Asp",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-ahura",
+    "name": "Ahura",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-abaddon",
+    "name": "Abaddon",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-amon",
+    "name": "Amon",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-hecatoncheir",
+    "name": "Hecatoncheir",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-vishno",
+    "name": "Vishno",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-gigantos",
+    "name": "Gigantos",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-aigaion",
+    "name": "Aigaion",
+    "family": "Demon",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Jaws of the Dragon & Holograd",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Sword",
+      "Light"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Demon Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A demon creature found across Excillant."
+  },
+  {
+    "id": "mon-golem",
+    "name": "Golem",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-adamantite-golem",
+    "name": "Adamantite Golem",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-ice-golem",
+    "name": "Ice Golem",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-inferno-golem",
+    "name": "Inferno Golem",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-cait-sith",
+    "name": "Cait Sith",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-kitty-cait",
+    "name": "Kitty-Cait",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-short-cait",
+    "name": "Short-Cait",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-siamese-cait",
+    "name": "Siamese Cait",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-ignis-element",
+    "name": "Ignis Element",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-aqua-element",
+    "name": "Aqua Element",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-electrica-element",
+    "name": "Electrica Element",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-terra-element",
+    "name": "Terra Element",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-ventus-element",
+    "name": "Ventus Element",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-lux-element",
+    "name": "Lux Element",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-umbra-element",
+    "name": "Umbra Element",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-sylph",
+    "name": "Sylph",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-undine",
+    "name": "Undine",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-drys",
+    "name": "Drys",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-turan",
+    "name": "Turan",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-freyr",
+    "name": "Freyr",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-poseidon",
+    "name": "Poseidon",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-thor",
+    "name": "Thor",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-chaos",
+    "name": "Chaos",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-wiki-wiki",
+    "name": "Wiki-Wiki",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-big-wiki-wiki",
+    "name": "Big Wiki-Wiki",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-metal-wiki-wiki",
+    "name": "Metal Wiki-Wiki",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-queen-wiki-wiki",
+    "name": "Queen Wiki-Wiki",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-king-wiki-wiki",
+    "name": "King Wiki-Wiki",
+    "family": "Spirit",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Fountain of Knowledge & Frosty Peaks",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Dagger",
+      "Dark",
+      "Lightning"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Spirit Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A spirit creature found across Excillant."
+  },
+  {
+    "id": "mon-cyclops",
+    "name": "Cyclops",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-orc-king",
+    "name": "Orc King",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-baba-yaga",
+    "name": "Baba Yaga",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-fenrir",
+    "name": "Fenrir",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-catoblepas",
+    "name": "Catoblepas",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-eclipse",
+    "name": "Eclipse",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-mushussu",
+    "name": "Mushussu",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-genbu",
+    "name": "Genbu",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-coral-emperor",
+    "name": "Coral Emperor",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-j-rmungandr",
+    "name": "Jörmungandr",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-baal",
+    "name": "Baal",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-vespus-hex",
+    "name": "Vespus Hex",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-skullcap",
+    "name": "Skullcap",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-jealous-jody",
+    "name": "Jealous Jody",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-treant",
+    "name": "Treant",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-susanoo",
+    "name": "Susanoo",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-picto-amrita",
+    "name": "Picto-Amrita",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-nightmare",
+    "name": "Nightmare",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-immortal",
+    "name": "Immortal",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-hoenir",
+    "name": "Hoenir",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-astaroth",
+    "name": "Astaroth",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-picto-beleth",
+    "name": "Picto-Beleth",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-asura",
+    "name": "Asura",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-hephaestus",
+    "name": "Hephaestus",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-leannan-sith",
+    "name": "Leannan Sith",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-picto-mona",
+    "name": "Picto-Mona",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-zeus",
+    "name": "Zeus",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-selene",
+    "name": "Selene",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-dag",
+    "name": "Dag",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-horten",
+    "name": "Horten",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-adam",
+    "name": "Adam",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-enormocrag",
+    "name": "Enormocrag",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-orpheus",
+    "name": "Orpheus",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-anihal",
+    "name": "Anihal",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-bernard",
+    "name": "Bernard",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-prince-castor",
+    "name": "Prince Castor",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-shirley",
+    "name": "Shirley",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-amphora",
+    "name": "Amphora",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-roddy",
+    "name": "Roddy",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-lily",
+    "name": "Lily",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-galahad",
+    "name": "Galahad",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-folie",
+    "name": "Folie",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-papilloid",
+    "name": "Papilloid",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-empuse",
+    "name": "Empuse",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-frankenfalcot",
+    "name": "Frankenfalcot",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-martha",
+    "name": "Martha",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-helio",
+    "name": "Helio",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-gladys",
+    "name": "Gladys",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-domenic",
+    "name": "Domenic",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-glenn",
+    "name": "Glenn",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-xolotl",
+    "name": "Xolotl",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-lonsdale",
+    "name": "Lonsdale",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-marla",
+    "name": "Marla",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-vigintio",
+    "name": "Vigintio",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-d-vergr",
+    "name": "D-Vergr",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-g-oetia",
+    "name": "G-Oetia",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-edna",
+    "name": "Edna",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-the-night-s-nexus",
+    "name": "The Night's Nexus",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-sir-sloan",
+    "name": "Sir Sloan",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-grasping-hand",
+    "name": "Grasping Hand",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-cradling-hand",
+    "name": "Cradling Hand",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-gwydion",
+    "name": "Gwydion",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  },
+  {
+    "id": "mon-lady-emma",
+    "name": "Lady Emma",
+    "family": "Bosses",
+    "isBoss": false,
+    "isAsteriskHolder": false,
+    "chapter": "Various",
+    "location": "Excillant",
+    "level": 15,
+    "hp": "1,200–6,500",
+    "weaknesses": [
+      "Physical"
+    ],
+    "resistances": [
+      "None"
+    ],
+    "immunities": [
+      "None"
+    ],
+    "drops": [
+      "Bosses Fragment",
+      "Potion"
+    ],
+    "steals": [
+      "Hi-Potion",
+      "Tent"
+    ],
+    "notes": "A bosses creature found across Excillant."
+  }
+];
+
+if (typeof window !== 'undefined') {
+  window.enemyData = enemyData;
+}

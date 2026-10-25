@@ -1,0 +1,62 @@
+job_name,level,ability_name,type,cost,description_effect
+Freelancer,1,Examine,Active,None,"Reveals target's HP, elemental weaknesses, and family type."
+Freelancer,2,Treat,Active,20 MP,Restores 20% max HP and 10% max MP to a target.
+Freelancer,4,Forage,Active,None,Searches for items mid-combat based on current Job Level.
+Freelancer,9,JP Up,Passive,Cost 1,Multiplies JP earned in battle by 1.2x.
+Freelancer,11,Body Slam,Active,1 BP,Deals heavy physical damage scaling with encumbrance; delays target turn.
+Freelancer,12,JP Up and Up,Passive,Cost 1,Multiplies JP earned in battle by 1.5x (stacks with JP Up for 1.8x).
+Freelancer,15,Mimic,Active,None,"Replicates the previous action taken by an ally without spending HP, MP, or items."
+Vanguard,1,Cross Cut,Active,18 MP,Executes two physical strikes in rapid succession.
+Vanguard,2,Shield Bash,Active,10% HP,Earth physical strike using shield; slightly delays target turn.
+Vanguard,6,Aggravate,Active,18 MP,Raises user's chance of being targeted by 25% for two turns.
+Vanguard,12,Neo Cross Slash,Active,2 BP,Executes two extremely powerful physical attacks on a single target.
+Vanguard,15,Ultimatum,Active,35% HP,Massive physical AoE attack that reduces target chance until next turn.
+White Mage,1,Cure,Active,8 MP,Restores a modest amount of HP to single or multiple targets.
+White Mage,3,Shell,Active,13 MP,Increases target Magical Defense by 15% for three turns.
+White Mage,4,Raise,Active,25 MP,Revives a knocked-out ally with moderate HP.
+White Mage,8,Basuna,Active,22 MP,"Cures poison, blind, silence, sleep, paralysis, contagion, freeze, and daub."
+White Mage,12,Curaga,Active,60 MP,Restores a massive amount of HP to single or multiple targets.
+White Mage,14,Above and Beyond,Passive,Cost 1,Healing exceeding max HP temporarily increases max HP by the remainder.
+Black Mage,1-3,Fire / Blizzard / Thunder,Active,15 MP,Basic single/multi-target elemental magic strikes.
+Black Mage,5,Lunar-Powered,Passive,Cost 1,"Regenerates 4% MP at night; boosts M.Atk, Luck, and Evasion during night."
+Black Mage,9,Aspir Attack,Passive,Cost 1,Standard physical attacks restore MP relative to damage inflicted.
+Black Mage,10-12,Firaga / Blizzaga / Thundaga,Active,66 MP,Top-tier elemental magic strikes dealing heavy AoE damage.
+Monk,1,Strong Strike,Active,18% HP,High-damage physical attack with a 40% reduced hit rate.
+Monk,3,Bare-Knuckle Brawler,Passive,Cost 1,Increases Physical Attack by 80% and Aim by +30 when both hands are empty.
+Monk,14,Phoenix Flight,Active,2 BP,"Reduces user HP to 1, dealing 2x the lost HP as fixed physical damage."
+Monk,15,Maximize HP,Passive,Cost 1,"Doubles maximum HP in battle, allowing HP to breach the 9,999 ceiling."
+Beastmaster,1,Capture,Active,None,Captures a weakened monster based on remaining HP.
+Beastmaster,7,Raw Power,Passive,Cost 1,Increases Physical Attack by 10% for every Brave command used in a turn.
+Beastmaster,8,Spearhead,Passive,Cost 1,Guarantees acting first in battle when equipped with a Spear.
+Beastmaster,10,MP Saver,Passive,Cost 1,Reduces all MP consumption by 20%.
+Beastmaster,11,Beast Whisperer,Passive,Cost 1,~30% chance to automatically capture monsters upon defeating them.
+Beastmaster,12,Off the Chain,Active,2 BP,Unleashes a captured monster to inflict devastating physical damage.
+Thief,4,Steal Spirit,Active,15% HP,Reduces enemy MP and restores 3x the stolen amount to the user.
+Thief,9,Godspeed Strike,Active,95 MP,Massive physical attack scaling with Speed; repeats identical damage a few turns later.
+Thief,12,Rob Blind,Passive,Cost 1,Acquires two items simultaneously whenever a steal attempt succeeds.
+Dragoon,1,Jump,Active,1 BP,"Leaps off-field for one turn, crashing down for heavy physical damage."
+Dragoon,10,Full Force,Passive,Cost 1,Abilities modified to target multiple enemies deal full single-target damage.
+Dragoon,11,Sky High,Passive,Cost 1,"User opens battle with a free, zero-cost Jump command."
+Spiritmaster,1,Healthbringer,Active,1 BP,Summons a spirit that restores HP to all allies at fixed turn intervals.
+Spiritmaster,3,Spiritbringer,Active,1 BP,Summons a spirit that restores MP to all allies at fixed turn intervals.
+Spiritmaster,8-13,Banish / Holy,Active,45 MP+,Light-elemental magical strikes climaxing in Holy magic.
+Oracle,1-4,Quick / Haste,Active,20 MP+,Increases target turn speed and action frequency.
+Oracle,3,Elemental Supplement,Active,46 MP,Imbues target's physical attacks with a selected element for two turns.
+Oracle,8,Triple,Active,12 MP,"Fires 1-3 random elemental strikes (Fire, Ice, Lightning) at enemies."
+Arcanist,1-4,Dark / Darkra,Active,15 MP+,High-potency Dark magic attacks.
+Arcanist,7,MP Regen,Passive,Cost 1,Restores 5% of maximum MP at the end of every turn.
+Arcanist,10,Magic Amp,Passive,Cost 1,Spells cost 50% more MP but deal 25% increased damage.
+Arcanist,12,Doomsday,Active,90 MP,Massive Dark magic spell targeting all entities on the battlefield.
+Phantom,7,Dual Wield,Passive,Cost 1,Eliminates stat penalty when holding weapons in both hands.
+Phantom,11,Rewarding Results,Passive,Cost 1,Grants 1 free BP whenever the user successfully inflicts a status ailment.
+Phantom,12,Frenetic Fighting,Passive,Cost 1,Raises maximum attack hit count cap from 16 to 32 hits.
+Hellblade,7,Surpassing Power,Passive,Cost 1,"Breaks the standard damage ceiling, raising maximum damage from 9,999 to 99,999."
+Hellblade,12,Ultima Sword,Active,All MP,Consumes all remaining MP to deal non-elemental physical damage proportional to MP spent.
+Hellblade,13,Death's Door,Active,200 MP,Deals massive dark physical damage that scales higher as user HP approaches 0.
+Bravebearer,3,Sword Lore,Passive,Cost 1,Raises Sword weapon proficiency rank to S on any job.
+Bravebearer,4,Practice Makes Perfect,Active,2 BP,Physical damage calculated from total hours played on the save file.
+Bravebearer,7,Equalizer,Active,32 MP,"Adjusts BP: reduces BP by 1 for entities $\ge +1$ BP, adds 1 for entities $\le -1$ BP."
+Bravebearer,8,Obliterate,Passive,Cost 1,Instantly slays any enemy 20+ levels below the user at battle start.
+Bravebearer,10,Sub-Job Specialty 2,Passive,Cost 1,Activates Specialty 2 of the user's equipped Sub-Job.
+Bravebearer,13,Across the Board,Passive,Cost 2,Converts single-target active abilities into multi-target abilities.
+Bravebearer,14,BP Bump,Active,2 BP,Grants +1 BP to all party members simultaneously.

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Quests Codex — Bravely Default II Game Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="themeToggle.js"></script>
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;" onfocus="this.style.position='static'; this.style.width='auto'; this.style.height='auto';">Skip to main content</a>
+
+  <!-- Fixed Desktop Rail -->
+  <aside class="site-rail" aria-label="Codex navigation">
+    <div class="site-rail-inner">
+      <a class="site-rail-link" href="../index.html" title="Back to World Index">
+        <img src="assets/icons/ui/bd2-crest.svg" alt="" class="nav-icon" width="24" height="24">
+        <span>World</span>
+      </a>
+      <div class="site-rail-divider"></div>
+      <a class="site-rail-link" href="index.html" title="Jobs">
+        <img src="assets/icons/ui/nav-jobs.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Jobs</span>
+      </a>
+      <a class="site-rail-link" href="ability.html" title="Abilities">
+        <img src="assets/icons/ui/nav-abilities.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Skills</span>
+      </a>
+      <a class="site-rail-link" href="equipment.html" title="Equipment">
+        <img src="assets/icons/ui/nav-equipment.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Gear</span>
+      </a>
+      <a class="site-rail-link" href="enemy.html" title="Bestiary">
+        <img src="assets/icons/ui/nav-bestiary.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Bestiary</span>
+      </a>
+      <a class="site-rail-link active" href="quest.html" aria-current="page" title="Side Quests">
+        <img src="assets/icons/ui/nav-quests.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Quests</span>
+      </a>
+      <a class="site-rail-link" href="shop.html" title="Shops">
+        <img src="assets/icons/ui/nav-shops.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Shops</span>
+      </a>
+      <a class="site-rail-link" href="bnd.html" title="B 'n' D Cards">
+        <img src="assets/icons/ui/nav-bnd.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>B 'n' D</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Top Navigation -->
+  <header class="site-nav">
+    <div class="site-nav-inner">
+      <div class="brand-group">
+        <a href="../index.html" title="Game Guide World Index">
+          <img src="assets/icons/ui/bd2-crest.svg" alt="BD2 Crest" class="brand-crest" width="32" height="32">
+        </a>
+        <h1 class="brand-title">
+          <span>Bravely Default II</span>
+          <span class="brand-subtitle">Side Quests Codex</span>
+        </h1>
+      </div>
+
+      <nav class="site-nav-links" aria-label="Mobile and Tablet navigation">
+        <a class="nav-link" href="index.html">Jobs</a>
+        <a class="nav-link" href="ability.html">Abilities</a>
+        <a class="nav-link" href="equipment.html">Equipment</a>
+        <a class="nav-link" href="enemy.html">Bestiary</a>
+        <a class="nav-link active" href="quest.html" aria-current="page">Quests</a>
+        <a class="nav-link" href="shop.html">Shops</a>
+        <a class="nav-link" href="bnd.html">B 'n' D</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span> <span class="theme-label">Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-wrapper">
+    <section class="page-hero">
+      <img src="assets/icons/ui/nav-quests.svg" alt="" class="hero-emblem" width="48" height="48">
+      <h2 class="hero-title">Excillant Subquest Journal</h2>
+      <p class="hero-lead">All 69 subquests across Excillant with chapter unlocks, quest givers, objectives, star ratings, and valuable reward trackers.</p>
+      
+      <div class="stats-bar">
+        <div class="stat-chip">Total Quests: <strong id="stat-total">69</strong></div>
+        <div class="stat-chip">Completed: <strong id="stat-completed" style="color: var(--vitality-green);">0</strong></div>
+        <div class="stat-chip">Chapters: <strong>Prologue – Ch. 7</strong></div>
+      </div>
+    </section>
+
+    <!-- Filters & Search -->
+    <section class="filter-card" aria-label="Search and filter quests">
+      <div class="filter-grid">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="quest-search" class="search-input" placeholder="Search by quest name, client, reward..." aria-label="Search quests">
+        </div>
+
+        <div class="filter-pills" id="chapter-filters" role="group" aria-label="Filter by chapter">
+          <button type="button" class="filter-pill active" data-ch="all">All Chapters</button>
+          <button type="button" class="filter-pill" data-ch="Prologue">Prologue</button>
+          <button type="button" class="filter-pill" data-ch="Chapter 1">Ch. 1</button>
+          <button type="button" class="filter-pill" data-ch="Chapter 2">Ch. 2</button>
+          <button type="button" class="filter-pill" data-ch="Chapter 3">Ch. 3</button>
+          <button type="button" class="filter-pill" data-ch="Chapter 4">Ch. 4</button>
+          <button type="button" class="filter-pill" data-ch="Chapter 5">Ch. 5</button>
+          <button type="button" class="filter-pill" data-ch="Chapter 6">Ch. 6</button>
+          <button type="button" class="filter-pill" data-ch="Chapter 7">Ch. 7</button>
+          <button type="button" class="filter-pill" data-ch="fav">★ Saved</button>
+        </div>
+      </div>
+
+      <div class="filter-actions">
+        <span>Showing <strong id="results-count">69</strong> quests</span>
+        <button type="button" id="clear-filters" class="clear-btn">Reset Filters</button>
+      </div>
+    </section>
+
+    <!-- Quest Cards Grid -->
+    <section class="card-grid" id="quests-container" aria-label="Subquest cards">
+      <!-- Injected via questApp.js -->
+    </section>
+  </main>
+
+  <!-- Modal Backdrop -->
+  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Data & Logic -->
+  <script src="utils.js"></script>
+  <script src="questData.js"></script>
+  <script src="questApp.js"></script>
+</body>
+</html>

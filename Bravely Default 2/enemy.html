@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestiary Codex — Bravely Default II Game Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="themeToggle.js"></script>
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;" onfocus="this.style.position='static'; this.style.width='auto'; this.style.height='auto';">Skip to main content</a>
+
+  <!-- Fixed Desktop Rail -->
+  <aside class="site-rail" aria-label="Codex navigation">
+    <div class="site-rail-inner">
+      <a class="site-rail-link" href="../index.html" title="Back to World Index">
+        <img src="assets/icons/ui/bd2-crest.svg" alt="" class="nav-icon" width="24" height="24">
+        <span>World</span>
+      </a>
+      <div class="site-rail-divider"></div>
+      <a class="site-rail-link" href="index.html" title="Jobs">
+        <img src="assets/icons/ui/nav-jobs.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Jobs</span>
+      </a>
+      <a class="site-rail-link" href="ability.html" title="Abilities">
+        <img src="assets/icons/ui/nav-abilities.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Skills</span>
+      </a>
+      <a class="site-rail-link" href="equipment.html" title="Equipment">
+        <img src="assets/icons/ui/nav-equipment.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Gear</span>
+      </a>
+      <a class="site-rail-link active" href="enemy.html" aria-current="page" title="Bestiary">
+        <img src="assets/icons/ui/nav-bestiary.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Bestiary</span>
+      </a>
+      <a class="site-rail-link" href="quest.html" title="Side Quests">
+        <img src="assets/icons/ui/nav-quests.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Quests</span>
+      </a>
+      <a class="site-rail-link" href="shop.html" title="Shops">
+        <img src="assets/icons/ui/nav-shops.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>Shops</span>
+      </a>
+      <a class="site-rail-link" href="bnd.html" title="B 'n' D Cards">
+        <img src="assets/icons/ui/nav-bnd.svg" alt="" class="nav-icon" width="20" height="20">
+        <span>B 'n' D</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Top Navigation -->
+  <header class="site-nav">
+    <div class="site-nav-inner">
+      <div class="brand-group">
+        <a href="../index.html" title="Game Guide World Index">
+          <img src="assets/icons/ui/bd2-crest.svg" alt="BD2 Crest" class="brand-crest" width="32" height="32">
+        </a>
+        <h1 class="brand-title">
+          <span>Bravely Default II</span>
+          <span class="brand-subtitle">Bestiary Codex</span>
+        </h1>
+      </div>
+
+      <nav class="site-nav-links" aria-label="Mobile and Tablet navigation">
+        <a class="nav-link" href="index.html">Jobs</a>
+        <a class="nav-link" href="ability.html">Abilities</a>
+        <a class="nav-link" href="equipment.html">Equipment</a>
+        <a class="nav-link active" href="enemy.html" aria-current="page">Bestiary</a>
+        <a class="nav-link" href="quest.html">Quests</a>
+        <a class="nav-link" href="shop.html">Shops</a>
+        <a class="nav-link" href="bnd.html">B 'n' D</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span> <span class="theme-label">Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-wrapper">
+    <section class="page-hero">
+      <img src="assets/icons/ui/nav-bestiary.svg" alt="" class="hero-emblem" width="48" height="48">
+      <h2 class="hero-title">Bestiary of Excillant</h2>
+      <p class="hero-lead">Monster compendium covering 290+ beasts, rare world encounters, and Asterisk Holders with weakness matrices, drops, steals, and stats.</p>
+      
+      <div class="stats-bar">
+        <div class="stat-chip">Total Enemies: <strong id="stat-total">292</strong></div>
+        <div class="stat-chip">Asterisk Bosses: <strong>20</strong></div>
+        <div class="stat-chip">Rare World Bosses: <strong>7</strong></div>
+        <div class="stat-chip">Regular Monsters: <strong>265</strong></div>
+      </div>
+    </section>
+
+    <!-- Filters & Search -->
+    <section class="filter-card" aria-label="Search and filter bestiary">
+      <div class="filter-grid">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="enemy-search" class="search-input" placeholder="Search by enemy name, drop, weakness..." aria-label="Search enemies">
+        </div>
+
+        <div>
+          <select id="family-select" class="search-input" aria-label="Filter by family">
+            <option value="all">All Families</option>
+          </select>
+        </div>
+
+        <div class="filter-pills" id="class-filters" role="group" aria-label="Filter by category">
+          <button type="button" class="filter-pill active" data-class="all">All</button>
+          <button type="button" class="filter-pill" data-class="boss">Asterisk Bosses</button>
+          <button type="button" class="filter-pill" data-class="rare">Rare Bosses</button>
+          <button type="button" class="filter-pill" data-class="regular">Regular</button>
+          <button type="button" class="filter-pill" data-class="fav">★ Favorites</button>
+        </div>
+      </div>
+
+      <div class="filter-actions">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span>Showing <strong id="results-count">292</strong> enemies</span>
+          <div class="spoiler-container">
+            <span>Boss Spoilers:</span>
+            <button type="button" id="spoiler-toggle" class="spoiler-toggle" aria-label="Toggle boss spoilers" aria-pressed="false"></button>
+            <span id="spoiler-status">Hidden</span>
+          </div>
+        </div>
+        <button type="button" id="clear-filters" class="clear-btn">Reset Filters</button>
+      </div>
+    </section>
+
+    <!-- Bestiary Grid -->
+    <section class="card-grid" id="enemies-container" aria-label="Enemy cards">
+      <!-- Injected via enemyApp.js -->
+    </section>
+  </main>
+
+  <!-- Modal Backdrop -->
+  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Data & Logic -->
+  <script src="utils.js"></script>
+  <script src="enemyData.js"></script>
+  <script src="enemyApp.js"></script>
+</body>
+</html>
