@@ -49,13 +49,22 @@ def parse_weapons(wikitext):
         sec_name = sections[i].strip()
         sec_body = sections[i+1]
         
-        # Determine category
-        cat = 'Weapon'
-        sub_cat = 'Sword'
-        for k in ['Dagger', 'Sword', 'Axe', 'Spear', 'Bow', 'Staff', 'Rod']:
-            if k.lower() in sec_name.lower():
-                sub_cat = k
-                break
+        # Determine subcategory: Dagger, Sword, Spear, Axes, Staves, Bows
+        sec_lower = sec_name.lower()
+        if 'dagger' in sec_lower:
+            sub_cat = 'Dagger'
+        elif 'sword' in sec_lower:
+            sub_cat = 'Sword'
+        elif 'spear' in sec_lower:
+            sub_cat = 'Spear'
+        elif 'axe' in sec_lower:
+            sub_cat = 'Axes'
+        elif 'staf' in sec_lower or 'stav' in sec_lower or 'rod' in sec_lower:
+            sub_cat = 'Staves'
+        elif 'bow' in sec_lower:
+            sub_cat = 'Bows'
+        else:
+            sub_cat = 'Sword'
         
         # Rows start with ! rowspan="2" class="b" |Name
         rows = re.split(r'\|\-\s*\n!', sec_body)
@@ -91,26 +100,49 @@ def parse_weapons(wikitext):
                 m = re.search(r'-?\d+', str(v))
                 return int(m.group(0)) if m else d
 
+            p_atk_int = to_int(patk)
+            m_atk_int = to_int(matk)
+            aim_int = to_int(aim)
+            crit_int = to_int(crit)
+            weight_int = to_int(weight)
+            cost_int = to_int(cost)
+
             weapons.append({
                 'id': slug,
                 'name': name,
                 'category': 'Weapons',
                 'subCategory': sub_cat,
+                'subtype': sub_cat,
                 'type': sub_cat,
                 'number': num.strip(),
-                'pAtk': to_int(patk),
-                'mAtk': to_int(matk),
+                'pAtk': p_atk_int,
+                'mAtk': m_atk_int,
                 'pDef': 0,
                 'mDef': 0,
-                'aim': to_int(aim),
-                'crit': to_int(crit),
+                'aim': aim_int,
+                'crit': crit_int,
                 'evasion': 0,
                 'speed': 0,
-                'weight': to_int(weight),
-                'cost': to_int(cost),
+                'weight': weight_int,
+                'cost': cost_int,
+                'price': cost_int,
                 'acquire': acquire,
+                'source': acquire,
                 'description': desc,
                 'effect': desc,
+                'stats': {
+                    'pAtk': p_atk_int,
+                    'mAtk': m_atk_int,
+                    'pDef': 0,
+                    'mDef': 0,
+                    'aim': aim_int,
+                    'crit': crit_int,
+                    'critical': crit_int,
+                    'evasion': 0,
+                    'evade': 0,
+                    'speed': 0,
+                    'restorePts': 0
+                },
                 'isTribulation': 'Halls of Tribulation' in sec_name
             })
     return weapons
@@ -122,13 +154,19 @@ def parse_armor(wikitext):
         sec_name = sections[i].strip()
         sec_body = sections[i+1]
         
-        sub_cat = 'Armor'
-        if 'shield' in sec_name.lower():
+        sec_lower = sec_name.lower()
+        if 'shield' in sec_lower:
+            cat = 'Shields'
             sub_cat = 'Shield'
-        elif 'head' in sec_name.lower():
+        elif 'head' in sec_lower:
+            cat = 'Headwear'
             sub_cat = 'Headwear'
-        elif 'armour' in sec_name.lower() or 'armor' in sec_name.lower():
-            sub_cat = 'Armour'
+        elif 'armour' in sec_lower or 'armor' in sec_lower:
+            cat = 'Armor'
+            sub_cat = 'Armor'
+        else:
+            cat = 'Armor'
+            sub_cat = 'Armor'
 
         rows = re.split(r'\|\-\s*\n!', sec_body)
         for r in rows[1:]:
@@ -161,26 +199,48 @@ def parse_armor(wikitext):
 
             slug = f"{to_slug(sub_cat)}-{to_slug(name)}"
 
+            p_def_int = to_int(pdef)
+            m_def_int = to_int(mdef)
+            evasion_int = to_int(evasion)
+            weight_int = to_int(weight)
+            cost_int = to_int(cost)
+
             armors.append({
                 'id': slug,
                 'name': name,
-                'category': 'Shields' if sub_cat == 'Shield' else 'Armor',
+                'category': cat,
                 'subCategory': sub_cat,
+                'subtype': sub_cat,
                 'type': sub_cat,
                 'number': num.strip(),
                 'pAtk': 0,
                 'mAtk': 0,
-                'pDef': to_int(pdef),
-                'mDef': to_int(mdef),
+                'pDef': p_def_int,
+                'mDef': m_def_int,
                 'aim': 0,
                 'crit': 0,
-                'evasion': to_int(evasion),
+                'evasion': evasion_int,
                 'speed': 0,
-                'weight': to_int(weight),
-                'cost': to_int(cost),
+                'weight': weight_int,
+                'cost': cost_int,
+                'price': cost_int,
                 'acquire': acquire,
+                'source': acquire,
                 'description': desc,
                 'effect': desc,
+                'stats': {
+                    'pAtk': 0,
+                    'mAtk': 0,
+                    'pDef': p_def_int,
+                    'mDef': m_def_int,
+                    'aim': 0,
+                    'crit': 0,
+                    'critical': 0,
+                    'evasion': evasion_int,
+                    'evade': evasion_int,
+                    'speed': 0,
+                    'restorePts': 0
+                },
                 'isTribulation': 'Halls of Tribulation' in sec_name
             })
     return armors
@@ -215,12 +275,15 @@ def parse_accessories(wikitext):
             return int(m.group(0)) if m else d
 
         slug = f"acc-{to_slug(name)}"
+        weight_int = to_int(weight)
+        cost_int = to_int(cost)
 
         accessories.append({
             'id': slug,
             'name': name,
             'category': 'Accessories',
             'subCategory': 'Accessory',
+            'subtype': 'Accessory',
             'type': 'Accessory',
             'number': num.strip(),
             'pAtk': 0,
@@ -231,11 +294,26 @@ def parse_accessories(wikitext):
             'crit': 0,
             'evasion': 0,
             'speed': 0,
-            'weight': to_int(weight),
-            'cost': to_int(cost),
+            'weight': weight_int,
+            'cost': cost_int,
+            'price': cost_int,
             'acquire': acquire,
+            'source': acquire,
             'description': desc,
             'effect': effect or desc,
+            'stats': {
+                'pAtk': 0,
+                'mAtk': 0,
+                'pDef': 0,
+                'mDef': 0,
+                'aim': 0,
+                'crit': 0,
+                'critical': 0,
+                'evasion': 0,
+                'evade': 0,
+                'speed': 0,
+                'restorePts': 0
+            },
             'isTribulation': False
         })
     return accessories

@@ -365,9 +365,169 @@ const shopData = [
         "equipId": "acc-self-portrait"
       },
       {
+        "id": "halcyonia-armor-tunic",
+        "name": "Tunic",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 80,
+        "description": "A loose-fitting, lightweight hip-length garment.",
+        "isEquipment": true,
+        "equipId": "armor-tunic"
+      },
+      {
+        "id": "halcyonia-armor-pilgrim-s-robe",
+        "name": "Pilgrim's Robe",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 110,
+        "description": "A simple magic-enhancing robe, as worn by those on spiritual journeys.",
+        "isEquipment": true,
+        "equipId": "armor-pilgrim-s-robe"
+      },
+      {
+        "id": "halcyonia-armor-padded-armor",
+        "name": "Padded Armor",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 120,
+        "description": "A suit of heavy armour lined with sturdy cloth in order to absorb the impact of enemy strikes.",
+        "isEquipment": true,
+        "equipId": "armor-padded-armor"
+      },
+      {
+        "id": "halcyonia-armor-manarobe",
+        "name": "Manarobe",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 260,
+        "description": "A magic-enhancing robe imbued with sorcerous powers., [Effect When Equipped: Fire and Water Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-manarobe"
+      },
+      {
+        "id": "halcyonia-armor-caravan-coat",
+        "name": "Caravan Coat",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 290,
+        "description": "A long, lightweight hooded garment that covers the wearer all the way down to the ankles., [Effect When Equipped: Wind Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-caravan-coat"
+      },
+      {
+        "id": "halcyonia-armor-lamellar-armour",
+        "name": "Lamellar Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 340,
+        "description": "Heavy armour made up of a mesh of smaller metal plates.",
+        "isEquipment": true,
+        "equipId": "armor-lamellar-armour"
+      },
+      {
+        "id": "halcyonia-armor-academy-gown",
+        "name": "Academy Gown",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 2010,
+        "description": "A comfortable magic-enhancing garment favoured by students and professors., [Effect When Equipped: Earth Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-academy-gown"
+      },
+      {
+        "id": "halcyonia-armor-ninja-garb",
+        "name": "Ninja Garb",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4890,
+        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-ninja-garb"
+      },
+      {
+        "id": "halcyonia-armor-brigandine",
+        "name": "Brigandine",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4930,
+        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
+        "isEquipment": true,
+        "equipId": "armor-brigandine"
+      },
+      {
+        "id": "halcyonia-armor-valkyrie-s-coat",
+        "name": "Valkyrie's Coat",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5230,
+        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-valkyrie-s-coat"
+      },
+      {
+        "id": "halcyonia-armor-kalasiris",
+        "name": "Kalasiris",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5240,
+        "description": "A pleated, magic-enhancing linen garment.",
+        "isEquipment": true,
+        "equipId": "armor-kalasiris"
+      },
+      {
+        "id": "halcyonia-armor-cuirass",
+        "name": "Cuirass",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5620,
+        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
+        "isEquipment": true,
+        "equipId": "armor-cuirass"
+      },
+      {
+        "id": "halcyonia-armor-saffron-robes",
+        "name": "Saffron Robes",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5690,
+        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-saffron-robes"
+      },
+      {
+        "id": "halcyonia-armor-crimson-vest",
+        "name": "Crimson Vest",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6170,
+        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-crimson-vest"
+      },
+      {
+        "id": "halcyonia-armor-fluted-armour",
+        "name": "Fluted Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6370,
+        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
+        "isEquipment": true,
+        "equipId": "armor-fluted-armour"
+      },
+      {
+        "id": "halcyonia-armor-minerva-bustier",
+        "name": "Minerva Bustier",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 7570,
+        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-minerva-bustier"
+      },
+      {
         "id": "halcyonia-headwear-knitted-cap",
         "name": "Knitted Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 40,
         "description": "A piece of lightweight headwear handmade with warming wool.",
@@ -377,7 +537,7 @@ const shopData = [
       {
         "id": "halcyonia-headwear-pilgrim-s-hat",
         "name": "Pilgrim's Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 60,
         "description": "A simple magic-enhancing cap, as worn by those on spiritual journeys., [Effect When Equipped: Dread Immunity]",
@@ -385,19 +545,9 @@ const shopData = [
         "equipId": "headwear-pilgrim-s-hat"
       },
       {
-        "id": "halcyonia-armour-tunic",
-        "name": "Tunic",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 80,
-        "description": "A loose-fitting, lightweight hip-length garment.",
-        "isEquipment": true,
-        "equipId": "armour-tunic"
-      },
-      {
         "id": "halcyonia-headwear-chain-coif",
         "name": "Chain Coif",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 90,
         "description": "A heavy protective hood formed from tiny iron links.",
@@ -405,19 +555,9 @@ const shopData = [
         "equipId": "headwear-chain-coif"
       },
       {
-        "id": "halcyonia-armour-pilgrim-s-robe",
-        "name": "Pilgrim's Robe",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 110,
-        "description": "A simple magic-enhancing robe, as worn by those on spiritual journeys.",
-        "isEquipment": true,
-        "equipId": "armour-pilgrim-s-robe"
-      },
-      {
         "id": "halcyonia-headwear-leather-cap",
         "name": "Leather Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 120,
         "description": "A lightweight hat made from sewn-together animal skin.",
@@ -425,19 +565,9 @@ const shopData = [
         "equipId": "headwear-leather-cap"
       },
       {
-        "id": "halcyonia-armour-padded-armor",
-        "name": "Padded Armor",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 120,
-        "description": "A suit of heavy armour lined with sturdy cloth in order to absorb the impact of enemy strikes.",
-        "isEquipment": true,
-        "equipId": "armour-padded-armor"
-      },
-      {
         "id": "halcyonia-headwear-mystic-hood",
         "name": "Mystic Hood",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 150,
         "description": "A magic-enhancing hood imbued with sorcerous powers.",
@@ -447,7 +577,7 @@ const shopData = [
       {
         "id": "halcyonia-headwear-barrel-helm",
         "name": "Barrel Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 170,
         "description": "A heavy helmet believed to have been worn by ancient warriors.",
@@ -455,39 +585,9 @@ const shopData = [
         "equipId": "headwear-barrel-helm"
       },
       {
-        "id": "halcyonia-armour-manarobe",
-        "name": "Manarobe",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 260,
-        "description": "A magic-enhancing robe imbued with sorcerous powers., [Effect When Equipped: Fire and Water Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-manarobe"
-      },
-      {
-        "id": "halcyonia-armour-caravan-coat",
-        "name": "Caravan Coat",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 290,
-        "description": "A long, lightweight hooded garment that covers the wearer all the way down to the ankles., [Effect When Equipped: Wind Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-caravan-coat"
-      },
-      {
-        "id": "halcyonia-armour-lamellar-armour",
-        "name": "Lamellar Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 340,
-        "description": "Heavy armour made up of a mesh of smaller metal plates.",
-        "isEquipment": true,
-        "equipId": "armour-lamellar-armour"
-      },
-      {
         "id": "halcyonia-headwear-mortarboard",
         "name": "Mortarboard",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1250,
         "description": "Magic-enhancing square headwear favoured by academics and scholars., [Effect When Equipped: Confusion & Charm Immunity]",
@@ -497,7 +597,7 @@ const shopData = [
       {
         "id": "halcyonia-headwear-adamant-hat",
         "name": "Adamant Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1450,
         "description": "A unique cap fashioned from an adamantite shell.",
@@ -505,19 +605,9 @@ const shopData = [
         "equipId": "headwear-adamant-hat"
       },
       {
-        "id": "halcyonia-armour-academy-gown",
-        "name": "Academy Gown",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 2010,
-        "description": "A comfortable magic-enhancing garment favoured by students and professors., [Effect When Equipped: Earth Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-academy-gown"
-      },
-      {
         "id": "halcyonia-headwear-tactician-s-hat",
         "name": "Tactician's Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2630,
         "description": "Magic-enhancing military headwear, as worn by officers., [Effect When Equipped: Silence Immunity]",
@@ -527,7 +617,7 @@ const shopData = [
       {
         "id": "halcyonia-headwear-iron-headband",
         "name": "Iron Headband",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2840,
         "description": "A lightweight metallic band that wraps around the head.",
@@ -537,7 +627,7 @@ const shopData = [
       {
         "id": "halcyonia-headwear-ascetic-s-cap",
         "name": "Ascetic's Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3370,
         "description": "A small, round, magic-enhancing hat worn by monks in training., [Effect When Equipped: Sleep & Dread Immunity]",
@@ -547,7 +637,7 @@ const shopData = [
       {
         "id": "halcyonia-headwear-full-face-helm",
         "name": "Full-Face Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3850,
         "description": "A heavy hemispherical helmet that covers the entire head., [Effect When Equipped: Dread Immunity]",
@@ -557,7 +647,7 @@ const shopData = [
       {
         "id": "halcyonia-headwear-acorn-hat",
         "name": "Acorn Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 4200,
         "description": "Lightweight, sturdy headwear fashioned from a giant nut.",
@@ -565,49 +655,9 @@ const shopData = [
         "equipId": "headwear-acorn-hat"
       },
       {
-        "id": "halcyonia-armour-ninja-garb",
-        "name": "Ninja Garb",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4890,
-        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-ninja-garb"
-      },
-      {
-        "id": "halcyonia-armour-brigandine",
-        "name": "Brigandine",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4930,
-        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
-        "isEquipment": true,
-        "equipId": "armour-brigandine"
-      },
-      {
-        "id": "halcyonia-armour-valkyrie-s-coat",
-        "name": "Valkyrie's Coat",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5230,
-        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-valkyrie-s-coat"
-      },
-      {
-        "id": "halcyonia-armour-kalasiris",
-        "name": "Kalasiris",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5240,
-        "description": "A pleated, magic-enhancing linen garment.",
-        "isEquipment": true,
-        "equipId": "armour-kalasiris"
-      },
-      {
         "id": "halcyonia-headwear-carbon-cap",
         "name": "Carbon Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5320,
         "description": "Super-hard, lightweight armour that protects the entire head., [Effect When Equipped: Contagion Immunity]",
@@ -617,7 +667,7 @@ const shopData = [
       {
         "id": "halcyonia-headwear-armet",
         "name": "Armet",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5580,
         "description": "A heavy helmet that protects every inch of the wearer's head, right down to the nape of the neck.",
@@ -625,64 +675,14 @@ const shopData = [
         "equipId": "headwear-armet"
       },
       {
-        "id": "halcyonia-armour-cuirass",
-        "name": "Cuirass",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5620,
-        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
-        "isEquipment": true,
-        "equipId": "armour-cuirass"
-      },
-      {
-        "id": "halcyonia-armour-saffron-robes",
-        "name": "Saffron Robes",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5690,
-        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-saffron-robes"
-      },
-      {
-        "id": "halcyonia-armour-crimson-vest",
-        "name": "Crimson Vest",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6170,
-        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-crimson-vest"
-      },
-      {
-        "id": "halcyonia-armour-fluted-armour",
-        "name": "Fluted Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6370,
-        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
-        "isEquipment": true,
-        "equipId": "armour-fluted-armour"
-      },
-      {
         "id": "halcyonia-headwear-dragonskin-headscarf",
         "name": "Dragonskin Headscarf",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 6470,
         "description": "Dashing, magic-enhancing headwear popular with military commanders., [Effect When Equipped: Silence & Confusion Immunity]",
         "isEquipment": true,
         "equipId": "headwear-dragonskin-headscarf"
-      },
-      {
-        "id": "halcyonia-armour-minerva-bustier",
-        "name": "Minerva Bustier",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 7570,
-        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-minerva-bustier"
       },
       {
         "id": "halcyonia-shield-buckler",
@@ -755,14 +755,14 @@ const shopData = [
         "equipId": "dagger-dagger"
       },
       {
-        "id": "halcyonia-sword-staff",
+        "id": "halcyonia-staves-staff",
         "name": "Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 190,
         "description": "A wand carved from a branch imbued with wizardry.",
         "isEquipment": true,
-        "equipId": "sword-staff"
+        "equipId": "staves-staff"
       },
       {
         "id": "halcyonia-sword-broadsword",
@@ -775,14 +775,14 @@ const shopData = [
         "equipId": "sword-broadsword"
       },
       {
-        "id": "halcyonia-axe-francisca",
+        "id": "halcyonia-axes-francisca",
         "name": "Francisca",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 230,
         "description": "A small axe favoured by hunters.",
         "isEquipment": true,
-        "equipId": "axe-francisca"
+        "equipId": "axes-francisca"
       },
       {
         "id": "halcyonia-dagger-kukri",
@@ -795,14 +795,14 @@ const shopData = [
         "equipId": "dagger-kukri"
       },
       {
-        "id": "halcyonia-sword-wizard-s-rod",
+        "id": "halcyonia-staves-wizard-s-rod",
         "name": "Wizard's Rod",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 420,
         "description": "A staff specially designed for black mages with hundreds of battles under their belts.",
         "isEquipment": true,
-        "equipId": "sword-wizard-s-rod"
+        "equipId": "staves-wizard-s-rod"
       },
       {
         "id": "halcyonia-sword-long-sword",
@@ -815,14 +815,14 @@ const shopData = [
         "equipId": "sword-long-sword"
       },
       {
-        "id": "halcyonia-axe-broadaxe",
+        "id": "halcyonia-axes-broadaxe",
         "name": "Broadaxe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 500,
         "description": "A mighty weapon forged for extra chopping power.",
         "isEquipment": true,
-        "equipId": "axe-broadaxe"
+        "equipId": "axes-broadaxe"
       },
       {
         "id": "halcyonia-dagger-carving-knife",
@@ -835,34 +835,34 @@ const shopData = [
         "equipId": "dagger-carving-knife"
       },
       {
-        "id": "halcyonia-sword-yggdrasil-staff",
+        "id": "halcyonia-staves-yggdrasil-staff",
         "name": "Yggdrasil Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7010,
         "description": "A staff hewn from a legendary tree that's steeped in spiritual power., [Effect When Used: Esuna]",
         "isEquipment": true,
-        "equipId": "sword-yggdrasil-staff"
+        "equipId": "staves-yggdrasil-staff"
       },
       {
-        "id": "halcyonia-sword-gaia-rod",
+        "id": "halcyonia-staves-gaia-rod",
         "name": "Gaia Rod",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7120,
         "description": "A staff imbued with the power of terra firma., [Additional Effect: Earth Attacks Do +30% Damage]",
         "isEquipment": true,
-        "equipId": "sword-gaia-rod"
+        "equipId": "staves-gaia-rod"
       },
       {
-        "id": "halcyonia-bow-great-bow",
+        "id": "halcyonia-bows-great-bow",
         "name": "Great Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 7230,
         "description": "A large bow capable of imparting impressive power to its projectiles.",
         "isEquipment": true,
-        "equipId": "bow-great-bow"
+        "equipId": "bows-great-bow"
       },
       {
         "id": "halcyonia-sword-staggering-sword",
@@ -885,14 +885,14 @@ const shopData = [
         "equipId": "spear-chronos-glaive"
       },
       {
-        "id": "halcyonia-axe-summoner-s-axe",
+        "id": "halcyonia-axes-summoner-s-axe",
         "name": "Summoner's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 8360,
         "description": "A strange and sinister axe that's said to have the power to summon demons.",
         "isEquipment": true,
-        "equipId": "axe-summoner-s-axe"
+        "equipId": "axes-summoner-s-axe"
       },
       {
         "id": "halcyonia-dagger-zwill-crossblade",
@@ -905,24 +905,24 @@ const shopData = [
         "equipId": "dagger-zwill-crossblade"
       },
       {
-        "id": "halcyonia-sword-hammer-mace",
+        "id": "halcyonia-staves-hammer-mace",
         "name": "Hammer Mace",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 8740,
         "description": "A weapon whose design means it can be used for making things as well as destroying them.",
         "isEquipment": true,
-        "equipId": "sword-hammer-mace"
+        "equipId": "staves-hammer-mace"
       },
       {
-        "id": "halcyonia-bow-shigeto-bow",
+        "id": "halcyonia-bows-shigeto-bow",
         "name": "Shigeto Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 8940,
         "description": "A ceremonial bow of a grand aristocratic dynasty.",
         "isEquipment": true,
-        "equipId": "bow-shigeto-bow"
+        "equipId": "bows-shigeto-bow"
       },
       {
         "id": "halcyonia-sword-blind-blade",
@@ -945,24 +945,24 @@ const shopData = [
         "equipId": "spear-wyvern-spear"
       },
       {
-        "id": "halcyonia-axe-sandman-s-axe",
+        "id": "halcyonia-axes-sandman-s-axe",
         "name": "Sandman's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 9460,
         "description": "An axe that sends its victims straight to dreamland., [Additional Effect: Sleep]",
         "isEquipment": true,
-        "equipId": "axe-sandman-s-axe"
+        "equipId": "axes-sandman-s-axe"
       },
       {
-        "id": "halcyonia-sword-gambanteinn",
+        "id": "halcyonia-staves-gambanteinn",
         "name": "Gambanteinn",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 10260,
         "description": "A staff originally offered to a giantess in order to woo her.",
         "isEquipment": true,
-        "equipId": "sword-gambanteinn"
+        "equipId": "staves-gambanteinn"
       },
       {
         "id": "halcyonia-dagger-yatagarasu",
@@ -985,14 +985,14 @@ const shopData = [
         "equipId": "sword-ama-no-murakumo"
       },
       {
-        "id": "halcyonia-bow-ama-no-kagoyumi",
+        "id": "halcyonia-bows-ama-no-kagoyumi",
         "name": "Ama-no-Kagoyumi",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 10640,
         "description": "An ancient bow which strikes terror into the hearts of demons., [Extra-Effective Against: Demon Monsters]",
         "isEquipment": true,
-        "equipId": "bow-ama-no-kagoyumi"
+        "equipId": "bows-ama-no-kagoyumi"
       },
       {
         "id": "halcyonia-spear-ama-no-sakahoko",
@@ -1005,14 +1005,14 @@ const shopData = [
         "equipId": "spear-ama-no-sakahoko"
       },
       {
-        "id": "halcyonia-axe-deforester",
+        "id": "halcyonia-axes-deforester",
         "name": "Deforester",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 10810,
         "description": "A legendary axe believed to be capable of felling even Yggdrasil itself., [Extra-Effective Against: Plant Monsters]",
         "isEquipment": true,
-        "equipId": "axe-deforester"
+        "equipId": "axes-deforester"
       }
     ]
   },
@@ -1426,9 +1426,159 @@ const shopData = [
         "equipId": "acc-self-portrait"
       },
       {
+        "id": "savalon-armor-manarobe",
+        "name": "Manarobe",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 260,
+        "description": "A magic-enhancing robe imbued with sorcerous powers., [Effect When Equipped: Fire and Water Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-manarobe"
+      },
+      {
+        "id": "savalon-armor-caravan-coat",
+        "name": "Caravan Coat",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 290,
+        "description": "A long, lightweight hooded garment that covers the wearer all the way down to the ankles., [Effect When Equipped: Wind Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-caravan-coat"
+      },
+      {
+        "id": "savalon-armor-doublet",
+        "name": "Doublet",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 780,
+        "description": "A comfortably padded, lightweight long-sleeved garment., [Effect When Equipped: Lightning Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-doublet"
+      },
+      {
+        "id": "savalon-armor-ring-mail",
+        "name": "Ring Mail",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 930,
+        "description": "Heavy armour made of linked metal rings on top of a layer of leather.",
+        "isEquipment": true,
+        "equipId": "armor-ring-mail"
+      },
+      {
+        "id": "savalon-armor-mythril-armour",
+        "name": "Mythril Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 1540,
+        "description": "Heavy full-body protection forged from a rare metal.",
+        "isEquipment": true,
+        "equipId": "armor-mythril-armour"
+      },
+      {
+        "id": "savalon-armor-academy-gown",
+        "name": "Academy Gown",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 2010,
+        "description": "A comfortable magic-enhancing garment favoured by students and professors., [Effect When Equipped: Earth Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-academy-gown"
+      },
+      {
+        "id": "savalon-armor-ninja-garb",
+        "name": "Ninja Garb",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4890,
+        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-ninja-garb"
+      },
+      {
+        "id": "savalon-armor-brigandine",
+        "name": "Brigandine",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4930,
+        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
+        "isEquipment": true,
+        "equipId": "armor-brigandine"
+      },
+      {
+        "id": "savalon-armor-valkyrie-s-coat",
+        "name": "Valkyrie's Coat",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5230,
+        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-valkyrie-s-coat"
+      },
+      {
+        "id": "savalon-armor-kalasiris",
+        "name": "Kalasiris",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5240,
+        "description": "A pleated, magic-enhancing linen garment.",
+        "isEquipment": true,
+        "equipId": "armor-kalasiris"
+      },
+      {
+        "id": "savalon-armor-cuirass",
+        "name": "Cuirass",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5620,
+        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
+        "isEquipment": true,
+        "equipId": "armor-cuirass"
+      },
+      {
+        "id": "savalon-armor-saffron-robes",
+        "name": "Saffron Robes",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5690,
+        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-saffron-robes"
+      },
+      {
+        "id": "savalon-armor-crimson-vest",
+        "name": "Crimson Vest",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6170,
+        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-crimson-vest"
+      },
+      {
+        "id": "savalon-armor-fluted-armour",
+        "name": "Fluted Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6370,
+        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
+        "isEquipment": true,
+        "equipId": "armor-fluted-armour"
+      },
+      {
+        "id": "savalon-armor-minerva-bustier",
+        "name": "Minerva Bustier",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 7570,
+        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-minerva-bustier"
+      },
+      {
         "id": "savalon-headwear-leather-cap",
         "name": "Leather Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 120,
         "description": "A lightweight hat made from sewn-together animal skin.",
@@ -1438,7 +1588,7 @@ const shopData = [
       {
         "id": "savalon-headwear-mystic-hood",
         "name": "Mystic Hood",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 150,
         "description": "A magic-enhancing hood imbued with sorcerous powers.",
@@ -1448,7 +1598,7 @@ const shopData = [
       {
         "id": "savalon-headwear-barrel-helm",
         "name": "Barrel Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 170,
         "description": "A heavy helmet believed to have been worn by ancient warriors.",
@@ -1456,29 +1606,9 @@ const shopData = [
         "equipId": "headwear-barrel-helm"
       },
       {
-        "id": "savalon-armour-manarobe",
-        "name": "Manarobe",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 260,
-        "description": "A magic-enhancing robe imbued with sorcerous powers., [Effect When Equipped: Fire and Water Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-manarobe"
-      },
-      {
-        "id": "savalon-armour-caravan-coat",
-        "name": "Caravan Coat",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 290,
-        "description": "A long, lightweight hooded garment that covers the wearer all the way down to the ankles., [Effect When Equipped: Wind Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-caravan-coat"
-      },
-      {
         "id": "savalon-headwear-headband",
         "name": "Headband",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 540,
         "description": "A unique piece of cloth said to boost strength when worn around the head.",
@@ -1488,7 +1618,7 @@ const shopData = [
       {
         "id": "savalon-headwear-turban",
         "name": "Turban",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 670,
         "description": "A piece of magic-enhancing cloth that's wrapped around the head.",
@@ -1498,7 +1628,7 @@ const shopData = [
       {
         "id": "savalon-headwear-holy-mitre",
         "name": "Holy Mitre",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 720,
         "description": "A unique ceremonial hat, as worn by high-ranking bishops., [Effect When Equipped: Silence Immunity]",
@@ -1508,7 +1638,7 @@ const shopData = [
       {
         "id": "savalon-headwear-feather-hat",
         "name": "Feather Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 760,
         "description": "Thick, durable, lightweight headwear decorated with a piece of plumage.",
@@ -1516,19 +1646,9 @@ const shopData = [
         "equipId": "headwear-feather-hat"
       },
       {
-        "id": "savalon-armour-doublet",
-        "name": "Doublet",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 780,
-        "description": "A comfortably padded, lightweight long-sleeved garment., [Effect When Equipped: Lightning Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-doublet"
-      },
-      {
         "id": "savalon-headwear-mythril-helm",
         "name": "Mythril Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 810,
         "description": "A heavy helmet forged from a rare metal, and featuring an intricate canine visor., [Effect When Equipped: Blindness Immunity]",
@@ -1536,19 +1656,9 @@ const shopData = [
         "equipId": "headwear-mythril-helm"
       },
       {
-        "id": "savalon-armour-ring-mail",
-        "name": "Ring Mail",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 930,
-        "description": "Heavy armour made of linked metal rings on top of a layer of leather.",
-        "isEquipment": true,
-        "equipId": "armour-ring-mail"
-      },
-      {
         "id": "savalon-headwear-mortarboard",
         "name": "Mortarboard",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1250,
         "description": "Magic-enhancing square headwear favoured by academics and scholars., [Effect When Equipped: Confusion & Charm Immunity]",
@@ -1558,7 +1668,7 @@ const shopData = [
       {
         "id": "savalon-headwear-adamant-hat",
         "name": "Adamant Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1450,
         "description": "A unique cap fashioned from an adamantite shell.",
@@ -1566,29 +1676,9 @@ const shopData = [
         "equipId": "headwear-adamant-hat"
       },
       {
-        "id": "savalon-armour-mythril-armour",
-        "name": "Mythril Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 1540,
-        "description": "Heavy full-body protection forged from a rare metal.",
-        "isEquipment": true,
-        "equipId": "armour-mythril-armour"
-      },
-      {
-        "id": "savalon-armour-academy-gown",
-        "name": "Academy Gown",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 2010,
-        "description": "A comfortable magic-enhancing garment favoured by students and professors., [Effect When Equipped: Earth Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-academy-gown"
-      },
-      {
         "id": "savalon-headwear-tactician-s-hat",
         "name": "Tactician's Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2630,
         "description": "Magic-enhancing military headwear, as worn by officers., [Effect When Equipped: Silence Immunity]",
@@ -1598,7 +1688,7 @@ const shopData = [
       {
         "id": "savalon-headwear-iron-headband",
         "name": "Iron Headband",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2840,
         "description": "A lightweight metallic band that wraps around the head.",
@@ -1608,7 +1698,7 @@ const shopData = [
       {
         "id": "savalon-headwear-ascetic-s-cap",
         "name": "Ascetic's Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3370,
         "description": "A small, round, magic-enhancing hat worn by monks in training., [Effect When Equipped: Sleep & Dread Immunity]",
@@ -1618,7 +1708,7 @@ const shopData = [
       {
         "id": "savalon-headwear-full-face-helm",
         "name": "Full-Face Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3850,
         "description": "A heavy hemispherical helmet that covers the entire head., [Effect When Equipped: Dread Immunity]",
@@ -1628,7 +1718,7 @@ const shopData = [
       {
         "id": "savalon-headwear-acorn-hat",
         "name": "Acorn Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 4200,
         "description": "Lightweight, sturdy headwear fashioned from a giant nut.",
@@ -1636,49 +1726,9 @@ const shopData = [
         "equipId": "headwear-acorn-hat"
       },
       {
-        "id": "savalon-armour-ninja-garb",
-        "name": "Ninja Garb",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4890,
-        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-ninja-garb"
-      },
-      {
-        "id": "savalon-armour-brigandine",
-        "name": "Brigandine",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4930,
-        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
-        "isEquipment": true,
-        "equipId": "armour-brigandine"
-      },
-      {
-        "id": "savalon-armour-valkyrie-s-coat",
-        "name": "Valkyrie's Coat",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5230,
-        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-valkyrie-s-coat"
-      },
-      {
-        "id": "savalon-armour-kalasiris",
-        "name": "Kalasiris",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5240,
-        "description": "A pleated, magic-enhancing linen garment.",
-        "isEquipment": true,
-        "equipId": "armour-kalasiris"
-      },
-      {
         "id": "savalon-headwear-carbon-cap",
         "name": "Carbon Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5320,
         "description": "Super-hard, lightweight armour that protects the entire head., [Effect When Equipped: Contagion Immunity]",
@@ -1688,7 +1738,7 @@ const shopData = [
       {
         "id": "savalon-headwear-armet",
         "name": "Armet",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5580,
         "description": "A heavy helmet that protects every inch of the wearer's head, right down to the nape of the neck.",
@@ -1696,64 +1746,14 @@ const shopData = [
         "equipId": "headwear-armet"
       },
       {
-        "id": "savalon-armour-cuirass",
-        "name": "Cuirass",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5620,
-        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
-        "isEquipment": true,
-        "equipId": "armour-cuirass"
-      },
-      {
-        "id": "savalon-armour-saffron-robes",
-        "name": "Saffron Robes",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5690,
-        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-saffron-robes"
-      },
-      {
-        "id": "savalon-armour-crimson-vest",
-        "name": "Crimson Vest",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6170,
-        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-crimson-vest"
-      },
-      {
-        "id": "savalon-armour-fluted-armour",
-        "name": "Fluted Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6370,
-        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
-        "isEquipment": true,
-        "equipId": "armour-fluted-armour"
-      },
-      {
         "id": "savalon-headwear-dragonskin-headscarf",
         "name": "Dragonskin Headscarf",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 6470,
         "description": "Dashing, magic-enhancing headwear popular with military commanders., [Effect When Equipped: Silence & Confusion Immunity]",
         "isEquipment": true,
         "equipId": "headwear-dragonskin-headscarf"
-      },
-      {
-        "id": "savalon-armour-minerva-bustier",
-        "name": "Minerva Bustier",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 7570,
-        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-minerva-bustier"
       },
       {
         "id": "savalon-shield-round-shield",
@@ -1816,34 +1816,34 @@ const shopData = [
         "equipId": "dagger-kukri"
       },
       {
-        "id": "savalon-sword-wizard-s-rod",
+        "id": "savalon-staves-wizard-s-rod",
         "name": "Wizard's Rod",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 420,
         "description": "A staff specially designed for black mages with hundreds of battles under their belts.",
         "isEquipment": true,
-        "equipId": "sword-wizard-s-rod"
+        "equipId": "staves-wizard-s-rod"
       },
       {
-        "id": "savalon-bow-shortbow",
+        "id": "savalon-bows-shortbow",
         "name": "Shortbow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 470,
         "description": "A small wooden bow that's ideal for first-time archers.",
         "isEquipment": true,
-        "equipId": "bow-shortbow"
+        "equipId": "bows-shortbow"
       },
       {
-        "id": "savalon-axe-broadaxe",
+        "id": "savalon-axes-broadaxe",
         "name": "Broadaxe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 500,
         "description": "A mighty weapon forged for extra chopping power.",
         "isEquipment": true,
-        "equipId": "axe-broadaxe"
+        "equipId": "axes-broadaxe"
       },
       {
         "id": "savalon-spear-spear",
@@ -1866,14 +1866,14 @@ const shopData = [
         "equipId": "dagger-mythril-dagger"
       },
       {
-        "id": "savalon-sword-mythril-staff",
+        "id": "savalon-staves-mythril-staff",
         "name": "Mythril Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 980,
         "description": "A staff whose tip has been forged from rare metal.",
         "isEquipment": true,
-        "equipId": "sword-mythril-staff"
+        "equipId": "staves-mythril-staff"
       },
       {
         "id": "savalon-spear-glaive",
@@ -1886,24 +1886,24 @@ const shopData = [
         "equipId": "spear-glaive"
       },
       {
-        "id": "savalon-bow-iron-bow",
+        "id": "savalon-bows-iron-bow",
         "name": "Iron Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 1060,
         "description": "A bow reinforced with iron for additional range and power.",
         "isEquipment": true,
-        "equipId": "bow-iron-bow"
+        "equipId": "bows-iron-bow"
       },
       {
-        "id": "savalon-axe-double-bladed-bhuj",
+        "id": "savalon-axes-double-bladed-bhuj",
         "name": "Double-Bladed Bhuj",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 1080,
         "description": "A twin-bladed axe-like weapon that can be used to drag enemies to their doom.",
         "isEquipment": true,
-        "equipId": "axe-double-bladed-bhuj"
+        "equipId": "axes-double-bladed-bhuj"
       },
       {
         "id": "savalon-spear-mythril-spear",
@@ -1916,14 +1916,14 @@ const shopData = [
         "equipId": "spear-mythril-spear"
       },
       {
-        "id": "savalon-axe-mythril-axe",
+        "id": "savalon-axes-mythril-axe",
         "name": "Mythril Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 1590,
         "description": "An axe forged from a rare metal.",
         "isEquipment": true,
-        "equipId": "axe-mythril-axe"
+        "equipId": "axes-mythril-axe"
       },
       {
         "id": "savalon-dagger-carving-knife",
@@ -1936,34 +1936,34 @@ const shopData = [
         "equipId": "dagger-carving-knife"
       },
       {
-        "id": "savalon-sword-yggdrasil-staff",
+        "id": "savalon-staves-yggdrasil-staff",
         "name": "Yggdrasil Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7010,
         "description": "A staff hewn from a legendary tree that's steeped in spiritual power., [Effect When Used: Esuna]",
         "isEquipment": true,
-        "equipId": "sword-yggdrasil-staff"
+        "equipId": "staves-yggdrasil-staff"
       },
       {
-        "id": "savalon-sword-gaia-rod",
+        "id": "savalon-staves-gaia-rod",
         "name": "Gaia Rod",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7120,
         "description": "A staff imbued with the power of terra firma., [Additional Effect: Earth Attacks Do +30% Damage]",
         "isEquipment": true,
-        "equipId": "sword-gaia-rod"
+        "equipId": "staves-gaia-rod"
       },
       {
-        "id": "savalon-bow-great-bow",
+        "id": "savalon-bows-great-bow",
         "name": "Great Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 7230,
         "description": "A large bow capable of imparting impressive power to its projectiles.",
         "isEquipment": true,
-        "equipId": "bow-great-bow"
+        "equipId": "bows-great-bow"
       },
       {
         "id": "savalon-sword-staggering-sword",
@@ -1986,14 +1986,14 @@ const shopData = [
         "equipId": "spear-chronos-glaive"
       },
       {
-        "id": "savalon-axe-summoner-s-axe",
+        "id": "savalon-axes-summoner-s-axe",
         "name": "Summoner's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 8360,
         "description": "A strange and sinister axe that's said to have the power to summon demons.",
         "isEquipment": true,
-        "equipId": "axe-summoner-s-axe"
+        "equipId": "axes-summoner-s-axe"
       },
       {
         "id": "savalon-dagger-zwill-crossblade",
@@ -2006,24 +2006,24 @@ const shopData = [
         "equipId": "dagger-zwill-crossblade"
       },
       {
-        "id": "savalon-sword-hammer-mace",
+        "id": "savalon-staves-hammer-mace",
         "name": "Hammer Mace",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 8740,
         "description": "A weapon whose design means it can be used for making things as well as destroying them.",
         "isEquipment": true,
-        "equipId": "sword-hammer-mace"
+        "equipId": "staves-hammer-mace"
       },
       {
-        "id": "savalon-bow-shigeto-bow",
+        "id": "savalon-bows-shigeto-bow",
         "name": "Shigeto Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 8940,
         "description": "A ceremonial bow of a grand aristocratic dynasty.",
         "isEquipment": true,
-        "equipId": "bow-shigeto-bow"
+        "equipId": "bows-shigeto-bow"
       },
       {
         "id": "savalon-sword-blind-blade",
@@ -2046,24 +2046,24 @@ const shopData = [
         "equipId": "spear-wyvern-spear"
       },
       {
-        "id": "savalon-axe-sandman-s-axe",
+        "id": "savalon-axes-sandman-s-axe",
         "name": "Sandman's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 9460,
         "description": "An axe that sends its victims straight to dreamland., [Additional Effect: Sleep]",
         "isEquipment": true,
-        "equipId": "axe-sandman-s-axe"
+        "equipId": "axes-sandman-s-axe"
       },
       {
-        "id": "savalon-sword-gambanteinn",
+        "id": "savalon-staves-gambanteinn",
         "name": "Gambanteinn",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 10260,
         "description": "A staff originally offered to a giantess in order to woo her.",
         "isEquipment": true,
-        "equipId": "sword-gambanteinn"
+        "equipId": "staves-gambanteinn"
       },
       {
         "id": "savalon-dagger-yatagarasu",
@@ -2086,14 +2086,14 @@ const shopData = [
         "equipId": "sword-ama-no-murakumo"
       },
       {
-        "id": "savalon-bow-ama-no-kagoyumi",
+        "id": "savalon-bows-ama-no-kagoyumi",
         "name": "Ama-no-Kagoyumi",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 10640,
         "description": "An ancient bow which strikes terror into the hearts of demons., [Extra-Effective Against: Demon Monsters]",
         "isEquipment": true,
-        "equipId": "bow-ama-no-kagoyumi"
+        "equipId": "bows-ama-no-kagoyumi"
       },
       {
         "id": "savalon-spear-ama-no-sakahoko",
@@ -2106,14 +2106,14 @@ const shopData = [
         "equipId": "spear-ama-no-sakahoko"
       },
       {
-        "id": "savalon-axe-deforester",
+        "id": "savalon-axes-deforester",
         "name": "Deforester",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 10810,
         "description": "A legendary axe believed to be capable of felling even Yggdrasil itself., [Extra-Effective Against: Plant Monsters]",
         "isEquipment": true,
-        "equipId": "axe-deforester"
+        "equipId": "axes-deforester"
       }
     ]
   },
@@ -2510,19 +2510,199 @@ const shopData = [
         "equipId": "acc-self-portrait"
       },
       {
-        "id": "wiswald-armour-manarobe",
+        "id": "wiswald-armor-manarobe",
         "name": "Manarobe",
         "category": "Armor",
-        "subCategory": "Armour",
+        "subCategory": "Armor",
         "price": 260,
         "description": "A magic-enhancing robe imbued with sorcerous powers., [Effect When Equipped: Fire and Water Resistance +1]",
         "isEquipment": true,
-        "equipId": "armour-manarobe"
+        "equipId": "armor-manarobe"
+      },
+      {
+        "id": "wiswald-armor-doublet",
+        "name": "Doublet",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 780,
+        "description": "A comfortably padded, lightweight long-sleeved garment., [Effect When Equipped: Lightning Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-doublet"
+      },
+      {
+        "id": "wiswald-armor-mythril-armour",
+        "name": "Mythril Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 1540,
+        "description": "Heavy full-body protection forged from a rare metal.",
+        "isEquipment": true,
+        "equipId": "armor-mythril-armour"
+      },
+      {
+        "id": "wiswald-armor-star-corslet",
+        "name": "Star Corslet",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 1670,
+        "description": "A unique stage outfit worthy of the most storied of performers.",
+        "isEquipment": true,
+        "equipId": "armor-star-corslet"
+      },
+      {
+        "id": "wiswald-armor-justacorps",
+        "name": "Justacorps",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 1890,
+        "description": "A long, lightweight coat with an exceedingly intricate design.",
+        "isEquipment": true,
+        "equipId": "armor-justacorps"
+      },
+      {
+        "id": "wiswald-armor-academy-gown",
+        "name": "Academy Gown",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 2010,
+        "description": "A comfortable magic-enhancing garment favoured by students and professors., [Effect When Equipped: Earth Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-academy-gown"
+      },
+      {
+        "id": "wiswald-armor-splint-mail",
+        "name": "Splint Mail",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 2700,
+        "description": "Heavy armour formed from narrow strips of iron.",
+        "isEquipment": true,
+        "equipId": "armor-splint-mail"
+      },
+      {
+        "id": "wiswald-armor-nanosuit",
+        "name": "Nanosuit",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 2970,
+        "description": "A simple, lightweight garment shaped like two cones joined together.",
+        "isEquipment": true,
+        "equipId": "armor-nanosuit"
+      },
+      {
+        "id": "wiswald-armor-mirage-vest",
+        "name": "Mirage Vest",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 3090,
+        "description": "A unique garment woven from a strange and mysterious fabric., [Effect When Equipped: Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-mirage-vest"
+      },
+      {
+        "id": "wiswald-armor-plate-mail",
+        "name": "Plate Mail",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 3290,
+        "description": "A suit of heavy armour made from sheets of solid steel.",
+        "isEquipment": true,
+        "equipId": "armor-plate-mail"
+      },
+      {
+        "id": "wiswald-armor-ninja-garb",
+        "name": "Ninja Garb",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4890,
+        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-ninja-garb"
+      },
+      {
+        "id": "wiswald-armor-brigandine",
+        "name": "Brigandine",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4930,
+        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
+        "isEquipment": true,
+        "equipId": "armor-brigandine"
+      },
+      {
+        "id": "wiswald-armor-valkyrie-s-coat",
+        "name": "Valkyrie's Coat",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5230,
+        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-valkyrie-s-coat"
+      },
+      {
+        "id": "wiswald-armor-kalasiris",
+        "name": "Kalasiris",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5240,
+        "description": "A pleated, magic-enhancing linen garment.",
+        "isEquipment": true,
+        "equipId": "armor-kalasiris"
+      },
+      {
+        "id": "wiswald-armor-cuirass",
+        "name": "Cuirass",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5620,
+        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
+        "isEquipment": true,
+        "equipId": "armor-cuirass"
+      },
+      {
+        "id": "wiswald-armor-saffron-robes",
+        "name": "Saffron Robes",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5690,
+        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-saffron-robes"
+      },
+      {
+        "id": "wiswald-armor-crimson-vest",
+        "name": "Crimson Vest",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6170,
+        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-crimson-vest"
+      },
+      {
+        "id": "wiswald-armor-fluted-armour",
+        "name": "Fluted Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6370,
+        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
+        "isEquipment": true,
+        "equipId": "armor-fluted-armour"
+      },
+      {
+        "id": "wiswald-armor-minerva-bustier",
+        "name": "Minerva Bustier",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 7570,
+        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-minerva-bustier"
       },
       {
         "id": "wiswald-headwear-turban",
         "name": "Turban",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 670,
         "description": "A piece of magic-enhancing cloth that's wrapped around the head.",
@@ -2532,7 +2712,7 @@ const shopData = [
       {
         "id": "wiswald-headwear-holy-mitre",
         "name": "Holy Mitre",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 720,
         "description": "A unique ceremonial hat, as worn by high-ranking bishops., [Effect When Equipped: Silence Immunity]",
@@ -2542,7 +2722,7 @@ const shopData = [
       {
         "id": "wiswald-headwear-feather-hat",
         "name": "Feather Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 760,
         "description": "Thick, durable, lightweight headwear decorated with a piece of plumage.",
@@ -2550,19 +2730,9 @@ const shopData = [
         "equipId": "headwear-feather-hat"
       },
       {
-        "id": "wiswald-armour-doublet",
-        "name": "Doublet",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 780,
-        "description": "A comfortably padded, lightweight long-sleeved garment., [Effect When Equipped: Lightning Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-doublet"
-      },
-      {
         "id": "wiswald-headwear-mythril-helm",
         "name": "Mythril Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 810,
         "description": "A heavy helmet forged from a rare metal, and featuring an intricate canine visor., [Effect When Equipped: Blindness Immunity]",
@@ -2572,7 +2742,7 @@ const shopData = [
       {
         "id": "wiswald-headwear-mortarboard",
         "name": "Mortarboard",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1250,
         "description": "Magic-enhancing square headwear favoured by academics and scholars., [Effect When Equipped: Confusion & Charm Immunity]",
@@ -2582,7 +2752,7 @@ const shopData = [
       {
         "id": "wiswald-headwear-laurel-wreath",
         "name": "Laurel Wreath",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1400,
         "description": "A lightweight crown fashioned from the branches and leaves of the laurel tree., [Effect When Equipped: Poison & Paralysis Immunity]",
@@ -2592,7 +2762,7 @@ const shopData = [
       {
         "id": "wiswald-headwear-adamant-hat",
         "name": "Adamant Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1450,
         "description": "A unique cap fashioned from an adamantite shell.",
@@ -2600,19 +2770,9 @@ const shopData = [
         "equipId": "headwear-adamant-hat"
       },
       {
-        "id": "wiswald-armour-mythril-armour",
-        "name": "Mythril Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 1540,
-        "description": "Heavy full-body protection forged from a rare metal.",
-        "isEquipment": true,
-        "equipId": "armour-mythril-armour"
-      },
-      {
         "id": "wiswald-headwear-horned-helm",
         "name": "Horned Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1620,
         "description": "A heavy helmet that appears to have sprouted a set of horns.",
@@ -2620,39 +2780,9 @@ const shopData = [
         "equipId": "headwear-horned-helm"
       },
       {
-        "id": "wiswald-armour-star-corslet",
-        "name": "Star Corslet",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 1670,
-        "description": "A unique stage outfit worthy of the most storied of performers.",
-        "isEquipment": true,
-        "equipId": "armour-star-corslet"
-      },
-      {
-        "id": "wiswald-armour-justacorps",
-        "name": "Justacorps",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 1890,
-        "description": "A long, lightweight coat with an exceedingly intricate design.",
-        "isEquipment": true,
-        "equipId": "armour-justacorps"
-      },
-      {
-        "id": "wiswald-armour-academy-gown",
-        "name": "Academy Gown",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 2010,
-        "description": "A comfortable magic-enhancing garment favoured by students and professors., [Effect When Equipped: Earth Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-academy-gown"
-      },
-      {
         "id": "wiswald-headwear-tactician-s-hat",
         "name": "Tactician's Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2630,
         "description": "Magic-enhancing military headwear, as worn by officers., [Effect When Equipped: Silence Immunity]",
@@ -2660,19 +2790,9 @@ const shopData = [
         "equipId": "headwear-tactician-s-hat"
       },
       {
-        "id": "wiswald-armour-splint-mail",
-        "name": "Splint Mail",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 2700,
-        "description": "Heavy armour formed from narrow strips of iron.",
-        "isEquipment": true,
-        "equipId": "armour-splint-mail"
-      },
-      {
         "id": "wiswald-headwear-iron-headband",
         "name": "Iron Headband",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2840,
         "description": "A lightweight metallic band that wraps around the head.",
@@ -2680,39 +2800,9 @@ const shopData = [
         "equipId": "headwear-iron-headband"
       },
       {
-        "id": "wiswald-armour-nanosuit",
-        "name": "Nanosuit",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 2970,
-        "description": "A simple, lightweight garment shaped like two cones joined together.",
-        "isEquipment": true,
-        "equipId": "armour-nanosuit"
-      },
-      {
-        "id": "wiswald-armour-mirage-vest",
-        "name": "Mirage Vest",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 3090,
-        "description": "A unique garment woven from a strange and mysterious fabric., [Effect When Equipped: Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-mirage-vest"
-      },
-      {
-        "id": "wiswald-armour-plate-mail",
-        "name": "Plate Mail",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 3290,
-        "description": "A suit of heavy armour made from sheets of solid steel.",
-        "isEquipment": true,
-        "equipId": "armour-plate-mail"
-      },
-      {
         "id": "wiswald-headwear-ascetic-s-cap",
         "name": "Ascetic's Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3370,
         "description": "A small, round, magic-enhancing hat worn by monks in training., [Effect When Equipped: Sleep & Dread Immunity]",
@@ -2722,7 +2812,7 @@ const shopData = [
       {
         "id": "wiswald-headwear-full-face-helm",
         "name": "Full-Face Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3850,
         "description": "A heavy hemispherical helmet that covers the entire head., [Effect When Equipped: Dread Immunity]",
@@ -2732,7 +2822,7 @@ const shopData = [
       {
         "id": "wiswald-headwear-acorn-hat",
         "name": "Acorn Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 4200,
         "description": "Lightweight, sturdy headwear fashioned from a giant nut.",
@@ -2740,49 +2830,9 @@ const shopData = [
         "equipId": "headwear-acorn-hat"
       },
       {
-        "id": "wiswald-armour-ninja-garb",
-        "name": "Ninja Garb",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4890,
-        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-ninja-garb"
-      },
-      {
-        "id": "wiswald-armour-brigandine",
-        "name": "Brigandine",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4930,
-        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
-        "isEquipment": true,
-        "equipId": "armour-brigandine"
-      },
-      {
-        "id": "wiswald-armour-valkyrie-s-coat",
-        "name": "Valkyrie's Coat",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5230,
-        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-valkyrie-s-coat"
-      },
-      {
-        "id": "wiswald-armour-kalasiris",
-        "name": "Kalasiris",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5240,
-        "description": "A pleated, magic-enhancing linen garment.",
-        "isEquipment": true,
-        "equipId": "armour-kalasiris"
-      },
-      {
         "id": "wiswald-headwear-carbon-cap",
         "name": "Carbon Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5320,
         "description": "Super-hard, lightweight armour that protects the entire head., [Effect When Equipped: Contagion Immunity]",
@@ -2792,7 +2842,7 @@ const shopData = [
       {
         "id": "wiswald-headwear-armet",
         "name": "Armet",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5580,
         "description": "A heavy helmet that protects every inch of the wearer's head, right down to the nape of the neck.",
@@ -2800,64 +2850,14 @@ const shopData = [
         "equipId": "headwear-armet"
       },
       {
-        "id": "wiswald-armour-cuirass",
-        "name": "Cuirass",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5620,
-        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
-        "isEquipment": true,
-        "equipId": "armour-cuirass"
-      },
-      {
-        "id": "wiswald-armour-saffron-robes",
-        "name": "Saffron Robes",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5690,
-        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-saffron-robes"
-      },
-      {
-        "id": "wiswald-armour-crimson-vest",
-        "name": "Crimson Vest",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6170,
-        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-crimson-vest"
-      },
-      {
-        "id": "wiswald-armour-fluted-armour",
-        "name": "Fluted Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6370,
-        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
-        "isEquipment": true,
-        "equipId": "armour-fluted-armour"
-      },
-      {
         "id": "wiswald-headwear-dragonskin-headscarf",
         "name": "Dragonskin Headscarf",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 6470,
         "description": "Dashing, magic-enhancing headwear popular with military commanders., [Effect When Equipped: Silence & Confusion Immunity]",
         "isEquipment": true,
         "equipId": "headwear-dragonskin-headscarf"
-      },
-      {
-        "id": "wiswald-armour-minerva-bustier",
-        "name": "Minerva Bustier",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 7570,
-        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-minerva-bustier"
       },
       {
         "id": "wiswald-shield-round-shield",
@@ -2930,24 +2930,24 @@ const shopData = [
         "equipId": "dagger-mythril-dagger"
       },
       {
-        "id": "wiswald-sword-mythril-staff",
+        "id": "wiswald-staves-mythril-staff",
         "name": "Mythril Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 980,
         "description": "A staff whose tip has been forged from rare metal.",
         "isEquipment": true,
-        "equipId": "sword-mythril-staff"
+        "equipId": "staves-mythril-staff"
       },
       {
-        "id": "wiswald-bow-iron-bow",
+        "id": "wiswald-bows-iron-bow",
         "name": "Iron Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 1060,
         "description": "A bow reinforced with iron for additional range and power.",
         "isEquipment": true,
-        "equipId": "bow-iron-bow"
+        "equipId": "bows-iron-bow"
       },
       {
         "id": "wiswald-dagger-magic-knife",
@@ -2970,14 +2970,14 @@ const shopData = [
         "equipId": "sword-mythril-sword"
       },
       {
-        "id": "wiswald-bow-mythril-bow",
+        "id": "wiswald-bows-mythril-bow",
         "name": "Mythril Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 1430,
         "description": "A bow forged from a rare metal.",
         "isEquipment": true,
-        "equipId": "bow-mythril-bow"
+        "equipId": "bows-mythril-bow"
       },
       {
         "id": "wiswald-spear-mythril-spear",
@@ -2990,14 +2990,14 @@ const shopData = [
         "equipId": "spear-mythril-spear"
       },
       {
-        "id": "wiswald-axe-mythril-axe",
+        "id": "wiswald-axes-mythril-axe",
         "name": "Mythril Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 1590,
         "description": "An axe forged from a rare metal.",
         "isEquipment": true,
-        "equipId": "axe-mythril-axe"
+        "equipId": "axes-mythril-axe"
       },
       {
         "id": "wiswald-dagger-orichal-dagger",
@@ -3010,24 +3010,24 @@ const shopData = [
         "equipId": "dagger-orichal-dagger"
       },
       {
-        "id": "wiswald-sword-rune-staff",
+        "id": "wiswald-staves-rune-staff",
         "name": "Rune Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 2550,
         "description": "A wand engraved with ancient symbols that's capable of leaving enemies speechless., [Additional Effect: Silence]",
         "isEquipment": true,
-        "equipId": "sword-rune-staff"
+        "equipId": "staves-rune-staff"
       },
       {
-        "id": "wiswald-bow-angel-s-bow",
+        "id": "wiswald-bows-angel-s-bow",
         "name": "Angel's Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 2660,
         "description": "A lightweight bow that benefits from an angel's blessing., [Additional Effect: Charm]",
         "isEquipment": true,
-        "equipId": "bow-angel-s-bow"
+        "equipId": "bows-angel-s-bow"
       },
       {
         "id": "wiswald-spear-pitchfork",
@@ -3060,34 +3060,34 @@ const shopData = [
         "equipId": "spear-crimson-spear"
       },
       {
-        "id": "wiswald-axe-hawkeye",
+        "id": "wiswald-axes-hawkeye",
         "name": "Hawkeye",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 3160,
         "description": "A single-edged axe optimised for battle.",
         "isEquipment": true,
-        "equipId": "axe-hawkeye"
+        "equipId": "axes-hawkeye"
       },
       {
-        "id": "wiswald-sword-oak-staff",
+        "id": "wiswald-staves-oak-staff",
         "name": "Oak Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 3420,
         "description": "A staff carved from the trunk of a mighty tree.",
         "isEquipment": true,
-        "equipId": "sword-oak-staff"
+        "equipId": "staves-oak-staff"
       },
       {
-        "id": "wiswald-bow-quickdraw-bow",
+        "id": "wiswald-bows-quickdraw-bow",
         "name": "Quickdraw Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 3610,
         "description": "A bow that enables the wielder to fire off an arrow and ready another in the blink of an eye., [Effect When Used: Quickdraw]",
         "isEquipment": true,
-        "equipId": "bow-quickdraw-bow"
+        "equipId": "bows-quickdraw-bow"
       },
       {
         "id": "wiswald-dagger-carving-knife",
@@ -3100,34 +3100,34 @@ const shopData = [
         "equipId": "dagger-carving-knife"
       },
       {
-        "id": "wiswald-sword-yggdrasil-staff",
+        "id": "wiswald-staves-yggdrasil-staff",
         "name": "Yggdrasil Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7010,
         "description": "A staff hewn from a legendary tree that's steeped in spiritual power., [Effect When Used: Esuna]",
         "isEquipment": true,
-        "equipId": "sword-yggdrasil-staff"
+        "equipId": "staves-yggdrasil-staff"
       },
       {
-        "id": "wiswald-sword-gaia-rod",
+        "id": "wiswald-staves-gaia-rod",
         "name": "Gaia Rod",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7120,
         "description": "A staff imbued with the power of terra firma., [Additional Effect: Earth Attacks Do +30% Damage]",
         "isEquipment": true,
-        "equipId": "sword-gaia-rod"
+        "equipId": "staves-gaia-rod"
       },
       {
-        "id": "wiswald-bow-great-bow",
+        "id": "wiswald-bows-great-bow",
         "name": "Great Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 7230,
         "description": "A large bow capable of imparting impressive power to its projectiles.",
         "isEquipment": true,
-        "equipId": "bow-great-bow"
+        "equipId": "bows-great-bow"
       },
       {
         "id": "wiswald-sword-staggering-sword",
@@ -3150,14 +3150,14 @@ const shopData = [
         "equipId": "spear-chronos-glaive"
       },
       {
-        "id": "wiswald-axe-summoner-s-axe",
+        "id": "wiswald-axes-summoner-s-axe",
         "name": "Summoner's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 8360,
         "description": "A strange and sinister axe that's said to have the power to summon demons.",
         "isEquipment": true,
-        "equipId": "axe-summoner-s-axe"
+        "equipId": "axes-summoner-s-axe"
       },
       {
         "id": "wiswald-dagger-zwill-crossblade",
@@ -3170,24 +3170,24 @@ const shopData = [
         "equipId": "dagger-zwill-crossblade"
       },
       {
-        "id": "wiswald-sword-hammer-mace",
+        "id": "wiswald-staves-hammer-mace",
         "name": "Hammer Mace",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 8740,
         "description": "A weapon whose design means it can be used for making things as well as destroying them.",
         "isEquipment": true,
-        "equipId": "sword-hammer-mace"
+        "equipId": "staves-hammer-mace"
       },
       {
-        "id": "wiswald-bow-shigeto-bow",
+        "id": "wiswald-bows-shigeto-bow",
         "name": "Shigeto Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 8940,
         "description": "A ceremonial bow of a grand aristocratic dynasty.",
         "isEquipment": true,
-        "equipId": "bow-shigeto-bow"
+        "equipId": "bows-shigeto-bow"
       },
       {
         "id": "wiswald-sword-blind-blade",
@@ -3210,24 +3210,24 @@ const shopData = [
         "equipId": "spear-wyvern-spear"
       },
       {
-        "id": "wiswald-axe-sandman-s-axe",
+        "id": "wiswald-axes-sandman-s-axe",
         "name": "Sandman's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 9460,
         "description": "An axe that sends its victims straight to dreamland., [Additional Effect: Sleep]",
         "isEquipment": true,
-        "equipId": "axe-sandman-s-axe"
+        "equipId": "axes-sandman-s-axe"
       },
       {
-        "id": "wiswald-sword-gambanteinn",
+        "id": "wiswald-staves-gambanteinn",
         "name": "Gambanteinn",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 10260,
         "description": "A staff originally offered to a giantess in order to woo her.",
         "isEquipment": true,
-        "equipId": "sword-gambanteinn"
+        "equipId": "staves-gambanteinn"
       },
       {
         "id": "wiswald-dagger-yatagarasu",
@@ -3250,14 +3250,14 @@ const shopData = [
         "equipId": "sword-ama-no-murakumo"
       },
       {
-        "id": "wiswald-bow-ama-no-kagoyumi",
+        "id": "wiswald-bows-ama-no-kagoyumi",
         "name": "Ama-no-Kagoyumi",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 10640,
         "description": "An ancient bow which strikes terror into the hearts of demons., [Extra-Effective Against: Demon Monsters]",
         "isEquipment": true,
-        "equipId": "bow-ama-no-kagoyumi"
+        "equipId": "bows-ama-no-kagoyumi"
       },
       {
         "id": "wiswald-spear-ama-no-sakahoko",
@@ -3270,14 +3270,14 @@ const shopData = [
         "equipId": "spear-ama-no-sakahoko"
       },
       {
-        "id": "wiswald-axe-deforester",
+        "id": "wiswald-axes-deforester",
         "name": "Deforester",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 10810,
         "description": "A legendary axe believed to be capable of felling even Yggdrasil itself., [Extra-Effective Against: Plant Monsters]",
         "isEquipment": true,
-        "equipId": "axe-deforester"
+        "equipId": "axes-deforester"
       }
     ]
   },
@@ -3675,9 +3675,159 @@ const shopData = [
         "equipId": "acc-self-portrait"
       },
       {
+        "id": "rimedhal-armor-academy-gown",
+        "name": "Academy Gown",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 2010,
+        "description": "A comfortable magic-enhancing garment favoured by students and professors., [Effect When Equipped: Earth Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-academy-gown"
+      },
+      {
+        "id": "rimedhal-armor-nanosuit",
+        "name": "Nanosuit",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 2970,
+        "description": "A simple, lightweight garment shaped like two cones joined together.",
+        "isEquipment": true,
+        "equipId": "armor-nanosuit"
+      },
+      {
+        "id": "rimedhal-armor-mirage-vest",
+        "name": "Mirage Vest",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 3090,
+        "description": "A unique garment woven from a strange and mysterious fabric., [Effect When Equipped: Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-mirage-vest"
+      },
+      {
+        "id": "rimedhal-armor-plate-mail",
+        "name": "Plate Mail",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 3290,
+        "description": "A suit of heavy armour made from sheets of solid steel.",
+        "isEquipment": true,
+        "equipId": "armor-plate-mail"
+      },
+      {
+        "id": "rimedhal-armor-protector",
+        "name": "Protector",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4000,
+        "description": "A simple, lightweight garment shaped like two cones joined together.",
+        "isEquipment": true,
+        "equipId": "armor-protector"
+      },
+      {
+        "id": "rimedhal-armor-adamant-armour",
+        "name": "Adamant Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4230,
+        "description": "Heavy full-body protection fashioned from an adamantite shell., [Effect When Equipped: Wind Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-adamant-armour"
+      },
+      {
+        "id": "rimedhal-armor-ninja-garb",
+        "name": "Ninja Garb",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4890,
+        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-ninja-garb"
+      },
+      {
+        "id": "rimedhal-armor-brigandine",
+        "name": "Brigandine",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4930,
+        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
+        "isEquipment": true,
+        "equipId": "armor-brigandine"
+      },
+      {
+        "id": "rimedhal-armor-valkyrie-s-coat",
+        "name": "Valkyrie's Coat",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5230,
+        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-valkyrie-s-coat"
+      },
+      {
+        "id": "rimedhal-armor-kalasiris",
+        "name": "Kalasiris",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5240,
+        "description": "A pleated, magic-enhancing linen garment.",
+        "isEquipment": true,
+        "equipId": "armor-kalasiris"
+      },
+      {
+        "id": "rimedhal-armor-cuirass",
+        "name": "Cuirass",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5620,
+        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
+        "isEquipment": true,
+        "equipId": "armor-cuirass"
+      },
+      {
+        "id": "rimedhal-armor-saffron-robes",
+        "name": "Saffron Robes",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5690,
+        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-saffron-robes"
+      },
+      {
+        "id": "rimedhal-armor-crimson-vest",
+        "name": "Crimson Vest",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6170,
+        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-crimson-vest"
+      },
+      {
+        "id": "rimedhal-armor-fluted-armour",
+        "name": "Fluted Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6370,
+        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
+        "isEquipment": true,
+        "equipId": "armor-fluted-armour"
+      },
+      {
+        "id": "rimedhal-armor-minerva-bustier",
+        "name": "Minerva Bustier",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 7570,
+        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-minerva-bustier"
+      },
+      {
         "id": "rimedhal-headwear-mortarboard",
         "name": "Mortarboard",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1250,
         "description": "Magic-enhancing square headwear favoured by academics and scholars., [Effect When Equipped: Confusion & Charm Immunity]",
@@ -3687,7 +3837,7 @@ const shopData = [
       {
         "id": "rimedhal-headwear-laurel-wreath",
         "name": "Laurel Wreath",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1400,
         "description": "A lightweight crown fashioned from the branches and leaves of the laurel tree., [Effect When Equipped: Poison & Paralysis Immunity]",
@@ -3697,7 +3847,7 @@ const shopData = [
       {
         "id": "rimedhal-headwear-adamant-hat",
         "name": "Adamant Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1450,
         "description": "A unique cap fashioned from an adamantite shell.",
@@ -3707,7 +3857,7 @@ const shopData = [
       {
         "id": "rimedhal-headwear-shako",
         "name": "Shako",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1850,
         "description": "A tall, lightweight military hat., [Effect When Equipped: Dread Immunity]",
@@ -3715,19 +3865,9 @@ const shopData = [
         "equipId": "headwear-shako"
       },
       {
-        "id": "rimedhal-armour-academy-gown",
-        "name": "Academy Gown",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 2010,
-        "description": "A comfortable magic-enhancing garment favoured by students and professors., [Effect When Equipped: Earth Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-academy-gown"
-      },
-      {
         "id": "rimedhal-headwear-tactician-s-hat",
         "name": "Tactician's Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2630,
         "description": "Magic-enhancing military headwear, as worn by officers., [Effect When Equipped: Silence Immunity]",
@@ -3737,7 +3877,7 @@ const shopData = [
       {
         "id": "rimedhal-headwear-adamant-helm",
         "name": "Adamant Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2830,
         "description": "A heavy helmet fashioned from an adamantite shell.",
@@ -3747,7 +3887,7 @@ const shopData = [
       {
         "id": "rimedhal-headwear-iron-headband",
         "name": "Iron Headband",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2840,
         "description": "A lightweight metallic band that wraps around the head.",
@@ -3755,29 +3895,9 @@ const shopData = [
         "equipId": "headwear-iron-headband"
       },
       {
-        "id": "rimedhal-armour-nanosuit",
-        "name": "Nanosuit",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 2970,
-        "description": "A simple, lightweight garment shaped like two cones joined together.",
-        "isEquipment": true,
-        "equipId": "armour-nanosuit"
-      },
-      {
-        "id": "rimedhal-armour-mirage-vest",
-        "name": "Mirage Vest",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 3090,
-        "description": "A unique garment woven from a strange and mysterious fabric., [Effect When Equipped: Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-mirage-vest"
-      },
-      {
         "id": "rimedhal-headwear-eisenhut",
         "name": "Eisenhut",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3110,
         "description": "A heavy iron helmet with a round brim.",
@@ -3785,19 +3905,9 @@ const shopData = [
         "equipId": "headwear-eisenhut"
       },
       {
-        "id": "rimedhal-armour-plate-mail",
-        "name": "Plate Mail",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 3290,
-        "description": "A suit of heavy armour made from sheets of solid steel.",
-        "isEquipment": true,
-        "equipId": "armour-plate-mail"
-      },
-      {
         "id": "rimedhal-headwear-ascetic-s-cap",
         "name": "Ascetic's Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3370,
         "description": "A small, round, magic-enhancing hat worn by monks in training., [Effect When Equipped: Sleep & Dread Immunity]",
@@ -3807,7 +3917,7 @@ const shopData = [
       {
         "id": "rimedhal-headwear-full-face-helm",
         "name": "Full-Face Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3850,
         "description": "A heavy hemispherical helmet that covers the entire head., [Effect When Equipped: Dread Immunity]",
@@ -3815,19 +3925,9 @@ const shopData = [
         "equipId": "headwear-full-face-helm"
       },
       {
-        "id": "rimedhal-armour-protector",
-        "name": "Protector",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4000,
-        "description": "A simple, lightweight garment shaped like two cones joined together.",
-        "isEquipment": true,
-        "equipId": "armour-protector"
-      },
-      {
         "id": "rimedhal-headwear-acorn-hat",
         "name": "Acorn Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 4200,
         "description": "Lightweight, sturdy headwear fashioned from a giant nut.",
@@ -3835,59 +3935,9 @@ const shopData = [
         "equipId": "headwear-acorn-hat"
       },
       {
-        "id": "rimedhal-armour-adamant-armour",
-        "name": "Adamant Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4230,
-        "description": "Heavy full-body protection fashioned from an adamantite shell., [Effect When Equipped: Wind Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-adamant-armour"
-      },
-      {
-        "id": "rimedhal-armour-ninja-garb",
-        "name": "Ninja Garb",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4890,
-        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-ninja-garb"
-      },
-      {
-        "id": "rimedhal-armour-brigandine",
-        "name": "Brigandine",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4930,
-        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
-        "isEquipment": true,
-        "equipId": "armour-brigandine"
-      },
-      {
-        "id": "rimedhal-armour-valkyrie-s-coat",
-        "name": "Valkyrie's Coat",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5230,
-        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-valkyrie-s-coat"
-      },
-      {
-        "id": "rimedhal-armour-kalasiris",
-        "name": "Kalasiris",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5240,
-        "description": "A pleated, magic-enhancing linen garment.",
-        "isEquipment": true,
-        "equipId": "armour-kalasiris"
-      },
-      {
         "id": "rimedhal-headwear-carbon-cap",
         "name": "Carbon Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5320,
         "description": "Super-hard, lightweight armour that protects the entire head., [Effect When Equipped: Contagion Immunity]",
@@ -3897,7 +3947,7 @@ const shopData = [
       {
         "id": "rimedhal-headwear-armet",
         "name": "Armet",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5580,
         "description": "A heavy helmet that protects every inch of the wearer's head, right down to the nape of the neck.",
@@ -3905,64 +3955,14 @@ const shopData = [
         "equipId": "headwear-armet"
       },
       {
-        "id": "rimedhal-armour-cuirass",
-        "name": "Cuirass",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5620,
-        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
-        "isEquipment": true,
-        "equipId": "armour-cuirass"
-      },
-      {
-        "id": "rimedhal-armour-saffron-robes",
-        "name": "Saffron Robes",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5690,
-        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-saffron-robes"
-      },
-      {
-        "id": "rimedhal-armour-crimson-vest",
-        "name": "Crimson Vest",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6170,
-        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-crimson-vest"
-      },
-      {
-        "id": "rimedhal-armour-fluted-armour",
-        "name": "Fluted Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6370,
-        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
-        "isEquipment": true,
-        "equipId": "armour-fluted-armour"
-      },
-      {
         "id": "rimedhal-headwear-dragonskin-headscarf",
         "name": "Dragonskin Headscarf",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 6470,
         "description": "Dashing, magic-enhancing headwear popular with military commanders., [Effect When Equipped: Silence & Confusion Immunity]",
         "isEquipment": true,
         "equipId": "headwear-dragonskin-headscarf"
-      },
-      {
-        "id": "rimedhal-armour-minerva-bustier",
-        "name": "Minerva Bustier",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 7570,
-        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-minerva-bustier"
       },
       {
         "id": "rimedhal-shield-typhoon-shield",
@@ -4055,34 +4055,34 @@ const shopData = [
         "equipId": "spear-crimson-spear"
       },
       {
-        "id": "rimedhal-axe-hawkeye",
+        "id": "rimedhal-axes-hawkeye",
         "name": "Hawkeye",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 3160,
         "description": "A single-edged axe optimised for battle.",
         "isEquipment": true,
-        "equipId": "axe-hawkeye"
+        "equipId": "axes-hawkeye"
       },
       {
-        "id": "rimedhal-sword-oak-staff",
+        "id": "rimedhal-staves-oak-staff",
         "name": "Oak Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 3420,
         "description": "A staff carved from the trunk of a mighty tree.",
         "isEquipment": true,
-        "equipId": "sword-oak-staff"
+        "equipId": "staves-oak-staff"
       },
       {
-        "id": "rimedhal-bow-quickdraw-bow",
+        "id": "rimedhal-bows-quickdraw-bow",
         "name": "Quickdraw Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 3610,
         "description": "A bow that enables the wielder to fire off an arrow and ready another in the blink of an eye., [Effect When Used: Quickdraw]",
         "isEquipment": true,
-        "equipId": "bow-quickdraw-bow"
+        "equipId": "bows-quickdraw-bow"
       },
       {
         "id": "rimedhal-dagger-main-gauche",
@@ -4095,34 +4095,34 @@ const shopData = [
         "equipId": "dagger-main-gauche"
       },
       {
-        "id": "rimedhal-axe-earthbreaker",
+        "id": "rimedhal-axes-earthbreaker",
         "name": "Earthbreaker",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 3880,
         "description": "An axe hewn from a lump of rock., [Element: Earth]",
         "isEquipment": true,
-        "equipId": "axe-earthbreaker"
+        "equipId": "axes-earthbreaker"
       },
       {
-        "id": "rimedhal-sword-rod-of-fire",
+        "id": "rimedhal-staves-rod-of-fire",
         "name": "Rod of Fire",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 4140,
         "description": "A staff imbued with the power of a fiery inferno., [Additional Effect: Fire Attacks Do +30% Damage]",
         "isEquipment": true,
-        "equipId": "sword-rod-of-fire"
+        "equipId": "staves-rod-of-fire"
       },
       {
-        "id": "rimedhal-sword-rod-of-ice",
+        "id": "rimedhal-staves-rod-of-ice",
         "name": "Rod of Ice",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 4140,
         "description": "A staff imbued with the power of the mighty tundra., [Additional Effect: Water Attacks Do +30% Damage]",
         "isEquipment": true,
-        "equipId": "sword-rod-of-ice"
+        "equipId": "staves-rod-of-ice"
       },
       {
         "id": "rimedhal-spear-hinderlance",
@@ -4145,24 +4145,24 @@ const shopData = [
         "equipId": "dagger-air-knife"
       },
       {
-        "id": "rimedhal-bow-ancient-bow",
+        "id": "rimedhal-bows-ancient-bow",
         "name": "Ancient Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 5620,
         "description": "A bow whose origins may be lost in the mists of time, but which is still highly effective today., [Additional Effect: Paralysis]",
         "isEquipment": true,
-        "equipId": "bow-ancient-bow"
+        "equipId": "bows-ancient-bow"
       },
       {
-        "id": "rimedhal-sword-jade-crosier",
+        "id": "rimedhal-staves-jade-crosier",
         "name": "Jade Crosier",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 5720,
         "description": "A wand adorned with an orb said to emit a strange spiritual force.",
         "isEquipment": true,
-        "equipId": "sword-jade-crosier"
+        "equipId": "staves-jade-crosier"
       },
       {
         "id": "rimedhal-spear-halberd",
@@ -4185,14 +4185,14 @@ const shopData = [
         "equipId": "sword-scimitar"
       },
       {
-        "id": "rimedhal-axe-alastor",
+        "id": "rimedhal-axes-alastor",
         "name": "Alastor",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 6300,
         "description": "A blood-red axe favoured by the finest executioners.",
         "isEquipment": true,
-        "equipId": "axe-alastor"
+        "equipId": "axes-alastor"
       },
       {
         "id": "rimedhal-dagger-carving-knife",
@@ -4205,14 +4205,14 @@ const shopData = [
         "equipId": "dagger-carving-knife"
       },
       {
-        "id": "rimedhal-sword-yggdrasil-staff",
+        "id": "rimedhal-staves-yggdrasil-staff",
         "name": "Yggdrasil Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7010,
         "description": "A staff hewn from a legendary tree that's steeped in spiritual power., [Effect When Used: Esuna]",
         "isEquipment": true,
-        "equipId": "sword-yggdrasil-staff"
+        "equipId": "staves-yggdrasil-staff"
       },
       {
         "id": "rimedhal-sword-defender",
@@ -4225,24 +4225,24 @@ const shopData = [
         "equipId": "sword-defender"
       },
       {
-        "id": "rimedhal-sword-gaia-rod",
+        "id": "rimedhal-staves-gaia-rod",
         "name": "Gaia Rod",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7120,
         "description": "A staff imbued with the power of terra firma., [Additional Effect: Earth Attacks Do +30% Damage]",
         "isEquipment": true,
-        "equipId": "sword-gaia-rod"
+        "equipId": "staves-gaia-rod"
       },
       {
-        "id": "rimedhal-bow-great-bow",
+        "id": "rimedhal-bows-great-bow",
         "name": "Great Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 7230,
         "description": "A large bow capable of imparting impressive power to its projectiles.",
         "isEquipment": true,
-        "equipId": "bow-great-bow"
+        "equipId": "bows-great-bow"
       },
       {
         "id": "rimedhal-sword-staggering-sword",
@@ -4265,14 +4265,14 @@ const shopData = [
         "equipId": "spear-chronos-glaive"
       },
       {
-        "id": "rimedhal-axe-summoner-s-axe",
+        "id": "rimedhal-axes-summoner-s-axe",
         "name": "Summoner's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 8360,
         "description": "A strange and sinister axe that's said to have the power to summon demons.",
         "isEquipment": true,
-        "equipId": "axe-summoner-s-axe"
+        "equipId": "axes-summoner-s-axe"
       },
       {
         "id": "rimedhal-dagger-zwill-crossblade",
@@ -4285,24 +4285,24 @@ const shopData = [
         "equipId": "dagger-zwill-crossblade"
       },
       {
-        "id": "rimedhal-sword-hammer-mace",
+        "id": "rimedhal-staves-hammer-mace",
         "name": "Hammer Mace",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 8740,
         "description": "A weapon whose design means it can be used for making things as well as destroying them.",
         "isEquipment": true,
-        "equipId": "sword-hammer-mace"
+        "equipId": "staves-hammer-mace"
       },
       {
-        "id": "rimedhal-bow-shigeto-bow",
+        "id": "rimedhal-bows-shigeto-bow",
         "name": "Shigeto Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 8940,
         "description": "A ceremonial bow of a grand aristocratic dynasty.",
         "isEquipment": true,
-        "equipId": "bow-shigeto-bow"
+        "equipId": "bows-shigeto-bow"
       },
       {
         "id": "rimedhal-sword-blind-blade",
@@ -4325,24 +4325,24 @@ const shopData = [
         "equipId": "spear-wyvern-spear"
       },
       {
-        "id": "rimedhal-axe-sandman-s-axe",
+        "id": "rimedhal-axes-sandman-s-axe",
         "name": "Sandman's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 9460,
         "description": "An axe that sends its victims straight to dreamland., [Additional Effect: Sleep]",
         "isEquipment": true,
-        "equipId": "axe-sandman-s-axe"
+        "equipId": "axes-sandman-s-axe"
       },
       {
-        "id": "rimedhal-sword-gambanteinn",
+        "id": "rimedhal-staves-gambanteinn",
         "name": "Gambanteinn",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 10260,
         "description": "A staff originally offered to a giantess in order to woo her.",
         "isEquipment": true,
-        "equipId": "sword-gambanteinn"
+        "equipId": "staves-gambanteinn"
       },
       {
         "id": "rimedhal-dagger-yatagarasu",
@@ -4365,14 +4365,14 @@ const shopData = [
         "equipId": "sword-ama-no-murakumo"
       },
       {
-        "id": "rimedhal-bow-ama-no-kagoyumi",
+        "id": "rimedhal-bows-ama-no-kagoyumi",
         "name": "Ama-no-Kagoyumi",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 10640,
         "description": "An ancient bow which strikes terror into the hearts of demons., [Extra-Effective Against: Demon Monsters]",
         "isEquipment": true,
-        "equipId": "bow-ama-no-kagoyumi"
+        "equipId": "bows-ama-no-kagoyumi"
       },
       {
         "id": "rimedhal-spear-ama-no-sakahoko",
@@ -4385,14 +4385,14 @@ const shopData = [
         "equipId": "spear-ama-no-sakahoko"
       },
       {
-        "id": "rimedhal-axe-deforester",
+        "id": "rimedhal-axes-deforester",
         "name": "Deforester",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 10810,
         "description": "A legendary axe believed to be capable of felling even Yggdrasil itself., [Extra-Effective Against: Plant Monsters]",
         "isEquipment": true,
-        "equipId": "axe-deforester"
+        "equipId": "axes-deforester"
       }
     ]
   },
@@ -4740,9 +4740,99 @@ const shopData = [
         "equipId": "acc-self-portrait"
       },
       {
+        "id": "holograd-armor-ninja-garb",
+        "name": "Ninja Garb",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4890,
+        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-ninja-garb"
+      },
+      {
+        "id": "holograd-armor-brigandine",
+        "name": "Brigandine",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 4930,
+        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
+        "isEquipment": true,
+        "equipId": "armor-brigandine"
+      },
+      {
+        "id": "holograd-armor-valkyrie-s-coat",
+        "name": "Valkyrie's Coat",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5230,
+        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-valkyrie-s-coat"
+      },
+      {
+        "id": "holograd-armor-kalasiris",
+        "name": "Kalasiris",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5240,
+        "description": "A pleated, magic-enhancing linen garment.",
+        "isEquipment": true,
+        "equipId": "armor-kalasiris"
+      },
+      {
+        "id": "holograd-armor-cuirass",
+        "name": "Cuirass",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5620,
+        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
+        "isEquipment": true,
+        "equipId": "armor-cuirass"
+      },
+      {
+        "id": "holograd-armor-saffron-robes",
+        "name": "Saffron Robes",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 5690,
+        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-saffron-robes"
+      },
+      {
+        "id": "holograd-armor-crimson-vest",
+        "name": "Crimson Vest",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6170,
+        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-crimson-vest"
+      },
+      {
+        "id": "holograd-armor-fluted-armour",
+        "name": "Fluted Armour",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 6370,
+        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
+        "isEquipment": true,
+        "equipId": "armor-fluted-armour"
+      },
+      {
+        "id": "holograd-armor-minerva-bustier",
+        "name": "Minerva Bustier",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 7570,
+        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-minerva-bustier"
+      },
+      {
         "id": "holograd-headwear-pilgrim-s-hat",
         "name": "Pilgrim's Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 60,
         "description": "A simple magic-enhancing cap, as worn by those on spiritual journeys., [Effect When Equipped: Dread Immunity]",
@@ -4752,7 +4842,7 @@ const shopData = [
       {
         "id": "holograd-headwear-adamant-hat",
         "name": "Adamant Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 1450,
         "description": "A unique cap fashioned from an adamantite shell.",
@@ -4762,7 +4852,7 @@ const shopData = [
       {
         "id": "holograd-headwear-tactician-s-hat",
         "name": "Tactician's Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2630,
         "description": "Magic-enhancing military headwear, as worn by officers., [Effect When Equipped: Silence Immunity]",
@@ -4772,7 +4862,7 @@ const shopData = [
       {
         "id": "holograd-headwear-iron-headband",
         "name": "Iron Headband",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 2840,
         "description": "A lightweight metallic band that wraps around the head.",
@@ -4782,7 +4872,7 @@ const shopData = [
       {
         "id": "holograd-headwear-ascetic-s-cap",
         "name": "Ascetic's Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3370,
         "description": "A small, round, magic-enhancing hat worn by monks in training., [Effect When Equipped: Sleep & Dread Immunity]",
@@ -4792,7 +4882,7 @@ const shopData = [
       {
         "id": "holograd-headwear-full-face-helm",
         "name": "Full-Face Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 3850,
         "description": "A heavy hemispherical helmet that covers the entire head., [Effect When Equipped: Dread Immunity]",
@@ -4802,7 +4892,7 @@ const shopData = [
       {
         "id": "holograd-headwear-acorn-hat",
         "name": "Acorn Hat",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 4200,
         "description": "Lightweight, sturdy headwear fashioned from a giant nut.",
@@ -4810,49 +4900,9 @@ const shopData = [
         "equipId": "headwear-acorn-hat"
       },
       {
-        "id": "holograd-armour-ninja-garb",
-        "name": "Ninja Garb",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4890,
-        "description": "A unique outfit that allows its wearer to disappear into the night., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-ninja-garb"
-      },
-      {
-        "id": "holograd-armour-brigandine",
-        "name": "Brigandine",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 4930,
-        "description": "A sturdy yet lightweight garment made of fabric reinforced with metal plates.",
-        "isEquipment": true,
-        "equipId": "armour-brigandine"
-      },
-      {
-        "id": "holograd-armour-valkyrie-s-coat",
-        "name": "Valkyrie's Coat",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5230,
-        "description": "A unique magical coat imbued with great power., [Effect When Equipped: Lightning & Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-valkyrie-s-coat"
-      },
-      {
-        "id": "holograd-armour-kalasiris",
-        "name": "Kalasiris",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5240,
-        "description": "A pleated, magic-enhancing linen garment.",
-        "isEquipment": true,
-        "equipId": "armour-kalasiris"
-      },
-      {
         "id": "holograd-headwear-carbon-cap",
         "name": "Carbon Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5320,
         "description": "Super-hard, lightweight armour that protects the entire head., [Effect When Equipped: Contagion Immunity]",
@@ -4862,7 +4912,7 @@ const shopData = [
       {
         "id": "holograd-headwear-armet",
         "name": "Armet",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 5580,
         "description": "A heavy helmet that protects every inch of the wearer's head, right down to the nape of the neck.",
@@ -4870,64 +4920,14 @@ const shopData = [
         "equipId": "headwear-armet"
       },
       {
-        "id": "holograd-armour-cuirass",
-        "name": "Cuirass",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5620,
-        "description": "A piece of heavy armour designed with a particular focus on protecting the chest.",
-        "isEquipment": true,
-        "equipId": "armour-cuirass"
-      },
-      {
-        "id": "holograd-armour-saffron-robes",
-        "name": "Saffron Robes",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 5690,
-        "description": "Brightly coloured magic-enhancing outer garments worn by practitioners of the ascetic arts., [Effect When Equipped: Water & Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-saffron-robes"
-      },
-      {
-        "id": "holograd-armour-crimson-vest",
-        "name": "Crimson Vest",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6170,
-        "description": "A striking, lightweight scarlet singlet., [Effect When Equipped: Water Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-crimson-vest"
-      },
-      {
-        "id": "holograd-armour-fluted-armour",
-        "name": "Fluted Armour",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 6370,
-        "description": "A suit of heavy armour into which ridges have been cut in order to provide additional protection.",
-        "isEquipment": true,
-        "equipId": "armour-fluted-armour"
-      },
-      {
         "id": "holograd-headwear-dragonskin-headscarf",
         "name": "Dragonskin Headscarf",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 6470,
         "description": "Dashing, magic-enhancing headwear popular with military commanders., [Effect When Equipped: Silence & Confusion Immunity]",
         "isEquipment": true,
         "equipId": "headwear-dragonskin-headscarf"
-      },
-      {
-        "id": "holograd-armour-minerva-bustier",
-        "name": "Minerva Bustier",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 7570,
-        "description": "A daring item of magic-enhancing upperwear once worn by a mighty goddess., [Effect When Equipped: Dark Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-minerva-bustier"
       },
       {
         "id": "holograd-shield-spiked-shield",
@@ -4980,34 +4980,34 @@ const shopData = [
         "equipId": "dagger-carving-knife"
       },
       {
-        "id": "holograd-sword-yggdrasil-staff",
+        "id": "holograd-staves-yggdrasil-staff",
         "name": "Yggdrasil Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7010,
         "description": "A staff hewn from a legendary tree that's steeped in spiritual power., [Effect When Used: Esuna]",
         "isEquipment": true,
-        "equipId": "sword-yggdrasil-staff"
+        "equipId": "staves-yggdrasil-staff"
       },
       {
-        "id": "holograd-sword-gaia-rod",
+        "id": "holograd-staves-gaia-rod",
         "name": "Gaia Rod",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 7120,
         "description": "A staff imbued with the power of terra firma., [Additional Effect: Earth Attacks Do +30% Damage]",
         "isEquipment": true,
-        "equipId": "sword-gaia-rod"
+        "equipId": "staves-gaia-rod"
       },
       {
-        "id": "holograd-bow-great-bow",
+        "id": "holograd-bows-great-bow",
         "name": "Great Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 7230,
         "description": "A large bow capable of imparting impressive power to its projectiles.",
         "isEquipment": true,
-        "equipId": "bow-great-bow"
+        "equipId": "bows-great-bow"
       },
       {
         "id": "holograd-sword-staggering-sword",
@@ -5030,14 +5030,14 @@ const shopData = [
         "equipId": "spear-chronos-glaive"
       },
       {
-        "id": "holograd-axe-summoner-s-axe",
+        "id": "holograd-axes-summoner-s-axe",
         "name": "Summoner's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 8360,
         "description": "A strange and sinister axe that's said to have the power to summon demons.",
         "isEquipment": true,
-        "equipId": "axe-summoner-s-axe"
+        "equipId": "axes-summoner-s-axe"
       },
       {
         "id": "holograd-dagger-zwill-crossblade",
@@ -5050,24 +5050,24 @@ const shopData = [
         "equipId": "dagger-zwill-crossblade"
       },
       {
-        "id": "holograd-sword-hammer-mace",
+        "id": "holograd-staves-hammer-mace",
         "name": "Hammer Mace",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 8740,
         "description": "A weapon whose design means it can be used for making things as well as destroying them.",
         "isEquipment": true,
-        "equipId": "sword-hammer-mace"
+        "equipId": "staves-hammer-mace"
       },
       {
-        "id": "holograd-bow-shigeto-bow",
+        "id": "holograd-bows-shigeto-bow",
         "name": "Shigeto Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 8940,
         "description": "A ceremonial bow of a grand aristocratic dynasty.",
         "isEquipment": true,
-        "equipId": "bow-shigeto-bow"
+        "equipId": "bows-shigeto-bow"
       },
       {
         "id": "holograd-sword-blind-blade",
@@ -5090,24 +5090,24 @@ const shopData = [
         "equipId": "spear-wyvern-spear"
       },
       {
-        "id": "holograd-axe-sandman-s-axe",
+        "id": "holograd-axes-sandman-s-axe",
         "name": "Sandman's Axe",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 9460,
         "description": "An axe that sends its victims straight to dreamland., [Additional Effect: Sleep]",
         "isEquipment": true,
-        "equipId": "axe-sandman-s-axe"
+        "equipId": "axes-sandman-s-axe"
       },
       {
-        "id": "holograd-sword-gambanteinn",
+        "id": "holograd-staves-gambanteinn",
         "name": "Gambanteinn",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 10260,
         "description": "A staff originally offered to a giantess in order to woo her.",
         "isEquipment": true,
-        "equipId": "sword-gambanteinn"
+        "equipId": "staves-gambanteinn"
       },
       {
         "id": "holograd-dagger-yatagarasu",
@@ -5130,14 +5130,14 @@ const shopData = [
         "equipId": "sword-ama-no-murakumo"
       },
       {
-        "id": "holograd-bow-ama-no-kagoyumi",
+        "id": "holograd-bows-ama-no-kagoyumi",
         "name": "Ama-no-Kagoyumi",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 10640,
         "description": "An ancient bow which strikes terror into the hearts of demons., [Extra-Effective Against: Demon Monsters]",
         "isEquipment": true,
-        "equipId": "bow-ama-no-kagoyumi"
+        "equipId": "bows-ama-no-kagoyumi"
       },
       {
         "id": "holograd-spear-ama-no-sakahoko",
@@ -5150,14 +5150,14 @@ const shopData = [
         "equipId": "spear-ama-no-sakahoko"
       },
       {
-        "id": "holograd-axe-deforester",
+        "id": "holograd-axes-deforester",
         "name": "Deforester",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 10810,
         "description": "A legendary axe believed to be capable of felling even Yggdrasil itself., [Extra-Effective Against: Plant Monsters]",
         "isEquipment": true,
-        "equipId": "axe-deforester"
+        "equipId": "axes-deforester"
       }
     ]
   },
@@ -5581,9 +5581,69 @@ const shopData = [
         "equipId": "acc-smart-cravat"
       },
       {
+        "id": "mag-mell-armor-dark-robes",
+        "name": "Dark Robes",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 17200,
+        "description": "A unique ensemble imbued with the power of eternal darkness., [Effect When Equipped: Dark Attacks Do +15% Damage]",
+        "isEquipment": true,
+        "equipId": "armor-dark-robes"
+      },
+      {
+        "id": "mag-mell-armor-luminous-robes",
+        "name": "Luminous Robes",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 17200,
+        "description": "A unique outfit imbued with the power of dazzling light., [Effect When Equipped: Light Attacks Do +15% Damage]",
+        "isEquipment": true,
+        "equipId": "armor-luminous-robes"
+      },
+      {
+        "id": "mag-mell-armor-black-robe",
+        "name": "Black Robe",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 18600,
+        "description": "A flowing, magic-enhancing garment that ripples with irrepressible illusory energy., [Effect When Equipped: Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-black-robe"
+      },
+      {
+        "id": "mag-mell-armor-crystal-mail",
+        "name": "Crystal Mail",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 19400,
+        "description": "Strong and supremely elegant heavy armour hewn from shards of crystal., [Effect When Equipped: Earth Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-crystal-mail"
+      },
+      {
+        "id": "mag-mell-armor-white-robe",
+        "name": "White Robe",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 28000,
+        "description": "A unique and miraculous garment that overflows with spiritual energy., [Effect When Equipped: Wing & Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-white-robe"
+      },
+      {
+        "id": "mag-mell-armor-diamond-chestplate",
+        "name": "Diamond Chestplate",
+        "category": "Armor",
+        "subCategory": "Armor",
+        "price": 30200,
+        "description": "A lightweight piece of armour formed from an extremely hard and durable mineral., [Effect When Equipped: Light Resistance +1]",
+        "isEquipment": true,
+        "equipId": "armor-diamond-chestplate"
+      },
+      {
         "id": "mag-mell-headwear-black-cowl",
         "name": "Black Cowl",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 6080,
         "description": "A unique, sinister hood favoured by spies and other stealthy infiltrators., [Effect When Equipped: Blindness Immunity]",
@@ -5593,7 +5653,7 @@ const shopData = [
       {
         "id": "mag-mell-headwear-dragonskin-headscarf",
         "name": "Dragonskin Headscarf",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 6470,
         "description": "Dashing, magic-enhancing headwear popular with military commanders., [Effect When Equipped: Silence & Confusion Immunity]",
@@ -5603,7 +5663,7 @@ const shopData = [
       {
         "id": "mag-mell-headwear-red-cap",
         "name": "Red Cap",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 6530,
         "description": "Unique, bloodstained headwear usually worn in order to intimidate., [Effect When Equipped: Dread Immunity]",
@@ -5613,7 +5673,7 @@ const shopData = [
       {
         "id": "mag-mell-headwear-royal-crown",
         "name": "Royal Crown",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 15100,
         "description": "An elegant, lightweight, eye-catching coronet handed down through a certain line of kings and queens., [Effect When Equipped: Charm Immunity]",
@@ -5623,7 +5683,7 @@ const shopData = [
       {
         "id": "mag-mell-headwear-crystal-helm",
         "name": "Crystal Helm",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 16200,
         "description": "A strong, heavy and supremely elegant helmet hewn from shards of crystal.",
@@ -5631,39 +5691,9 @@ const shopData = [
         "equipId": "headwear-crystal-helm"
       },
       {
-        "id": "mag-mell-armour-dark-robes",
-        "name": "Dark Robes",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 17200,
-        "description": "A unique ensemble imbued with the power of eternal darkness., [Effect When Equipped: Dark Attacks Do +15% Damage]",
-        "isEquipment": true,
-        "equipId": "armour-dark-robes"
-      },
-      {
-        "id": "mag-mell-armour-luminous-robes",
-        "name": "Luminous Robes",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 17200,
-        "description": "A unique outfit imbued with the power of dazzling light., [Effect When Equipped: Light Attacks Do +15% Damage]",
-        "isEquipment": true,
-        "equipId": "armour-luminous-robes"
-      },
-      {
-        "id": "mag-mell-armour-black-robe",
-        "name": "Black Robe",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 18600,
-        "description": "A flowing, magic-enhancing garment that ripples with irrepressible illusory energy., [Effect When Equipped: Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-black-robe"
-      },
-      {
         "id": "mag-mell-headwear-circlet",
         "name": "Circlet",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 19200,
         "description": "A magic-enhancing crown that boosts the wearer's focus., [Effect When Equipped: Instant Death & Contagion Immunity]",
@@ -5671,19 +5701,9 @@ const shopData = [
         "equipId": "headwear-circlet"
       },
       {
-        "id": "mag-mell-armour-crystal-mail",
-        "name": "Crystal Mail",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 19400,
-        "description": "Strong and supremely elegant heavy armour hewn from shards of crystal., [Effect When Equipped: Earth Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-crystal-mail"
-      },
-      {
         "id": "mag-mell-headwear-hypnos-crown",
         "name": "Hypnos Crown",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 22100,
         "description": "A unique crown named for a benevolent god., [Effect When Equipped: Capture Rate Increased by 10%]",
@@ -5691,29 +5711,9 @@ const shopData = [
         "equipId": "headwear-hypnos-crown"
       },
       {
-        "id": "mag-mell-armour-white-robe",
-        "name": "White Robe",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 28000,
-        "description": "A unique and miraculous garment that overflows with spiritual energy., [Effect When Equipped: Wing & Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-white-robe"
-      },
-      {
-        "id": "mag-mell-armour-diamond-chestplate",
-        "name": "Diamond Chestplate",
-        "category": "Armor",
-        "subCategory": "Armour",
-        "price": 30200,
-        "description": "A lightweight piece of armour formed from an extremely hard and durable mineral., [Effect When Equipped: Light Resistance +1]",
-        "isEquipment": true,
-        "equipId": "armour-diamond-chestplate"
-      },
-      {
         "id": "mag-mell-headwear-ribbon",
         "name": "Ribbon",
-        "category": "Armor",
+        "category": "Headwear",
         "subCategory": "Headwear",
         "price": 200000,
         "description": "A unique, curious and intricately knotted ribbon., [Effect When Equipped: Immunity to Various Status Ailments]",
@@ -5761,14 +5761,14 @@ const shopData = [
         "equipId": "sword-chaos-blade"
       },
       {
-        "id": "mag-mell-sword-sage-s-staff",
+        "id": "mag-mell-staves-sage-s-staff",
         "name": "Sage's Staff",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 24800,
         "description": "A jewelled staff once wielded by a mighty wise man., [Effect When Used: Raise]",
         "isEquipment": true,
-        "equipId": "sword-sage-s-staff"
+        "equipId": "staves-sage-s-staff"
       },
       {
         "id": "mag-mell-dagger-darksteel-kukri",
@@ -5781,14 +5781,14 @@ const shopData = [
         "equipId": "dagger-darksteel-kukri"
       },
       {
-        "id": "mag-mell-bow-sylvan-bow",
+        "id": "mag-mell-bows-sylvan-bow",
         "name": "Sylvan Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 25400,
         "description": "A bow fashioned from the bone of a mighty beast that once belonged to the Queen of the Fairies.",
         "isEquipment": true,
-        "equipId": "bow-sylvan-bow"
+        "equipId": "bows-sylvan-bow"
       },
       {
         "id": "mag-mell-sword-knight-s-sword",
@@ -5811,24 +5811,24 @@ const shopData = [
         "equipId": "spear-roncone"
       },
       {
-        "id": "mag-mell-axe-juggernaut",
+        "id": "mag-mell-axes-juggernaut",
         "name": "Juggernaut",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 28650,
         "description": "A double-edged axe that boasts unstoppable destructive power.",
         "isEquipment": true,
-        "equipId": "axe-juggernaut"
+        "equipId": "axes-juggernaut"
       },
       {
-        "id": "mag-mell-sword-nirvana",
+        "id": "mag-mell-staves-nirvana",
         "name": "Nirvana",
         "category": "Weapons",
-        "subCategory": "Sword",
+        "subCategory": "Staves",
         "price": 42700,
         "description": "A staff imbued with the power of the howling gale., [Effect When Equipped: Wind Attacks Do +30% Damage]",
         "isEquipment": true,
-        "equipId": "sword-nirvana"
+        "equipId": "staves-nirvana"
       },
       {
         "id": "mag-mell-dagger-highroad-star",
@@ -5841,14 +5841,14 @@ const shopData = [
         "equipId": "dagger-highroad-star"
       },
       {
-        "id": "mag-mell-bow-speed-bow",
+        "id": "mag-mell-bows-speed-bow",
         "name": "Speed Bow",
         "category": "Weapons",
-        "subCategory": "Bow",
+        "subCategory": "Bows",
         "price": 43900,
         "description": "The arrows fired by this bow are said to fly faster than the speed of light.",
         "isEquipment": true,
-        "equipId": "bow-speed-bow"
+        "equipId": "bows-speed-bow"
       },
       {
         "id": "mag-mell-sword-excalibur",
@@ -5871,14 +5871,14 @@ const shopData = [
         "equipId": "spear-ryunohige"
       },
       {
-        "id": "mag-mell-axe-parashu",
+        "id": "mag-mell-axes-parashu",
         "name": "Parashu",
         "category": "Weapons",
-        "subCategory": "Axe",
+        "subCategory": "Axes",
         "price": 47200,
         "description": "An axe that can put even goddess-given weapons out of commission., [Effect When Used: Defang]",
         "isEquipment": true,
-        "equipId": "axe-parashu"
+        "equipId": "axes-parashu"
       }
     ]
   }

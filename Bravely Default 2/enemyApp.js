@@ -12,7 +12,8 @@
   let activeClass = 'all';
   let activeFamily = 'all';
   let searchQuery = '';
-  let spoilersRevealed = localStorage.getItem(SPOILER_KEY) === 'true';
+  // Default to revealed (true) so the Bestiary is crisp and readable on load
+  let spoilersRevealed = localStorage.getItem(SPOILER_KEY) !== 'false';
 
   const container = document.getElementById('enemies-container');
   const countEl = document.getElementById('results-count');

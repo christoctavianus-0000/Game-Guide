@@ -70,11 +70,16 @@ describe('Cross-Reference Integrity', () => {
 
   test('Equipment items have valid categories and subtypes', () => {
     assert.ok(equipment.length >= 300, 'Must have at least 300 equipment items');
-    const validCats = new Set(['Weapons', 'Armor', 'Shields', 'Accessories', 'Weapon', 'Accessory']);
+    const validCats = new Set(['Weapons', 'Shields', 'Headwear', 'Armor', 'Accessories']);
+    const validWeaponSubs = new Set(['Dagger', 'Sword', 'Spear', 'Axes', 'Staves', 'Bows']);
     for (const item of equipment) {
       assert.ok(item.id, 'Equipment missing id');
       assert.ok(item.name, 'Equipment missing name');
       assert.ok(validCats.has(item.category), `Invalid category "${item.category}" for ${item.name}`);
+      if (item.category === 'Weapons') {
+        const sub = item.subCategory || item.subtype;
+        assert.ok(validWeaponSubs.has(sub), `Invalid weapon subcategory "${sub}" for ${item.name}`);
+      }
       assert.ok(typeof item.weight === 'number', `Invalid weight for ${item.name}`);
     }
   });

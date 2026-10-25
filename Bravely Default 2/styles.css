@@ -903,11 +903,31 @@ input, select {
 }
 
 .spoiler-blurred {
-  filter: blur(5px);
+  position: relative;
+  opacity: 0.85;
+  transition: opacity var(--transition-fast);
+}
+
+.spoiler-blurred .card-body,
+.spoiler-blurred .card-footer {
+  filter: blur(4px);
   user-select: none;
-  pointer-events: none;
-  opacity: 0.4;
+  opacity: 0.45;
   transition: filter var(--transition-fast), opacity var(--transition-fast);
+}
+
+.spoiler-blurred:hover,
+.spoiler-blurred:focus-within {
+  opacity: 1;
+}
+
+.spoiler-blurred:hover .card-body,
+.spoiler-blurred:hover .card-footer,
+.spoiler-blurred:focus-within .card-body,
+.spoiler-blurred:focus-within .card-footer {
+  filter: none;
+  opacity: 1;
+  user-select: auto;
 }
 
 .spoiler-revealed {

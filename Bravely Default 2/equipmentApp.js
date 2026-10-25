@@ -18,6 +18,7 @@
   const searchInput = /** @type {HTMLInputElement} */ (document.getElementById('equip-search'));
   const subtypeSelect = /** @type {HTMLSelectElement} */ (document.getElementById('subtype-select'));
   const catButtons = /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll('#category-filters .filter-pill'));
+  const weaponSubButtons = /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll('#weapon-sub-filters .filter-pill'));
   const clearBtn = document.getElementById('clear-filters');
   const tableHeaders = /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll('#equip-table th[data-sort]'));
 
@@ -28,27 +29,55 @@
     if (s.includes('axe')) return 'assets/icons/ui/axe.svg';
     if (s.includes('spear')) return 'assets/icons/ui/spear.svg';
     if (s.includes('bow')) return 'assets/icons/ui/bow.svg';
-    if (s.includes('staff')) return 'assets/icons/ui/staff.svg';
+    if (s.includes('staff') || s.includes('stave')) return 'assets/icons/ui/staff.svg';
     if (s.includes('shield')) return 'assets/icons/ui/shield.svg';
-    if (s.includes('headwear') || s.includes('armour') || s.includes('armor')) return 'assets/icons/ui/armor.svg';
+    if (s.includes('headwear') || s.includes('head')) return 'assets/icons/ui/armor.svg';
+    if (s.includes('armour') || s.includes('armor')) return 'assets/icons/ui/armor.svg';
     return 'assets/icons/ui/accessory.svg';
   }
 
+  function normalizeSubtype(str) {
+    if (!str) return '';
+    const s = str.toLowerCase().trim();
+    if (s.startsWith('dagger')) return 'dagger';
+    if (s.startsWith('sword')) return 'sword';
+    if (s.startsWith('spear')) return 'spear';
+    if (s.startsWith('axe')) return 'axes';
+    if (s.startsWith('staf') || s.startsWith('stav') || s.startsWith('rod')) return 'staves';
+    if (s.startsWith('bow')) return 'bows';
+    if (s.startsWith('shield')) return 'shield';
+    if (s.startsWith('head')) return 'headwear';
+    if (s.startsWith('arm')) return 'armor';
+    if (s.startsWith('acc')) return 'accessory';
+    return s;
+  }
+
   function renderModalEquipment(item) {
-    const icon = getSubtypeIcon(item.subtype);
+    const sub = item.subCategory || item.subtype || item.type || 'Gear';
+    const icon = getSubtypeIcon(sub);
     const stats = item.stats || {};
+
+    const pAtk = item.pAtk ?? stats.pAtk ?? 0;
+    const mAtk = item.mAtk ?? stats.mAtk ?? 0;
+    const pDef = item.pDef ?? stats.pDef ?? 0;
+    const mDef = item.mDef ?? stats.mDef ?? 0;
+    const aim = item.aim ?? stats.aim ?? 0;
+    const crit = item.crit ?? stats.crit ?? stats.critical ?? 0;
+    const evasion = item.evasion ?? stats.evasion ?? stats.evade ?? 0;
+    const speed = item.speed ?? stats.speed ?? 0;
+    const price = item.cost ?? item.price;
+    const source = item.acquire || item.source;
 
     const statRows = [
       { label: 'Weight', val: item.weight },
-      { label: 'P.Atk', val: stats.pAtk },
-      { label: 'M.Atk', val: stats.mAtk },
-      { label: 'P.Def', val: stats.pDef },
-      { label: 'M.Def', val: stats.mDef },
-      { label: 'Critical', val: stats.critical },
-      { label: 'Aim / Hit', val: stats.aim },
-      { label: 'Evade', val: stats.evade },
-      { label: 'Speed', val: stats.speed },
-      { label: 'Restorative Pts', val: stats.restorePts },
+      { label: 'P.Atk', val: pAtk },
+      { label: 'M.Atk', val: mAtk },
+      { label: 'P.Def', val: pDef },
+      { label: 'M.Def', val: mDef },
+      { label: 'Critical', val: crit },
+      { label: 'Aim / Hit', val: aim },
+      { label: 'Evade', val: evasion },
+      { label: 'Speed', val: speed },
     ].filter((s) => s.val !== undefined && s.val !== null && s.val !== 0);
 
     const statGridHtml = statRows.map((s) => `
@@ -65,7 +94,7 @@
           <div>
             <h2 id="modal-title" class="modal-title">${window.BD2.escapeHtml(item.name)}</h2>
             <p style="font-size: 0.85rem; color: var(--text-muted);">
-              ${window.BD2.escapeHtml(item.category)} &bull; ${window.BD2.escapeHtml(item.subtype)} &bull; Price: <strong>${window.BD2.escapeHtml(item.price ? item.price + ' pg' : 'Not sold')}</strong>
+              ${window.BD2.escapeHtml(item.category)} &bull; ${window.BD2.escapeHtml(sub)} &bull; Price: <strong>${window.BD2.escapeHtml(price ? Number(price).toLocaleString() + ' pg' : 'Not sold')}</strong>
             </p>
           </div>
         </div>
@@ -79,13 +108,13 @@
         <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1.25rem;">
           <div style="font-weight: 600; color: var(--asterisk-gold); margin-bottom: 0.35rem;">Special Effects &amp; Attributes</div>
           <div style="font-size: 0.9rem; color: var(--text-primary); line-height: 1.5;">
-            ${window.BD2.escapeHtml(item.effect || 'Standard piece of equipment with no innate elemental or passive attributes.')}
+            ${window.BD2.escapeHtml(item.effect || item.description || 'Standard piece of equipment with no innate elemental or passive attributes.')}
           </div>
         </div>
 
-        ${item.source ? `
+        ${source ? `
         <div style="font-size: 0.85rem; color: var(--text-muted);">
-          <strong>Acquisition:</strong> ${window.BD2.escapeHtml(item.source)}
+          <strong>Acquisition:</strong> ${window.BD2.escapeHtml(source)}
         </div>` : ''}
       </div>
     `;
@@ -96,25 +125,31 @@
     const q = searchQuery.toLowerCase().trim();
 
     const filtered = items.filter((item) => {
+      const itemCat = item.category || '';
+      const itemSub = item.subCategory || item.subtype || item.type || '';
+
       // Category filter
       if (activeCategory === 'fav') {
         if (!window.BD2.isFavorite(FAV_KEY, item.id)) return false;
       } else if (activeCategory !== 'all') {
-        if (item.category !== activeCategory) return false;
+        const catNorm = activeCategory.toLowerCase().replace(/s$/, '');
+        const itemCatNorm = itemCat.toLowerCase().replace(/s$/, '');
+        if (catNorm !== itemCatNorm) return false;
       }
 
       // Subtype filter
       if (activeSubtype !== 'all') {
-        if (item.subtype !== activeSubtype) return false;
+        if (normalizeSubtype(itemSub) !== normalizeSubtype(activeSubtype)) return false;
       }
 
       // Search query
       if (q) {
         const matchesName = item.name.toLowerCase().includes(q);
-        const matchesSubtype = (item.subtype || '').toLowerCase().includes(q);
-        const matchesEffect = (item.effect || '').toLowerCase().includes(q);
-        const matchesSource = (item.source || '').toLowerCase().includes(q);
-        if (!matchesName && !matchesSubtype && !matchesEffect && !matchesSource) return false;
+        const matchesCat = itemCat.toLowerCase().includes(q);
+        const matchesSub = itemSub.toLowerCase().includes(q);
+        const matchesEffect = (item.effect || item.description || '').toLowerCase().includes(q);
+        const matchesSource = (item.acquire || item.source || '').toLowerCase().includes(q);
+        if (!matchesName && !matchesCat && !matchesSub && !matchesEffect && !matchesSource) return false;
       }
 
       return true;
@@ -124,15 +159,18 @@
     filtered.sort((a, b) => {
       let valA, valB;
 
-      if (['pAtk', 'mAtk', 'pDef', 'mDef'].includes(sortField)) {
-        valA = a.stats?.[sortField] || 0;
-        valB = b.stats?.[sortField] || 0;
-      } else if (['weight', 'price'].includes(sortField)) {
-        valA = Number(a[sortField]) || 0;
-        valB = Number(b[sortField]) || 0;
+      if (['pAtk', 'mAtk', 'pDef', 'mDef', 'aim', 'crit', 'evasion', 'speed'].includes(sortField)) {
+        valA = a[sortField] ?? a.stats?.[sortField] ?? 0;
+        valB = b[sortField] ?? b.stats?.[sortField] ?? 0;
+      } else if (sortField === 'price' || sortField === 'cost') {
+        valA = Number(a.cost ?? a.price) || 0;
+        valB = Number(b.cost ?? b.price) || 0;
+      } else if (sortField === 'weight') {
+        valA = Number(a.weight) || 0;
+        valB = Number(b.weight) || 0;
       } else {
-        valA = String(a[sortField] || '').toLowerCase();
-        valB = String(b[sortField] || '').toLowerCase();
+        valA = String(a[sortField] || a.name || '').toLowerCase();
+        valB = String(b[sortField] || b.name || '').toLowerCase();
       }
 
       if (valA < valB) return sortAsc ? -1 : 1;
@@ -155,15 +193,22 @@
     } else {
       tableBody.innerHTML = items.map((item) => {
         const isFav = window.BD2.isFavorite(FAV_KEY, item.id);
-        const icon = getSubtypeIcon(item.subtype);
+        const sub = item.subCategory || item.subtype || item.type || 'Gear';
+        const icon = getSubtypeIcon(sub);
         const stats = item.stats || {};
+
+        const pAtkVal = item.pAtk ?? stats.pAtk ?? 0;
+        const mAtkVal = item.mAtk ?? stats.mAtk ?? 0;
+        const pDefVal = item.pDef ?? stats.pDef ?? 0;
+        const mDefVal = item.mDef ?? stats.mDef ?? 0;
+        const costVal = item.cost ?? item.price;
 
         const fmtStat = (val) => {
           if (!val) return '<span style="color: var(--text-muted); opacity: 0.5;">—</span>';
           return `<span style="font-family: var(--font-mono); font-weight: 600; color: var(--text-crystal);">${val > 0 ? '+' + val : val}</span>`;
         };
 
-        const priceText = item.price ? `${item.price.toLocaleString()} pg` : '—';
+        const priceText = costVal ? `${Number(costVal).toLocaleString()} pg` : '—';
 
         return `
           <tr id="row-${window.BD2.escapeHtml(item.id)}">
@@ -173,13 +218,13 @@
                 <span>${window.BD2.escapeHtml(item.name)}</span>
               </button>
             </td>
-            <td><span class="card-badge">${window.BD2.escapeHtml(item.subtype)}</span></td>
+            <td><span class="card-badge">${window.BD2.escapeHtml(sub)}</span></td>
             <td style="font-family: var(--font-mono);">${window.BD2.escapeHtml(item.weight ?? '—')}</td>
-            <td>${fmtStat(stats.pAtk)}</td>
-            <td>${fmtStat(stats.mAtk)}</td>
-            <td>${fmtStat(stats.pDef)}</td>
-            <td>${fmtStat(stats.mDef)}</td>
-            <td style="font-size: 0.82rem; max-width: 320px;">${window.BD2.escapeHtml(item.effect || '—')}</td>
+            <td>${fmtStat(pAtkVal)}</td>
+            <td>${fmtStat(mAtkVal)}</td>
+            <td>${fmtStat(pDefVal)}</td>
+            <td>${fmtStat(mDefVal)}</td>
+            <td style="font-size: 0.82rem; max-width: 320px;">${window.BD2.escapeHtml(item.effect || item.description || '—')}</td>
             <td style="font-family: var(--font-mono); font-size: 0.85rem;">${window.BD2.escapeHtml(priceText)}</td>
             <td style="text-align: center;">
               <button type="button" class="btn-fav ${isFav ? 'active' : ''}" data-id="${window.BD2.escapeHtml(item.id)}" aria-label="Favorite equipment" style="width: 26px; height: 26px; font-size: 0.85rem;">
@@ -193,6 +238,14 @@
     countEl.textContent = items.length;
   }
 
+  function syncSubtypeControls(subVal) {
+    activeSubtype = subVal;
+    subtypeSelect.value = subVal;
+    weaponSubButtons.forEach((btn) => {
+      btn.classList.toggle('active', (btn.dataset.sub || 'all') === subVal);
+    });
+  }
+
   function resetFilters() {
     activeCategory = 'all';
     activeSubtype = 'all';
@@ -201,6 +254,9 @@
     subtypeSelect.value = 'all';
     catButtons.forEach((btn) => {
       btn.classList.toggle('active', btn.dataset.cat === 'all');
+    });
+    weaponSubButtons.forEach((btn) => {
+      btn.classList.toggle('active', (btn.dataset.sub || 'all') === 'all');
     });
     filterAndSortEquipment();
   }
@@ -227,8 +283,17 @@
     });
 
     subtypeSelect.addEventListener('change', (e) => {
-      activeSubtype = (/** @type {HTMLSelectElement} */ (e.target)).value;
+      const val = (/** @type {HTMLSelectElement} */ (e.target)).value;
+      syncSubtypeControls(val);
       filterAndSortEquipment();
+    });
+
+    weaponSubButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const subVal = btn.dataset.sub || 'all';
+        syncSubtypeControls(subVal);
+        filterAndSortEquipment();
+      });
     });
 
     catButtons.forEach((btn) => {
@@ -236,6 +301,10 @@
         catButtons.forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
         activeCategory = btn.dataset.cat || 'all';
+        // If clicking a non-weapon category, reset weapon subcategory
+        if (activeCategory !== 'all' && activeCategory !== 'Weapons') {
+          syncSubtypeControls('all');
+        }
         filterAndSortEquipment();
       });
     });

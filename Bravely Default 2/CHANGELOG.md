@@ -2,6 +2,30 @@
 
 All notable changes to the Bravely Default II Codex module are documented here.
 
+## [1.2.0] - 2026-10-25
+
+### Fixed & Enhanced
+- **Bestiary Blur Resolution (`enemy.html`, `enemyApp.js`, `styles.css`)**:
+  - Resolved default blur issue on Bestiary page: `spoilersRevealed` now defaults to `true` on initial page load, ensuring all monsters and Asterisk bosses are immediately crisp, visible, and interactive.
+  - Re-architected `.spoiler-blurred` CSS so that even if the user manually engages the spoiler toggle to "Hidden", boss cards remain cleanly structured with crisp header badges and hover/focus inspection reveals, preventing broken or muddy smearing.
+- **Equipment Categorization & Weapon Subcategory Restructuring (`equipment.html`, `equipmentApp.js`, `parse_equipment.py`, `equipmentData.json`, `equipmentData.js`)**:
+  - Restructured equipment into the exact 5 canonical categories requested:
+    1. **Weapons** (135 items)
+    2. **Shields** (17 items)
+    3. **Headwear** (45 items)
+    4. **Armor** (45 items)
+    5. **Accessories** (67 items)
+  - Fixed wiki parser section matching for Staves (which had previously fallen back to Swords), correctly categorizing all weapons into the 6 weapon subcategories:
+    - **Dagger** (21 items)
+    - **Sword** (24 items)
+    - **Spear** (22 items)
+    - **Axes** (23 items)
+    - **Staves** (26 items)
+    - **Bows** (19 items)
+  - Added dedicated Weapon Subcategory filter pill bar in `equipment.html` with instant one-tap filtering across Dagger, Sword, Spear, Axes, Staves, and Bows.
+  - Fixed equipment table stat display bug where `pAtk`, `mAtk`, `pDef`, `mDef`, and `price` values rendered as "—"; all item stats now cleanly display their numerical values.
+  - Updated `types/codex-types.d.ts` and `tests/cross_reference.test.js` validating the 5 categories and weapon subcategories.
+
 ## [1.1.0] - 2026-10-25
 
 ### Added & Enhanced

@@ -52,11 +52,26 @@ interface EquipmentEntry {
   name: string;
   category: string;
   subtype: string;
+  subCategory?: string;
+  type?: string;
+  number?: string;
+  pAtk?: number;
+  mAtk?: number;
+  pDef?: number;
+  mDef?: number;
+  aim?: number;
+  crit?: number;
+  evasion?: number;
+  speed?: number;
   weight: number;
+  cost?: number;
   price: number | null;
-  effect: string | null;
+  acquire?: string;
   source: string | null;
-  stats: EquipmentStats;
+  description?: string;
+  effect: string | null;
+  isTribulation?: boolean;
+  stats?: EquipmentStats;
 }
 
 interface EnemyStats {
