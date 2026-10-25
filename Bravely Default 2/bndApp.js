@@ -78,43 +78,45 @@
 
     return `
       <article class="codex-card bnd-card" id="card-${window.BD2.escapeHtml(card.id)}" data-id="${window.BD2.escapeHtml(card.id)}">
-        <div style="display: flex; gap: 0.85rem; margin-bottom: 0.75rem;">
-          <div style="flex-shrink: 0;">
-            <button type="button" class="card-image-btn" data-id="${window.BD2.escapeHtml(card.id)}" title="Click to view artwork" style="background: none; border: none; padding: 0; cursor: pointer; display: block;">
-              <img src="${window.BD2.escapeHtml(imgSrc)}" 
-                   alt="${window.BD2.escapeHtml(card.name)}" 
-                   style="width: 80px; height: 104px; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.4); border: 1px solid var(--border-subtle); display: block;"
-                   onerror="this.onerror=null;this.src='${window.BD2.escapeHtml(fallbackSvg)}';"
-                   loading="lazy">
-            </button>
-          </div>
-          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
-            <header style="margin-bottom: 0.35rem;">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.35rem;">
-                <h3 class="card-title" style="font-size: 1.05rem; line-height: 1.25; margin: 0;">${window.BD2.escapeHtml(card.name)}</h3>
-                <button type="button" class="btn-fav ${isFav ? 'active' : ''}" data-id="${window.BD2.escapeHtml(card.id)}" aria-label="Favorite card" style="width: 28px; height: 28px; font-size: 0.85rem; flex-shrink: 0;">
-                  ★
-                </button>
-              </div>
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.35rem;">
-                <span class="card-badge" ${getBadgeClass(card.classification)}>${window.BD2.escapeHtml(card.classification)}</span>
-                <span style="color: var(--asterisk-gold); font-size: 0.82rem; letter-spacing: 1px;">${window.BD2.escapeHtml(stars)}</span>
-              </div>
-            </header>
-
-            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem;">
-              ${card.family && card.family !== 'Special' && card.family !== card.classification ? `<div>Family: <strong style="color: var(--text-crystal);">${window.BD2.escapeHtml(card.family)}</strong></div>` : ''}
-              ${rulesList ? `<div style="margin-top: 0.25rem;">${rulesList}</div>` : ''}
-            </div>
-          </div>
+        <!-- Left Side: Large B 'n' D Card Image -->
+        <div class="bnd-card-media">
+          <button type="button" class="card-image-btn" data-id="${window.BD2.escapeHtml(card.id)}" title="Click to view full card" style="background: none; border: none; padding: 0; cursor: pointer; display: block; width: 100%;">
+            <img src="${window.BD2.escapeHtml(imgSrc)}" 
+                 alt="${window.BD2.escapeHtml(card.name)}" 
+                 onerror="this.onerror=null;this.src='${window.BD2.escapeHtml(fallbackSvg)}';"
+                 loading="lazy">
+          </button>
         </div>
 
-        <!-- Card Effect displayed directly inside the card (no modal needed) -->
-        <div class="card-effect-box" style="background: var(--bg-surface-elevated); padding: 0.65rem 0.85rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-top: auto; font-size: 0.85rem; line-height: 1.5; color: var(--text-primary);">
-          <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--asterisk-gold); font-weight: 600; margin-bottom: 0.2rem;">
-            Card Effect
+        <!-- Right Side: Header, Classification, Star Tier, Family, and Card Effect -->
+        <div class="bnd-card-body">
+          <header style="margin-bottom: 0.35rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.35rem;">
+              <h3 class="card-title" style="font-size: 1.05rem; line-height: 1.25; margin: 0;">${window.BD2.escapeHtml(card.name)}</h3>
+              <button type="button" class="btn-fav ${isFav ? 'active' : ''}" data-id="${window.BD2.escapeHtml(card.id)}" aria-label="Favorite card" style="width: 28px; height: 28px; font-size: 0.85rem; flex-shrink: 0;">
+                ★
+              </button>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.35rem; flex-wrap: wrap; gap: 0.35rem;">
+              <span class="card-badge" ${getBadgeClass(card.classification)}>${window.BD2.escapeHtml(card.classification)}</span>
+              <span style="color: var(--asterisk-gold); font-size: 0.85rem; letter-spacing: 1px;">${window.BD2.escapeHtml(stars)}</span>
+            </div>
+          </header>
+
+          <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.15rem;">
+            ${card.family && card.family !== 'Special' && card.family !== card.classification ? `<div>Family: <strong style="color: var(--text-crystal);">${window.BD2.escapeHtml(card.family)}</strong></div>` : ''}
+            ${rulesList ? `<div style="margin-top: 0.25rem; display: flex; flex-wrap: wrap; gap: 0.25rem;">${rulesList}</div>` : ''}
           </div>
-          <div>${window.BD2.escapeHtml(card.effect || 'This card has no additional effect.')}</div>
+
+          <!-- Card Effect on the Right Side -->
+          <div class="bnd-effect-box">
+            <div class="bnd-effect-title">
+              <span>Card Effect</span>
+            </div>
+            <div class="bnd-effect-text">
+              ${window.BD2.escapeHtml(card.effect || 'This card has no additional effect.')}
+            </div>
+          </div>
         </div>
       </article>
     `;
