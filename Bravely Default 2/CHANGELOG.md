@@ -2,6 +2,15 @@
 
 All notable changes to the Bravely Default II Codex module are documented here.
 
+## [1.2.1] - 2026-10-26
+
+### Asset & Visual Alignment
+- **Bravebearer Job Icon Modernization (`assets/jobs/bravebearer.png`)**:
+  - Replaced the low-resolution / mismatched Bravebearer icon with the user-provided high-definition four-crystal medallion artwork.
+  - Stripped fake checkerboard background artifacts using a 4x supersampled subpixel circular mask centered at `(513, 513)` with radius `476px`.
+  - Normalized canvas dimensions to exactly `240x240` RGBA in true PNG format, centering the 222px medallion with a soft ambient occlusion drop-shadow matching the exact visual style of the other 23 job icons (`freelancer.png`, `vanguard.png`, etc.).
+  - Preserved crystal facet sharpness with calibrated unsharp masking across downsampling.
+
 ## [1.2.0] - 2026-10-25
 
 ### Fixed & Enhanced
