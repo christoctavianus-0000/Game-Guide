@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1220">
+  <meta name="description" content="Bravely Default II Side Quests Codex — complete Excillant subquest journal with chapter filters, objectives, rewards, and completion tracking.">
   <title>Side Quests Codex — Bravely Default II Game Guide</title>
   <link rel="stylesheet" href="styles.css">
   <script src="themeToggle.js"></script>
 </head>
 <body>
   <!-- Skip link for keyboard users -->
-  <a class="skip-link" href="#main-content" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;" onfocus="this.style.position='static'; this.style.width='auto'; this.style.height='auto';">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Fixed Desktop Rail -->
   <aside class="site-rail" aria-label="Codex navigation">
@@ -90,7 +92,7 @@
       <div class="stats-bar">
         <div class="stat-chip">Total Quests: <strong id="stat-total">69</strong></div>
         <div class="stat-chip">Completed: <strong id="stat-completed" style="color: var(--vitality-green);">0</strong></div>
-        <div class="stat-chip">Chapters: <strong>Prologue – Ch. 7</strong></div>
+        <div class="stat-chip">Chapters: <strong>Prologue – Ch. 6</strong></div>
       </div>
     </section>
 
@@ -102,7 +104,7 @@
           <input type="search" id="quest-search" class="search-input" placeholder="Search by quest name, client, reward..." aria-label="Search quests">
         </div>
 
-        <div class="filter-pills" id="chapter-filters" role="group" aria-label="Filter by chapter">
+        <div class="filter-pills" id="chapter-filters" role="group" aria-label="Filter by chapter or status">
           <button type="button" class="filter-pill active" data-ch="all">All Chapters</button>
           <button type="button" class="filter-pill" data-ch="Prologue">Prologue</button>
           <button type="button" class="filter-pill" data-ch="Chapter 1">Ch. 1</button>
@@ -111,7 +113,8 @@
           <button type="button" class="filter-pill" data-ch="Chapter 4">Ch. 4</button>
           <button type="button" class="filter-pill" data-ch="Chapter 5">Ch. 5</button>
           <button type="button" class="filter-pill" data-ch="Chapter 6">Ch. 6</button>
-          <button type="button" class="filter-pill" data-ch="Chapter 7">Ch. 7</button>
+          <button type="button" class="filter-pill" data-ch="pending">Pending</button>
+          <button type="button" class="filter-pill" data-ch="done">✓ Completed</button>
           <button type="button" class="filter-pill" data-ch="fav">★ Saved</button>
         </div>
       </div>
@@ -129,7 +132,7 @@
   </main>
 
   <!-- Modal Backdrop -->
-  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-window">
       <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
       <div id="modal-content"></div>

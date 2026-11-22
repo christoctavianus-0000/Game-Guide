@@ -86,11 +86,44 @@ describe('Cross-Reference Integrity', () => {
 
   test('Enemy bestiary entries have weaknesses and valid classification', () => {
     assert.ok(enemies.length >= 250, 'Must have at least 250 bestiary entries');
+    const counts = { 'Asterisk Boss': 0, 'Rare Monster': 0, Monster: 0 };
     for (const enemy of enemies) {
       assert.ok(enemy.id, 'Enemy missing id');
       assert.ok(enemy.name, 'Enemy missing name');
+      assert.ok(Object.hasOwn(counts, enemy.classification), `Enemy ${enemy.name} has invalid classification: ${enemy.classification}`);
+      counts[enemy.classification] += 1;
       assert.ok(Array.isArray(enemy.weaknesses), `Enemy ${enemy.name} weaknesses must be an array`);
+      assert.ok(enemy.hp !== undefined && enemy.hp !== null && String(enemy.hp).trim() !== '', `Enemy ${enemy.name} missing hp`);
     }
+    assert.equal(counts['Asterisk Boss'], 20);
+    assert.equal(counts['Rare Monster'], 7);
+    assert.equal(counts.Monster, 265);
+  });
+
+  test('UI filter controls align with canonical dataset values', () => {
+    const indexHtml = fs.readFileSync(path.join(BASE_DIR, 'index.html'), 'utf-8');
+    assert.ok(indexHtml.includes('data-role="Specialist"'), 'index.html must include Specialist role filter pill');
+    assert.ok(indexHtml.includes('Lv. 15'), 'index.html must display Max Level Lv. 15');
+
+    const shopHtml = fs.readFileSync(path.join(BASE_DIR, 'shop.html'), 'utf-8');
+    const shopCategories = new Set(shops.flatMap((s) => s.inventory.map((i) => i.category)));
+    for (const cat of shopCategories) {
+      assert.ok(shopHtml.includes(`data-cat="${cat}"`), `shop.html missing category filter pill for ${cat}`);
+    }
+
+    const questHtml = fs.readFileSync(path.join(BASE_DIR, 'quest.html'), 'utf-8');
+    assert.ok(questHtml.includes('data-ch="pending"'), 'quest.html must include Pending status filter');
+    assert.ok(questHtml.includes('data-ch="done"'), 'quest.html must include Completed status filter');
+    assert.ok(!questHtml.includes('data-ch="Chapter 7"'), 'quest.html should not include dead Chapter 7 filter');
+
+    const enemyAppJs = fs.readFileSync(path.join(BASE_DIR, 'enemyApp.js'), 'utf-8');
+    assert.ok(enemyAppJs.includes('function formatHp('), 'enemyApp.js must define formatHp() for string/range HP values');
+    assert.ok(!enemyAppJs.includes('Number(enemy.hp'), 'enemyApp.js must not coerce range HP strings with Number(enemy.hp)');
+    assert.ok(enemyAppJs.includes('try {') && enemyAppJs.includes('SPOILER_KEY'), 'enemyApp.js must wrap SPOILER_KEY localStorage access in try/catch');
+
+    const utilsJs = fs.readFileSync(path.join(BASE_DIR, 'utils.js'), 'utf-8');
+    assert.ok(utilsJs.includes('scrollTop = 0'), 'utils.js openModal must reset modal scrollTop');
+    assert.ok(utilsJs.includes('lastFocusedElement'), 'utils.js must restore focus on modal close');
   });
 
   test('All 69 subquests have valid numbers and chapters', () => {

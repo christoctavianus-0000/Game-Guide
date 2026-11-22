@@ -77,6 +77,14 @@
   --text-crystal-bright: #0369a1;
   --text-gold: #b45309;
 
+  --crystal-sky: #0284c7;
+  --crystal-glow: rgba(2, 132, 199, 0.2);
+  --asterisk-gold: #b45309;
+  --asterisk-glow: rgba(180, 83, 9, 0.2);
+  --arcana-purple: #7e22ce;
+  --bravery-red: #dc2626;
+  --vitality-green: #059669;
+
   --shadow-card: 0 3px 12px rgba(15, 23, 42, 0.07), inset 0 1px 0 rgba(255, 255, 255, 0.8);
   --shadow-card-hover: 0 8px 22px rgba(15, 23, 42, 0.12), 0 0 14px rgba(2, 132, 199, 0.12);
   --shadow-modal: 0 16px 36px rgba(15, 23, 42, 0.22), 0 0 24px rgba(2, 132, 199, 0.15);
@@ -87,6 +95,38 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Skip link for keyboard accessibility */
+.skip-link {
+  position: absolute;
+  top: -120%;
+  left: 1rem;
+  z-index: 200;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  background: var(--crystal-sky);
+  color: #070a13;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: var(--shadow-card);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+  color: #070a13;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--crystal-sky);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 html {
@@ -100,8 +140,24 @@ html {
 body {
   min-height: 100vh;
   background: radial-gradient(circle at 50% 0%, var(--bg-surface-elevated) 0%, var(--bg-canvas) 70%);
-  background-attachment: fixed;
   overflow-x: hidden;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-link,
+.site-rail-link,
+.theme-toggle-btn,
+.filter-pill,
+.btn-primary,
+.btn-fav,
+.clear-btn,
+.modal-close-btn,
+.spoiler-toggle,
+.codex-table th[data-sort] {
+  touch-action: manipulation;
 }
 
 a {
@@ -135,7 +191,6 @@ input, select {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1.5rem 1.25rem 4rem;
-  transition: padding var(--transition-smooth);
 }
 
 .site-nav {
@@ -204,6 +259,8 @@ input, select {
   overflow-x: auto;
   padding-bottom: 2px;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
 }
 
 .site-nav-links::-webkit-scrollbar {
@@ -221,7 +278,40 @@ input, select {
   color: var(--text-secondary);
   border: 1px solid transparent;
   white-space: nowrap;
-  transition: all var(--transition-fast);
+  scroll-snap-align: start;
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@media (max-width: 1099px) {
+  .site-nav-inner {
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+  }
+
+  .brand-group {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .nav-actions {
+    flex-shrink: 0;
+  }
+
+  .site-nav-links {
+    order: 3;
+    flex: 1 0 100%;
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 0.5rem;
+    margin-top: 0.15rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .brand-subtitle {
+    display: none;
+  }
 }
 
 .nav-link:hover {
@@ -261,7 +351,9 @@ input, select {
   color: var(--text-secondary);
   font-size: 0.85rem;
   font-weight: 500;
-  transition: all var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .theme-toggle-btn:hover {
@@ -318,7 +410,9 @@ input, select {
     color: var(--text-secondary);
     text-align: center;
     border: 1px solid transparent;
-    transition: all var(--transition-fast);
+    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+    user-select: none;
+    -webkit-user-select: none;
   }
 
   .site-rail-link:hover {
@@ -431,12 +525,16 @@ input, select {
 
 .search-input {
   width: 100%;
-  padding: 0.65rem 1rem 0.65rem 2.5rem;
+  padding: 0.65rem 1rem;
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   color: var(--text-primary);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.search-box .search-input {
+  padding-left: 2.5rem;
 }
 
 .search-input:focus {
@@ -471,7 +569,9 @@ input, select {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-secondary);
-  transition: all var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .filter-pill:hover {
@@ -526,6 +626,8 @@ input, select {
   display: flex;
   flex-direction: column;
   position: relative;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 260px;
   transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
@@ -538,7 +640,7 @@ input, select {
 /* B 'n' D Codex Card Layout (Large card image on left, effect and details on right) */
 .bnd-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -720,7 +822,9 @@ input, select {
   color: var(--text-crystal-bright);
   font-size: 0.85rem;
   font-weight: 600;
-  transition: all var(--transition-fast);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .btn-primary:hover {
@@ -740,7 +844,9 @@ input, select {
   justify-content: center;
   font-size: 0.95rem;
   color: var(--text-muted);
-  transition: all var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .btn-fav:hover {
@@ -752,6 +858,44 @@ input, select {
   color: var(--asterisk-gold);
   border-color: var(--border-gold);
   background: rgba(251, 191, 36, 0.15);
+}
+
+/* Side Quests completion state */
+.quest-num-frame {
+  width: 44px;
+  height: 44px;
+  border-color: var(--border-crystal);
+}
+
+.quest-num-text {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-crystal);
+}
+
+.codex-card.quest-done {
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.codex-card.quest-done .quest-num-frame {
+  border-color: var(--vitality-green);
+}
+
+.codex-card.quest-done .quest-num-text {
+  color: var(--vitality-green);
+}
+
+.codex-card.quest-done .card-title {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.codex-card.quest-done .check-done-btn,
+.check-done-btn.active {
+  color: var(--vitality-green);
+  border-color: var(--vitality-green);
+  background: rgba(52, 211, 153, 0.14);
 }
 
 /* ==========================================================================
@@ -790,6 +934,13 @@ input, select {
 .grade-C { color: #cbd5e1; }
 .grade-D { color: #94a3b8; }
 .grade-E { color: #f87171; }
+
+[data-theme="light"] .grade-S { color: #b45309; }
+[data-theme="light"] .grade-A { color: #0284c7; }
+[data-theme="light"] .grade-B { color: #059669; }
+[data-theme="light"] .grade-C { color: #475569; }
+[data-theme="light"] .grade-D { color: #64748b; }
+[data-theme="light"] .grade-E { color: #dc2626; }
 
 /* ==========================================================================
    DATA TABLES (Abilities, Equipment, Shops, Enemies)
@@ -847,6 +998,8 @@ input, select {
 }
 
 .codex-table tbody tr {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 52px;
   transition: background var(--transition-fast);
 }
 
@@ -967,8 +1120,10 @@ input, select {
   border-radius: 16px;
   width: 100%;
   max-width: 680px;
-  max-height: 85vh;
+  max-height: 85dvh;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   padding: 1.75rem;
   box-shadow: var(--shadow-modal);
   position: relative;
@@ -994,7 +1149,9 @@ input, select {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .modal-close-btn:hover {
@@ -1021,6 +1178,16 @@ input, select {
   line-height: 1.6;
 }
 
+.nav-link:active,
+.theme-toggle-btn:active,
+.filter-pill:active,
+.btn-primary:active,
+.btn-fav:active,
+.modal-close-btn:active,
+.clear-btn:active {
+  transform: scale(0.97);
+}
+
 /* ==========================================================================
    RESPONSIVE LAYOUT RULES (Mobile & Desktop-on-Mobile 761px - 1180px)
    ========================================================================== */
@@ -1037,7 +1204,12 @@ input, select {
     font-size: 0.95rem;
   }
 
-  .card-grid {
+  .stats-bar {
+    gap: 0.5rem;
+  }
+
+  .card-grid,
+  .bnd-card-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1045,18 +1217,96 @@ input, select {
     grid-template-columns: 1fr;
   }
 
+  .codex-table th,
+  .codex-table td {
+    padding: 0.6rem 0.65rem;
+    font-size: 0.84rem;
+  }
+
+  .modal-backdrop {
+    align-items: flex-end;
+    padding: 0;
+  }
+
   .modal-window {
-    padding: 1.25rem;
+    padding: 1.25rem 1rem calc(1.25rem + env(safe-area-inset-bottom));
+    max-width: none;
+    max-height: 90dvh;
+    border-radius: 16px 16px 0 0;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  .site-wrapper {
+    padding-left: 1rem;
   }
 }
 
 @media (min-width: 761px) and (max-width: 1180px) {
   .site-wrapper {
-    padding: 1.5rem 1rem 3.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 3.5rem;
   }
 
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bnd-card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+}
+
+/* Mobile & Tablet Browsers in "Request Desktop Site" Mode */
+@media (pointer: coarse) {
+  .site-nav {
+    position: relative;
+  }
+
+  .nav-link,
+  .theme-toggle-btn,
+  .filter-pill,
+  .btn-primary,
+  .clear-btn {
+    min-height: 44px;
+  }
+
+  .btn-fav,
+  .modal-close-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  input,
+  select,
+  .search-input {
+    min-height: 44px;
+    font-size: 16px; /* Prevents iOS Safari auto-zoom on focus */
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1280px) and (pointer: coarse) {
+  .site-wrapper {
+    padding-left: 1.25rem;
+  }
+
+  .site-rail {
+    display: none;
+  }
+
+  .site-nav-links {
+    display: flex;
+  }
+}
+
+@media (hover: none) {
+  .codex-card:hover,
+  .site-rail-link:hover,
+  .bnd-card-media button:hover img {
+    transform: none;
   }
 }
 

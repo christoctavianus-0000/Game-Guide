@@ -221,7 +221,7 @@ main {
   background: var(--bg-abyss); color: var(--text-secondary);
   border: 1px solid var(--border-card); border-radius: 8px;
   padding: 0.5rem 0.75rem; font-family: var(--font-tech); font-size: 0.85rem;
-  cursor: pointer; transition: var(--transition-fast);
+  cursor: pointer; transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 }
 .theme-toggle-btn:hover {
   color: var(--text-primary);
@@ -263,10 +263,12 @@ main {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
   white-space: nowrap;
   border-radius: 8px;
   text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
 }
 .tab-spec-icon {
   width: 15px;
@@ -313,7 +315,7 @@ main {
   border-radius: 9px;
   font: inherit;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
 }
 #cardSearch::placeholder { color: var(--text-muted); }
 #levelFilter {
@@ -327,7 +329,7 @@ main {
   font-size: 0.95rem;
   letter-spacing: 0.03em;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
 }
 [data-theme="light"] #cardSearch { box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.04); }
 #cardSearch:focus, #levelFilter:focus {
@@ -363,6 +365,7 @@ main {
   background: none; border: none; padding: 0; margin: 0;
   font: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit;
   cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem;
+  user-select: none; -webkit-user-select: none;
 }
 .th-sort:hover { color: var(--text-primary); }
 .th-sort.sorted { color: var(--text-accent); }
@@ -399,7 +402,7 @@ main {
   font-size: 0.98rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 .card-name-link:hover {
   color: var(--text-accent);
@@ -532,7 +535,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
 .project-home-link:hover {
   color: var(--text-primary);
@@ -566,7 +569,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
   position: relative;
 }
 .site-nav-link:hover { color: var(--text-primary); background: var(--bg-surface-hover); }
@@ -629,7 +632,7 @@ main {
     background: transparent;
     text-align: center;
     text-decoration: none;
-    transition: var(--transition-fast);
+    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
   }
   .site-rail-icon {
     display: flex;
@@ -836,6 +839,21 @@ body {
 .fusion-tab-btn,
 .sort-btn {
   touch-action: manipulation;
+}
+
+.tab-btn:active,
+.fusion-tab-btn:active,
+.theme-toggle-btn:active,
+.sort-btn:active,
+.action-btn.fuse-btn:active {
+  transform: scale(0.97);
+}
+
+@media (hover: none) {
+  .tab-btn:hover .tab-spec-icon,
+  .site-rail-link:hover .site-rail-icon {
+    transform: none;
+  }
 }
 
 /* Medium / Mobile "Request Desktop Site" (980px–1150px) table fit */

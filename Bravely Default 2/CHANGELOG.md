@@ -2,6 +2,36 @@
 
 All notable changes to the Bravely Default II Codex module are documented here.
 
+## [1.3.0] - 2026-11-19
+
+### Bug Fixes & Functional Restoration
+- **Bestiary Codex (`parse_enemies.py`, `enemyData.json`, `enemyData.js`, `enemyApp.js`)**:
+  - Fixed `HP: NaN` on all 292 enemies (formatted strings such as `"76,500"`, `"1,200–6,500"`, and split boss HP `"Selene: 1,840 / Dag: 1,568"` were previously coerced with `Number(enemy.hp)`). Added `formatHp()` to display numeric and range/split HP strings verbatim.
+  - Emitted explicit `classification` (`Asterisk Boss`, `Rare Monster`, `Monster`) across all 292 enemy records (plus an offline fallback guard in `parse_enemies.py` so regular monsters are preserved if wiki fetch fails). Fixed `Asterisk Bosses` (20), `Rare Bosses` (7), and `Regular` (265) filter pills in `enemyApp.js`.
+  - Fixed weakness icon matching on parenthesized boss hints (e.g., `Fire (Dag)` → `fire.svg`), and surfaced `Resistances`, `Status Immunities`, `Chapter`, and `Strategy & Field Notes` in the Bestiary modal while hiding empty placeholder `0 EXP/JP/pg` reward cards when absent.
+- **Shops Codex (`shop.html`, `shopApp.js`)**:
+  - Updated shop category filter pills from stale singular keys (`Weapon`/`Armor`/`Accessory`) to exact dataset categories (`Consumable`, `Weapons`, `Shields`, `Headwear`, `Armor`, `Accessories`) with normalized matching and color-coded badges.
+  - Added keyboard (`Enter`/`Space`) sorting, `aria-sort` state updates, and initial ascending sort indicators on table headers.
+- **Jobs & Side Quests Codexes (`index.html`, `app.js`, `quest.html`, `questApp.js`)**:
+  - Added the missing `Specialist` role filter pill to Jobs (`Freelancer`, `Gambler`, `Salve-Maker`, `Bravebearer`) and updated `Max Level` badge from `Lv. 12` to `Lv. 15`.
+  - Replaced dead `Chapter 7` quest pill with active `Prologue – Ch. 6` range, added `Pending` and `✓ Completed` quest status filters, and moved quest completion visual states into CSS classes (`.quest-done`, `.quest-num-frame`) so live toggling updates card styling cleanly.
+- **Abilities, Equipment, B 'n' D & Modals (`utils.js`, `abilityApp.js`, `equipmentApp.js`, `bndApp.js`)**:
+  - Added modal focus restoration (`lastFocusedElement`), `aria-hidden` toggling, and `.modal-window` scroll position reset in `utils.js`.
+  - Fixed `abilityApp.js` numeric cost sorting, `jobId` deep links, and keyboard/`aria-sort` table headers across Abilities, Equipment, and Shops.
+  - Added B 'n' D `family` matching to card search, debounced all 7 search inputs (`140ms`), and cached `localStorage` favorite sets per render pass.
+
+### Cross-App Theme Sync & Desktop / Mobile Optimization
+- **Quad-Tier Shared Theme Sync (`themeToggle.js`, `../themeToggle.js`, `../index.html`, all 7 BD2 HTML `<head>` blocks)**:
+  - Realigned `Bravely Default 2/themeToggle.js` to prioritize `game_guide_theme` before `bd2_theme`, persist across `localStorage`, cookies, and `window.name` for `file://` navigation, listen to `pageshow`/`storage`, and dynamically sync `<meta name="theme-color">`.
+  - Replaced sticky inline-`onfocus` skip links across all 7 BD2 pages with clean CSS-driven `.skip-link` rules and added `meta[name="theme-color"]`, `meta[name="description"]`, and `aria-hidden="true"` on `#modal-backdrop`.
+  - Added distinct sapphire crystal `.bravely` accent styling, light-mode contrast fixes, `bd2_theme` FOUC fallback, and updated Digimon copy (`301-card library`) in root `index.html`.
+- **Responsive Desktop, Mobile & Desktop-on-Mobile Polish (`styles.css`)**:
+  - Fixed desktop `.site-rail` (`width: 82px`) overlapping `.codex-card` / `.table-wrap` at `1100px–1180px`, and added a `@media (min-width: 1100px) and (max-width: 1280px) and (pointer: coarse)` top-nav fallback for tablets & mobile "Request Desktop Site" browsers.
+  - Removed `background-attachment: fixed;` scroll jank, added `env(safe-area-inset-*)`, `touch-action: manipulation`, `content-visibility: auto`, `@media (pointer: coarse)` 44px touch targets & 16px inputs (preventing iOS auto-zoom), `@media (hover: none)`, mobile bottom-sheet modals (`90dvh`), WCAG-compliant `[data-theme="light"]` badge/grade colors, and fixed `.search-input` select left padding.
+
+### Verification
+- Expanded `tests/cross_reference.test.js`, `tests/theme_and_responsive.test.js`, and added `tests/ui_regressions.test.js` (**31/31 BD2 tests passing**, `tsc --noEmit` 0 errors).
+
 ## [1.2.1] - 2026-10-26
 
 ### Asset & Visual Alignment

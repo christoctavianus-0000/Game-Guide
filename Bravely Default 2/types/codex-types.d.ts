@@ -28,10 +28,16 @@ interface AbilityEntry {
   id: string;
   name: string;
   job: string;
+  jobId?: string;
   level: number;
   type: string;
+  isPassive?: boolean;
+  category?: string;
   cost: string;
+  target?: string;
   effect: string;
+  description?: string;
+  modifier?: string;
 }
 
 interface EquipmentStats {
@@ -83,16 +89,21 @@ interface EnemyStats {
 interface EnemyEntry {
   id: string;
   name: string;
-  classification: string;
+  classification?: string;
   family: string;
   level: number | null;
-  hp: number | null;
+  hp: string | number | null;
   isBoss: boolean;
+  isAsteriskHolder?: boolean;
+  chapter?: string;
   location: string | null;
   weaknesses: string[];
+  resistances?: string[];
+  immunities?: string[];
   drops: string[];
   steals: string[];
-  stats: EnemyStats;
+  notes?: string;
+  stats?: EnemyStats;
 }
 
 interface QuestEntry {

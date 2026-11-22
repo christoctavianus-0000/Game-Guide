@@ -166,17 +166,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return `
       <div class="result-stats">
-        <div class="stat-row"><span class="stat-label">Level</span><span class="stat-val">${card.level || '-'}</span></div>
-        <div class="stat-row"><span class="stat-label">Specialty</span><span class="stat-val"><span class="spec-tag ${specClass}">${card.specialty || '-'}</span></span></div>
-        <div class="stat-row"><span class="stat-label">HP</span><span class="stat-val">${card.hp || '-'}</span></div>
-        <div class="stat-row"><span class="stat-label">DP</span><span class="stat-val">${card.dp || '-'}</span></div>
-        <div class="stat-row"><span class="stat-label">+P</span><span class="stat-val">${card.plusP || '-'}</span></div>
+        <div class="stat-row"><span class="stat-label">Level</span><span class="stat-val">${escapeHtml(card.level || '-')}</span></div>
+        <div class="stat-row"><span class="stat-label">Specialty</span><span class="stat-val"><span class="spec-tag ${escapeHtml(specClass)}">${escapeHtml(card.specialty || '-')}</span></span></div>
+        <div class="stat-row"><span class="stat-label">HP</span><span class="stat-val">${escapeHtml(card.hp || '-')}</span></div>
+        <div class="stat-row"><span class="stat-label">DP</span><span class="stat-val">${escapeHtml(card.dp || '-')}</span></div>
+        <div class="stat-row"><span class="stat-label">+P</span><span class="stat-val">${escapeHtml(card.plusP || '-')}</span></div>
         <div class="stat-row"><span class="stat-label">Circle</span><span class="stat-val">${renderIconTokens(card.circle)}</span></div>
         <div class="stat-row"><span class="stat-label">Triangle</span><span class="stat-val">${renderIconTokens(card.triangle)}</span></div>
         <div class="stat-row"><span class="stat-label">X</span><span class="stat-val">${renderIconTokens(card.x)}</span></div>
         <div class="stat-row"><span class="stat-label">Support</span><span class="stat-val support-text">${renderIconTokens(card.support)}</span></div>
-        <div class="stat-row"><span class="stat-label">Material Value</span><span class="stat-val">${card.materialValue ?? '?'}</span></div>
-        <div class="stat-row"><span class="stat-label">Result Value</span><span class="stat-val">${card.resultValue ?? '?'}</span></div>
+        <div class="stat-row"><span class="stat-label">Material Value</span><span class="stat-val">${escapeHtml(card.materialValue ?? '?')}</span></div>
+        <div class="stat-row"><span class="stat-label">Result Value</span><span class="stat-val">${escapeHtml(card.resultValue ?? '?')}</span></div>
       </div>
     `;
   }
@@ -201,12 +201,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let html = `
       <div class="result-card">
-        <img src="${card.localIcon}" alt="${escapeHtml(card.name)}" class="result-icon" onerror="this.style.display='none'" />
+        <img src="${escapeHtml(card.localIcon || '')}" alt="${escapeHtml(card.name)}" class="result-icon" onerror="this.style.display='none'" />
         <div class="result-info">
           <div class="result-name">${escapeHtml(card.name)}</div>
           <div class="result-meta">
             <span class="level-badge">${escapeHtml(card.level || '-')}</span>
-            <span class="spec-tag ${specClass}">${escapeHtml(card.specialty || '-')}</span>
+            <span class="spec-tag ${escapeHtml(specClass)}">${escapeHtml(card.specialty || '-')}</span>
           </div>
           ${renderCardStats(card)}
         </div>
@@ -319,18 +319,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const c2SpecClass = `spec-${(combo.card2.specialty || 'option').toLowerCase()}`;
       const cell = (c, mv) => `
             <div class="combo-cell">
-              <img src="${c.localIcon}" alt="${escapeHtml(c.name)}" onerror="this.style.display='none'" />
+              <img src="${escapeHtml(c.localIcon || '')}" alt="${escapeHtml(c.name)}" onerror="this.style.display='none'" />
               <span class="combo-name">${escapeHtml(c.name)}</span>
             </div>
           `;
       return `
         <tr class="combo-row clickable-combo" data-c1="${escapeHtml(combo.card1.name)}" data-c2="${escapeHtml(combo.card2.name)}" title="Click to view this fusion in the Materials tab">
           <td>${cell(combo.card1, mv1)}</td>
-          <td><span class="spec-tag ${c1SpecClass}">${escapeHtml(combo.card1.specialty || '-')}</span></td>
+          <td><span class="spec-tag ${escapeHtml(c1SpecClass)}">${escapeHtml(combo.card1.specialty || '-')}</span></td>
           <td class="mat-cell">${isNaN(mv1) ? '—' : mv1}</td>
           <td class="plus-cell">+</td>
           <td>${cell(combo.card2, mv2)}</td>
-          <td><span class="spec-tag ${c2SpecClass}">${escapeHtml(combo.card2.specialty || '-')}</span></td>
+          <td><span class="spec-tag ${escapeHtml(c2SpecClass)}">${escapeHtml(combo.card2.specialty || '-')}</span></td>
           <td class="mat-cell">${isNaN(mv2) ? '—' : mv2}</td>
           <td class="mat-cell sum-cell">${sum}</td>
           <td>${typeBadge}</td>
@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="empty-state">
           <div class="icon"><img src="assets/ui/digivice.svg" alt="" width="48" height="48" class="empty-state-svg" /></div>
           <h3>No exact match</h3>
-          <p>No card named “${linkedCard.replace(/[<>]/g, '')}” found.</p>
+          <p>No card named “${escapeHtml(linkedCard)}” found.</p>
         </div>
       `;
     }
@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardList1 = document.getElementById('cardList1');
   const cardList2 = document.getElementById('cardList2');
   const cardListTarget = document.getElementById('cardListTarget');
-  const cardOptionsHtml = CARD_DATABASE.map(c => `<option value="${c.name}"></option>`).join('');
+  const cardOptionsHtml = CARD_DATABASE.map(c => `<option value="${escapeHtml(c.name)}"></option>`).join('');
   [cardList1, cardList2, cardListTarget].forEach(list => {
     if (list) list.innerHTML = cardOptionsHtml;
   });
@@ -517,12 +517,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const specClass = `spec-${(card.specialty || 'option').toLowerCase()}`;
     container.classList.remove('empty');
     container.innerHTML = `
-      <img src="${card.localIcon}" alt="${escapeHtml(card.name)}" class="mat-preview-img" onerror="this.style.display='none'" />
+      <img src="${escapeHtml(card.localIcon || '')}" alt="${escapeHtml(card.name)}" class="mat-preview-img" onerror="this.style.display='none'" />
       <div class="mat-preview-info">
         <div class="mat-preview-name">${escapeHtml(card.name)}</div>
         <div class="mat-preview-meta">
           <span class="level-badge">${escapeHtml(card.level || '-')}</span>
-          <span class="spec-tag ${specClass}">${escapeHtml(card.specialty || '-')}</span>
+          <span class="spec-tag ${escapeHtml(specClass)}">${escapeHtml(card.specialty || '-')}</span>
           <span>Mat: <strong>${escapeHtml(card.materialValue ?? '?')}</strong></span>
         </div>
       </div>
@@ -573,7 +573,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMatPreview(mat1Preview, name1 ? c1 : null);
     if (name1 && !c1 && mat1Preview) {
       mat1Preview.classList.add('empty');
-      mat1Preview.innerHTML = `<div class="preview-placeholder">No card named “${name1.replace(/[<>]/g, '')}”</div>`;
+      mat1Preview.innerHTML = `<div class="preview-placeholder">No card named “${escapeHtml(name1)}”</div>`;
     } else if (!name1 && mat1Preview) {
       mat1Preview.classList.add('empty');
       mat1Preview.innerHTML = `<div class="preview-placeholder">Select Material 1</div>`;
@@ -582,7 +582,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMatPreview(mat2Preview, name2 ? c2 : null);
     if (name2 && !c2 && mat2Preview) {
       mat2Preview.classList.add('empty');
-      mat2Preview.innerHTML = `<div class="preview-placeholder">No card named “${name2.replace(/[<>]/g, '')}”</div>`;
+      mat2Preview.innerHTML = `<div class="preview-placeholder">No card named “${escapeHtml(name2)}”</div>`;
     } else if (!name2 && mat2Preview) {
       mat2Preview.classList.add('empty');
       mat2Preview.innerHTML = `<div class="preview-placeholder">Select Material 2</div>`;
@@ -648,12 +648,12 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr class="combo-row clickable-result" data-result="${escapeHtml(r.card.name)}" title="Click to view this card's fusion recipe in Tab 1">
                     <td>
                       <div class="combo-cell">
-                        <img src="${r.card.localIcon}" alt="${escapeHtml(r.card.name)}" onerror="this.style.display='none'" />
+                        <img src="${escapeHtml(r.card.localIcon || '')}" alt="${escapeHtml(r.card.name)}" onerror="this.style.display='none'" />
                         <span class="combo-name">${escapeHtml(r.card.name)}</span>
                       </div>
                     </td>
                     <td><span class="level-badge">${escapeHtml(r.card.level || '-')}</span></td>
-                    <td><span class="spec-tag ${specClass}">${escapeHtml(r.card.specialty || '-')}</span></td>
+                    <td><span class="spec-tag ${escapeHtml(specClass)}">${escapeHtml(r.card.specialty || '-')}</span></td>
                     <td class="mat-cell sum-cell">${escapeHtml(r.card.resultValue ?? '?')}</td>
                     <td>${badge}</td>
                   </tr>
@@ -884,28 +884,28 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr class="combo-row">
                     <td>
                       <div class="combo-cell clickable-mat" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" style="cursor: pointer;" title="Click to test fusion in Materials tab">
-                        <img src="${c1Icon}" alt="${escapeHtml(recipe.card1)}" onerror="this.style.display='none'" />
+                        <img src="${escapeHtml(c1Icon)}" alt="${escapeHtml(recipe.card1)}" onerror="this.style.display='none'" />
                         <span class="combo-name">${escapeHtml(recipe.card1)}</span>
                       </div>
                     </td>
-                    <td><span class="spec-tag ${c1SpecClass}">${escapeHtml(c1Spec)}</span></td>
+                    <td><span class="spec-tag ${escapeHtml(c1SpecClass)}">${escapeHtml(c1Spec)}</span></td>
                     <td class="plus-cell">+</td>
                     <td>
                       <div class="combo-cell clickable-mat" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" style="cursor: pointer;" title="Click to test fusion in Materials tab">
-                        <img src="${c2Icon}" alt="${escapeHtml(recipe.card2)}" onerror="this.style.display='none'" />
+                        <img src="${escapeHtml(c2Icon)}" alt="${escapeHtml(recipe.card2)}" onerror="this.style.display='none'" />
                         <span class="combo-name">${escapeHtml(recipe.card2)}</span>
                       </div>
                     </td>
-                    <td><span class="spec-tag ${c2SpecClass}">${escapeHtml(c2Spec)}</span></td>
+                    <td><span class="spec-tag ${escapeHtml(c2SpecClass)}">${escapeHtml(c2Spec)}</span></td>
                     <td class="plus-cell">=</td>
                     <td>
                       <div class="combo-cell clickable-result" data-result="${escapeHtml(recipe.result)}" style="cursor: pointer;" title="Click to view all recipes for ${escapeHtml(recipe.result)} in Tab 1">
-                        <img src="${resIcon}" alt="${escapeHtml(recipe.result)}" onerror="this.style.display='none'" />
+                        <img src="${escapeHtml(resIcon)}" alt="${escapeHtml(recipe.result)}" onerror="this.style.display='none'" />
                         <span class="combo-name">${escapeHtml(recipe.result)}</span>
                       </div>
                     </td>
                     <td><span class="level-badge">${escapeHtml(resLevel)}</span></td>
-                    <td><span class="spec-tag ${specClass}">${escapeHtml(resSpec)}</span></td>
+                    <td><span class="spec-tag ${escapeHtml(specClass)}">${escapeHtml(resSpec)}</span></td>
                     <td style="text-align: center;">
                       <button type="button" class="action-btn fuse-btn" data-c1="${escapeHtml(recipe.card1)}" data-c2="${escapeHtml(recipe.card2)}" title="Fuse ${escapeHtml(recipe.card1)} + ${escapeHtml(recipe.card2)} in Materials tab">
                         Fuse ➔

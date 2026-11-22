@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1220">
+  <meta name="description" content="Bravely Default II Equipment Codex — 309 weapons, shields, headwear, armor, and accessories with stats, weights, prices, and sources.">
   <title>Equipment Codex — Bravely Default II Game Guide</title>
   <link rel="stylesheet" href="styles.css">
   <script src="themeToggle.js"></script>
 </head>
 <body>
   <!-- Skip link for keyboard users -->
-  <a class="skip-link" href="#main-content" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;" onfocus="this.style.position='static'; this.style.width='auto'; this.style.height='auto';">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Fixed Desktop Rail -->
   <aside class="site-rail" aria-label="Codex navigation">
@@ -165,15 +167,15 @@
       <table class="codex-table" id="equip-table">
         <thead>
           <tr>
-            <th data-sort="name">Item Name <span class="sort-icon">↕</span></th>
-            <th data-sort="subtype">Type <span class="sort-icon">↕</span></th>
-            <th data-sort="weight">Wt <span class="sort-icon">↕</span></th>
-            <th data-sort="pAtk">P.Atk <span class="sort-icon">↕</span></th>
-            <th data-sort="mAtk">M.Atk <span class="sort-icon">↕</span></th>
-            <th data-sort="pDef">P.Def <span class="sort-icon">↕</span></th>
-            <th data-sort="mDef">M.Def <span class="sort-icon">↕</span></th>
+            <th data-sort="name" tabindex="0" aria-sort="ascending">Item Name <span class="sort-icon">▲</span></th>
+            <th data-sort="subtype" tabindex="0">Type <span class="sort-icon">↕</span></th>
+            <th data-sort="weight" tabindex="0">Wt <span class="sort-icon">↕</span></th>
+            <th data-sort="pAtk" tabindex="0">P.Atk <span class="sort-icon">↕</span></th>
+            <th data-sort="mAtk" tabindex="0">M.Atk <span class="sort-icon">↕</span></th>
+            <th data-sort="pDef" tabindex="0">P.Def <span class="sort-icon">↕</span></th>
+            <th data-sort="mDef" tabindex="0">M.Def <span class="sort-icon">↕</span></th>
             <th>Effects &amp; Attributes</th>
-            <th data-sort="price">Cost (pg) <span class="sort-icon">↕</span></th>
+            <th data-sort="price" tabindex="0">Cost (pg) <span class="sort-icon">↕</span></th>
             <th style="width: 44px; text-align: center;">★</th>
           </tr>
         </thead>
@@ -185,7 +187,7 @@
   </main>
 
   <!-- Modal Backdrop -->
-  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-window">
       <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
       <div id="modal-content"></div>

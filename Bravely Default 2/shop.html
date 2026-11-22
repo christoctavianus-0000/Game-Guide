@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1220">
+  <meta name="description" content="Bravely Default II Shops Codex — town inventories across Excillant with prices in pg and cross-links to the Equipment Codex.">
   <title>Shops Codex — Bravely Default II Game Guide</title>
   <link rel="stylesheet" href="styles.css">
   <script src="themeToggle.js"></script>
 </head>
 <body>
   <!-- Skip link for keyboard users -->
-  <a class="skip-link" href="#main-content" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;" onfocus="this.style.position='static'; this.style.width='auto'; this.style.height='auto';">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Fixed Desktop Rail -->
   <aside class="site-rail" aria-label="Codex navigation">
@@ -111,9 +113,11 @@
         <div class="filter-pills" id="shop-cat-filters" role="group" aria-label="Filter by category">
           <button type="button" class="filter-pill active" data-cat="all">All Items</button>
           <button type="button" class="filter-pill" data-cat="Consumable">Consumables</button>
-          <button type="button" class="filter-pill" data-cat="Weapon">Weapons</button>
+          <button type="button" class="filter-pill" data-cat="Weapons">Weapons</button>
+          <button type="button" class="filter-pill" data-cat="Shields">Shields</button>
+          <button type="button" class="filter-pill" data-cat="Headwear">Headwear</button>
           <button type="button" class="filter-pill" data-cat="Armor">Armor</button>
-          <button type="button" class="filter-pill" data-cat="Accessory">Accessories</button>
+          <button type="button" class="filter-pill" data-cat="Accessories">Accessories</button>
         </div>
       </div>
 
@@ -133,9 +137,9 @@
       <table class="codex-table" id="shop-table">
         <thead>
           <tr>
-            <th data-sort="name">Item Name <span class="sort-icon">↕</span></th>
-            <th data-sort="category">Category <span class="sort-icon">↕</span></th>
-            <th data-sort="price">Price (pg) <span class="sort-icon">↕</span></th>
+            <th data-sort="name" tabindex="0" aria-sort="ascending">Item Name <span class="sort-icon">▲</span></th>
+            <th data-sort="category" tabindex="0">Category <span class="sort-icon">↕</span></th>
+            <th data-sort="price" tabindex="0">Price (pg) <span class="sort-icon">↕</span></th>
             <th>Description &amp; Stats</th>
             <th style="width: 100px; text-align: right;">Codex Link</th>
           </tr>
@@ -148,7 +152,7 @@
   </main>
 
   <!-- Modal Backdrop -->
-  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-window">
       <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
       <div id="modal-content"></div>

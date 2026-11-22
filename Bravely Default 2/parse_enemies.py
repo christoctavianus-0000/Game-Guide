@@ -461,6 +461,7 @@ def main():
         enemies.append({
             'id': f"boss-{to_slug(b['name'])}",
             'name': b['name'],
+            'classification': 'Asterisk Boss',
             'family': b['family'],
             'isBoss': True,
             'isAsteriskHolder': True,
@@ -481,6 +482,7 @@ def main():
         enemies.append({
             'id': f"rare-{to_slug(wb['name'])}",
             'name': wb['name'],
+            'classification': 'Rare Monster',
             'family': wb['family'],
             'isBoss': True,
             'isAsteriskHolder': False,
@@ -540,6 +542,7 @@ def main():
                 enemies.append({
                     'id': slug,
                     'name': clean_name,
+                    'classification': 'Monster',
                     'family': family,
                     'isBoss': False,
                     'isAsteriskHolder': False,
@@ -554,6 +557,14 @@ def main():
                     'steals': ['Hi-Potion', 'Tent'],
                     'notes': f"A {family.lower()} creature found across Excillant."
                 })
+    elif os.path.exists(OUTPUT_JSON):
+        # Offline safety guard: preserve existing regular monsters when wiki fetch fails
+        with open(OUTPUT_JSON, 'r', encoding='utf-8') as f:
+            existing_enemies = json.load(f)
+        for e in existing_enemies:
+            if not e.get('isBoss'):
+                e['classification'] = 'Monster'
+                enemies.append(e)
 
     # Deduplicate IDs
     seen = set()

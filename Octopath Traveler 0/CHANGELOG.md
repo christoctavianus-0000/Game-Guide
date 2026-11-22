@@ -2,6 +2,18 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Shop Sorting, Location-Aware Modal Lookup & Accessibility Fixes
+
+- **Shop Sorting & Reset (`shopApp.js`)**:
+  - Fixed `#shopSortFilter` initializing to invalid `'undefined-undefined'` by adding explicit `sortKey: 'location'` and `sortDir: 'asc'` to `state` and resetting both in `doReset()`.
+  - Implemented `location-asc/desc`, `name-asc/desc`, and numeric `price-asc/desc` (missing prices sorted last) inside `groupByLocation()`.
+- **Disambiguated Modal Lookup & Keyboard Focus (`shopApp.js`, `shop.html`)**:
+  - Scoped shop row clicks to the parent `.shop-chunk`'s `data-location` before falling back to name lookup so shared item names across multiple town shops open the clicked town's record.
+  - Added body scroll lock (`overflow: hidden`) and trigger focus save/restore in `openModal()` / `closeModal()`.
+  - Fixed broken `aria-describedby="detailModalDesc"` → `detailModalDescription` and added `aria-current="page"` to `.site-rail-link` in `shop.html`.
+- **Verification (`tests/shopCodex.test.js`)**:
+  - Added regression assertions verifying `'location-asc'` initialization, `'location-desc'` chunk order, `'price-desc'` item order, and reset restoration (**64/64 Octopath tests passing**, `tsc --noEmit` 0 errors).
+
 ## Unreleased — Mobile & "Request Desktop Site on Mobile" Responsive Architecture
 
 - **Unsticky Filter Panel on Mobile & Touch Devices (`styles.css`)**:

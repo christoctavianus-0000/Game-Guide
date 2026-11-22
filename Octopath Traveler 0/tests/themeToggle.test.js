@@ -122,11 +122,11 @@ test('Octopath & Root pages: include responsive viewport meta and mobile + deskt
   const htmlFiles = ['index.html', 'equipment.html', 'character.html', 'enemy.html', 'shop.html', 'npc.html'];
   for (const file of htmlFiles) {
     const html = fs.readFileSync(path.join(ROOT, file), 'utf8');
-    assert.match(html, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?"/i, `${file} missing viewport meta`);
+    assert.match(html, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?,\s*viewport-fit=cover"/i, `${file} missing viewport-fit=cover meta`);
   }
 
   const rootHtml = fs.readFileSync(path.join(ROOT, '..', 'index.html'), 'utf8');
-  assert.match(rootHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?"/i);
+  assert.match(rootHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?,\s*viewport-fit=cover"/i);
   assert.match(rootHtml, /@media\s*\(pointer:\s*coarse\)/);
 
   const stylesCss = fs.readFileSync(path.join(ROOT, 'styles.css'), 'utf8');

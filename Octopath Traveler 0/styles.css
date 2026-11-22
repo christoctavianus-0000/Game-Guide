@@ -402,7 +402,7 @@ body::before {
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .ghost-pill-btn:hover {
@@ -486,7 +486,7 @@ body::before {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
   white-space: nowrap;
 }
 
@@ -570,7 +570,7 @@ body::before {
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
   white-space: nowrap;
 }
 
@@ -639,7 +639,7 @@ body::before {
   padding: 10px 40px 10px 42px;
   border-radius: 8px;
   outline: none;
-  transition: var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .search-input-wrap input:focus {
@@ -686,7 +686,7 @@ body::before {
   align-items: center;
   gap: 7px;
   white-space: nowrap;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 }
 
 .subtype-chip:hover {
@@ -812,7 +812,7 @@ body::before {
   padding: 6px 16px;
   border-radius: 6px;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
   white-space: nowrap;
   letter-spacing: 0.02em;
 }
@@ -844,7 +844,7 @@ body::before {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  transition: var(--transition-fast);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
   cursor: pointer;
 }
 
@@ -1003,7 +1003,7 @@ body::before {
   font-size: 16px;
   cursor: pointer;
   padding: 2px;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
 .card-fav-btn:hover, .card-fav-btn.is-fav {
@@ -1070,7 +1070,7 @@ body::before {
   display: flex;
   align-items: center;
   gap: 4px;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 .skill-card:hover .card-inspect-hint {
@@ -1114,7 +1114,7 @@ body::before {
 .skill-table th.sortable {
   cursor: pointer;
   user-select: none;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .skill-table th.sortable::after {
@@ -1146,7 +1146,7 @@ body::before {
 
 .skill-table tbody tr {
   border-bottom: 1px solid var(--border-subtle);
-  transition: var(--transition-fast);
+  transition: background-color var(--transition-fast);
   cursor: pointer;
 }
 
@@ -1199,7 +1199,7 @@ body::before {
   font-size: 16px;
   cursor: pointer;
   color: var(--text-gold);
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), transform var(--transition-fast);
   display: flex;
   align-items: center;
 }
@@ -1251,7 +1251,7 @@ body::before {
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .table-inspect-btn:hover {
@@ -1338,7 +1338,7 @@ body::before {
 .enemy-table th.sortable {
   cursor: pointer;
   user-select: none;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .enemy-table th.sortable::after {
@@ -1659,7 +1659,7 @@ body::before {
   padding: 8px 20px;
   border-radius: 6px;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .primary-btn:hover {
@@ -1695,7 +1695,7 @@ body::before {
   border-radius: 5px;
   font-size: 13px;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .page-btn:hover:not(:disabled) {
@@ -1775,7 +1775,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .modal-close-btn:hover {
@@ -2168,7 +2168,7 @@ body::before {
   font-family: var(--font-tech);
   font-size: 0.8rem;
   font-weight: 600;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
 .project-home-link:hover {
@@ -2226,7 +2226,7 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .nav-link-icon {
@@ -2264,7 +2264,7 @@ body::before {
   cursor: pointer;
   font-size: 16px;
   line-height: 1;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
   flex-shrink: 0;
 }
 
@@ -2393,7 +2393,7 @@ body::before {
     background: transparent;
     text-align: center;
     text-decoration: none;
-    transition: var(--transition-fast);
+    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
   }
 
   .site-rail-icon {
@@ -2565,7 +2565,7 @@ body::before {
 .equip-table th.sortable {
   cursor: pointer;
   user-select: none;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .equip-table th.sortable::after {
@@ -2837,7 +2837,7 @@ body::before {
   padding: 8px 18px;
   border-radius: 6px;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 }
 
 .secondary-btn:hover {
@@ -2907,7 +2907,7 @@ body::before {
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  transition: all var(--transition-fast);
+  transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
 }
 
 #characterJobTabs .cat-tab:hover {
@@ -4098,20 +4098,7 @@ body::before {
   animation: crestPulse 4s ease-in-out infinite;
 }
 
-/* ==========================================================================
-   ANIMATION: Sort indicator rotation on click
-   ========================================================================== */
-
-@keyframes sortPop {
-  0%   { transform: scale(0.6); opacity: 0; }
-  60%  { transform: scale(1.15); }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-.enemy-table th.sort-active::after,
-.equip-table th.sort-active::after {
-  animation: sortPop 0.25s var(--ease-out);
-}
+/* High-frequency table sorting stays instant (no sortPop keyframe bounce) */
 
 /* ==========================================================================
    LIGHT THEME — element-level overrides
@@ -4566,5 +4553,13 @@ body {
 .detail-modal > .modal-footer {
   border-bottom: 1px solid var(--border-card);
   border-radius: 0 0 12px 12px;
+}
+
+@media (hover: none) {
+  .skill-card:hover,
+  #characterJobTabs .cat-tab:hover,
+  .site-rail-link:hover {
+    transform: none;
+  }
 }
 

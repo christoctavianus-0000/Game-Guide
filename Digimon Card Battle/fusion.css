@@ -33,7 +33,9 @@
   justify-content: center;
   flex: 1 0 auto;
   gap: 0.55rem;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .fusion-tab-btn .tab-icon {
@@ -234,7 +236,9 @@
   font-weight: 600;
   font-size: 0.82rem;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .sort-btn:hover {
@@ -365,7 +369,7 @@
   border-radius: 9px;
   font-family: var(--font-body);
   font-size: 1rem;
-  transition: var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .search-box input:focus {
@@ -498,7 +502,7 @@
   border-radius: 7px;
   font-size: 0.85rem;
   width: 260px;
-  transition: var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .combo-filter-box input:focus {
@@ -644,7 +648,7 @@
 /* Special Fusion & Interactive Cells */
 .fusion-combos-table .clickable-result {
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: background-color var(--transition-fast);
 }
 
 .fusion-combos-table .clickable-result:hover .combo-name {
@@ -656,7 +660,7 @@
   cursor: pointer;
   border-radius: 6px;
   padding: 2px 4px;
-  transition: var(--transition-fast);
+  transition: background-color var(--transition-fast);
 }
 
 .fusion-combos-table .clickable-mat:hover {
@@ -678,8 +682,10 @@
   font-size: 0.8rem;
   font-weight: 700;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
   white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .action-btn.fuse-btn:hover {

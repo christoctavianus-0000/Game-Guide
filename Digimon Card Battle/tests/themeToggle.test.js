@@ -143,8 +143,8 @@ test('Digimon pages: include responsive viewport meta and mobile + desktop-on-mo
   const stylesCss = fs.readFileSync(path.join(ROOT, 'styles.css'), 'utf8');
   const fusionCss = fs.readFileSync(path.join(ROOT, 'fusion.css'), 'utf8');
 
-  assert.match(indexHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?"/i);
-  assert.match(fusionHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?"/i);
+  assert.match(indexHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?,\s*viewport-fit=cover"/i);
+  assert.match(fusionHtml, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1(?:\.0)?,\s*viewport-fit=cover"/i);
 
   // Mobile (<760px), Desktop-on-Mobile (761px-1180px), and Coarse Pointer support
   assert.match(stylesCss, /@media\s*\(max-width:\s*760px\)/);

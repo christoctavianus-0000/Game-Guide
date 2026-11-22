@@ -71,14 +71,37 @@
     `;
   }
 
+  function parseCostValue(costStr) {
+    if (!costStr) return 0;
+    const raw = String(costStr).trim();
+    if (/^free$/i.test(raw) || raw === '—') return 0;
+    const m = raw.match(/\d+/);
+    return m ? Number(m[0]) : 999999;
+  }
+
+  function updateSortHeaders() {
+    tableHeaders.forEach((h) => {
+      const icon = h.querySelector('.sort-icon');
+      const isCurrent = h.dataset.sort === sortField;
+      if (isCurrent) {
+        h.setAttribute('aria-sort', sortAsc ? 'ascending' : 'descending');
+        if (icon) icon.textContent = sortAsc ? '▲' : '▼';
+      } else {
+        h.removeAttribute('aria-sort');
+        if (icon) icon.textContent = '↕';
+      }
+    });
+  }
+
   function filterAndSortAbilities() {
     const abilities = window.abilityData || [];
     const q = searchQuery.toLowerCase().trim();
+    const favSet = new Set(window.BD2.getFavorites(FAV_KEY));
 
     const filtered = abilities.filter((a) => {
       // Type filter
       if (activeType === 'fav') {
-        if (!window.BD2.isFavorite(FAV_KEY, a.id)) return false;
+        if (!favSet.has(a.id)) return false;
       } else if (activeType !== 'all') {
         if (a.type !== activeType) return false;
       }
@@ -107,6 +130,14 @@
       if (sortField === 'level') {
         valA = Number(valA) || 0;
         valB = Number(valB) || 0;
+      } else if (sortField === 'cost') {
+        const numA = parseCostValue(valA);
+        const numB = parseCostValue(valB);
+        if (numA !== numB) {
+          return sortAsc ? (numA < numB ? -1 : 1) : (numA > numB ? -1 : 1);
+        }
+        valA = String(valA || '').toLowerCase();
+        valB = String(valB || '').toLowerCase();
       } else {
         valA = String(valA || '').toLowerCase();
         valB = String(valB || '').toLowerCase();
@@ -117,10 +148,13 @@
       return 0;
     });
 
-    renderTable(filtered);
+    updateSortHeaders();
+    renderTable(filtered, favSet);
   }
 
-  function renderTable(abilities) {
+  function renderTable(abilities, favSet) {
+    const activeFavs = favSet || new Set(window.BD2.getFavorites(FAV_KEY));
+
     if (abilities.length === 0) {
       tableBody.innerHTML = `
         <tr>
@@ -131,10 +165,11 @@
       `;
     } else {
       tableBody.innerHTML = abilities.map((a) => {
-        const isFav = window.BD2.isFavorite(FAV_KEY, a.id);
+        const isFav = activeFavs.has(a.id);
         const typeBadge = a.type === 'Support'
           ? '<span class="card-badge" style="color: var(--arcana-purple); border-color: rgba(192, 132, 252, 0.3);">Passive</span>'
           : '<span class="card-badge" style="color: var(--crystal-sky);">Command</span>';
+        const jobHref = `index.html?job=${encodeURIComponent(a.jobId || a.job.toLowerCase())}`;
 
         return `
           <tr id="row-${window.BD2.escapeHtml(a.id)}">
@@ -144,7 +179,7 @@
               </button>
             </td>
             <td>
-              <a href="index.html?job=${encodeURIComponent(a.job.toLowerCase())}" style="font-weight: 500;">
+              <a href="${window.BD2.escapeHtml(jobHref)}" style="font-weight: 500;">
                 ${window.BD2.escapeHtml(a.job)}
               </a>
             </td>
@@ -161,7 +196,7 @@
         `;
       }).join('');
     }
-    countEl.textContent = abilities.length;
+    countEl.textContent = String(abilities.length);
   }
 
   function resetFilters() {
@@ -200,9 +235,13 @@
     filterAndSortAbilities();
 
     // Search input
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = (/** @type {HTMLInputElement} */ (e.target)).value;
+    const debouncedSearch = window.BD2.debounce((value) => {
+      searchQuery = value;
       filterAndSortAbilities();
+    }, 140);
+
+    searchInput.addEventListener('input', (e) => {
+      debouncedSearch((/** @type {HTMLInputElement} */ (e.target)).value);
     });
 
     // Job select
@@ -224,24 +263,26 @@
     // Clear filters
     clearBtn.addEventListener('click', resetFilters);
 
+    function handleSortHeader(th) {
+      const field = th.dataset.sort;
+      if (!field) return;
+      if (sortField === field) {
+        sortAsc = !sortAsc;
+      } else {
+        sortField = field;
+        sortAsc = true;
+      }
+      filterAndSortAbilities();
+    }
+
     // Table sorting
     tableHeaders.forEach((th) => {
-      th.addEventListener('click', () => {
-        const field = th.dataset.sort;
-        if (!field) return;
-        if (sortField === field) {
-          sortAsc = !sortAsc;
-        } else {
-          sortField = field;
-          sortAsc = true;
+      th.addEventListener('click', () => handleSortHeader(th));
+      th.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleSortHeader(th);
         }
-        tableHeaders.forEach((h) => {
-          const icon = h.querySelector('.sort-icon');
-          if (icon) icon.textContent = '↕';
-        });
-        const currentIcon = th.querySelector('.sort-icon');
-        if (currentIcon) currentIcon.textContent = sortAsc ? '▲' : '▼';
-        filterAndSortAbilities();
       });
     });
 

@@ -60,13 +60,24 @@
     return getFavorites(key).includes(id);
   }
 
+  /** @type {HTMLElement|null} */
+  let lastFocusedElement = null;
+
   function openModal(contentHtml) {
     const backdrop = document.getElementById('modal-backdrop');
     const container = document.getElementById('modal-content');
     if (!backdrop || !container) return;
 
+    if (!backdrop.classList.contains('open') && document.activeElement && typeof /** @type {any} */ (document.activeElement).focus === 'function') {
+      lastFocusedElement = /** @type {HTMLElement} */ (document.activeElement);
+    }
+
     container.innerHTML = contentHtml;
+    const modalWindow = /** @type {HTMLElement|null} */ (backdrop.querySelector('.modal-window'));
+    if (modalWindow) modalWindow.scrollTop = 0;
+
     backdrop.classList.add('open');
+    backdrop.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
     // Focus close button
@@ -78,12 +89,20 @@
     const backdrop = document.getElementById('modal-backdrop');
     if (!backdrop) return;
     backdrop.classList.remove('open');
+    backdrop.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+
+    const toFocus = lastFocusedElement;
+    lastFocusedElement = null;
+    if (toFocus && (!document.contains || document.contains(toFocus)) && typeof toFocus.focus === 'function') {
+      toFocus.focus();
+    }
   }
 
   function initModal() {
     const backdrop = document.getElementById('modal-backdrop');
     if (!backdrop) return;
+    backdrop.setAttribute('aria-hidden', 'true');
 
     backdrop.addEventListener('click', (e) => {
       const target = /** @type {HTMLElement|null} */ (e.target);

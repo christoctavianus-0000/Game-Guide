@@ -69,8 +69,8 @@
     `;
   }
 
-  function renderCard(card) {
-    const isFav = window.BD2.isFavorite(FAV_KEY, card.id);
+  function renderCard(card, favSet) {
+    const isFav = favSet ? favSet.has(card.id) : window.BD2.isFavorite(FAV_KEY, card.id);
     const stars = '★'.repeat(Math.max(1, Math.min(5, card.tier || 1)));
     const rulesList = (card.rules || []).slice(0, 2).map((r) => `<span class="card-badge" style="font-size: 0.72rem; padding: 0.1rem 0.4rem; color: var(--text-crystal);">${window.BD2.escapeHtml(r)}</span>`).join(' ');
     const imgSrc = card.image || `assets/cards/${card.id}.png`;
@@ -125,11 +125,12 @@
   function filterCards() {
     const cards = window.bndCardData || [];
     const q = searchQuery.toLowerCase().trim();
+    const favSet = new Set(window.BD2.getFavorites(FAV_KEY));
 
     const filtered = cards.filter((card) => {
       // Classification filter
       if (activeClass === 'fav') {
-        if (!window.BD2.isFavorite(FAV_KEY, card.id)) return false;
+        if (!favSet.has(card.id)) return false;
       } else if (activeClass !== 'all') {
         if (card.classification !== activeClass) return false;
       }
@@ -143,18 +144,20 @@
       if (q) {
         const matchesName = card.name.toLowerCase().includes(q);
         const matchesClass = (card.classification || '').toLowerCase().includes(q);
+        const matchesFamily = (card.family || '').toLowerCase().includes(q);
         const matchesEffect = (card.effect || '').toLowerCase().includes(q);
         const matchesRules = (card.rules || []).some((r) => r.toLowerCase().includes(q));
-        if (!matchesName && !matchesClass && !matchesEffect && !matchesRules) return false;
+        if (!matchesName && !matchesClass && !matchesFamily && !matchesEffect && !matchesRules) return false;
       }
 
       return true;
     });
 
-    renderCards(filtered);
+    renderCards(filtered, favSet);
   }
 
-  function renderCards(cards) {
+  function renderCards(cards, favSet) {
+    const activeFavs = favSet || new Set(window.BD2.getFavorites(FAV_KEY));
     if (cards.length === 0) {
       container.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: var(--bg-surface-card); border-radius: 12px; border: 1px dashed var(--border-card);">
@@ -164,9 +167,9 @@
       `;
       document.getElementById('reset-empty-btn')?.addEventListener('click', resetFilters);
     } else {
-      container.innerHTML = cards.map(renderCard).join('');
+      container.innerHTML = cards.map((card) => renderCard(card, activeFavs)).join('');
     }
-    countEl.textContent = cards.length;
+    countEl.textContent = String(cards.length);
   }
 
   function resetFilters() {
@@ -201,9 +204,13 @@
     window.BD2.initModal();
     filterCards();
 
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = (/** @type {HTMLInputElement} */ (e.target)).value;
+    const debouncedSearch = window.BD2.debounce((value) => {
+      searchQuery = value;
       filterCards();
+    }, 140);
+
+    searchInput.addEventListener('input', (e) => {
+      debouncedSearch((/** @type {HTMLInputElement} */ (e.target)).value);
     });
 
     tierSelect.addEventListener('change', (e) => {

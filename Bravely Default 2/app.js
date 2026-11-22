@@ -22,8 +22,8 @@
     return `grade-${g}`;
   }
 
-  function renderJobCard(job) {
-    const isFav = window.BD2.isFavorite(FAV_KEY, job.id);
+  function renderJobCard(job, favSet) {
+    const isFav = favSet ? favSet.has(job.id) : window.BD2.isFavorite(FAV_KEY, job.id);
     const holderText = job.asteriskHolder ? `Holder: ${job.asteriskHolder}` : 'Default Job';
     const chapterText = job.chapterUnlocked ? `Unlock: ${job.chapterUnlocked}` : '';
 
@@ -170,11 +170,12 @@
   function filterJobs() {
     const jobs = window.jobData || [];
     const q = searchQuery.toLowerCase().trim();
+    const favSet = new Set(window.BD2.getFavorites(FAV_KEY));
 
     const filtered = jobs.filter((job) => {
       // Role filter
       if (activeRole === 'fav') {
-        if (!window.BD2.isFavorite(FAV_KEY, job.id)) return false;
+        if (!favSet.has(job.id)) return false;
       } else if (activeRole !== 'all') {
         if (job.role !== activeRole) return false;
       }
@@ -193,10 +194,11 @@
       return true;
     });
 
-    renderJobs(filtered);
+    renderJobs(filtered, favSet);
   }
 
-  function renderJobs(jobs) {
+  function renderJobs(jobs, favSet) {
+    const activeFavs = favSet || new Set(window.BD2.getFavorites(FAV_KEY));
     if (jobs.length === 0) {
       container.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: var(--bg-surface-card); border-radius: 12px; border: 1px dashed var(--border-card);">
@@ -206,9 +208,9 @@
       `;
       document.getElementById('reset-empty-btn')?.addEventListener('click', resetFilters);
     } else {
-      container.innerHTML = jobs.map(renderJobCard).join('');
+      container.innerHTML = jobs.map((job) => renderJobCard(job, activeFavs)).join('');
     }
-    countEl.textContent = jobs.length;
+    countEl.textContent = String(jobs.length);
   }
 
   function resetFilters() {
@@ -247,9 +249,13 @@
     renderJobs(window.jobData || []);
 
     // Search listener
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = (/** @type {HTMLInputElement} */ (e.target)).value;
+    const debouncedSearch = window.BD2.debounce((value) => {
+      searchQuery = value;
       filterJobs();
+    }, 140);
+
+    searchInput.addEventListener('input', (e) => {
+      debouncedSearch((/** @type {HTMLInputElement} */ (e.target)).value);
     });
 
     // Role buttons

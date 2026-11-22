@@ -49,6 +49,24 @@
     `;
   }
 
+  function normalizeCat(cat) {
+    return String(cat || '').toLowerCase().trim().replace(/s$/, '');
+  }
+
+  function updateSortHeaders() {
+    tableHeaders.forEach((h) => {
+      const icon = h.querySelector('.sort-icon');
+      const isCurrent = h.dataset.sort === sortField;
+      if (isCurrent) {
+        h.setAttribute('aria-sort', sortAsc ? 'ascending' : 'descending');
+        if (icon) icon.textContent = sortAsc ? '▲' : '▼';
+      } else {
+        h.removeAttribute('aria-sort');
+        if (icon) icon.textContent = '↕';
+      }
+    });
+  }
+
   function filterAndSortShopItems() {
     const shops = window.shopData || [];
     const currentShop = shops.find((s) => s.id === currentShopId) || shops[0];
@@ -60,9 +78,9 @@
     const q = searchQuery.toLowerCase().trim();
 
     const filtered = items.filter((item) => {
-      // Category filter
+      // Category filter (supports singular/plural normalization)
       if (activeCategory !== 'all') {
-        if (item.category !== activeCategory) return false;
+        if (normalizeCat(item.category) !== normalizeCat(activeCategory)) return false;
       }
 
       // Search query
@@ -92,6 +110,7 @@
       return 0;
     });
 
+    updateSortHeaders();
     renderTable(filtered);
   }
 
@@ -106,14 +125,14 @@
       `;
     } else {
       tableBody.innerHTML = items.map((it) => {
-        const isEquip = it.isEquipment || ['Weapon', 'Armor', 'Accessory'].includes(it.category);
         const priceFmt = it.price ? `${it.price.toLocaleString()} pg` : 'Free / Quest';
+        const catNorm = normalizeCat(it.category);
 
         let catBadgeColor = 'var(--text-crystal)';
-        if (it.category === 'Consumable') catBadgeColor = 'var(--vitality-green)';
-        else if (it.category === 'Weapon') catBadgeColor = 'var(--bravery-red)';
-        else if (it.category === 'Armor') catBadgeColor = 'var(--crystal-sky)';
-        else if (it.category === 'Accessory') catBadgeColor = 'var(--asterisk-gold)';
+        if (catNorm === 'consumable') catBadgeColor = 'var(--vitality-green)';
+        else if (catNorm === 'weapon') catBadgeColor = 'var(--bravery-red)';
+        else if (catNorm === 'shield' || catNorm === 'headwear' || catNorm === 'armor') catBadgeColor = 'var(--crystal-sky)';
+        else if (catNorm === 'accessorie' || catNorm === 'accessory') catBadgeColor = 'var(--asterisk-gold)';
 
         const codexLink = it.equipId
           ? `<a href="equipment.html?item=${encodeURIComponent(it.equipId)}" class="btn-primary" style="padding: 0.25rem 0.6rem; font-size: 0.78rem;">Gear &rarr;</a>`
@@ -130,7 +149,7 @@
         `;
       }).join('');
     }
-    countEl.textContent = items.length;
+    countEl.textContent = String(items.length);
   }
 
   function resetFilters() {
@@ -157,6 +176,18 @@
     }
   }
 
+  function handleSortHeader(th) {
+    const field = th.dataset.sort;
+    if (!field) return;
+    if (sortField === field) {
+      sortAsc = !sortAsc;
+    } else {
+      sortField = field;
+      sortAsc = true;
+    }
+    filterAndSortShopItems();
+  }
+
   function init() {
     populateTowns();
     handleDeepLink();
@@ -167,9 +198,13 @@
       filterAndSortShopItems();
     });
 
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = (/** @type {HTMLInputElement} */ (e.target)).value;
+    const debouncedSearch = window.BD2.debounce((value) => {
+      searchQuery = value;
       filterAndSortShopItems();
+    }, 140);
+
+    searchInput.addEventListener('input', (e) => {
+      debouncedSearch((/** @type {HTMLInputElement} */ (e.target)).value);
     });
 
     catButtons.forEach((btn) => {
@@ -184,22 +219,12 @@
     clearBtn.addEventListener('click', resetFilters);
 
     tableHeaders.forEach((th) => {
-      th.addEventListener('click', () => {
-        const field = th.dataset.sort;
-        if (!field) return;
-        if (sortField === field) {
-          sortAsc = !sortAsc;
-        } else {
-          sortField = field;
-          sortAsc = true;
+      th.addEventListener('click', () => handleSortHeader(th));
+      th.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleSortHeader(th);
         }
-        tableHeaders.forEach((h) => {
-          const icon = h.querySelector('.sort-icon');
-          if (icon) icon.textContent = '↕';
-        });
-        const currentIcon = th.querySelector('.sort-icon');
-        if (currentIcon) currentIcon.textContent = sortAsc ? '▲' : '▼';
-        filterAndSortShopItems();
       });
     });
   }

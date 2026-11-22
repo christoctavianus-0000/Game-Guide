@@ -1,6 +1,6 @@
 # Bravely Default II — Codex Data Integrity Report
 
-**Generated:** 2026-10-25 23:02:17
+**Generated:** 2026-11-22 20:59:31
 **Pipeline Status:** Synchronized & Validated (`*Data.json` ↔ `*Data.js`)
 
 ---

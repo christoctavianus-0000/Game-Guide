@@ -6,6 +6,7 @@ const enemyData = [
   {
     "id": "boss-selene-dag",
     "name": "Selene & Dag",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -42,6 +43,7 @@ const enemyData = [
   {
     "id": "boss-horten",
     "name": "Horten",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -77,6 +79,7 @@ const enemyData = [
   {
     "id": "boss-orpheus",
     "name": "Orpheus",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -111,6 +114,7 @@ const enemyData = [
   {
     "id": "boss-anihal",
     "name": "Anihal",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -144,6 +148,7 @@ const enemyData = [
   {
     "id": "boss-bernard",
     "name": "Bernard",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -179,6 +184,7 @@ const enemyData = [
   {
     "id": "boss-prince-castor",
     "name": "Prince Castor",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -214,6 +220,7 @@ const enemyData = [
   {
     "id": "boss-shirley",
     "name": "Shirley",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -247,6 +254,7 @@ const enemyData = [
   {
     "id": "boss-roddy",
     "name": "Roddy",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -284,6 +292,7 @@ const enemyData = [
   {
     "id": "boss-lily",
     "name": "Lily",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -319,6 +328,7 @@ const enemyData = [
   {
     "id": "boss-galahad",
     "name": "Galahad",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -354,6 +364,7 @@ const enemyData = [
   {
     "id": "boss-folie",
     "name": "Folie",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -389,6 +400,7 @@ const enemyData = [
   {
     "id": "boss-martha",
     "name": "Martha",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -425,6 +437,7 @@ const enemyData = [
   {
     "id": "boss-helio-gladys",
     "name": "Helio & Gladys",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -456,6 +469,7 @@ const enemyData = [
   {
     "id": "boss-domenic",
     "name": "Domenic",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -493,6 +507,7 @@ const enemyData = [
   {
     "id": "boss-glenn",
     "name": "Glenn",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -527,6 +542,7 @@ const enemyData = [
   {
     "id": "boss-lonsdale",
     "name": "Lonsdale",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -563,6 +579,7 @@ const enemyData = [
   {
     "id": "boss-marla",
     "name": "Marla",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -597,6 +614,7 @@ const enemyData = [
   {
     "id": "boss-vigintio",
     "name": "Vigintio",
+    "classification": "Asterisk Boss",
     "family": "Undead",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -632,6 +650,7 @@ const enemyData = [
   {
     "id": "boss-adam",
     "name": "Adam",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -664,6 +683,7 @@ const enemyData = [
   {
     "id": "boss-sir-sloan",
     "name": "Sir Sloan",
+    "classification": "Asterisk Boss",
     "family": "Humanoid",
     "isBoss": true,
     "isAsteriskHolder": true,
@@ -696,6 +716,7 @@ const enemyData = [
   {
     "id": "rare-leannan-sith",
     "name": "Leannan Sith",
+    "classification": "Rare Monster",
     "family": "Spirit",
     "isBoss": true,
     "isAsteriskHolder": false,
@@ -731,6 +752,7 @@ const enemyData = [
   {
     "id": "rare-coral-emperor",
     "name": "Coral Emperor",
+    "classification": "Rare Monster",
     "family": "Aquatic",
     "isBoss": true,
     "isAsteriskHolder": false,
@@ -765,6 +787,7 @@ const enemyData = [
   {
     "id": "rare-treant",
     "name": "Treant",
+    "classification": "Rare Monster",
     "family": "Plant",
     "isBoss": true,
     "isAsteriskHolder": false,
@@ -799,6 +822,7 @@ const enemyData = [
   {
     "id": "rare-mushussu",
     "name": "Mushussu",
+    "classification": "Rare Monster",
     "family": "Aquatic",
     "isBoss": true,
     "isAsteriskHolder": false,
@@ -832,6 +856,7 @@ const enemyData = [
   {
     "id": "rare-nightmare",
     "name": "Nightmare",
+    "classification": "Rare Monster",
     "family": "Undead",
     "isBoss": true,
     "isAsteriskHolder": false,
@@ -865,6 +890,7 @@ const enemyData = [
   {
     "id": "rare-astaroth",
     "name": "Astaroth",
+    "classification": "Rare Monster",
     "family": "Demon",
     "isBoss": true,
     "isAsteriskHolder": false,
@@ -896,6 +922,7 @@ const enemyData = [
   {
     "id": "rare-baal",
     "name": "Baal",
+    "classification": "Rare Monster",
     "family": "Demon",
     "isBoss": true,
     "isAsteriskHolder": false,
@@ -928,6 +955,7 @@ const enemyData = [
   {
     "id": "mon-goblin",
     "name": "Goblin",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -958,6 +986,7 @@ const enemyData = [
   {
     "id": "mon-goblin-chopper",
     "name": "Goblin Chopper",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -988,6 +1017,7 @@ const enemyData = [
   {
     "id": "mon-goblin-archer",
     "name": "Goblin Archer",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1018,6 +1048,7 @@ const enemyData = [
   {
     "id": "mon-kobold",
     "name": "Kobold",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1048,6 +1079,7 @@ const enemyData = [
   {
     "id": "mon-kobold-chopper",
     "name": "Kobold Chopper",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1078,6 +1110,7 @@ const enemyData = [
   {
     "id": "mon-kobold-archer",
     "name": "Kobold Archer",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1108,6 +1141,7 @@ const enemyData = [
   {
     "id": "mon-troll",
     "name": "Troll",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1138,6 +1172,7 @@ const enemyData = [
   {
     "id": "mon-ogre",
     "name": "Ogre",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1168,6 +1203,7 @@ const enemyData = [
   {
     "id": "mon-aka-oni",
     "name": "Aka-Oni",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1198,6 +1234,7 @@ const enemyData = [
   {
     "id": "mon-gargantua",
     "name": "Gargantua",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1228,6 +1265,7 @@ const enemyData = [
   {
     "id": "mon-orc",
     "name": "Orc",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1258,6 +1296,7 @@ const enemyData = [
   {
     "id": "mon-orc-leader",
     "name": "Orc Leader",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1288,6 +1327,7 @@ const enemyData = [
   {
     "id": "mon-orc-chieftain",
     "name": "Orc Chieftain",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1318,6 +1358,7 @@ const enemyData = [
   {
     "id": "mon-orc-lord",
     "name": "Orc Lord",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1348,6 +1389,7 @@ const enemyData = [
   {
     "id": "mon-wizzy",
     "name": "Wizzy",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1378,6 +1420,7 @@ const enemyData = [
   {
     "id": "mon-dusk-wizzy",
     "name": "Dusk Wizzy",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1408,6 +1451,7 @@ const enemyData = [
   {
     "id": "mon-nocta-wizzy",
     "name": "Nocta Wizzy",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1438,6 +1482,7 @@ const enemyData = [
   {
     "id": "mon-midnight-wizzy",
     "name": "Midnight Wizzy",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1468,6 +1513,7 @@ const enemyData = [
   {
     "id": "mon-mageling",
     "name": "Mageling",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1498,6 +1544,7 @@ const enemyData = [
   {
     "id": "mon-lost-mageling",
     "name": "Lost Mageling",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1528,6 +1575,7 @@ const enemyData = [
   {
     "id": "mon-ruined-mageling",
     "name": "Ruined Mageling",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1558,6 +1606,7 @@ const enemyData = [
   {
     "id": "mon-desolate-mageling",
     "name": "Desolate Mageling",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1588,6 +1637,7 @@ const enemyData = [
   {
     "id": "mon-swordsman",
     "name": "Swordsman",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1618,6 +1668,7 @@ const enemyData = [
   {
     "id": "mon-henchman",
     "name": "Henchman",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1648,6 +1699,7 @@ const enemyData = [
   {
     "id": "mon-axemaiden",
     "name": "Axemaiden",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1678,6 +1730,7 @@ const enemyData = [
   {
     "id": "mon-bowmaiden",
     "name": "Bowmaiden",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1708,6 +1761,7 @@ const enemyData = [
   {
     "id": "mon-bandit-a",
     "name": "Bandit A",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1738,6 +1792,7 @@ const enemyData = [
   {
     "id": "mon-bandit-b",
     "name": "Bandit B",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1768,6 +1823,7 @@ const enemyData = [
   {
     "id": "mon-bandit-c",
     "name": "Bandit C",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1798,6 +1854,7 @@ const enemyData = [
   {
     "id": "mon-bandit-d",
     "name": "Bandit D",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1828,6 +1885,7 @@ const enemyData = [
   {
     "id": "mon-holy-lance",
     "name": "Holy Lance",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1858,6 +1916,7 @@ const enemyData = [
   {
     "id": "mon-holy-mace",
     "name": "Holy Mace",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1888,6 +1947,7 @@ const enemyData = [
   {
     "id": "mon-holy-sword",
     "name": "Holy Sword",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1918,6 +1978,7 @@ const enemyData = [
   {
     "id": "mon-holy-wand",
     "name": "Holy Wand",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1948,6 +2009,7 @@ const enemyData = [
   {
     "id": "mon-imperial-axeman",
     "name": "Imperial Axeman",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -1978,6 +2040,7 @@ const enemyData = [
   {
     "id": "mon-imperial-twinsword",
     "name": "Imperial Twinsword",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2008,6 +2071,7 @@ const enemyData = [
   {
     "id": "mon-imperial-twinwand",
     "name": "Imperial Twinwand",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2038,6 +2102,7 @@ const enemyData = [
   {
     "id": "mon-imperial-daggermage",
     "name": "Imperial Daggermage",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2068,6 +2133,7 @@ const enemyData = [
   {
     "id": "mon-imperial-greatsword",
     "name": "Imperial Greatsword",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2098,6 +2164,7 @@ const enemyData = [
   {
     "id": "mon-imperial-lancemage",
     "name": "Imperial Lancemage",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2128,6 +2195,7 @@ const enemyData = [
   {
     "id": "mon-imperial-bowmage",
     "name": "Imperial Bowmage",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2158,6 +2226,7 @@ const enemyData = [
   {
     "id": "mon-imperial-greataxe",
     "name": "Imperial Greataxe",
+    "classification": "Monster",
     "family": "Humanoid",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2188,6 +2257,7 @@ const enemyData = [
   {
     "id": "mon-wolf",
     "name": "Wolf",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2218,6 +2288,7 @@ const enemyData = [
   {
     "id": "mon-hellhound",
     "name": "Hellhound",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2248,6 +2319,7 @@ const enemyData = [
   {
     "id": "mon-white-fang",
     "name": "White Fang",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2278,6 +2350,7 @@ const enemyData = [
   {
     "id": "mon-cerberus",
     "name": "Cerberus",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2308,6 +2381,7 @@ const enemyData = [
   {
     "id": "mon-minotaur",
     "name": "Minotaur",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2338,6 +2412,7 @@ const enemyData = [
   {
     "id": "mon-yeti",
     "name": "Yeti",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2368,6 +2443,7 @@ const enemyData = [
   {
     "id": "mon-gyuki",
     "name": "Gyuki",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2398,6 +2474,7 @@ const enemyData = [
   {
     "id": "mon-sekhret",
     "name": "Sekhret",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2428,6 +2505,7 @@ const enemyData = [
   {
     "id": "mon-grizzly",
     "name": "Grizzly",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2458,6 +2536,7 @@ const enemyData = [
   {
     "id": "mon-golden-bear",
     "name": "Golden Bear",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2488,6 +2567,7 @@ const enemyData = [
   {
     "id": "mon-polar-bear",
     "name": "Polar Bear",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2518,6 +2598,7 @@ const enemyData = [
   {
     "id": "mon-megalodoth",
     "name": "Megalodoth",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2548,6 +2629,7 @@ const enemyData = [
   {
     "id": "mon-roc",
     "name": "Roc",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2578,6 +2660,7 @@ const enemyData = [
   {
     "id": "mon-diatryma",
     "name": "Diatryma",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2608,6 +2691,7 @@ const enemyData = [
   {
     "id": "mon-simurgh",
     "name": "Simurgh",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2638,6 +2722,7 @@ const enemyData = [
   {
     "id": "mon-gagana",
     "name": "Gagana",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2668,6 +2753,7 @@ const enemyData = [
   {
     "id": "mon-ratbitt",
     "name": "Ratbitt",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2698,6 +2784,7 @@ const enemyData = [
   {
     "id": "mon-badbitt",
     "name": "Badbitt",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2728,6 +2815,7 @@ const enemyData = [
   {
     "id": "mon-lop-eared-ratbitt",
     "name": "Lop-Eared Ratbitt",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2758,6 +2846,7 @@ const enemyData = [
   {
     "id": "mon-lop-eared-badbitt",
     "name": "Lop-Eared Badbitt",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2788,6 +2877,7 @@ const enemyData = [
   {
     "id": "mon-uniconey",
     "name": "Uniconey",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2818,6 +2908,7 @@ const enemyData = [
   {
     "id": "mon-unicrony",
     "name": "Unicrony",
+    "classification": "Monster",
     "family": "Beast",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2848,6 +2939,7 @@ const enemyData = [
   {
     "id": "mon-flannacotta",
     "name": "Flannacotta",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2878,6 +2970,7 @@ const enemyData = [
   {
     "id": "mon-gelaflan",
     "name": "Gelaflan",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2908,6 +3001,7 @@ const enemyData = [
   {
     "id": "mon-flanbanero",
     "name": "Flanbanero",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2938,6 +3032,7 @@ const enemyData = [
   {
     "id": "mon-fizzy-flantasia",
     "name": "Fizzy Flantasia",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2968,6 +3063,7 @@ const enemyData = [
   {
     "id": "mon-peiste",
     "name": "Peiste",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -2998,6 +3094,7 @@ const enemyData = [
   {
     "id": "mon-sibilus",
     "name": "Sibilus",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3028,6 +3125,7 @@ const enemyData = [
   {
     "id": "mon-kukulcan",
     "name": "Kukulcan",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3058,6 +3156,7 @@ const enemyData = [
   {
     "id": "mon-stheno",
     "name": "Stheno",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3088,6 +3187,7 @@ const enemyData = [
   {
     "id": "mon-rock-tortoise",
     "name": "Rock Tortoise",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3118,6 +3218,7 @@ const enemyData = [
   {
     "id": "mon-frost-tortoise",
     "name": "Frost Tortoise",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3148,6 +3249,7 @@ const enemyData = [
   {
     "id": "mon-adamant-tortoise",
     "name": "Adamant Tortoise",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3178,6 +3280,7 @@ const enemyData = [
   {
     "id": "mon-lava-tortoise",
     "name": "Lava Tortoise",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3208,6 +3311,7 @@ const enemyData = [
   {
     "id": "mon-sahagin",
     "name": "Sahagin",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3238,6 +3342,7 @@ const enemyData = [
   {
     "id": "mon-sahagin-shaman",
     "name": "Sahagin Shaman",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3268,6 +3373,7 @@ const enemyData = [
   {
     "id": "mon-sahagin-shieldbearer",
     "name": "Sahagin Shieldbearer",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3298,6 +3404,7 @@ const enemyData = [
   {
     "id": "mon-dagon",
     "name": "Dagon",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3328,6 +3435,7 @@ const enemyData = [
   {
     "id": "mon-dagon-shaman",
     "name": "Dagon Shaman",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3358,6 +3466,7 @@ const enemyData = [
   {
     "id": "mon-dagon-shieldbearer",
     "name": "Dagon Shieldbearer",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3388,6 +3497,7 @@ const enemyData = [
   {
     "id": "mon-lotl",
     "name": "Lotl",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3418,6 +3528,7 @@ const enemyData = [
   {
     "id": "mon-toxolotl",
     "name": "Toxolotl",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3448,6 +3559,7 @@ const enemyData = [
   {
     "id": "mon-roxolotl",
     "name": "Roxolotl",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3478,6 +3590,7 @@ const enemyData = [
   {
     "id": "mon-noxolotl",
     "name": "Noxolotl",
+    "classification": "Monster",
     "family": "Aquatic",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3508,6 +3621,7 @@ const enemyData = [
   {
     "id": "mon-sandworm",
     "name": "Sandworm",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3539,6 +3653,7 @@ const enemyData = [
   {
     "id": "mon-toxic-worm",
     "name": "Toxic Worm",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3570,6 +3685,7 @@ const enemyData = [
   {
     "id": "mon-abyss-worm",
     "name": "Abyss Worm",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3601,6 +3717,7 @@ const enemyData = [
   {
     "id": "mon-zone-eater",
     "name": "Zone Eater",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3632,6 +3749,7 @@ const enemyData = [
   {
     "id": "mon-silkmoth",
     "name": "Silkmoth",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3663,6 +3781,7 @@ const enemyData = [
   {
     "id": "mon-staggermoth",
     "name": "Staggermoth",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3694,6 +3813,7 @@ const enemyData = [
   {
     "id": "mon-shadowmoth",
     "name": "Shadowmoth",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3725,6 +3845,7 @@ const enemyData = [
   {
     "id": "mon-sizzlemoth",
     "name": "Sizzlemoth",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3756,6 +3877,7 @@ const enemyData = [
   {
     "id": "mon-killer-ant",
     "name": "Killer Ant",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3787,6 +3909,7 @@ const enemyData = [
   {
     "id": "mon-paraponera",
     "name": "Paraponera",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3818,6 +3941,7 @@ const enemyData = [
   {
     "id": "mon-bullet-ant",
     "name": "Bullet Ant",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3849,6 +3973,7 @@ const enemyData = [
   {
     "id": "mon-cask-paraponera",
     "name": "Cask Paraponera",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3880,6 +4005,7 @@ const enemyData = [
   {
     "id": "mon-ench-ant-er",
     "name": "Ench-ant-er",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3911,6 +4037,7 @@ const enemyData = [
   {
     "id": "mon-magiponera",
     "name": "Magiponera",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3942,6 +4069,7 @@ const enemyData = [
   {
     "id": "mon-moulder",
     "name": "Moulder",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -3973,6 +4101,7 @@ const enemyData = [
   {
     "id": "mon-spigus",
     "name": "Spigus",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4004,6 +4133,7 @@ const enemyData = [
   {
     "id": "mon-arachne",
     "name": "Arachne",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4035,6 +4165,7 @@ const enemyData = [
   {
     "id": "mon-wicked-widow",
     "name": "Wicked Widow",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4066,6 +4197,7 @@ const enemyData = [
   {
     "id": "mon-vesp",
     "name": "Vesp",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4097,6 +4229,7 @@ const enemyData = [
   {
     "id": "mon-razor-vesp",
     "name": "Razor Vesp",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4128,6 +4261,7 @@ const enemyData = [
   {
     "id": "mon-vesp-pest",
     "name": "Vesp Pest",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4159,6 +4293,7 @@ const enemyData = [
   {
     "id": "mon-pephredo",
     "name": "Pephredo",
+    "classification": "Monster",
     "family": "Insect",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4190,6 +4325,7 @@ const enemyData = [
   {
     "id": "mon-veronica",
     "name": "Veronica",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4221,6 +4357,7 @@ const enemyData = [
   {
     "id": "mon-petunia",
     "name": "Petunia",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4252,6 +4389,7 @@ const enemyData = [
   {
     "id": "mon-nemophila",
     "name": "Nemophila",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4283,6 +4421,7 @@ const enemyData = [
   {
     "id": "mon-rafflesia",
     "name": "Rafflesia",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4314,6 +4453,7 @@ const enemyData = [
   {
     "id": "mon-fungoo",
     "name": "Fungoo",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4345,6 +4485,7 @@ const enemyData = [
   {
     "id": "mon-mossy-fungoo",
     "name": "Mossy Fungoo",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4376,6 +4517,7 @@ const enemyData = [
   {
     "id": "mon-blue-fungoo",
     "name": "Blue Fungoo",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4407,6 +4549,7 @@ const enemyData = [
   {
     "id": "mon-funguar",
     "name": "Funguar",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4438,6 +4581,7 @@ const enemyData = [
   {
     "id": "mon-fresh-forkling",
     "name": "Fresh Forkling",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4469,6 +4613,7 @@ const enemyData = [
   {
     "id": "mon-fallen-forkling",
     "name": "Fallen Forkling",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4500,6 +4645,7 @@ const enemyData = [
   {
     "id": "mon-fresh-foliole",
     "name": "Fresh Foliole",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4531,6 +4677,7 @@ const enemyData = [
   {
     "id": "mon-fallen-foliole",
     "name": "Fallen Foliole",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4562,6 +4709,7 @@ const enemyData = [
   {
     "id": "mon-fresh-frond",
     "name": "Fresh Frond",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4593,6 +4741,7 @@ const enemyData = [
   {
     "id": "mon-fallen-frond",
     "name": "Fallen Frond",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4624,6 +4773,7 @@ const enemyData = [
   {
     "id": "mon-ochu",
     "name": "Ochu",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4655,6 +4805,7 @@ const enemyData = [
   {
     "id": "mon-mantrap",
     "name": "Mantrap",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4686,6 +4837,7 @@ const enemyData = [
   {
     "id": "mon-devil-s-snare",
     "name": "Devil's Snare",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4717,6 +4869,7 @@ const enemyData = [
   {
     "id": "mon-triffid",
     "name": "Triffid",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4748,6 +4901,7 @@ const enemyData = [
   {
     "id": "mon-woody",
     "name": "Woody",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4779,6 +4933,7 @@ const enemyData = [
   {
     "id": "mon-laerad",
     "name": "Laerad",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4810,6 +4965,7 @@ const enemyData = [
   {
     "id": "mon-irminsul",
     "name": "Irminsul",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4841,6 +4997,7 @@ const enemyData = [
   {
     "id": "mon-coppice",
     "name": "Coppice",
+    "classification": "Monster",
     "family": "Plant",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4872,6 +5029,7 @@ const enemyData = [
   {
     "id": "mon-ghost-knight",
     "name": "Ghost Knight",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4903,6 +5061,7 @@ const enemyData = [
   {
     "id": "mon-dead-knight",
     "name": "Dead Knight",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4934,6 +5093,7 @@ const enemyData = [
   {
     "id": "mon-kagutsuchi",
     "name": "Kagutsuchi",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4965,6 +5125,7 @@ const enemyData = [
   {
     "id": "mon-tejas",
     "name": "Tejas",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -4996,6 +5157,7 @@ const enemyData = [
   {
     "id": "mon-skeleton-sellsword",
     "name": "Skeleton Sellsword",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5027,6 +5189,7 @@ const enemyData = [
   {
     "id": "mon-skeleton-assassin",
     "name": "Skeleton Assassin",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5058,6 +5221,7 @@ const enemyData = [
   {
     "id": "mon-skeleton-lancer",
     "name": "Skeleton Lancer",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5089,6 +5253,7 @@ const enemyData = [
   {
     "id": "mon-reaper-sellsword",
     "name": "Reaper Sellsword",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5120,6 +5285,7 @@ const enemyData = [
   {
     "id": "mon-reaper-assassin",
     "name": "Reaper Assassin",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5151,6 +5317,7 @@ const enemyData = [
   {
     "id": "mon-reaper-lancer",
     "name": "Reaper Lancer",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5182,6 +5349,7 @@ const enemyData = [
   {
     "id": "mon-lost-souls",
     "name": "Lost Souls",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5213,6 +5381,7 @@ const enemyData = [
   {
     "id": "mon-restless-souls",
     "name": "Restless Souls",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5244,6 +5413,7 @@ const enemyData = [
   {
     "id": "mon-vengeful-souls",
     "name": "Vengeful Souls",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5275,6 +5445,7 @@ const enemyData = [
   {
     "id": "mon-merciless-souls",
     "name": "Merciless Souls",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5306,6 +5477,7 @@ const enemyData = [
   {
     "id": "mon-brimstone-stallion",
     "name": "Brimstone Stallion",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5337,6 +5509,7 @@ const enemyData = [
   {
     "id": "mon-sagari",
     "name": "Sagari",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5368,6 +5541,7 @@ const enemyData = [
   {
     "id": "mon-xanthos",
     "name": "Xanthos",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5399,6 +5573,7 @@ const enemyData = [
   {
     "id": "mon-sleipnir",
     "name": "Sleipnir",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5430,6 +5605,7 @@ const enemyData = [
   {
     "id": "mon-antiphates",
     "name": "Antiphates",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5461,6 +5637,7 @@ const enemyData = [
   {
     "id": "mon-daidarabocchi",
     "name": "Daidarabocchi",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5492,6 +5669,7 @@ const enemyData = [
   {
     "id": "mon-goliath",
     "name": "Goliath",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5523,6 +5701,7 @@ const enemyData = [
   {
     "id": "mon-grotesque",
     "name": "Grotesque",
+    "classification": "Monster",
     "family": "Undead",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5554,6 +5733,7 @@ const enemyData = [
   {
     "id": "mon-baphomet",
     "name": "Baphomet",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5584,6 +5764,7 @@ const enemyData = [
   {
     "id": "mon-razanil",
     "name": "Razanil",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5614,6 +5795,7 @@ const enemyData = [
   {
     "id": "mon-azazel",
     "name": "Azazel",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5644,6 +5826,7 @@ const enemyData = [
   {
     "id": "mon-asmodeus",
     "name": "Asmodeus",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5674,6 +5857,7 @@ const enemyData = [
   {
     "id": "mon-bronzegoyle",
     "name": "Bronzegoyle",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5704,6 +5888,7 @@ const enemyData = [
   {
     "id": "mon-bronzelion",
     "name": "Bronzelion",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5734,6 +5919,7 @@ const enemyData = [
   {
     "id": "mon-goldgoyle",
     "name": "Goldgoyle",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5764,6 +5950,7 @@ const enemyData = [
   {
     "id": "mon-goldelion",
     "name": "Goldelion",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5794,6 +5981,7 @@ const enemyData = [
   {
     "id": "mon-lapisgoyle",
     "name": "Lapisgoyle",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5824,6 +6012,7 @@ const enemyData = [
   {
     "id": "mon-lapislion",
     "name": "Lapislion",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5854,6 +6043,7 @@ const enemyData = [
   {
     "id": "mon-ahriman",
     "name": "Ahriman",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5884,6 +6074,7 @@ const enemyData = [
   {
     "id": "mon-evil-eye",
     "name": "Evil Eye",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5914,6 +6105,7 @@ const enemyData = [
   {
     "id": "mon-plague",
     "name": "Plague",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5944,6 +6136,7 @@ const enemyData = [
   {
     "id": "mon-angra-mainyu",
     "name": "Angra Mainyu",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -5974,6 +6167,7 @@ const enemyData = [
   {
     "id": "mon-asp",
     "name": "Asp",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6004,6 +6198,7 @@ const enemyData = [
   {
     "id": "mon-ahura",
     "name": "Ahura",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6034,6 +6229,7 @@ const enemyData = [
   {
     "id": "mon-abaddon",
     "name": "Abaddon",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6064,6 +6260,7 @@ const enemyData = [
   {
     "id": "mon-amon",
     "name": "Amon",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6094,6 +6291,7 @@ const enemyData = [
   {
     "id": "mon-hecatoncheir",
     "name": "Hecatoncheir",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6124,6 +6322,7 @@ const enemyData = [
   {
     "id": "mon-vishno",
     "name": "Vishno",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6154,6 +6353,7 @@ const enemyData = [
   {
     "id": "mon-gigantos",
     "name": "Gigantos",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6184,6 +6384,7 @@ const enemyData = [
   {
     "id": "mon-aigaion",
     "name": "Aigaion",
+    "classification": "Monster",
     "family": "Demon",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6214,6 +6415,7 @@ const enemyData = [
   {
     "id": "mon-golem",
     "name": "Golem",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6245,6 +6447,7 @@ const enemyData = [
   {
     "id": "mon-adamantite-golem",
     "name": "Adamantite Golem",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6276,6 +6479,7 @@ const enemyData = [
   {
     "id": "mon-ice-golem",
     "name": "Ice Golem",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6307,6 +6511,7 @@ const enemyData = [
   {
     "id": "mon-inferno-golem",
     "name": "Inferno Golem",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6338,6 +6543,7 @@ const enemyData = [
   {
     "id": "mon-cait-sith",
     "name": "Cait Sith",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6369,6 +6575,7 @@ const enemyData = [
   {
     "id": "mon-kitty-cait",
     "name": "Kitty-Cait",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6400,6 +6607,7 @@ const enemyData = [
   {
     "id": "mon-short-cait",
     "name": "Short-Cait",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6431,6 +6639,7 @@ const enemyData = [
   {
     "id": "mon-siamese-cait",
     "name": "Siamese Cait",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6462,6 +6671,7 @@ const enemyData = [
   {
     "id": "mon-ignis-element",
     "name": "Ignis Element",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6493,6 +6703,7 @@ const enemyData = [
   {
     "id": "mon-aqua-element",
     "name": "Aqua Element",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6524,6 +6735,7 @@ const enemyData = [
   {
     "id": "mon-electrica-element",
     "name": "Electrica Element",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6555,6 +6767,7 @@ const enemyData = [
   {
     "id": "mon-terra-element",
     "name": "Terra Element",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6586,6 +6799,7 @@ const enemyData = [
   {
     "id": "mon-ventus-element",
     "name": "Ventus Element",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6617,6 +6831,7 @@ const enemyData = [
   {
     "id": "mon-lux-element",
     "name": "Lux Element",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6648,6 +6863,7 @@ const enemyData = [
   {
     "id": "mon-umbra-element",
     "name": "Umbra Element",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6679,6 +6895,7 @@ const enemyData = [
   {
     "id": "mon-sylph",
     "name": "Sylph",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6710,6 +6927,7 @@ const enemyData = [
   {
     "id": "mon-undine",
     "name": "Undine",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6741,6 +6959,7 @@ const enemyData = [
   {
     "id": "mon-drys",
     "name": "Drys",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6772,6 +6991,7 @@ const enemyData = [
   {
     "id": "mon-turan",
     "name": "Turan",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6803,6 +7023,7 @@ const enemyData = [
   {
     "id": "mon-freyr",
     "name": "Freyr",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6834,6 +7055,7 @@ const enemyData = [
   {
     "id": "mon-poseidon",
     "name": "Poseidon",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6865,6 +7087,7 @@ const enemyData = [
   {
     "id": "mon-thor",
     "name": "Thor",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6896,6 +7119,7 @@ const enemyData = [
   {
     "id": "mon-chaos",
     "name": "Chaos",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6927,6 +7151,7 @@ const enemyData = [
   {
     "id": "mon-wiki-wiki",
     "name": "Wiki-Wiki",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6958,6 +7183,7 @@ const enemyData = [
   {
     "id": "mon-big-wiki-wiki",
     "name": "Big Wiki-Wiki",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -6989,6 +7215,7 @@ const enemyData = [
   {
     "id": "mon-metal-wiki-wiki",
     "name": "Metal Wiki-Wiki",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7020,6 +7247,7 @@ const enemyData = [
   {
     "id": "mon-queen-wiki-wiki",
     "name": "Queen Wiki-Wiki",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7051,6 +7279,7 @@ const enemyData = [
   {
     "id": "mon-king-wiki-wiki",
     "name": "King Wiki-Wiki",
+    "classification": "Monster",
     "family": "Spirit",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7082,6 +7311,7 @@ const enemyData = [
   {
     "id": "mon-cyclops",
     "name": "Cyclops",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7111,6 +7341,7 @@ const enemyData = [
   {
     "id": "mon-orc-king",
     "name": "Orc King",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7140,6 +7371,7 @@ const enemyData = [
   {
     "id": "mon-baba-yaga",
     "name": "Baba Yaga",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7169,6 +7401,7 @@ const enemyData = [
   {
     "id": "mon-fenrir",
     "name": "Fenrir",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7198,6 +7431,7 @@ const enemyData = [
   {
     "id": "mon-catoblepas",
     "name": "Catoblepas",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7227,6 +7461,7 @@ const enemyData = [
   {
     "id": "mon-eclipse",
     "name": "Eclipse",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7256,6 +7491,7 @@ const enemyData = [
   {
     "id": "mon-mushussu",
     "name": "Mushussu",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7285,6 +7521,7 @@ const enemyData = [
   {
     "id": "mon-genbu",
     "name": "Genbu",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7314,6 +7551,7 @@ const enemyData = [
   {
     "id": "mon-coral-emperor",
     "name": "Coral Emperor",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7343,6 +7581,7 @@ const enemyData = [
   {
     "id": "mon-j-rmungandr",
     "name": "Jörmungandr",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7372,6 +7611,7 @@ const enemyData = [
   {
     "id": "mon-baal",
     "name": "Baal",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7401,6 +7641,7 @@ const enemyData = [
   {
     "id": "mon-vespus-hex",
     "name": "Vespus Hex",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7430,6 +7671,7 @@ const enemyData = [
   {
     "id": "mon-skullcap",
     "name": "Skullcap",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7459,6 +7701,7 @@ const enemyData = [
   {
     "id": "mon-jealous-jody",
     "name": "Jealous Jody",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7488,6 +7731,7 @@ const enemyData = [
   {
     "id": "mon-treant",
     "name": "Treant",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7517,6 +7761,7 @@ const enemyData = [
   {
     "id": "mon-susanoo",
     "name": "Susanoo",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7546,6 +7791,7 @@ const enemyData = [
   {
     "id": "mon-picto-amrita",
     "name": "Picto-Amrita",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7575,6 +7821,7 @@ const enemyData = [
   {
     "id": "mon-nightmare",
     "name": "Nightmare",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7604,6 +7851,7 @@ const enemyData = [
   {
     "id": "mon-immortal",
     "name": "Immortal",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7633,6 +7881,7 @@ const enemyData = [
   {
     "id": "mon-hoenir",
     "name": "Hoenir",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7662,6 +7911,7 @@ const enemyData = [
   {
     "id": "mon-astaroth",
     "name": "Astaroth",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7691,6 +7941,7 @@ const enemyData = [
   {
     "id": "mon-picto-beleth",
     "name": "Picto-Beleth",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7720,6 +7971,7 @@ const enemyData = [
   {
     "id": "mon-asura",
     "name": "Asura",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7749,6 +8001,7 @@ const enemyData = [
   {
     "id": "mon-hephaestus",
     "name": "Hephaestus",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7778,6 +8031,7 @@ const enemyData = [
   {
     "id": "mon-leannan-sith",
     "name": "Leannan Sith",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7807,6 +8061,7 @@ const enemyData = [
   {
     "id": "mon-picto-mona",
     "name": "Picto-Mona",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7836,6 +8091,7 @@ const enemyData = [
   {
     "id": "mon-zeus",
     "name": "Zeus",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7865,6 +8121,7 @@ const enemyData = [
   {
     "id": "mon-selene",
     "name": "Selene",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7894,6 +8151,7 @@ const enemyData = [
   {
     "id": "mon-dag",
     "name": "Dag",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7923,6 +8181,7 @@ const enemyData = [
   {
     "id": "mon-horten",
     "name": "Horten",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7952,6 +8211,7 @@ const enemyData = [
   {
     "id": "mon-adam",
     "name": "Adam",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -7981,6 +8241,7 @@ const enemyData = [
   {
     "id": "mon-enormocrag",
     "name": "Enormocrag",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8010,6 +8271,7 @@ const enemyData = [
   {
     "id": "mon-orpheus",
     "name": "Orpheus",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8039,6 +8301,7 @@ const enemyData = [
   {
     "id": "mon-anihal",
     "name": "Anihal",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8068,6 +8331,7 @@ const enemyData = [
   {
     "id": "mon-bernard",
     "name": "Bernard",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8097,6 +8361,7 @@ const enemyData = [
   {
     "id": "mon-prince-castor",
     "name": "Prince Castor",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8126,6 +8391,7 @@ const enemyData = [
   {
     "id": "mon-shirley",
     "name": "Shirley",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8155,6 +8421,7 @@ const enemyData = [
   {
     "id": "mon-amphora",
     "name": "Amphora",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8184,6 +8451,7 @@ const enemyData = [
   {
     "id": "mon-roddy",
     "name": "Roddy",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8213,6 +8481,7 @@ const enemyData = [
   {
     "id": "mon-lily",
     "name": "Lily",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8242,6 +8511,7 @@ const enemyData = [
   {
     "id": "mon-galahad",
     "name": "Galahad",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8271,6 +8541,7 @@ const enemyData = [
   {
     "id": "mon-folie",
     "name": "Folie",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8300,6 +8571,7 @@ const enemyData = [
   {
     "id": "mon-papilloid",
     "name": "Papilloid",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8329,6 +8601,7 @@ const enemyData = [
   {
     "id": "mon-empuse",
     "name": "Empuse",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8358,6 +8631,7 @@ const enemyData = [
   {
     "id": "mon-frankenfalcot",
     "name": "Frankenfalcot",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8387,6 +8661,7 @@ const enemyData = [
   {
     "id": "mon-martha",
     "name": "Martha",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8416,6 +8691,7 @@ const enemyData = [
   {
     "id": "mon-helio",
     "name": "Helio",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8445,6 +8721,7 @@ const enemyData = [
   {
     "id": "mon-gladys",
     "name": "Gladys",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8474,6 +8751,7 @@ const enemyData = [
   {
     "id": "mon-domenic",
     "name": "Domenic",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8503,6 +8781,7 @@ const enemyData = [
   {
     "id": "mon-glenn",
     "name": "Glenn",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8532,6 +8811,7 @@ const enemyData = [
   {
     "id": "mon-xolotl",
     "name": "Xolotl",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8561,6 +8841,7 @@ const enemyData = [
   {
     "id": "mon-lonsdale",
     "name": "Lonsdale",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8590,6 +8871,7 @@ const enemyData = [
   {
     "id": "mon-marla",
     "name": "Marla",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8619,6 +8901,7 @@ const enemyData = [
   {
     "id": "mon-vigintio",
     "name": "Vigintio",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8648,6 +8931,7 @@ const enemyData = [
   {
     "id": "mon-d-vergr",
     "name": "D-Vergr",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8677,6 +8961,7 @@ const enemyData = [
   {
     "id": "mon-g-oetia",
     "name": "G-Oetia",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8706,6 +8991,7 @@ const enemyData = [
   {
     "id": "mon-edna",
     "name": "Edna",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8735,6 +9021,7 @@ const enemyData = [
   {
     "id": "mon-the-night-s-nexus",
     "name": "The Night's Nexus",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8764,6 +9051,7 @@ const enemyData = [
   {
     "id": "mon-sir-sloan",
     "name": "Sir Sloan",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8793,6 +9081,7 @@ const enemyData = [
   {
     "id": "mon-grasping-hand",
     "name": "Grasping Hand",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8822,6 +9111,7 @@ const enemyData = [
   {
     "id": "mon-cradling-hand",
     "name": "Cradling Hand",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8851,6 +9141,7 @@ const enemyData = [
   {
     "id": "mon-gwydion",
     "name": "Gwydion",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,
@@ -8880,6 +9171,7 @@ const enemyData = [
   {
     "id": "mon-lady-emma",
     "name": "Lady Emma",
+    "classification": "Monster",
     "family": "Bosses",
     "isBoss": false,
     "isAsteriskHolder": false,

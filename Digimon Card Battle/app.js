@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function cardIconHtml(card) {
     if (card.localIcon) {
-      return `<img src="${card.localIcon}" alt="${escapeHtml(card.name)}" class="card-icon-img" loading="lazy" onerror="this.outerHTML='<span class=\\'no-art\\'>No art</span>'" />`;
+      return `<img src="${escapeHtml(card.localIcon)}" alt="${escapeHtml(card.name)}" class="card-icon-img" loading="lazy" onerror="this.outerHTML='<span class=\\'no-art\\'>No art</span>'" />`;
     }
     return `<span class="no-art">No art</span>`;
   }
@@ -156,7 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     tableBody.innerHTML = filtered.map(card => {
-      const specClass = `spec-${(card.specialty || 'option').toLowerCase()}`;
+      const specSlug = String(card.specialty || 'option').toLowerCase().replace(/[^a-z0-9_-]/g, '');
+      const specClass = `spec-${specSlug}`;
 
       const circleCell = formatAttack(card.circle, card.circleEffects);
       const triangleCell = formatAttack(card.triangle, card.triangleEffects);
@@ -164,14 +165,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       return `
         <tr>
-          <td data-label="Card">#${card.no}</td>
+          <td data-label="Card">#${escapeHtml(card.no)}</td>
           <td data-label="Icon">${cardIconHtml(card)}</td>
           <td data-label="Name"><a class="card-name-link" href="fusion.html?card=${encodeURIComponent(card.name)}" title="See fusion combinations for ${escapeHtml(card.name)}">${escapeHtml(card.name)}</a></td>
-          <td data-label="Level"><span class="level-badge">${card.level || '-'}</span></td>
-          <td data-label="Specialty"><span class="spec-tag ${specClass}">${card.specialty || '-'}</span></td>
-          <td data-label="HP">${card.hp || '-'}</td>
-          <td data-label="DP">${card.dp || '-'}</td>
-          <td data-label="+P">${card.plusP || '-'}</td>
+          <td data-label="Level"><span class="level-badge">${escapeHtml(card.level || '-')}</span></td>
+          <td data-label="Specialty"><span class="spec-tag ${escapeHtml(specClass)}">${escapeHtml(card.specialty || '-')}</span></td>
+          <td data-label="HP">${escapeHtml(card.hp || '-')}</td>
+          <td data-label="DP">${escapeHtml(card.dp || '-')}</td>
+          <td data-label="+P">${escapeHtml(card.plusP || '-')}</td>
           <td data-label="Circle attack">${circleCell}</td>
           <td data-label="Triangle attack">${triangleCell}</td>
           <td data-label="X attack">${xCell}</td>

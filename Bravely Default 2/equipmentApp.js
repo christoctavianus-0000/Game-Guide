@@ -120,9 +120,24 @@
     `;
   }
 
+  function updateSortHeaders() {
+    tableHeaders.forEach((h) => {
+      const icon = h.querySelector('.sort-icon');
+      const isCurrent = h.dataset.sort === sortField;
+      if (isCurrent) {
+        h.setAttribute('aria-sort', sortAsc ? 'ascending' : 'descending');
+        if (icon) icon.textContent = sortAsc ? '▲' : '▼';
+      } else {
+        h.removeAttribute('aria-sort');
+        if (icon) icon.textContent = '↕';
+      }
+    });
+  }
+
   function filterAndSortEquipment() {
     const items = window.equipmentData || [];
     const q = searchQuery.toLowerCase().trim();
+    const favSet = new Set(window.BD2.getFavorites(FAV_KEY));
 
     const filtered = items.filter((item) => {
       const itemCat = item.category || '';
@@ -130,7 +145,7 @@
 
       // Category filter
       if (activeCategory === 'fav') {
-        if (!window.BD2.isFavorite(FAV_KEY, item.id)) return false;
+        if (!favSet.has(item.id)) return false;
       } else if (activeCategory !== 'all') {
         const catNorm = activeCategory.toLowerCase().replace(/s$/, '');
         const itemCatNorm = itemCat.toLowerCase().replace(/s$/, '');
@@ -178,10 +193,13 @@
       return 0;
     });
 
-    renderTable(filtered);
+    updateSortHeaders();
+    renderTable(filtered, favSet);
   }
 
-  function renderTable(items) {
+  function renderTable(items, favSet) {
+    const activeFavs = favSet || new Set(window.BD2.getFavorites(FAV_KEY));
+
     if (items.length === 0) {
       tableBody.innerHTML = `
         <tr>
@@ -192,7 +210,7 @@
       `;
     } else {
       tableBody.innerHTML = items.map((item) => {
-        const isFav = window.BD2.isFavorite(FAV_KEY, item.id);
+        const isFav = activeFavs.has(item.id);
         const sub = item.subCategory || item.subtype || item.type || 'Gear';
         const icon = getSubtypeIcon(sub);
         const stats = item.stats || {};
@@ -277,9 +295,13 @@
     window.BD2.initModal();
     filterAndSortEquipment();
 
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = (/** @type {HTMLInputElement} */ (e.target)).value;
+    const debouncedSearch = window.BD2.debounce((value) => {
+      searchQuery = value;
       filterAndSortEquipment();
+    }, 140);
+
+    searchInput.addEventListener('input', (e) => {
+      debouncedSearch((/** @type {HTMLInputElement} */ (e.target)).value);
     });
 
     subtypeSelect.addEventListener('change', (e) => {
@@ -311,23 +333,25 @@
 
     clearBtn.addEventListener('click', resetFilters);
 
+    function handleSortHeader(th) {
+      const field = th.dataset.sort;
+      if (!field) return;
+      if (sortField === field) {
+        sortAsc = !sortAsc;
+      } else {
+        sortField = field;
+        sortAsc = true;
+      }
+      filterAndSortEquipment();
+    }
+
     tableHeaders.forEach((th) => {
-      th.addEventListener('click', () => {
-        const field = th.dataset.sort;
-        if (!field) return;
-        if (sortField === field) {
-          sortAsc = !sortAsc;
-        } else {
-          sortField = field;
-          sortAsc = true;
+      th.addEventListener('click', () => handleSortHeader(th));
+      th.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleSortHeader(th);
         }
-        tableHeaders.forEach((h) => {
-          const icon = h.querySelector('.sort-icon');
-          if (icon) icon.textContent = '↕';
-        });
-        const currentIcon = th.querySelector('.sort-icon');
-        if (currentIcon) currentIcon.textContent = sortAsc ? '▲' : '▼';
-        filterAndSortEquipment();
       });
     });
 

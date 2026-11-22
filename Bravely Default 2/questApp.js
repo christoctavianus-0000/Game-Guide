@@ -49,9 +49,10 @@
     return getCompletedQuests().includes(id);
   }
 
-  function updateCompletedStat() {
+  function updateCompletedStat(doneList) {
     if (completedCountEl) {
-      completedCountEl.textContent = getCompletedQuests().length;
+      const len = doneList ? doneList.length : getCompletedQuests().length;
+      completedCountEl.textContent = String(len);
     }
   }
 
@@ -111,19 +112,19 @@
     `;
   }
 
-  function renderQuestCard(quest) {
-    const isFav = window.BD2.isFavorite(FAV_KEY, quest.id);
-    const isDone = isQuestDone(quest.id);
+  function renderQuestCard(quest, favSet, doneSet) {
+    const isFav = favSet ? favSet.has(quest.id) : window.BD2.isFavorite(FAV_KEY, quest.id);
+    const isDone = doneSet ? doneSet.has(quest.id) : isQuestDone(quest.id);
     const stars = "★".repeat(Math.max(1, Math.min(5, quest.stars || 1)));
 
     return `
-      <article class="codex-card ${isDone ? 'quest-done' : ''}" id="card-${window.BD2.escapeHtml(quest.id)}" data-id="${window.BD2.escapeHtml(quest.id)}" style="${isDone ? 'border-color: rgba(52, 211, 153, 0.4);' : ''}">
+      <article class="codex-card ${isDone ? 'quest-done' : ''}" id="card-${window.BD2.escapeHtml(quest.id)}" data-id="${window.BD2.escapeHtml(quest.id)}">
         <header class="card-header">
-          <div class="job-icon-frame" style="width: 44px; height: 44px; border-color: ${isDone ? 'var(--vitality-green)' : 'var(--border-crystal)'};">
-            <span style="font-family: var(--font-mono); font-weight: 700; color: ${isDone ? 'var(--vitality-green)' : 'var(--text-crystal)'}; font-size: 0.9rem;">#${window.BD2.escapeHtml(quest.number)}</span>
+          <div class="job-icon-frame quest-num-frame">
+            <span class="quest-num-text">#${window.BD2.escapeHtml(quest.number)}</span>
           </div>
           <div class="card-title-group">
-            <h3 class="card-title" style="${isDone ? 'text-decoration: line-through; opacity: 0.75;' : ''}">${window.BD2.escapeHtml(quest.name)}</h3>
+            <h3 class="card-title">${window.BD2.escapeHtml(quest.name)}</h3>
             <div class="card-meta">
               <span class="card-badge">${window.BD2.escapeHtml(quest.chapter)}</span>
               <span style="color: var(--asterisk-gold);">${window.BD2.escapeHtml(stars)}</span>
@@ -151,7 +152,7 @@
             <span>Details</span> &rarr;
           </button>
           <div style="display: flex; gap: 0.4rem; align-items: center;">
-            <button type="button" class="btn-fav check-done-btn ${isDone ? 'active' : ''}" data-id="${window.BD2.escapeHtml(quest.id)}" title="${isDone ? 'Completed' : 'Mark Complete'}" aria-label="Mark Complete" style="color: ${isDone ? 'var(--vitality-green)' : 'inherit'}; border-color: ${isDone ? 'var(--vitality-green)' : 'var(--border-subtle)'};">
+            <button type="button" class="btn-fav check-done-btn ${isDone ? 'active' : ''}" data-id="${window.BD2.escapeHtml(quest.id)}" title="${isDone ? 'Completed' : 'Mark Complete'}" aria-label="${isDone ? 'Completed (mark incomplete)' : 'Mark Complete'}">
               ✓
             </button>
             <button type="button" class="btn-fav ${isFav ? 'active' : ''}" data-id="${window.BD2.escapeHtml(quest.id)}" aria-label="Favorite quest" title="Favorite">
@@ -166,11 +167,17 @@
   function filterQuests() {
     const quests = window.questData || [];
     const q = searchQuery.toLowerCase().trim();
+    const favSet = new Set(window.BD2.getFavorites(FAV_KEY));
+    const doneSet = new Set(getCompletedQuests());
 
     const filtered = quests.filter((quest) => {
-      // Chapter filter
+      // Chapter or status filter
       if (activeChapter === 'fav') {
-        if (!window.BD2.isFavorite(FAV_KEY, quest.id)) return false;
+        if (!favSet.has(quest.id)) return false;
+      } else if (activeChapter === 'pending') {
+        if (doneSet.has(quest.id)) return false;
+      } else if (activeChapter === 'done') {
+        if (!doneSet.has(quest.id)) return false;
       } else if (activeChapter !== 'all') {
         if (quest.chapter !== activeChapter) return false;
       }
@@ -191,10 +198,13 @@
       return true;
     });
 
-    renderQuests(filtered);
+    renderQuests(filtered, favSet, doneSet);
   }
 
-  function renderQuests(quests) {
+  function renderQuests(quests, favSet, doneSet) {
+    const activeFavs = favSet || new Set(window.BD2.getFavorites(FAV_KEY));
+    const activeDone = doneSet || new Set(getCompletedQuests());
+
     if (quests.length === 0) {
       container.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: var(--bg-surface-card); border-radius: 12px; border: 1px dashed var(--border-card);">
@@ -204,9 +214,9 @@
       `;
       document.getElementById('reset-empty-btn')?.addEventListener('click', resetFilters);
     } else {
-      container.innerHTML = quests.map(renderQuestCard).join('');
+      container.innerHTML = quests.map((q) => renderQuestCard(q, activeFavs, activeDone)).join('');
     }
-    countEl.textContent = quests.length;
+    countEl.textContent = String(quests.length);
   }
 
   function resetFilters() {
@@ -240,9 +250,13 @@
     updateCompletedStat();
     filterQuests();
 
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = (/** @type {HTMLInputElement} */ (e.target)).value;
+    const debouncedSearch = window.BD2.debounce((value) => {
+      searchQuery = value;
       filterQuests();
+    }, 140);
+
+    searchInput.addEventListener('input', (e) => {
+      debouncedSearch((/** @type {HTMLInputElement} */ (e.target)).value);
     });
 
     chapterButtons.forEach((btn) => {
@@ -278,15 +292,15 @@
         if (!id) return;
         const nowDone = toggleQuestDone(id);
         doneBtn.classList.toggle('active', nowDone);
+        doneBtn.setAttribute('title', nowDone ? 'Completed' : 'Mark Complete');
+        doneBtn.setAttribute('aria-label', nowDone ? 'Completed (mark incomplete)' : 'Mark Complete');
+        if (activeChapter === 'pending' || activeChapter === 'done') {
+          filterQuests();
+          return;
+        }
         const card = /** @type {HTMLElement|null} */ (document.getElementById(`card-${id}`));
         if (card) {
           card.classList.toggle('quest-done', nowDone);
-          card.style.borderColor = nowDone ? 'rgba(52, 211, 153, 0.4)' : '';
-          const title = /** @type {HTMLElement|null} */ (card.querySelector('.card-title'));
-          if (title) {
-            title.style.textDecoration = nowDone ? 'line-through' : 'none';
-            title.style.opacity = nowDone ? '0.75' : '1';
-          }
         }
         return;
       }

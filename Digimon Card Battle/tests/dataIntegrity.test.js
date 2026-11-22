@@ -81,3 +81,15 @@ test('all Digimon UI vector icons exist in assets/ui', () => {
   });
 });
 
+test('app.js and fusion.js escape dynamic card fields in innerHTML templates', () => {
+  const appJs = fs.readFileSync(path.join(ROOT, 'app.js'), 'utf8');
+  const fusionJs = fs.readFileSync(path.join(ROOT, 'fusion.js'), 'utf8');
+
+  for (const expr of ['escapeHtml(card.localIcon)', 'escapeHtml(card.no)', "escapeHtml(card.level || '-')", "escapeHtml(card.specialty || '-')", "escapeHtml(card.hp || '-')", "escapeHtml(card.dp || '-')", "escapeHtml(card.plusP || '-')"]) {
+    assert.ok(appJs.includes(expr), `app.js must escape ${expr}`);
+  }
+  for (const expr of ["escapeHtml(card.localIcon || '')", "escapeHtml(card.materialValue ?? '?')", "escapeHtml(card.resultValue ?? '?')", 'escapeHtml(c1Icon)', 'escapeHtml(c2Icon)', 'escapeHtml(resIcon)']) {
+    assert.ok(fusionJs.includes(expr), `fusion.js must escape ${expr}`);
+  }
+});
+

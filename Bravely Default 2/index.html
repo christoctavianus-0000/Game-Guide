@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1220">
+  <meta name="description" content="Bravely Default II Jobs Codex — explore all 24 Asterisk jobs, aptitudes, dual specialties, and level progressions.">
   <title>Jobs Codex — Bravely Default II Game Guide</title>
   <link rel="stylesheet" href="styles.css">
   <script src="themeToggle.js"></script>
 </head>
 <body>
   <!-- Skip link for keyboard users -->
-  <a class="skip-link nav-link" href="#main-content" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;" onfocus="this.style.position='static'; this.style.width='auto'; this.style.height='auto';">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Fixed Desktop Rail -->
   <aside class="site-rail" aria-label="Codex navigation">
@@ -91,7 +93,7 @@
         <div class="stat-chip">Total Asterisks: <strong id="stat-total">24</strong></div>
         <div class="stat-chip">Roles: <strong>5 Classes</strong></div>
         <div class="stat-chip">Aptitudes: <strong>S to E</strong></div>
-        <div class="stat-chip">Max Level: <strong>Lv. 12</strong></div>
+        <div class="stat-chip">Max Level: <strong>Lv. 15</strong></div>
       </div>
     </section>
 
@@ -109,6 +111,7 @@
           <button type="button" class="filter-pill" data-role="Defender">Defender</button>
           <button type="button" class="filter-pill" data-role="Healer">Healer</button>
           <button type="button" class="filter-pill" data-role="Supporter">Supporter</button>
+          <button type="button" class="filter-pill" data-role="Specialist">Specialist</button>
           <button type="button" class="filter-pill" data-role="fav">★ Favorites</button>
         </div>
       </div>
@@ -126,7 +129,7 @@
   </main>
 
   <!-- Modal Backdrop -->
-  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-window">
       <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
       <div id="modal-content"></div>

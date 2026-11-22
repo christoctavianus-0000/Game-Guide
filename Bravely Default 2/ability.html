@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1220">
+  <meta name="description" content="Bravely Default II Abilities Codex — searchable database of all 360 command skills and passive support abilities across 24 jobs.">
   <title>Abilities Codex — Bravely Default II Game Guide</title>
   <link rel="stylesheet" href="styles.css">
   <script src="themeToggle.js"></script>
 </head>
 <body>
   <!-- Skip link for keyboard users -->
-  <a class="skip-link" href="#main-content" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;" onfocus="this.style.position='static'; this.style.width='auto'; this.style.height='auto';">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Fixed Desktop Rail -->
   <aside class="site-rail" aria-label="Codex navigation">
@@ -127,11 +129,11 @@
       <table class="codex-table" id="abilities-table">
         <thead>
           <tr>
-            <th data-sort="name">Ability Name <span class="sort-icon">↕</span></th>
-            <th data-sort="job">Job <span class="sort-icon">↕</span></th>
-            <th data-sort="level">Lv <span class="sort-icon">↕</span></th>
-            <th data-sort="type">Type <span class="sort-icon">↕</span></th>
-            <th data-sort="cost">Cost <span class="sort-icon">↕</span></th>
+            <th data-sort="name" tabindex="0">Ability Name <span class="sort-icon">↕</span></th>
+            <th data-sort="job" tabindex="0" aria-sort="ascending">Job <span class="sort-icon">▲</span></th>
+            <th data-sort="level" tabindex="0">Lv <span class="sort-icon">↕</span></th>
+            <th data-sort="type" tabindex="0">Type <span class="sort-icon">↕</span></th>
+            <th data-sort="cost" tabindex="0">Cost <span class="sort-icon">↕</span></th>
             <th>Effect Description</th>
             <th style="width: 50px; text-align: center;">★</th>
           </tr>
@@ -144,7 +146,7 @@
   </main>
 
   <!-- Modal Backdrop -->
-  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-window">
       <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
       <div id="modal-content"></div>

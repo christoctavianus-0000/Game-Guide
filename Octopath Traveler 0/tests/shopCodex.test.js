@@ -4,6 +4,7 @@
  * Regression tests for the Shop Codex (shop.html + shopApp.js).
  */
 
+const fs = require('node:fs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const vm = require('vm');
@@ -100,4 +101,73 @@ test('reset button clears all filters and sorting', () => {
 
   page.fire('shopResetBtn', 'click', { target: page.el('shopResetBtn') });
   assert.equal(page.text('shopResultsCount'), `Showing ${allItems.length} items`);
+  assert.equal(page.el('shopSortFilter').value, 'location-asc');
+});
+
+test('shopSortFilter sorts chunks by location and items by name or price', () => {
+  const page = openShopCodex();
+  const sortSelect = page.el('shopSortFilter');
+
+  // Initial location-asc order
+  assert.equal(sortSelect.value, 'location-asc');
+  const ascChunks = [...page.html('shopChunksGrid').matchAll(/data-location="([^"]+)"/g)].map(m => m[1]);
+  assert.ok(ascChunks.length > 1);
+  assert.ok(ascChunks[0].localeCompare(ascChunks[ascChunks.length - 1]) < 0);
+
+  // Switch to location-desc
+  sortSelect.value = 'location-desc';
+  page.fire('shopSortFilter', 'change', { target: sortSelect });
+  const descChunks = [...page.html('shopChunksGrid').matchAll(/data-location="([^"]+)"/g)].map(m => m[1]);
+  assert.equal(descChunks[0], ascChunks[ascChunks.length - 1]);
+
+  // Filter to one town and sort by price-asc vs price-desc
+  const locSelect = page.el('shopLocationFilter');
+  locSelect.value = 'Wishvale (Prologue)';
+  page.fire('shopLocationFilter', 'change', { target: locSelect });
+
+  sortSelect.value = 'price-asc';
+  page.fire('shopSortFilter', 'change', { target: sortSelect });
+  const ascPrices = [...page.html('shopChunksGrid').matchAll(/class="shop-chunk-price">([\d,]+)\s+leaves/g)]
+    .map(m => Number(m[1].replace(/,/g, '')));
+  assert.ok(ascPrices.length > 1);
+  for (let i = 1; i < ascPrices.length; i++) {
+    assert.ok(ascPrices[i - 1] <= ascPrices[i], 'price-asc items should be non-decreasing');
+  }
+
+  sortSelect.value = 'price-desc';
+  page.fire('shopSortFilter', 'change', { target: sortSelect });
+  const descPrices = [...page.html('shopChunksGrid').matchAll(/class="shop-chunk-price">([\d,]+)\s+leaves/g)]
+    .map(m => Number(m[1].replace(/,/g, '')));
+  for (let i = 1; i < descPrices.length; i++) {
+    assert.ok(descPrices[i - 1] >= descPrices[i], 'price-desc items should be non-increasing');
+  }
+});
+
+test('shop modal scopes duplicate item lookup to clicked chunk location and matches ARIA description id', () => {
+  const html = fs.readFileSync(path.join(ROOT, 'shop.html'), 'utf8');
+  assert.ok(html.includes('aria-describedby="detailModalDescription"'), 'shop.html modal aria-describedby must match #detailModalDescription');
+
+  const page = openShopCodex();
+  const rowStub = {
+    querySelector(sel) {
+      return sel === '.shop-chunk-item-name' ? { textContent: 'Healing Grape' } : null;
+    },
+    closest(sel) {
+      return sel === '.shop-chunk' ? { getAttribute: k => (k === 'data-location' ? 'Sufrataljah (Sunlands)' : null) } : null;
+    }
+  };
+  const targetStub = {
+    closest(sel) {
+      if (sel === 'a') return null;
+      if (sel === '.shop-chunk-item-row') return rowStub;
+      return null;
+    }
+  };
+
+  page.fire('shopChunksGrid', 'click', { target: targetStub });
+  assert.equal(page.text('detailModalTitle'), 'Healing Grape');
+  assert.ok(
+    page.text('detailModalDescription').includes('Available at Sufrataljah (Sunlands)'),
+    `Expected Sufrataljah (Sunlands) in modal description, got: ${page.text('detailModalDescription')}`
+  );
 });

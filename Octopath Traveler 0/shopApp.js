@@ -15,8 +15,12 @@
   var state = {
     activeLocation: 'all',
     searchQuery: '',
+    sortKey: 'location',
+    sortDir: 'asc',
     collapsedLocations: {}
   };
+
+  var lastFocusedEl = null;
 
   /** @type {ShopCodexElements} */
   var elements = {
@@ -82,10 +86,31 @@
       if (!groups[loc]) groups[loc] = [];
       groups[loc].push(item);
     });
-    // Sort locations by name
+    var locs = Object.keys(groups).sort(function (a, b) {
+      var cmp = a.localeCompare(b);
+      return (state.sortKey === 'location' && state.sortDir === 'desc') ? -cmp : cmp;
+    });
     var sorted = {};
-    Object.keys(groups).sort().forEach(function (loc) {
-      sorted[loc] = groups[loc];
+    locs.forEach(function (loc) {
+      var list = groups[loc].slice();
+      if (state.sortKey === 'name') {
+        list.sort(function (a, b) {
+          var cmp = String(a.name || '').localeCompare(String(b.name || ''));
+          return state.sortDir === 'desc' ? -cmp : cmp;
+        });
+      } else if (state.sortKey === 'price') {
+        list.sort(function (a, b) {
+          var aMissing = a.price === null || a.price === undefined || a.price === '';
+          var bMissing = b.price === null || b.price === undefined || b.price === '';
+          if (aMissing && bMissing) return 0;
+          if (aMissing) return 1;
+          if (bMissing) return -1;
+          var diff = (Number(a.price) || 0) - (Number(b.price) || 0);
+          if (diff !== 0) return state.sortDir === 'desc' ? -diff : diff;
+          return String(a.name || '').localeCompare(String(b.name || ''));
+        });
+      }
+      sorted[loc] = list;
     });
     return sorted;
   }
@@ -215,6 +240,9 @@
 
   function openModal(item) {
     if (!item) return;
+    if (document.activeElement && typeof /** @type {any} */ (document.activeElement).focus === 'function') {
+      lastFocusedEl = /** @type {HTMLElement} */ (document.activeElement);
+    }
     if (elements.modalTitle) elements.modalTitle.textContent = item.name || 'Item';
     var equipment = findEquipmentByName(item.name);
     var desc = 'Available at ' + (item.location || 'Unknown');
@@ -226,11 +254,22 @@
     }
     if (elements.modalDescription) elements.modalDescription.textContent = desc;
     if (elements.modalAmitySection) elements.modalAmitySection.style.display = 'none';
-    if (elements.modal) elements.modal.style.display = 'flex';
+    if (elements.modal) {
+      elements.modal.style.display = 'flex';
+      if (document.body && document.body.style) document.body.style.overflow = 'hidden';
+      var closeBtn = elements.modal.querySelector ? /** @type {HTMLElement|null} */ (elements.modal.querySelector('.modal-close-btn')) : null;
+      if (closeBtn && typeof closeBtn.focus === 'function') closeBtn.focus();
+    }
   }
 
   function closeModal() {
     if (elements.modal) elements.modal.style.display = 'none';
+    if (document.body && document.body.style) document.body.style.overflow = '';
+    var toFocus = lastFocusedEl;
+    lastFocusedEl = null;
+    if (toFocus && typeof toFocus.focus === 'function') {
+      toFocus.focus();
+    }
   }
 
   window.closeDetailModal = closeModal;
@@ -277,6 +316,8 @@
     function doReset() {
       state.activeLocation = 'all';
       state.searchQuery = '';
+      state.sortKey = 'location';
+      state.sortDir = 'asc';
       state.collapsedLocations = {};
       if (elements.searchInput) elements.searchInput.value = '';
       populateDropdowns();
@@ -297,10 +338,14 @@
         if (targetEl.closest('a')) return;
         var row = targetEl.closest('.shop-chunk-item-row');
         if (!row) return;
+        var chunk = row.closest('.shop-chunk');
+        var loc = chunk ? chunk.getAttribute('data-location') : null;
         var nameEl = row.querySelector('.shop-chunk-item-name');
         if (!nameEl) return;
         var name = nameEl.textContent.trim();
-        var item = getAllItems().find(function (i) { return i.name === name; });
+        var item = getAllItems().find(function (i) {
+          return i.name === name && (!loc || i.location === loc);
+        }) || getAllItems().find(function (i) { return i.name === name; });
         if (item) openModal(item);
       });
     }

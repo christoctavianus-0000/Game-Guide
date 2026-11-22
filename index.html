@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b1017">
   <meta name="description" content="A growing personal library of interactive game guides, databases, and field codexes for games played and explored.">
   <title>Game Guide | Codex Library</title>
@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
   <script>
-    (function(){try{var t=localStorage.getItem('game_guide_theme')||localStorage.getItem('octo0_theme')||localStorage.getItem('digimon_codex_theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');else if(t==='dark')document.documentElement.removeAttribute('data-theme');}catch(e){}})();
+    (function(){try{var t=localStorage.getItem('game_guide_theme')||localStorage.getItem('bd2_theme')||localStorage.getItem('octo0_theme')||localStorage.getItem('digimon_codex_theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');else if(t==='dark')document.documentElement.removeAttribute('data-theme');}catch(e){}})();
   </script>
   <script src="themeToggle.js"></script>
   <style>
@@ -66,8 +66,12 @@
       color: var(--gold);
       cursor: pointer;
       font-size: 1.1rem;
-      transition: all 0.15s ease;
+      transition: transform 0.15s ease-out, border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
       flex-shrink: 0;
+    }
+
+    .theme-toggle-btn:active {
+      transform: scale(0.95);
     }
 
     .theme-toggle-btn:hover {
@@ -323,6 +327,24 @@
     .octopath .collection-mark, .octopath .collection-title { color: var(--gold); }
     .octopath .collection-badge { border-color: rgba(229, 184, 105, 0.28); color: var(--gold); background: rgba(229, 184, 105, 0.08); }
 
+    .bravely .collection-mark, .bravely .collection-title { color: #60a5fa; }
+    .bravely .collection-badge { border-color: rgba(96, 165, 250, 0.3); color: #60a5fa; background: rgba(96, 165, 250, 0.08); }
+
+    [data-theme="light"] .bravely .collection-mark,
+    [data-theme="light"] .bravely .collection-title { color: #1d4ed8; }
+    [data-theme="light"] .bravely .collection-badge { border-color: rgba(29, 78, 216, 0.28); color: #1d4ed8; background: rgba(29, 78, 216, 0.08); }
+    [data-theme="light"] .masthead-status { background: rgba(15, 23, 42, 0.04); }
+    [data-theme="light"] .collection-mark { background: rgba(15, 23, 42, 0.05); }
+    [data-theme="light"] .collection-tag { background: rgba(15, 23, 42, 0.06); }
+    [data-theme="light"] .collection.upcoming {
+      border-color: rgba(15, 23, 42, 0.18);
+      background: rgba(241, 245, 249, 0.7);
+    }
+    [data-theme="light"] .collection.upcoming:hover {
+      border-color: rgba(15, 23, 42, 0.28);
+      background: rgba(226, 232, 240, 0.8);
+    }
+
     .collection-title {
       margin: 1.5rem 0 0.45rem;
       font-family: var(--font-display);
@@ -374,16 +396,18 @@
     /* ── Future / Next Game Placeholder Slot ── */
     .collection.upcoming {
       border-style: dashed;
-      border-color: rgba(243, 239, 230, 0.16);
-      background: rgba(17, 24, 35, 0.45);
+      border-color: var(--line-strong);
+      background: var(--bg-surface);
+      opacity: 0.85;
       cursor: default;
     }
 
     .collection.upcoming:hover {
       transform: none;
       box-shadow: none;
-      border-color: rgba(243, 239, 230, 0.24);
-      background: rgba(17, 24, 35, 0.6);
+      border-color: var(--line-strong);
+      background: var(--bg-card);
+      opacity: 1;
     }
 
     .upcoming .collection-mark {
@@ -453,6 +477,7 @@
     @media (hover: none) {
       .collection:hover {
         transform: none;
+        box-shadow: none;
       }
     }
 
@@ -503,7 +528,7 @@
             <span class="collection-badge">PS1 • Card Battler</span>
           </div>
           <h2 class="collection-title">Digimon Card Battle</h2>
-          <p class="collection-copy">Browse the complete 295-card library, filter by specialty, and reverse-lookup every standard and special fusion recipe.</p>
+          <p class="collection-copy">Browse the complete 301-card library, filter by specialty, and reverse-lookup every standard and special fusion recipe.</p>
           <div class="collection-tags" aria-label="Included sections">
             <span class="collection-tag">Card Database</span>
             <span class="collection-tag">Fusion Calculator</span>

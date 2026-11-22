@@ -13,7 +13,10 @@
   let activeFamily = 'all';
   let searchQuery = '';
   // Default to revealed (true) so the Bestiary is crisp and readable on load
-  let spoilersRevealed = localStorage.getItem(SPOILER_KEY) !== 'false';
+  let spoilersRevealed = true;
+  try {
+    spoilersRevealed = localStorage.getItem(SPOILER_KEY) !== 'false';
+  } catch (e) {}
 
   const container = document.getElementById('enemies-container');
   const countEl = document.getElementById('results-count');
@@ -24,7 +27,34 @@
   const spoilerToggle = document.getElementById('spoiler-toggle');
   const spoilerStatus = document.getElementById('spoiler-status');
 
+  const ICON_TOKENS = new Set([
+    'sword', 'dagger', 'axe', 'spear', 'bow', 'staff',
+    'fire', 'water', 'wind', 'earth', 'lightning', 'light', 'dark'
+  ]);
+
+  function formatHp(hp) {
+    if (hp === null || hp === undefined || hp === '') return '—';
+    if (typeof hp === 'number') return hp.toLocaleString();
+    return String(hp);
+  }
+
+  function isAsteriskBoss(enemy) {
+    return Boolean(enemy.isAsteriskHolder || enemy.classification === 'Asterisk Boss');
+  }
+
+  function isRareBoss(enemy) {
+    return Boolean(enemy.classification === 'Rare Monster' || (enemy.isBoss && !enemy.isAsteriskHolder));
+  }
+
+  function getEnemyClassification(enemy) {
+    if (enemy.classification) return enemy.classification;
+    if (enemy.isAsteriskHolder) return 'Asterisk Boss';
+    if (enemy.isBoss) return 'Rare Monster';
+    return 'Monster';
+  }
+
   function updateSpoilerUI() {
+    if (!spoilerToggle || !spoilerStatus) return;
     spoilerToggle.classList.toggle('active', spoilersRevealed);
     spoilerToggle.setAttribute('aria-pressed', String(spoilersRevealed));
     spoilerStatus.textContent = spoilersRevealed ? 'Revealed' : 'Hidden';
@@ -51,12 +81,13 @@
     }
 
     return weaknesses.map((w) => {
-      const wLower = w.toLowerCase();
+      const raw = String(w);
       let icon = null;
-      if (['sword', 'dagger', 'axe', 'spear', 'bow', 'staff'].includes(wLower)) {
-        icon = `assets/icons/ui/${wLower}.svg`;
-      } else if (['fire', 'water', 'wind', 'earth', 'lightning', 'light', 'dark'].includes(wLower)) {
-        icon = `assets/icons/ui/${wLower}.svg`;
+      if (!raw.includes('/')) {
+        const leading = raw.split(/[\s(]/)[0].toLowerCase().trim();
+        if (ICON_TOKENS.has(leading)) {
+          icon = `assets/icons/ui/${leading}.svg`;
+        }
       }
 
       return `
@@ -68,9 +99,18 @@
     }).join('');
   }
 
+  function renderTraitList(list) {
+    const clean = (list || []).filter((v) => v && v !== 'None');
+    if (clean.length === 0) return '';
+    return clean.map((item) => `<span class="card-badge" style="font-size: 0.75rem; margin-right: 0.25rem; margin-bottom: 0.25rem;">${window.BD2.escapeHtml(item)}</span>`).join('');
+  }
+
   function renderModalEnemy(enemy) {
     const stats = enemy.stats || {};
-    const isBoss = enemy.isBoss || enemy.classification === 'Boss';
+    const cls = getEnemyClassification(enemy);
+    const hasRewards = Boolean(enemy.stats && (stats.exp || stats.jp || stats.pg));
+    const resistancesHtml = renderTraitList(enemy.resistances);
+    const immunitiesHtml = renderTraitList(enemy.immunities);
 
     return `
       <header class="modal-header">
@@ -81,7 +121,7 @@
           <div>
             <h2 id="modal-title" class="modal-title">${window.BD2.escapeHtml(enemy.name)}</h2>
             <p style="font-size: 0.85rem; color: var(--text-muted);">
-              ${window.BD2.escapeHtml(enemy.classification || 'Monster')} &bull; Family: <strong>${window.BD2.escapeHtml(enemy.family || 'Unknown')}</strong> &bull; Level: <strong>Lv. ${window.BD2.escapeHtml(enemy.level || '—')}</strong>
+              ${window.BD2.escapeHtml(cls)} &bull; Family: <strong>${window.BD2.escapeHtml(enemy.family || 'Unknown')}</strong> &bull; Level: <strong>Lv. ${window.BD2.escapeHtml(enemy.level || '—')}</strong>
             </p>
           </div>
         </div>
@@ -90,28 +130,50 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.5rem; margin-bottom: 1.25rem;">
           <div style="background: var(--bg-surface-elevated); padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid var(--border-subtle);">
             <div style="color: var(--text-muted); font-size: 0.75rem;">Max HP</div>
-            <strong style="color: var(--bravery-red); font-family: var(--font-mono); font-size: 1.05rem;">${window.BD2.escapeHtml(Number(enemy.hp || 0).toLocaleString())}</strong>
+            <strong style="color: var(--bravery-red); font-family: var(--font-mono); font-size: 0.98rem;">${window.BD2.escapeHtml(formatHp(enemy.hp))}</strong>
           </div>
           <div style="background: var(--bg-surface-elevated); padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid var(--border-subtle);">
-            <div style="color: var(--text-muted); font-size: 0.75rem;">EXP Reward</div>
-            <strong style="color: var(--text-crystal); font-family: var(--font-mono); font-size: 1.05rem;">${window.BD2.escapeHtml(Number(stats.exp || 0).toLocaleString())}</strong>
+            <div style="color: var(--text-muted); font-size: 0.75rem;">Chapter</div>
+            <strong style="color: var(--asterisk-gold); font-size: 0.95rem;">${window.BD2.escapeHtml(enemy.chapter || 'Excillant')}</strong>
           </div>
           <div style="background: var(--bg-surface-elevated); padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid var(--border-subtle);">
-            <div style="color: var(--text-muted); font-size: 0.75rem;">JP Reward</div>
-            <strong style="color: var(--asterisk-gold); font-family: var(--font-mono); font-size: 1.05rem;">${window.BD2.escapeHtml(stats.jp || '—')}</strong>
+            <div style="color: var(--text-muted); font-size: 0.75rem;">Level</div>
+            <strong style="color: var(--text-crystal); font-family: var(--font-mono); font-size: 1rem;">Lv. ${window.BD2.escapeHtml(enemy.level || '—')}</strong>
           </div>
           <div style="background: var(--bg-surface-elevated); padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid var(--border-subtle);">
-            <div style="color: var(--text-muted); font-size: 0.75rem;">pg Money</div>
-            <strong style="color: var(--vitality-green); font-family: var(--font-mono); font-size: 1.05rem;">${window.BD2.escapeHtml(Number(stats.pg || 0).toLocaleString())}</strong>
+            <div style="color: var(--text-muted); font-size: 0.75rem;">Family</div>
+            <strong style="color: var(--vitality-green); font-size: 0.95rem;">${window.BD2.escapeHtml(enemy.family || 'Unknown')}</strong>
           </div>
         </div>
 
-        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1.25rem;">
+        ${hasRewards ? `
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.5rem; margin-bottom: 1.25rem;">
+          <div style="background: var(--bg-surface-elevated); padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid var(--border-subtle);">
+            <div style="color: var(--text-muted); font-size: 0.75rem;">EXP Reward</div>
+            <strong style="color: var(--text-crystal); font-family: var(--font-mono); font-size: 1rem;">${window.BD2.escapeHtml(Number(stats.exp || 0).toLocaleString())}</strong>
+          </div>
+          <div style="background: var(--bg-surface-elevated); padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid var(--border-subtle);">
+            <div style="color: var(--text-muted); font-size: 0.75rem;">JP Reward</div>
+            <strong style="color: var(--asterisk-gold); font-family: var(--font-mono); font-size: 1rem;">${window.BD2.escapeHtml(stats.jp || '—')}</strong>
+          </div>
+          <div style="background: var(--bg-surface-elevated); padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid var(--border-subtle);">
+            <div style="color: var(--text-muted); font-size: 0.75rem;">pg Money</div>
+            <strong style="color: var(--vitality-green); font-family: var(--font-mono); font-size: 1rem;">${window.BD2.escapeHtml(Number(stats.pg || 0).toLocaleString())}</strong>
+          </div>
+        </div>` : ''}
+
+        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1rem;">
           <div style="font-weight: 600; color: var(--text-crystal); margin-bottom: 0.4rem;">Elemental &amp; Weapon Weaknesses</div>
           <div>${renderWeaknessChips(enemy.weaknesses)}</div>
         </div>
 
-        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1.25rem; font-size: 0.85rem;">
+        ${(resistancesHtml || immunitiesHtml) ? `
+        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1rem; font-size: 0.85rem;">
+          ${resistancesHtml ? `<div style="margin-bottom: ${immunitiesHtml ? '0.6rem' : '0'};"><strong style="color: var(--text-secondary); display: block; margin-bottom: 0.25rem;">Resistances:</strong>${resistancesHtml}</div>` : ''}
+          ${immunitiesHtml ? `<div><strong style="color: var(--text-secondary); display: block; margin-bottom: 0.25rem;">Status Immunities:</strong>${immunitiesHtml}</div>` : ''}
+        </div>` : ''}
+
+        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1rem; font-size: 0.85rem;">
           <div style="margin-bottom: 0.4rem;">
             <strong style="color: var(--text-secondary);">Drops:</strong> ${window.BD2.escapeHtml((enemy.drops || []).filter(Boolean).join(', ') || 'None')}
           </div>
@@ -120,6 +182,12 @@
           </div>
         </div>
 
+        ${enemy.notes ? `
+        <div style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 1rem; font-size: 0.88rem; line-height: 1.5; color: var(--text-primary);">
+          <div style="font-weight: 600; color: var(--asterisk-gold); margin-bottom: 0.3rem;">Strategy &amp; Field Notes</div>
+          <div>${window.BD2.escapeHtml(enemy.notes)}</div>
+        </div>` : ''}
+
         <div style="font-size: 0.85rem; color: var(--text-muted);">
           <strong>Encounter Locations:</strong> ${window.BD2.escapeHtml(enemy.location || 'Excillant Overworld / Dungeons')}
         </div>
@@ -127,13 +195,14 @@
     `;
   }
 
-  function renderEnemyCard(enemy) {
-    const isFav = window.BD2.isFavorite(FAV_KEY, enemy.id);
-    const isBoss = enemy.isBoss || enemy.classification === 'Boss';
-    const isRare = enemy.classification === 'Rare Monster';
-    const shouldBlur = (isBoss || isRare) && !spoilersRevealed;
+  function renderEnemyCard(enemy, favSet) {
+    const isFav = favSet ? favSet.has(enemy.id) : window.BD2.isFavorite(FAV_KEY, enemy.id);
+    const isAsterisk = isAsteriskBoss(enemy);
+    const isRare = isRareBoss(enemy);
+    const shouldBlur = (isAsterisk || isRare || enemy.isBoss) && !spoilersRevealed;
+    const cls = getEnemyClassification(enemy);
 
-    const badgeColor = isBoss ? 'var(--bravery-red)' : isRare ? 'var(--asterisk-gold)' : 'var(--crystal-sky)';
+    const badgeColor = isAsterisk ? 'var(--bravery-red)' : isRare ? 'var(--asterisk-gold)' : 'var(--crystal-sky)';
 
     return `
       <article class="codex-card ${shouldBlur ? 'spoiler-blurred' : 'spoiler-revealed'}" id="card-${window.BD2.escapeHtml(enemy.id)}" data-id="${window.BD2.escapeHtml(enemy.id)}">
@@ -144,16 +213,16 @@
           <div class="card-title-group">
             <h3 class="card-title">${window.BD2.escapeHtml(enemy.name)}</h3>
             <div class="card-meta">
-              <span class="card-badge" style="color: ${badgeColor}; border-color: ${badgeColor};">${window.BD2.escapeHtml(enemy.classification || 'Monster')}</span>
+              <span class="card-badge" style="color: ${badgeColor}; border-color: ${badgeColor};">${window.BD2.escapeHtml(cls)}</span>
               <span>Lv. ${window.BD2.escapeHtml(enemy.level || '—')}</span>
             </div>
           </div>
         </header>
 
         <div class="card-body">
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem;">
+          <div style="display: flex; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; font-size: 0.85rem;">
             <span>Family: <strong>${window.BD2.escapeHtml(enemy.family || '—')}</strong></span>
-            <span>HP: <strong style="color: var(--bravery-red); font-family: var(--font-mono);">${window.BD2.escapeHtml(Number(enemy.hp || 0).toLocaleString())}</strong></span>
+            <span>HP: <strong style="color: var(--bravery-red); font-family: var(--font-mono);">${window.BD2.escapeHtml(formatHp(enemy.hp))}</strong></span>
           </div>
 
           <div style="margin-bottom: 0.75rem;">
@@ -181,17 +250,18 @@
   function filterEnemies() {
     const enemies = window.enemyData || [];
     const q = searchQuery.toLowerCase().trim();
+    const favSet = new Set(window.BD2.getFavorites(FAV_KEY));
 
     const filtered = enemies.filter((e) => {
       // Classification filter
       if (activeClass === 'fav') {
-        if (!window.BD2.isFavorite(FAV_KEY, e.id)) return false;
+        if (!favSet.has(e.id)) return false;
       } else if (activeClass === 'boss') {
-        if (!e.isBoss && e.classification !== 'Boss') return false;
+        if (!isAsteriskBoss(e)) return false;
       } else if (activeClass === 'rare') {
-        if (e.classification !== 'Rare Monster') return false;
+        if (!isRareBoss(e)) return false;
       } else if (activeClass === 'regular') {
-        if (e.isBoss || e.classification === 'Boss' || e.classification === 'Rare Monster') return false;
+        if (isAsteriskBoss(e) || isRareBoss(e)) return false;
       }
 
       // Family filter
@@ -204,10 +274,12 @@
         const matchesName = e.name.toLowerCase().includes(q);
         const matchesFamily = (e.family || '').toLowerCase().includes(q);
         const matchesLoc = (e.location || '').toLowerCase().includes(q);
+        const matchesChapter = (e.chapter || '').toLowerCase().includes(q);
+        const matchesNotes = (e.notes || '').toLowerCase().includes(q);
         const matchesWeak = (e.weaknesses || []).some((w) => w.toLowerCase().includes(q));
         const matchesDrops = (e.drops || []).some((d) => d && d.toLowerCase().includes(q));
         const matchesSteals = (e.steals || []).some((s) => s && s.toLowerCase().includes(q));
-        if (!matchesName && !matchesFamily && !matchesLoc && !matchesWeak && !matchesDrops && !matchesSteals) {
+        if (!matchesName && !matchesFamily && !matchesLoc && !matchesChapter && !matchesNotes && !matchesWeak && !matchesDrops && !matchesSteals) {
           return false;
         }
       }
@@ -215,10 +287,11 @@
       return true;
     });
 
-    renderEnemies(filtered);
+    renderEnemies(filtered, favSet);
   }
 
-  function renderEnemies(enemies) {
+  function renderEnemies(enemies, favSet) {
+    const activeFavs = favSet || new Set(window.BD2.getFavorites(FAV_KEY));
     if (enemies.length === 0) {
       container.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: var(--bg-surface-card); border-radius: 12px; border: 1px dashed var(--border-card);">
@@ -228,9 +301,9 @@
       `;
       document.getElementById('reset-empty-btn')?.addEventListener('click', resetFilters);
     } else {
-      container.innerHTML = enemies.map(renderEnemyCard).join('');
+      container.innerHTML = enemies.map((e) => renderEnemyCard(e, activeFavs)).join('');
     }
-    countEl.textContent = enemies.length;
+    countEl.textContent = String(enemies.length);
   }
 
   function resetFilters() {
@@ -267,9 +340,13 @@
     populateFamilies();
     filterEnemies();
 
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = (/** @type {HTMLInputElement} */ (e.target)).value;
+    const debouncedSearch = window.BD2.debounce((value) => {
+      searchQuery = value;
       filterEnemies();
+    }, 140);
+
+    searchInput.addEventListener('input', (e) => {
+      debouncedSearch((/** @type {HTMLInputElement} */ (e.target)).value);
     });
 
     familySelect.addEventListener('change', (e) => {
@@ -286,12 +363,16 @@
       });
     });
 
-    spoilerToggle.addEventListener('click', () => {
-      spoilersRevealed = !spoilersRevealed;
-      localStorage.setItem(SPOILER_KEY, String(spoilersRevealed));
-      updateSpoilerUI();
-      filterEnemies();
-    });
+    if (spoilerToggle) {
+      spoilerToggle.addEventListener('click', () => {
+        spoilersRevealed = !spoilersRevealed;
+        try {
+          localStorage.setItem(SPOILER_KEY, String(spoilersRevealed));
+        } catch (e) {}
+        updateSpoilerUI();
+        filterEnemies();
+      });
+    }
 
     clearBtn.addEventListener('click', resetFilters);
 

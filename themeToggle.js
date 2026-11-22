@@ -91,6 +91,12 @@
     } else {
       document.documentElement.removeAttribute('data-theme');
     }
+    try {
+      var meta = document.querySelector && document.querySelector('meta[name="theme-color"]');
+      if (meta) {
+        meta.setAttribute('content', theme === 'light' ? '#eef2f7' : '#0b1017');
+      }
+    } catch (e) {}
     updateButtons(theme);
   }
 
