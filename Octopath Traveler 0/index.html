@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0907" />
   <title>Octopath Traveler 0 // Skill Codex</title>
   <meta name="description" content="Interactive skill database and combat codex for Octopath Traveler 0 (Champions of the Continent). Browse physical, elemental, support, and passive skills with potency and boost scaling." />
   
@@ -39,7 +40,11 @@
     </nav>
     <aside class="site-rail" aria-label="Codex selector">
       <div class="site-rail-inner">
-        <span class="site-rail-brand" aria-hidden="true"><img src="assets/icons/ui/octopath-crest.svg" alt="" width="24" height="24" /></span>
+        <a class="site-rail-link site-rail-home" href="../index.html" title="Back to World Index" aria-label="Back to World Index">
+          <span class="site-rail-icon" aria-hidden="true"><img src="assets/icons/ui/octopath-crest.svg" alt="" width="24" height="24" /></span>
+          <span class="site-rail-text">World</span>
+        </a>
+        <div class="site-rail-divider" aria-hidden="true"></div>
         <div class="site-rail-links">
           <a class="site-rail-link active" href="index.html" aria-current="page">
             <span class="site-rail-icon" aria-hidden="true"><img src="assets/icons/ui/nav-skills.svg" alt="" width="24" height="24" /></span>
@@ -157,7 +162,7 @@
           <!-- Primary Search & Subtype row -->
           <div class="search-and-subtypes">
             <div class="search-input-wrap">
-              <span class="search-icon">🔍</span>
+              <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
               <input 
                 type="search" 
                 id="skillSearchInput" 
@@ -166,7 +171,7 @@
                 spellcheck="false"
                 aria-label="Search skills"
               />
-              <button class="clear-search-btn" id="clearSearchBtn" title="Clear search" aria-label="Clear search">✕</button>
+              <button class="clear-search-btn" id="clearSearchBtn" type="button" title="Clear search" aria-label="Clear search">✕</button>
             </div>
 
             <!-- Dynamic Subtype Chips Container (changes based on selected Category) -->

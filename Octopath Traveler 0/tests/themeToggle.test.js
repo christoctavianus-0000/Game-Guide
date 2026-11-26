@@ -136,3 +136,51 @@ test('Octopath & Root pages: include responsive viewport meta and mobile + deskt
   assert.match(stylesCss, /touch-action:\s*manipulation/);
 });
 
+test('Octopath & Root pages: enforce cross-page rail World link, uniform SVG search icon, icon dimensions, theme-color, and footers', () => {
+  const htmlFiles = ['index.html', 'equipment.html', 'character.html', 'enemy.html', 'shop.html', 'npc.html'];
+  for (const file of htmlFiles) {
+    const html = fs.readFileSync(path.join(ROOT, file), 'utf8');
+
+    assert.match(html, /<meta\s+name="theme-color"/i, `${file} missing meta theme-color`);
+    assert.doesNotMatch(html, /[🔍🔎]/, `${file} must use uniform vector SVG search icon instead of mixed emojis`);
+    assert.match(html, /<svg[^>]*class="search-icon"[^>]*aria-hidden="true"/i, `${file} missing SVG .search-icon`);
+    assert.match(html, /<button[^>]*clear-search-btn[^>]*type="button"|<button[^>]*type="button"[^>]*clear-search-btn/i, `${file} clear-search-btn must specify type="button"`);
+
+    const railMatch = html.match(/<aside[^>]*class="[^"]*site-rail[^"]*"[\s\S]*?<\/aside>/i);
+    assert.ok(railMatch, `${file} missing .site-rail`);
+    assert.doesNotMatch(railMatch[0], /<span[^>]*class="[^"]*site-rail-brand/, `${file} must not use non-clickable span.site-rail-brand`);
+    assert.match(railMatch[0], /<a[^>]*href="\.\.\/index\.html"[^>]*>/i, `${file} .site-rail must include clickable ../index.html World link`);
+    const railIcons = [...railMatch[0].matchAll(/<img[^>]*>/gi)];
+    assert.equal(railIcons.length, 7, `${file} .site-rail should have World + 6 codex icons`);
+    for (const img of railIcons) {
+      assert.match(img[0], /width="24"\s+height="24"/i, `${file} rail icon must be 24x24: ${img[0]}`);
+    }
+
+    const navMatch = html.match(/<div[^>]*class="site-nav-links"[\s\S]*?<\/div>/i);
+    assert.ok(navMatch, `${file} missing .site-nav-links`);
+    const navIcons = [...navMatch[0].matchAll(/<img[^>]*>/gi)];
+    assert.equal(navIcons.length, 6, `${file} .site-nav-links should have 6 icons`);
+    for (const img of navIcons) {
+      assert.match(img[0], /width="16"\s+height="16"/i, `${file} top-nav icon must be 16x16: ${img[0]}`);
+    }
+
+    assert.match(html, /<footer\s+class="site-footer">/i, `${file} missing .site-footer`);
+  }
+
+  const shopHtml = fs.readFileSync(path.join(ROOT, 'shop.html'), 'utf8');
+  assert.match(shopHtml, /id="shopMetricsBar"/, 'shop.html should use id="shopMetricsBar"');
+  assert.doesNotMatch(shopHtml, /id="characterMetricsBar"/, 'shop.html must not duplicate characterMetricsBar ID');
+
+  const enemyHtml = fs.readFileSync(path.join(ROOT, 'enemy.html'), 'utf8');
+  assert.match(enemyHtml, /id="enemyModal"[^>]*aria-hidden="true"/i, 'enemy.html modal should initialize with aria-hidden="true"');
+
+  for (const jsFile of ['enemyApp.js', 'shopApp.js', 'npcApp.js']) {
+    const js = fs.readFileSync(path.join(ROOT, jsFile), 'utf8');
+    assert.match(js, /syncClearSearchBtn/, `${jsFile} must toggle clear-search button visibility`);
+  }
+
+  const rootHtml = fs.readFileSync(path.join(ROOT, '..', 'index.html'), 'utf8');
+  assert.match(rootHtml, /class="skip-link"\s+href="#main-content"/i, 'Root index.html missing skip link');
+  assert.match(rootHtml, /<main\s+id="main-content">/i, 'Root index.html missing #main-content landmark');
+});
+

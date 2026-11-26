@@ -80,6 +80,7 @@
     for (var i = 0; i < btns.length; i++) {
       var btn = btns[i];
       btn.textContent = isLight ? '☀️' : '🌙';
+      btn.setAttribute('aria-pressed', isLight ? 'true' : 'false');
       btn.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
       btn.setAttribute('title', isLight ? 'Switch to dark theme' : 'Switch to light theme');
     }

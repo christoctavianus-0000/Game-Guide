@@ -5,25 +5,27 @@ description: Maintain a coherent architectural foundation across the Game Guide 
 
 # Game Guide Visual System & SVG Icon Skill
 
-Use this skill when designing, updating, or auditing the visual language, themes, typography, custom vector SVG icons, shared navigation, or responsive layouts of the **Digimon Card Battle** and **Octopath Traveler 0** codexes.
+Use this skill when designing, updating, or auditing the visual language, themes, typography, custom vector SVG icons, shared navigation, or responsive layouts of the **Digimon Card Battle**, **Octopath Traveler 0**, and **Bravely Default II** codexes.
 
 ## 1. Shared Architectural Foundation
 
 - **Information-led ergonomics**: Keep headers compact, controls scannable, tables high-contrast with `font-variant-numeric: tabular-nums`, and spacing disciplined.
-- **Navigation chrome**:
+- **Navigation chrome & Uniform Footers**:
   - Smaller viewports (`< 1100px`): sticky/compact top navigation bar with horizontally scrollable section links.
-  - Desktop viewports (`>= 1100px`): fixed vertical left rail (`.site-rail`) with custom vector crests and section icons.
-  - Every page must include a keyboard-accessible `.project-home-link` (`← World Index`) at the upper-left linking to `../index.html`, plus a `.skip-link` (`Skip to main content`).
+  - Desktop viewports (`>= 1100px`): fixed vertical left rail (`.site-rail`) with a clickable top World Index link (`href="../index.html"`, `title="Back to World Index"`, `aria-label="Back to World Index"`), `.site-rail-divider`, and uniform section icons (`24×24` in Octopath & Digimon, `20×20` section / `24×24` crest in BD2). Never leave `.site-rail` top crests as non-clickable `<span>` elements.
+  - Every page must include a keyboard-accessible `.project-home-link` (`← World Index`) or top crest link to `../index.html`, a `.skip-link` (`Skip to main content`), and a consistent `<footer class="site-footer">`.
+- **Uniform Search Affordances**:
+  - Every search input across all three codexes must use `type="search"` paired with the inline vector `<svg class="search-icon" aria-hidden="true">` magnifying glass (never OS-dependent mixed `🔍`/`🔎` emojis), suppress duplicate WebKit cancel buttons where `.clear-search-btn` is rendered, and wire live clear-button visibility toggling (`syncClearSearchBtn()` / `#clearCardSearch`).
 - **Centered & Compact Category Tabs**:
   - Category tab strips (`.category-tabs`) and button labels (`.cat-tab`) are centered on desktop (`justify-content: center`), while switching to `justify-content: flex-start` inside mobile media queries (`@media (max-width: 600px)` / `640px`) so horizontal overflow never clips the leading tab.
   - **Octopath Character Codex Job Tabs (`#characterJobTabs`)**: Uses a compact, two-tier centered flex-wrap bar with `.job-tabs-break` (`flex-basis: 100%; height: 0;`) separating the 8 standard traveler jobs (Row 1: All + Warrior, Dancer, Merchant, Scholar, Cleric, Thief, Hunter, Apothecary) from the 10 CotC special/royal jobs (Row 2: Architect, Cait Scholar, Captain, Empress, Flamebringer, King, Knight Ardante, Lord, Queen, Wise King). This completely eliminates horizontal scrolling on desktop/laptop while keeping `Lord`, `Queen`, and `Wise King` immediately accessible.
 - **Accessibility & Motion**:
-  - Maintain visible `:focus-visible` rings, `aria-selected` / `aria-current="page"` state attributes, and full `@media (prefers-reduced-motion: reduce)` support.
+  - Maintain visible `:focus-visible` rings, `aria-selected` / `aria-current="page"` state attributes, `aria-hidden` synchronization on modal backdrops, hover transform gating inside `@media (hover: hover) and (pointer: fine)` with tactile `:active { transform: scale(0.97); }`, and full `@media (prefers-reduced-motion: reduce)` support.
 - **Test & DOM Contract Safety**:
   - Never alter element IDs, `data-category` values, or the attribute order of `<button class="cat-tab..." data-category="...">` in Octopath HTML files (required by `Octopath Traveler 0/tests/helpers/dom-stub.js`).
 - **Theme Toggle Architecture & Cross-Codex Synchronization**:
-  - **Pre-paint execution**: Inline snippet in `<head>` immediately resolves the active theme and sets `data-theme="light"` or `data-theme="dark"` on `<html>` before rendering, preventing theme flashes (FOUC).
-  - **Early head script & document delegation**: `<script src="themeToggle.js"></script>` is loaded in `<head>`. Click handling uses global event delegation on `document` (`document.addEventListener('click', ...)`) rather than waiting for `DOMContentLoaded`, ensuring instant toggle responsiveness even while multi-megabyte data files (`skillData.js`, `enemyData.js`, `allCards.js`) are still loading.
+  - **Pre-paint execution**: Inline snippet in `<head>` immediately resolves the active theme and sets `data-theme="light"` or `data-theme="dark"` on `<html>` before rendering, preventing theme flashes (FOUC). Match initial static toggle icon markup to default dark mode (`☀️` for Digimon/BD2, `🌙` for Octopath) so no initial button text flashes on load.
+  - **Early head script & document delegation**: `<script src="themeToggle.js"></script>` is loaded in `<head>`. Click handling uses global event delegation on `document` (`document.addEventListener('click', ...)`) rather than waiting for `DOMContentLoaded`, ensuring instant toggle responsiveness even while multi-megabyte data files (`skillData.js`, `enemyData.js`, `allCards.js`) are still loading. Also dynamically sync `<meta name="theme-color">` on every toggle and initial load.
   - **DOM-driven toggle state**: Next theme is evaluated from `document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light'` rather than stale storage values.
   - **Multi-tier storage & sync**: Theme preference is saved to and synchronized from primary key `game_guide_theme` alongside local backwards-compatible keys (`octo0_theme`, `digimon_codex_theme`), safe cookie fallback with regex `(?:^|;\\s*)`, and `window.name` fallback for `file://` contexts.
   - **Lifecycle resilience**: Listens to `pageshow` (for bfcache back/forward navigation) and `storage` (for cross-tab synchronization).
@@ -64,9 +66,10 @@ Do **not** flatten the two codexes into generic grayscale templates. Each codex 
 When creating or updating UI icons, crests, or category emblems, follow these SVG engineering standards:
 
 1. **No OS-dependent Emoji in Primary Chrome**:
-   - Replace generic emoji in brand crests, navigation bars, desktop rails, category tabs, and empty states with custom-crafted vector SVGs:
+   - Replace generic emoji in brand crests, navigation bars, desktop rails, search bars (`🔍` / `🔎`), category tabs, and empty states with custom-crafted vector SVGs:
      - Digimon UI icons live in `Digimon Card Battle/assets/ui/`.
      - Octopath UI icons live in `Octopath Traveler 0/assets/icons/ui/`.
+     - Bravely Default II UI icons live in `Bravely Default 2/assets/icons/ui/`.
 2. **24×24 ViewBox & Pixel-Grid Alignment**:
    - Author icons on a standard `viewBox="0 0 24 24"` canvas with crisp geometry, `stroke-linecap="round"`, `stroke-linejoin="round"`, and high silhouette readability at `15px–28px`.
 3. **Thematic Detailing**:

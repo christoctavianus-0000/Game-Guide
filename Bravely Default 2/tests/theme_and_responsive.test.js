@@ -180,6 +180,11 @@ describe('Theme, Accessibility & Responsive Layout Rules', () => {
       assert.ok(content.includes('Skip to main content'), `${page} must include accessible skip link`);
       assert.ok(!content.includes('onfocus="this.style.position'), `${page} must use CSS .skip-link instead of sticky inline onfocus`);
       assert.ok(content.includes('id="modal-backdrop"'), `${page} must include modal dialog container`);
+      assert.match(content, /<aside[^>]*class="[^"]*site-rail[^"]*"[\s\S]*?<a[^>]*href="\.\.\/index\.html"[^>]*aria-label="Back to World Index"/i, `${page} rail World link missing aria-label`);
+      assert.match(content, /<img[^>]*class="hero-emblem"[^>]*width="56"\s+height="56"/i, `${page} hero-emblem must be uniform 56x56`);
+      assert.match(content, /<svg[^>]*class="search-icon"[^>]*aria-hidden="true"/i, `${page} search-icon SVG must set aria-hidden="true"`);
+      assert.match(content, /<footer\s+class="site-footer">/i, `${page} must include .site-footer`);
     }
+    assert.ok(css.includes('@media (hover: hover) and (pointer: fine)'), 'styles.css must gate hover transforms under fine-pointer media query');
   });
 });

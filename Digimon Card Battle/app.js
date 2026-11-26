@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const tableBody = document.getElementById('cardTableBody');
   const searchInput = document.getElementById('cardSearch');
+  const clearCardSearch = document.getElementById('clearCardSearch');
   const levelFilter = document.getElementById('levelFilter');
   const cardSort = document.getElementById('cardSort');
   const sortDirection = document.getElementById('sortDirection');
@@ -192,15 +193,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  function syncClearCardSearch() {
+    if (clearCardSearch && searchInput) {
+      clearCardSearch.style.display = searchInput.value ? 'block' : 'none';
+    }
+  }
+
   let searchDebounceTimer = null;
   // Search input
   searchInput.addEventListener('input', (e) => {
+    syncClearCardSearch();
     clearTimeout(searchDebounceTimer);
     searchDebounceTimer = setTimeout(() => {
       currentSearch = e.target.value.trim();
       renderTable();
     }, 150);
   });
+
+  if (clearCardSearch) {
+    clearCardSearch.addEventListener('click', () => {
+      searchInput.value = '';
+      currentSearch = '';
+      syncClearCardSearch();
+      renderTable();
+      searchInput.focus();
+    });
+  }
 
   // Level filter
   levelFilter.addEventListener('change', (e) => {

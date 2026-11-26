@@ -85,6 +85,29 @@
       outline-offset: 2px;
     }
 
+    .skip-link {
+      position: fixed;
+      top: -100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--bg-abyss);
+      padding: 0.7rem 1.35rem;
+      border-radius: 8px;
+      font-family: var(--font-tech);
+      font-weight: 700;
+      font-size: 0.9rem;
+      z-index: 1000;
+      text-decoration: none;
+      transition: top 0.15s ease;
+    }
+
+    .skip-link:focus {
+      top: 12px;
+      outline: 2px solid var(--blue);
+      outline-offset: 2px;
+    }
+
     * { box-sizing: border-box; }
 
     body {
@@ -260,31 +283,29 @@
       overflow: hidden;
     }
 
-    .collection:hover {
-      transform: translateY(-3px);
-      background: linear-gradient(180deg, var(--bg-card-hover) 0%, var(--bg-card) 100%);
-      border-color: var(--line-strong);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+    @media (hover: hover) and (pointer: fine) {
+      .collection:hover {
+        transform: translateY(-3px);
+        background: linear-gradient(180deg, var(--bg-card-hover) 0%, var(--bg-card) 100%);
+        border-color: var(--line-strong);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+      }
+      .collection.digimon:hover {
+        border-color: rgba(56, 189, 248, 0.5);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px var(--blue-glow);
+      }
+      .collection.octopath:hover {
+        border-color: rgba(229, 184, 105, 0.5);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px var(--gold-glow);
+      }
+      .collection.bravely:hover {
+        border-color: rgba(56, 189, 248, 0.6);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 22px rgba(56, 189, 248, 0.25);
+      }
     }
 
-    .collection:focus-visible {
-      outline: 2px solid var(--blue);
-      outline-offset: 4px;
-    }
-
-    .collection.digimon:hover {
-      border-color: rgba(56, 189, 248, 0.5);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px var(--blue-glow);
-    }
-
-    .collection.octopath:hover {
-      border-color: rgba(229, 184, 105, 0.5);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px var(--gold-glow);
-    }
-
-    .collection.bravely:hover {
-      border-color: rgba(56, 189, 248, 0.6);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 22px rgba(56, 189, 248, 0.25);
+    .collection:active {
+      transform: scale(0.985);
     }
 
     .collection-top {
@@ -483,11 +504,12 @@
 
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
-      .collection:hover { transform: none !important; }
+      .collection:hover, .collection:active { transform: none !important; }
     }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="page">
     <header class="masthead">
       <div class="masthead-brand">
@@ -508,7 +530,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <span class="hero-kicker">Personal Field Guides &amp; Databases</span>
       <h1>Many worlds.<br>One growing archive.</h1>
       <p class="intro">

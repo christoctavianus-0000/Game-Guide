@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0907" />
   <title>Octopath Traveler 0 // Enemy Codex</title>
   <meta name="description" content="Bestiary codex for Octopath Traveler 0. Filter enemies by area, sub area, weakness, and enemy type, and compare shields and stats at a glance." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +37,11 @@
 
     <aside class="site-rail" aria-label="Codex selector">
       <div class="site-rail-inner">
-        <span class="site-rail-brand" aria-hidden="true"><img src="assets/icons/ui/octopath-crest.svg" alt="" width="24" height="24" /></span>
+        <a class="site-rail-link site-rail-home" href="../index.html" title="Back to World Index" aria-label="Back to World Index">
+          <span class="site-rail-icon" aria-hidden="true"><img src="assets/icons/ui/octopath-crest.svg" alt="" width="24" height="24" /></span>
+          <span class="site-rail-text">World</span>
+        </a>
+        <div class="site-rail-divider" aria-hidden="true"></div>
         <div class="site-rail-links">
           <a class="site-rail-link" href="index.html">
             <span class="site-rail-icon" aria-hidden="true"><img src="assets/icons/ui/nav-skills.svg" alt="" width="24" height="24" /></span>
@@ -71,7 +76,7 @@
       <div class="header-container">
         <div class="brand-area">
           <div class="brand-crest">
-            <img src="assets/icons/ui/nav-enemies.svg" alt="" class="crest-icon-img" width="26" height="26" aria-hidden="true" />
+            <img src="assets/icons/ui/nav-enemies.svg" alt="" class="crest-icon-img" width="28" height="28" aria-hidden="true" />
           </div>
           <div>
             <div class="brand-kicker">OCTOPATH TRAVELER 0 // FIELD BESTIARY</div>
@@ -142,7 +147,7 @@
         <div class="filter-panel-inner">
           <div class="search-and-subtypes">
             <div class="search-input-wrap">
-              <span class="search-icon">🔎</span>
+              <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
               <input id="enemySearchInput" type="search" placeholder="Search enemy, area, sub area, or weakness..." autocomplete="off" aria-label="Search enemies" />
               <button id="enemyClearSearch" class="clear-search-btn" type="button" title="Clear search" aria-label="Clear search">✕</button>
             </div>
@@ -219,9 +224,17 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>Octopath Traveler 0 (Champions of the Continent) Enemy Bestiary • Extracted directly from official game tables</p>
+        <p class="footer-sub">All assets, enemy names, and imagery are copyright © SQUARE ENIX CO., LTD.</p>
+      </div>
+    </footer>
   </div>
 
-  <div class="modal-overlay" id="enemyModal" role="dialog" aria-modal="true" aria-labelledby="enemyModalTitle">
+  <div class="modal-overlay" id="enemyModal" role="dialog" aria-modal="true" aria-labelledby="enemyModalTitle" aria-hidden="true">
     <div class="modal-window">
       <div class="modal-content" id="enemyModalContent"></div>
     </div>

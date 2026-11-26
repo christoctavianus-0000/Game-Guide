@@ -281,7 +281,9 @@ main {
   color: var(--text-primary);
   border-color: var(--border-subtle);
 }
-.tab-btn:hover .tab-spec-icon { transform: scale(1.12); }
+@media (hover: hover) and (pointer: fine) {
+  .tab-btn:hover .tab-spec-icon { transform: scale(1.12); }
+}
 .tab-btn.active {
   background: linear-gradient(180deg, var(--bg-surface-elevated) 0%, var(--bg-abyss) 100%);
   border-color: var(--border-neon);
@@ -306,17 +308,54 @@ main {
 
 /* Search & Filter */
 .search-filter { display: flex; gap: 0.85rem; margin-bottom: 1.15rem; }
-#cardSearch {
+.search-input-wrap {
+  position: relative;
   flex: 1;
+  min-width: 0;
+}
+.search-icon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: var(--text-accent);
+  pointer-events: none;
+}
+#cardSearch {
+  width: 100%;
   background: var(--bg-surface);
   border: 1px solid var(--border-card);
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 2.4rem 0.7rem 2.55rem;
   color: var(--text-primary);
   border-radius: 9px;
   font: inherit;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
 }
+#cardSearch::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.clear-search-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  display: none;
+  transition: color var(--transition-fast);
+}
+.clear-search-btn:hover { color: var(--text-primary); }
+.clear-search-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 #cardSearch::placeholder { color: var(--text-muted); }
 #levelFilter {
   background: var(--bg-surface);
@@ -609,23 +648,27 @@ main {
   .site-rail-inner {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 12px 8px;
+    gap: 8px;
+    padding: 10px 8px;
     border: 1px solid var(--border-card);
     border-radius: 16px;
     background: var(--bg-surface);
     box-shadow: var(--shadow-card);
-    min-height: 200px;
+  }
+  .site-rail-divider {
+    height: 1px;
+    background: var(--border-subtle);
+    margin: 2px 6px;
   }
   .site-rail-links { display: flex; flex-direction: column; gap: 8px; }
   .site-rail-link {
     display: flex;
-    min-height: 82px;
+    min-height: 76px;
     padding: 10px 6px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     border: 1px solid transparent;
     border-radius: 11px;
     color: var(--text-secondary);
@@ -634,6 +677,11 @@ main {
     text-decoration: none;
     transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
   }
+  .site-rail-home {
+    min-height: 66px;
+    padding: 8px 6px;
+    color: var(--text-accent);
+  }
   .site-rail-icon {
     display: flex;
     align-items: center;
@@ -641,7 +689,9 @@ main {
     line-height: 1;
     transition: transform var(--transition-fast);
   }
-  .site-rail-link:hover .site-rail-icon { transform: translateY(-2px); }
+  @media (hover: hover) and (pointer: fine) {
+    .site-rail-link:hover .site-rail-icon { transform: translateY(-2px); }
+  }
   .site-rail-text {
     font-family: var(--font-tech);
     font-size: 0.72rem;
@@ -849,10 +899,40 @@ body {
   transform: scale(0.97);
 }
 
+.site-footer {
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-abyss);
+  padding: 20px 24px;
+  text-align: center;
+  margin-top: auto;
+}
+.footer-container p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.footer-sub {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  opacity: 0.78;
+  margin-top: 4px;
+}
+
 @media (hover: none) {
   .tab-btn:hover .tab-spec-icon,
   .site-rail-link:hover .site-rail-icon {
     transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab-btn:active,
+  .fusion-tab-btn:active,
+  .theme-toggle-btn:active,
+  .sort-btn:active,
+  .action-btn.fuse-btn:active,
+  .site-rail-link:active,
+  .site-nav-link:active {
+    transform: none !important;
   }
 }
 

@@ -18,7 +18,7 @@ This repository contains three independent static web apps:
    - **Bravely Default II**: Celestial Crystal & Asterisk RPG aesthetic (Cinzel display headers, midnight sapphire dark mode, luminous dawn light mode) with custom vector SVG icons in `Bravely Default 2/assets/icons/ui/` and 105 card SVGs in `Bravely Default 2/assets/cards/`.
 7. **Character sprites & portraits**: All 35 playable characters in `Octopath Traveler 0/assets/characters/` provide both a vertical portrait (`_portrait.png`) and an official CotC combat sprite (`_sprite.png`).
 8. **Bravely Default II Asterisk & Data Invariants**:
-   - All 24 asterisk jobs include official weapon aptitudes (S to E), dual specialties, asterisk holders, and Lv. 1–12 command/passive abilities.
+   - All 24 asterisk jobs include official weapon aptitudes (S to E), dual specialties, asterisk holders, and Lv. 1–15 command/passive abilities (360 total abilities).
    - All 105 B 'n' D cards provide complete classification (Monster, Job, Character), rules, and vector card fronts.
    - All 69 subquests track chapter unlocks, clients, locations, objectives, and rewards.
    - All 7 town shops link directly into the Equipment Codex.
@@ -30,12 +30,16 @@ This repository contains three independent static web apps:
     - **Standard mobile (`320px–768px`)**: Stacked card grids, single-column mastheads/headers, bottom-sheet modals (`max-height: 92dvh`, `env(safe-area-inset-bottom)`), and horizontal touch scrolling on wide tables.
     - **Mobile "Request Desktop Site" (`761px–1180px` & `@media (pointer: coarse)`)**: Mobile browsers in Desktop mode render a `~980px` viewport on a coarse touch screen. All codexes compact table padding in the `761px–1180px` range, keep table wrappers horizontally touch-scrollable (`overflow-x: auto; -webkit-overflow-scrolling: touch`), and ensure fixed rails do not obscure viewport contents.
     - **Coarse pointer ergonomics (`@media (pointer: coarse)`)**: All interactive buttons, tabs, and links enforce `40px–44px` minimum tap targets with `touch-action: manipulation`, and all search inputs/selects enforce `font-size: 16px` to prevent iOS Safari auto-zoom.
+11. **Cross-Codex UI Uniformity & Interaction Polish**:
+    - Every `.site-rail` across Digimon, Octopath, and Bravely Default II includes a clickable top `.site-rail-home` / `.site-rail-link` (`href="../index.html"`, `title="Back to World Index"`, `aria-label="Back to World Index"`) + `.site-rail-divider`.
+    - All search fields use `type="search"`, a uniform inline `<svg class="search-icon" aria-hidden="true">` magnifying glass (no mixed `🔍`/`🔎` emojis), and working clear-search buttons (`syncClearSearchBtn()` / `#clearCardSearch`).
+    - Every HTML page (including root `index.html`) includes `.skip-link`, `<meta name="theme-color">` synced dynamically in `themeToggle.js`, consistent icon sizing, `<footer class="site-footer">`, and `@media (hover: hover) and (pointer: fine)`-gated hover transforms with tactile `:active` press feedback.
 
 ## Verification
-Run full repository checks from the root with `npm.cmd run check` (116 total tests passing: 30 Digimon, 63 Octopath, 23 Bravely Default II).
+Run full repository checks from the root with `npm.cmd run check` (130 total tests passing: 32 Digimon, 66 Octopath, 32 Bravely Default II).
 Individual suites can be run with:
-- `npm.cmd test --prefix "Digimon Card Battle"` (30 tests)
-- `npm.cmd test --prefix "Octopath Traveler 0"` (63 tests)
-- `npm.cmd test --prefix "Bravely Default 2"` (23 tests)
+- `npm.cmd test --prefix "Digimon Card Battle"` (32 tests)
+- `npm.cmd test --prefix "Octopath Traveler 0"` (66 tests)
+- `npm.cmd test --prefix "Bravely Default 2"` (32 tests)
 - `npm.cmd run typecheck --prefix "Octopath Traveler 0"` (6 apps checked, 0 errors)
 - `npm.cmd run typecheck --prefix "Bravely Default 2"` (7 apps checked, 0 errors)

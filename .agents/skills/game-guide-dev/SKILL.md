@@ -43,6 +43,10 @@ Repository root hosts the library hub ([index.html](../../../index.html), [theme
   - Digimon: Cyber-digital / Digivice HUD (`Digimon Card Battle/assets/ui/`, `assets/cards/`).
   - Octopath: HD-2D Fantasy RPG Tome (`Octopath Traveler 0/assets/icons/ui/`, `assets/characters/` `_portrait.png` + `_sprite.png`).
   - Bravely Default II: Celestial Crystal & Asterisk (`Bravely Default 2/assets/icons/ui/`, `assets/jobs/`, `assets/cards/`).
+- **Cross-Codex Uniformity Contract**:
+  - **Clickable `.site-rail` World Button**: Every `.site-rail` across Digimon, Octopath, and Bravely Default II must include a clickable top `.site-rail-home` / `.site-rail-link` (`href="../index.html"`, `title="Back to World Index"`, `aria-label="Back to World Index"`) + `.site-rail-divider` (never a non-clickable `<span>`).
+  - **Uniform Search Affordances**: All search inputs use `type="search"`, a uniform inline `<svg class="search-icon" aria-hidden="true">` magnifying glass (no OS-dependent mixed `🔍`/`🔎` emojis), WebKit native cancel-button suppression where a `.clear-search-btn` is present, and wired clear-button visibility toggling (`syncClearSearchBtn()`).
+  - **Metadata, Icons, Footers & Hover Polish**: Every HTML page (including root `index.html`) includes `<a class="skip-link" href="#main-content">`, `<meta name="theme-color">` synced by `themeToggle.js`, uniform icon sizes (`24x24` rail / `16x16` nav / `28x28` header crest in Octopath; `56x56` hero emblems in BD2), matching `<footer class="site-footer">`, and `@media (hover: hover) and (pointer: fine)`-gated hover transforms with tactile `:active` press states.
 
 ## 3. Data Pipeline Workflow
 
@@ -92,6 +96,7 @@ Per-game commands:
 ## 6. Related Skills
 
 - **`frontend-design`**: Use when designing a new game theme, major UI section, or codex layout so each game keeps an intentional visual identity instead of generic defaults.
+- **`emil-design-eng`**: Use when polishing UI interactions, transitions, tactile `:active` states, popover origins, and `@media (hover: hover) and (pointer: fine)` hover gating.
 - **`webapp-testing`**: Use for Playwright-based end-to-end UI tests (tabs, modals, deep links, theme switching) against local pages.
 - **`a11y-debugging`**: Use to audit ARIA attributes, keyboard focus, contrast, and 44px coarse tap targets.
 - **`chrome-devtools`**: Use to inspect live DOM state, console errors, network requests, and mobile/desktop-on-mobile viewports in Chrome.

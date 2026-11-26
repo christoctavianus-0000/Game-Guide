@@ -154,3 +154,34 @@ test('Digimon pages: include responsive viewport meta and mobile + desktop-on-mo
   assert.match(fusionCss, /@media\s*\(pointer:\s*coarse\)/);
 });
 
+test('Digimon pages: include uniform rail World link, vector search icon, theme-color meta, and footer', () => {
+  for (const file of ['index.html', 'fusion.html']) {
+    const html = fs.readFileSync(path.join(ROOT, file), 'utf8');
+    assert.match(html, /<meta\s+name="theme-color"/i, `${file} missing meta theme-color`);
+
+    const railMatch = html.match(/<aside[^>]*class="[^"]*site-rail[^"]*"[\s\S]*?<\/aside>/i);
+    assert.ok(railMatch, `${file} missing .site-rail`);
+    assert.match(railMatch[0], /<a[^>]*href="\.\.\/index\.html"[^>]*>/i, `${file} .site-rail must include clickable ../index.html World link`);
+    assert.match(railMatch[0], /site-rail-divider/, `${file} .site-rail missing divider`);
+
+    assert.match(html, /<svg[^>]*class="search-icon"[^>]*aria-hidden="true"/i, `${file} missing accessible inline SVG search-icon`);
+    assert.doesNotMatch(html, /<input[^>]+type="text"/i, `${file} search inputs should use type="search"`);
+    assert.match(html, /<footer\s+class="site-footer">/i, `${file} missing .site-footer`);
+  }
+
+  const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+  assert.match(indexHtml, /id="clearCardSearch"/i, 'index.html missing #clearCardSearch button');
+
+  const metaEl = {
+    attributes: { content: '#050a14' },
+    setAttribute(k, v) { this.attributes[k] = String(v); },
+    getAttribute(k) { return this.attributes[k] || null; }
+  };
+  const env = createDigimonTestEnv();
+  env.document.querySelector = (sel) => (sel === 'meta[name="theme-color"]' ? metaEl : null);
+  env.context.window.__themeToggle.applyTheme('light');
+  assert.equal(metaEl.getAttribute('content'), '#e2ecf7');
+  env.context.window.__themeToggle.applyTheme('dark');
+  assert.equal(metaEl.getAttribute('content'), '#050a14');
+});
+

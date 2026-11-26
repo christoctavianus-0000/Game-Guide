@@ -139,6 +139,8 @@ html {
 
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: radial-gradient(circle at 50% 0%, var(--bg-surface-elevated) 0%, var(--bg-canvas) 70%);
   overflow-x: hidden;
   padding-left: env(safe-area-inset-left);
@@ -188,9 +190,11 @@ input, select {
    SITE NAVIGATION & RAIL
    ========================================================================== */
 .site-wrapper {
+  width: 100%;
+  flex: 1;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1.5rem 1.25rem 4rem;
+  padding: 1.5rem 1.25rem 3rem;
 }
 
 .site-nav {
@@ -368,7 +372,8 @@ input, select {
 }
 
 @media (min-width: 1100px) {
-  .site-wrapper {
+  .site-wrapper,
+  .site-footer {
     padding-left: 116px;
   }
 
@@ -420,7 +425,12 @@ input, select {
     background: var(--bg-surface-hover);
     border-color: var(--border-subtle);
     text-decoration: none;
-    transform: translateX(2px);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .site-rail-link:hover {
+      transform: translateX(2px);
+    }
   }
 
   .site-rail-link.active {
@@ -634,7 +644,12 @@ input, select {
 .codex-card:hover {
   border-color: var(--border-crystal);
   box-shadow: var(--shadow-card-hover);
-  transform: translateY(-2px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .codex-card:hover {
+    transform: translateY(-2px);
+  }
 }
 
 /* B 'n' D Codex Card Layout (Large card image on left, effect and details on right) */
@@ -1179,6 +1194,7 @@ input, select {
 }
 
 .nav-link:active,
+.site-rail-link:active,
 .theme-toggle-btn:active,
 .filter-pill:active,
 .btn-primary:active,
@@ -1186,6 +1202,23 @@ input, select {
 .modal-close-btn:active,
 .clear-btn:active {
   transform: scale(0.97);
+}
+
+.site-footer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.footer-sub {
+  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  opacity: 0.8;
 }
 
 /* ==========================================================================
@@ -1289,7 +1322,8 @@ input, select {
 }
 
 @media (min-width: 1100px) and (max-width: 1280px) and (pointer: coarse) {
-  .site-wrapper {
+  .site-wrapper,
+  .site-footer {
     padding-left: 1.25rem;
   }
 

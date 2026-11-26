@@ -2,6 +2,16 @@
 
 All notable changes to the Bravely Default II Codex module are documented here.
 
+## [1.3.1] - 2026-11-26
+
+### Cross-Codex Uniformity & Design-Engineering Polish
+- **Uniform Rail Semantics, Hero Emblems, Theme Toggle Initial State & Footers (`index.html`, `ability.html`, `equipment.html`, `enemy.html`, `quest.html`, `shop.html`, `bnd.html`, `styles.css`)**:
+  - Added `aria-label="Back to World Index"` on `.site-rail` World links and `aria-hidden="true"` on `.site-rail-divider` + `.search-icon` SVGs across all 7 pages.
+  - Standardized all `.hero-emblem` icons to `56x56` (`ability`, `equipment`, `enemy`, `quest`, `shop`, `bnd` matched `index.html`), aligned initial static theme toggle button text (`☀️ Light`) with dark default to prevent flash, and added a matching `<footer class="site-footer">` across all 7 pages.
+  - Gated `.codex-card:hover` and `.site-rail-link:hover` transforms inside `@media (hover: hover) and (pointer: fine)` and added `.site-rail-link:active` to tactile `:active { transform: scale(0.97); }` press feedback.
+- **Verification (`tests/theme_and_responsive.test.js`)**:
+  - Expanded page and responsive CSS checks (**32/32 BD2 tests passing**, `tsc --noEmit` 0 errors).
+
 ## [1.3.0] - 2026-11-19
 
 ### Bug Fixes & Functional Restoration

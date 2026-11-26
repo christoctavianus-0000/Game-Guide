@@ -626,8 +626,15 @@
     renderChunks();
   }
 
+  function syncClearSearchBtn() {
+    if (elements.enemyClearSearch && elements.enemySearchInput) {
+      elements.enemyClearSearch.style.display = elements.enemySearchInput.value ? 'block' : 'none';
+    }
+  }
+
   function bindEvents() {
     elements.enemySearchInput.addEventListener('input', () => {
+      syncClearSearchBtn();
       state.searchQuery = elements.enemySearchInput.value.trim().toLowerCase();
       renderChunks();
     });
@@ -711,7 +718,9 @@
     elements.enemyClearSearch.addEventListener('click', () => {
       state.searchQuery = '';
       elements.enemySearchInput.value = '';
+      syncClearSearchBtn();
       renderChunks();
+      elements.enemySearchInput.focus();
     });
 
     elements.enemyResetBtn.addEventListener('click', () => {
@@ -725,6 +734,7 @@
       state.weaknessSort = null;
       state.collapsedAreas = {};
       elements.enemySearchInput.value = '';
+      syncClearSearchBtn();
       if (elements.enemyTypeTabs) {
         document.querySelectorAll('#enemyTypeTabs .cat-tab').forEach(t => {
           t.classList.remove('active');
@@ -785,6 +795,7 @@
   function init() {
     renderFilters();
     bindEvents();
+    syncClearSearchBtn();
     renderTable();
   }
 

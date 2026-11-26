@@ -2,6 +2,17 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Cross-Codex Rail World Crest, Search UX, `theme-color` & Footer Uniformity
+
+- **Clickable Rail World Crest (`index.html`, `fusion.html`, `styles.css`)**:
+  - Added `<a class="site-rail-link site-rail-home" href="../index.html" title="Back to World Index" aria-label="Back to World Index">` with `assets/ui/digivice.svg` + `.site-rail-divider` to `.site-rail` on both `index.html` and `fusion.html` (matching Bravely Default II & Octopath Traveler 0).
+- **Uniform Search Inputs & Clear Button (`index.html`, `fusion.html`, `app.js`, `styles.css`, `fusion.css`)**:
+  - Upgraded `#cardSearch` and all 5 search inputs in `fusion.html` from `type="text"` to `type="search"` with the shared inline `<svg class="search-icon" aria-hidden="true">` magnifying glass, and wired `#clearCardSearch` (`✕`) on `index.html` to toggle live on input and clear + refocus cleanly.
+- **Theme-Color Meta, Initial Icon Alignment, Footers & Hover/Press Polish (`themeToggle.js`, `styles.css`, `fusion.css`)**:
+  - Added `<meta name="theme-color" content="#050a14" />` to both pages and synced it dynamically in `themeToggle.js`; aligned static initial theme toggle icon (`☀️`) with default dark mode; added `<footer class="site-footer">` to both pages; gated hover icon scaling inside `@media (hover: hover) and (pointer: fine)` and added tactile `:active` press states with `prefers-reduced-motion` guards.
+- **Verification (`tests/themeToggle.test.js`)**:
+  - Added uniformity assertions verifying `.site-rail` World links, SVG search icons, `type="search"`, `theme-color` sync, and footers (**32/32 Digimon tests passing**).
+
 ## Unreleased - Material Specialty Columns & Dual Search in Special Fusion
 
 - **Material Specialty Columns in Tab 1 Combinations Table (`fusion.html`, `fusion.js`)**:

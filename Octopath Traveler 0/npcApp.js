@@ -589,9 +589,16 @@
       });
     });
 
+    function syncClearSearchBtn() {
+      if (el.clearSearchBtn && el.searchInput) {
+        el.clearSearchBtn.style.display = el.searchInput.value ? 'block' : 'none';
+      }
+    }
+
     var searchTimer = null;
     if (el.searchInput) {
       el.searchInput.addEventListener('input', function () {
+        syncClearSearchBtn();
         clearTimeout(searchTimer);
         var val = el.searchInput.value;
         searchTimer = setTimeout(function () {
@@ -604,7 +611,9 @@
       el.clearSearchBtn.addEventListener('click', function () {
         if (el.searchInput) el.searchInput.value = '';
         state.searchQuery = '';
+        syncClearSearchBtn();
         renderChunks();
+        if (el.searchInput) el.searchInput.focus();
       });
     }
     if (el.areaFilter) {
@@ -629,6 +638,7 @@
       state.sortKey = 'area';
       state.sortDir = 'asc';
       if (el.searchInput) el.searchInput.value = '';
+      syncClearSearchBtn();
       if (el.areaFilter) el.areaFilter.value = 'all';
       if (el.sortFilter) el.sortFilter.value = 'area-asc';
       renderTypeTabs();

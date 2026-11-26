@@ -78,6 +78,7 @@
     for (var i = 0; i < btns.length; i++) {
       var btn = btns[i];
       btn.textContent = isLight ? '☀️' : '🌙';
+      btn.setAttribute('aria-pressed', isLight ? 'true' : 'false');
       btn.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
       btn.setAttribute('title', isLight ? 'Switch to dark theme' : 'Switch to light theme');
     }
@@ -89,6 +90,12 @@
     } else {
       document.documentElement.removeAttribute('data-theme');
     }
+    try {
+      var meta = document.querySelector && document.querySelector('meta[name="theme-color"]');
+      if (meta) {
+        meta.setAttribute('content', theme === 'light' ? '#f4efe4' : '#0c0907');
+      }
+    } catch (e) {}
     updateButtons(theme);
   }
 

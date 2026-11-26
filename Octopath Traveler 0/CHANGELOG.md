@@ -2,6 +2,19 @@
 
 This file records implementation decisions that future prompts and contributors should preserve.
 
+## Unreleased — Cross-Codex Navigation, Search & Accessibility Uniformity
+
+- **Clickable Rail World Crest (`index.html`, `equipment.html`, `character.html`, `enemy.html`, `shop.html`, `npc.html`, `styles.css`)**:
+  - Replaced the static, non-clickable `<span class="site-rail-brand">` at the top of `.site-rail` across all 6 Octopath pages with a clickable `.site-rail-home` anchor (`href="../index.html"`, `title="Back to World Index"`, `aria-label="Back to World Index"`) + `.site-rail-divider`, compacted `.site-rail-link` rhythm so all 7 rail buttons fit cleanly without clipping, and standardized all `.site-rail` icons to `24x24` and top `.site-nav-link` icons to `16x16` (fixing `shop.html` & `npc.html` `18x18` / `15x15` discrepancies).
+- **Uniform Inline SVG Search Icon & Clear-Button Visibility Fixes (All 6 HTML files, `styles.css`, `enemyApp.js`, `shopApp.js`, `npcApp.js`)**:
+  - Replaced inconsistent `🔍` (`index.html`, `equipment.html`, `shop.html`, `npc.html`) and `🔎` (`character.html`, `enemy.html`) emojis with one crisp inline `<svg class="search-icon" aria-hidden="true">` magnifying glass, suppressed duplicate WebKit native search cancel buttons, and added explicit `type="button"` to all `.clear-search-btn` buttons.
+  - Added `syncClearSearchBtn()` in `enemyApp.js`, `shopApp.js`, and `npcApp.js` so their clear-search `✕` buttons actually toggle visible on input/URL deep-link load and reset/focus properly when cleared.
+- **Metadata, IDs, Footers & `theme-color` Sync (`themeToggle.js`, `styles.css`, `character.html`, `enemy.html`, `shop.html`, `npc.html`)**:
+  - Added `<meta name="theme-color" content="#0c0907" />` across all 6 pages and updated `themeToggle.js` to sync `meta[name="theme-color"]` and `aria-pressed`.
+  - Fixed copy-paste `id="characterMetricsBar"` → `id="shopMetricsBar"` in `shop.html`, standardized header `.brand-kicker` and `28x28` `.crest-icon-img`, initialized `#enemyModal` with `aria-hidden="true"`, added matching `<footer class="site-footer">` across `character.html`, `enemy.html`, `shop.html`, and `npc.html`, and fixed `.footer-sub` light-mode contrast in `styles.css`.
+- **Verification (`tests/themeToggle.test.js`)**:
+  - Added cross-page uniformity regression checks covering Octopath + Root `index.html` (**66/66 Octopath tests passing**, `tsc --noEmit` 0 errors).
+
 ## Unreleased — Shop Sorting, Location-Aware Modal Lookup & Accessibility Fixes
 
 - **Shop Sorting & Reset (`shopApp.js`)**:

@@ -294,9 +294,16 @@
       });
     }
 
+    function syncClearSearchBtn() {
+      if (elements.clearSearchBtn && elements.searchInput) {
+        elements.clearSearchBtn.style.display = elements.searchInput.value ? 'block' : 'none';
+      }
+    }
+
     var searchDebounce = null;
     if (elements.searchInput) {
       elements.searchInput.addEventListener('input', function () {
+        syncClearSearchBtn();
         clearTimeout(searchDebounce);
         searchDebounce = setTimeout(function () {
           state.searchQuery = elements.searchInput.value.trim();
@@ -309,7 +316,9 @@
       elements.clearSearchBtn.addEventListener('click', function () {
         if (elements.searchInput) elements.searchInput.value = '';
         state.searchQuery = '';
+        syncClearSearchBtn();
         renderChunks();
+        if (elements.searchInput) elements.searchInput.focus();
       });
     }
 
@@ -320,6 +329,7 @@
       state.sortDir = 'asc';
       state.collapsedLocations = {};
       if (elements.searchInput) elements.searchInput.value = '';
+      syncClearSearchBtn();
       populateDropdowns();
       renderChunks();
     }
@@ -375,6 +385,7 @@
     if (reqItem) {
       state.searchQuery = reqItem;
       if (elements.searchInput) elements.searchInput.value = reqItem;
+      if (elements.clearSearchBtn) elements.clearSearchBtn.style.display = 'block';
     }
     renderMetrics();
     populateDropdowns();

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#050a14" />
   <title>Digimon Card Battle // Codex</title>
   <meta name="description" content="Interactive Digimon Digital Card Battle card database with full card attributes, filters, and search." />
   
@@ -32,6 +33,11 @@
       </nav>
       <aside class="site-rail" aria-label="Codex selector">
         <div class="site-rail-inner">
+          <a class="site-rail-link site-rail-home" href="../index.html" title="Back to World Index" aria-label="Back to World Index">
+            <span class="site-rail-icon" aria-hidden="true"><img src="assets/ui/digivice.svg" alt="" width="24" height="24" /></span>
+            <span class="site-rail-text">World</span>
+          </a>
+          <div class="site-rail-divider" aria-hidden="true"></div>
           <div class="site-rail-links">
             <a class="site-rail-link active" href="index.html" aria-current="page">
               <span class="site-rail-icon" aria-hidden="true"><img src="assets/ui/nav-cards.svg" alt="" width="24" height="24" /></span>
@@ -79,8 +85,8 @@
         </div>
 
         <div class="header-actions">
-          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">
-            <span class="theme-icon">🌙</span>
+          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Switch to Light Mode" title="Switch to Light Mode">
+            <span class="theme-icon">☀️</span>
           </button>
         </div>
       </div>
@@ -102,7 +108,11 @@
 
       <!-- Search & Filter -->
       <div class="search-filter" id="searchFilter">
-        <input type="text" id="cardSearch" placeholder="Search by name, card number, or support effect..." aria-label="Search cards" />
+        <div class="search-input-wrap">
+          <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="cardSearch" placeholder="Search by name, card number, or support effect..." aria-label="Search cards" />
+          <button type="button" class="clear-search-btn" id="clearCardSearch" title="Clear search" aria-label="Clear search">✕</button>
+        </div>
         <select id="levelFilter" aria-label="Filter by level">
           <option value="all">All Levels</option>
           <option value="U">Level U</option>
@@ -156,6 +166,13 @@
         </table>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>Digimon Digital Card Battle Codex • Card Database &amp; Fusion Matrix</p>
+        <p class="footer-sub">Independent offline reference archive • PS1 Era Companion</p>
+      </div>
+    </footer>
   </div>
 
   <!-- CARD DATABASE LOADED BY JS -->
